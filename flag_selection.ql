@@ -7,9 +7,10 @@
 
 import cpp
 
-from Macro m, string option, string accessName
+from Macro m, string option, string accessName, string accessStructFieldName
 where
   m.getName().matches("flag_%") and
   accessName = m.getName() and
+  accessStructFieldName = m.getBody() and
   option = "-f" + accessName.suffix(5).replaceAll("_", "-")
-select option, accessName
+select option, accessName, accessStructFieldName.suffix(15)
