@@ -1,0 +1,82 @@
+{
+  "time" : "2026-07-24T18:06:04.904542214Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 4559,
+  "nanoTime" : 313893625938,
+  "codeqlVersion" : "2.26.1",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-07-24T18:06:04.906248505Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 4560,
+  "nanoTime" : 313895270484,
+  "queryName" : "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql",
+  "stages" : [ 4 ]
+}
+
+{
+  "time" : "2026-07-24T18:06:04.907802751Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4561,
+  "nanoTime" : 313896820812,
+  "raHash" : "645efbg3sv05bq4i03605ar8kvc",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 4 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql:11,1-13,30",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = CONSTANT(unique int, unique string)[42,\"Hello, world!\"]",
+      "    return r1"
+    ]
+  },
+  "dependencies" : { },
+  "queryCausingWork" : 4560
+}
+
+{
+  "time" : "2026-07-24T18:06:04.907996964Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4562,
+  "nanoTime" : 313897005458,
+  "predicateStartEvent" : 4561,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:06:04.912425656Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4563,
+  "nanoTime" : 313901441052,
+  "startEvent" : 4562,
+  "resultSize" : 1
+}
+
+{
+  "time" : "2026-07-24T18:06:04.912891707Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4564,
+  "nanoTime" : 313901903887,
+  "startEvent" : 4561,
+  "resultSize" : 1
+}
+
+{
+  "time" : "2026-07-24T18:06:04.918232604Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 4565,
+  "nanoTime" : 313907249934,
+  "startEvent" : 4560,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-07-24T18:06:04.921502949Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 4566,
+  "nanoTime" : 313910516622
+}

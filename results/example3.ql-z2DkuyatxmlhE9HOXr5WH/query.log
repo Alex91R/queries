@@ -1,0 +1,1991 @@
+[2026-07-24 19:05:48] [SPAMMY] execute query-server2> runQuery called with /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql
+[2026-07-24 19:05:48] Calling plumbing command: codeql resolve library-path --additional-packs=/home/oleksii-shemshur/vscode-codeql-starter --query=/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql --format=json
+[2026-07-24 19:05:48] [DETAILS] resolve library-path> Resolving query at normalized path /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql.
+[2026-07-24 19:05:48] [DETAILS] resolve library-path> Found enclosing pack 'getting-started/codeql-extra-queries-python' at /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python.
+[2026-07-24 19:05:48] [DETAILS] resolve library-path> Adding compilation cache at /home/oleksii-shemshur/.codeql/compile-cache.
+[2026-07-24 19:05:48] [DETAILS] resolve library-path> QL pack dependencies for /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python found in cache.
+[2026-07-24 19:05:48] [DETAILS] resolve library-path> Found dbscheme through QL packs: /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmlecode.python.dbscheme.
+[2026-07-24 19:05:48] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/concepts",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/dataflow",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/controlflow",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/mad",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/regex",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/ssa",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/tutorial",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/typetracking",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/xml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/yaml"
+                        ],
+                        "dbscheme" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmlecode.python.dbscheme",
+                        "compilationCache" : [
+                          "/home/oleksii-shemshur/.codeql/compile-cache"
+                        ],
+                        "relativeName" : "getting-started/codeql-extra-queries-python/example3.ql",
+                        "qlPackName" : "getting-started/codeql-extra-queries-python"
+                      }
+[2026-07-24 19:05:48] [PROGRESS] execute query-server2> Compiling query plan for /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql.
+[2026-07-24 19:05:48] [DETAILS] execute query-server2> Resolving imports for /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql.
+[2026-07-24 19:05:49] Resolved file set for /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql hashes to 9415a6f523c0cb8b98e5f92ab8e2625d.
+[2026-07-24 19:05:49] [DETAILS] execute query-server2> Checking QL for /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql.
+[2026-07-24 19:05:49] Stale frontend caches are invalidated based on import graph reachability.
+[2026-07-24 19:05:49] ExternalModuleBindingPass ...
+[2026-07-24 19:05:50] ExternalModuleBindingPass time: 00:00.710
+[2026-07-24 19:05:50] CollectInstantiationsPass ...
+[2026-07-24 19:05:50] CollectInstantiationsPass time: 00:00.139
+[2026-07-24 19:05:50] Ql checks ...
+[2026-07-24 19:05:52] Ql checks time: 00:02.317
+[2026-07-24 19:05:59] Compilation pipeline
+[2026-07-24 19:06:00] Type Inference ...
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: Best number of iterations,Maximum number of runs,Number of BDD variables,Size of BDD for typefacts
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,104,142
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,345,419
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,25,25
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,8,8
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,582,85725
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,13,13
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,11,15
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,10,10
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,8,8
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,10,10
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,11,13
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,11,12
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,14,19
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,7,9
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,4,5
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,10,10
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,9,12
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,54,54
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,19,19
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,49,70
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,6,7
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,5,6
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,9,15
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,4,5
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,4,5
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,4,5
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,4,5
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,10,11
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,14,14
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,7,9
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,42,53
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-07-24 19:06:00] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-07-24 19:06:01] Type Inference time: 00:01.440
+[2026-07-24 19:06:02] [DETAILS] execute query-server2> Optimizing /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql.
+[2026-07-24 19:06:02] Processing compilation pipeline
+[2026-07-24 19:06:02] Started compiling a query
+[2026-07-24 19:06:02] Initialising compiler...
+[2026-07-24 19:06:02] 	 ... compiler initialised
+[2026-07-24 19:06:02] About to start query optimisation
+[2026-07-24 19:06:02] Compilation cache miss for 438eb1d8ee31ce83b22e28e989f86462.
+[2026-07-24 19:06:02] Stored compiled program for 438eb1d8ee31ce83b22e28e989f86462.
+[2026-07-24 19:06:02] CSV_COMPILATION: NONE,MISC,RA_TRANSLATION,OPTIMISATIONS
+[2026-07-24 19:06:02] CSV_COMPILATION: 23,4,2,20
+[2026-07-24 19:06:02] [PROGRESS] execute query-server2> No database upgrade/downgrade needed for /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql
+[2026-07-24 19:06:02] Calling plumbing command: codeql resolve extensions-by-pack --additional-packs=/home/oleksii-shemshur/vscode-codeql-starter --include-extension-row-locations /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] getting-started/codeql-extra-queries-python: not 0.0.0 {root: getting-started/codeql-extra-queries-python@0.0.0}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] getting-started/codeql-extra-queries-python: 0.0.0 {getting-started/codeql-extra-queries-python: not 0.0.0 {root: getting-started/codeql-extra-queries-python@0.0.0}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] getting-started/codeql-extra-queries-python: * [*], codeql/python-all: not * [*] {dependency: getting-started/codeql-extra-queries-python@* [*] requires codeql/python-all@*}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 1] getting-started/codeql-extra-queries-python: 0.0.0
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/python-all: * [*] {getting-started/codeql-extra-queries-python: * [*], codeql/python-all: not * [*] {dependency: getting-started/codeql-extra-queries-python@* [*] requires codeql/python-all@*}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/python-all: * [*], codeql/concepts: not * [*] {dependency: codeql/python-all@* [*] requires codeql/concepts@0.0.27}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/python-all: * [*], codeql/dataflow: not * [*] {dependency: codeql/python-all@* [*] requires codeql/dataflow@2.1.9}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/python-all: * [*], codeql/mad: not * [*] {dependency: codeql/python-all@* [*] requires codeql/mad@1.0.53}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/python-all: * [*], codeql/regex: not * [*] {dependency: codeql/python-all@* [*] requires codeql/regex@1.0.53}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/python-all: * [*], codeql/threat-models: not * [*] {dependency: codeql/python-all@* [*] requires codeql/threat-models@1.0.53}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/python-all: * [*], codeql/tutorial: not * [*] {dependency: codeql/python-all@* [*] requires codeql/tutorial@1.0.53}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/python-all: * [*], codeql/util: not * [*] {dependency: codeql/python-all@* [*] requires codeql/util@2.0.40}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/python-all: * [*], codeql/xml: not * [*] {dependency: codeql/python-all@* [*] requires codeql/xml@1.0.53}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/python-all: * [*], codeql/yaml: not * [*] {dependency: codeql/python-all@* [*] requires codeql/yaml@1.0.53}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 2] codeql/python-all: 7.2.1
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/yaml: * [*] {codeql/python-all: * [*], codeql/yaml: not * [*] {dependency: codeql/python-all@* [*] requires codeql/yaml@1.0.53}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/xml: * [*] {codeql/python-all: * [*], codeql/xml: not * [*] {dependency: codeql/python-all@* [*] requires codeql/xml@1.0.53}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/util: * [*] {codeql/python-all: * [*], codeql/util: not * [*] {dependency: codeql/python-all@* [*] requires codeql/util@2.0.40}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/tutorial: * [*] {codeql/python-all: * [*], codeql/tutorial: not * [*] {dependency: codeql/python-all@* [*] requires codeql/tutorial@1.0.53}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/threat-models: * [*] {codeql/python-all: * [*], codeql/threat-models: not * [*] {dependency: codeql/python-all@* [*] requires codeql/threat-models@1.0.53}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/regex: * [*] {codeql/python-all: * [*], codeql/regex: not * [*] {dependency: codeql/python-all@* [*] requires codeql/regex@1.0.53}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/mad: * [*] {codeql/python-all: * [*], codeql/mad: not * [*] {dependency: codeql/python-all@* [*] requires codeql/mad@1.0.53}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/dataflow: * [*] {codeql/python-all: * [*], codeql/dataflow: not * [*] {dependency: codeql/python-all@* [*] requires codeql/dataflow@2.1.9}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/concepts: * [*] {codeql/python-all: * [*], codeql/concepts: not * [*] {dependency: codeql/python-all@* [*] requires codeql/concepts@0.0.27}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/concepts: * [*], codeql/dataflow: not * [*] {dependency: codeql/concepts@* [*] requires codeql/dataflow@2.1.9}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/concepts: * [*], codeql/util: not * [*] {dependency: codeql/concepts@* [*] requires codeql/util@2.0.40}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 3] codeql/concepts: 0.0.27
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/dataflow: * [*], codeql/controlflow: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/controlflow@2.0.37}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/dataflow: * [*], codeql/ssa: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/ssa@2.0.29}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/dataflow: * [*], codeql/typetracking: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/typetracking@2.0.37}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/dataflow: * [*], codeql/util: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/util@2.0.40}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 4] codeql/dataflow: 2.1.9
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/typetracking: * [*] {codeql/dataflow: * [*], codeql/typetracking: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/typetracking@2.0.37}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/ssa: * [*] {codeql/dataflow: * [*], codeql/ssa: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/ssa@2.0.29}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/controlflow: * [*] {codeql/dataflow: * [*], codeql/controlflow: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/controlflow@2.0.37}}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/controlflow: * [*], codeql/util: not * [*] {dependency: codeql/controlflow@* [*] requires codeql/util@2.0.40}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 5] codeql/controlflow: 2.0.37
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/mad: * [*], codeql/dataflow: not * [*] {dependency: codeql/mad@* [*] requires codeql/dataflow@2.1.9}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/mad: * [*], codeql/util: not * [*] {dependency: codeql/mad@* [*] requires codeql/util@2.0.40}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 6] codeql/mad: 1.0.53
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/regex: * [*], codeql/util: not * [*] {dependency: codeql/regex@* [*] requires codeql/util@2.0.40}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 7] codeql/regex: 1.0.53
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/ssa: * [*], codeql/controlflow: not * [*] {dependency: codeql/ssa@* [*] requires codeql/controlflow@2.0.37}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/ssa: * [*], codeql/util: not * [*] {dependency: codeql/ssa@* [*] requires codeql/util@2.0.40}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 8] codeql/ssa: 2.0.29
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 9] codeql/threat-models: 1.0.53
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 10] codeql/tutorial: 1.0.53
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/typetracking: * [*], codeql/util: not * [*] {dependency: codeql/typetracking@* [*] requires codeql/util@2.0.40}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 11] codeql/typetracking: 2.0.37
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 12] codeql/util: 2.0.40
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/xml: * [*], codeql/util: not * [*] {dependency: codeql/xml@* [*] requires codeql/util@2.0.40}
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 13] codeql/xml: 1.0.53
+[2026-07-24 19:06:02] [SPAMMY] resolve extensions-by-pack> [DECISION 14] codeql/yaml: 1.0.53
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/ext/default-threat-models-fixup.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/threat-models:threatModelConfiguration: 1 tuples.
+[2026-07-24 19:06:02] Calling plumbing command: codeql generate extensible-predicate-metadata /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models
+[2026-07-24 19:06:02] Calling plumbing command: codeql pack packlist /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models --format=json
+[2026-07-24 19:06:02] Calling plumbing command: codeql resolve files --include=**/*.qll --include=**/*.dbscheme --include=**/*.dbscheme.stats --include=**/*.md --include=**/*.qls --include=**/*.qlref --include=**/*.yml --include=**/*.yaml --include=**/upgrade.properties --include=**/*.ql --include=!**/.* --include=!**/qlpack.auth.yml --include=!**/qlconfig.yml --include=!codeql-pack.lock.yml --include=!qlpack.lock.yml --include=!codeql-pack.release.yml --include=!change-notes --include=!**/*.qhelp --include=codeql-pack.yml --include=qlpack.yml --include=LICENSE --include=README.md --include=CHANGELOG.md --include=!**/*.qlx --include=ext/*.model.yml /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models --format=json
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/codeql...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/codeql/threatmodels...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/ext...
+[2026-07-24 19:06:02] Plumbing command codeql resolve files completed:
+                      [
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/CHANGELOG.md",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/codeql/threatmodels/ThreatModels.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/ext/supported-threat-models.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/ext/threat-model-grouping.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/qlpack.yml"
+                      ]
+[2026-07-24 19:06:02] Plumbing command codeql pack packlist completed:
+                      {
+                        "paths" : [
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/CHANGELOG.md",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/codeql/threatmodels/ThreatModels.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/ext/supported-threat-models.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/ext/threat-model-grouping.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/qlpack.yml"
+                        ]
+                      }
+[2026-07-24 19:06:02] Plumbing command codeql generate extensible-predicate-metadata completed:
+                      {
+                        "extensible_predicates" : [
+                          {
+                            "name" : "threatModelConfiguration",
+                            "parameters" : [
+                              {
+                                "name" : "kind",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "enable",
+                                "type" : "boolean"
+                              },
+                              {
+                                "name" : "priority",
+                                "type" : "int"
+                              }
+                            ],
+                            "has_origin" : false,
+                            "path" : "codeql/threatmodels/ThreatModels.qll",
+                            "start_line" : 26,
+                            "start_column" : 1,
+                            "end_line" : 26,
+                            "end_column" : 90
+                          },
+                          {
+                            "name" : "threatModelGrouping",
+                            "parameters" : [
+                              {
+                                "name" : "kind",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "group",
+                                "type" : "string"
+                              }
+                            ],
+                            "has_origin" : false,
+                            "path" : "codeql/threatmodels/ThreatModels.qll",
+                            "start_line" : 31,
+                            "start_column" : 1,
+                            "end_line" : 31,
+                            "end_column" : 77
+                          }
+                        ]
+                      }
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/AntiSSRF.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:barrierGuardModel: 1 tuples.
+[2026-07-24 19:06:02] Calling plumbing command: codeql generate extensible-predicate-metadata /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib
+[2026-07-24 19:06:02] Calling plumbing command: codeql pack packlist /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib --format=json
+[2026-07-24 19:06:02] Calling plumbing command: codeql resolve files --include=**/*.qll --include=**/*.dbscheme --include=**/*.dbscheme.stats --include=**/*.md --include=**/*.qls --include=**/*.qlref --include=**/*.yml --include=**/*.yaml --include=**/upgrade.properties --include=**/*.ql --include=!**/.* --include=!**/qlpack.auth.yml --include=!**/qlconfig.yml --include=!codeql-pack.lock.yml --include=!qlpack.lock.yml --include=!codeql-pack.release.yml --include=!change-notes --include=!**/*.qhelp --include=codeql-pack.yml --include=qlpack.yml --include=LICENSE --include=README.md --include=CHANGELOG.md --include=!**/*.qlx --include=semmle/python/frameworks/**/*.model.yml --include=ext/*.model.yml /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib --format=json
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0565f7466437d52e1dc64a3b930926ab2f60cd64...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/initial...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/eb5fc917c79bb23ce2de4a022f3e566d57a91be9...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/4f1806347d7fafe2f78508da01c01e5aff5f7cbb...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/ff5327c074ca235c6b2fa4ea9ed29f4c60aa46cb...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/6a1f497168da2f43828161d3c86db7d4c94c2b53...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/728c6d65e61d808ae276013ebc15abc3a97aaef1...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/503c0516fba2e5da9570f00eb34ef43025ecb8fb...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/62a30d37a729670a8cc3c67b4dad81f1983865f8...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/5af903da088e3746aa283700a43a779302453523...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/279cbb08d387ecd57ac177e87c94cfd5ca62f792...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/acf8d3b08ae3cfac8833d16efbfa5a10fef86819...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/47e552c4357a04c5735355fad818630daee4a5ac...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/f635b392038a494915307f913657cd3058f9b476...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0355ecf0ac589e66467a378e0e9d60f41ee4a757...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/8d257a4a9bc78e39856d6cd33499389fc5148d4f...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/files...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/crypto...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/libraries...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/essa...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/xml...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/internal...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/regexp...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/regexp/internal...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dependencies...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/templates...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/internal...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/subclass-capture...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/filters...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/concepts...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/values...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/internal...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/regexp...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/dataflow...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/modeling...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/internal...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/modules...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/modules/stdlib...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/utils...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/ext...
+[2026-07-24 19:06:02] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/analysis...
+[2026-07-24 19:06:02] Plumbing command codeql resolve files completed:
+                      [
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/CHANGELOG.md",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/Customizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/LegacyPointsTo.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/analysis/DefinitionTracking.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/analysis/IDEContextual.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/analysis/LocalDefinitions.ql",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/analysis/LocalReferences.ql",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/default.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/design.md",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/Concepts.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/CryptoAlgorithmNames.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/CryptoArtifact.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/modules/CryptographyModule.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/modules/stdlib/HashlibModule.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/modules/stdlib/HmacModule.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/utils/CallCfgNodeWithTarget.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/utils/Utils.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/ext/default-threat-models-fixup.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/modeling/ModelEditor.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/modeling/Util.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/printAst.ql",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/python.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/qlpack.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/crypto/Crypto.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/dataflow/SSA.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/files/FileSystem.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/ApiGraphs.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/AstExtended.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/AstGenerated.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Class.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Comment.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Comparisons.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Comprehensions.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Concepts.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Constants.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Exprs.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Files.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Flow.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Frameworks.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Function.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/GuardedControlFlow.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Import.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Keywords.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Metrics.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Module.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Operations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Overlay.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Patterns.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/PrintAst.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/SSA.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Scope.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/SelfAttribute.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/SpecialMethods.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Stmts.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/TestUtils.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Unit.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Variables.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Yaml.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/concepts/CryptoAlgorithms.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/Configuration.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/DataFlow.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/Files.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/Implementation.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/Legacy.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/StateTracking.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/TaintTracking.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/BarrierGuards.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/DataFlow.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/FlowSummary.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/Regexp.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/RemoteFlowSources.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/SensitiveDataSources.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/TaintTracking.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/TypeTracking.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/Attributes.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/Builtins.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowDispatch.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowImpl.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowImplCommon.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowImplSpecific.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowPrivate.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowPublic.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowUtil.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/FlowSummaryImpl.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/ImportResolution.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/ImportStar.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/IterableUnpacking.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/LocalSources.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/MatchUnpacking.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/PrintNode.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/ReExposedInstance.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/TaintTrackingImplSpecific.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/TaintTrackingPrivate.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/TaintTrackingPublic.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/TypeTrackingImpl.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/VariableCapture.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/Configuration.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/DataFlow.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/Files.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/Implementation.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/Legacy.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/StateTracking.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/TaintTracking.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dependencies/Dependencies.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dependencies/DependencyKind.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dependencies/TechInventory.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/essa/Definitions.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/essa/Essa.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/essa/SsaCompute.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/essa/SsaDefinitions.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/filters/GeneratedCode.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/filters/Tests.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aioch.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiofile.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiofiles.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiohttp.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiomysql.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiopg.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiosqlite.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Airspeed.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/AntiSSRF.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Anyio.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Asyncpg.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Asyncpg.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Azure.Keyvault.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Azure.Storage.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/BSon.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Baize.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Bottle.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/CassandraDriver.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Chameleon.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Cherrypy.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Chevron.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/ClickhouseDriver.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Cryptodome.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Cryptography.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Cx_Oracle.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Dill.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Django.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Django.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Eventlet.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Fabric.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/FastApi.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Flask.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/FlaskAdmin.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/FlaskSqlAlchemy.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Genshi.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Gevent.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Gradio.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Hdbcli.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Httpx.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Idna.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Invoke.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Jinja2.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Jmespath.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Joblib.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/JsonPickle.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Ldap.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Ldap3.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Libtaxii.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Libxml2.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Lxml.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Mako.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/MarkupSafe.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Multidict.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/MySQLdb.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Mysql.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Numpy.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Opml.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Oracledb.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/PEP249.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pandas.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Paramiko.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Peewee.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pexpect.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Phoenixdb.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Psycopg.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Psycopg2.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/PyMongo.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/PyMySQL.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pycurl.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pydantic.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pymssql.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pyodbc.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pyramid.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Requests.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/RestFramework.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Rsa.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/RuamelYaml.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Sanic.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/ServerLess.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Setuptools.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Simplejson.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Socketio.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/SqlAlchemy.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Starlette.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib/Urllib.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib/Urllib2.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Streamlit.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/TRender.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Toml.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Torch.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Tornado.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Twisted.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Ujson.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Urllib3.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Websockets.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Werkzeug.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Xmltodict.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Yaml.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Yarl.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/agent.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/anthropic.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/builtins.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/ModelsAsData.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/ApiGraphModels.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/ApiGraphModelsExtensions.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/ApiGraphModelsSpecific.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/empty.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/subclass-capture/ALL.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/internal/InstanceTaintStepsHelper.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/internal/PoorMansFunctionResolution.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/internal/SelfRefMixin.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/internal/SubclassFinder.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/lxml.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/openai.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/xml.model.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/internal/Awaited.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/internal/CachedStages.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/internal/OverlayDiscardConsistencyQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/internal/OverlayXml.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/libraries/Zope.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Callables.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Classes.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Constants.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Descriptors.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Instances.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Modules.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/ObjectAPI.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/ObjectInternal.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/ObjectModel.md",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Sequences.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/TObject.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/Base.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/CallGraph.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/Context.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/Filters.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/Final.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/MRO.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/Overview.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/PointsTo.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/PointsToContext.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/regex.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/regexp/RegexTreeView.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/regexp/internal/ParseRegExp.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/regexp/internal/RegExpTracking.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/README.md",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/TaintTracking.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CleartextLoggingCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CleartextLoggingQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CleartextStorageCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CleartextStorageQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CodeInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CodeInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CommandInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CommandInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CookieInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CookieInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/ExceptionInfo.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/HttpHeaderInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/HttpHeaderInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/LdapInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/LdapInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/LogInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/LogInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/NoSqlInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/NoSqlInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PamAuthorizationCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PamAuthorizationQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PathInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PathInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PolynomialReDoSCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PolynomialReDoSQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/ReflectedXSSCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/ReflectedXssQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/RegexInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/RegexInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/ServerSideRequestForgeryCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/ServerSideRequestForgeryQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/SqlInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/SqlInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/StackTraceExposureCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/StackTraceExposureQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/TarSlipCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/TarSlipQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/TemplateInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/TemplateInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UnsafeDeserializationCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UnsafeDeserializationQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UnsafeShellCommandConstructionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UnsafeShellCommandConstructionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UrlRedirectCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UrlRedirectQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/WeakSensitiveDataHashingCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/WeakSensitiveDataHashingQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XmlBombCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XmlBombQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XpathInjectionCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XpathInjectionQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XxeCustomizations.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XxeQuery.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/internal/EncryptionKeySizes.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/regexp/HostnameRegex.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/strings.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/templates/PyxlTags.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/templates/Templates.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Builtins.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/ClassObject.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Descriptors.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Exceptions.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Extensions.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/FunctionObject.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/ImportTime.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/ModuleKind.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/ModuleObject.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Object.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Properties.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Version.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/values/StringAttributes.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/xml/XML.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmlecode.python.dbscheme.stats",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/site.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0355ecf0ac589e66467a378e0e9d60f41ee4a757/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0355ecf0ac589e66467a378e0e9d60f41ee4a757/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0355ecf0ac589e66467a378e0e9d60f41ee4a757/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0565f7466437d52e1dc64a3b930926ab2f60cd64/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0565f7466437d52e1dc64a3b930926ab2f60cd64/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0565f7466437d52e1dc64a3b930926ab2f60cd64/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/279cbb08d387ecd57ac177e87c94cfd5ca62f792/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/279cbb08d387ecd57ac177e87c94cfd5ca62f792/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/279cbb08d387ecd57ac177e87c94cfd5ca62f792/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/47e552c4357a04c5735355fad818630daee4a5ac/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/47e552c4357a04c5735355fad818630daee4a5ac/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/47e552c4357a04c5735355fad818630daee4a5ac/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/4f1806347d7fafe2f78508da01c01e5aff5f7cbb/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/4f1806347d7fafe2f78508da01c01e5aff5f7cbb/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/4f1806347d7fafe2f78508da01c01e5aff5f7cbb/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/503c0516fba2e5da9570f00eb34ef43025ecb8fb/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/503c0516fba2e5da9570f00eb34ef43025ecb8fb/py_stmts.ql",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/503c0516fba2e5da9570f00eb34ef43025ecb8fb/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/503c0516fba2e5da9570f00eb34ef43025ecb8fb/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/5af903da088e3746aa283700a43a779302453523/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/5af903da088e3746aa283700a43a779302453523/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/5af903da088e3746aa283700a43a779302453523/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/62a30d37a729670a8cc3c67b4dad81f1983865f8/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/62a30d37a729670a8cc3c67b4dad81f1983865f8/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/62a30d37a729670a8cc3c67b4dad81f1983865f8/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/6a1f497168da2f43828161d3c86db7d4c94c2b53/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/6a1f497168da2f43828161d3c86db7d4c94c2b53/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/6a1f497168da2f43828161d3c86db7d4c94c2b53/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/728c6d65e61d808ae276013ebc15abc3a97aaef1/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/728c6d65e61d808ae276013ebc15abc3a97aaef1/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/728c6d65e61d808ae276013ebc15abc3a97aaef1/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/8d257a4a9bc78e39856d6cd33499389fc5148d4f/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/8d257a4a9bc78e39856d6cd33499389fc5148d4f/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/8d257a4a9bc78e39856d6cd33499389fc5148d4f/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/acf8d3b08ae3cfac8833d16efbfa5a10fef86819/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/acf8d3b08ae3cfac8833d16efbfa5a10fef86819/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/acf8d3b08ae3cfac8833d16efbfa5a10fef86819/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/eb5fc917c79bb23ce2de4a022f3e566d57a91be9/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/eb5fc917c79bb23ce2de4a022f3e566d57a91be9/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/eb5fc917c79bb23ce2de4a022f3e566d57a91be9/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/f635b392038a494915307f913657cd3058f9b476/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/f635b392038a494915307f913657cd3058f9b476/py_exprs.ql",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/f635b392038a494915307f913657cd3058f9b476/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/f635b392038a494915307f913657cd3058f9b476/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/ff5327c074ca235c6b2fa4ea9ed29f4c60aa46cb/old.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/ff5327c074ca235c6b2fa4ea9ed29f4c60aa46cb/py_exprs.ql",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/ff5327c074ca235c6b2fa4ea9ed29f4c60aa46cb/py_stmts.ql",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/ff5327c074ca235c6b2fa4ea9ed29f4c60aa46cb/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/ff5327c074ca235c6b2fa4ea9ed29f4c60aa46cb/upgrade.properties",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/initial/semmlecode.python.dbscheme",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/InlineExpectationsTest.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/InlineExpectationsTestQuery.ql",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/PrettyPrintModels.ql",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/VerifyApiGraphs.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/DataflowQueryTest.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/FlowTest.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/LocalFlowStepTest.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/MaximalFlowTest.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/NormalDataflowTest.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/NormalTaintTrackingTest.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/RoutingTest.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/UnresolvedCalls.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/callGraphConfig.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/testConfig.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/testTaintConfig.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/internal/InlineExpectationsTestImpl.qll"
+                      ]
+[2026-07-24 19:06:02] Plumbing command codeql pack packlist completed:
+                      {
+                        "paths" : [
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/CHANGELOG.md",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/Customizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/LegacyPointsTo.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/analysis/DefinitionTracking.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/analysis/IDEContextual.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/analysis/LocalDefinitions.ql",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/analysis/LocalReferences.ql",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/default.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/design.md",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/Concepts.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/CryptoAlgorithmNames.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/CryptoArtifact.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/modules/CryptographyModule.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/modules/stdlib/HashlibModule.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/modules/stdlib/HmacModule.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/utils/CallCfgNodeWithTarget.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/experimental/cryptography/utils/Utils.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/ext/default-threat-models-fixup.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/modeling/ModelEditor.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/modeling/Util.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/printAst.ql",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/python.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/qlpack.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/crypto/Crypto.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/dataflow/SSA.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/files/FileSystem.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/ApiGraphs.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/AstExtended.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/AstGenerated.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Class.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Comment.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Comparisons.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Comprehensions.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Concepts.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Constants.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Exprs.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Files.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Flow.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Frameworks.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Function.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/GuardedControlFlow.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Import.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Keywords.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Metrics.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Module.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Operations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Overlay.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Patterns.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/PrintAst.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/SSA.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Scope.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/SelfAttribute.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/SpecialMethods.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Stmts.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/TestUtils.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Unit.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Variables.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Yaml.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/concepts/CryptoAlgorithms.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/Configuration.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/DataFlow.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/Files.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/Implementation.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/Legacy.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/StateTracking.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/TaintTracking.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/BarrierGuards.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/DataFlow.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/FlowSummary.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/Regexp.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/RemoteFlowSources.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/SensitiveDataSources.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/TaintTracking.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/TypeTracking.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/Attributes.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/Builtins.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowDispatch.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowImpl.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowImplCommon.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowImplSpecific.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowPrivate.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowPublic.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/DataFlowUtil.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/FlowSummaryImpl.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/ImportResolution.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/ImportStar.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/IterableUnpacking.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/LocalSources.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/MatchUnpacking.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/PrintNode.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/ReExposedInstance.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/TaintTrackingImplSpecific.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/TaintTrackingPrivate.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/TaintTrackingPublic.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/TypeTrackingImpl.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/new/internal/VariableCapture.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/Configuration.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/DataFlow.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/Files.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/Implementation.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/Legacy.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/StateTracking.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dataflow/old/TaintTracking.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dependencies/Dependencies.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dependencies/DependencyKind.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/dependencies/TechInventory.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/essa/Definitions.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/essa/Essa.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/essa/SsaCompute.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/essa/SsaDefinitions.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/filters/GeneratedCode.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/filters/Tests.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aioch.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiofile.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiofiles.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiohttp.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiomysql.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiopg.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Aiosqlite.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Airspeed.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/AntiSSRF.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Anyio.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Asyncpg.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Asyncpg.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Azure.Keyvault.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Azure.Storage.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/BSon.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Baize.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Bottle.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/CassandraDriver.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Chameleon.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Cherrypy.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Chevron.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/ClickhouseDriver.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Cryptodome.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Cryptography.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Cx_Oracle.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Dill.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Django.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Django.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Eventlet.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Fabric.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/FastApi.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Flask.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/FlaskAdmin.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/FlaskSqlAlchemy.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Genshi.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Gevent.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Gradio.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Hdbcli.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Httpx.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Idna.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Invoke.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Jinja2.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Jmespath.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Joblib.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/JsonPickle.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Ldap.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Ldap3.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Libtaxii.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Libxml2.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Lxml.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Mako.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/MarkupSafe.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Multidict.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/MySQLdb.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Mysql.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Numpy.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Opml.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Oracledb.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/PEP249.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pandas.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Paramiko.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Peewee.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pexpect.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Phoenixdb.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Psycopg.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Psycopg2.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/PyMongo.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/PyMySQL.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pycurl.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pydantic.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pymssql.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pyodbc.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Pyramid.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Requests.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/RestFramework.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Rsa.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/RuamelYaml.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Sanic.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/ServerLess.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Setuptools.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Simplejson.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Socketio.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/SqlAlchemy.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Starlette.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib/Urllib.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib/Urllib2.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Streamlit.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/TRender.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Toml.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Torch.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Tornado.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Twisted.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Ujson.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Urllib3.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Websockets.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Werkzeug.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Xmltodict.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Yaml.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Yarl.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/agent.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/anthropic.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/builtins.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/ModelsAsData.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/ApiGraphModels.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/ApiGraphModelsExtensions.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/ApiGraphModelsSpecific.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/empty.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/subclass-capture/ALL.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/internal/InstanceTaintStepsHelper.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/internal/PoorMansFunctionResolution.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/internal/SelfRefMixin.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/internal/SubclassFinder.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/lxml.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/openai.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/xml.model.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/internal/Awaited.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/internal/CachedStages.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/internal/OverlayDiscardConsistencyQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/internal/OverlayXml.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/libraries/Zope.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Callables.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Classes.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Constants.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Descriptors.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Instances.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Modules.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/ObjectAPI.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/ObjectInternal.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/ObjectModel.md",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/Sequences.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/objects/TObject.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/Base.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/CallGraph.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/Context.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/Filters.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/Final.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/MRO.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/Overview.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/PointsTo.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/pointsto/PointsToContext.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/regex.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/regexp/RegexTreeView.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/regexp/internal/ParseRegExp.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/regexp/internal/RegExpTracking.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/README.md",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/TaintTracking.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CleartextLoggingCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CleartextLoggingQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CleartextStorageCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CleartextStorageQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CodeInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CodeInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CommandInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CommandInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CookieInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/CookieInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/ExceptionInfo.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/HttpHeaderInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/HttpHeaderInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/LdapInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/LdapInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/LogInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/LogInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/NoSqlInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/NoSqlInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PamAuthorizationCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PamAuthorizationQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PathInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PathInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PolynomialReDoSCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/PolynomialReDoSQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/ReflectedXSSCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/ReflectedXssQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/RegexInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/RegexInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/ServerSideRequestForgeryCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/ServerSideRequestForgeryQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/SqlInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/SqlInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/StackTraceExposureCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/StackTraceExposureQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/TarSlipCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/TarSlipQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/TemplateInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/TemplateInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UnsafeDeserializationCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UnsafeDeserializationQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UnsafeShellCommandConstructionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UnsafeShellCommandConstructionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UrlRedirectCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/UrlRedirectQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/WeakSensitiveDataHashingCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/WeakSensitiveDataHashingQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XmlBombCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XmlBombQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XpathInjectionCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XpathInjectionQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XxeCustomizations.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/dataflow/XxeQuery.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/internal/EncryptionKeySizes.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/security/regexp/HostnameRegex.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/strings.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/templates/PyxlTags.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/templates/Templates.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Builtins.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/ClassObject.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Descriptors.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Exceptions.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Extensions.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/FunctionObject.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/ImportTime.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/ModuleKind.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/ModuleObject.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Object.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Properties.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/types/Version.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/values/StringAttributes.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/xml/XML.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmlecode.python.dbscheme.stats",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/site.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0355ecf0ac589e66467a378e0e9d60f41ee4a757/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0355ecf0ac589e66467a378e0e9d60f41ee4a757/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0355ecf0ac589e66467a378e0e9d60f41ee4a757/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0565f7466437d52e1dc64a3b930926ab2f60cd64/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0565f7466437d52e1dc64a3b930926ab2f60cd64/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/0565f7466437d52e1dc64a3b930926ab2f60cd64/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/279cbb08d387ecd57ac177e87c94cfd5ca62f792/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/279cbb08d387ecd57ac177e87c94cfd5ca62f792/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/279cbb08d387ecd57ac177e87c94cfd5ca62f792/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/47e552c4357a04c5735355fad818630daee4a5ac/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/47e552c4357a04c5735355fad818630daee4a5ac/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/47e552c4357a04c5735355fad818630daee4a5ac/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/4f1806347d7fafe2f78508da01c01e5aff5f7cbb/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/4f1806347d7fafe2f78508da01c01e5aff5f7cbb/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/4f1806347d7fafe2f78508da01c01e5aff5f7cbb/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/503c0516fba2e5da9570f00eb34ef43025ecb8fb/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/503c0516fba2e5da9570f00eb34ef43025ecb8fb/py_stmts.ql",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/503c0516fba2e5da9570f00eb34ef43025ecb8fb/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/503c0516fba2e5da9570f00eb34ef43025ecb8fb/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/5af903da088e3746aa283700a43a779302453523/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/5af903da088e3746aa283700a43a779302453523/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/5af903da088e3746aa283700a43a779302453523/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/62a30d37a729670a8cc3c67b4dad81f1983865f8/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/62a30d37a729670a8cc3c67b4dad81f1983865f8/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/62a30d37a729670a8cc3c67b4dad81f1983865f8/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/6a1f497168da2f43828161d3c86db7d4c94c2b53/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/6a1f497168da2f43828161d3c86db7d4c94c2b53/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/6a1f497168da2f43828161d3c86db7d4c94c2b53/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/728c6d65e61d808ae276013ebc15abc3a97aaef1/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/728c6d65e61d808ae276013ebc15abc3a97aaef1/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/728c6d65e61d808ae276013ebc15abc3a97aaef1/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/8d257a4a9bc78e39856d6cd33499389fc5148d4f/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/8d257a4a9bc78e39856d6cd33499389fc5148d4f/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/8d257a4a9bc78e39856d6cd33499389fc5148d4f/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/acf8d3b08ae3cfac8833d16efbfa5a10fef86819/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/acf8d3b08ae3cfac8833d16efbfa5a10fef86819/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/acf8d3b08ae3cfac8833d16efbfa5a10fef86819/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/eb5fc917c79bb23ce2de4a022f3e566d57a91be9/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/eb5fc917c79bb23ce2de4a022f3e566d57a91be9/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/eb5fc917c79bb23ce2de4a022f3e566d57a91be9/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/f635b392038a494915307f913657cd3058f9b476/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/f635b392038a494915307f913657cd3058f9b476/py_exprs.ql",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/f635b392038a494915307f913657cd3058f9b476/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/f635b392038a494915307f913657cd3058f9b476/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/ff5327c074ca235c6b2fa4ea9ed29f4c60aa46cb/old.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/ff5327c074ca235c6b2fa4ea9ed29f4c60aa46cb/py_exprs.ql",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/ff5327c074ca235c6b2fa4ea9ed29f4c60aa46cb/py_stmts.ql",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/ff5327c074ca235c6b2fa4ea9ed29f4c60aa46cb/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/ff5327c074ca235c6b2fa4ea9ed29f4c60aa46cb/upgrade.properties",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/upgrades/initial/semmlecode.python.dbscheme",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/InlineExpectationsTest.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/InlineExpectationsTestQuery.ql",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/PrettyPrintModels.ql",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/VerifyApiGraphs.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/DataflowQueryTest.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/FlowTest.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/LocalFlowStepTest.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/MaximalFlowTest.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/NormalDataflowTest.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/NormalTaintTrackingTest.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/RoutingTest.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/UnresolvedCalls.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/callGraphConfig.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/testConfig.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/dataflow/testTaintConfig.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/utils/test/internal/InlineExpectationsTestImpl.qll"
+                        ]
+                      }
+[2026-07-24 19:06:02] Plumbing command codeql generate extensible-predicate-metadata completed:
+                      {
+                        "extensible_predicates" : [
+                          {
+                            "name" : "sourceModel",
+                            "parameters" : [
+                              {
+                                "name" : "type",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "path",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "kind",
+                                "type" : "string"
+                              }
+                            ],
+                            "has_origin" : true,
+                            "path" : "semmle/python/frameworks/data/internal/ApiGraphModelsExtensions.qll",
+                            "start_line" : 13,
+                            "start_column" : 1,
+                            "end_line" : 15,
+                            "end_column" : 3
+                          },
+                          {
+                            "name" : "sinkModel",
+                            "parameters" : [
+                              {
+                                "name" : "type",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "path",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "kind",
+                                "type" : "string"
+                              }
+                            ],
+                            "has_origin" : true,
+                            "path" : "semmle/python/frameworks/data/internal/ApiGraphModelsExtensions.qll",
+                            "start_line" : 21,
+                            "start_column" : 1,
+                            "end_line" : 21,
+                            "end_column" : 102
+                          },
+                          {
+                            "name" : "barrierModel",
+                            "parameters" : [
+                              {
+                                "name" : "type",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "path",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "kind",
+                                "type" : "string"
+                              }
+                            ],
+                            "has_origin" : true,
+                            "path" : "semmle/python/frameworks/data/internal/ApiGraphModelsExtensions.qll",
+                            "start_line" : 27,
+                            "start_column" : 1,
+                            "end_line" : 29,
+                            "end_column" : 3
+                          },
+                          {
+                            "name" : "barrierGuardModel",
+                            "parameters" : [
+                              {
+                                "name" : "type",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "path",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "acceptingValue",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "kind",
+                                "type" : "string"
+                              }
+                            ],
+                            "has_origin" : true,
+                            "path" : "semmle/python/frameworks/data/internal/ApiGraphModelsExtensions.qll",
+                            "start_line" : 39,
+                            "start_column" : 1,
+                            "end_line" : 41,
+                            "end_column" : 3
+                          },
+                          {
+                            "name" : "summaryModel",
+                            "parameters" : [
+                              {
+                                "name" : "type",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "path",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "input",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "output",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "kind",
+                                "type" : "string"
+                              }
+                            ],
+                            "has_origin" : true,
+                            "path" : "semmle/python/frameworks/data/internal/ApiGraphModelsExtensions.qll",
+                            "start_line" : 51,
+                            "start_column" : 1,
+                            "end_line" : 53,
+                            "end_column" : 3
+                          },
+                          {
+                            "name" : "neutralModel",
+                            "parameters" : [
+                              {
+                                "name" : "type",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "path",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "kind",
+                                "type" : "string"
+                              }
+                            ],
+                            "has_origin" : false,
+                            "path" : "semmle/python/frameworks/data/internal/ApiGraphModelsExtensions.qll",
+                            "start_line" : 60,
+                            "start_column" : 1,
+                            "end_line" : 60,
+                            "end_column" : 74
+                          },
+                          {
+                            "name" : "typeModel",
+                            "parameters" : [
+                              {
+                                "name" : "type1",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "type2",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "path",
+                                "type" : "string"
+                              }
+                            ],
+                            "has_origin" : false,
+                            "path" : "semmle/python/frameworks/data/internal/ApiGraphModelsExtensions.qll",
+                            "start_line" : 65,
+                            "start_column" : 1,
+                            "end_line" : 65,
+                            "end_column" : 73
+                          },
+                          {
+                            "name" : "typeVariableModel",
+                            "parameters" : [
+                              {
+                                "name" : "name",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "path",
+                                "type" : "string"
+                              }
+                            ],
+                            "has_origin" : false,
+                            "path" : "semmle/python/frameworks/data/internal/ApiGraphModelsExtensions.qll",
+                            "start_line" : 70,
+                            "start_column" : 1,
+                            "end_line" : 70,
+                            "end_column" : 66
+                          }
+                        ]
+                      }
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Asyncpg.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:sinkModel: 5 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:typeModel: 6 tuples.
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Azure.Keyvault.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:sinkModel: 4 tuples.
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Azure.Storage.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:sinkModel: 29 tuples.
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Django.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:barrierGuardModel: 1 tuples.
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Eventlet.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:typeModel: 2 tuples.
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Gevent.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:typeModel: 1 tuples.
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:sourceModel: 12 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:sinkModel: 2 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:summaryModel: 67 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:neutralModel: 0 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:typeModel: 2 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:typeVariableModel: 0 tuples.
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/agent.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:sinkModel: 1 tuples.
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/anthropic.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:sinkModel: 6 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:typeModel: 1 tuples.
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/builtins.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:typeModel: 244 tuples.
+[2026-07-24 19:06:02] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/empty.model.yml.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:sourceModel: 0 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:sinkModel: 0 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:barrierModel: 0 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:barrierGuardModel: 0 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:summaryModel: 0 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:neutralModel: 0 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:typeModel: 0 tuples.
+[2026-07-24 19:06:02] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:typeVariableModel: 0 tuples.
+[2026-07-24 19:06:03] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/subclass-capture/ALL.model.yml.
+[2026-07-24 19:06:03] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:typeModel: 58275 tuples.
+[2026-07-24 19:06:03] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/lxml.model.yml.
+[2026-07-24 19:06:03] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:summaryModel: 1 tuples.
+[2026-07-24 19:06:03] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/openai.model.yml.
+[2026-07-24 19:06:03] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:sinkModel: 4 tuples.
+[2026-07-24 19:06:03] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:typeModel: 1 tuples.
+[2026-07-24 19:06:03] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/xml.model.yml.
+[2026-07-24 19:06:03] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/python-all:summaryModel: 1 tuples.
+[2026-07-24 19:06:03] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/ext/supported-threat-models.model.yml.
+[2026-07-24 19:06:03] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/threat-models:threatModelConfiguration: 1 tuples.
+[2026-07-24 19:06:03] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/ext/threat-model-grouping.model.yml.
+[2026-07-24 19:06:03] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/threat-models:threatModelGrouping: 15 tuples.
+[2026-07-24 19:06:03] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/ext/default-alert-filter.yml.
+[2026-07-24 19:06:03] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/util:restrictAlertsTo: 0 tuples.
+[2026-07-24 19:06:03] Calling plumbing command: codeql generate extensible-predicate-metadata /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util
+[2026-07-24 19:06:03] Calling plumbing command: codeql pack packlist /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util --format=json
+[2026-07-24 19:06:03] Calling plumbing command: codeql resolve files --include=**/*.qll --include=**/*.dbscheme --include=**/*.dbscheme.stats --include=**/*.md --include=**/*.qls --include=**/*.qlref --include=**/*.yml --include=**/*.yaml --include=**/upgrade.properties --include=**/*.ql --include=!**/.* --include=!**/qlpack.auth.yml --include=!**/qlconfig.yml --include=!codeql-pack.lock.yml --include=!qlpack.lock.yml --include=!codeql-pack.release.yml --include=!change-notes --include=!**/*.qhelp --include=codeql-pack.yml --include=qlpack.yml --include=LICENSE --include=README.md --include=CHANGELOG.md --include=!**/*.qlx --include=ext/*.yml /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util --format=json
+[2026-07-24 19:06:03] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util...
+[2026-07-24 19:06:03] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql...
+[2026-07-24 19:06:03] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util...
+[2026-07-24 19:06:03] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/suppression...
+[2026-07-24 19:06:03] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/test...
+[2026-07-24 19:06:03] [PROGRESS] resolve files> Scanning /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/ext...
+[2026-07-24 19:06:03] Plumbing command codeql resolve files completed:
+                      [
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/CHANGELOG.md",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/AlertFiltering.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Boolean.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/DenseRank.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Either.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/FilePath.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/FileSystem.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Location.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Numbers.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Option.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/ReportStats.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Strings.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/UnboundList.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Unit.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Void.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/suppression/AlertSuppression.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/test/ExternalLocationPostProcessing.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/test/InlineExpectationsTest.qll",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/ext/default-alert-filter.yml",
+                        "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/qlpack.yml"
+                      ]
+[2026-07-24 19:06:03] Plumbing command codeql pack packlist completed:
+                      {
+                        "paths" : [
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/CHANGELOG.md",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/AlertFiltering.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Boolean.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/DenseRank.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Either.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/FilePath.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/FileSystem.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Location.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Numbers.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Option.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/ReportStats.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Strings.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/UnboundList.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Unit.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/Void.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/suppression/AlertSuppression.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/test/ExternalLocationPostProcessing.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/test/InlineExpectationsTest.qll",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/ext/default-alert-filter.yml",
+                          "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/qlpack.yml"
+                        ]
+                      }
+[2026-07-24 19:06:03] Plumbing command codeql generate extensible-predicate-metadata completed:
+                      {
+                        "extensible_predicates" : [
+                          {
+                            "name" : "restrictAlertsTo",
+                            "parameters" : [
+                              {
+                                "name" : "filePath",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "lineStart",
+                                "type" : "int"
+                              },
+                              {
+                                "name" : "lineEnd",
+                                "type" : "int"
+                              }
+                            ],
+                            "has_origin" : false,
+                            "path" : "codeql/util/AlertFiltering.qll",
+                            "start_line" : 38,
+                            "start_column" : 1,
+                            "end_line" : 38,
+                            "end_column" : 84
+                          },
+                          {
+                            "name" : "restrictAlertsToExactLocation",
+                            "parameters" : [
+                              {
+                                "name" : "filePath",
+                                "type" : "string"
+                              },
+                              {
+                                "name" : "startLine",
+                                "type" : "int"
+                              },
+                              {
+                                "name" : "startColumn",
+                                "type" : "int"
+                              },
+                              {
+                                "name" : "endLine",
+                                "type" : "int"
+                              },
+                              {
+                                "name" : "endColumn",
+                                "type" : "int"
+                              }
+                            ],
+                            "has_origin" : false,
+                            "path" : "codeql/util/AlertFiltering.qll",
+                            "start_line" : 68,
+                            "start_column" : 1,
+                            "end_line" : 70,
+                            "end_column" : 3
+                          }
+                        ]
+                      }
+[2026-07-24 19:06:03] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/util:restrictAlertsToExactLocation: 0 tuples.
+[2026-07-24 19:06:03] Plumbing command codeql resolve extensions-by-pack completed:
+                      {
+                        "models" : [ ],
+                        "data" : {
+                          "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python" : [
+                            {
+                              "predicate" : "threatModelConfiguration",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/ext/default-threat-models-fixup.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 0,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=8",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "barrierGuardModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/AntiSSRF.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 1,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Asyncpg.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 2,
+                              "rowCount" : 5,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1+2+1+2",
+                                "columnNumbers" : "A=9*5"
+                              }
+                            },
+                            {
+                              "predicate" : "typeModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Asyncpg.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 7,
+                              "rowCount" : 6,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=20+4+1*2+2+1",
+                                "columnNumbers" : "A=9*6"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Azure.Keyvault.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 13,
+                              "rowCount" : 4,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*3",
+                                "columnNumbers" : "A=9*4"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Azure.Storage.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 17,
+                              "rowCount" : 29,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*28",
+                                "columnNumbers" : "A=9*29"
+                              }
+                            },
+                            {
+                              "predicate" : "barrierGuardModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Django.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 46,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "typeModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Eventlet.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 47,
+                              "rowCount" : 2,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=7+2",
+                                "columnNumbers" : "A=9*2"
+                              }
+                            },
+                            {
+                              "predicate" : "typeModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Gevent.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 49,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=7",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "sourceModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 50,
+                              "rowCount" : 12,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*4+2+1+2+1*2+4+2",
+                                "columnNumbers" : "A=9*12"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 62,
+                              "rowCount" : 2,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=29+2",
+                                "columnNumbers" : "A=9*2"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib.model.yml",
+                              "index" : 2,
+                              "firstRowId" : 64,
+                              "rowCount" : 67,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=39+1+2+4+2*2+4+2*3+1+2+1+2+1+2+4+2+4+2*2+3+2*2+3+1+2*4+4+1+4+1+4+1*5+2*4+4+1+2*12+3+2+3+4+1+2*2+1+2",
+                                "columnNumbers" : "A=9*67"
+                              }
+                            },
+                            {
+                              "predicate" : "neutralModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib.model.yml",
+                              "index" : 3,
+                              "firstRowId" : 131,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "typeModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib.model.yml",
+                              "index" : 4,
+                              "firstRowId" : 131,
+                              "rowCount" : 2,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=190+2",
+                                "columnNumbers" : "A=9*2"
+                              }
+                            },
+                            {
+                              "predicate" : "typeVariableModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/Stdlib.model.yml",
+                              "index" : 5,
+                              "firstRowId" : 133,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/agent.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 133,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/anthropic.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 134,
+                              "rowCount" : 6,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*5",
+                                "columnNumbers" : "A=9*6"
+                              }
+                            },
+                            {
+                              "predicate" : "typeModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/anthropic.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 140,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=17",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "typeModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/builtins.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 141,
+                              "rowCount" : 244,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=7+3*243",
+                                "columnNumbers" : "A=5*244"
+                              }
+                            },
+                            {
+                              "predicate" : "sourceModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/empty.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 385,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/empty.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 385,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "barrierModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/empty.model.yml",
+                              "index" : 2,
+                              "firstRowId" : 385,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "barrierGuardModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/empty.model.yml",
+                              "index" : 3,
+                              "firstRowId" : 385,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/empty.model.yml",
+                              "index" : 4,
+                              "firstRowId" : 385,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "neutralModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/empty.model.yml",
+                              "index" : 5,
+                              "firstRowId" : 385,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "typeModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/empty.model.yml",
+                              "index" : 6,
+                              "firstRowId" : 385,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "typeVariableModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/empty.model.yml",
+                              "index" : 7,
+                              "firstRowId" : 385,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "typeModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/data/internal/subclass-capture/ALL.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 385,
+                              "rowCount" : 58275,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=7+3*58274",
+                                "columnNumbers" : "A=5*58275"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/lxml.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 58660,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/openai.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 58661,
+                              "rowCount" : 4,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*3",
+                                "columnNumbers" : "A=9*4"
+                              }
+                            },
+                            {
+                              "predicate" : "typeModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/openai.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 58665,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=15",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/frameworks/xml.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 58666,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "threatModelConfiguration",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/ext/supported-threat-models.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 58667,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=6",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "threatModelGrouping",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models/ext/threat-model-grouping.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 58668,
+                              "rowCount" : 15,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=8+3+1+3+1*5+3+1+5+1*3",
+                                "columnNumbers" : "A=9*15"
+                              }
+                            },
+                            {
+                              "predicate" : "restrictAlertsTo",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/ext/default-alert-filter.yml",
+                              "index" : 0,
+                              "firstRowId" : 58683,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "restrictAlertsToExactLocation",
+                              "file" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/ext/default-alert-filter.yml",
+                              "index" : 1,
+                              "firstRowId" : 58683,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            }
+                          ]
+                        },
+                        "threatModels" : {
+                          "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python" : {
+                            "extensions" : [
+                              {
+                                "data" : [ ],
+                                "addsTo" : {
+                                  "extensible" : "threatModelConfiguration",
+                                  "checkPresence" : true,
+                                  "packName" : "codeql/threat-models"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "extensionPacks" : [ ]
+                      }
+[2026-07-24 19:06:03] [SPAMMY] execute query-server2> Selected JGit Git client for /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python because the repository uses SHA-1 object format.
+[2026-07-24 19:06:03] [SPAMMY] execute query-server2> Selected JGit Git client for /home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib because the repository uses SHA-1 object format.
+[2026-07-24 19:06:04] [SPAMMY] execute query-server2> Selected JGit Git client for /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/threat-models because the repository uses SHA-1 object format.
+[2026-07-24 19:06:04] [SPAMMY] execute query-server2> Selected JGit Git client for /home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util because the repository uses SHA-1 object format.
+[2026-07-24 19:06:04] Starting evaluation of /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql
+[2026-07-24 19:06:04] (0s) Start query execution
+[2026-07-24 19:06:04] (0s) Beginning execution of /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql
+[2026-07-24 19:06:04] (0s) Starting to evaluate predicate #select#query/2@645efbg3
+[2026-07-24 19:06:04] (0s)  >>> Created relation #select#query/2@645efbg3 with 1 rows and digest f4b598tjvp5757m5abhcdca9hdc.
+[2026-07-24 19:06:04] (0s) Query done
+[2026-07-24 19:06:04] (0s) Pausing evaluation to sync to disk at sequence stamp o+5140
+[2026-07-24 19:06:04] (0s) Unpausing evaluation
+[2026-07-24 19:06:04] Evaluation of /home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql produced BQRS results.
+ --- Evaluator Log Summary --- 
+Completed evaluation of query example3.ql.
+Most expensive predicates for stage 0 of completed query example3.ql:
+        time | predicate
+        -----|----------
+         5ms | #select#query@645efbg3
+
+Most expensive predicates for completed query example3.ql:
+        time | predicate
+        -----|----------
+         5ms | #select#query@645efbg3
+
+[2026-07-24 19:06:04] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.0 seconds
+        * Total time spent evaluating predicates: 0.0 seconds

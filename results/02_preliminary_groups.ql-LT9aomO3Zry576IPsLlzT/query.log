@@ -1,0 +1,2049 @@
+[2026-08-10 22:15:58] [SPAMMY] execute query-server2> runQuery called with /home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql
+[2026-08-10 22:15:58] Calling plumbing command: codeql resolve library-path --additional-packs=/home/oleksii-shemshur/work/toolchains/tools/queries --query=/home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql --format=json
+[2026-08-10 22:15:58] [DETAILS] resolve library-path> Resolving query at normalized path /home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql.
+[2026-08-10 22:15:58] [DETAILS] resolve library-path> Found enclosing pack 'flags/gcc-queries' at /home/oleksii-shemshur/work/toolchains/tools/queries.
+[2026-08-10 22:15:58] [DETAILS] resolve library-path> Adding compilation cache at /home/oleksii-shemshur/.codeql/compile-cache.
+[2026-08-10 22:15:58] [DETAILS] resolve library-path> QL pack dependencies for /home/oleksii-shemshur/work/toolchains/tools/queries found in cache.
+[2026-08-10 22:15:58] [DETAILS] resolve library-path> Found dbscheme through QL packs: /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmlecode.cpp.dbscheme.
+[2026-08-10 22:15:58] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/home/oleksii-shemshur/work/toolchains/tools/queries",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/dataflow/2.1.10",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/controlflow/2.0.38",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/mad/1.0.54",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/quantum/0.0.32",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/rangeanalysis/1.0.54",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/ssa/2.0.30",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/tutorial/1.0.54",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/typeflow/1.0.54",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/typetracking/2.0.38",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41",
+                          "/home/oleksii-shemshur/.codeql/packages/codeql/xml/1.0.54"
+                        ],
+                        "dbscheme" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/home/oleksii-shemshur/.codeql/compile-cache"
+                        ],
+                        "relativeName" : "flags/gcc-queries/02_preliminary_groups.ql",
+                        "qlPackName" : "flags/gcc-queries"
+                      }
+[2026-08-10 22:15:58] [PROGRESS] execute query-server2> Compiling query plan for /home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql.
+[2026-08-10 22:15:58] [DETAILS] execute query-server2> Resolving imports for /home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql.
+[2026-08-10 22:15:58] Resolved file set for /home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql hashes to 5f61816525cdcc67f194a4140ea282ce.
+[2026-08-10 22:15:58] [DETAILS] execute query-server2> Checking QL for /home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql.
+[2026-08-10 22:15:58] Stale frontend caches are invalidated based on import graph reachability.
+[2026-08-10 22:15:58] ExternalModuleBindingPass ...
+[2026-08-10 22:15:59] ExternalModuleBindingPass time: 00:00.498
+[2026-08-10 22:15:59] CollectInstantiationsPass ...
+[2026-08-10 22:15:59] CollectInstantiationsPass time: 00:00.069
+[2026-08-10 22:15:59] Ql checks ...
+[2026-08-10 22:16:01] Ql checks time: 00:01.916
+[2026-08-10 22:16:05] Compilation pipeline
+[2026-08-10 22:16:06] Type Inference ...
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: Best number of iterations,Maximum number of runs,Number of BDD variables,Size of BDD for typefacts
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,14,14
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,22,22
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,1074,3935
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,0,0
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,77,435
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,10,15
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,385,1184
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,89,90
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,205,480
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,99,99
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,8,9
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,6,8
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,8,8
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,16,27
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,9,10
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,44,95
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,8,8
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,74,132
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,19,22
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,11,11
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,7,7
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,19,32
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,7,9
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,15,21
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,12,16
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,7,10
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,12,16
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,6
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,6
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,10,14
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,10,10
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,15,21
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,7,9
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,11,15
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,8,8
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,30,47
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,7,9
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,6
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,22,22
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,14,15
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,6,7
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,10,10
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,10,10
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,10,10
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,10,10
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,10,10
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,10,10
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,9,15
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,1,1
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,10,11
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,5,5
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,3,3
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,2,2
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,6,6
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:06] CSV_TYPE_HIERARCHY: 0,0,4,4
+[2026-08-10 22:16:07] Type Inference time: 00:01.734
+[2026-08-10 22:16:08] [DETAILS] execute query-server2> Optimizing /home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql.
+[2026-08-10 22:16:08] Processing compilation pipeline
+[2026-08-10 22:16:08] Started compiling a query
+[2026-08-10 22:16:08] Initialising compiler...
+[2026-08-10 22:16:08] 	 ... compiler initialised
+[2026-08-10 22:16:08] About to start query optimisation
+[2026-08-10 22:16:08] Compilation cache hit - skipping compilation.
+[2026-08-10 22:16:08] Compilation cache hit - skipping compilation.
+[2026-08-10 22:16:08] Compilation cache hit - skipping compilation.
+[2026-08-10 22:16:09] Compilation cache hit - skipping compilation.
+[2026-08-10 22:16:09] Compilation cache hit - skipping compilation.
+[2026-08-10 22:16:09] Compilation cache hit - skipping compilation.
+[2026-08-10 22:16:09] Compilation cache hit - skipping compilation.
+[2026-08-10 22:16:09] Compilation cache miss for d556d565da90ac22323c804d364adda1.
+[2026-08-10 22:16:10] Stored compiled program for d556d565da90ac22323c804d364adda1.
+[2026-08-10 22:16:10] CSV_COMPILATION: NONE,MISC,RA_TRANSLATION,OPTIMISATIONS
+[2026-08-10 22:16:10] CSV_COMPILATION: 236,344,182,726
+[2026-08-10 22:16:10] [PROGRESS] execute query-server2> No database upgrade/downgrade needed for /home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql
+[2026-08-10 22:16:10] Calling plumbing command: codeql resolve extensions-by-pack --additional-packs=/home/oleksii-shemshur/work/toolchains/tools/queries --include-extension-row-locations /home/oleksii-shemshur/work/toolchains/tools/queries
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] flags/gcc-queries: not 0.0.1 {root: flags/gcc-queries@0.0.1}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] flags/gcc-queries: 0.0.1 {flags/gcc-queries: not 0.0.1 {root: flags/gcc-queries@0.0.1}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] flags/gcc-queries: * [*], codeql/cpp-all: not * [*] {dependency: flags/gcc-queries@* [*] requires codeql/cpp-all@*}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 1] flags/gcc-queries: 0.0.1
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/cpp-all: * [*] {flags/gcc-queries: * [*], codeql/cpp-all: not * [*] {dependency: flags/gcc-queries@* [*] requires codeql/cpp-all@*}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/cpp-all: * [*], codeql/dataflow: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/dataflow@2.1.10}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/cpp-all: * [*], codeql/mad: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/mad@1.0.54}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/cpp-all: * [*], codeql/quantum: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/quantum@0.0.32}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/cpp-all: * [*], codeql/rangeanalysis: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/rangeanalysis@1.0.54}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/cpp-all: * [*], codeql/ssa: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/ssa@2.0.30}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/cpp-all: * [*], codeql/tutorial: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/tutorial@1.0.54}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/cpp-all: * [*], codeql/typeflow: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/typeflow@1.0.54}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/cpp-all: * [*], codeql/util: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/util@2.0.41}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/cpp-all: * [*], codeql/xml: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/xml@1.0.54}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 2] codeql/cpp-all: 12.0.1
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/xml: * [*] {codeql/cpp-all: * [*], codeql/xml: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/xml@1.0.54}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/util: * [*] {codeql/cpp-all: * [*], codeql/util: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/util@2.0.41}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/typeflow: * [*] {codeql/cpp-all: * [*], codeql/typeflow: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/typeflow@1.0.54}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/tutorial: * [*] {codeql/cpp-all: * [*], codeql/tutorial: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/tutorial@1.0.54}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/ssa: * [*] {codeql/cpp-all: * [*], codeql/ssa: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/ssa@2.0.30}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/rangeanalysis: * [*] {codeql/cpp-all: * [*], codeql/rangeanalysis: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/rangeanalysis@1.0.54}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/quantum: * [*] {codeql/cpp-all: * [*], codeql/quantum: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/quantum@0.0.32}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/mad: * [*] {codeql/cpp-all: * [*], codeql/mad: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/mad@1.0.54}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/dataflow: * [*] {codeql/cpp-all: * [*], codeql/dataflow: not * [*] {dependency: codeql/cpp-all@* [*] requires codeql/dataflow@2.1.10}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/dataflow: * [*], codeql/controlflow: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/controlflow@2.0.38}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/dataflow: * [*], codeql/ssa: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/ssa@2.0.30}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/dataflow: * [*], codeql/typetracking: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/typetracking@2.0.38}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/dataflow: * [*], codeql/util: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/util@2.0.41}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 3] codeql/dataflow: 2.1.10
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/typetracking: * [*] {codeql/dataflow: * [*], codeql/typetracking: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/typetracking@2.0.38}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/controlflow: * [*] {codeql/dataflow: * [*], codeql/controlflow: not * [*] {dependency: codeql/dataflow@* [*] requires codeql/controlflow@2.0.38}}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/controlflow: * [*], codeql/util: not * [*] {dependency: codeql/controlflow@* [*] requires codeql/util@2.0.41}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 4] codeql/controlflow: 2.0.38
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/mad: * [*], codeql/dataflow: not * [*] {dependency: codeql/mad@* [*] requires codeql/dataflow@2.1.10}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/mad: * [*], codeql/util: not * [*] {dependency: codeql/mad@* [*] requires codeql/util@2.0.41}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 5] codeql/mad: 1.0.54
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/quantum: * [*], codeql/util: not * [*] {dependency: codeql/quantum@* [*] requires codeql/util@2.0.41}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 6] codeql/quantum: 0.0.32
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/rangeanalysis: * [*], codeql/util: not * [*] {dependency: codeql/rangeanalysis@* [*] requires codeql/util@2.0.41}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 7] codeql/rangeanalysis: 1.0.54
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/ssa: * [*], codeql/controlflow: not * [*] {dependency: codeql/ssa@* [*] requires codeql/controlflow@2.0.38}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/ssa: * [*], codeql/util: not * [*] {dependency: codeql/ssa@* [*] requires codeql/util@2.0.41}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 8] codeql/ssa: 2.0.30
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 9] codeql/tutorial: 1.0.54
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/typeflow: * [*], codeql/util: not * [*] {dependency: codeql/typeflow@* [*] requires codeql/util@2.0.41}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 10] codeql/typeflow: 1.0.54
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/typetracking: * [*], codeql/util: not * [*] {dependency: codeql/typetracking@* [*] requires codeql/util@2.0.41}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 11] codeql/typetracking: 2.0.38
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 12] codeql/util: 2.0.41
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/xml: * [*], codeql/util: not * [*] {dependency: codeql/xml@* [*] requires codeql/util@2.0.41}
+[2026-08-10 22:16:10] [SPAMMY] resolve extensions-by-pack> [DECISION 13] codeql/xml: 1.0.54
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Boost.Asio.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:sourceModel: 6 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:sinkModel: 4 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 1 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CA2CAEX.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 13 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CAtlArray.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 10 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CAtlFile.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 4 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CAtlFileMappingBase.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 9 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CAtlList.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 10 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CAtlTemporaryFile.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 3 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CComBSTR.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 28 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CComSafeArray.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 21 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CPathT.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 15 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CRegKey.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 15 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CSimpleArray.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 7 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CSimpleMap.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 8 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CSimpleStringT.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 37 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CStrBufT.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 3 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CStringData.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 1 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CStringT.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 113 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CUrl.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 17 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/ComPtr.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 26 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/ComPtrRef.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 5 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/MySql.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 2 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:barrierModel: 2 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Oracle.oci.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:sinkModel: 2 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Strsafe.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:sourceModel: 8 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 48 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Windows.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:sourceModel: 25 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 15 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/ZMQ.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:sourceModel: 3 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:sinkModel: 3 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 2 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/Bsd.allocation.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:allocationFunctionModel: 2 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/Glibc.allocation.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:allocationFunctionModel: 2 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/OpenSSL.allocation.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:allocationFunctionModel: 4 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/Std.allocation.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:allocationFunctionModel: 13 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/Windows.allocation.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:allocationFunctionModel: 24 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/empty.allocation.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:allocationFunctionModel: 0 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/azure.core.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:sourceModel: 6 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 25 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/bsl.array.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 9 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/bsl.deque.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 69 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/bsl.forward_list.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 52 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/bsl.list.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 67 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/bsl.vector.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 56 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/cctype.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 4 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/deallocation/Bsd.deallocation.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:deallocationFunctionModel: 3 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/deallocation/Std.deallocation.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:deallocationFunctionModel: 37 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/deallocation/Windows.deallocation.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:deallocationFunctionModel: 36 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/deallocation/empty.deallocation.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:deallocationFunctionModel: 0 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/empty.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:sourceModel: 0 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:sinkModel: 0 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:barrierModel: 0 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:barrierGuardModel: 0 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 0 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/empty.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 0 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/brotli/brotli.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 474 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/curl/curl.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 953 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/glibc/glibc.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 5488 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/libidn2/libidn2.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 142 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/libssh2/libssh2.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 511 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/libuv/libuv.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 640 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/nghttp2/nghttp2.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 565 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/openssl/openssl.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 21578 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/sqlite/sqlite.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 942 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/zlib/zlib.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 162 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/getc.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:sourceModel: 13 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/iconv.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 1 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/oleauto.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 3 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/pthread.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 1 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.array.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 9 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.deque.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 69 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.format.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 9 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.forward_list.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 52 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.iterator.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 6 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.list.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 67 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.thread.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 5 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.vector.model.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/cpp-all:summaryModel: 56 tuples.
+[2026-08-10 22:16:10] [PROGRESS] resolve extensions-by-pack> Loading data extensions in /home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/ext/default-alert-filter.yml.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/util:restrictAlertsTo: 0 tuples.
+[2026-08-10 22:16:10] [DETAILS] resolve extensions-by-pack>   Found extension targeting codeql/util:restrictAlertsToExactLocation: 0 tuples.
+[2026-08-10 22:16:10] Plumbing command codeql resolve extensions-by-pack completed:
+                      {
+                        "models" : [ ],
+                        "data" : {
+                          "/home/oleksii-shemshur/work/toolchains/tools/queries" : [
+                            {
+                              "predicate" : "sourceModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Boost.Asio.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 0,
+                              "rowCount" : 6,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*5",
+                                "columnNumbers" : "A=9*6"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Boost.Asio.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 6,
+                              "rowCount" : 4,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=17+1*3",
+                                "columnNumbers" : "A=9*4"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Boost.Asio.model.yml",
+                              "index" : 2,
+                              "firstRowId" : 10,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=25",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CA2CAEX.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 11,
+                              "rowCount" : 13,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*12",
+                                "columnNumbers" : "A=9*13"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CAtlArray.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 24,
+                              "rowCount" : 10,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*9",
+                                "columnNumbers" : "A=9*10"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CAtlFile.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 34,
+                              "rowCount" : 4,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*3",
+                                "columnNumbers" : "A=9*4"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CAtlFileMappingBase.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 38,
+                              "rowCount" : 9,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*8",
+                                "columnNumbers" : "A=9*9"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CAtlList.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 47,
+                              "rowCount" : 10,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*9",
+                                "columnNumbers" : "A=9*10"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CAtlTemporaryFile.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 57,
+                              "rowCount" : 3,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*2",
+                                "columnNumbers" : "A=9*3"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CComBSTR.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 60,
+                              "rowCount" : 28,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*27",
+                                "columnNumbers" : "A=9*28"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CComSafeArray.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 88,
+                              "rowCount" : 21,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*20",
+                                "columnNumbers" : "A=9*21"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CPathT.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 109,
+                              "rowCount" : 15,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*10+4+1*3",
+                                "columnNumbers" : "A=9*15"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CRegKey.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 124,
+                              "rowCount" : 15,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*14",
+                                "columnNumbers" : "A=9*15"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CSimpleArray.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 139,
+                              "rowCount" : 7,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*6",
+                                "columnNumbers" : "A=9*7"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CSimpleMap.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 146,
+                              "rowCount" : 8,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*7",
+                                "columnNumbers" : "A=9*8"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CSimpleStringT.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 154,
+                              "rowCount" : 37,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*36",
+                                "columnNumbers" : "A=9*37"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CStrBufT.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 191,
+                              "rowCount" : 3,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*2",
+                                "columnNumbers" : "A=9*3"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CStringData.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 194,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CStringT.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 195,
+                              "rowCount" : 113,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*112",
+                                "columnNumbers" : "A=9*113"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/CUrl.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 308,
+                              "rowCount" : 17,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*16",
+                                "columnNumbers" : "A=9*17"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/ComPtr.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 325,
+                              "rowCount" : 26,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*25",
+                                "columnNumbers" : "A=9*26"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/ComPtrRef.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 351,
+                              "rowCount" : 5,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1+2*2+1",
+                                "columnNumbers" : "A=9*5"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/MySql.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 356,
+                              "rowCount" : 2,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1",
+                                "columnNumbers" : "A=9*2"
+                              }
+                            },
+                            {
+                              "predicate" : "barrierModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/MySql.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 358,
+                              "rowCount" : 2,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=13+1",
+                                "columnNumbers" : "A=9*2"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Oracle.oci.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 360,
+                              "rowCount" : 2,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1",
+                                "columnNumbers" : "A=9*2"
+                              }
+                            },
+                            {
+                              "predicate" : "sourceModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Strsafe.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 362,
+                              "rowCount" : 8,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=8+1+2+1+2+1+2+1",
+                                "columnNumbers" : "A=9*8"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Strsafe.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 370,
+                              "rowCount" : 48,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=24+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1",
+                                "columnNumbers" : "A=9*48"
+                              }
+                            },
+                            {
+                              "predicate" : "sourceModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Windows.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 418,
+                              "rowCount" : 25,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=8+1*5+2+1+2+1*6+2*2+1*8",
+                                "columnNumbers" : "A=9*25"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/Windows.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 443,
+                              "rowCount" : 15,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=42+1+2*2+1*2+2+1*6+2*2",
+                                "columnNumbers" : "A=9*15"
+                              }
+                            },
+                            {
+                              "predicate" : "sourceModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/ZMQ.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 458,
+                              "rowCount" : 3,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*2",
+                                "columnNumbers" : "A=9*3"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/ZMQ.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 461,
+                              "rowCount" : 3,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=14+1*2",
+                                "columnNumbers" : "A=9*3"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/ZMQ.model.yml",
+                              "index" : 2,
+                              "firstRowId" : 464,
+                              "rowCount" : 2,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=21+1",
+                                "columnNumbers" : "A=9*2"
+                              }
+                            },
+                            {
+                              "predicate" : "allocationFunctionModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/Bsd.allocation.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 466,
+                              "rowCount" : 2,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1",
+                                "columnNumbers" : "A=9*2"
+                              }
+                            },
+                            {
+                              "predicate" : "allocationFunctionModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/Glibc.allocation.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 468,
+                              "rowCount" : 2,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1",
+                                "columnNumbers" : "A=9*2"
+                              }
+                            },
+                            {
+                              "predicate" : "allocationFunctionModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/OpenSSL.allocation.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 470,
+                              "rowCount" : 4,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*3",
+                                "columnNumbers" : "A=9*4"
+                              }
+                            },
+                            {
+                              "predicate" : "allocationFunctionModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/Std.allocation.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 474,
+                              "rowCount" : 13,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*12",
+                                "columnNumbers" : "A=9*13"
+                              }
+                            },
+                            {
+                              "predicate" : "allocationFunctionModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/Windows.allocation.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 487,
+                              "rowCount" : 24,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*23",
+                                "columnNumbers" : "A=9*24"
+                              }
+                            },
+                            {
+                              "predicate" : "allocationFunctionModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/allocation/empty.allocation.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 511,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "sourceModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/azure.core.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 511,
+                              "rowCount" : 6,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*5",
+                                "columnNumbers" : "A=9*6"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/azure.core.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 517,
+                              "rowCount" : 25,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=17+1*24",
+                                "columnNumbers" : "A=9*25"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/bsl.array.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 542,
+                              "rowCount" : 9,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*8",
+                                "columnNumbers" : "A=9*9"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/bsl.deque.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 551,
+                              "rowCount" : 69,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*68",
+                                "columnNumbers" : "A=9*69"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/bsl.forward_list.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 620,
+                              "rowCount" : 52,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*51",
+                                "columnNumbers" : "A=9*52"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/bsl.list.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 672,
+                              "rowCount" : 67,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*66",
+                                "columnNumbers" : "A=9*67"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/bsl.vector.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 739,
+                              "rowCount" : 56,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*55",
+                                "columnNumbers" : "A=9*56"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/cctype.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 795,
+                              "rowCount" : 4,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*3",
+                                "columnNumbers" : "A=9*4"
+                              }
+                            },
+                            {
+                              "predicate" : "deallocationFunctionModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/deallocation/Bsd.deallocation.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 799,
+                              "rowCount" : 3,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*2",
+                                "columnNumbers" : "A=9*3"
+                              }
+                            },
+                            {
+                              "predicate" : "deallocationFunctionModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/deallocation/Std.deallocation.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 802,
+                              "rowCount" : 37,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*36",
+                                "columnNumbers" : "A=9*37"
+                              }
+                            },
+                            {
+                              "predicate" : "deallocationFunctionModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/deallocation/Windows.deallocation.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 839,
+                              "rowCount" : 36,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*35",
+                                "columnNumbers" : "A=9*36"
+                              }
+                            },
+                            {
+                              "predicate" : "deallocationFunctionModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/deallocation/empty.deallocation.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 875,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "sourceModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/empty.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 875,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "sinkModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/empty.model.yml",
+                              "index" : 1,
+                              "firstRowId" : 875,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "barrierModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/empty.model.yml",
+                              "index" : 2,
+                              "firstRowId" : 875,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "barrierGuardModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/empty.model.yml",
+                              "index" : 3,
+                              "firstRowId" : 875,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/empty.model.yml",
+                              "index" : 4,
+                              "firstRowId" : 875,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/empty.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 875,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/brotli/brotli.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 875,
+                              "rowCount" : 474,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*473",
+                                "columnNumbers" : "A=9*474"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/curl/curl.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 1349,
+                              "rowCount" : 953,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*952",
+                                "columnNumbers" : "A=9*953"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/glibc/glibc.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 2302,
+                              "rowCount" : 5488,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*5487",
+                                "columnNumbers" : "A=9*5488"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/libidn2/libidn2.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 7790,
+                              "rowCount" : 142,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*141",
+                                "columnNumbers" : "A=9*142"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/libssh2/libssh2.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 7932,
+                              "rowCount" : 511,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*510",
+                                "columnNumbers" : "A=9*511"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/libuv/libuv.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 8443,
+                              "rowCount" : 640,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*639",
+                                "columnNumbers" : "A=9*640"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/nghttp2/nghttp2.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 9083,
+                              "rowCount" : 565,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*564",
+                                "columnNumbers" : "A=9*565"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/openssl/openssl.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 9648,
+                              "rowCount" : 21578,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*21577",
+                                "columnNumbers" : "A=9*21578"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/sqlite/sqlite.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 31226,
+                              "rowCount" : 942,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*941",
+                                "columnNumbers" : "A=9*942"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/generated/modelgenerator/zlib/zlib.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32168,
+                              "rowCount" : 162,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*161",
+                                "columnNumbers" : "A=9*162"
+                              }
+                            },
+                            {
+                              "predicate" : "sourceModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/getc.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32330,
+                              "rowCount" : 13,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=7+1*12",
+                                "columnNumbers" : "A=9*13"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/iconv.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32343,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/oleauto.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32344,
+                              "rowCount" : 3,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*2",
+                                "columnNumbers" : "A=9*3"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/pthread.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32347,
+                              "rowCount" : 1,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6",
+                                "columnNumbers" : "A=9"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.array.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32348,
+                              "rowCount" : 9,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*8",
+                                "columnNumbers" : "A=9*9"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.deque.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32357,
+                              "rowCount" : 69,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*68",
+                                "columnNumbers" : "A=9*69"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.format.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32426,
+                              "rowCount" : 9,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*8",
+                                "columnNumbers" : "A=9*9"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.forward_list.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32435,
+                              "rowCount" : 52,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*51",
+                                "columnNumbers" : "A=9*52"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.iterator.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32487,
+                              "rowCount" : 6,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*5",
+                                "columnNumbers" : "A=9*6"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.list.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32493,
+                              "rowCount" : 67,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*66",
+                                "columnNumbers" : "A=9*67"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.thread.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32560,
+                              "rowCount" : 5,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*4",
+                                "columnNumbers" : "A=9*5"
+                              }
+                            },
+                            {
+                              "predicate" : "summaryModel",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/ext/std.vector.model.yml",
+                              "index" : 0,
+                              "firstRowId" : 32565,
+                              "rowCount" : 56,
+                              "predicateHasOrigin" : true,
+                              "locations" : {
+                                "lineNumbers" : "A=6+1*55",
+                                "columnNumbers" : "A=9*56"
+                              }
+                            },
+                            {
+                              "predicate" : "restrictAlertsTo",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/ext/default-alert-filter.yml",
+                              "index" : 0,
+                              "firstRowId" : 32621,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            },
+                            {
+                              "predicate" : "restrictAlertsToExactLocation",
+                              "file" : "/home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/ext/default-alert-filter.yml",
+                              "index" : 1,
+                              "firstRowId" : 32621,
+                              "rowCount" : 0,
+                              "predicateHasOrigin" : false,
+                              "locations" : {
+                                "lineNumbers" : "A",
+                                "columnNumbers" : "A"
+                              }
+                            }
+                          ]
+                        },
+                        "threatModels" : { },
+                        "extensionPacks" : [ ]
+                      }
+[2026-08-10 22:16:10] [SPAMMY] execute query-server2> Selected JGit Git client for /home/oleksii-shemshur/work/toolchains/tools/queries because the Git OID format could not be determined.
+[2026-08-10 22:16:11] Starting evaluation of /home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql
+[2026-08-10 22:16:11] (0s) Start query execution
+[2026-08-10 22:16:11] (0s) Beginning execution of /home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_ResolveClass::isType/1#eabb9878/1@82ca1924 with 123849 rows and digest ad8b59i0rjk679rlo7j44pb0t5e.
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_ResolveClass::isClass/1#af2a1ca6/1@ecb9e6su with 10868 rows and digest 1fa0d2c7406asdf7p55ogihl6q3.
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_ResolveClass::resolveClass/1#ea47deee/2@a66798km with 24895 rows and digest 70711dvmaor323eimjo3stdkd3e.
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f/2@d04f11u9 with 447482 rows and digest 0a435bcnqfcgl7v26ek37lvt057.
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_ResolveFunction::resolveFunction/1#576ba5ee/2@d186d880 with 107513 rows and digest d18da02akie3eih7c0nlsm38gs8.
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_ResolveFunction::isFunction/1#9226b83f/1@f98098d9 with 91685 rows and digest 313143810mls3pav5g7p48cacd0.
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_ResolveGlobalVariable::isVariable/1#6e051315/1@90738ahc with 446985 rows and digest e30202t02m9of0bfg2r1oggfe11.
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_Enclosing::exprEnclosingElement/1#d94b6dd0/2@c6fd19fo with 10082237 rows and digest 021eb6v5j434i704ong91h55lne.
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_Expr::Expr.getType/0#dispred#444cc5af/2@6044b650 with 10158564 rows and digest 5a71bebamr43pcf296e74rr23da.
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_Element::ElementBase.toString/0#dispred#6e016f86/2@b58a23s4 with 16830229 rows and digest 0edf170bfidfcstt9rmdku6baj5.
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_QualifiedName::declarationHasQualifiedName/4#749d7d29/4@bad017oq with 173869 rows and digest df73a524j4257hosbtc51rcmjo9.
+[2026-08-10 22:16:11] (0s)  >>> Full cache hit cached_Enclosing::stmtEnclosingElement/1#cf37daa7/2@ba27afv4 with 1727224 rows and digest c1d0d8qbo00ad9ced1guvjjmfe3.
+[2026-08-10 22:16:11] (0s)  >>> Created relation functions/3@3c09047a with 107513 rows and digest 12de682i139om20ejbmpap8fgf0.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate m#Function::Function.getName/0#dispred#b6c7beb4#fb/1@255480n7
+[2026-08-10 22:16:11] (0s)  >>> Created relation m#Function::Function.getName/0#dispred#b6c7beb4#fb/1@255480n7 with 2 rows and digest 969aed4bon8jl8f2qsqd2cmvo82.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Function::Function.getName/0#dispred#b6c7beb4#fb/2@982b47e7
+[2026-08-10 22:16:11] (0s)  >>> Created relation Function::Function.getName/0#dispred#b6c7beb4#fb/2@982b47e7 with 458 rows and digest a724d14mfo0h9rm5sr6kupnr690.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Function::Function.getName/0#dispred#b6c7beb4#fb_10#join_rhs/2@05c0d501
+[2026-08-10 22:16:11] (0s)  >>> Created relation Function::Function.getName/0#dispred#b6c7beb4#fb_10#join_rhs/2@05c0d501 with 458 rows and digest 50b91e9v08fe17f8vpj94rrub81.
+[2026-08-10 22:16:11] (0s)  >>> Created relation membervariables/3@a109e7ik with 24819 rows and digest a0015de14qupckq505usdn7lon7.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate @membervariable/1@811f08og
+[2026-08-10 22:16:11] (0s)  >>> Created relation @membervariable/1@811f08og with 23995 rows and digest 4b65fcjulod9135t3jbcartg5c9.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate m#Class::Class.getAMember/0#dispred#6a0fc591#fb/1@e4f2f0dh
+[2026-08-10 22:16:11] (0s)  >>> Created relation m#Class::Class.getAMember/0#dispred#6a0fc591#fb/1@e4f2f0dh with 115680 rows and digest 5fbf537g2brmgreogoa6708ip1d.
+[2026-08-10 22:16:11] (0s)  >>> Created relation usertypes/3@80f81avc with 24895 rows and digest f5899an5iulpaoup5l4ds9vcgue.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate @usertype/1@bb08c6gq
+[2026-08-10 22:16:11] (0s)  >>> Created relation @usertype/1@bb08c6gq with 24895 rows and digest 1d60fb004r2gh8m88bm3t0geggd.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate UserType::UserType#21e9e463/1@a3a094rk
+[2026-08-10 22:16:11] (0s)  >>> Created relation UserType::UserType#21e9e463/1@a3a094rk with 24246 rows and digest 064364qavrgokb7k2rt89s8dhn4.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Class::Class#9afdbffd/1@65d7f1bo
+[2026-08-10 22:16:11] (0s)  >>> Created relation Class::Class#9afdbffd/1@65d7f1bo with 10219 rows and digest 8b39057h78sabuh1us37qu8ppp4.
+[2026-08-10 22:16:11] (0s)  >>> Created relation member/3@d2f9a19s with 63258 rows and digest 2ba2089cmjdmfdjdc2d7dl0n86b.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Class::Class.getCanonicalMember/1#dispred#e1747079/3@08088dq3
+[2026-08-10 22:16:11] (0s)  >>> Created relation Class::Class.getCanonicalMember/1#dispred#e1747079/3@08088dq3 with 55766 rows and digest 516d0acirn6l2r4nhkor0p4f8k3.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate project#Class::Class.getCanonicalMember/1#dispred#e1747079/2@5b6e4802
+[2026-08-10 22:16:11] (0s)  >>> Created relation project#Class::Class.getCanonicalMember/1#dispred#e1747079/2@5b6e4802 with 55765 rows and digest 92a76dciuhfah4422jbmqsv6bh9.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate project#Class::Class.getCanonicalMember/1#dispred#e1747079_10#join_rhs/2@fc2823pk
+[2026-08-10 22:16:11] (0s)  >>> Created relation project#Class::Class.getCanonicalMember/1#dispred#e1747079_10#join_rhs/2@fc2823pk with 55765 rows and digest aa43a24dsmd95dhqif32998ve1b.
+[2026-08-10 22:16:11] (0s)  >>> Created relation localvariables/3@dc5ff1mr with 205108 rows and digest 0d9d26r2idcp1bfpjkpao6e8fmc.
+[2026-08-10 22:16:11] (0s)  >>> Created relation params/4@63accdru with 240722 rows and digest 3665811m6qgl0ubs8rradlv66r6.
+[2026-08-10 22:16:11] (0s)  >>> Created relation globalvariables/3@056b2d2g with 9231 rows and digest 6278c7cdkf21s6nk3uqdup1p582.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate @function/1@24d7f7aa
+[2026-08-10 22:16:11] (0s)  >>> Created relation @function/1@24d7f7aa with 107513 rows and digest 8e4678ein0qeuvjp9udcm6il3n4.
+[2026-08-10 22:16:11] (0s)  >>> Created relation concept_templates/3@d529d6ve with 0 rows and digest THIS-RELATION-HAS-NO-TUPLES.
+[2026-08-10 22:16:11] (0s)  >>> Created relation enumconstants/6@353b6bq9 with 32088 rows and digest cf6120jqi1asm71c1242fk7q7gf.
+[2026-08-10 22:16:11] (0s)  >>> Created relation frienddecls/4@eed3c16n with 22395 rows and digest 453190jfm62dfdkhfa7bpn22n0c.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate @parameter/1@b404ef49
+[2026-08-10 22:16:11] (0s)  >>> Created relation @parameter/1@b404ef49 with 209244 rows and digest 8778f16eicattjs0k08gtlfgg42.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate @localscopevariable/1@019713it
+[2026-08-10 22:16:11] (0s)  >>> Created relation @localscopevariable/1@019713it with 414310 rows and digest e80113aafmsttdr7rtmh6ftsa05.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate @variable/1@6356d2te
+[2026-08-10 22:16:11] (0s)  >>> Created relation @variable/1@6356d2te with 447482 rows and digest 34e1f4dsvdg1un27pte4jtcjn6d.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate @declaration/1@1cd14b48
+[2026-08-10 22:16:11] (0s)  >>> Created relation @declaration/1@1cd14b48 with 632412 rows and digest 80aae6si6eeriou4qd68f8t3fq4.
+[2026-08-10 22:16:11] (0s)  >>> Created relation variable_template_argument_value/3@a90e6blo with 0 rows and digest THIS-RELATION-HAS-NO-TUPLES.
+[2026-08-10 22:16:11] (0s)  >>> Created relation template_template_argument_value/3@4043602e with 0 rows and digest THIS-RELATION-HAS-NO-TUPLES.
+[2026-08-10 22:16:11] (0s)  >>> Created relation function_template_argument_value/3@1ba8dba6 with 18226 rows and digest cf5efc76ia1816hcs7j47brtea2.
+[2026-08-10 22:16:11] (0s)  >>> Created relation concept_template_argument_value/3@51f53cok with 0 rows and digest THIS-RELATION-HAS-NO-TUPLES.
+[2026-08-10 22:16:11] (0s)  >>> Created relation class_template_argument_value/3@ce2ad0n8 with 8539 rows and digest 999bd297a9j90blbq1pj825f6i5.
+[2026-08-10 22:16:11] (0s)  >>> Created relation alias_template_argument_value/3@4de9capf with 0 rows and digest THIS-RELATION-HAS-NO-TUPLES.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Declaration::Declaration.getTemplateArgumentValue/1#dispred#3eef4b7f/3@16a32ase
+[2026-08-10 22:16:11] (0s)  >>> Created relation Declaration::Declaration.getTemplateArgumentValue/1#dispred#3eef4b7f/3@16a32ase with 26765 rows and digest 6e2d0d6j781o1bh1rv8sonve6f3.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate project#Declaration::Declaration.getTemplateArgumentValue/1#dispred#3eef4b7f#2/2@8390d3ar
+[2026-08-10 22:16:11] (0s)  >>> Created relation project#Declaration::Declaration.getTemplateArgumentValue/1#dispred#3eef4b7f#2/2@8390d3ar with 3304 rows and digest 1f6f98f736mnj9u5kms3or6ouf8.
+[2026-08-10 22:16:11] (0s)  >>> Created relation function_template_argument/3@1172b2jl with 19156 rows and digest 707a4aco2km7fde6ngj1sica8ke.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Declaration::Declaration.getTemplateArgumentType/1#dispred#b0efb79c/3@b4b14eq1
+[2026-08-10 22:16:11] (0s)  >>> Created relation Declaration::Declaration.getTemplateArgumentType/1#dispred#b0efb79c/3@b4b14eq1 with 19071 rows and digest 2225068jo1pglhjvhpjegj50561.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate project#Declaration::Declaration.getTemplateArgumentValue/1#dispred#3eef4b7f/2@075d53ub
+[2026-08-10 22:16:11] (0s)  >>> Created relation project#Declaration::Declaration.getTemplateArgumentValue/1#dispred#3eef4b7f/2@075d53ub with 26765 rows and digest 6804bdr1q0t399ooos9gqk1d6gc.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Declaration::Declaration.getATemplateArgument/0#dispred#260b9dcc/2@9f17b2h1
+[2026-08-10 22:16:11] (0s)  >>> Created relation Declaration::Declaration.getATemplateArgument/0#dispred#260b9dcc/2@9f17b2h1 with 43325 rows and digest 37cb881esuc5n802o8uts1fl5r7.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate project#Declaration::Declaration.getATemplateArgument/0#dispred#260b9dcc/1@da7e5eo5
+[2026-08-10 22:16:11] (0s)  >>> Created relation project#Declaration::Declaration.getATemplateArgument/0#dispred#260b9dcc/1@da7e5eo5 with 13959 rows and digest 75d3e0jmkjpapsu5kdasfma2l1d.
+[2026-08-10 22:16:11] (0s)  >>> Created relation is_function_template/1@7d32268e with 6698 rows and digest 80106bpf2jb7h9abn10bcs7mfa0.
+[2026-08-10 22:16:11] (0s)  >>> Created relation function_instantiation/2@5ba009cf with 25837 rows and digest eddf361p2dk79a2k9iv9o1s7sr5.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Function::Function.isConstructedFrom/1#dispred#2edd856f/2@9d2620dd
+[2026-08-10 22:16:11] (0s)  >>> Created relation Function::Function.isConstructedFrom/1#dispred#2edd856f/2@9d2620dd with 25835 rows and digest a86a73dmfomhqkbq9qv7qocn0n4.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Function::Function.isConstructedFrom/1#dispred#2edd856f_10#join_rhs/2@ae44c42q
+[2026-08-10 22:16:11] (0s)  >>> Created relation Function::Function.isConstructedFrom/1#dispred#2edd856f_10#join_rhs/2@ae44c42q with 25835 rows and digest 4e05499n60b1ot8meuao7grnoma.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate _#is_function_templateMerge_Function::Function.isConstructedFrom/1#dispred#2edd856f_10#join_rhs_proj__#shared/2@3072a3fv
+[2026-08-10 22:16:11] (0s)  >>> Created relation _#is_function_templateMerge_Function::Function.isConstructedFrom/1#dispred#2edd856f_10#join_rhs_proj__#shared/2@3072a3fv with 7791 rows and digest b0a80e1o70vd8go5n1kldjnl8n8.
+[2026-08-10 22:16:11] (0s)  >>> Created relation fun_decls/5@bed82eip with 150634 rows and digest 21082f7sl05knurv8430n8q04n8.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate #fun_declsMerge_10#join_rhs/2@ef921723
+[2026-08-10 22:16:11] (0s)  >>> Created relation #fun_declsMerge_10#join_rhs/2@ef921723 with 143068 rows and digest 5ac95amj9qmkm9pvm7u8pdov09e.
+[2026-08-10 22:16:11] (0s)  >>> Created relation fun_specialized/1@88105f7c with 147 rows and digest 7f21e8migc9k3vtmt86o6saveld.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate _#fun_declsMerge_10#join_rhs_#fun_specializedMerge_ResolveFunction::isFunction/1#9226b83f__#is_funct__#antijoin_rhs/2@7a1c853l
+[2026-08-10 22:16:11] (0s)  >>> Created relation _#fun_declsMerge_10#join_rhs_#fun_specializedMerge_ResolveFunction::isFunction/1#9226b83f__#is_funct__#antijoin_rhs/2@7a1c853l with 143 rows and digest a3d6a1p4ao59hs060mnom0pilfb.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Function::TemplateFunction.getAnInstantiation/0#dispred#578175e9#fb/2@0b49b674
+[2026-08-10 22:16:11] (0s)  >>> Created relation Function::TemplateFunction.getAnInstantiation/0#dispred#578175e9#fb/2@0b49b674 with 7648 rows and digest b04eb126oo7difbp2tf9lfppjma.
+[2026-08-10 22:16:11] (0s)  >>> Created relation variable_instantiation/2@1e9626ek with 651 rows and digest 0f26cephl7n9c1ikdb0qgqk5lga.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Variable::Variable.isConstructedFrom/1#dispred#fbdd4275#bf/2@8a9c874b
+[2026-08-10 22:16:11] (0s)  >>> Created relation Variable::Variable.isConstructedFrom/1#dispred#fbdd4275#bf/2@8a9c874b with 651 rows and digest 0f26cephl7n9c1ikdb0qgqk5lga.
+[2026-08-10 22:16:11] (0s)  >>> Created relation is_variable_template/1@ebc81e79 with 52 rows and digest 41c20dkkmg75436vi5t76bncj92.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate _#is_variable_templateMerge_Variable::Variable.isConstructedFrom/1#dispred#fbdd4275#bf#shared/2@18852el5
+[2026-08-10 22:16:11] (0s)  >>> Created relation _#is_variable_templateMerge_Variable::Variable.isConstructedFrom/1#dispred#fbdd4275#bf#shared/2@18852el5 with 651 rows and digest 0f26cephl7n9c1ikdb0qgqk5lga.
+[2026-08-10 22:16:11] (0s)  >>> Created relation var_decls/5@89473ckg with 558811 rows and digest ad0a93tfglhimo2sinkqjubnui7.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate #var_declsMerge_10#join_rhs/2@d57798gt
+[2026-08-10 22:16:11] (0s)  >>> Created relation #var_declsMerge_10#join_rhs/2@d57798gt with 530414 rows and digest 5755444ecv9r0pub5kejiheovd4.
+[2026-08-10 22:16:11] (0s)  >>> Created relation var_specialized/1@04c3a139 with 0 rows and digest THIS-RELATION-HAS-NO-TUPLES.
+[2026-08-10 22:16:11] (0s) Inferred that _#is_variable_templateMerge_#var_declsMerge_10#join_rhs_#var_specializedMerge_ResolveGlobalVariable:__#antijoin_rhs/2@6cb732vo is empty, due to var_specialized/1@04c3a139.
+[2026-08-10 22:16:11] (0s) Inferred that _#is_variable_templateMerge_#var_declsMerge_10#join_rhs_#var_specializedMerge_ResolveGlobalVariable:__#antijoin_rhs/2@ef8534d8 is empty, due to var_specialized/1@04c3a139.
+[2026-08-10 22:16:11] (0s) Inferred that _#var_declsMerge_10#join_rhs_#var_specializedMerge_ResolveGlobalVariable::isVariable/1#6e051315__#is__#antijoin_rhs/2@530d092h is empty, due to var_specialized/1@04c3a139.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Variable::TemplateVariable.getAnInstantiation/0#dispred#f6b531ee#fb/2@86562bsr
+[2026-08-10 22:16:11] (0s)  >>> Created relation Variable::TemplateVariable.getAnInstantiation/0#dispred#f6b531ee#fb/2@86562bsr with 651 rows and digest 88b5farfd8h4m6r6sodesnk0sdd.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate Class::Class.getAMember/0#dispred#6a0fc591#fb/2@51d5e2md
+[2026-08-10 22:16:11] (0s)  >>> Created relation Class::Class.getAMember/0#dispred#6a0fc591#fb/2@51d5e2md with 58606 rows and digest cc375912qah0brdk0bg9491d112.
+[2026-08-10 22:16:11] (0s) Starting to evaluate predicate project#Class::Class.getAMember/0#dispred#6a0fc591#fb/1@1672612a
+[2026-08-10 22:16:12] (0s)  >>> Created relation project#Class::Class.getAMember/0#dispred#6a0fc591#fb/1@1672612a with 58605 rows and digest b7d8f9epm8igpe6sfo3956tubfd.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate MemberFunction::MemberFunction#8965af43/1@d144d8nf
+[2026-08-10 22:16:12] (0s)  >>> Created relation MemberFunction::MemberFunction#8965af43/1@d144d8nf with 34610 rows and digest 75ae7b3ms5k38gtkr4gf1i54nf1.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Class::Class.getAMember/0#dispred#6a0fc591#fb_10#join_rhs/2@d7009a4v
+[2026-08-10 22:16:12] (0s)  >>> Created relation Class::Class.getAMember/0#dispred#6a0fc591#fb_10#join_rhs/2@d7009a4v with 58606 rows and digest f555acfeer69kg65ge1hpofgtub.
+[2026-08-10 22:16:12] (0s)  >>> Created relation type_operators/4@a921eav6 with 0 rows and digest THIS-RELATION-HAS-NO-TUPLES.
+[2026-08-10 22:16:12] (0s) Inferred that Type::IntrinsicTransformedType#9604289c#bf/2@768b71gq is empty, due to type_operators/4@a921eav6.
+[2026-08-10 22:16:12] (0s) Inferred that #type_operatorsMerge_20#join_rhs/2@a5b30a9b is empty, due to type_operators/4@a921eav6.
+[2026-08-10 22:16:12] (0s) Inferred that Type::IntrinsicTransformedType.getBaseType/0#dispred#5daab45e#bf/2@40546bpj is empty, due to Type::IntrinsicTransformedType#9604289c#bf/2@768b71gq.
+[2026-08-10 22:16:12] (0s) Inferred that Type::IntrinsicTransformedType#9604289c#bf_0#antijoin_rhs/1@d9b29cl9 is empty, due to Type::IntrinsicTransformedType#9604289c#bf/2@768b71gq.
+[2026-08-10 22:16:12] (0s) Inferred that Type::IntrinsicTransformedType#9604289c_10#join_rhs/2@2b3a28pp is empty, due to Type::IntrinsicTransformedType#9604289c/2@768b71gq.
+[2026-08-10 22:16:12] (0s) Inferred that Type::IntrinsicTransformedType#9604289c#fb/2@3072d7qa is empty, due to #type_operatorsMerge_20#join_rhs/2@a5b30a9b.
+[2026-08-10 22:16:12] (0s) Inferred that Type::IntrinsicTransformedType.getBaseType/0#dispred#5daab45e#bf_10#join_rhs/2@0d37b886 is empty, due to Type::IntrinsicTransformedType.getBaseType/0#dispred#5daab45e#bf/2@40546bpj.
+[2026-08-10 22:16:12] (0s) Inferred that Type::IntrinsicTransformedType#9604289c#fb_10#join_rhs/2@de3a1123 is empty, due to Type::IntrinsicTransformedType#9604289c#fb/2@3072d7qa.
+[2026-08-10 22:16:12] (0s) Inferred that Type::IntrinsicTransformedType.getIntrinsicName/0#dispred#8aa79622/2@35b3d2fj is empty, due to Type::IntrinsicTransformedType#9604289c#fb_10#join_rhs/2@de3a1123.
+[2026-08-10 22:16:12] (0s)  >>> Created relation decltypes/5@b5738apt with 504 rows and digest 4eba51tutqf4cqafmh1v41qt9jc.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate #decltypesMerge_20#join_rhs/2@e0e9c00l
+[2026-08-10 22:16:12] (0s)  >>> Created relation #decltypesMerge_20#join_rhs/2@e0e9c00l with 105 rows and digest 9a0948n0ajl8dq2t4vn2sqkj7ue.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate project##decltypesMerge/1@7915a3vs
+[2026-08-10 22:16:12] (0s)  >>> Created relation project##decltypesMerge/1@7915a3vs with 49 rows and digest 7fe0c2art4lqhgobv30j4khpjg0.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Decltype#2a58cb8b/1@170a944k
+[2026-08-10 22:16:12] (0s)  >>> Created relation Type::Decltype#2a58cb8b/1@170a944k with 49 rows and digest 7fe0c2art4lqhgobv30j4khpjg0.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate project##decltypesMerge#3/1@c572c0n2
+[2026-08-10 22:16:12] (0s)  >>> Created relation project##decltypesMerge#3/1@c572c0n2 with 56 rows and digest 52f74d2f02db4ebhad965pqit6a.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::TypeofType#5988d37d/1@8c3f27ub
+[2026-08-10 22:16:12] (0s)  >>> Created relation Type::TypeofType#5988d37d/1@8c3f27ub with 56 rows and digest 52f74d2f02db4ebhad965pqit6a.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate UserType::UserType.getName/0#dispred#68e0aaf0/2@c6c4e3bl
+[2026-08-10 22:16:12] (0s)  >>> Created relation UserType::UserType.getName/0#dispred#68e0aaf0/2@c6c4e3bl with 24246 rows and digest 3cbbc005o7c33m9ful7o33kp3a4.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Type.getName/0#dispred#77a04a0a#bf/2@a8e234eu
+[2026-08-10 22:16:12] (0s)  >>> Created relation Type::Type.getName/0#dispred#77a04a0a#bf/2@a8e234eu with 24351 rows and digest af6243mnh8topt3q8h4hqrrfl37.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a#bf/2@7f7036l4
+[2026-08-10 22:16:12] (0s)  >>> Created relation NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a#bf/2@7f7036l4 with 24295 rows and digest 92238d40jihac72ombmcdj8b1k7.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate _NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a#bf_Type::Type.getName/0#dispred#77__#shared/1@0639964e
+[2026-08-10 22:16:12] (0s)  >>> Created relation _NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a#bf_Type::Type.getName/0#dispred#77__#shared/1@0639964e with 271 rows and digest c78b6bum12trh5lhq31lktvf899.
+[2026-08-10 22:16:12] (0s)  >>> Created relation derivations/5@92bc817i with 1706 rows and digest 0365120o58av08clei2sfkdndu0.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Class::ClassDerivation.getBaseType/0#dispred#36ad7f0f/2@3358a47h
+[2026-08-10 22:16:12] (0s)  >>> Created relation Class::ClassDerivation.getBaseType/0#dispred#36ad7f0f/2@3358a47h with 1706 rows and digest e03073fv41ki5hqoh8gf3abs8f6.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate #usertypesMerge_02#join_rhs/2@f614acb9
+[2026-08-10 22:16:12] (0s)  >>> Created relation #usertypesMerge_02#join_rhs/2@f614acb9 with 24895 rows and digest 0950b0ddb551ip6iqgjeecb2gbe.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate TypedefType::TypedefType#64088755#b/1@941df5v8
+[2026-08-10 22:16:12] (0s)  >>> Created relation TypedefType::TypedefType#64088755#b/1@941df5v8 with 8613 rows and digest 07d8d586mbujoi0bnmatg2v0rhd.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Type_not_Type::Decltype_Type::IntrinsicTransformedType_TypedefType::TypedefType_Type::TypeofType#704e70f2/1@7e1c1d5m
+[2026-08-10 22:16:12] (0s)  >>> Created relation Type::Type_not_Type::Decltype_Type::IntrinsicTransformedType_TypedefType::TypedefType_Type::TypeofType#704e70f2/1@7e1c1d5m with 115131 rows and digest c665aec7eifabddlp85ljjpe260.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate project##decltypesMerge#2/2@7d4bd1qf
+[2026-08-10 22:16:12] (0s)  >>> Created relation project##decltypesMerge#2/2@7d4bd1qf with 105 rows and digest bc3a2ajma6b8ri7l3cnfcphoqjf.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::TypeofType.getBaseType/0#dispred#0d5513d4#bf/2@d3954e07
+[2026-08-10 22:16:12] (0s)  >>> Created relation Type::TypeofType.getBaseType/0#dispred#0d5513d4#bf/2@d3954e07 with 56 rows and digest 0785f76ln272t2coqe2c49mp2rd.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::TypeofType.getBaseType/0#dispred#0d5513d4#bf_10#join_rhs/2@9b6d11iu
+[2026-08-10 22:16:12] (0s)  >>> Created relation Type::TypeofType.getBaseType/0#dispred#0d5513d4#bf_10#join_rhs/2@9b6d11iu with 56 rows and digest f75030fhv1j9fsng3kitgcnoma0.
+[2026-08-10 22:16:12] (0s)  >>> Created relation typedefbase/2@050ca62i with 8613 rows and digest b10194q0hanansj3vq9h3t64fv4.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate TypedefType::TypedefType.getBaseType/0#dispred#671605ef#bf/2@4eb41ctn
+[2026-08-10 22:16:12] (0s)  >>> Created relation TypedefType::TypedefType.getBaseType/0#dispred#671605ef#bf/2@4eb41ctn with 8613 rows and digest 0bd2a1rum7tjchtdhv3b5aung06.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate TypedefType::TypedefType.getBaseType/0#dispred#671605ef#bf_10#join_rhs/2@ab26a5fg
+[2026-08-10 22:16:12] (0s)  >>> Created relation TypedefType::TypedefType.getBaseType/0#dispred#671605ef#bf_10#join_rhs/2@ab26a5fg with 8613 rows and digest 425e4d4to3ns0upslr0vjr2tp51.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Decltype.getBaseType/0#dispred#f3b613af#bf/2@9a977225
+[2026-08-10 22:16:12] (0s)  >>> Created relation Type::Decltype.getBaseType/0#dispred#f3b613af#bf/2@9a977225 with 49 rows and digest 636772l7pmk7g4toldn7fo009o1.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Decltype.getBaseType/0#dispred#f3b613af#bf_10#join_rhs/2@cbab4fap
+[2026-08-10 22:16:12] (0s)  >>> Created relation Type::Decltype.getBaseType/0#dispred#f3b613af#bf_10#join_rhs/2@cbab4fap with 49 rows and digest 4a479ekd902g69js0eajcs4nhob.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Type.getUnderlyingType/0#dispred#bd141f6a/2@i1#4eafcwca (iteration 1)
+[2026-08-10 22:16:12] (0s) 			 - Type::Type.getUnderlyingType/0#dispred#bd141f6a_delta has 115131 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Type.getUnderlyingType/0#dispred#bd141f6a/2@i2#4eafcwca (iteration 2)
+[2026-08-10 22:16:12] (0s) 			 - Type::Type.getUnderlyingType/0#dispred#bd141f6a_delta has 5385 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Type.getUnderlyingType/0#dispred#bd141f6a/2@i3#4eafcwca (iteration 3)
+[2026-08-10 22:16:12] (0s) 			 - Type::Type.getUnderlyingType/0#dispred#bd141f6a_delta has 2099 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Type.getUnderlyingType/0#dispred#bd141f6a/2@i4#4eafcwca (iteration 4)
+[2026-08-10 22:16:12] (0s) 			 - Type::Type.getUnderlyingType/0#dispred#bd141f6a_delta has 879 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Type.getUnderlyingType/0#dispred#bd141f6a/2@i5#4eafcwca (iteration 5)
+[2026-08-10 22:16:12] (0s) 			 - Type::Type.getUnderlyingType/0#dispred#bd141f6a_delta has 229 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Type.getUnderlyingType/0#dispred#bd141f6a/2@i6#4eafcwca (iteration 6)
+[2026-08-10 22:16:12] (0s) 			 - Type::Type.getUnderlyingType/0#dispred#bd141f6a_delta has 126 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Type.getUnderlyingType/0#dispred#bd141f6a/2@i7#4eafcwca (iteration 7)
+[2026-08-10 22:16:12] (0s) Empty delta for Type::Type.getUnderlyingType/0#dispred#bd141f6a_delta (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:12] (0s) Accumulating deltas
+[2026-08-10 22:16:12] (0s)  >>> Created relation Type::Type.getUnderlyingType/0#dispred#bd141f6a/2@4eafcwca with 123849 rows and digest c48696nv15r69flrqcn3p4jeu66.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Class::Class.getABaseClass/0#dispred#e9ba966b/2@81b8f2eh
+[2026-08-10 22:16:12] (0s)  >>> Created relation Class::Class.getABaseClass/0#dispred#e9ba966b/2@81b8f2eh with 1697 rows and digest da9d3bosvl26e04uf76p7a0cce2.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sourceBound#3/1@176b0apr
+[2026-08-10 22:16:12] (0s)  >>> Created relation #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sourceBound#3/1@176b0apr with 24351 rows and digest e551e7rjc8i47tt2m1rsdmor4re.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate _#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sourceBound#3__NameQualifiers::NameQualifying__#higher_order_body/1@fcd40ab4
+[2026-08-10 22:16:12] (0s)  >>> Created relation _#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sourceBound#3__NameQualifiers::NameQualifying__#higher_order_body/1@fcd40ab4 with 271 rows and digest c78b6bum12trh5lhq31lktvf899.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate Type::Type.getName/0#dispred#77a04a0a#bf_10#join_rhs/2@7e32e9hm
+[2026-08-10 22:16:12] (0s)  >>> Created relation Type::Type.getName/0#dispred#77a04a0a#bf_10#join_rhs/2@7e32e9hm with 24351 rows and digest 0226b0i3iqeomelj64lbpog48m7.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a#bf_10#join_rhs/2@fe138480
+[2026-08-10 22:16:12] (0s)  >>> Created relation NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a#bf_10#join_rhs/2@fe138480 with 24295 rows and digest 9cde2bme2sjn33n2r1ssk94nfk6.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate UserType::UserType.getName/0#dispred#68e0aaf0#bf_10#join_rhs/2@ae18cbal
+[2026-08-10 22:16:12] (0s)  >>> Created relation UserType::UserType.getName/0#dispred#68e0aaf0#bf_10#join_rhs/2@ae18cbal with 24246 rows and digest 7170d2lnhf8diugk4tcdsqknvo3.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sinkBound#3/1@1726ec70
+[2026-08-10 22:16:12] (0s)  >>> Created relation #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sinkBound#3/1@1726ec70 with 6 rows and digest c0c672icb26usilnts8s9ihgvg8.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sourceBound#3__NameQualifiers::NameQualifying__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sinkBound#3/2@7e9659f7 = HOP doublyBoundedFastTC(1697,271,6)
+[2026-08-10 22:16:12] (0s)  >>> Relation doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sourceBound#3__NameQualifiers::NameQualifying__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sinkBound#3: 519 rows using 0 MB
+[2026-08-10 22:16:12] (0s)  >>> Created relation doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sourceBound#3__NameQualifiers::NameQualifying__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sinkBound#3/2@7e9659f7 with 519 rows and digest 856fb78hk6fptnr516pcrbpmni6.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate 02_preliminary_groups::GccPassClass#45ae20b3#b/1@4d6a54pn
+[2026-08-10 22:16:12] (0s)  >>> Created relation 02_preliminary_groups::GccPassClass#45ae20b3#b/1@4d6a54pn with 266 rows and digest 4067cd1kaskab46as8n7t2d6dp2.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate 02_preliminary_groups::passEntryMethod/3#5face98d/3@07750a6o
+[2026-08-10 22:16:12] (0s)  >>> Created relation 02_preliminary_groups::passEntryMethod/3#5face98d/3@07750a6o with 452 rows and digest 396a3392am3k8quc5n83s6m0gj5.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate project#02_preliminary_groups::passEntryMethod/3#5face98d/1@fdcf707c
+[2026-08-10 22:16:12] (0s)  >>> Created relation project#02_preliminary_groups::passEntryMethod/3#5face98d/1@fdcf707c with 264 rows and digest f06d8dujd9i6vdbv3gb4nph1rv5.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate 02_preliminary_groups::GccPassClass.getPassKey/0#dispred#19ae2879#bf/2@87ff999n
+[2026-08-10 22:16:12] (0s)  >>> Created relation 02_preliminary_groups::GccPassClass.getPassKey/0#dispred#19ae2879#bf/2@87ff999n with 264 rows and digest 627eefh69qijks6hi0o3rmmls8e.
+[2026-08-10 22:16:12] (0s)  >>> Created relation exprs/3@3564efhr with 10156860 rows and digest 6a1993ige79brdoq26sepi8qiha.
+[2026-08-10 22:16:12] (0s) Starting to evaluate predicate exprs_10#join_rhs/2@0a156eph
+[2026-08-10 22:16:13] (1s)  >>> Created relation exprs_10#join_rhs/2@0a156eph with 10156860 rows and digest 1266dfo7g7i5cqohsa4up3l3vc2.
+[2026-08-10 22:16:13] (1s) Starting to evaluate predicate @varaccess/1@d70b2a2g
+[2026-08-10 22:16:13] (1s)  >>> Created relation @varaccess/1@d70b2a2g with 3066929 rows and digest a6dd50md0p7m1qnkcm3r92hp1b5.
+[2026-08-10 22:16:13] (1s)  >>> Created relation varbind/2@0ef4ddtb with 3073448 rows and digest 8bbf2049shi3m67um61p63vmq9c.
+[2026-08-10 22:16:13] (1s) Starting to evaluate predicate _#@functionMergeTypeCall_#@varaccessMergeTypeCall_#@variableMergeTypeCall_#varbindMerge#antijoin_rhs/1@e213devg
+[2026-08-10 22:16:13] (2s)  >>> Created relation _#@functionMergeTypeCall_#@varaccessMergeTypeCall_#@variableMergeTypeCall_#varbindMerge#antijoin_rhs/1@e213devg with 457550 rows and digest 9a66b1bkso01ou2edm29u1ftaoc.
+[2026-08-10 22:16:13] (2s) Starting to evaluate predicate Access::VariableAccess#27163138/1@cf9e5amo
+[2026-08-10 22:16:13] (2s)  >>> Created relation Access::VariableAccess#27163138/1@cf9e5amo with 2609379 rows and digest 0ff280v005fknlcov1eo3utli45.
+[2026-08-10 22:16:13] (2s) Starting to evaluate predicate Expr::Expr.getEnclosingFunction/0#dispred#3960f06c/2@1bad88op
+[2026-08-10 22:16:14] (2s)  >>> Created relation Expr::Expr.getEnclosingFunction/0#dispred#3960f06c/2@1bad88op with 8927990 rows and digest fe51bbqebfv3do5gj70b5iivok7.
+[2026-08-10 22:16:14] (2s) Starting to evaluate predicate project#02_preliminary_groups::passEntryMethod/3#5face98d#2/1@1841f2pk
+[2026-08-10 22:16:14] (2s)  >>> Created relation project#02_preliminary_groups::passEntryMethod/3#5face98d#2/1@1841f2pk with 452 rows and digest 80e9e5runvagjtls3j3g19rtfcb.
+[2026-08-10 22:16:14] (2s)  >>> Created relation iscall/2@f514bf4e with 592921 rows and digest 2137f1h16fn0jpk1iq69ca7ji62.
+[2026-08-10 22:16:14] (2s) Starting to evaluate predicate @callexpr/1@9c70b6i9
+[2026-08-10 22:16:14] (2s)  >>> Created relation @callexpr/1@9c70b6i9 with 10529 rows and digest 3285e9mevpc12act3q4e5sm929e.
+[2026-08-10 22:16:14] (2s) Starting to evaluate predicate Call::Call#048c9613/1@f1468bg5
+[2026-08-10 22:16:14] (2s)  >>> Created relation Call::Call#048c9613/1@f1468bg5 with 603450 rows and digest 6306aa2r614dtb5vhufqoigm3vd.
+[2026-08-10 22:16:14] (2s)  >>> Created relation funbind/2@a07059qu with 624663 rows and digest 3ec356ef06mmei23nstlulnqhjf.
+[2026-08-10 22:16:14] (2s) Starting to evaluate predicate Call::FunctionCall.getTarget/0#45745a57/2@8abbf6a6
+[2026-08-10 22:16:14] (2s)  >>> Created relation Call::FunctionCall.getTarget/0#45745a57/2@8abbf6a6 with 593574 rows and digest 7bac20hrlobagi2g27il1ajvk22.
+[2026-08-10 22:16:14] (2s) Starting to evaluate predicate #functionsMerge_20#join_rhs/2@7f9bb8be
+[2026-08-10 22:16:14] (2s)  >>> Created relation #functionsMerge_20#join_rhs/2@7f9bb8be with 107513 rows and digest b36a53ftpb4682nmhp4kdib94od.
+[2026-08-10 22:16:14] (2s) Starting to evaluate predicate MemberFunction::Destructor#3b34c0ea/1@62a94brd
+[2026-08-10 22:16:14] (2s)  >>> Created relation MemberFunction::Destructor#3b34c0ea/1@62a94brd with 1439 rows and digest 4dab8320vhs7il5bctprmjcr6ad.
+[2026-08-10 22:16:14] (2s) Starting to evaluate predicate MemberFunction::Constructor#3a697e8a/1@a7fa94sb
+[2026-08-10 22:16:14] (2s)  >>> Created relation MemberFunction::Constructor#3a697e8a/1@a7fa94sb with 4379 rows and digest 5a2727s5jfuiki2h9ambtj7qje8.
+[2026-08-10 22:16:14] (2s) Starting to evaluate predicate Call::DestructorCall#43f8f365/1@46975c7l
+[2026-08-10 22:16:14] (2s)  >>> Created relation Call::DestructorCall#43f8f365/1@46975c7l with 4799 rows and digest a653ddpko6trpisshojjqdg1pl0.
+[2026-08-10 22:16:14] (2s) Starting to evaluate predicate Call::ConstructorCall#c4f8b4c6/1@a46eb1ph
+[2026-08-10 22:16:14] (2s)  >>> Created relation Call::ConstructorCall#c4f8b4c6/1@a46eb1ph with 35099 rows and digest 625ce5s71s5pga6dh8hu5n1khp2.
+[2026-08-10 22:16:14] (2s) Starting to evaluate predicate Call::FunctionCall.getTarget/0#dispred#935da4c5/2@9b6efedq
+[2026-08-10 22:16:14] (3s)  >>> Created relation Call::FunctionCall.getTarget/0#dispred#935da4c5/2@9b6efedq with 593574 rows and digest 7bac20hrlobagi2g27il1ajvk22.
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate 02_preliminary_groups::directCall/2#1be3d27c/2@821f49ph
+[2026-08-10 22:16:14] (3s)  >>> Created relation 02_preliminary_groups::directCall/2#1be3d27c/2@821f49ph with 330516 rows and digest f3e0bdbej9nemdrv1v2tku6lb49.
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i1#3108ewl2 (iteration 1)
+[2026-08-10 22:16:14] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 1602 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i2#3108ewl2 (iteration 2)
+[2026-08-10 22:16:14] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 8270 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i3#3108ewl2 (iteration 3)
+[2026-08-10 22:16:14] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 24482 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i4#3108ewl2 (iteration 4)
+[2026-08-10 22:16:14] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 50579 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i5#3108ewl2 (iteration 5)
+[2026-08-10 22:16:14] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 82010 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i6#3108ewl2 (iteration 6)
+[2026-08-10 22:16:14] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 119040 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i7#3108ewl2 (iteration 7)
+[2026-08-10 22:16:14] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 151158 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i8#3108ewl2 (iteration 8)
+[2026-08-10 22:16:14] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 181986 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i9#3108ewl2 (iteration 9)
+[2026-08-10 22:16:14] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 198076 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i10#3108ewl2 (iteration 10)
+[2026-08-10 22:16:14] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 208203 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:14] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i11#3108ewl2 (iteration 11)
+[2026-08-10 22:16:15] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 199133 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i12#3108ewl2 (iteration 12)
+[2026-08-10 22:16:15] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 184736 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i13#3108ewl2 (iteration 13)
+[2026-08-10 22:16:15] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 173202 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i14#3108ewl2 (iteration 14)
+[2026-08-10 22:16:15] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 167784 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i15#3108ewl2 (iteration 15)
+[2026-08-10 22:16:15] (3s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 166013 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (3s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i16#3108ewl2 (iteration 16)
+[2026-08-10 22:16:15] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 162025 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i17#3108ewl2 (iteration 17)
+[2026-08-10 22:16:15] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 147968 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i18#3108ewl2 (iteration 18)
+[2026-08-10 22:16:15] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 127810 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i19#3108ewl2 (iteration 19)
+[2026-08-10 22:16:15] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 105164 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i20#3108ewl2 (iteration 20)
+[2026-08-10 22:16:15] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 84435 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i21#3108ewl2 (iteration 21)
+[2026-08-10 22:16:15] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 64642 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i22#3108ewl2 (iteration 22)
+[2026-08-10 22:16:15] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 48787 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i23#3108ewl2 (iteration 23)
+[2026-08-10 22:16:15] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 36256 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i24#3108ewl2 (iteration 24)
+[2026-08-10 22:16:15] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 29013 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i25#3108ewl2 (iteration 25)
+[2026-08-10 22:16:15] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 27566 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:15] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i26#3108ewl2 (iteration 26)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 22834 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i27#3108ewl2 (iteration 27)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 18773 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i28#3108ewl2 (iteration 28)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 15140 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i29#3108ewl2 (iteration 29)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 10438 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i30#3108ewl2 (iteration 30)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 8747 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i31#3108ewl2 (iteration 31)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 6516 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i32#3108ewl2 (iteration 32)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 4260 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i33#3108ewl2 (iteration 33)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 3173 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i34#3108ewl2 (iteration 34)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 2606 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i35#3108ewl2 (iteration 35)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 1797 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i36#3108ewl2 (iteration 36)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 1288 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i37#3108ewl2 (iteration 37)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 879 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i38#3108ewl2 (iteration 38)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 583 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i39#3108ewl2 (iteration 39)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 338 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i40#3108ewl2 (iteration 40)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 211 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i41#3108ewl2 (iteration 41)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 144 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i42#3108ewl2 (iteration 42)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 80 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i43#3108ewl2 (iteration 43)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 55 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i44#3108ewl2 (iteration 44)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 36 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i45#3108ewl2 (iteration 45)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 23 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i46#3108ewl2 (iteration 46)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 7 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i47#3108ewl2 (iteration 47)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 5 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i48#3108ewl2 (iteration 48)
+[2026-08-10 22:16:16] (4s) 			 - #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta has 3 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@i49#3108ewl2 (iteration 49)
+[2026-08-10 22:16:16] (4s) Empty delta for #02_preliminary_groups::directCall/2#1be3d27cPlus#bf_delta (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:16] (4s) Accumulating deltas
+[2026-08-10 22:16:16] (4s)  >>> Created relation #02_preliminary_groups::directCall/2#1be3d27cPlus#bf/2@3108ewl2 with 2847053 rows and digest a1a0e5snla95eki5hd0ijhkbvgd.
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate 02_preliminary_groups::passReachesFunction/2#2fc3ecaa#bf/2@ded1abud
+[2026-08-10 22:16:16] (4s)  >>> Created relation 02_preliminary_groups::passReachesFunction/2#2fc3ecaa#bf/2@ded1abud with 2847505 rows and digest 4221cfbktr8pnfuq4tk4ohhv9qd.
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate 02_preliminary_groups::passReachesFunction/2#2fc3ecaa#bf_10#join_rhs/2@b675f581
+[2026-08-10 22:16:16] (4s)  >>> Created relation 02_preliminary_groups::passReachesFunction/2#2fc3ecaa#bf_10#join_rhs/2@b675f581 with 2847505 rows and digest add907ssgk3cqncjbit251fp0ac.
+[2026-08-10 22:16:16] (4s) Starting to evaluate predicate Access::VariableAccess.getTarget/0#238a7818/2@5cf3ac55
+[2026-08-10 22:16:16] (5s)  >>> Created relation Access::VariableAccess.getTarget/0#238a7818/2@5cf3ac55 with 2610633 rows and digest 21e929jt9mke5s47nb7f35615if.
+[2026-08-10 22:16:16] (5s) Starting to evaluate predicate Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE/1@dbd68cls
+[2026-08-10 22:16:16] (5s)  >>> Created relation Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE/1@dbd68cls with 10 rows and digest 98a232f6g65r0ob3rubqtu5kgld.
+[2026-08-10 22:16:16] (5s) Starting to evaluate predicate Variable::MemberVariable#03cd19f4/1@27e9a3vf
+[2026-08-10 22:16:16] (5s)  >>> Created relation Variable::MemberVariable#03cd19f4/1@27e9a3vf with 23995 rows and digest 4b65fcjulod9135t3jbcartg5c9.
+[2026-08-10 22:16:16] (5s)  >>> Created relation fieldoffsets/3@baec5f83 with 23207 rows and digest 4d66e4ju4bup9b2jh0fmmmkp6n6.
+[2026-08-10 22:16:16] (5s) Starting to evaluate predicate Field::Field#3a3ce059/1@479cfdm0
+[2026-08-10 22:16:16] (5s)  >>> Created relation Field::Field#3a3ce059/1@479cfdm0 with 23207 rows and digest 531ecepapli7cdju35ml2a8c89a.
+[2026-08-10 22:16:16] (5s) Starting to evaluate predicate #varbindMerge_10#join_rhs/2@e0817ads
+[2026-08-10 22:16:17] (5s)  >>> Created relation #varbindMerge_10#join_rhs/2@e0817ads with 3073448 rows and digest ccc22c6da1bimjq6ouj03t8uhb7.
+[2026-08-10 22:16:17] (5s) Starting to evaluate predicate Access::FieldAccess#d1ccd326/1@b7434d1v
+[2026-08-10 22:16:17] (5s)  >>> Created relation Access::FieldAccess#d1ccd326/1@b7434d1v with 801425 rows and digest 1cdd35p8rstulgqi9fn08fk1g78.
+[2026-08-10 22:16:17] (5s) Starting to evaluate predicate Access::Access.getTarget/0#dispred#cf25c8aa/2@039985uc
+[2026-08-10 22:16:17] (5s)  >>> Created relation Access::Access.getTarget/0#dispred#cf25c8aa/2@039985uc with 2610633 rows and digest 21e929jt9mke5s47nb7f35615if.
+[2026-08-10 22:16:17] (5s) Starting to evaluate predicate Access::Access.getTarget/0#dispred#cf25c8aa_10#join_rhs/2@fb14e6b7
+[2026-08-10 22:16:17] (6s) Sequence stamp origin is -5881371142547228209
+[2026-08-10 22:16:17] (6s) Pausing evaluation to evict 31.07MiB ARRAYS at sequence stamp o+0
+[2026-08-10 22:16:17] (6s) Unpausing evaluation: 459.42MiB forgotten: 459.42MiB UNREACHABLE (618 items up to o+-3)
+[2026-08-10 22:16:17] (6s)  >>> Created relation Access::Access.getTarget/0#dispred#cf25c8aa_10#join_rhs/2@fb14e6b7 with 2610633 rows and digest 62ed9blenjhpg2e5gv0a745hkq0.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate #membervariablesMerge_20#join_rhs/2@78aeb2rl
+[2026-08-10 22:16:17] (6s)  >>> Created relation #membervariablesMerge_20#join_rhs/2@78aeb2rl with 23995 rows and digest a4cc38i4hg1b7llbrf3r6vb8hf3.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate #globalvariablesMerge_20#join_rhs/2@541f1dbd
+[2026-08-10 22:16:17] (6s)  >>> Created relation #globalvariablesMerge_20#join_rhs/2@541f1dbd with 9177 rows and digest 73a8e7280g83d9v813bgisiokca.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Variable::LocalScopeVariable#3aae4a09/1@2ab713l3
+[2026-08-10 22:16:17] (6s)  >>> Created relation Variable::LocalScopeVariable#3aae4a09/1@2ab713l3 with 414310 rows and digest e80113aafmsttdr7rtmh6ftsa05.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Parameter::Parameter#623bc78d/1@2d1c43n3
+[2026-08-10 22:16:17] (6s)  >>> Created relation Parameter::Parameter#623bc78d/1@2d1c43n3 with 209244 rows and digest 8778f16eicattjs0k08gtlfgg42.
+[2026-08-10 22:16:17] (6s)  >>> Created relation var_def/1@e9a0db3f with 384155 rows and digest efdf0dcbcfknl3h8skvf7l61tb4.
+[2026-08-10 22:16:17] (6s)  >>> Created relation param_decl_bind/3@777ac7l8 with 289867 rows and digest a3bee9tqc3d5vgoo0b8a7emleq5.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate #param_decl_bindMerge_0#antijoin_rhs/1@81f1b7nn
+[2026-08-10 22:16:17] (6s)  >>> Created relation #param_decl_bindMerge_0#antijoin_rhs/1@81f1b7nn with 289867 rows and digest 3143e12quj8599ctvuq7bph58bb.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate #var_declsMerge_30#join_rhs/2@ef6ba81l
+[2026-08-10 22:16:17] (6s)  >>> Created relation #var_declsMerge_30#join_rhs/2@ef6ba81l with 530414 rows and digest 70e203karif2a6jovlham26jm27.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate #var_declsMerge_03#join_rhs/2@74f30akj
+[2026-08-10 22:16:17] (6s)  >>> Created relation #var_declsMerge_03#join_rhs/2@74f30akj with 530414 rows and digest a9a2ddhtl54dhid6hi9auqdu529.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c/2@a529892r
+[2026-08-10 22:16:17] (6s)  >>> Created relation Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c/2@a529892r with 530414 rows and digest d9821dbs0hpj59fem0bmufkg029.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c_10#join_rhs/2@d9cba47a
+[2026-08-10 22:16:17] (6s)  >>> Created relation Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c_10#join_rhs/2@d9cba47a with 530414 rows and digest 64382bl6vkunh4jnq2a4a857h73.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate #localvariablesMerge_20#join_rhs/2@583a1fsv
+[2026-08-10 22:16:17] (6s)  >>> Created relation #localvariablesMerge_20#join_rhs/2@583a1fsv with 205066 rows and digest e25587glu41i7ircem50tra6mj6.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Variable::LocalVariable.getName/0#dispred#fe44a180#fb/2@f4d35buh
+[2026-08-10 22:16:17] (6s)  >>> Created relation Variable::LocalVariable.getName/0#dispred#fe44a180#fb/2@f4d35buh with 0 rows and digest THIS-RELATION-HAS-NO-TUPLES.
+[2026-08-10 22:16:17] (6s) Inferred that Variable::LocalVariable.getName/0#dispred#fe44a180#fb_10#join_rhs/2@3c6b504g is empty, due to Variable::LocalVariable.getName/0#dispred#fe44a180#fb/2@f4d35buh.
+[2026-08-10 22:16:17] (6s) Inferred that _Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE_Variable::LocalVariable.getName/__#shared/2@5278290k is empty, due to Variable::LocalVariable.getName/0#dispred#fe44a180#fb_10#join_rhs/2@3c6b504g.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Function::Function.getParameter/1#8e6a5a5b/3@d6cc390q
+[2026-08-10 22:16:17] (6s)  >>> Created relation Function::Function.getParameter/1#8e6a5a5b/3@d6cc390q with 168216 rows and digest c311ea06ftctjoln60311ivs60f.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Parameter::Parameter.getIndex/0#dispred#66f59d90/2@86e214dt
+[2026-08-10 22:16:17] (6s)  >>> Created relation Parameter::Parameter.getIndex/0#dispred#66f59d90/2@86e214dt with 209244 rows and digest 022a16npp340v3rk3alu91v9no8.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate project#Function::Function.isConstructedFrom/1#dispred#2edd856f/1@61dc762r
+[2026-08-10 22:16:17] (6s)  >>> Created relation project#Function::Function.isConstructedFrom/1#dispred#2edd856f/1@61dc762r with 25835 rows and digest 656d8b1nnr7u5kcde1ep21349q0.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate #paramsMerge_10#join_rhs/2@9c3670tr
+[2026-08-10 22:16:17] (6s)  >>> Created relation #paramsMerge_10#join_rhs/2@9c3670tr with 209244 rows and digest 6d192b02449c5bqo3p6qm04dst1.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Parameter::Parameter.getFunction/0#dispred#803faca2#fb/2@87f8108a
+[2026-08-10 22:16:17] (6s)  >>> Created relation Parameter::Parameter.getFunction/0#dispred#803faca2#fb/2@87f8108a with 29352 rows and digest 22f7batvok7j2855vfvo458qhub.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate _Parameter::Parameter#623bc78d_Parameter::Parameter.getFunction/0#dispred#803faca2#fb_project#Functi__#antijoin_rhs/1@153a0ebu
+[2026-08-10 22:16:17] (6s)  >>> Created relation _Parameter::Parameter#623bc78d_Parameter::Parameter.getFunction/0#dispred#803faca2#fb_project#Functi__#antijoin_rhs/1@153a0ebu with 29352 rows and digest 0410d146euur6s7626juurle3k7.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60/2@2143daos
+[2026-08-10 22:16:17] (6s)  >>> Created relation Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60/2@2143daos with 331485 rows and digest 2d7b25d664vp769pidkts5cvgnd.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60_10#join_rhs/2@38e1f747
+[2026-08-10 22:16:17] (6s)  >>> Created relation Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60_10#join_rhs/2@38e1f747 with 331485 rows and digest 9e0c65l0a6khc32fj1sihsirmkf.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5/2@9906cf20
+[2026-08-10 22:16:17] (6s)  >>> Created relation Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5/2@9906cf20 with 217684 rows and digest 4df00f32igcpl4skid671rgkck1.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate project#Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5/1@c5d35bsk
+[2026-08-10 22:16:17] (6s)  >>> Created relation project#Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5/1@c5d35bsk with 165219 rows and digest 62ab8325cutqp83olpaocoap1sa.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5_10#join_rhs/2@cdf85f0s
+[2026-08-10 22:16:17] (6s)  >>> Created relation Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5_10#join_rhs/2@cdf85f0s with 217684 rows and digest 6cc14amkj7p9eem0c6e50er48kb.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Parameter::Parameter.getName/0#dispred#60f9ae8a#fb/2@i1#ed7a9xmi (iteration 1)
+[2026-08-10 22:16:17] (6s) Empty delta for Parameter::Parameter.getName/0#dispred#60f9ae8a#fb_delta (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Variable::VariableDeclarationEntry.getName/0#58a358d6#fb/2@i1#ed7a9wmi (iteration 1)
+[2026-08-10 22:16:17] (6s) 			 - Variable::VariableDeclarationEntry.getName/0#58a358d6#fb_delta has 15 rows (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate _#var_defMerge_Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5_Parameter::Paramete__#antijoin_rhs/3@i2#L0#ed7a9wmi (iteration 2)
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Parameter::Parameter.getName/0#dispred#60f9ae8a#fb/2@i2#ed7a9xmi (iteration 2)
+[2026-08-10 22:16:17] (6s) Empty delta for Parameter::Parameter.getName/0#dispred#60f9ae8a#fb_delta (order for disjuncts: delta=<standard>).
+[2026-08-10 22:16:17] (6s) Accumulating deltas
+[2026-08-10 22:16:17] (6s)  >>> Created relation Variable::VariableDeclarationEntry.getName/0#58a358d6#fb/2@ed7a9wmi with 15 rows and digest a730e515d4k21kudvqdmbst05g4.
+[2026-08-10 22:16:17] (6s)  >>> Created relation Parameter::Parameter.getName/0#dispred#60f9ae8a#fb/2@ed7a9xmi with 0 rows and digest THIS-RELATION-HAS-NO-TUPLES.
+[2026-08-10 22:16:17] (6s) Inferred that Parameter::Parameter.getName/0#dispred#60f9ae8a#fb_10#join_rhs/2@43037f8m is empty, due to Parameter::Parameter.getName/0#dispred#60f9ae8a#fb/2@ed7a9xmi.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Variable::Variable.getName/0#dispred#1b4a78c5#fb/2@2e3ad5ur
+[2026-08-10 22:16:17] (6s)  >>> Created relation Variable::Variable.getName/0#dispred#1b4a78c5#fb/2@2e3ad5ur with 15 rows and digest 1fc229fc4150tati1neco932vjb.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Variable::Variable.getName/0#dispred#1b4a78c5#fb_10#join_rhs/2@e674c6ei
+[2026-08-10 22:16:17] (6s)  >>> Created relation Variable::Variable.getName/0#dispred#1b4a78c5#fb_10#join_rhs/2@e674c6ei with 15 rows and digest 44b80e83sft75tn7b1mgbrht95d.
+[2026-08-10 22:16:17] (6s) Starting to evaluate predicate Element::ElementBase.toString/0#dispred#6e016f86_10#join_rhs/2@4cb8dfdh
+[2026-08-10 22:16:19] (8s) Pausing evaluation to evict 31.07MiB ARRAYS at sequence stamp o+1256
+[2026-08-10 22:16:19] (8s) Unpausing evaluation: 285.66MiB forgotten: 285.66MiB UNREACHABLE (372 items up to o+1245)
+[2026-08-10 22:16:19] (8s)  >>> Created relation Element::ElementBase.toString/0#dispred#6e016f86_10#join_rhs/2@4cb8dfdh with 16830229 rows and digest da079e8hg68jv82csifmov1plrb.
+[2026-08-10 22:16:19] (8s) Starting to evaluate predicate 02_preliminary_groups::optionAccess/3#67db5b7f#ffb/3@164a5cs3
+[2026-08-10 22:16:19] (8s)  >>> Created relation 02_preliminary_groups::optionAccess/3#67db5b7f#ffb/3@164a5cs3 with 94 rows and digest 4adf7872opd0okvm0f9ng4vspk8.
+[2026-08-10 22:16:19] (8s) Starting to evaluate predicate project#02_preliminary_groups::optionAccess/3#67db5b7f#ffb/2@1fe691tc
+[2026-08-10 22:16:19] (8s)  >>> Created relation project#02_preliminary_groups::optionAccess/3#67db5b7f#ffb/2@1fe691tc with 49 rows and digest 9929cat6omjs59rcbpnjlsi5oa9.
+[2026-08-10 22:16:19] (8s) Starting to evaluate predicate project#02_preliminary_groups::optionAccess/3#67db5b7f#ffb_10#join_rhs/2@50f87fnc
+[2026-08-10 22:16:19] (8s)  >>> Created relation project#02_preliminary_groups::optionAccess/3#67db5b7f#ffb_10#join_rhs/2@50f87fnc with 49 rows and digest a27dc981dt25b9qh4dt0plcht44.
+[2026-08-10 22:16:19] (8s) Starting to evaluate predicate #select#query/2@52b5bc8r
+[2026-08-10 22:16:19] (8s)  >>> Created relation #select#query/2@52b5bc8r with 1040 rows and digest 810dbbm5csvptnhnnp1m3qm0ft8.
+[2026-08-10 22:16:19] (8s) Query done
+[2026-08-10 22:16:19] (8s) Pausing evaluation to sync to disk at sequence stamp o+1750
+[2026-08-10 22:16:19] (8s) Unpausing evaluation
+[2026-08-10 22:16:19] Evaluation of /home/oleksii-shemshur/work/toolchains/tools/queries/02_preliminary_groups.ql produced BQRS results.
+ --- Evaluator Log Summary --- 
+Completed evaluation of query 02_preliminary_groups.ql.
+Most expensive predicates for stage 0 of completed query 02_preliminary_groups.ql:
+        time | predicate
+        -----|----------
+         2ms | @function@24d7f7aa
+
+Most expensive predicates for stage 1 of completed query 02_preliminary_groups.ql:
+        time | predicate
+        -----|----------
+         1ms | @usertype@bb08c6gq
+
+Most expensive predicates for stage 3 of completed query 02_preliminary_groups.ql:
+        time  | predicate
+        ------|----------
+        774ms | exprs_10#join_rhs@0a156eph
+         11ms | #fun_declsMerge_10#join_rhs@ef921723
+         10ms | Function::Function.isConstructedFrom/1#dispred#2edd856f@9d2620dd
+          8ms | @parameter@b404ef49
+          8ms | Declaration::Declaration.getTemplateArgumentType/1#dispred#b0efb79c@b4b14eq1
+          4ms | Function::Function.isConstructedFrom/1#dispred#2edd856f_10#join_rhs@ae44c42q
+          3ms | #functionsMerge_20#join_rhs@7f9bb8be
+          2ms | @function@24d7f7aa
+          1ms | @usertype@bb08c6gq
+          0ms | @callexpr@9c70b6i9
+
+Most expensive predicates for stage 4 of completed query 02_preliminary_groups.ql:
+        time | predicate
+        -----|----------
+        31ms | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c@a529892r
+        27ms | #var_declsMerge_10#join_rhs@d57798gt
+        15ms | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c_10#join_rhs@d9cba47a
+        11ms | #fun_declsMerge_10#join_rhs@ef921723
+        10ms | Function::Function.isConstructedFrom/1#dispred#2edd856f@9d2620dd
+         8ms | @parameter@b404ef49
+         7ms | #paramsMerge_10#join_rhs@9c3670tr
+         5ms | #var_declsMerge_03#join_rhs@74f30akj
+         2ms | #param_decl_bindMerge_0#antijoin_rhs@81f1b7nn
+         2ms | @function@24d7f7aa
+         1ms | @usertype@bb08c6gq
+         0ms | #usertypesMerge_02#join_rhs@f614acb9
+         0ms | project#Function::Function.isConstructedFrom/1#dispred#2edd856f@61dc762r
+
+Most expensive predicates for stage 5 of completed query 02_preliminary_groups.ql:
+        time  | predicate
+        ------|----------
+        774ms | exprs_10#join_rhs@0a156eph
+         11ms | #fun_declsMerge_10#join_rhs@ef921723
+         10ms | Function::Function.isConstructedFrom/1#dispred#2edd856f@9d2620dd
+          8ms | Declaration::Declaration.getTemplateArgumentType/1#dispred#b0efb79c@b4b14eq1
+          5ms | UserType::UserType#21e9e463@a3a094rk
+          5ms | Call::Call#048c9613@f1468bg5
+          4ms | Function::Function.isConstructedFrom/1#dispred#2edd856f_10#join_rhs@ae44c42q
+          3ms | #functionsMerge_20#join_rhs@7f9bb8be
+          3ms | TypedefType::TypedefType.getBaseType/0#dispred#671605ef#bf@4eb41ctn
+          2ms | TypedefType::TypedefType#64088755#b@941df5v8
+          1ms | @usertype@bb08c6gq
+          1ms | TypedefType::TypedefType.getBaseType/0#dispred#671605ef#bf_10#join_rhs@ab26a5fg
+          0ms | #decltypesMerge_20#join_rhs@e0e9c00l
+          0ms | @callexpr@9c70b6i9
+          0ms | #usertypesMerge_02#join_rhs@f614acb9
+          0ms | Type::Decltype.getBaseType/0#dispred#f3b613af#bf@9a977225
+          0ms | Type::Decltype#2a58cb8b@170a944k
+          0ms | Type::TypeofType.getBaseType/0#dispred#0d5513d4#bf@d3954e07
+          0ms | project##decltypesMerge@7915a3vs
+          0ms | Type::TypeofType.getBaseType/0#dispred#0d5513d4#bf_10#join_rhs@9b6d11iu
+          0ms | Type::TypeofType#5988d37d@8c3f27ub
+          0ms | Type::Decltype.getBaseType/0#dispred#f3b613af#bf_10#join_rhs@cbab4fap
+          0ms | project##decltypesMerge#2@7d4bd1qf
+          0ms | project##decltypesMerge#3@c572c0n2
+
+Most expensive predicates for stage 6 of completed query 02_preliminary_groups.ql:
+        time  | predicate
+        ------|----------
+        774ms | exprs_10#join_rhs@0a156eph
+        252ms | #varbindMerge_10#join_rhs@e0817ads
+         41ms | Class::Class.getCanonicalMember/1#dispred#e1747079@08088dq3
+         31ms | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c@a529892r
+         27ms | @varaccess@d70b2a2g
+         27ms | #var_declsMerge_10#join_rhs@d57798gt
+         15ms | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c_10#join_rhs@d9cba47a
+         11ms | #fun_declsMerge_10#join_rhs@ef921723
+         10ms | Function::Function.isConstructedFrom/1#dispred#2edd856f@9d2620dd
+          8ms | Declaration::Declaration.getTemplateArgumentType/1#dispred#b0efb79c@b4b14eq1
+          8ms | @membervariable@811f08og
+          8ms | @parameter@b404ef49
+          7ms | #paramsMerge_10#join_rhs@9c3670tr
+          5ms | #var_declsMerge_03#join_rhs@74f30akj
+          5ms | UserType::UserType#21e9e463@a3a094rk
+          4ms | Function::Function.isConstructedFrom/1#dispred#2edd856f_10#join_rhs@ae44c42q
+          3ms | #functionsMerge_20#join_rhs@7f9bb8be
+          2ms | #param_decl_bindMerge_0#antijoin_rhs@81f1b7nn
+          2ms | @function@24d7f7aa
+          1ms | Class::Class#9afdbffd@65d7f1bo
+          1ms | @usertype@bb08c6gq
+          1ms | UserType::UserType.getName/0#dispred#68e0aaf0@c6c4e3bl
+          0ms | #decltypesMerge_20#join_rhs@e0e9c00l
+          0ms | #usertypesMerge_02#join_rhs@f614acb9
+          0ms | Type::Decltype#2a58cb8b@170a944k
+          0ms | Type::TypeofType#5988d37d@8c3f27ub
+          0ms | @callexpr@9c70b6i9
+          0ms | project##decltypesMerge@7915a3vs
+          0ms | project##decltypesMerge#2@c572c0n2
+          0ms | project#Function::Function.isConstructedFrom/1#dispred#2edd856f@61dc762r
+
+Most expensive predicates for stage 7 of completed query 02_preliminary_groups.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+         1.9s |       |              | Element::ElementBase.toString/0#dispred#6e016f86_10#join_rhs@4cb8dfdh
+         1.5s |    48 | 109ms @ 14   | #02_preliminary_groups::directCall/2#1be3d27cPlus#bf@3108ewl2
+        774ms |       |              | exprs_10#join_rhs@0a156eph
+        393ms |       |              | Access::VariableAccess.getTarget/0#238a7818@5cf3ac55
+        355ms |       |              | Expr::Expr.getEnclosingFunction/0#dispred#3960f06c@1bad88op
+        302ms |       |              | _#@functionMergeTypeCall_#@varaccessMergeTypeCall_#@variableMergeTypeCall_#varbindMerge#antijoin_rhs@e213devg
+        271ms |       |              | Access::Access.getTarget/0#dispred#cf25c8aa@039985uc
+        252ms |       |              | #varbindMerge_10#join_rhs@e0817ads
+        195ms |       |              | Access::Access.getTarget/0#dispred#cf25c8aa_10#join_rhs@fb14e6b7
+        143ms |       |              | Call::FunctionCall.getTarget/0#45745a57@8abbf6a6
+         93ms |       |              | 02_preliminary_groups::passReachesFunction/2#2fc3ecaa#bf_10#join_rhs@b675f581
+         77ms |       |              | Access::FieldAccess#d1ccd326@b7434d1v
+         63ms |       |              | _NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a#bf_Type::Type.getName/0#dispred#77__#shared@0639964e
+         54ms |       |              | Call::FunctionCall.getTarget/0#dispred#935da4c5@9b6efedq
+         48ms |       |              | 02_preliminary_groups::directCall/2#1be3d27c@821f49ph
+         44ms |       |              | #var_declsMerge_30#join_rhs@ef6ba81l
+         42ms |       |              | Access::VariableAccess#27163138@cf9e5amo
+         41ms |       |              | Class::Class.getCanonicalMember/1#dispred#e1747079@08088dq3
+         41ms |       |              | Call::DestructorCall#43f8f365@46975c7l
+         36ms |       |              | Call::ConstructorCall#c4f8b4c6@a46eb1ph
+         35ms |     1 |  35ms @ 1    | Parameter::Parameter.getName/0#dispred#60f9ae8a#fb@ed7a9xmi
+         33ms |       |              | Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5@9906cf20
+         31ms |       |              | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c@a529892r
+         27ms |       |              | @varaccess@d70b2a2g
+         27ms |       |              | #var_declsMerge_10#join_rhs@d57798gt
+         26ms |       |              | #select#query@52b5bc8r
+         26ms |       |              | Function::Function.getName/0#dispred#b6c7beb4#fb@982b47e7
+         24ms |       |              | Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60@2143daos
+         23ms |       |              | Function::Function.getParameter/1#8e6a5a5b@d6cc390q
+         22ms |       |              | 02_preliminary_groups::passReachesFunction/2#2fc3ecaa#bf@ded1abud
+         21ms |       |              | #localvariablesMerge_20#join_rhs@583a1fsv
+         16ms |       |              | doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sourceBound#3__NameQualifiers::NameQualifying__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sinkBound#3@7e9659f7
+         15ms |       |              | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c_10#join_rhs@d9cba47a
+         15ms |       |              | Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60_10#join_rhs@38e1f747
+         13ms |       |              | m#Function::Function.getName/0#dispred#b6c7beb4#fb@255480n7
+         13ms |       |              | m#Class::Class.getAMember/0#dispred#6a0fc591#fb@e4f2f0dh
+         12ms |     6 |   7ms @ 2    | Type::Type.getUnderlyingType/0#dispred#bd141f6a@4eafcwca
+         11ms |       |              | Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5_10#join_rhs@cdf85f0s
+         11ms |       |              | #fun_declsMerge_10#join_rhs@ef921723
+         10ms |       |              | Function::Function.isConstructedFrom/1#dispred#2edd856f@9d2620dd
+          8ms |       |              | @parameter@b404ef49
+          8ms |       |              | Declaration::Declaration.getTemplateArgumentType/1#dispred#b0efb79c@b4b14eq1
+          8ms |       |              | @declaration@1cd14b48
+          8ms |       |              | @membervariable@811f08og
+          7ms |       |              | #paramsMerge_10#join_rhs@9c3670tr
+          7ms |       |              | Class::Class.getAMember/0#dispred#6a0fc591#fb@51d5e2md
+          7ms |       |              | Variable::LocalScopeVariable#3aae4a09@2ab713l3
+          6ms |       |              | Variable::Variable.isConstructedFrom/1#dispred#fbdd4275#bf@8a9c874b
+          6ms |       |              | project#Class::Class.getCanonicalMember/1#dispred#e1747079@5b6e4802
+          6ms |       |              | project#Class::Class.getCanonicalMember/1#dispred#e1747079_10#join_rhs@fc2823pk
+
+Most expensive predicates for completed query 02_preliminary_groups.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+         1.9s |       |              | Element::ElementBase.toString/0#dispred#6e016f86_10#join_rhs@4cb8dfdh
+         1.5s |    48 | 109ms @ 14   | #02_preliminary_groups::directCall/2#1be3d27cPlus#bf@3108ewl2
+        774ms |       |              | exprs_10#join_rhs@0a156eph
+        393ms |       |              | Access::VariableAccess.getTarget/0#238a7818@5cf3ac55
+        355ms |       |              | Expr::Expr.getEnclosingFunction/0#dispred#3960f06c@1bad88op
+        302ms |       |              | _#@functionMergeTypeCall_#@varaccessMergeTypeCall_#@variableMergeTypeCall_#varbindMerge#antijoin_rhs@e213devg
+        271ms |       |              | Access::Access.getTarget/0#dispred#cf25c8aa@039985uc
+        252ms |       |              | #varbindMerge_10#join_rhs@e0817ads
+        195ms |       |              | Access::Access.getTarget/0#dispred#cf25c8aa_10#join_rhs@fb14e6b7
+        143ms |       |              | Call::FunctionCall.getTarget/0#45745a57@8abbf6a6
+         93ms |       |              | 02_preliminary_groups::passReachesFunction/2#2fc3ecaa#bf_10#join_rhs@b675f581
+         77ms |       |              | Access::FieldAccess#d1ccd326@b7434d1v
+         63ms |       |              | _NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a#bf_Type::Type.getName/0#dispred#77__#shared@0639964e
+         54ms |       |              | Call::FunctionCall.getTarget/0#dispred#935da4c5@9b6efedq
+         48ms |       |              | 02_preliminary_groups::directCall/2#1be3d27c@821f49ph
+         44ms |       |              | #var_declsMerge_30#join_rhs@ef6ba81l
+         42ms |       |              | Access::VariableAccess#27163138@cf9e5amo
+         41ms |       |              | Class::Class.getCanonicalMember/1#dispred#e1747079@08088dq3
+         41ms |       |              | Call::DestructorCall#43f8f365@46975c7l
+         36ms |       |              | Call::ConstructorCall#c4f8b4c6@a46eb1ph
+         35ms |     1 |  35ms @ 1    | Parameter::Parameter.getName/0#dispred#60f9ae8a#fb@ed7a9xmi
+         33ms |       |              | Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5@9906cf20
+         31ms |       |              | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c@a529892r
+         27ms |       |              | @varaccess@d70b2a2g
+         27ms |       |              | #var_declsMerge_10#join_rhs@d57798gt
+         26ms |       |              | #select#query@52b5bc8r
+         26ms |       |              | Function::Function.getName/0#dispred#b6c7beb4#fb@982b47e7
+         24ms |       |              | Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60@2143daos
+         23ms |       |              | Function::Function.getParameter/1#8e6a5a5b@d6cc390q
+         22ms |       |              | 02_preliminary_groups::passReachesFunction/2#2fc3ecaa#bf@ded1abud
+         21ms |       |              | #localvariablesMerge_20#join_rhs@583a1fsv
+         16ms |       |              | doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sourceBound#3__NameQualifiers::NameQualifying__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sinkBound#3@7e9659f7
+         15ms |       |              | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c_10#join_rhs@d9cba47a
+         15ms |       |              | Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60_10#join_rhs@38e1f747
+         13ms |       |              | m#Function::Function.getName/0#dispred#b6c7beb4#fb@255480n7
+         13ms |       |              | m#Class::Class.getAMember/0#dispred#6a0fc591#fb@e4f2f0dh
+         12ms |     6 |   7ms @ 2    | Type::Type.getUnderlyingType/0#dispred#bd141f6a@4eafcwca
+         11ms |       |              | Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5_10#join_rhs@cdf85f0s
+         11ms |       |              | #fun_declsMerge_10#join_rhs@ef921723
+         10ms |       |              | Function::Function.isConstructedFrom/1#dispred#2edd856f@9d2620dd
+          8ms |       |              | @parameter@b404ef49
+          8ms |       |              | Declaration::Declaration.getTemplateArgumentType/1#dispred#b0efb79c@b4b14eq1
+          8ms |       |              | @declaration@1cd14b48
+          8ms |       |              | @membervariable@811f08og
+          7ms |       |              | #paramsMerge_10#join_rhs@9c3670tr
+          7ms |       |              | Class::Class.getAMember/0#dispred#6a0fc591#fb@51d5e2md
+          7ms |       |              | Variable::LocalScopeVariable#3aae4a09@2ab713l3
+          6ms |       |              | Variable::Variable.isConstructedFrom/1#dispred#fbdd4275#bf@8a9c874b
+          6ms |       |              | project#Class::Class.getCanonicalMember/1#dispred#e1747079@5b6e4802
+          6ms |       |              | project#Class::Class.getCanonicalMember/1#dispred#e1747079_10#join_rhs@fc2823pk
+
+[2026-08-10 22:16:19] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 8.6 seconds
+        * Total time spent evaluating predicates: 7.7 seconds

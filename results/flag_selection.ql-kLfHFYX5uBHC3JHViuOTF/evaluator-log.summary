@@ -1,0 +1,7 @@
+[2026-08-12 15:50:47] Summary of a CodeQL evaluation that started at 2026-08-12T14:50:47.088361492Z
+[2026-08-12 15:50:47] 
+[2026-08-12 15:50:47] Found predicate #select#query@cdd3e8mm in the relation cache (size: 481)
+[2026-08-12 15:50:47] Completed evaluation of query flag_selection.ql.
+[2026-08-12 15:50:47] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.0 seconds
+        * Total time spent evaluating predicates: 0.0 seconds

@@ -1,0 +1,121 @@
+{
+  "time" : "2026-08-12T13:55:50.757114095Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 26,
+  "nanoTime" : 158644980015,
+  "codeqlVersion" : "2.26.2",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-08-12T13:55:50.763736291Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 27,
+  "nanoTime" : 158651594868,
+  "queryName" : "/home/oleksii-shemshur/work/toolchains/tools/queries/flag_selection.ql",
+  "stages" : [ 1 ]
+}
+
+{
+  "time" : "2026-08-12T13:55:50.766055613Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 28,
+  "nanoTime" : 158653913358,
+  "raHash" : "989e8bm3m27tjc92vnro6crogq6",
+  "predicateName" : "preproctext",
+  "appearsAs" : {
+    "preproctext" : [ 1 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 125981
+}
+
+{
+  "time" : "2026-08-12T13:55:50.766200384Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 29,
+  "nanoTime" : 158654038062,
+  "raHash" : "9083fa3calu2hlvfs0lktudqdf5",
+  "predicateName" : "Macro::Macro.getName/0#dispred#e28b3699",
+  "appearsAs" : {
+    "Macro::Macro.getName/0#dispred#e28b3699" : [ 1 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 40855
+}
+
+{
+  "time" : "2026-08-12T13:55:50.770593959Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 30,
+  "nanoTime" : 158658599180,
+  "raHash" : "cdd3e8mmm8uvu6d2g8m3rt911t4",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 1 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/flag_selection.ql:10,1-16,60",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = REWRITE `Macro::Macro.getName/0#dispred#e28b3699` WITH TEST InOut.1 matches_constant \"(?s)flag..*\"",
+      "    {1}    | SCAN OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "    {2}    | JOIN WITH `Macro::Macro.getName/0#dispred#e28b3699` ON FIRST 1 OUTPUT Lhs.0, Rhs.1",
+      "    {3}    | JOIN WITH preproctext ON FIRST 1 OUTPUT Lhs.1, Rhs.2, _",
+      "    {3}    | REWRITE WITH Tmp.2 := 5, Out.2 := suffix(InOut.0,Tmp.2)",
+      "    {6}    | SCAN OUTPUT In.0, _, _, In.2, In.1, _",
+      "    {3}    | REWRITE WITH Tmp.1 := \"-f\", Tmp.2 := \"_\", Tmp.5 := \"-\", Tmp.2 := replaceAll(In.3,Tmp.2,Tmp.5), Out.1 := (Tmp.1 ++ Tmp.2), Tmp.2 := 15, Out.2 := suffix(In.4,Tmp.2) KEEPING 3",
+      "    {3}    | SCAN OUTPUT In.1, In.0, In.2",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Macro::Macro.getName/0#dispred#e28b3699" : "9083fa3calu2hlvfs0lktudqdf5",
+    "preproctext" : "989e8bm3m27tjc92vnro6crogq6"
+  },
+  "queryCausingWork" : 27
+}
+
+{
+  "time" : "2026-08-12T13:55:50.772644387Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 31,
+  "nanoTime" : 158660605476,
+  "predicateStartEvent" : 30,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-12T13:55:50.845519587Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 32,
+  "nanoTime" : 158733377893,
+  "startEvent" : 31,
+  "resultSize" : 481
+}
+
+{
+  "time" : "2026-08-12T13:55:50.845690336Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 33,
+  "nanoTime" : 158733525810,
+  "startEvent" : 30,
+  "resultSize" : 481
+}
+
+{
+  "time" : "2026-08-12T13:55:50.849884818Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 34,
+  "nanoTime" : 158737737694,
+  "startEvent" : 27,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-08-12T13:55:50.852182429Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 35,
+  "nanoTime" : 158740038131
+}

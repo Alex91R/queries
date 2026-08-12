@@ -1,0 +1,417 @@
+{
+  "time" : "2026-07-24T18:00:51.127191979Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 2,
+  "nanoTime" : 116215972,
+  "codeqlVersion" : "2.26.1",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-07-24T18:00:51.186940022Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 3,
+  "nanoTime" : 175960949,
+  "queryName" : "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example2.ql",
+  "stages" : [ 0 ]
+}
+
+{
+  "time" : "2026-07-24T18:00:51.211801200Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4,
+  "nanoTime" : 200836423,
+  "raHash" : "ec93749gflo5p51uulng0fggcp3",
+  "predicateName" : "files",
+  "appearsAs" : {
+    "files" : [ 0 ]
+  },
+  "predicateType" : "EXTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmlecode.python.dbscheme:164,1-167,3",
+  "dependencies" : { },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-07-24T18:00:51.230342333Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 5,
+  "nanoTime" : 219365204,
+  "startEvent" : 4,
+  "resultSize" : 260
+}
+
+{
+  "time" : "2026-07-24T18:00:51.242204868Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 6,
+  "nanoTime" : 231229752,
+  "raHash" : "81abb6m0a67uue8thbeagmle496",
+  "predicateName" : "Files::File#6a970600",
+  "appearsAs" : {
+    "Files::File#6a970600" : [ 0 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Files.qll:31,7-31,11",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN files OUTPUT In.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "files" : "ec93749gflo5p51uulng0fggcp3"
+  },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-07-24T18:00:51.257843339Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 7,
+  "nanoTime" : 246867892,
+  "predicateStartEvent" : 6,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:00:51.273128214Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 8,
+  "nanoTime" : 262149511,
+  "startEvent" : 7,
+  "resultSize" : 260
+}
+
+{
+  "time" : "2026-07-24T18:00:51.273331536Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 9,
+  "nanoTime" : 262340341,
+  "startEvent" : 6,
+  "resultSize" : 260
+}
+
+{
+  "time" : "2026-07-24T18:00:51.275432100Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 10,
+  "nanoTime" : 264449630,
+  "raHash" : "bad7d9u0ah6mhb81jggafmlmf50",
+  "predicateName" : "folders",
+  "appearsAs" : {
+    "folders" : [ 0 ]
+  },
+  "predicateType" : "EXTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmlecode.python.dbscheme:169,1-172,3",
+  "dependencies" : { },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-07-24T18:00:51.276439836Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 11,
+  "nanoTime" : 265453379,
+  "startEvent" : 10,
+  "resultSize" : 210
+}
+
+{
+  "time" : "2026-07-24T18:00:51.277354077Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 12,
+  "nanoTime" : 266365586,
+  "raHash" : "966d67vokouguvkk04fuse20ljd",
+  "predicateName" : "Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4",
+  "appearsAs" : {
+    "Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4" : [ 0 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/FileSystem.qll:63,5-87,66",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = files UNION folders",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "files" : "ec93749gflo5p51uulng0fggcp3",
+    "folders" : "bad7d9u0ah6mhb81jggafmlmf50"
+  },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-07-24T18:00:51.277639514Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 13,
+  "nanoTime" : 266647877,
+  "predicateStartEvent" : 12,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:00:51.279829666Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 14,
+  "nanoTime" : 268844461,
+  "startEvent" : 13,
+  "resultSize" : 470
+}
+
+{
+  "time" : "2026-07-24T18:00:51.279954501Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 15,
+  "nanoTime" : 268959458,
+  "startEvent" : 12,
+  "resultSize" : 470
+}
+
+{
+  "time" : "2026-07-24T18:00:51.284214428Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 16,
+  "nanoTime" : 273233661,
+  "raHash" : "5c8c8624nu2qt3nfk57irveu3o4",
+  "predicateName" : "Files::Impl::File.getURL/0#dispred#3648064d",
+  "appearsAs" : {
+    "Files::Impl::File.getURL/0#dispred#3648064d" : [ 0 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/shared/util/codeql/util/FileSystem.qll:220,5-221,90",
+  "ra" : {
+    "pipeline" : [
+      "    {4} r1 = JOIN Files::File#6a970600 WITH `Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4` ON FIRST 1 OUTPUT Lhs.0, _, Rhs.1, _",
+      "    {2}    | REWRITE WITH Tmp.1 := \"file://\", Tmp.3 := \":0:0:0:0\", Out.1 := (Tmp.1 ++ In.2 ++ Tmp.3) KEEPING 2",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Files::File#6a970600" : "81abb6m0a67uue8thbeagmle496",
+    "Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4" : "966d67vokouguvkk04fuse20ljd"
+  },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-07-24T18:00:51.286609986Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 17,
+  "nanoTime" : 275627777,
+  "predicateStartEvent" : 16,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:00:51.305387815Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 18,
+  "nanoTime" : 294406507,
+  "startEvent" : 17,
+  "resultSize" : 260
+}
+
+{
+  "time" : "2026-07-24T18:00:51.305526896Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 19,
+  "nanoTime" : 294534048,
+  "startEvent" : 16,
+  "resultSize" : 260
+}
+
+{
+  "time" : "2026-07-24T18:00:51.306406512Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 20,
+  "nanoTime" : 295417771,
+  "raHash" : "7f19aafn9v64knmplssi8va4048",
+  "predicateName" : "#Files::Impl::File.getURL/0#dispred#3648064dMerge_0#antijoin_rhs",
+  "appearsAs" : {
+    "#Files::Impl::File.getURL/0#dispred#3648064dMerge_0#antijoin_rhs" : [ 0 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example2.ql:11,1-12,26",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN `Files::Impl::File.getURL/0#dispred#3648064d` OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Files::Impl::File.getURL/0#dispred#3648064d" : "5c8c8624nu2qt3nfk57irveu3o4"
+  },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-07-24T18:00:51.307413637Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 21,
+  "nanoTime" : 296426389,
+  "predicateStartEvent" : 20,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:00:51.308379565Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 22,
+  "nanoTime" : 297393799,
+  "startEvent" : 21,
+  "resultSize" : 260
+}
+
+{
+  "time" : "2026-07-24T18:00:51.308519919Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 23,
+  "nanoTime" : 297527050,
+  "startEvent" : 20,
+  "resultSize" : 260
+}
+
+{
+  "time" : "2026-07-24T18:00:51.309316979Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 24,
+  "nanoTime" : 298326675,
+  "raHash" : "ce4431r0docua5n7go5ge06mb1e",
+  "predicateName" : "#Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs",
+  "appearsAs" : {
+    "#Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs" : [ 0 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example2.ql:11,1-12,26",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN `Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4` OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4" : "966d67vokouguvkk04fuse20ljd"
+  },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-07-24T18:00:51.309473624Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 25,
+  "nanoTime" : 298480615,
+  "predicateStartEvent" : 24,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:00:51.310552494Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 26,
+  "nanoTime" : 299563473,
+  "startEvent" : 25,
+  "resultSize" : 470
+}
+
+{
+  "time" : "2026-07-24T18:00:51.310675195Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 27,
+  "nanoTime" : 299684851,
+  "startEvent" : 24,
+  "resultSize" : 470
+}
+
+{
+  "time" : "2026-07-24T18:00:51.311970182Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 28,
+  "nanoTime" : 300976953,
+  "raHash" : "40d919as0ka5g16pel1oovgbeae",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 0 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example2.ql:11,1-12,26",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = JOIN Files::File#6a970600 WITH `Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4` ON FIRST 1 OUTPUT Lhs.0, Rhs.1",
+      "",
+      "    {1} r2 = Files::File#6a970600 AND NOT `#Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs`(FIRST 1)",
+      "    {2}    | SCAN OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := \"(no string representation)\"",
+      "",
+      "    {2} r3 = r1 UNION r2",
+      "    {4}    | JOIN WITH `Files::Impl::File.getURL/0#dispred#3648064d` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Rhs.1, _",
+      "    {4}    | REWRITE WITH Out.3 := \"Hello, world!\"",
+      "",
+      "    {1} r4 = Files::File#6a970600 AND NOT `#Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs`(FIRST 1)",
+      "    {2}    | SCAN OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := \"(no string representation)\"",
+      "",
+      "    {2} r5 = r1 UNION r4",
+      "    {2}    | AND NOT `#Files::Impl::File.getURL/0#dispred#3648064dMerge_0#antijoin_rhs`(FIRST 1)",
+      "    {4}    | SCAN OUTPUT In.0, In.1, _, _",
+      "    {4}    | REWRITE WITH Out.2 := \"\", Out.3 := \"Hello, world!\"",
+      "",
+      "    {4} r6 = r3 UNION r5",
+      "    return r6"
+    ]
+  },
+  "dependencies" : {
+    "Files::File#6a970600" : "81abb6m0a67uue8thbeagmle496",
+    "Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4" : "966d67vokouguvkk04fuse20ljd",
+    "#Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs" : "ce4431r0docua5n7go5ge06mb1e",
+    "Files::Impl::File.getURL/0#dispred#3648064d" : "5c8c8624nu2qt3nfk57irveu3o4",
+    "#Files::Impl::File.getURL/0#dispred#3648064dMerge_0#antijoin_rhs" : "7f19aafn9v64knmplssi8va4048"
+  },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-07-24T18:00:51.313997778Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 29,
+  "nanoTime" : 303013806,
+  "predicateStartEvent" : 28,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:00:51.319434089Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 30,
+  "nanoTime" : 308452501,
+  "startEvent" : 29,
+  "resultSize" : 260
+}
+
+{
+  "time" : "2026-07-24T18:00:51.319565737Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 31,
+  "nanoTime" : 308573529,
+  "startEvent" : 28,
+  "resultSize" : 260
+}
+
+{
+  "time" : "2026-07-24T18:00:51.344097565Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 32,
+  "nanoTime" : 333136235,
+  "startEvent" : 3,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-07-24T18:00:51.346528660Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 33,
+  "nanoTime" : 335549647
+}

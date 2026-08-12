@@ -1,0 +1,24 @@
+Completed evaluation of query example2.ql.
+Most expensive predicates for stage 0 of completed query example2.ql:
+        time | predicate
+        -----|----------
+        31ms | Files::File#6a970600@81abb6m0
+        21ms | Files::Impl::File.getURL/0#dispred#3648064d@5c8c8624
+         7ms | #select#query@40d919as
+         2ms | #Files::Impl::File.getURL/0#dispred#3648064dMerge_0#antijoin_rhs@7f19aafn
+         2ms | Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4@966d67vo
+         1ms | #Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs@ce4431r0
+
+Most expensive predicates for completed query example2.ql:
+        time | predicate
+        -----|----------
+        31ms | Files::File#6a970600@81abb6m0
+        21ms | Files::Impl::File.getURL/0#dispred#3648064d@5c8c8624
+         7ms | #select#query@40d919as
+         2ms | #Files::Impl::File.getURL/0#dispred#3648064dMerge_0#antijoin_rhs@7f19aafn
+         2ms | Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4@966d67vo
+         1ms | #Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs@ce4431r0
+
+[2026-07-24 19:00:51] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.2 seconds
+        * Total time spent evaluating predicates: 0.1 seconds

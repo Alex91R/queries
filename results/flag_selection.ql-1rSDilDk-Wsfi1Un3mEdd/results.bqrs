@@ -1,0 +1,699 @@
+•¥-fexceptionsflag_exceptions!global_options.x_flag_exceptions-flto	flag_ltoglobal_options.x_flag_lto-fsplit-stackflag_split_stack"global_options.x_flag_split_stack-fabi-versionflag_abi_version"global_options.x_flag_abi_version-fdump-noaddrflag_dump_noaddr"global_options.x_flag_dump_noaddr-fpic	flag_picglobal_options.x_flag_pic-fpie	flag_pieglobal_options.x_flag_pie-fwpa	flag_wpaglobal_options.x_flag_wpa	-fltransflag_ltransglobal_options.x_flag_ltrans-fsection-anchorsflag_section_anchors&global_options.x_flag_section_anchors-fprofile-filter-filesflag_profile_filter_files+global_options.x_flag_profile_filter_files-fprofile-exclude-filesflag_profile_exclude_files,global_options.x_flag_profile_exclude_files-faccess-controlflag_access_control%global_options.x_flag_access_control"-faggressive-function-elimination%flag_aggressive_function_elimination6global_options.x_flag_aggressive_function_elimination -faggressive-loop-optimizations#flag_aggressive_loop_optimizations4global_options.x_flag_aggressive_loop_optimizations-falign-commonsflag_align_commons$global_options.x_flag_align_commons-falign-functionsflag_align_functions&global_options.x_flag_align_functions-falign-jumpsflag_align_jumps"global_options.x_flag_align_jumps-falign-labelsflag_align_labels#global_options.x_flag_align_labels-falign-loopsflag_align_loops"global_options.x_flag_align_loops-fall-intrinsicsflag_all_intrinsics%global_options.x_flag_all_intrinsics-fallow-leading-underscoreflag_allow_leading_underscore/global_options.x_flag_allow_leading_underscore)-fallow-parameterless-variadic-functions,flag_allow_parameterless_variadic_functions=global_options.x_flag_allow_parameterless_variadic_functions	-fassertflag_assertglobal_options.x_flag_assert-fassociative-mathflag_associative_math'global_options.x_flag_associative_math-fassume-phsaflag_assume_phsa"global_options.x_flag_assume_phsa-fasynchronous-unwind-tables flag_asynchronous_unwind_tables1global_options.x_flag_asynchronous_unwind_tables-fauto-inc-decflag_auto_inc_dec#global_options.x_flag_auto_inc_dec-fauto-profileflag_auto_profile#global_options.x_flag_auto_profile-fautomaticflag_automatic global_options.x_flag_automatic-fbackslashflag_backslash global_options.x_flag_backslash-fbacktraceflag_backtrace global_options.x_flag_backtrace-fbounds-checkflag_bounds_check#global_options.x_flag_bounds_check-fbranch-probabilitiesflag_branch_probabilities+global_options.x_flag_branch_probabilities-fbranch-target-load-optimize!flag_branch_target_load_optimize2global_options.x_flag_branch_target_load_optimize-fbranch-target-load-optimize2"flag_branch_target_load_optimize23global_options.x_flag_branch_target_load_optimize2-fbtr-bb-exclusiveflag_btr_bb_exclusive'global_options.x_flag_btr_bb_exclusive-fbuilding-libgccflag_building_libgcc&global_options.x_flag_building_libgcc-fbuilding-libphobos-testsflag_building_libphobos_tests/global_options.x_flag_building_libphobos_tests-fc-prototypesflag_c_prototypes#global_options.x_flag_c_prototypes-fc-prototypes-externalflag_c_prototypes_external,global_options.x_flag_c_prototypes_external-fcaller-savesflag_caller_saves#global_options.x_flag_caller_saves-fcf-protectionflag_cf_protection$global_options.x_flag_cf_protection-fcheck-newflag_check_new global_options.x_flag_check_new-fcheckingflag_checkingglobal_options.x_flag_checking-fcode-hoistingflag_code_hoisting$global_options.x_flag_code_hoisting-fcombine-stack-adjustmentsflag_combine_stack_adjustments0global_options.x_flag_combine_stack_adjustments-fcompare-debugflag_compare_debug$global_options.x_flag_compare_debug-fconceptsflag_conceptsglobal_options.x_flag_concepts-fconserve-stackflag_conserve_stack%global_options.x_flag_conserve_stack-fcprop-registersflag_cprop_registers&global_options.x_flag_cprop_registers-fcray-pointerflag_cray_pointer#global_options.x_flag_cray_pointer-fcrossjumpingflag_crossjumping#global_options.x_flag_crossjumping-fcse-follow-jumpsflag_cse_follow_jumps'global_options.x_flag_cse_follow_jumps-fcx-fortran-rulesflag_cx_fortran_rules'global_options.x_flag_cx_fortran_rules-fcx-limited-rangeflag_cx_limited_range'global_options.x_flag_cx_limited_range-fdata-sectionsflag_data_sections$global_options.x_flag_data_sections-fdce	flag_dceglobal_options.x_flag_dce-fdebug-types-sectionflag_debug_types_section*global_options.x_flag_debug_types_section-fdec	flag_decglobal_options.x_flag_dec-fdec-includeflag_dec_include"global_options.x_flag_dec_include-fdec-intrinsic-intsflag_dec_intrinsic_ints)global_options.x_flag_dec_intrinsic_ints-fdec-mathflag_dec_mathglobal_options.x_flag_dec_math-fdec-staticflag_dec_static!global_options.x_flag_dec_static-fdec-structureflag_dec_structure$global_options.x_flag_dec_structure-fdeclone-ctor-dtorflag_declone_ctor_dtor(global_options.x_flag_declone_ctor_dtor-fdeduce-init-listflag_deduce_init_list'global_options.x_flag_deduce_init_list-fdefault-real-10flag_default_real_10&global_options.x_flag_default_real_10-fdefault-real-16flag_default_real_16&global_options.x_flag_default_real_16-fdefault-real-8flag_default_real_8%global_options.x_flag_default_real_8-fdefer-popflag_defer_pop global_options.x_flag_defer_pop-fdelayed-branchflag_delayed_branch%global_options.x_flag_delayed_branch-fdelete-dead-exceptionsflag_delete_dead_exceptions-global_options.x_flag_delete_dead_exceptions-fdelete-null-pointer-checks flag_delete_null_pointer_checks1global_options.x_flag_delete_null_pointer_checks-fdevirtualizeflag_devirtualize#global_options.x_flag_devirtualize-fdevirtualize-speculatively flag_devirtualize_speculatively1global_options.x_flag_devirtualize_speculatively-fdiagnostics-generate-patch flag_diagnostics_generate_patch1global_options.x_flag_diagnostics_generate_patch-fdiagnostics-parseable-fixits"flag_diagnostics_parseable_fixits3global_options.x_flag_diagnostics_parseable_fixits-fdiagnostics-show-caretflag_diagnostics_show_caret-global_options.x_flag_diagnostics_show_caret-fdiagnostics-show-labelsflag_diagnostics_show_labels.global_options.x_flag_diagnostics_show_labels -fdiagnostics-show-line-numbers#flag_diagnostics_show_line_numbers4global_options.x_flag_diagnostics_show_line_numbers-fdiagnostics-show-optionflag_diagnostics_show_option.global_options.x_flag_diagnostics_show_option!-fdiagnostics-show-template-tree$flag_diagnostics_show_template_tree5global_options.x_flag_diagnostics_show_template_tree-fdollar-okflag_dollar_ok global_options.x_flag_dollar_ok-fdse	flag_dseglobal_options.x_flag_dse-fdump-ada-specflag_dump_ada_spec$global_options.x_flag_dump_ada_spec-fdump-ada-spec-slimflag_dump_ada_spec_slim)global_options.x_flag_dump_ada_spec_slim-fdump-final-insnsflag_dump_final_insns'global_options.x_flag_dump_final_insns-fdump-fortran-globalflag_dump_fortran_global*global_options.x_flag_dump_fortran_global-fdump-fortran-optimizedflag_dump_fortran_optimized-global_options.x_flag_dump_fortran_optimized-fdump-fortran-originalflag_dump_fortran_original,global_options.x_flag_dump_fortran_original-fdump-passesflag_dump_passes"global_options.x_flag_dump_passes-fdump-unnumberedflag_dump_unnumbered&global_options.x_flag_dump_unnumbered-fdump-unnumbered-linksflag_dump_unnumbered_links,global_options.x_flag_dump_unnumbered_links-fdwarf2-cfi-asmflag_dwarf2_cfi_asm%global_options.x_flag_dwarf2_cfi_asm-fearly-inliningflag_early_inlining%global_options.x_flag_early_inlining-felide-constructorsflag_elide_constructors)global_options.x_flag_elide_constructors-felide-typeflag_elide_type!global_options.x_flag_elide_type-feliminate-unused-debug-types"flag_eliminate_unused_debug_types3global_options.x_flag_eliminate_unused_debug_types-femit-class-debug-alwaysflag_emit_class_debug_always.global_options.x_flag_emit_class_debug_always-fenforce-eh-specsflag_enforce_eh_specs'global_options.x_flag_enforce_eh_specs-fexpensive-optimizationsflag_expensive_optimizations.global_options.x_flag_expensive_optimizations-fext-numeric-literalsflag_ext_numeric_literals+global_options.x_flag_ext_numeric_literals-fextern-tls-initflag_extern_tls_init&global_options.x_flag_extern_tls_init-fexternal-blasflag_external_blas$global_options.x_flag_external_blas-ff2c	flag_f2cglobal_options.x_flag_f2c-ffat-lto-objectsflag_fat_lto_objects&global_options.x_flag_fat_lto_objects-ffinite-math-onlyflag_finite_math_only'global_options.x_flag_finite_math_only-ffloat-storeflag_float_store"global_options.x_flag_float_store-fforward-propagateflag_forward_propagate(global_options.x_flag_forward_propagate-ffp-int-builtin-inexactflag_fp_int_builtin_inexact-global_options.x_flag_fp_int_builtin_inexact-ffrontend-loop-interchangeflag_frontend_loop_interchange0global_options.x_flag_frontend_loop_interchange-ffrontend-optimizeflag_frontend_optimize(global_options.x_flag_frontend_optimize-ffunction-sectionsflag_function_sections(global_options.x_flag_function_sections-fgcse
+flag_gcseglobal_options.x_flag_gcse-fgcse-after-reloadflag_gcse_after_reload(global_options.x_flag_gcse_after_reload-fgcse-lasflag_gcse_lasglobal_options.x_flag_gcse_las
+-fgcse-lmflag_gcse_lmglobal_options.x_flag_gcse_lm
+-fgcse-smflag_gcse_smglobal_options.x_flag_gcse_sm	-fgimpleflag_gimpleglobal_options.x_flag_gimple-fgnu-uniqueflag_gnu_unique!global_options.x_flag_gnu_unique-fgnu89-inlineflag_gnu89_inline#global_options.x_flag_gnu89_inline-fgraphiteflag_graphiteglobal_options.x_flag_graphite-fgraphite-identityflag_graphite_identity(global_options.x_flag_graphite_identity-fhoist-adjacent-loadsflag_hoist_adjacent_loads+global_options.x_flag_hoist_adjacent_loads-fif-conversionflag_if_conversion$global_options.x_flag_if_conversion-fif-conversion2flag_if_conversion2%global_options.x_flag_if_conversion2-fimplement-inlinesflag_implement_inlines(global_options.x_flag_implement_inlines-fimplicit-inline-templatesflag_implicit_inline_templates0global_options.x_flag_implicit_inline_templates-fimplicit-noneflag_implicit_none$global_options.x_flag_implicit_none-fimplicit-templatesflag_implicit_templates)global_options.x_flag_implicit_templates-findirect-inliningflag_indirect_inlining(global_options.x_flag_indirect_inlining-finhibit-size-directiveflag_inhibit_size_directive-global_options.x_flag_inhibit_size_directive-finit-derivedflag_init_derived#global_options.x_flag_init_derived-finline-atomicsflag_inline_atomics%global_options.x_flag_inline_atomics-finline-functionsflag_inline_functions'global_options.x_flag_inline_functions-finline-functions-called-once"flag_inline_functions_called_once3global_options.x_flag_inline_functions_called_once-finline-small-functionsflag_inline_small_functions-global_options.x_flag_inline_small_functions-finvariantsflag_invariants!global_options.x_flag_invariants-fipa-bit-cpflag_ipa_bit_cp!global_options.x_flag_ipa_bit_cp	-fipa-cpflag_ipa_cpglobal_options.x_flag_ipa_cp-fipa-cp-cloneflag_ipa_cp_clone#global_options.x_flag_ipa_cp_clone
+-fipa-icfflag_ipa_icfglobal_options.x_flag_ipa_icf-fipa-icf-functionsflag_ipa_icf_functions(global_options.x_flag_ipa_icf_functions-fipa-icf-variablesflag_ipa_icf_variables(global_options.x_flag_ipa_icf_variables-fipa-profileflag_ipa_profile"global_options.x_flag_ipa_profile
+-fipa-ptaflag_ipa_ptaglobal_options.x_flag_ipa_pta-fipa-pure-constflag_ipa_pure_const%global_options.x_flag_ipa_pure_const	-fipa-raflag_ipa_raglobal_options.x_flag_ipa_ra-fipa-referenceflag_ipa_reference$global_options.x_flag_ipa_reference-fipa-reference-addressableflag_ipa_reference_addressable0global_options.x_flag_ipa_reference_addressable
+-fipa-sraflag_ipa_sraglobal_options.x_flag_ipa_sra-fipa-stack-alignmentflag_ipa_stack_alignment*global_options.x_flag_ipa_stack_alignment
+-fipa-vrpflag_ipa_vrpglobal_options.x_flag_ipa_vrp-fira-hoist-pressureflag_ira_hoist_pressure)global_options.x_flag_ira_hoist_pressure-fira-loop-pressureflag_ira_loop_pressure(global_options.x_flag_ira_loop_pressure-fira-share-save-slotsflag_ira_share_save_slots+global_options.x_flag_ira_share_save_slots-fira-share-spill-slotsflag_ira_share_spill_slots,global_options.x_flag_ira_share_spill_slots$-fisolate-erroneous-paths-attribute'flag_isolate_erroneous_paths_attribute8global_options.x_flag_isolate_erroneous_paths_attribute&-fisolate-erroneous-paths-dereference)flag_isolate_erroneous_paths_dereference:global_options.x_flag_isolate_erroneous_paths_dereference	-fivoptsflag_ivoptsglobal_options.x_flag_ivopts-fjump-tablesflag_jump_tables"global_options.x_flag_jump_tables-fkeep-gc-roots-liveflag_keep_gc_roots_live)global_options.x_flag_keep_gc_roots_live-fkeep-inline-dllexportflag_keep_inline_dllexport,global_options.x_flag_keep_inline_dllexport-fkeep-inline-functionsflag_keep_inline_functions,global_options.x_flag_keep_inline_functions-fkeep-static-constsflag_keep_static_consts)global_options.x_flag_keep_static_consts-fkeep-static-functionsflag_keep_static_functions,global_options.x_flag_keep_static_functions-flax-vector-conversionsflag_lax_vector_conversions-global_options.x_flag_lax_vector_conversions-fleading-underscoreflag_leading_underscore)global_options.x_flag_leading_underscore-flifetime-dseflag_lifetime_dse#global_options.x_flag_lifetime_dse-flimit-function-alignmentflag_limit_function_alignment/global_options.x_flag_limit_function_alignment-flive-patchingflag_live_patching$global_options.x_flag_live_patching-flive-range-shrinkageflag_live_range_shrinkage+global_options.x_flag_live_range_shrinkage-flocal-ivarsflag_local_ivars"global_options.x_flag_local_ivars-floop-interchangeflag_loop_interchange'global_options.x_flag_loop_interchange-floop-nest-optimizeflag_loop_nest_optimize)global_options.x_flag_loop_nest_optimize-floop-parallelize-allflag_loop_parallelize_all+global_options.x_flag_loop_parallelize_all-flra-rematflag_lra_remat global_options.x_flag_lra_remat-flto-reportflag_lto_report!global_options.x_flag_lto_report-flto-report-wpaflag_lto_report_wpa%global_options.x_flag_lto_report_wpa-fmerge-constantsflag_merge_constants&global_options.x_flag_merge_constants-fmerge-debug-stringsflag_merge_debug_strings*global_options.x_flag_merge_debug_strings-fmodule-privateflag_module_private%global_options.x_flag_module_private-fmoduleinfoflag_moduleinfo!global_options.x_flag_moduleinfo-fmodulo-schedflag_modulo_sched#global_options.x_flag_modulo_sched-fmodulo-sched-allow-regmoves!flag_modulo_sched_allow_regmoves2global_options.x_flag_modulo_sched_allow_regmoves-fmove-loop-invariantsflag_move_loop_invariants+global_options.x_flag_move_loop_invariants-fms-extensionsflag_ms_extensions$global_options.x_flag_ms_extensions-fnew-inheriting-ctorsflag_new_inheriting_ctors+global_options.x_flag_new_inheriting_ctors-fnext-runtimeflag_next_runtime#global_options.x_flag_next_runtime-fnil-receiversflag_nil_receivers$global_options.x_flag_nil_receivers-fnon-call-exceptionsflag_non_call_exceptions*global_options.x_flag_non_call_exceptions-fnothrow-optflag_nothrow_opt"global_options.x_flag_nothrow_opt-fobjc-call-cxx-cdtorsflag_objc_call_cxx_cdtors+global_options.x_flag_objc_call_cxx_cdtors-fobjc-direct-dispatchflag_objc_direct_dispatch+global_options.x_flag_objc_direct_dispatch-fobjc-exceptionsflag_objc_exceptions&global_options.x_flag_objc_exceptions
+-fobjc-gcflag_objc_gcglobal_options.x_flag_objc_gc-fobjc-nilcheckflag_objc_nilcheck$global_options.x_flag_objc_nilcheck-fobjc-sjlj-exceptionsflag_objc_sjlj_exceptions+global_options.x_flag_objc_sjlj_exceptions-fomit-frame-pointerflag_omit_frame_pointer)global_options.x_flag_omit_frame_pointer
+-fopenaccflag_openaccglobal_options.x_flag_openacc	-fopenmpflag_openmpglobal_options.x_flag_openmp-fopenmp-simdflag_openmp_simd"global_options.x_flag_openmp_simd-fopt-infoflag_opt_infoglobal_options.x_flag_opt_info-foptimize-sibling-callsflag_optimize_sibling_calls-global_options.x_flag_optimize_sibling_calls-foptimize-strlenflag_optimize_strlen&global_options.x_flag_optimize_strlen-fpack-derivedflag_pack_derived#global_options.x_flag_pack_derived-fpack-structflag_pack_struct"global_options.x_flag_pack_struct-fpad-sourceflag_pad_source!global_options.x_flag_pad_source-fpartial-inliningflag_partial_inlining'global_options.x_flag_partial_inlining-fpcc-struct-returnflag_pcc_struct_return(global_options.x_flag_pcc_struct_return-fpeel-loopsflag_peel_loops!global_options.x_flag_peel_loops-fpeephole2flag_peephole2 global_options.x_flag_peephole2-fpermissiveflag_permissive!global_options.x_flag_permissive-fplan9-extensionsflag_plan9_extensions'global_options.x_flag_plan9_extensions-fplt	flag_pltglobal_options.x_flag_plt-fpostconditionsflag_postconditions%global_options.x_flag_postconditions-fpreconditionsflag_preconditions$global_options.x_flag_preconditions-fpredictive-commoningflag_predictive_commoning+global_options.x_flag_predictive_commoning-fprefetch-loop-arraysflag_prefetch_loop_arrays+global_options.x_flag_prefetch_loop_arrays-fpretty-templatesflag_pretty_templates'global_options.x_flag_pretty_templates-fprintf-return-valueflag_printf_return_value*global_options.x_flag_printf_return_value-fprofile-correctionflag_profile_correction)global_options.x_flag_profile_correction-fprofile-reorder-functionsflag_profile_reorder_functions0global_options.x_flag_profile_reorder_functions-fprofile-useflag_profile_use"global_options.x_flag_profile_use-fprofile-valuesflag_profile_values%global_options.x_flag_profile_values-fprotect-parensflag_protect_parens%global_options.x_flag_protect_parens-frange-checkflag_range_check"global_options.x_flag_range_check-frealloc-lhsflag_realloc_lhs"global_options.x_flag_realloc_lhs-freciprocal-mathflag_reciprocal_math&global_options.x_flag_reciprocal_math-frecord-gcc-switchesflag_record_gcc_switches*global_options.x_flag_record_gcc_switches-frecursiveflag_recursive global_options.x_flag_recursive-free	flag_reeglobal_options.x_flag_ree-frename-registersflag_rename_registers'global_options.x_flag_rename_registers-freorder-blocksflag_reorder_blocks%global_options.x_flag_reorder_blocks-freorder-blocks-and-partition"flag_reorder_blocks_and_partition3global_options.x_flag_reorder_blocks_and_partition-freorder-functionsflag_reorder_functions(global_options.x_flag_reorder_functions-frepack-arraysflag_repack_arrays$global_options.x_flag_repack_arrays-freplace-objc-classesflag_replace_objc_classes+global_options.x_flag_replace_objc_classes-freport-bugflag_report_bug!global_options.x_flag_report_bug-frerun-cse-after-loopflag_rerun_cse_after_loop+global_options.x_flag_rerun_cse_after_loop-frounding-mathflag_rounding_math$global_options.x_flag_rounding_math-frtti
+flag_rttiglobal_options.x_flag_rtti#-fsanitize-address-use-after-scope&flag_sanitize_address_use_after_scope7global_options.x_flag_sanitize_address_use_after_scope-fsanitize-recoverflag_sanitize_recover'global_options.x_flag_sanitize_recover#-fsanitize-undefined-trap-on-error&flag_sanitize_undefined_trap_on_error7global_options.x_flag_sanitize_undefined_trap_on_error-fsave-optimization-recordflag_save_optimization_record/global_options.x_flag_save_optimization_record -fsched-critical-path-heuristic#flag_sched_critical_path_heuristic4global_options.x_flag_sched_critical_path_heuristic-fsched-dep-count-heuristicflag_sched_dep_count_heuristic0global_options.x_flag_sched_dep_count_heuristic-fsched-group-heuristicflag_sched_group_heuristic,global_options.x_flag_sched_group_heuristic-fsched-last-insn-heuristicflag_sched_last_insn_heuristic0global_options.x_flag_sched_last_insn_heuristic-fsched-pressureflag_sched_pressure%global_options.x_flag_sched_pressure-fsched-rank-heuristicflag_sched_rank_heuristic+global_options.x_flag_sched_rank_heuristic-fsched-spec-insn-heuristicflag_sched_spec_insn_heuristic0global_options.x_flag_sched_spec_insn_heuristic-fsched-stalled-insnsflag_sched_stalled_insns*global_options.x_flag_sched_stalled_insns-fsched-stalled-insns-depflag_sched_stalled_insns_dep.global_options.x_flag_sched_stalled_insns_dep-fsched2-use-superblocksflag_sched2_use_superblocks-global_options.x_flag_sched2_use_superblocks-fschedule-fusionflag_schedule_fusion&global_options.x_flag_schedule_fusion-fschedule-insnsflag_schedule_insns%global_options.x_flag_schedule_insns-fsecond-underscoreflag_second_underscore(global_options.x_flag_second_underscore-fsel-sched-pipeliningflag_sel_sched_pipelining+global_options.x_flag_sel_sched_pipelining#-fsel-sched-pipelining-outer-loops&flag_sel_sched_pipelining_outer_loops7global_options.x_flag_sel_sched_pipelining_outer_loops!-fsel-sched-reschedule-pipelined$flag_sel_sched_reschedule_pipelined5global_options.x_flag_sel_sched_reschedule_pipelined-fselective-schedulingflag_selective_scheduling+global_options.x_flag_selective_scheduling-fselective-scheduling2flag_selective_scheduling2,global_options.x_flag_selective_scheduling2-fsemantic-interpositionflag_semantic_interposition-global_options.x_flag_semantic_interposition-fshort-enumsflag_short_enums"global_options.x_flag_short_enums-fshort-wcharflag_short_wchar"global_options.x_flag_short_wchar-fshow-columnflag_show_column"global_options.x_flag_show_column-fshrink-wrapflag_shrink_wrap"global_options.x_flag_shrink_wrap-fshrink-wrap-separateflag_shrink_wrap_separate+global_options.x_flag_shrink_wrap_separate-fsign-zeroflag_sign_zero global_options.x_flag_sign_zero-fsignaling-nansflag_signaling_nans%global_options.x_flag_signaling_nans-fsigned-bitfieldsflag_signed_bitfields'global_options.x_flag_signed_bitfields-fsigned-charflag_signed_char"global_options.x_flag_signed_char-fsigned-zerosflag_signed_zeros#global_options.x_flag_signed_zeros-fsingle-precision-constantflag_single_precision_constant0global_options.x_flag_single_precision_constant-fsized-deallocationflag_sized_deallocation)global_options.x_flag_sized_deallocation-fsplit-ivs-in-unrollerflag_split_ivs_in_unroller,global_options.x_flag_split_ivs_in_unroller-fsplit-loopsflag_split_loops"global_options.x_flag_split_loops-fsplit-pathsflag_split_paths"global_options.x_flag_split_paths-fsplit-wide-typesflag_split_wide_types'global_options.x_flag_split_wide_types-fssa-backpropflag_ssa_backprop#global_options.x_flag_ssa_backprop-fssa-phioptflag_ssa_phiopt!global_options.x_flag_ssa_phiopt-fstack-arraysflag_stack_arrays#global_options.x_flag_stack_arrays-fstack-checkflag_stack_check"global_options.x_flag_stack_check-fstack-clash-protectionflag_stack_clash_protection-global_options.x_flag_stack_clash_protection-fstack-usageflag_stack_usage"global_options.x_flag_stack_usage-fstdarg-optflag_stdarg_opt!global_options.x_flag_stdarg_opt-fstore-mergingflag_store_merging$global_options.x_flag_store_merging-fstrict-aliasingflag_strict_aliasing&global_options.x_flag_strict_aliasing-fstrict-enumsflag_strict_enums#global_options.x_flag_strict_enums-fstrict-volatile-bitfieldsflag_strict_volatile_bitfields0global_options.x_flag_strict_volatile_bitfields-fstrong-eval-orderflag_strong_eval_order(global_options.x_flag_strong_eval_order-fswitch-errorsflag_switch_errors$global_options.x_flag_switch_errors-fsync-libcallsflag_sync_libcalls$global_options.x_flag_sync_libcalls-fsyntax-onlyflag_syntax_only"global_options.x_flag_syntax_only-ftail-call-workaroundflag_tail_call_workaround+global_options.x_flag_tail_call_workaround-ftest-coverageflag_test_coverage$global_options.x_flag_test_coverage-ftest-forall-tempflag_test_forall_temp'global_options.x_flag_test_forall_temp-fthread-jumpsflag_thread_jumps#global_options.x_flag_thread_jumps-fthreadsafe-staticsflag_threadsafe_statics)global_options.x_flag_threadsafe_statics-ftoplevel-reorderflag_toplevel_reorder'global_options.x_flag_toplevel_reorder	-ftracerflag_tracerglobal_options.x_flag_tracer-ftrampolinesflag_trampolines"global_options.x_flag_trampolines-ftrapping-mathflag_trapping_math$global_options.x_flag_trapping_math-ftrapvflag_trapvglobal_options.x_flag_trapv-ftree-bit-ccpflag_tree_bit_ccp#global_options.x_flag_tree_bit_ccp-ftree-builtin-call-dceflag_tree_builtin_call_dce,global_options.x_flag_tree_builtin_call_dce-ftree-ccpflag_tree_ccpglobal_options.x_flag_tree_ccp
+-ftree-chflag_tree_chglobal_options.x_flag_tree_ch-ftree-coalesce-varsflag_tree_coalesce_vars)global_options.x_flag_tree_coalesce_vars-ftree-copy-propflag_tree_copy_prop%global_options.x_flag_tree_copy_prop-ftree-cselimflag_tree_cselim"global_options.x_flag_tree_cselim-ftree-dceflag_tree_dceglobal_options.x_flag_tree_dce-ftree-dseflag_tree_dseglobal_options.x_flag_tree_dse-ftree-forwpropflag_tree_forwprop$global_options.x_flag_tree_forwprop-ftree-freflag_tree_freglobal_options.x_flag_tree_fre -ftree-loop-distribute-patterns#flag_tree_loop_distribute_patterns4global_options.x_flag_tree_loop_distribute_patterns-ftree-loop-distributionflag_tree_loop_distribution-global_options.x_flag_tree_loop_distribution-ftree-loop-if-convertflag_tree_loop_if_convert+global_options.x_flag_tree_loop_if_convert-ftree-loop-imflag_tree_loop_im#global_options.x_flag_tree_loop_im-ftree-loop-ivcanonflag_tree_loop_ivcanon(global_options.x_flag_tree_loop_ivcanon-ftree-loop-optimizeflag_tree_loop_optimize)global_options.x_flag_tree_loop_optimize-ftree-loop-vectorizeflag_tree_loop_vectorize*global_options.x_flag_tree_loop_vectorize-ftree-partial-preflag_tree_partial_pre'global_options.x_flag_tree_partial_pre-ftree-phipropflag_tree_phiprop#global_options.x_flag_tree_phiprop-ftree-preflag_tree_preglobal_options.x_flag_tree_pre-ftree-ptaflag_tree_ptaglobal_options.x_flag_tree_pta-ftree-reassocflag_tree_reassoc#global_options.x_flag_tree_reassoc-ftree-scev-cpropflag_tree_scev_cprop&global_options.x_flag_tree_scev_cprop-ftree-sinkflag_tree_sink global_options.x_flag_tree_sink-ftree-slp-vectorizeflag_tree_slp_vectorize)global_options.x_flag_tree_slp_vectorize-ftree-slsrflag_tree_slsr global_options.x_flag_tree_slsr-ftree-sraflag_tree_sraglobal_options.x_flag_tree_sra-ftree-switch-conversionflag_tree_switch_conversion-global_options.x_flag_tree_switch_conversion-ftree-tail-mergeflag_tree_tail_merge&global_options.x_flag_tree_tail_merge-ftree-terflag_tree_terglobal_options.x_flag_tree_ter-ftree-vrpflag_tree_vrpglobal_options.x_flag_tree_vrp-funconstrained-commonsflag_unconstrained_commons,global_options.x_flag_unconstrained_commons-funderscoringflag_underscoring#global_options.x_flag_underscoring-funit-at-a-timeflag_unit_at_a_time%global_options.x_flag_unit_at_a_time-funroll-all-loopsflag_unroll_all_loops'global_options.x_flag_unroll_all_loops-funroll-loopsflag_unroll_loops#global_options.x_flag_unroll_loops-funsafe-math-optimizationsflag_unsafe_math_optimizations0global_options.x_flag_unsafe_math_optimizations-funswitch-loopsflag_unswitch_loops%global_options.x_flag_unswitch_loops-funwind-tablesflag_unwind_tables$global_options.x_flag_unwind_tables-fuse-cxa-atexitflag_use_cxa_atexit%global_options.x_flag_use_cxa_atexit-fuse-cxa-get-exception-ptrflag_use_cxa_get_exception_ptr0global_options.x_flag_use_cxa_get_exception_ptr-fuse-linker-pluginflag_use_linker_plugin(global_options.x_flag_use_linker_plugin-fvar-trackingflag_var_tracking#global_options.x_flag_var_tracking-fvar-tracking-assignmentsflag_var_tracking_assignments/global_options.x_flag_var_tracking_assignments"-fvar-tracking-assignments-toggle%flag_var_tracking_assignments_toggle6global_options.x_flag_var_tracking_assignments_toggle-fvar-tracking-uninitflag_var_tracking_uninit*global_options.x_flag_var_tracking_uninit!-fvariable-expansion-in-unroller$flag_variable_expansion_in_unroller5global_options.x_flag_variable_expansion_in_unroller-fvect-cost-modelflag_vect_cost_model&global_options.x_flag_vect_cost_model-fverbose-asmflag_verbose_asm"global_options.x_flag_verbose_asm-fversion-loops-for-stridesflag_version_loops_for_strides0global_options.x_flag_version_loops_for_strides-fvisibility-ms-compatflag_visibility_ms_compat+global_options.x_flag_visibility_ms_compat-fvtv-countsflag_vtv_counts!global_options.x_flag_vtv_counts-fvtv-debugflag_vtv_debug global_options.x_flag_vtv_debug-fweak
+flag_weakglobal_options.x_flag_weak-fweb	flag_webglobal_options.x_flag_web-fwhole-programflag_whole_program$global_options.x_flag_whole_program-fworking-directoryflag_working_directory(global_options.x_flag_working_directory-fwrapvflag_wrapvglobal_options.x_flag_wrapv-fwrapv-pointerflag_wrapv_pointer$global_options.x_flag_wrapv_pointer-fzero-initialized-in-bssflag_zero_initialized_in_bss.global_options.x_flag_zero_initialized_in_bss-fzero-linkflag_zero_link global_options.x_flag_zero_link-fsanitizeflag_sanitizeglobal_options.x_flag_sanitize-fundefflag_undefglobal_options.x_flag_undef-fpedantic-errorsflag_pedantic_errors&global_options.x_flag_pedantic_errors-fskip-rax-setupflag_skip_rax_setup%global_options.x_flag_skip_rax_setup-frecord-mcountflag_record_mcount$global_options.x_flag_record_mcount-fnop-mcountflag_nop_mcount!global_options.x_flag_nop_mcount-fmanual-endbrflag_manual_endbr#global_options.x_flag_manual_endbr-fforce-indirect-callflag_force_indirect_call*global_options.x_flag_force_indirect_call	-ffentryflag_fentryglobal_options.x_flag_fentry-fdispatch-schedulerflag_dispatch_scheduler)global_options.x_flag_dispatch_scheduler-fcet-switchflag_cet_switch!global_options.x_flag_cet_switch
+-fandroidflag_androidglobal_options.x_flag_android
+-fgtoggleflag_gtoggleglobal_options.x_flag_gtoggle-fgen-declarationflag_gen_declaration&global_options.x_flag_gen_declaration-fdescribe-diesflag_describe_dies$global_options.x_flag_describe_dies-fvtable-verifyflag_vtable_verify$global_options.x_flag_vtable_verify -fvalue-profile-transformations#flag_value_profile_transformations4global_options.x_flag_value_profile_transformations-ftree-parallelize-loopsflag_tree_parallelize_loops-global_options.x_flag_tree_parallelize_loops-ftree-live-range-splitflag_tree_live_range_split,global_options.x_flag_tree_live_range_split-ftree-domflag_tree_domglobal_options.x_flag_tree_dom-ftls-defaultflag_tls_default"global_options.x_flag_tls_default-fdetailed-statisticsflag_detailed_statistics*global_options.x_flag_detailed_statistics-fstack-reuseflag_stack_reuse"global_options.x_flag_stack_reuse-fstack-protectflag_stack_protect$global_options.x_flag_stack_protect-fsimd-cost-modelflag_simd_cost_model&global_options.x_flag_simd_cost_model-fself-testflag_self_test global_options.x_flag_self_test-fschedule-insns-after-reload!flag_schedule_insns_after_reload2global_options.x_flag_schedule_insns_after_reload&-fschedule-speculative-load-dangerous)flag_schedule_speculative_load_dangerous:global_options.x_flag_schedule_speculative_load_dangerous-fschedule-speculative-loadflag_schedule_speculative_load0global_options.x_flag_schedule_speculative_load-fschedule-speculativeflag_schedule_speculative+global_options.x_flag_schedule_speculative-fschedule-interblockflag_schedule_interblock*global_options.x_flag_schedule_interblock-fresched-modulo-schedflag_resched_modulo_sched+global_options.x_flag_resched_modulo_sched-freorder-blocks-algorithmflag_reorder_blocks_algorithm/global_options.x_flag_reorder_blocks_algorithm-frecord-markerflag_record_marker$global_options.x_flag_record_marker-freal8-kindflag_real8_kind!global_options.x_flag_real8_kind-freal4-kindflag_real4_kind!global_options.x_flag_real4_kind-fprofile-updateflag_profile_update%global_options.x_flag_profile_update-fpre-includeflag_pre_include"global_options.x_flag_pre_include-fpermitted-flt-eval-methods flag_permitted_flt_eval_methods1global_options.x_flag_permitted_flt_eval_methods-fno-peepholeflag_no_peephole"global_options.x_flag_no_peephole-fopenacc-dimsflag_openacc_dims#global_options.x_flag_openacc_dims-foffload-abiflag_offload_abi"global_options.x_flag_offload_abi-fobjc1-onlyflag_objc1_only!global_options.x_flag_objc1_only-fobjc-abiflag_objc_abiglobal_options.x_flag_objc_abi-fno-nonansi-builtinflag_no_nonansi_builtin)global_options.x_flag_no_nonansi_builtin
+-fnew-ttpflag_new_ttpglobal_options.x_flag_new_ttp-fmax-subrecord-lengthflag_max_subrecord_length+global_options.x_flag_max_subrecord_length-fmax-stack-var-sizeflag_max_stack_var_size)global_options.x_flag_max_stack_var_size-fmax-errorsflag_max_errors!global_options.x_flag_max_errors-fmax-array-constructorflag_max_array_constructor,global_options.x_flag_max_array_constructor-ferrno-mathflag_errno_math!global_options.x_flag_errno_math-flto-partitionflag_lto_partition$global_options.x_flag_lto_partition-flto-odr-type-meringflag_lto_odr_type_mering*global_options.x_flag_lto_odr_type_mering-flto-compression-levelflag_lto_compression_level,global_options.x_flag_lto_compression_level-funroll-jamflag_unroll_jam!global_options.x_flag_unroll_jam-flto-linker-outputflag_lto_linker_output(global_options.x_flag_lto_linker_output-fira-verboseflag_ira_verbose"global_options.x_flag_ira_verbose-fira-regionflag_ira_region!global_options.x_flag_ira_region-fira-algorithmflag_ira_algorithm$global_options.x_flag_ira_algorithm-finteger4-kindflag_integer4_kind$global_options.x_flag_integer4_kind!-finstrument-function-entry-exit$flag_instrument_function_entry_exit5global_options.x_flag_instrument_function_entry_exit-finline-matmul-limitflag_inline_matmul_limit*global_options.x_flag_inline_matmul_limit-fno-inlineflag_no_inline global_options.x_flag_no_inline-finit-realflag_init_real global_options.x_flag_init_real-fno-identflag_no_identglobal_options.x_flag_no_ident-fguess-branch-probflag_guess_branch_prob(global_options.x_flag_guess_branch_prob-ftmflag_tmglobal_options.x_flag_tm-fno-gnu-keywordsflag_no_gnu_keywords&global_options.x_flag_no_gnu_keywords-fno-function-cseflag_no_function_cse&global_options.x_flag_no_function_cse-ffree-line-lengthflag_free_line_length'global_options.x_flag_free_line_length-ffp-contract-modeflag_fp_contract_mode'global_options.x_flag_fp_contract_mode-ffixed-line-lengthflag_fixed_line_length(global_options.x_flag_fixed_line_length-fexcess-precision-cmdlineflag_excess_precision_cmdline/global_options.x_flag_excess_precision_cmdline-fdebug-only-used-symbolsflag_debug_only_used_symbols.global_options.x_flag_debug_only_used_symbols-fdump-locationsflag_dump_locations%global_options.x_flag_dump_locations-fdump-go-specflag_dump_go_spec#global_options.x_flag_dump_go_spec-fdiagnostics-show-colorflag_diagnostics_show_color-global_options.x_flag_diagnostics_show_color-fltrans-devirtualizeflag_ltrans_devirtualize*global_options.x_flag_ltrans_devirtualize-fdefault-integerflag_default_integer&global_options.x_flag_default_integer-fdefault-doubleflag_default_double%global_options.x_flag_default_double
+-fconvertflag_convertglobal_options.x_flag_convert-fcompare-elim-after-reloadflag_compare_elim_after_reload0global_options.x_flag_compare_elim_after_reload-fcompare-debug-optflag_compare_debug_opt(global_options.x_flag_compare_debug_opt-fno-commonflag_no_common global_options.x_flag_no_common
+-fcoarrayflag_coarrayglobal_options.x_flag_coarray
+-fchar8-tflag_char8_tglobal_options.x_flag_char8_t-fno-builtinflag_no_builtin!global_options.x_flag_no_builtin-fbranch-on-count-regflag_branch_on_count_reg*global_options.x_flag_branch_on_count_reg-fblas-matmul-limitflag_blas_matmul_limit(global_options.x_flag_blas_matmul_limit	-fno-asmflag_no_asmglobal_options.x_flag_no_asm-fabi-compat-versionflag_abi_compat_version)global_options.x_flag_abi_compat_version!-fwarn-frontend-loop-interchange$flag_warn_frontend_loop_interchange5global_options.x_flag_warn_frontend_loop_interchange-ffatal-errorsflag_fatal_errors#global_options.x_flag_fatal_errors-fpreprocess-onlyflag_preprocess_only&global_options.x_flag_preprocess_only)-finstrument-functions-exclude-functions,flag_instrument_functions_exclude_functions=global_options.x_flag_instrument_functions_exclude_functions%-finstrument-functions-exclude-files(flag_instrument_functions_exclude_files9global_options.x_flag_instrument_functions_exclude_files-fsanitize-coverageflag_sanitize_coverage(global_options.x_flag_sanitize_coverage-fshlibflag_shlibglobal_options.x_flag_shlib-fprint-asm-nameflag_print_asm_name%global_options.x_flag_print_asm_name-fgenerate-offloadflag_generate_offload'global_options.x_flag_generate_offload-fgenerate-ltoflag_generate_lto#global_options.x_flag_generate_lto-fgen-aux-infoflag_gen_aux_info#global_options.x_flag_gen_aux_info-fdump-rtl-in-asmflag_dump_rtl_in_asm&global_options.x_flag_dump_rtl_in_asm-fdebug-asmflag_debug_asm global_options.x_flag_debug_asm-fcomplex-methodflag_complex_method%global_options.x_flag_complex_method-fincremental-linkflag_incremental_link'global_options.x_flag_incremental_link-fwarn-unused-resultflag_warn_unused_result)global_options.x_flag_warn_unused_result-fstack-usage-infoflag_stack_usage_info'global_options.x_flag_stack_usage_info-fopts-finishedflag_opts_finished$global_options.x_flag_opts_finished-fdump-all-passedflag_dump_all_passed&global_options.x_flag_dump_all_passed-fdisable-hsaflag_disable_hsa"global_options.x_flag_disable_hsa-fexcess-precisionflag_excess_precision2(this_target_flag_state->x_flag_excess_precision)¢#selectáoptionsaccessNamesaccessStructFieldNames >DMgu†¨¶Çé÷ˆª°¹ÓÙâü‚‹¥®º×éş¤»Õ€˜³ßğ„©Ëğ¦Æé­Àäö‹	±	¿	Ğ	ò	
+“
+¶
+Ä
+Õ
+÷
+ˆœÁÜú©Òş»ÄĞí€–½ËÜş›»ìû°¿Ñô€¯»Êêö…¥´Æé€šÅã„¶Õ÷ª½ÓúŒ¡Çâ€¯¾Ğó‹¦Òáó–¦¹İéø˜£±Ğàó—³Ò‚’¥ÉÔâ’¦Ëİò˜§¹Üëı ³Éğƒ ™ À Ó é ! !³!×!İ!æ!€"–"¯"Ù"ß"è"‚##¡#Ã#Ø#ğ#™$¤$²$Ñ$Ş$î$%Ÿ%²%Ö%ê%&©&¼&Ò&ù&‹' 'Æ'Ø'í'“(¤(¸(İ(é(ø(˜)©)½)â)û)—*Ä*á*+²+Á+Ó+ö+“,³,ä,-¡-Ò-ñ-“.Æ.ß.û.¨/Â/ß/0­0Ğ0„11»1é1Š2®2ã2ï2ş23¤3­3Ç3×3ê34£4»4ä4÷45´5Ê5ã56¦6Â6ï6‡7¢7Î7Ü7í78¡8¶8Ü8ô89»9Ì9à9…:–:ª:Ï:ä:ü:¥;²;Â;ã;‚<¤<×<ñ<=¼=Ï=å=Œ>¦>Ã>ñ>ˆ?¢?Í?ß?ô?š@ª@½@á@ç@ğ@ŠAœA±A×AêA€B§BµBÆBèBüB“C»CÔCğCD¹DØDˆEœE³EÛEïE†F®FµF¿FÚFîF…G­G¸GÆGåGïGüGšH¤H±HÏHØHäHIII¿IÎIàIƒJJœJ»JÏJæJK¥K¿KêKúKL±LÂLÖLûLM¦MÎMêM‰N¹NÉNÜN€O•O­OÖOêOP©PÂPŞP‹QšQ¬QÏQàQôQ™R¬RÂRéRˆSªSİSöS’T¿TÌTÜTıTŠUšU»UÄUĞUíUüUV±V»VÈVæVúV‘W¹WÍWäWŒXšX«XÍX×XäX‚Y“Y§YÌYÕYáYşYZ¡ZÅZáZ€[°[º[Ç[å[û[”\¾\È\Õ\ó\ˆ] ]É]İ]ô]œ^³^Í^ø^_«_×_û_¢`Ú`€a©aãaìaøa•b£b´bÖbëbƒc¬cÄcßc‹d£d¾dêdÿd—eÀeØeóeŸf¸fÔfg–g®g×gægøg›h¶hÔhƒi“i¦iÊiáiûi¦j´jÅjçjújk·kÌkäkl¤l¾lélõl„m¤m±mÁmâmóm‡n¬n¾nÓnùno¨oÒoão÷oœp©p¹pÚpépûpq¼qİqr¦rÀrërûrs²sÉsãstt¯tÒtâtõt™u¯uÈuòu€v‘v³vÊvävw¦wÀwëwıw’x¸xÂxÏxíxıxy´yËyåyz¥z½zæzğzız›{¤{°{Í{Û{ì{|™|§|Æ|ß|û|¨}º}Ï}õ}„~–~¹~Ç~Ø~ú~‡—¸Ëáˆ€œ€³€Û€è€ø€™¥´Ôáñ’‚¥‚»‚â‚è‚ñ‚‹ƒœƒ°ƒÕƒåƒøƒœ„³„Í„ø„…©…Ô…ç…ı…¤†º†Ó†ı†’‡ª‡Ó‡ï‡ˆ¾ˆÌˆİˆÿˆ‰¤‰É‰Ú‰î‰“Š¡Š²ŠÔŠâŠóŠ•‹§‹¼‹â‹ø‹‘Œ»ŒÇŒÖŒöŒüŒ…Ÿ²Èï€”¹Øú­ÁØ€£ÇŞø£‘°‘À‘á‘ø‘’’½’Í’à’„“‹“•“°“Ó“ù“°”Ã”Ù”€•£•É•€–›–¹–è–ˆ—«—ß—û—š˜Ê˜â˜ı˜©™Å™ä™”š¥š¹šŞšõš›º›Ö›õ›¥œ»œÔœşœ˜µãü˜Å×ì’Ÿ£Ÿ·ŸÜŸğŸ‡ ¯ Æ à ‹¡®¡Ô¡‹¢¬¢Ğ¢…£œ£¶£á£ù£”¤À¤Ù¤õ¤¢¥°¥Á¥ã¥ñ¥‚¦¤¦²¦Ã¦å¦ó¦„§¦§½§×§‚¨¨¨½¨Î¨â¨‡©š©°©×©å©ö©˜ª§ª¹ªÜªøª—«Ç«Ü«ô«¬µ¬Ğ¬ü¬Š­›­½­Ë­Ü­ş­‘®§®Î®İ®ï®’¯Ÿ¯¯¯Ğ¯ß¯ñ¯”°¢°³°Õ°î°Š±·±Å±Ö±ø±…²•²¶²Æ²Ù²ı²³¤³Ê³Ù³ë³´ª´É´ù´µ¤µÌµÜµïµ“¶£¶¶¶Ú¶è¶ù¶›·²·Ì·÷·‡¸š¸¾¸Ñ¸ç¸¹¹¯¹Ò¹ç¹ÿ¹¨º»ºÑºøº»»ª»¸»É»ë»û»¼²¼º¼Å¼á¼ğ¼‚½¥½½½Ø½„¾¾¾¼¾Æ¾Ó¾ñ¾†¿¿Ç¿Ø¿ì¿‘ÀŸÀ°ÀÒÀİÀëÀŠÁ•Á£ÁÂÁÒÁåÁ‰Â”Â¢ÂÁÂáÂ„Ã¸ÃÑÃíÃšÄ±ÄËÄöÄ…Å—ÅºÅÎÅåÅÆ¢ÆºÆãÆùÆ’Ç¼ÇÏÇåÇŒÈ›È­ÈĞÈÛÈéÈˆÉ“É¡ÉÀÉÏÉáÉ„Ê–Ê«ÊÑÊİÊìÊŒË¡Ë¹ËâËîËıËÌ¨Ì¶ÌÕÌîÌŠÍ·ÍÉÍŞÍ„ÎÎÎ¼ÎÇÎÕÎôÎŒÏ§ÏÓÏâÏôÏ—Ğ¨Ğ¼ĞáĞôĞŠÑ±ÑÀÑÒÑõÑ‘Ò°ÒàÒñÒ…ÓªÓºÓÍÓñÓ‚Ô–Ô»Ô×ÔöÔ¦ÕºÕÑÕùÕˆÖšÖ½ÖØÖöÖ¥×Ç×ì×¢Ø¸ØÑØûØœÙÀÙõÙ‡ÚœÚÂÚĞÚáÚƒÛŸÛ¾ÛîÛ…ÜŸÜÊÜ×ÜçÜˆİ”İ£İÃİÊİÔİïİõİşİ˜Ş¨Ş»ŞßŞóŞŠß²ßºßÅßáßñß„à¨àÂàßàá™á¨áÈáÓááá€âˆâ“â¯âÁâÖâüâã¡ãÆãÖãéãäšäªäËäÚäìäå¥å¾åèåñåıåšæ¯æÇæğæıæç®ç¸çÅçãçíçúç˜èªè¿èåèõèˆé¬é¼éÏéóé“ê¶êêêƒëŸëÌëäëÿë«ì¶ìÄìãìñì‚í¤íºíÓíıí‹îœî¾îÎîáî…ï—ï¬ïÒïŞïíïğ«ğÌğşğ¤ñÍñ‡ò£òÂòòò‰ó£óÎóäóıó§ô¾ôØôƒõõ¼õëõûõö²ö¿öÏöğöıö÷®÷¿÷Ó÷ø÷†ø—ø¹øÖøöø§ùµùÆùèù÷ù‰ú¬úºúËúíúúúŠû«û¶ûÄûãûøûü¹üÃüĞüîü…ıŸıÊıßı÷ı ş­ş½şŞşöş‘ÿ½ÿÊÿÚÿûÿ‹€€Â€Ø€ñ€›³Îú‡‚—‚¸‚Ì‚ã‚‹ƒ™ƒªƒÌƒÙƒéƒŠ„š„­„Ñ„á„ô„˜…¹…İ…’†¨†Á†ë†÷††‡¦‡²‡Á‡á‡ì‡ú‡™ˆ­ˆÄˆìˆñˆùˆ’‰¤‰¹‰ß‰ñ‰†Š¬Š¿ŠÕŠüŠ‹¥‹Ì‹à‹÷‹ŸŒºŒØŒ‡¡¾ìı‘¶Å×ú“¯Üò‹µÇÜ‚‘“‘§‘Ì‘Ö‘ã‘’’¼’ì’€“—“¿“Ë“Ú“ú“„”‘”¯”¹”Æ”ä”ñ”•¢•¸•Ñ•û•–¦–Î–×–ã–€—•—­—Ö—÷—›˜Ğ˜ß˜ñ˜”™¦™»™á™Šš¶šóš˜›À›ù›œ¤œÌœÔœßœûœŒ ÅØî•¤¶ÙèúŸ¯ŸÄŸêŸöŸ… ¥ ¶ Ê ï ‚¡˜¡¿¡Ô¡ì¡•¢¨¢¾¢å¢õ¢ˆ£¬£¾£Ó£ù£‡¤˜¤º¤Í¤ã¤¼---
+run:
+  queries:
+   -
+    pack: flags/gcc-queries#2
+    relativeQueryPath: flag_selection.ql
+    relativeBqrsPath: results.bqrs
+    metadata:
+      name: GCC -f options listed in gcc/config/auto-host.h
+      description: Lists all -f options defined in gcc/config/auto-host.h.
+      kind: table
+      id: cpp/gcc/option-facts-automated
+  extensionPacks: []
+  packs:
+    codeql/util#1:
+      name: codeql/util
+      version: 2.0.41
+      isLibrary: true
+      isExtensionPack: false
+      localPath: file:///home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/
+      localPackDefinitionFile: file:///home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/qlpack.yml
+      headSha: 94101634db019b00637dd5cfe241f7e570da290d
+      runDataExtensions: []
+    codeql/cpp-all#0:
+      name: codeql/cpp-all
+      version: 12.0.1
+      isLibrary: true
+      isExtensionPack: false
+      localPath: file:///home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/
+      localPackDefinitionFile: file:///home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/qlpack.yml
+      headSha: 94101634db019b00637dd5cfe241f7e570da290d
+      runDataExtensions: []
+    flags/gcc-queries#2:
+      name: flags/gcc-queries
+      version: 0.0.1
+      isLibrary: false
+      isExtensionPack: false
+      localPath: file:///home/oleksii-shemshur/work/toolchains/tools/queries/
+      localPackDefinitionFile: file:///home/oleksii-shemshur/work/toolchains/tools/queries/qlpack.yml
+      runDataExtensions:
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Boost.Asio.model.yml
+        index: 0
+        firstRowId: 0
+        rowCount: 6
+        locations:
+          lineNumbers: A=7+1*5
+          columnNumbers: A=9*6
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Boost.Asio.model.yml
+        index: 1
+        firstRowId: 6
+        rowCount: 4
+        locations:
+          lineNumbers: A=17+1*3
+          columnNumbers: A=9*4
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Boost.Asio.model.yml
+        index: 2
+        firstRowId: 10
+        rowCount: 1
+        locations:
+          lineNumbers: A=25
+          columnNumbers: A=9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CA2CAEX.model.yml
+        index: 0
+        firstRowId: 11
+        rowCount: 13
+        locations:
+          lineNumbers: A=6+1*12
+          columnNumbers: A=9*13
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CAtlArray.model.yml
+        index: 0
+        firstRowId: 24
+        rowCount: 10
+        locations:
+          lineNumbers: A=6+1*9
+          columnNumbers: A=9*10
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CAtlFile.model.yml
+        index: 0
+        firstRowId: 34
+        rowCount: 4
+        locations:
+          lineNumbers: A=6+1*3
+          columnNumbers: A=9*4
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CAtlFileMappingBase.model.yml
+        index: 0
+        firstRowId: 38
+        rowCount: 9
+        locations:
+          lineNumbers: A=6+1*8
+          columnNumbers: A=9*9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CAtlList.model.yml
+        index: 0
+        firstRowId: 47
+        rowCount: 10
+        locations:
+          lineNumbers: A=6+1*9
+          columnNumbers: A=9*10
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CAtlTemporaryFile.model.yml
+        index: 0
+        firstRowId: 57
+        rowCount: 3
+        locations:
+          lineNumbers: A=6+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CComBSTR.model.yml
+        index: 0
+        firstRowId: 60
+        rowCount: 28
+        locations:
+          lineNumbers: A=6+1*27
+          columnNumbers: A=9*28
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CComSafeArray.model.yml
+        index: 0
+        firstRowId: 88
+        rowCount: 21
+        locations:
+          lineNumbers: A=6+1*20
+          columnNumbers: A=9*21
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CPathT.model.yml
+        index: 0
+        firstRowId: 109
+        rowCount: 15
+        locations:
+          lineNumbers: A=6+1*10+4+1*3
+          columnNumbers: A=9*15
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CRegKey.model.yml
+        index: 0
+        firstRowId: 124
+        rowCount: 15
+        locations:
+          lineNumbers: A=6+1*14
+          columnNumbers: A=9*15
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CSimpleArray.model.yml
+        index: 0
+        firstRowId: 139
+        rowCount: 7
+        locations:
+          lineNumbers: A=6+1*6
+          columnNumbers: A=9*7
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CSimpleMap.model.yml
+        index: 0
+        firstRowId: 146
+        rowCount: 8
+        locations:
+          lineNumbers: A=6+1*7
+          columnNumbers: A=9*8
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CSimpleStringT.model.yml
+        index: 0
+        firstRowId: 154
+        rowCount: 37
+        locations:
+          lineNumbers: A=6+1*36
+          columnNumbers: A=9*37
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CStrBufT.model.yml
+        index: 0
+        firstRowId: 191
+        rowCount: 3
+        locations:
+          lineNumbers: A=6+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CStringData.model.yml
+        index: 0
+        firstRowId: 194
+        rowCount: 1
+        locations:
+          lineNumbers: A=6
+          columnNumbers: A=9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CStringT.model.yml
+        index: 0
+        firstRowId: 195
+        rowCount: 113
+        locations:
+          lineNumbers: A=6+1*112
+          columnNumbers: A=9*113
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CUrl.model.yml
+        index: 0
+        firstRowId: 308
+        rowCount: 17
+        locations:
+          lineNumbers: A=6+1*16
+          columnNumbers: A=9*17
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/ComPtr.model.yml
+        index: 0
+        firstRowId: 325
+        rowCount: 26
+        locations:
+          lineNumbers: A=6+1*25
+          columnNumbers: A=9*26
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/ComPtrRef.model.yml
+        index: 0
+        firstRowId: 351
+        rowCount: 5
+        locations:
+          lineNumbers: A=6+1+2*2+1
+          columnNumbers: A=9*5
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/MySql.model.yml
+        index: 0
+        firstRowId: 356
+        rowCount: 2
+        locations:
+          lineNumbers: A=7+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/MySql.model.yml
+        index: 1
+        firstRowId: 358
+        rowCount: 2
+        locations:
+          lineNumbers: A=13+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Oracle.oci.model.yml
+        index: 0
+        firstRowId: 360
+        rowCount: 2
+        locations:
+          lineNumbers: A=7+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Strsafe.model.yml
+        index: 0
+        firstRowId: 362
+        rowCount: 8
+        locations:
+          lineNumbers: A=8+1+2+1+2+1+2+1
+          columnNumbers: A=9*8
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Strsafe.model.yml
+        index: 1
+        firstRowId: 370
+        rowCount: 48
+        locations:
+          lineNumbers: A=24+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1
+          columnNumbers: A=9*48
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Windows.model.yml
+        index: 0
+        firstRowId: 418
+        rowCount: 25
+        locations:
+          lineNumbers: A=8+1*5+2+1+2+1*6+2*2+1*8
+          columnNumbers: A=9*25
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Windows.model.yml
+        index: 1
+        firstRowId: 443
+        rowCount: 15
+        locations:
+          lineNumbers: A=42+1+2*2+1*2+2+1*6+2*2
+          columnNumbers: A=9*15
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/ZMQ.model.yml
+        index: 0
+        firstRowId: 458
+        rowCount: 3
+        locations:
+          lineNumbers: A=7+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/ZMQ.model.yml
+        index: 1
+        firstRowId: 461
+        rowCount: 3
+        locations:
+          lineNumbers: A=14+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/ZMQ.model.yml
+        index: 2
+        firstRowId: 464
+        rowCount: 2
+        locations:
+          lineNumbers: A=21+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/allocation/Bsd.allocation.model.yml
+        index: 0
+        firstRowId: 466
+        rowCount: 2
+        locations:
+          lineNumbers: A=6+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/allocation/Glibc.allocation.model.yml
+        index: 0
+        firstRowId: 468
+        rowCount: 2
+        locations:
+          lineNumbers: A=6+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/allocation/OpenSSL.allocation.model.yml
+        index: 0
+        firstRowId: 470
+        rowCount: 4
+        locations:
+          lineNumbers: A=6+1*3
+          columnNumbers: A=9*4
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/allocation/Std.allocation.model.yml
+        index: 0
+        firstRowId: 474
+        rowCount: 13
+        locations:
+          lineNumbers: A=6+1*12
+          columnNumbers: A=9*13
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/allocation/Windows.allocation.model.yml
+        index: 0
+        firstRowId: 487
+        rowCount: 24
+        locations:
+          lineNumbers: A=6+1*23
+          columnNumbers: A=9*24
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/azure.core.model.yml
+        index: 0
+        firstRowId: 511
+        rowCount: 6
+        locations:
+          lineNumbers: A=6+1*5
+          columnNumbers: A=9*6
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/azure.core.model.yml
+        index: 1
+        firstRowId: 517
+        rowCount: 25
+        locations:
+          lineNumbers: A=17+1*24
+          columnNumbers: A=9*25
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/bsl.array.model.yml
+        index: 0
+        firstRowId: 542
+        rowCount: 9
+        locations:
+          lineNumbers: A=6+1*8
+          columnNumbers: A=9*9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/bsl.deque.model.yml
+        index: 0
+        firstRowId: 551
+        rowCount: 69
+        locations:
+          lineNumbers: A=6+1*68
+          columnNumbers: A=9*69
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/bsl.forward_list.model.yml
+        index: 0
+        firstRowId: 620
+        rowCount: 52
+        locations:
+          lineNumbers: A=6+1*51
+          columnNumbers: A=9*52
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/bsl.list.model.yml
+        index: 0
+        firstRowId: 672
+        rowCount: 67
+        locations:
+          lineNumbers: A=6+1*66
+          columnNumbers: A=9*67
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/bsl.vector.model.yml
+        index: 0
+        firstRowId: 739
+        rowCount: 56
+        locations:
+          lineNumbers: A=6+1*55
+          columnNumbers: A=9*56
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/cctype.model.yml
+        index: 0
+        firstRowId: 795
+        rowCount: 4
+        locations:
+          lineNumbers: A=6+1*3
+          columnNumbers: A=9*4
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/deallocation/Bsd.deallocation.model.yml
+        index: 0
+        firstRowId: 799
+        rowCount: 3
+        locations:
+          lineNumbers: A=6+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/deallocation/Std.deallocation.model.yml
+        index: 0
+        firstRowId: 802
+        rowCount: 37
+        locations:
+          lineNumbers: A=6+1*36
+          columnNumbers: A=9*37
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/deallocation/Windows.deallocation.model.yml
+        index: 0
+        firstRowId: 839
+        rowCount: 36
+        locations:
+          lineNumbers: A=6+1*35
+          columnNumbers: A=9*36
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/brotli/brotli.model.yml
+        index: 0
+        firstRowId: 875
+        rowCount: 474
+        locations:
+          lineNumbers: A=7+1*473
+          columnNumbers: A=9*474
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/curl/curl.model.yml
+        index: 0
+        firstRowId: 1349
+        rowCount: 953
+        locations:
+          lineNumbers: A=7+1*952
+          columnNumbers: A=9*953
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/glibc/glibc.model.yml
+        index: 0
+        firstRowId: 2302
+        rowCount: 5488
+        locations:
+          lineNumbers: A=7+1*5487
+          columnNumbers: A=9*5488
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/libidn2/libidn2.model.yml
+        index: 0
+        firstRowId: 7790
+        rowCount: 142
+        locations:
+          lineNumbers: A=7+1*141
+          columnNumbers: A=9*142
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/libssh2/libssh2.model.yml
+        index: 0
+        firstRowId: 7932
+        rowCount: 511
+        locations:
+          lineNumbers: A=7+1*510
+          columnNumbers: A=9*511
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/libuv/libuv.model.yml
+        index: 0
+        firstRowId: 8443
+        rowCount: 640
+        locations:
+          lineNumbers: A=7+1*639
+          columnNumbers: A=9*640
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/nghttp2/nghttp2.model.yml
+        index: 0
+        firstRowId: 9083
+        rowCount: 565
+        locations:
+          lineNumbers: A=7+1*564
+          columnNumbers: A=9*565
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/openssl/openssl.model.yml
+        index: 0
+        firstRowId: 9648
+        rowCount: 21578
+        locations:
+          lineNumbers: A=7+1*21577
+          columnNumbers: A=9*21578
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/sqlite/sqlite.model.yml
+        index: 0
+        firstRowId: 31226
+        rowCount: 942
+        locations:
+          lineNumbers: A=7+1*941
+          columnNumbers: A=9*942
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/zlib/zlib.model.yml
+        index: 0
+        firstRowId: 32168
+        rowCount: 162
+        locations:
+          lineNumbers: A=7+1*161
+          columnNumbers: A=9*162
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/getc.model.yml
+        index: 0
+        firstRowId: 32330
+        rowCount: 13
+        locations:
+          lineNumbers: A=7+1*12
+          columnNumbers: A=9*13
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/iconv.model.yml
+        index: 0
+        firstRowId: 32343
+        rowCount: 1
+        locations:
+          lineNumbers: A=6
+          columnNumbers: A=9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/oleauto.model.yml
+        index: 0
+        firstRowId: 32344
+        rowCount: 3
+        locations:
+          lineNumbers: A=6+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/pthread.model.yml
+        index: 0
+        firstRowId: 32347
+        rowCount: 1
+        locations:
+          lineNumbers: A=6
+          columnNumbers: A=9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.array.model.yml
+        index: 0
+        firstRowId: 32348
+        rowCount: 9
+        locations:
+          lineNumbers: A=6+1*8
+          columnNumbers: A=9*9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.deque.model.yml
+        index: 0
+        firstRowId: 32357
+        rowCount: 69
+        locations:
+          lineNumbers: A=6+1*68
+          columnNumbers: A=9*69
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.format.model.yml
+        index: 0
+        firstRowId: 32426
+        rowCount: 9
+        locations:
+          lineNumbers: A=6+1*8
+          columnNumbers: A=9*9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.forward_list.model.yml
+        index: 0
+        firstRowId: 32435
+        rowCount: 52
+        locations:
+          lineNumbers: A=6+1*51
+          columnNumbers: A=9*52
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.iterator.model.yml
+        index: 0
+        firstRowId: 32487
+        rowCount: 6
+        locations:
+          lineNumbers: A=6+1*5
+          columnNumbers: A=9*6
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.list.model.yml
+        index: 0
+        firstRowId: 32493
+        rowCount: 67
+        locations:
+          lineNumbers: A=6+1*66
+          columnNumbers: A=9*67
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.thread.model.yml
+        index: 0
+        firstRowId: 32560
+        rowCount: 5
+        locations:
+          lineNumbers: A=6+1*4
+          columnNumbers: A=9*5
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.vector.model.yml
+        index: 0
+        firstRowId: 32565
+        rowCount: 56
+        locations:
+          lineNumbers: A=6+1*55
+          columnNumbers: A=9*56
+metadata:
+  name: GCC -f options listed in gcc/config/auto-host.h
+  description: Lists all -f options defined in gcc/config/auto-host.h.
+  kind: table
+  id: cpp/gcc/option-facts-automated

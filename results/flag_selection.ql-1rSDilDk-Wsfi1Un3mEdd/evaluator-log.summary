@@ -1,0 +1,55 @@
+[2026-08-12 14:53:12] Summary of a CodeQL evaluation that started at 2026-08-12T13:53:12.281432019Z
+[2026-08-12 14:53:12] 
+[2026-08-12 14:53:12] Evaluated non-recursive predicate preprocdirects_10#join_rhs@6b2750k4 in 55ms (size: 166891).
+Evaluated relational algebra for predicate preprocdirects_10#join_rhs@6b2750k4:
+                {2} r1 = SCAN preprocdirects OUTPUT In.1, In.0
+                return r1
+
+[2026-08-12 14:53:12] Evaluated non-recursive predicate @ppd_define@6a2d37b7 in 3ms (size: 40855).
+Evaluated relational algebra for predicate @ppd_define@6a2d37b7:
+                {1} r1 = CONSTANT(unique int)[7]
+                {1}    | JOIN WITH preprocdirects_10#join_rhs ON FIRST 1 OUTPUT Rhs.1
+                return r1
+
+[2026-08-12 14:53:12] Evaluated non-recursive predicate Macro::Macro.getName/0#dispred#e28b3699@9083fa3c in 159ms (size: 40855).
+Evaluated relational algebra for predicate Macro::Macro.getName/0#dispred#e28b3699@9083fa3c:
+                {3} r1 = JOIN @ppd_define WITH preproctext ON FIRST 1 OUTPUT Lhs.0, Rhs.1, _
+                {3}    | REWRITE WITH Out.2 := "([^(]*+).*"
+                {5}    | JOIN WITH PRIMITIVE regexpCapture#bbff ON Lhs.1,Lhs.2
+                {6}    | SCAN OUTPUT In.0, In.1, In.2, In.3, In.4, _
+                {5}    | REWRITE WITH Tmp.5 := 1, TEST InOut.3 = Tmp.5 KEEPING 5
+                {2}    | SCAN OUTPUT In.0, In.4
+                return r1
+
+[2026-08-12 14:53:12] Evaluated non-recursive predicate #select#query@7090e99n in 29ms (size: 481).
+Evaluated relational algebra for predicate #select#query@7090e99n:
+                {2} r1 = REWRITE `Macro::Macro.getName/0#dispred#e28b3699` WITH TEST InOut.1 matches_constant "(?s)flag..*"
+                {1}    | SCAN OUTPUT In.0
+                {1}    | STREAM DEDUP
+                {2}    | JOIN WITH `Macro::Macro.getName/0#dispred#e28b3699` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+                {3}    | JOIN WITH preproctext ON FIRST 1 OUTPUT Lhs.1, Rhs.2, _
+                {3}    | REWRITE WITH Tmp.2 := 5, Out.2 := suffix(InOut.0,Tmp.2)
+                {6}    | SCAN OUTPUT _, In.0, In.1, In.2, _, _
+                {3}    | REWRITE WITH Tmp.0 := "-f", Tmp.4 := "_", Tmp.5 := "-", Tmp.4 := replaceAll(In.3,Tmp.4,Tmp.5), Out.0 := (Tmp.0 ++ Tmp.4) KEEPING 3
+                return r1
+
+[2026-08-12 14:53:12] Completed evaluation of query flag_selection.ql.
+Most expensive predicates for stage 0 of completed query flag_selection.ql:
+        time  | predicate
+        ------|----------
+        159ms | Macro::Macro.getName/0#dispred#e28b3699@9083fa3c
+         55ms | preprocdirects_10#join_rhs@6b2750k4
+         29ms | #select#query@7090e99n
+          3ms | @ppd_define@6a2d37b7
+
+Most expensive predicates for completed query flag_selection.ql:
+        time  | predicate
+        ------|----------
+        159ms | Macro::Macro.getName/0#dispred#e28b3699@9083fa3c
+         55ms | preprocdirects_10#join_rhs@6b2750k4
+         29ms | #select#query@7090e99n
+          3ms | @ppd_define@6a2d37b7
+
+[2026-08-12 14:53:12] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.3 seconds
+        * Total time spent evaluating predicates: 0.3 seconds

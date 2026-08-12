@@ -1,0 +1,3271 @@
+{
+  "time" : "2026-07-24T18:09:34.838236578Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 4567,
+  "nanoTime" : 523827280187,
+  "codeqlVersion" : "2.26.1",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-07-24T18:09:34.897261618Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 4568,
+  "nanoTime" : 523886283977,
+  "queryName" : "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql",
+  "stages" : [ 5, 6, 7 ]
+}
+
+{
+  "time" : "2026-07-24T18:09:34.902554475Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4569,
+  "nanoTime" : 523891572446,
+  "raHash" : "389a43u0k2v3jaqv6816j56lue3",
+  "predicateName" : "cached_AstExtended::AstNode.getLocation/0#dispred#6b4dcb62",
+  "appearsAs" : {
+    "cached_AstExtended::AstNode.getLocation/0#dispred#6b4dcb62" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 113708
+}
+
+{
+  "time" : "2026-07-24T18:09:34.902820623Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4570,
+  "nanoTime" : 523891827643,
+  "raHash" : "c992f399aemf3184r199npq9ll1",
+  "predicateName" : "cached_Files::Impl::Container.splitAbsolutePath/2#dispred#324a3985",
+  "appearsAs" : {
+    "cached_Files::Impl::Container.splitAbsolutePath/2#dispred#324a3985" : [ 5 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 1202
+}
+
+{
+  "time" : "2026-07-24T18:09:34.902990581Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4571,
+  "nanoTime" : 523891994916,
+  "raHash" : "e5aef9lfnh3smnkulofricog08d",
+  "predicateName" : "cached_Module::moduleNameFromFile/1#a01d5f51",
+  "appearsAs" : {
+    "cached_Module::moduleNameFromFile/1#a01d5f51" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 214
+}
+
+{
+  "time" : "2026-07-24T18:09:34.903575294Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4572,
+  "nanoTime" : 523892583457,
+  "raHash" : "9212cahkl2pk5vlgl4c6m4bur86",
+  "predicateName" : "cached_Import::ImportStar.getModuleExpr/0#dispred#8ab9ce73",
+  "appearsAs" : {
+    "cached_Import::ImportStar.getModuleExpr/0#dispred#8ab9ce73" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:34.903743849Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4573,
+  "nanoTime" : 523892747534,
+  "raHash" : "149662k3m9qflje0v30q6n37ug3",
+  "predicateName" : "cached_Exprs::Expr.toString/0#dispred#7435dfcd",
+  "appearsAs" : {
+    "cached_Exprs::Expr.toString/0#dispred#7435dfcd" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 89857
+}
+
+{
+  "time" : "2026-07-24T18:09:34.904509601Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4574,
+  "nanoTime" : 523893514187,
+  "raHash" : "bec877pdfc6bjrajf74c1k61al3",
+  "predicateName" : "py_strs_120#join_rhs",
+  "appearsAs" : {
+    "py_strs_120#join_rhs" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 43148
+}
+
+{
+  "time" : "2026-07-24T18:09:34.904609067Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4575,
+  "nanoTime" : 523893610237,
+  "raHash" : "dc6e589fnu9g0phliti8neumjm8",
+  "predicateName" : "py_Functions",
+  "appearsAs" : {
+    "py_Functions" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:34.904742226Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4576,
+  "nanoTime" : 523893744227,
+  "raHash" : "2861f12c55j6lsrna3jkohck3t9",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::with_definition/2#e1888ceb",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::with_definition/2#e1888ceb" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 113
+}
+
+{
+  "time" : "2026-07-24T18:09:34.904845910Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4577,
+  "nanoTime" : 523893847540,
+  "raHash" : "69bedbksbm6blbesk8qeqf793i8",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::test_refinement/3#2cbdf557",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::test_refinement/3#2cbdf557" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 44
+}
+
+{
+  "time" : "2026-07-24T18:09:34.904926390Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4578,
+  "nanoTime" : 523893927119,
+  "raHash" : "65563fls2utrr3u98t2km331i0d",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::pattern_capture_definition/2#77b3ae42",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::pattern_capture_definition/2#77b3ae42" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905013373Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4579,
+  "nanoTime" : 523894014573,
+  "raHash" : "bcc18bflmcj622cmcu7edr4fi70",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::pattern_alias_definition/2#e55586af",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::pattern_alias_definition/2#e55586af" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905097901Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4580,
+  "nanoTime" : 523894115732,
+  "raHash" : "9304ca4ms5atig0tgm04kt73595",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::parameter_definition/2#40b2fede",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::parameter_definition/2#40b2fede" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 4078
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905205592Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4581,
+  "nanoTime" : 523894206672,
+  "raHash" : "9ce6c91v0c548mf5j6kr6btllb2",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::multi_assignment_definition/4#1d17889e",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::multi_assignment_definition/4#1d17889e" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 260
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905298907Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4582,
+  "nanoTime" : 523894300097,
+  "raHash" : "6bf8399mvghmjolt69gjcuindk5",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::method_call_refinement/3#3634d2a9",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::method_call_refinement/3#3634d2a9" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 3091
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905380680Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4583,
+  "nanoTime" : 523894382100,
+  "raHash" : "6a11efaighe44318061tdve5hm1",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::init_module_submodule_defn/2#64b1af7d",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::init_module_submodule_defn/2#64b1af7d" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905457954Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4584,
+  "nanoTime" : 523894458884,
+  "raHash" : "a336ad47ke269cn422nqjtoss23",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::import_star_refinement/3#1675f8e2",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::import_star_refinement/3#1675f8e2" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905537503Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4585,
+  "nanoTime" : 523894538783,
+  "raHash" : "abf930fcr5ifa7en74k3dnmproa",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::exception_group_capture/2#d53f492d",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::exception_group_capture/2#d53f492d" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905623514Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4586,
+  "nanoTime" : 523894625585,
+  "raHash" : "f70b8c4r182t9tl6sf6ta195jpc",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::exception_capture/2#fd0779df",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::exception_capture/2#fd0779df" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 62
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905705958Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4587,
+  "nanoTime" : 523894707609,
+  "raHash" : "2c1e78815ib47qmg6p1p6sofff9",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::deletion_definition/2#e74a17e3",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::deletion_definition/2#e74a17e3" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905784996Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4588,
+  "nanoTime" : 523894785835,
+  "raHash" : "fda0adp7v5vg6sj9cjnnp6u5815",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::attribute_deletion_refinement/3#7de1bd7a",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::attribute_deletion_refinement/3#7de1bd7a" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905868502Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4589,
+  "nanoTime" : 523894869672,
+  "raHash" : "a3892botrunoc145r1ro6j0eoh8",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::attribute_assignment_refinement/3#5f777592",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::attribute_assignment_refinement/3#5f777592" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 1163
+}
+
+{
+  "time" : "2026-07-24T18:09:34.905957488Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4590,
+  "nanoTime" : 523894959430,
+  "raHash" : "57e8fcvehu5vhlbf6natncu2u3e",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::assignment_definition/3#a5ba4d99",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::assignment_definition/3#a5ba4d99" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 7340
+}
+
+{
+  "time" : "2026-07-24T18:09:34.906046805Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4591,
+  "nanoTime" : 523895047614,
+  "raHash" : "8d683e2ti6ihp44tdvesc5lonl2",
+  "predicateName" : "cached_SsaDefinitions::SsaSource::argument_refinement/3#615fb3a9",
+  "appearsAs" : {
+    "cached_SsaDefinitions::SsaSource::argument_refinement/3#615fb3a9" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 3132
+}
+
+{
+  "time" : "2026-07-24T18:09:34.906156280Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4592,
+  "nanoTime" : 523895161347,
+  "raHash" : "c4051ekjjnl6bol1v8mjepsmsj7",
+  "predicateName" : "cached_SsaCompute::SsaComputeImpl::variableUse/4#da62dc30",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaComputeImpl::variableUse/4#da62dc30" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 78211
+}
+
+{
+  "time" : "2026-07-24T18:09:34.906285482Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4593,
+  "nanoTime" : 523895287643,
+  "raHash" : "7b65davkeuct2fpc5tcv66flpta",
+  "predicateName" : "cached_SsaCompute::SsaComputeImpl::variableRefine/4#b20a3c26",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaComputeImpl::variableRefine/4#b20a3c26" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 8014
+}
+
+{
+  "time" : "2026-07-24T18:09:34.906417769Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4594,
+  "nanoTime" : 523895419650,
+  "raHash" : "c7668aa32ms6729adp0s19c0vte",
+  "predicateName" : "cached_SsaCompute::SsaComputeImpl::variableDefine/4#79261f91",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaComputeImpl::variableDefine/4#79261f91" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 22368
+}
+
+{
+  "time" : "2026-07-24T18:09:34.906508970Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4595,
+  "nanoTime" : 523895510059,
+  "raHash" : "22896d19oda6rq7vl9oenv2dq99",
+  "predicateName" : "cached_SsaCompute::SsaComputeImpl::variableDef/4#38b3ef7e",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaComputeImpl::variableDef/4#38b3ef7e" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 30382
+}
+
+{
+  "time" : "2026-07-24T18:09:34.906598778Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4596,
+  "nanoTime" : 523895599837,
+  "raHash" : "355f9f491mbjrjc0h56ohjpvgq5",
+  "predicateName" : "cached_SsaCompute::SsaComputeImpl::ssaDefReachesUseWithinBlock/4#87a91e15",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaComputeImpl::ssaDefReachesUseWithinBlock/4#87a91e15" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 39409
+}
+
+{
+  "time" : "2026-07-24T18:09:34.906685790Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4597,
+  "nanoTime" : 523895687210,
+  "raHash" : "ef3fe7t8agirm1lrej7pq2uof55",
+  "predicateName" : "cached_SsaCompute::SsaComputeImpl::ssaDefReachesRank/4#f19c6fee",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaComputeImpl::ssaDefReachesRank/4#f19c6fee" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 72895
+}
+
+{
+  "time" : "2026-07-24T18:09:34.906771731Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4598,
+  "nanoTime" : 523895772450,
+  "raHash" : "839bbevn7pj4a8q5kgte5t94k41",
+  "predicateName" : "cached_SsaCompute::SsaComputeImpl::ssaDef/2#1ca5a11b",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaComputeImpl::ssaDef/2#1ca5a11b" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 25752
+}
+
+{
+  "time" : "2026-07-24T18:09:34.906857291Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4599,
+  "nanoTime" : 523895858441,
+  "raHash" : "901bb85evkr46qbps0spro9obj7",
+  "predicateName" : "cached_SsaCompute::SsaComputeImpl::lastRank/2#6cfcb19d",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaComputeImpl::lastRank/2#6cfcb19d" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 45483
+}
+
+{
+  "time" : "2026-07-24T18:09:34.906943692Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4600,
+  "nanoTime" : 523895947707,
+  "raHash" : "01f35es21shd8a97uhcfn6t8gg3",
+  "predicateName" : "cached_SsaCompute::SsaComputeImpl::defUseRank/4#782a2f48",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaComputeImpl::defUseRank/4#782a2f48" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 108593
+}
+
+{
+  "time" : "2026-07-24T18:09:34.907046475Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4601,
+  "nanoTime" : 523896049408,
+  "raHash" : "2903867i5gcdejpieaoq0qjmsva",
+  "predicateName" : "cached_SsaCompute::SsaComputeImpl::defRank/4#f608ea69",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaComputeImpl::defRank/4#f608ea69" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 30382
+}
+
+{
+  "time" : "2026-07-24T18:09:34.907155278Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4602,
+  "nanoTime" : 523896156718,
+  "raHash" : "79f75586couvd2s7a3l17ikhjq7",
+  "predicateName" : "cached_SsaCompute::SsaDefinitions::reachesUse/4#216dc4f6",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaDefinitions::reachesUse/4#216dc4f6" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 75078
+}
+
+{
+  "time" : "2026-07-24T18:09:34.907244565Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4603,
+  "nanoTime" : 523896245504,
+  "raHash" : "7fb18acqeneiagcqke90pr7e9q8",
+  "predicateName" : "cached_SsaCompute::SsaDefinitions::reachesExit/3#a534505a",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaDefinitions::reachesExit/3#a534505a" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 13995
+}
+
+{
+  "time" : "2026-07-24T18:09:34.907335255Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4604,
+  "nanoTime" : 523896336424,
+  "raHash" : "e1e0cddil9u32tro9johl2bh4u4",
+  "predicateName" : "cached_SsaCompute::SsaDefinitions::reachesEndOfBlock/4#214bd902",
+  "appearsAs" : {
+    "cached_SsaCompute::SsaDefinitions::reachesEndOfBlock/4#214bd902" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 73479
+}
+
+{
+  "time" : "2026-07-24T18:09:34.907422618Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4605,
+  "nanoTime" : 523896423287,
+  "raHash" : "2f099dbhie97kppnjl3qcr2rqbd",
+  "predicateName" : "cached_SsaCompute::Liveness::liveAtExit/2#b6aa63f4",
+  "appearsAs" : {
+    "cached_SsaCompute::Liveness::liveAtExit/2#b6aa63f4" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 82739
+}
+
+{
+  "time" : "2026-07-24T18:09:34.907506896Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4606,
+  "nanoTime" : 523896507654,
+  "raHash" : "547472k08v7oun30etni51r2951",
+  "predicateName" : "cached_SsaCompute::Liveness::liveAtEntry/2#bab3ea7c",
+  "appearsAs" : {
+    "cached_SsaCompute::Liveness::liveAtEntry/2#bab3ea7c" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 83071
+}
+
+{
+  "time" : "2026-07-24T18:09:34.907596804Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4607,
+  "nanoTime" : 523896597873,
+  "raHash" : "edc26bgii0fc643rbde3llp4ar1",
+  "predicateName" : "cached_SsaCompute::EssaDefinitions::variableUpdate/5#c42159b9",
+  "appearsAs" : {
+    "cached_SsaCompute::EssaDefinitions::variableUpdate/5#c42159b9" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 24207
+}
+
+{
+  "time" : "2026-07-24T18:09:34.907686792Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4608,
+  "nanoTime" : 523896687821,
+  "raHash" : "b3b96aih297cfn6bpr87ueiuc8c",
+  "predicateName" : "cached_SsaCompute::EssaDefinitions::variableRefinement/5#4e891107",
+  "appearsAs" : {
+    "cached_SsaCompute::EssaDefinitions::variableRefinement/5#4e891107" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 6980
+}
+
+{
+  "time" : "2026-07-24T18:09:34.907778954Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4609,
+  "nanoTime" : 523896779924,
+  "raHash" : "24045e5clpd66p4989sae7e5os0",
+  "predicateName" : "cached_SsaCompute::EssaDefinitions::variableDefinition/5#32b5d84f",
+  "appearsAs" : {
+    "cached_SsaCompute::EssaDefinitions::variableDefinition/5#32b5d84f" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 17227
+}
+
+{
+  "time" : "2026-07-24T18:09:34.907935808Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4610,
+  "nanoTime" : 523896949701,
+  "raHash" : "a8e5302nue50qpp2946svu3feee",
+  "predicateName" : "cached_SsaCompute::EssaDefinitions::piNode/3#b1917f93",
+  "appearsAs" : {
+    "cached_SsaCompute::EssaDefinitions::piNode/3#b1917f93" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 3859
+}
+
+{
+  "time" : "2026-07-24T18:09:34.908082803Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4611,
+  "nanoTime" : 523897094462,
+  "raHash" : "3c9e66p4utlv11v2cll5nu6dhud",
+  "predicateName" : "cached_SsaCompute::EssaDefinitions::phiNode/2#4864b30d",
+  "appearsAs" : {
+    "cached_SsaCompute::EssaDefinitions::phiNode/2#4864b30d" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 4744
+}
+
+{
+  "time" : "2026-07-24T18:09:34.908250686Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4612,
+  "nanoTime" : 523897255453,
+  "raHash" : "114bcdov2fllcqpss96gjsb65b5",
+  "predicateName" : "cached_SsaCompute::AdjacentUses::variableSourceUse/4#4525ef19",
+  "appearsAs" : {
+    "cached_SsaCompute::AdjacentUses::variableSourceUse/4#4525ef19" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 27352
+}
+
+{
+  "time" : "2026-07-24T18:09:34.908375610Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4613,
+  "nanoTime" : 523897380236,
+  "raHash" : "217b91m1sc29lesphpn1se1r4jd",
+  "predicateName" : "cached_SsaCompute::AdjacentUses::useOfDef/2#16a7ee50",
+  "appearsAs" : {
+    "cached_SsaCompute::AdjacentUses::useOfDef/2#16a7ee50" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 25798
+}
+
+{
+  "time" : "2026-07-24T18:09:34.908505042Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4614,
+  "nanoTime" : 523897508656,
+  "raHash" : "06042deq03moltfi09jp89mehi6",
+  "predicateName" : "cached_SsaCompute::AdjacentUses::firstUse/2#ca053ce0",
+  "appearsAs" : {
+    "cached_SsaCompute::AdjacentUses::firstUse/2#ca053ce0" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 12196
+}
+
+{
+  "time" : "2026-07-24T18:09:34.908630897Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4615,
+  "nanoTime" : 523897634732,
+  "raHash" : "9e51f9neh1uatm1kj510hfaqfr1",
+  "predicateName" : "cached_SsaCompute::AdjacentUses::definesAt/4#68130204",
+  "appearsAs" : {
+    "cached_SsaCompute::AdjacentUses::definesAt/4#68130204" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 21971
+}
+
+{
+  "time" : "2026-07-24T18:09:34.908753036Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4616,
+  "nanoTime" : 523897754696,
+  "raHash" : "c289cfdn91vcn5adb2evmgjip68",
+  "predicateName" : "cached_SsaCompute::AdjacentUses::defSourceUseRank/4#ebad7bcb",
+  "appearsAs" : {
+    "cached_SsaCompute::AdjacentUses::defSourceUseRank/4#ebad7bcb" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 49720
+}
+
+{
+  "time" : "2026-07-24T18:09:34.908860747Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4617,
+  "nanoTime" : 523897868269,
+  "raHash" : "ca881fal9mitfmml5u4fj3vlktd",
+  "predicateName" : "cached_SsaCompute::AdjacentUses::adjacentVarRefs/5#de1f7cd5",
+  "appearsAs" : {
+    "cached_SsaCompute::AdjacentUses::adjacentVarRefs/5#de1f7cd5" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 38784
+}
+
+{
+  "time" : "2026-07-24T18:09:34.908995850Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4618,
+  "nanoTime" : 523898020103,
+  "raHash" : "3b3ea8phvr6l4goda1ka449kbt1",
+  "predicateName" : "cached_SsaCompute::AdjacentUses::adjacentUseUseSameVar/2#2eafd7db",
+  "appearsAs" : {
+    "cached_SsaCompute::AdjacentUses::adjacentUseUseSameVar/2#2eafd7db" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 17458
+}
+
+{
+  "time" : "2026-07-24T18:09:34.909146562Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4619,
+  "nanoTime" : 523898148483,
+  "raHash" : "9e4506bad4c8klbacs7r62o4m94",
+  "predicateName" : "cached_SsaCompute::AdjacentUses::adjacentUseUse/2#c094915e",
+  "appearsAs" : {
+    "cached_SsaCompute::AdjacentUses::adjacentUseUse/2#c094915e" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 17458
+}
+
+{
+  "time" : "2026-07-24T18:09:34.909263230Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4620,
+  "nanoTime" : 523898264440,
+  "raHash" : "cbb05al2h4hlvjcuvim5gp1ajq0",
+  "predicateName" : "cached_Flow::SequenceNode.getElement/1#dispred#4cc4068f",
+  "appearsAs" : {
+    "cached_Flow::SequenceNode.getElement/1#dispred#4cc4068f" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 3111
+}
+
+{
+  "time" : "2026-07-24T18:09:34.909397581Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4621,
+  "nanoTime" : 523898399332,
+  "raHash" : "fcb8f0c76c28a771bb7ksd6srh6",
+  "predicateName" : "cached_Flow::DefinitionNode#e8809c3b",
+  "appearsAs" : {
+    "cached_Flow::DefinitionNode#e8809c3b" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 9898
+}
+
+{
+  "time" : "2026-07-24T18:09:34.909492308Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4622,
+  "nanoTime" : 523898496774,
+  "raHash" : "66f53fd9rjs5ah3lqthauoukmc4",
+  "predicateName" : "cached_Flow::ControlFlowNode.toString/0#dispred#e1af144b",
+  "appearsAs" : {
+    "cached_Flow::ControlFlowNode.toString/0#dispred#e1af144b" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 105183
+}
+
+{
+  "time" : "2026-07-24T18:09:34.909581455Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4623,
+  "nanoTime" : 523898582384,
+  "raHash" : "f2de3f1g2efnmp8bh3evqnde536",
+  "predicateName" : "cached_Flow::ControlFlowNode.getScope/0#dispred#b061daac",
+  "appearsAs" : {
+    "cached_Flow::ControlFlowNode.getScope/0#dispred#b061daac" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 105183
+}
+
+{
+  "time" : "2026-07-24T18:09:34.909669510Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4624,
+  "nanoTime" : 523898670258,
+  "raHash" : "4ae642b8o2321ri40drbrfn67v0",
+  "predicateName" : "cached_#Flow::BasicBlock.getASuccessor/0#dispred#7249dd96Plus",
+  "appearsAs" : {
+    "cached_#Flow::BasicBlock.getASuccessor/0#dispred#7249dd96Plus" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 62397
+}
+
+{
+  "time" : "2026-07-24T18:09:34.909785827Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4625,
+  "nanoTime" : 523898786886,
+  "raHash" : "40c1c68mdeo2rk9eqso72stur28",
+  "predicateName" : "cached_Flow::BasicBlock.strictlyDominates/1#dispred#65ae2ca3",
+  "appearsAs" : {
+    "cached_Flow::BasicBlock.strictlyDominates/1#dispred#65ae2ca3" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 39107
+}
+
+{
+  "time" : "2026-07-24T18:09:34.909877288Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4626,
+  "nanoTime" : 523898878378,
+  "raHash" : "408ca88vj65fts2u6fft2p2nmse",
+  "predicateName" : "cached_Flow::BasicBlock.getImmediateDominator/0#dispred#0f15e8ec",
+  "appearsAs" : {
+    "cached_Flow::BasicBlock.getImmediateDominator/0#dispred#0f15e8ec" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 6652
+}
+
+{
+  "time" : "2026-07-24T18:09:34.909967447Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4627,
+  "nanoTime" : 523898968446,
+  "raHash" : "debdc7aojrc6mb62a4e88hgj801",
+  "predicateName" : "cached_Flow::BasicBlock.getASuccessor/0#dispred#7249dd96",
+  "appearsAs" : {
+    "cached_Flow::BasicBlock.getASuccessor/0#dispred#7249dd96" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 9889
+}
+
+{
+  "time" : "2026-07-24T18:09:34.910052185Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4628,
+  "nanoTime" : 523899052393,
+  "raHash" : "ea558aq9e6qov3gv50qb869srm4",
+  "predicateName" : "cached_Essa::TPhiFunction#dfb6fe3b",
+  "appearsAs" : {
+    "cached_Essa::TPhiFunction#dfb6fe3b" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 4744
+}
+
+{
+  "time" : "2026-07-24T18:09:34.910149577Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4629,
+  "nanoTime" : 523899150536,
+  "raHash" : "25de2e0kd9u9kq1drclu5m2gnl4",
+  "predicateName" : "cached_Essa::TEssaNodeRefinement#8de2de42",
+  "appearsAs" : {
+    "cached_Essa::TEssaNodeRefinement#8de2de42" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 6980
+}
+
+{
+  "time" : "2026-07-24T18:09:34.910231430Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4630,
+  "nanoTime" : 523899231618,
+  "raHash" : "de863cegeutbf2ov8b64j3vqpsf",
+  "predicateName" : "cached_Essa::TEssaNodeDefinition#96e9ebfe",
+  "appearsAs" : {
+    "cached_Essa::TEssaNodeDefinition#96e9ebfe" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 17227
+}
+
+{
+  "time" : "2026-07-24T18:09:34.910313153Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4631,
+  "nanoTime" : 523899313832,
+  "raHash" : "598772h554o2u541rl9bbc93h70",
+  "predicateName" : "cached_Essa::TEssaEdgeDefinition#be4738bc",
+  "appearsAs" : {
+    "cached_Essa::TEssaEdgeDefinition#be4738bc" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 3859
+}
+
+{
+  "time" : "2026-07-24T18:09:34.910406397Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4632,
+  "nanoTime" : 523899407337,
+  "raHash" : "46c38ar1l00688pfji8da8mrka8",
+  "predicateName" : "cached_Essa::TEssaDefinition#4c062f56",
+  "appearsAs" : {
+    "cached_Essa::TEssaDefinition#4c062f56" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 32810
+}
+
+{
+  "time" : "2026-07-24T18:09:34.910490915Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4633,
+  "nanoTime" : 523899494049,
+  "raHash" : "650a73vd0iqnbjrfi3lergj0kt3",
+  "predicateName" : "cached_Essa::PhiFunction.getInput/1#dispred#f797e1b9",
+  "appearsAs" : {
+    "cached_Essa::PhiFunction.getInput/1#dispred#f797e1b9" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 14622
+}
+
+{
+  "time" : "2026-07-24T18:09:34.910575684Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4634,
+  "nanoTime" : 523899579298,
+  "raHash" : "c876115vrkkpi0jm12ifg57at95",
+  "predicateName" : "cached_CachedStages::Stages::AST::ref/0#e52d92b5",
+  "appearsAs" : {
+    "cached_CachedStages::Stages::AST::ref/0#e52d92b5" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 1
+}
+
+{
+  "time" : "2026-07-24T18:09:34.910663729Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4635,
+  "nanoTime" : 523899664758,
+  "raHash" : "a80d27a0g1egkarqcs7f5iinhj3",
+  "predicateName" : "cached_CachedStages::Stages::AST::backref/0#dddb3000",
+  "appearsAs" : {
+    "cached_CachedStages::Stages::AST::backref/0#dddb3000" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 1
+}
+
+{
+  "time" : "2026-07-24T18:09:34.910748136Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4636,
+  "nanoTime" : 523899748715,
+  "raHash" : "b8c154e050qljeej8m31adj9al1",
+  "predicateName" : "cached_AstExtended::AstNode.getParentNode/0#dispred#c159e3ee",
+  "appearsAs" : {
+    "cached_AstExtended::AstNode.getParentNode/0#dispred#c159e3ee" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 114724
+}
+
+{
+  "time" : "2026-07-24T18:09:34.910828276Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4637,
+  "nanoTime" : 523899828735,
+  "raHash" : "3bfc05cm33bnb8le0n079seacl4",
+  "predicateName" : "cached_AstExtended::AstNode.getAChildNode/0#dispred#a130356d",
+  "appearsAs" : {
+    "cached_AstExtended::AstNode.getAChildNode/0#dispred#a130356d" : [ 6 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 114724
+}
+
+{
+  "time" : "2026-07-24T18:09:34.911538144Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4638,
+  "nanoTime" : 523900606178,
+  "raHash" : "26da98bi1715p5dk3mnvcfv2an0",
+  "predicateName" : "Function::Function.getName/0#dispred#033700ef",
+  "appearsAs" : {
+    "Function::Function.getName/0#dispred#033700ef" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Function.qll:87,3-88,67",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN py_Functions OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := 0",
+      "    {2}    | JOIN WITH py_strs_120#join_rhs ON FIRST 2 OUTPUT Lhs.0, Rhs.2",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "py_Functions" : "dc6e589fnu9g0phliti8neumjm8",
+    "py_strs_120#join_rhs" : "bec877pdfc6bjrajf74c1k61al3"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:34.911806145Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4639,
+  "nanoTime" : 523900804229,
+  "predicateStartEvent" : 4638,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:34.920861507Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4640,
+  "nanoTime" : 523909880510,
+  "startEvent" : 4639,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:34.921026636Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4641,
+  "nanoTime" : 523910027686,
+  "startEvent" : 4638,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:34.921896683Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4642,
+  "nanoTime" : 523910909925,
+  "raHash" : "2290dca4c0ps97tumbndnkqkrje",
+  "predicateName" : "#select",
+  "appearsAs" : {
+    "#select" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql:11,1-13,57",
+  "ra" : {
+    "pipeline" : [
+      "    {5} r1 = JOIN `Function::Function.getName/0#dispred#033700ef` WITH `Function::Function.getName/0#dispred#033700ef` ON FIRST 1 OUTPUT Lhs.0, Lhs.0, _, Lhs.1, Rhs.1",
+      "    {3}    | REWRITE WITH Tmp.2 := \" is equal to \", Out.2 := (In.3 ++ Tmp.2 ++ In.4) KEEPING 3",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Function::Function.getName/0#dispred#033700ef" : "26da98bi1715p5dk3mnvcfv2an0"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:34.922063775Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4643,
+  "nanoTime" : 523911062360,
+  "predicateStartEvent" : 4642,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:34.972733763Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4644,
+  "nanoTime" : 523961857361,
+  "startEvent" : 4643,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:34.973076203Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4645,
+  "nanoTime" : 523962073546,
+  "startEvent" : 4642,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:34.973650758Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4646,
+  "nanoTime" : 523962650484,
+  "raHash" : "af7732rrkv745tmft3rcr5k4h7f",
+  "predicateName" : "Files::Location.hasLocationInfo/5#dispred#143bb906",
+  "appearsAs" : {
+    "Files::Location.hasLocationInfo/5#dispred#143bb906" : [ 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 126623
+}
+
+{
+  "time" : "2026-07-24T18:09:34.974060894Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4647,
+  "nanoTime" : 523963062996,
+  "raHash" : "924174vk8hmfbbjtok39ept4vqe",
+  "predicateName" : "Scope::Scope.getLocation/0#dispred#0883d983",
+  "appearsAs" : {
+    "Scope::Scope.getLocation/0#dispred#0883d983" : [ 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 2357
+}
+
+{
+  "time" : "2026-07-24T18:09:34.974413634Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4648,
+  "nanoTime" : 523963413211,
+  "raHash" : "8f0a749cahimvpnmjnqjb9n73d8",
+  "predicateName" : "project##Files::Location.hasLocationInfo/5#dispred#143bb906Merge",
+  "appearsAs" : {
+    "project##Files::Location.hasLocationInfo/5#dispred#143bb906Merge" : [ 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 126623
+}
+
+{
+  "time" : "2026-07-24T18:09:34.975078597Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4649,
+  "nanoTime" : 523964080078,
+  "raHash" : "9ee2ecn40kpkrcjhh05mvuhoqs5",
+  "predicateName" : "_#Scope::Scope.getLocation/0#dispred#0883d983Merge_#select#shared",
+  "appearsAs" : {
+    "_#Scope::Scope.getLocation/0#dispred#0883d983Merge_#select#shared" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {3} r1 = REWRITE #select WITH TEST InOut.0 = InOut.1",
+      "    {4}    | JOIN WITH `Scope::Scope.getLocation/0#dispred#0883d983` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.2, Lhs.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "#select" : "2290dca4c0ps97tumbndnkqkrje",
+    "Scope::Scope.getLocation/0#dispred#0883d983" : "924174vk8hmfbbjtok39ept4vqe"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:34.975354994Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4650,
+  "nanoTime" : 523964355352,
+  "predicateStartEvent" : 4649,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:34.983537364Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4651,
+  "nanoTime" : 523972543463,
+  "startEvent" : 4650,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:34.983627423Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4652,
+  "nanoTime" : 523972622100,
+  "startEvent" : 4649,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:34.984303777Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4653,
+  "nanoTime" : 523973300779,
+  "raHash" : "52fceat0ifsek0ksri0dspnk5v1",
+  "predicateName" : "_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge_#select#shared",
+  "appearsAs" : {
+    "_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge_#select#shared" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {3} r1 = REWRITE #select WITH TEST InOut.0 = InOut.1",
+      "    {4}    | JOIN WITH `cached_AstExtended::AstNode.getLocation/0#dispred#6b4dcb62` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.2, Lhs.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "#select" : "2290dca4c0ps97tumbndnkqkrje",
+    "cached_AstExtended::AstNode.getLocation/0#dispred#6b4dcb62" : "389a43u0k2v3jaqv6816j56lue3"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:34.984548455Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4654,
+  "nanoTime" : 523973544395,
+  "predicateStartEvent" : 4653,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:34.993085719Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4655,
+  "nanoTime" : 523982115292,
+  "startEvent" : 4654,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:34.993216203Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4656,
+  "nanoTime" : 523982211742,
+  "startEvent" : 4653,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:34.993992224Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4657,
+  "nanoTime" : 523982990248,
+  "raHash" : "7fd2d2l7bt5rbbjnpsl5r6o20qc",
+  "predicateName" : "__#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge_#select#shared__#Scope::Scope.getLocatio__#antijoin_rhs",
+  "appearsAs" : {
+    "__#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge_#select#shared__#Scope::Scope.getLocatio__#antijoin_rhs" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {3} r1 = JOIN `_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge_#select#shared` WITH `project##Files::Location.hasLocationInfo/5#dispred#143bb906Merge` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.3",
+      "",
+      "    {3} r2 = JOIN `_#Scope::Scope.getLocation/0#dispred#0883d983Merge_#select#shared` WITH `project##Files::Location.hasLocationInfo/5#dispred#143bb906Merge` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.3",
+      "",
+      "    {3} r3 = r1 UNION r2",
+      "    return r3"
+    ]
+  },
+  "dependencies" : {
+    "_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge_#select#shared" : "52fceat0ifsek0ksri0dspnk5v1",
+    "project##Files::Location.hasLocationInfo/5#dispred#143bb906Merge" : "8f0a749cahimvpnmjnqjb9n73d8",
+    "_#Scope::Scope.getLocation/0#dispred#0883d983Merge_#select#shared" : "9ee2ecn40kpkrcjhh05mvuhoqs5"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:34.994214519Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4658,
+  "nanoTime" : 523983210028,
+  "predicateStartEvent" : 4657,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.005557850Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4659,
+  "nanoTime" : 523994563779,
+  "startEvent" : 4658,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.005630817Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4660,
+  "nanoTime" : 523994625514,
+  "startEvent" : 4657,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.006569171Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4661,
+  "nanoTime" : 523995568297,
+  "raHash" : "0db57f8pf8uhgr8eel3vdprbub9",
+  "predicateName" : "_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge_#select__#AstExtended::AstNode.getLocation__#shared",
+  "appearsAs" : {
+    "_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge_#select__#AstExtended::AstNode.getLocation__#shared" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {4} r1 = `_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge_#select#shared` UNION `_#Scope::Scope.getLocation/0#dispred#0883d983Merge_#select#shared`",
+      "    {8}    | JOIN WITH `Files::Location.hasLocationInfo/5#dispred#143bb906` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.3, Rhs.1, Rhs.2, Rhs.3, Rhs.4, Rhs.5",
+      "",
+      "    {3} r2 = REWRITE #select WITH TEST InOut.0 = InOut.1",
+      "    {3}    | SCAN OUTPUT In.0, In.2, In.0",
+      "    {3}    | AND NOT `__#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge_#select#shared__#Scope::Scope.getLocatio__#antijoin_rhs`(FIRST 3)",
+      "    {8}    | SCAN OUTPUT In.0, In.1, In.2, _, _, _, _, _",
+      "    {8}    | REWRITE WITH Out.3 := \"\", Out.4 := 0, Out.5 := 0, Out.6 := 0, Out.7 := 0",
+      "",
+      "    {8} r3 = r1 UNION r2",
+      "    return r3"
+    ]
+  },
+  "dependencies" : {
+    "_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge_#select#shared" : "52fceat0ifsek0ksri0dspnk5v1",
+    "_#Scope::Scope.getLocation/0#dispred#0883d983Merge_#select#shared" : "9ee2ecn40kpkrcjhh05mvuhoqs5",
+    "Files::Location.hasLocationInfo/5#dispred#143bb906" : "af7732rrkv745tmft3rcr5k4h7f",
+    "#select" : "2290dca4c0ps97tumbndnkqkrje",
+    "__#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge_#select#shared__#Scope::Scope.getLocatio__#antijoin_rhs" : "7fd2d2l7bt5rbbjnpsl5r6o20qc"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.006821183Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4662,
+  "nanoTime" : 523995816932,
+  "predicateStartEvent" : 4661,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.028354067Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4663,
+  "nanoTime" : 524017361799,
+  "startEvent" : 4662,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.028431542Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4664,
+  "nanoTime" : 524017425758,
+  "startEvent" : 4661,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.029500140Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4665,
+  "nanoTime" : 524018499296,
+  "raHash" : "4c422ek21be8nrknam103agmsb6",
+  "predicateName" : "_#Scope::Scope.getLocation/0#dispred#0883d983Merge__#Files::Location.hasLocationInfo/5#dispred#143bb__#shared",
+  "appearsAs" : {
+    "_#Scope::Scope.getLocation/0#dispred#0883d983Merge__#Files::Location.hasLocationInfo/5#dispred#143bb__#shared" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {9} r1 = JOIN `_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge_#select__#AstExtended::AstNode.getLocation__#shared` WITH `Scope::Scope.getLocation/0#dispred#0883d983` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge_#select__#AstExtended::AstNode.getLocation__#shared" : "0db57f8pf8uhgr8eel3vdprbub9",
+    "Scope::Scope.getLocation/0#dispred#0883d983" : "924174vk8hmfbbjtok39ept4vqe"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.029771197Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4666,
+  "nanoTime" : 524018767667,
+  "predicateStartEvent" : 4665,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.036914654Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4667,
+  "nanoTime" : 524025920833,
+  "startEvent" : 4666,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.036989173Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4668,
+  "nanoTime" : 524025982779,
+  "startEvent" : 4665,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.037926897Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4669,
+  "nanoTime" : 524026924730,
+  "raHash" : "0bd975qib2hr5ihdp0tqbs1sr45",
+  "predicateName" : "_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge__#Files::Location.hasLocationInfo/5#dispr__#shared",
+  "appearsAs" : {
+    "_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge__#Files::Location.hasLocationInfo/5#dispr__#shared" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {9} r1 = JOIN `_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge_#select__#AstExtended::AstNode.getLocation__#shared` WITH `cached_AstExtended::AstNode.getLocation/0#dispred#6b4dcb62` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge_#select__#AstExtended::AstNode.getLocation__#shared" : "0db57f8pf8uhgr8eel3vdprbub9",
+    "cached_AstExtended::AstNode.getLocation/0#dispred#6b4dcb62" : "389a43u0k2v3jaqv6816j56lue3"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.038068011Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4670,
+  "nanoTime" : 524027061887,
+  "predicateStartEvent" : 4669,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.045809617Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4671,
+  "nanoTime" : 524034815996,
+  "startEvent" : 4670,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.045886541Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4672,
+  "nanoTime" : 524034880537,
+  "startEvent" : 4669,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.046583434Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4673,
+  "nanoTime" : 524035581658,
+  "raHash" : "a2f22bl1562rerj5nls25goa542",
+  "predicateName" : "__#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge__#Files::Location.hasLocationInfo/5#disp__#antijoin_rhs",
+  "appearsAs" : {
+    "__#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge__#Files::Location.hasLocationInfo/5#disp__#antijoin_rhs" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {8} r1 = JOIN `_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge__#Files::Location.hasLocationInfo/5#dispr__#shared` WITH `project##Files::Location.hasLocationInfo/5#dispred#143bb906Merge` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8",
+      "",
+      "    {8} r2 = JOIN `_#Scope::Scope.getLocation/0#dispred#0883d983Merge__#Files::Location.hasLocationInfo/5#dispred#143bb__#shared` WITH `project##Files::Location.hasLocationInfo/5#dispred#143bb906Merge` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8",
+      "",
+      "    {8} r3 = r1 UNION r2",
+      "    return r3"
+    ]
+  },
+  "dependencies" : {
+    "_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge__#Files::Location.hasLocationInfo/5#dispr__#shared" : "0bd975qib2hr5ihdp0tqbs1sr45",
+    "project##Files::Location.hasLocationInfo/5#dispred#143bb906Merge" : "8f0a749cahimvpnmjnqjb9n73d8",
+    "_#Scope::Scope.getLocation/0#dispred#0883d983Merge__#Files::Location.hasLocationInfo/5#dispred#143bb__#shared" : "4c422ek21be8nrknam103agmsb6"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.046787104Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4674,
+  "nanoTime" : 524035782413,
+  "predicateStartEvent" : 4673,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.054854119Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4675,
+  "nanoTime" : 524043857923,
+  "startEvent" : 4674,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.054918890Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4676,
+  "nanoTime" : 524043912576,
+  "startEvent" : 4673,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.055790620Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4677,
+  "nanoTime" : 524044787351,
+  "raHash" : "143f030vf1ac8cs2mc7sn0n9u7e",
+  "predicateName" : "_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge__#AstExtended::AstNode.getLocation/0#dispr__#shared",
+  "appearsAs" : {
+    "_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge__#AstExtended::AstNode.getLocation/0#dispr__#shared" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {8} r1 = `_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge_#select__#AstExtended::AstNode.getLocation__#shared` AND NOT `__#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge__#Files::Location.hasLocationInfo/5#disp__#antijoin_rhs`(FIRST 8)",
+      "    {13}    | SCAN OUTPUT In.0, In.1, In.2, In.3, In.4, In.5, In.6, In.7, _, _, _, _, _",
+      "    {13}    | REWRITE WITH Out.8 := \"\", Out.9 := 0, Out.10 := 0, Out.11 := 0, Out.12 := 0",
+      "",
+      "    {9} r2 = `_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge__#Files::Location.hasLocationInfo/5#dispr__#shared` UNION `_#Scope::Scope.getLocation/0#dispred#0883d983Merge__#Files::Location.hasLocationInfo/5#dispred#143bb__#shared`",
+      "    {13}    | JOIN WITH `Files::Location.hasLocationInfo/5#dispred#143bb906` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Rhs.1, Rhs.2, Rhs.3, Rhs.4, Rhs.5",
+      "",
+      "    {13} r3 = r1 UNION r2",
+      "    return r3"
+    ]
+  },
+  "dependencies" : {
+    "_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge_#select__#AstExtended::AstNode.getLocation__#shared" : "0db57f8pf8uhgr8eel3vdprbub9",
+    "__#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge__#Files::Location.hasLocationInfo/5#disp__#antijoin_rhs" : "a2f22bl1562rerj5nls25goa542",
+    "_#AstExtended::AstNode.getLocation/0#dispred#6b4dcb62Merge__#Files::Location.hasLocationInfo/5#dispr__#shared" : "0bd975qib2hr5ihdp0tqbs1sr45",
+    "_#Scope::Scope.getLocation/0#dispred#0883d983Merge__#Files::Location.hasLocationInfo/5#dispred#143bb__#shared" : "4c422ek21be8nrknam103agmsb6",
+    "Files::Location.hasLocationInfo/5#dispred#143bb906" : "af7732rrkv745tmft3rcr5k4h7f"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.055989432Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4678,
+  "nanoTime" : 524045205974,
+  "predicateStartEvent" : 4677,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.075075220Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4679,
+  "nanoTime" : 524064084064,
+  "startEvent" : 4678,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.075183442Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4680,
+  "nanoTime" : 524064178110,
+  "startEvent" : 4677,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.075971216Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4681,
+  "nanoTime" : 524064970632,
+  "raHash" : "966d67vokouguvkk04fuse20ljd",
+  "predicateName" : "Files::Input::ContainerBase.getAbsolutePath/0#dispred#bb5aca3b",
+  "appearsAs" : {
+    "Files::Input::ContainerBase.getAbsolutePath/0#dispred#bb5aca3b" : [ 5 ],
+    "Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 470
+}
+
+{
+  "time" : "2026-07-24T18:09:35.076148838Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4682,
+  "nanoTime" : 524065145489,
+  "raHash" : "7a0f7599h3i5s1m5aps7b8fi744",
+  "predicateName" : "py_module_path",
+  "appearsAs" : {
+    "py_module_path" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 224
+}
+
+{
+  "time" : "2026-07-24T18:09:35.076268832Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4683,
+  "nanoTime" : 524065262868,
+  "raHash" : "816ea0rgg0gdtpl8abbh566n3f6",
+  "predicateName" : "Module::Module.getFile/0#dispred#53eb9b1b",
+  "appearsAs" : {
+    "Module::Module.getFile/0#dispred#53eb9b1b" : [ 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 181
+}
+
+{
+  "time" : "2026-07-24T18:09:35.076350284Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4684,
+  "nanoTime" : 524065343519,
+  "raHash" : "2777c63fk8jhq2rfcmfn0n8f4qe",
+  "predicateName" : "py_Classes",
+  "appearsAs" : {
+    "py_Classes" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 187
+}
+
+{
+  "time" : "2026-07-24T18:09:35.076478504Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4685,
+  "nanoTime" : 524065471629,
+  "raHash" : "5a5a332maoi48e6imnc65455hvd",
+  "predicateName" : "py_comprehensions",
+  "appearsAs" : {
+    "py_comprehensions" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:35.076663680Z",
+  "type" : "SENTINEL_EMPTY",
+  "eventId" : 4686,
+  "nanoTime" : 524065657857,
+  "raHash" : "8f912bblp1krmpc1qeuneaaq0pf",
+  "predicateName" : "AstExtended::Comprehension.getASubExpression/0#dispred#63af4970",
+  "appearsAs" : {
+    "AstExtended::Comprehension.getASubExpression/0#dispred#63af4970" : [ 6 ]
+  },
+  "sentinelRaHash" : "5a5a332maoi48e6imnc65455hvd"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.076698796Z",
+  "type" : "SENTINEL_EMPTY",
+  "eventId" : 4687,
+  "nanoTime" : 524065691520,
+  "raHash" : "776433m62qjb3mft9sdtpfkr1j9",
+  "predicateName" : "AstGenerated::ListComp_.getAGenerator/0#dispred#0726485f",
+  "appearsAs" : {
+    "AstGenerated::ListComp_.getAGenerator/0#dispred#0726485f" : [ 6 ]
+  },
+  "sentinelRaHash" : "5a5a332maoi48e6imnc65455hvd"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.076846092Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4688,
+  "nanoTime" : 524065840048,
+  "raHash" : "40e65fbhpahkp4tkvo6a7rer079",
+  "predicateName" : "py_StringParts",
+  "appearsAs" : {
+    "py_StringParts" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 181
+}
+
+{
+  "time" : "2026-07-24T18:09:35.076921032Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4689,
+  "nanoTime" : 524065914357,
+  "raHash" : "1abaaa6dlpcnenae43nbpmplnh8",
+  "predicateName" : "py_dict_items_10#join_rhs",
+  "appearsAs" : {
+    "py_dict_items_10#join_rhs" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 5400
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077081201Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4690,
+  "nanoTime" : 524066075227,
+  "raHash" : "9a865792ei96q5u8t8p4dq390tb",
+  "predicateName" : "Files::Impl::Container.splitAbsolutePath/2#dispred#324a3985_021#join_rhs",
+  "appearsAs" : {
+    "Files::Impl::Container.splitAbsolutePath/2#dispred#324a3985_021#join_rhs" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 1202
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077197689Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4691,
+  "nanoTime" : 524066191074,
+  "raHash" : "9131c737a7ja4mnm8pf9ppku451",
+  "predicateName" : "Module::Module.isPackage/0#dispred#a8679d5f",
+  "appearsAs" : {
+    "Module::Module.isPackage/0#dispred#a8679d5f" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 43
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077264674Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4692,
+  "nanoTime" : 524066257809,
+  "raHash" : "97ec97cmo5fnj8i3can1hhm3mbd",
+  "predicateName" : "py_stmts_10#join_rhs",
+  "appearsAs" : {
+    "py_stmts_10#join_rhs" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 15913
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077394918Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4693,
+  "nanoTime" : 524066388173,
+  "raHash" : "7cdbd8aeho30opumlr04p2hkt03",
+  "predicateName" : "Module::Module.getName/0#dispred#45a481b3",
+  "appearsAs" : {
+    "Module::Module.getName/0#dispred#45a481b3" : [ 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 199
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077453577Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4694,
+  "nanoTime" : 524066446842,
+  "raHash" : "db672fcbabtk15cn7mskpmrnvb4",
+  "predicateName" : "project#Module::Module.getName/0#dispred#45a481b3",
+  "appearsAs" : {
+    "project#Module::Module.getName/0#dispred#45a481b3" : [ 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 199
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077506436Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4695,
+  "nanoTime" : 524066499501,
+  "raHash" : "626962h6sr61dhao3c17tq6ba2a",
+  "predicateName" : "py_patterns_10#join_rhs",
+  "appearsAs" : {
+    "py_patterns_10#join_rhs" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077541091Z",
+  "type" : "SENTINEL_EMPTY",
+  "eventId" : 4696,
+  "nanoTime" : 524066533845,
+  "raHash" : "e01a224v3sp297lk1flde1fje81",
+  "predicateName" : "Patterns::MatchAsPattern.getAlias/0#dispred#766c9d3f",
+  "appearsAs" : {
+    "Patterns::MatchAsPattern.getAlias/0#dispred#766c9d3f" : [ 6 ]
+  },
+  "sentinelRaHash" : "626962h6sr61dhao3c17tq6ba2a"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077561910Z",
+  "type" : "SENTINEL_EMPTY",
+  "eventId" : 4697,
+  "nanoTime" : 524066554153,
+  "raHash" : "fac7a9lgv0lu0b0i71hmkudk1l9",
+  "predicateName" : "Patterns::MatchCapturePattern.getVariable/0#dispred#1afb04d9",
+  "appearsAs" : {
+    "Patterns::MatchCapturePattern.getVariable/0#dispred#1afb04d9" : [ 6 ]
+  },
+  "sentinelRaHash" : "626962h6sr61dhao3c17tq6ba2a"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077601284Z",
+  "type" : "SENTINEL_EMPTY",
+  "eventId" : 4698,
+  "nanoTime" : 524066593867,
+  "raHash" : "9e79e0lomomdikm6tgt5u5shf28",
+  "predicateName" : "SsaDefinitions::SsaSource::pattern_alias_definition/2#e55586af",
+  "appearsAs" : {
+    "SsaDefinitions::SsaSource::pattern_alias_definition/2#e55586af" : [ 6 ]
+  },
+  "sentinelRaHash" : "e01a224v3sp297lk1flde1fje81"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077621191Z",
+  "type" : "SENTINEL_EMPTY",
+  "eventId" : 4699,
+  "nanoTime" : 524066613474,
+  "raHash" : "de9ec5aoiqv2lcprmjuc4e4fug7",
+  "predicateName" : "SsaDefinitions::SsaSource::pattern_capture_definition/2#77b3ae42",
+  "appearsAs" : {
+    "SsaDefinitions::SsaSource::pattern_capture_definition/2#77b3ae42" : [ 6 ]
+  },
+  "sentinelRaHash" : "fac7a9lgv0lu0b0i71hmkudk1l9"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077737969Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4700,
+  "nanoTime" : 524066731334,
+  "raHash" : "dc8dd6s9dgdl1f95efiof4tj451",
+  "predicateName" : "py_type_parameters_10#join_rhs",
+  "appearsAs" : {
+    "py_type_parameters_10#join_rhs" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:35.077809132Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4701,
+  "nanoTime" : 524066802387,
+  "raHash" : "2d81416lco33dgicr96h7819137",
+  "predicateName" : "Module::Module.getKind/0#dispred#ccc4de3e",
+  "appearsAs" : {
+    "Module::Module.getKind/0#dispred#ccc4de3e" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 224
+}
+
+{
+  "time" : "2026-07-24T18:09:35.079354322Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4702,
+  "nanoTime" : 524068351965,
+  "raHash" : "e8c71f2rev50dmto3fkl97toql9",
+  "predicateName" : "Function::Function.toString/0#dispred#fa659a0b",
+  "appearsAs" : {
+    "Function::Function.toString/0#dispred#fa659a0b" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Function.qll:76,3-76,71",
+  "ra" : {
+    "pipeline" : [
+      "    {3} r1 = SCAN `Function::Function.getName/0#dispred#033700ef` OUTPUT In.0, _, In.1",
+      "    {2}    | REWRITE WITH Tmp.1 := \"Function \", Out.1 := (Tmp.1 ++ In.2) KEEPING 2",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Function::Function.getName/0#dispred#033700ef" : "26da98bi1715p5dk3mnvcfv2an0"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.079558123Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4703,
+  "nanoTime" : 524068552620,
+  "predicateStartEvent" : 4702,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.089758727Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4704,
+  "nanoTime" : 524078764345,
+  "startEvent" : 4703,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.089830541Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4705,
+  "nanoTime" : 524078824207,
+  "startEvent" : 4702,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.090372294Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4706,
+  "nanoTime" : 524079369216,
+  "raHash" : "073ac12uu8g0t4rn2jv7h8dgbh3",
+  "predicateName" : "py_exprs_10#join_rhs",
+  "appearsAs" : {
+    "py_exprs_10#join_rhs" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 89857
+}
+
+{
+  "time" : "2026-07-24T18:09:35.090990179Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4707,
+  "nanoTime" : 524079986129,
+  "raHash" : "0e8aa5moakrl201ppv96mnivcbc",
+  "predicateName" : "py_exprs_203#join_rhs",
+  "appearsAs" : {
+    "py_exprs_203#join_rhs" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 89857
+}
+
+{
+  "time" : "2026-07-24T18:09:35.091220159Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4708,
+  "nanoTime" : 524080214256,
+  "raHash" : "3304a2u12cp52t92h9lpbovkdgc",
+  "predicateName" : "py_expr_lists_120#join_rhs",
+  "appearsAs" : {
+    "py_expr_lists_120#join_rhs" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 20706
+}
+
+{
+  "time" : "2026-07-24T18:09:35.091826453Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4709,
+  "nanoTime" : 524080823415,
+  "raHash" : "a4dc08h1q9rgl4a7kgigjb0ti15",
+  "predicateName" : "AstGenerated::Call_.getPositionalArg/1#dispred#16c46df7#ffb",
+  "appearsAs" : {
+    "AstGenerated::Call_.getPositionalArg/1#dispred#16c46df7#ffb" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/AstGenerated.qll:205,3-206,88",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = CONSTANT(unique int)[4]",
+      "    {2}    | JOIN WITH py_exprs_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := 3",
+      "    {2}    | JOIN WITH py_expr_lists_120#join_rhs ON FIRST 2 OUTPUT Rhs.2, Lhs.0",
+      "    {3}    | JOIN WITH py_exprs_203#join_rhs ON FIRST 1 OUTPUT Lhs.1, Rhs.2, Rhs.1",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "py_exprs_10#join_rhs" : "073ac12uu8g0t4rn2jv7h8dgbh3",
+    "py_expr_lists_120#join_rhs" : "3304a2u12cp52t92h9lpbovkdgc",
+    "py_exprs_203#join_rhs" : "0e8aa5moakrl201ppv96mnivcbc"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.092022740Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4710,
+  "nanoTime" : 524081017107,
+  "predicateStartEvent" : 4709,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.126953777Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4711,
+  "nanoTime" : 524115960858,
+  "startEvent" : 4710,
+  "resultSize" : 10573
+}
+
+{
+  "time" : "2026-07-24T18:09:35.127052382Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4712,
+  "nanoTime" : 524116047240,
+  "startEvent" : 4709,
+  "resultSize" : 10573
+}
+
+{
+  "time" : "2026-07-24T18:09:35.127609163Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4713,
+  "nanoTime" : 524116605724,
+  "raHash" : "8754f207gjqoaoh8kg5uovvmb3c",
+  "predicateName" : "_py_exprs_10#join_rhs#antijoin_rhs#3",
+  "appearsAs" : {
+    "_py_exprs_10#join_rhs#antijoin_rhs#3" : [ 6 ],
+    "_py_exprs_10#join_rhs#antijoin_rhs" : [ 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 12
+}
+
+{
+  "time" : "2026-07-24T18:09:35.127903734Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4714,
+  "nanoTime" : 524116899213,
+  "raHash" : "62fb455gt5k64gg5njb0mvrtjod",
+  "predicateName" : "py_exprs",
+  "appearsAs" : {
+    "py_exprs" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 89857
+}
+
+{
+  "time" : "2026-07-24T18:09:35.128181583Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4715,
+  "nanoTime" : 524117177082,
+  "raHash" : "45e6d6185qnjv0dndpk0i692rs8",
+  "predicateName" : "_AstGenerated::Call_.getPositionalArg/1#dispred#16c46df7#ffb_py_exprs#antijoin_rhs",
+  "appearsAs" : {
+    "_AstGenerated::Call_.getPositionalArg/1#dispred#16c46df7#ffb_py_exprs#antijoin_rhs" : [ 7 ]
+  },
+  "cacheLookupResult" : "CACHACA_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:35.128357442Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4716,
+  "nanoTime" : 524117352540,
+  "raHash" : "1505fctsrk4l1oj82hdgavgd6dd",
+  "predicateName" : "Exprs::Call.getArg/1#dispred#50c53eea#ffb",
+  "appearsAs" : {
+    "Exprs::Call.getArg/1#dispred#50c53eea#ffb" : [ 7 ]
+  },
+  "cacheLookupResult" : "CACHACA_HIT",
+  "relationSize" : 10561
+}
+
+{
+  "time" : "2026-07-24T18:09:35.128525386Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4717,
+  "nanoTime" : 524117519893,
+  "raHash" : "3628ddphc6ljti5tul2obns5dk2",
+  "predicateName" : "Exprs::Call.getArg/1#dispred#50c53eea#ffb_120#join_rhs",
+  "appearsAs" : {
+    "Exprs::Call.getArg/1#dispred#50c53eea#ffb_120#join_rhs" : [ 7 ]
+  },
+  "cacheLookupResult" : "CACHACA_HIT",
+  "relationSize" : 10561
+}
+
+{
+  "time" : "2026-07-24T18:09:35.128684403Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4718,
+  "nanoTime" : 524117678991,
+  "raHash" : "0345bwbi92a5klmsc5dkugko0ub",
+  "predicateName" : "Function::FunctionExpr.getADecoratorCall/0#062a6e2a",
+  "appearsAs" : {
+    "Function::FunctionExpr.getADecoratorCall/0#062a6e2a" : [ 7 ]
+  },
+  "cacheLookupResult" : "CACHACA_HIT",
+  "relationSize" : 493
+}
+
+{
+  "time" : "2026-07-24T18:09:35.129129175Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4719,
+  "nanoTime" : 524118126307,
+  "raHash" : "60d2c9kub9ed4getsiug9agq6k9",
+  "predicateName" : "project#Function::FunctionExpr.getADecoratorCall/0#062a6e2a",
+  "appearsAs" : {
+    "project#Function::FunctionExpr.getADecoratorCall/0#062a6e2a" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Function.qll:336,8-336,25",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN `Function::FunctionExpr.getADecoratorCall/0#062a6e2a` OUTPUT In.1",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Function::FunctionExpr.getADecoratorCall/0#062a6e2a" : "0345bwbi92a5klmsc5dkugko0ub"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.129260240Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4720,
+  "nanoTime" : 524118254006,
+  "predicateStartEvent" : 4719,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.129792175Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4721,
+  "nanoTime" : 524118787113,
+  "startEvent" : 4720,
+  "resultSize" : 493
+}
+
+{
+  "time" : "2026-07-24T18:09:35.129838542Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4722,
+  "nanoTime" : 524118830975,
+  "startEvent" : 4719,
+  "resultSize" : 493
+}
+
+{
+  "time" : "2026-07-24T18:09:35.130127823Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4723,
+  "nanoTime" : 524119123552,
+  "raHash" : "a74dawoom047rcduoms01a7uue0",
+  "predicateName" : "Class::ClassExpr.getADecoratorCall/0#54df5696",
+  "appearsAs" : {
+    "Class::ClassExpr.getADecoratorCall/0#54df5696" : [ 7 ]
+  },
+  "cacheLookupResult" : "CACHACA_HIT",
+  "relationSize" : 9
+}
+
+{
+  "time" : "2026-07-24T18:09:35.130880199Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4724,
+  "nanoTime" : 524119876169,
+  "raHash" : "bfdc9eiud9ikj1ga99blumk6ul7",
+  "predicateName" : "project#Class::ClassExpr.getADecoratorCall/0#54df5696",
+  "appearsAs" : {
+    "project#Class::ClassExpr.getADecoratorCall/0#54df5696" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Class.qll:47,8-47,25",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN `Class::ClassExpr.getADecoratorCall/0#54df5696` OUTPUT In.1",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Class::ClassExpr.getADecoratorCall/0#54df5696" : "a74dawoom047rcduoms01a7uue0"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.130964637Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4725,
+  "nanoTime" : 524119958293,
+  "predicateStartEvent" : 4724,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.131283043Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4726,
+  "nanoTime" : 524120277910,
+  "startEvent" : 4725,
+  "resultSize" : 9
+}
+
+{
+  "time" : "2026-07-24T18:09:35.131322627Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4727,
+  "nanoTime" : 524120315471,
+  "startEvent" : 4724,
+  "resultSize" : 9
+}
+
+{
+  "time" : "2026-07-24T18:09:35.131750908Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4728,
+  "nanoTime" : 524120746026,
+  "raHash" : "69d0c1nnjbgstuhi2dfp2mu2il6",
+  "predicateName" : "m#AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb",
+  "appearsAs" : {
+    "m#AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/AstGenerated.qll:48,3-49,51",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = CONSTANT(unique int)[5]",
+      "    {1}    | JOIN WITH py_exprs_10#join_rhs ON FIRST 1 OUTPUT Rhs.1",
+      "",
+      "    {1} r2 = CONSTANT(unique int)[10]",
+      "    {1}    | JOIN WITH py_exprs_10#join_rhs ON FIRST 1 OUTPUT Rhs.1",
+      "",
+      "    {1} r3 = `project#Class::ClassExpr.getADecoratorCall/0#54df5696` UNION `project#Function::FunctionExpr.getADecoratorCall/0#062a6e2a` UNION r1 UNION r2",
+      "    return r3"
+    ]
+  },
+  "dependencies" : {
+    "project#Class::ClassExpr.getADecoratorCall/0#54df5696" : "bfdc9eiud9ikj1ga99blumk6ul7",
+    "project#Function::FunctionExpr.getADecoratorCall/0#062a6e2a" : "60d2c9kub9ed4getsiug9agq6k9",
+    "py_exprs_10#join_rhs" : "073ac12uu8g0t4rn2jv7h8dgbh3"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.131897001Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4729,
+  "nanoTime" : 524120891027,
+  "predicateStartEvent" : 4728,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.133316515Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4730,
+  "nanoTime" : 524122314499,
+  "startEvent" : 4729,
+  "resultSize" : 2121
+}
+
+{
+  "time" : "2026-07-24T18:09:35.133366168Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4731,
+  "nanoTime" : 524122359242,
+  "startEvent" : 4728,
+  "resultSize" : 2121
+}
+
+{
+  "time" : "2026-07-24T18:09:35.133790722Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4732,
+  "nanoTime" : 524122786291,
+  "raHash" : "dc21c4ivaqna8b4osgblncd8605",
+  "predicateName" : "py_exprs_032#join_rhs",
+  "appearsAs" : {
+    "py_exprs_032#join_rhs" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/AstGenerated.qll:48,3-49,51",
+  "ra" : {
+    "pipeline" : [
+      "    {3} r1 = SCAN py_exprs OUTPUT In.0, In.3, In.2",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "py_exprs" : "62fb455gt5k64gg5njb0mvrtjod"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.133881241Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4733,
+  "nanoTime" : 524122875127,
+  "predicateStartEvent" : 4732,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.188984869Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4734,
+  "nanoTime" : 524177990687,
+  "startEvent" : 4733,
+  "resultSize" : 89857
+}
+
+{
+  "time" : "2026-07-24T18:09:35.189061783Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4735,
+  "nanoTime" : 524178055418,
+  "startEvent" : 4732,
+  "resultSize" : 89857
+}
+
+{
+  "time" : "2026-07-24T18:09:35.189443597Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4736,
+  "nanoTime" : 524178440027,
+  "raHash" : "93720efi3i9hmf8vr7dqi2ackof",
+  "predicateName" : "py_stmts",
+  "appearsAs" : {
+    "py_stmts" : [ 6, 7 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 15913
+}
+
+{
+  "time" : "2026-07-24T18:09:35.190137594Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4737,
+  "nanoTime" : 524179152700,
+  "raHash" : "edbfc39h3o8lfe7ht909b6q28q4",
+  "predicateName" : "AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb",
+  "appearsAs" : {
+    "AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/AstGenerated.qll:48,3-49,51",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN `m#AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb` OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := 1",
+      "    {3}    | JOIN WITH py_exprs_032#join_rhs ON FIRST 2 OUTPUT Rhs.2, _, Lhs.0",
+      "    {3}    | REWRITE WITH Out.1 := 1",
+      "    {2}    | JOIN WITH py_stmts ON FIRST 2 OUTPUT Lhs.0, Lhs.2",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "m#AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb" : "69d0c1nnjbgstuhi2dfp2mu2il6",
+    "py_exprs_032#join_rhs" : "dc21c4ivaqna8b4osgblncd8605",
+    "py_stmts" : "93720efi3i9hmf8vr7dqi2ackof"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.190380549Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4738,
+  "nanoTime" : 524179375887,
+  "predicateStartEvent" : 4737,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.195285851Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4739,
+  "nanoTime" : 524184292180,
+  "startEvent" : 4738,
+  "resultSize" : 1619
+}
+
+{
+  "time" : "2026-07-24T18:09:35.195368075Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4740,
+  "nanoTime" : 524184362031,
+  "startEvent" : 4737,
+  "resultSize" : 1619
+}
+
+{
+  "time" : "2026-07-24T18:09:35.195984778Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4741,
+  "nanoTime" : 524184981379,
+  "raHash" : "48cc0eb78pepn5uscegusapo4o0",
+  "predicateName" : "AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb_10#join_rhs",
+  "appearsAs" : {
+    "AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb_10#join_rhs" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Class.qll:71,3-71,11",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN `AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb` OUTPUT In.1, In.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb" : "edbfc39h3o8lfe7ht909b6q28q4"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.196086288Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4742,
+  "nanoTime" : 524185080254,
+  "predicateStartEvent" : 4741,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.197056412Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4743,
+  "nanoTime" : 524186052923,
+  "startEvent" : 4742,
+  "resultSize" : 1619
+}
+
+{
+  "time" : "2026-07-24T18:09:35.197102318Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4744,
+  "nanoTime" : 524186094971,
+  "startEvent" : 4741,
+  "resultSize" : 1619
+}
+
+{
+  "time" : "2026-07-24T18:09:35.197609005Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4745,
+  "nanoTime" : 524186609674,
+  "raHash" : "983fb7oaun0cpaqfj05f8rvqea6",
+  "predicateName" : "Function::FunctionDef#ffa22159",
+  "appearsAs" : {
+    "Function::FunctionDef#ffa22159" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Function.qll:196,3-196,14",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = CONSTANT(unique int)[10]",
+      "    {1}    | JOIN WITH py_exprs_10#join_rhs ON FIRST 1 OUTPUT Rhs.1",
+      "",
+      "    {2} r2 = JOIN r1 WITH `AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.0",
+      "",
+      "    {2} r3 = JOIN r1 WITH `Function::FunctionExpr.getADecoratorCall/0#062a6e2a` ON FIRST 1 OUTPUT Rhs.1, Lhs.0",
+      "    {2}    | JOIN WITH `AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1",
+      "",
+      "    {2} r4 = r2 UNION r3",
+      "    return r4"
+    ]
+  },
+  "dependencies" : {
+    "py_exprs_10#join_rhs" : "073ac12uu8g0t4rn2jv7h8dgbh3",
+    "AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb_10#join_rhs" : "48cc0eb78pepn5uscegusapo4o0",
+    "Function::FunctionExpr.getADecoratorCall/0#062a6e2a" : "0345bwbi92a5klmsc5dkugko0ub"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.197761690Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4746,
+  "nanoTime" : 524186756348,
+  "predicateStartEvent" : 4745,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.200948630Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4747,
+  "nanoTime" : 524189949930,
+  "startEvent" : 4746,
+  "resultSize" : 1432
+}
+
+{
+  "time" : "2026-07-24T18:09:35.201001859Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4748,
+  "nanoTime" : 524190038134,
+  "startEvent" : 4745,
+  "resultSize" : 1432
+}
+
+{
+  "time" : "2026-07-24T18:09:35.201359668Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4749,
+  "nanoTime" : 524190354145,
+  "raHash" : "f2fc940q5abmsvtscddv2v30288",
+  "predicateName" : "project#Function::FunctionDef#ffa22159",
+  "appearsAs" : {
+    "project#Function::FunctionDef#ffa22159" : [ 7 ]
+  },
+  "cacheLookupResult" : "CACHACA_HIT",
+  "relationSize" : 1432
+}
+
+{
+  "time" : "2026-07-24T18:09:35.201759556Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4750,
+  "nanoTime" : 524190753993,
+  "raHash" : "76de69alv0h1e64h5343o3d7b50",
+  "predicateName" : "Class::ClassDef#83097204",
+  "appearsAs" : {
+    "Class::ClassDef#83097204" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/Class.qll:71,3-71,11",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = CONSTANT(unique int)[5]",
+      "    {1}    | JOIN WITH py_exprs_10#join_rhs ON FIRST 1 OUTPUT Rhs.1",
+      "",
+      "    {1} r2 = JOIN r1 WITH `AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1",
+      "",
+      "    {1} r3 = JOIN r1 WITH `Class::ClassExpr.getADecoratorCall/0#54df5696` ON FIRST 1 OUTPUT Rhs.1",
+      "    {1}    | JOIN WITH `AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1",
+      "",
+      "    {1} r4 = r2 UNION r3",
+      "    return r4"
+    ]
+  },
+  "dependencies" : {
+    "py_exprs_10#join_rhs" : "073ac12uu8g0t4rn2jv7h8dgbh3",
+    "AstGenerated::Assign_.getValue/0#dispred#53d00b56#fb_10#join_rhs" : "48cc0eb78pepn5uscegusapo4o0",
+    "Class::ClassExpr.getADecoratorCall/0#54df5696" : "a74dawoom047rcduoms01a7uue0"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.201915748Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4751,
+  "nanoTime" : 524190909394,
+  "predicateStartEvent" : 4750,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.202588546Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4752,
+  "nanoTime" : 524191582753,
+  "startEvent" : 4751,
+  "resultSize" : 187
+}
+
+{
+  "time" : "2026-07-24T18:09:35.202624353Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4753,
+  "nanoTime" : 524191616446,
+  "startEvent" : 4750,
+  "resultSize" : 187
+}
+
+{
+  "time" : "2026-07-24T18:09:35.202826170Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4754,
+  "nanoTime" : 524191820227,
+  "raHash" : "9038df0r8h01r438sca84h1p6q4",
+  "predicateName" : "Stmts::AssignStmt#45f46a75",
+  "appearsAs" : {
+    "Stmts::AssignStmt#45f46a75" : [ 7 ]
+  },
+  "cacheLookupResult" : "CACHACA_HIT",
+  "relationSize" : 4748
+}
+
+{
+  "time" : "2026-07-24T18:09:35.202952657Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 4755,
+  "nanoTime" : 524191946022,
+  "raHash" : "897705k12u7uiv0j0btkc5ht3a7",
+  "predicateName" : "AstGenerated::Assign__not_Stmts::AssignStmt_Class::ClassDef_Function::FunctionDef#9571075b",
+  "appearsAs" : {
+    "AstGenerated::Assign__not_Stmts::AssignStmt_Class::ClassDef_Function::FunctionDef#9571075b" : [ 7 ]
+  },
+  "cacheLookupResult" : "CACHACA_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-07-24T18:09:35.206465796Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4756,
+  "nanoTime" : 524195464351,
+  "raHash" : "2879b3svmhbudeh7uqq2vnu0k64",
+  "predicateName" : "AstGenerated::AstNode_.toString/0#dispred#192f27b5",
+  "appearsAs" : {
+    "AstGenerated::AstNode_.toString/0#dispred#192f27b5" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/ql/python/ql/lib/semmle/python/AstGenerated.qll:1728,3-1729,43",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN AstGenerated::Assign__not_Stmts::AssignStmt_Class::ClassDef_Function::FunctionDef#9571075b OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Assign\"",
+      "",
+      "    {2} r2 = SCAN Class::ClassDef#83097204 OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := \"ClassDef\"",
+      "",
+      "    {2} r3 = SCAN Stmts::AssignStmt#45f46a75 OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := \"AssignStmt\"",
+      "",
+      "    {2} r4 = SCAN project#Function::FunctionDef#ffa22159 OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := \"FunctionDef\"",
+      "",
+      "    {1} r5 = CONSTANT(unique int)[12]",
+      "",
+      "    {2} r6 = JOIN r5 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"If\"",
+      "",
+      "    {1} r7 = CONSTANT(unique int)[10]",
+      "",
+      "    {2} r8 = JOIN r7 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"For\"",
+      "",
+      "    {1} r9 = CONSTANT(unique int)[22]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Try\"",
+      "",
+      "    {1} r10 = CONSTANT(unique int)[8]",
+      "",
+      "    {2} r11 = JOIN r10 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Exec\"",
+      "",
+      "    {1} r12 = CONSTANT(unique int)[16]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Case\"",
+      "",
+      "    {1} r13 = CONSTANT(unique int)[18]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Pass\"",
+      "",
+      "    {1} r14 = CONSTANT(unique int)[24]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"With\"",
+      "",
+      "    {4} r15 = JOIN `Module::Module.getKind/0#dispred#ccc4de3e` WITH `Module::Module.getName/0#dispred#45a481b3` ON FIRST 1 OUTPUT Lhs.0, _, Lhs.1, Rhs.1",
+      "    {2}    | REWRITE WITH Tmp.1 := \" \", Out.1 := (In.2 ++ Tmp.1 ++ In.3) KEEPING 2",
+      "",
+      "    {1} r16 = CONSTANT(unique int)[3]",
+      "",
+      "    {2} r17 = JOIN r16 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Break\"",
+      "",
+      "    {1} r18 = CONSTANT(unique int)[19]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Print\"",
+      "",
+      "    {1} r19 = CONSTANT(unique int)[20]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Raise\"",
+      "",
+      "    {1} r20 = CONSTANT(unique int)[23]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"While\"",
+      "",
+      "    {1} r21 = CONSTANT(unique int)[0]",
+      "",
+      "    {2} r22 = JOIN r21 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Assert\"",
+      "",
+      "    {1} r23 = CONSTANT(unique int)[5]",
+      "",
+      "    {2} r24 = JOIN r23 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Delete\"",
+      "",
+      "    {1} r25 = CONSTANT(unique int)[11]",
+      "",
+      "    {2} r26 = JOIN r25 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Global\"",
+      "",
+      "    {1} r27 = CONSTANT(unique int)[13]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Import\"",
+      "",
+      "    {1} r28 = CONSTANT(unique int)[21]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Return\"",
+      "",
+      "    {1} r29 = CONSTANT(unique int)[1]",
+      "",
+      "    {2} r30 = JOIN r29 WITH py_type_parameters_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"TypeVar\"",
+      "",
+      "    {1} r31 = CONSTANT(unique int)[2]",
+      "",
+      "    {2} r32 = JOIN r31 WITH py_dict_items_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Keyword\"",
+      "",
+      "    {1} r33 = CONSTANT(unique int)[4]",
+      "",
+      "    {2} r34 = JOIN r33 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Continue\"",
+      "",
+      "    {1} r35 = CONSTANT(unique int)[9]",
+      "",
+      "    {2} r36 = JOIN r35 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"ExprStmt\"",
+      "",
+      "    {1} r37 = CONSTANT(unique int)[17]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Nonlocal\"",
+      "",
+      "    {2} r38 = JOIN r21 WITH py_type_parameters_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"ParamSpec\"",
+      "",
+      "    {2} r39 = JOIN r31 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"AugAssign\"",
+      "",
+      "    {1} r40 = CONSTANT(unique int)[15]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchStmt\"",
+      "",
+      "    {1} r41 = CONSTANT(unique int)[26]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"AnnAssign\"",
+      "",
+      "    {1} r42 = CONSTANT(unique int)[27]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"TypeAlias\"",
+      "",
+      "    {1} r43 = CONSTANT(unique int)[6]",
+      "",
+      "    {2} r44 = JOIN r43 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"ExceptStmt\"",
+      "",
+      "    {2} r45 = JOIN r29 WITH py_dict_items_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"KeyValuePair\"",
+      "",
+      "    {2} r46 = JOIN r31 WITH py_type_parameters_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"TypeVarTuple\"",
+      "",
+      "    {2} r47 = JOIN r21 WITH py_dict_items_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"DictUnpacking\"",
+      "",
+      "    {1} r48 = CONSTANT(unique int)[25]",
+      "    {2}    | JOIN WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"TemplateWrite\"",
+      "",
+      "    {2} r49 = JOIN r21 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchAsPattern\"",
+      "",
+      "    {2} r50 = JOIN r29 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchOrPattern\"",
+      "",
+      "    {1} r51 = CONSTANT(unique int)[7]",
+      "",
+      "    {2} r52 = JOIN r51 WITH py_stmts_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"ExceptGroupStmt\"",
+      "",
+      "    {2} r53 = JOIN r51 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchStarPattern\"",
+      "",
+      "    {2} r54 = SCAN py_StringParts OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := \"StringPart\"",
+      "",
+      "    {2} r55 = JOIN r23 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchValuePattern\"",
+      "",
+      "    {2} r56 = JOIN r25 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchClassPattern\"",
+      "",
+      "    {2} r57 = JOIN r31 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchLiteralPattern\"",
+      "",
+      "    {2} r58 = JOIN r16 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchCapturePattern\"",
+      "",
+      "    {2} r59 = JOIN r10 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchMappingPattern\"",
+      "",
+      "    {2} r60 = JOIN r5 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchKeywordPattern\"",
+      "",
+      "    {2} r61 = JOIN r33 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchWildcardPattern\"",
+      "",
+      "    {2} r62 = JOIN r43 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchSequencePattern\"",
+      "",
+      "    {2} r63 = JOIN r7 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchKeyValuePattern\"",
+      "",
+      "    {2} r64 = JOIN r35 WITH py_patterns_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"MatchDoubleStarPattern\"",
+      "",
+      "    {2} r65 = SCAN py_comprehensions OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := \"Comprehension\"",
+      "",
+      "    {2} r66 = SCAN py_Classes OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := 0",
+      "    {3}    | JOIN WITH py_strs_120#join_rhs ON FIRST 2 OUTPUT Lhs.0, _, Rhs.2",
+      "    {2}    | REWRITE WITH Tmp.1 := \"Class \", Out.1 := (Tmp.1 ++ In.2) KEEPING 2",
+      "",
+      "    {3} r67 = SCAN `cached_Import::ImportStar.getModuleExpr/0#dispred#8ab9ce73` OUTPUT In.1, _, In.0",
+      "    {3}    | REWRITE WITH Out.1 := 3",
+      "    {4}    | JOIN WITH py_strs_120#join_rhs ON FIRST 2 OUTPUT Lhs.2, _, Rhs.2, _",
+      "    {2}    | REWRITE WITH Tmp.1 := \"from \", Tmp.3 := \" import *\", Out.1 := (Tmp.1 ++ In.2 ++ Tmp.3) KEEPING 2",
+      "",
+      "    {2} r68 = `Module::Module.getFile/0#dispred#53eb9b1b` AND NOT `project#Module::Module.getName/0#dispred#45a481b3`(FIRST 1)",
+      "    {2}    | AND NOT `Module::Module.isPackage/0#dispred#a8679d5f`(FIRST 1)",
+      "    {3}    | SCAN OUTPUT In.1, _, In.0",
+      "    {3}    | REWRITE WITH Out.1 := 1",
+      "    {3}    | JOIN WITH `Files::Impl::Container.splitAbsolutePath/2#dispred#324a3985_021#join_rhs` ON FIRST 2 OUTPUT Lhs.2, _, Rhs.2",
+      "    {2}    | REWRITE WITH Tmp.1 := \"Script \", Out.1 := (Tmp.1 ++ In.2) KEEPING 2",
+      "",
+      "    {1} r69 = `Module::Module.isPackage/0#dispred#a8679d5f` AND NOT `project#Module::Module.getName/0#dispred#45a481b3`(FIRST 1)",
+      "    {2}    | JOIN WITH py_module_path ON FIRST 1 OUTPUT Rhs.1, Lhs.0",
+      "    {3}    | JOIN WITH `Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4` ON FIRST 1 OUTPUT Lhs.1, _, Rhs.1",
+      "    {2}    | REWRITE WITH Tmp.1 := \"Package at \", Out.1 := (Tmp.1 ++ In.2) KEEPING 2",
+      "",
+      "    {2} r70 = `cached_Exprs::Expr.toString/0#dispred#7435dfcd` UNION `Function::Function.toString/0#dispred#fa659a0b` UNION r1 UNION r2 UNION r3 UNION r4 UNION r6 UNION r8 UNION r9 UNION r11 UNION r12 UNION r13 UNION r14 UNION r15 UNION r17 UNION r18 UNION r19 UNION r20 UNION r22 UNION r24 UNION r26 UNION r27 UNION r28 UNION r30 UNION r32 UNION r34 UNION r36 UNION r37 UNION r38 UNION r39 UNION r40 UNION r41 UNION r42 UNION r44 UNION r45 UNION r46 UNION r47 UNION r48 UNION r49 UNION r50 UNION r52 UNION r53 UNION r54 UNION r55 UNION r56 UNION r57 UNION r58 UNION r59 UNION r60 UNION r61 UNION r62 UNION r63 UNION r64 UNION r65 UNION r66 UNION r67 UNION r68 UNION r69",
+      "    return r70"
+    ]
+  },
+  "dependencies" : {
+    "cached_Exprs::Expr.toString/0#dispred#7435dfcd" : "149662k3m9qflje0v30q6n37ug3",
+    "Function::Function.toString/0#dispred#fa659a0b" : "e8c71f2rev50dmto3fkl97toql9",
+    "AstGenerated::Assign__not_Stmts::AssignStmt_Class::ClassDef_Function::FunctionDef#9571075b" : "897705k12u7uiv0j0btkc5ht3a7",
+    "Class::ClassDef#83097204" : "76de69alv0h1e64h5343o3d7b50",
+    "Stmts::AssignStmt#45f46a75" : "9038df0r8h01r438sca84h1p6q4",
+    "project#Function::FunctionDef#ffa22159" : "f2fc940q5abmsvtscddv2v30288",
+    "py_stmts_10#join_rhs" : "97ec97cmo5fnj8i3can1hhm3mbd",
+    "Module::Module.getKind/0#dispred#ccc4de3e" : "2d81416lco33dgicr96h7819137",
+    "Module::Module.getName/0#dispred#45a481b3" : "7cdbd8aeho30opumlr04p2hkt03",
+    "py_type_parameters_10#join_rhs" : "dc8dd6s9dgdl1f95efiof4tj451",
+    "py_dict_items_10#join_rhs" : "1abaaa6dlpcnenae43nbpmplnh8",
+    "py_patterns_10#join_rhs" : "626962h6sr61dhao3c17tq6ba2a",
+    "py_StringParts" : "40e65fbhpahkp4tkvo6a7rer079",
+    "py_comprehensions" : "5a5a332maoi48e6imnc65455hvd",
+    "py_Classes" : "2777c63fk8jhq2rfcmfn0n8f4qe",
+    "py_strs_120#join_rhs" : "bec877pdfc6bjrajf74c1k61al3",
+    "cached_Import::ImportStar.getModuleExpr/0#dispred#8ab9ce73" : "9212cahkl2pk5vlgl4c6m4bur86",
+    "Module::Module.getFile/0#dispred#53eb9b1b" : "816ea0rgg0gdtpl8abbh566n3f6",
+    "project#Module::Module.getName/0#dispred#45a481b3" : "db672fcbabtk15cn7mskpmrnvb4",
+    "Module::Module.isPackage/0#dispred#a8679d5f" : "9131c737a7ja4mnm8pf9ppku451",
+    "Files::Impl::Container.splitAbsolutePath/2#dispred#324a3985_021#join_rhs" : "9a865792ei96q5u8t8p4dq390tb",
+    "py_module_path" : "7a0f7599h3i5s1m5aps7b8fi744",
+    "Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4" : "966d67vokouguvkk04fuse20ljd"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.207349899Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4757,
+  "nanoTime" : 524196349897,
+  "predicateStartEvent" : 4756,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.259544077Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4758,
+  "nanoTime" : 524248549444,
+  "startEvent" : 4757,
+  "resultSize" : 113708
+}
+
+{
+  "time" : "2026-07-24T18:09:35.259623706Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4759,
+  "nanoTime" : 524248616389,
+  "startEvent" : 4756,
+  "resultSize" : 113708
+}
+
+{
+  "time" : "2026-07-24T18:09:35.260792191Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4760,
+  "nanoTime" : 524249789413,
+  "raHash" : "487e49h0e5b2joqvffsfomi07b7",
+  "predicateName" : "project##AstGenerated::AstNode_.toString/0#dispred#192f27b5Merge",
+  "appearsAs" : {
+    "project##AstGenerated::AstNode_.toString/0#dispred#192f27b5Merge" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN `AstGenerated::AstNode_.toString/0#dispred#192f27b5` OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "AstGenerated::AstNode_.toString/0#dispred#192f27b5" : "2879b3svmhbudeh7uqq2vnu0k64"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.260920490Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4761,
+  "nanoTime" : 524249913896,
+  "predicateStartEvent" : 4760,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.287635485Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4762,
+  "nanoTime" : 524276639309,
+  "startEvent" : 4761,
+  "resultSize" : 113708
+}
+
+{
+  "time" : "2026-07-24T18:09:35.287708110Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4763,
+  "nanoTime" : 524276700804,
+  "startEvent" : 4760,
+  "resultSize" : 113708
+}
+
+{
+  "time" : "2026-07-24T18:09:35.288485925Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4764,
+  "nanoTime" : 524277481755,
+  "raHash" : "d6761aj5qhvr7eogiokum5itpha",
+  "predicateName" : "_#Function::Function.toString/0#dispred#fa659a0bMerge__#Files::Location.hasLocationInfo/5#dispred#14__#antijoin_rhs",
+  "appearsAs" : {
+    "_#Function::Function.toString/0#dispred#fa659a0bMerge__#Files::Location.hasLocationInfo/5#dispred#14__#antijoin_rhs" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {13} r1 = JOIN `_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge__#AstExtended::AstNode.getLocation/0#dispr__#shared` WITH `project##AstGenerated::AstNode_.toString/0#dispred#192f27b5Merge` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9, Lhs.10, Lhs.11, Lhs.12",
+      "",
+      "    {13} r2 = JOIN `_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge__#AstExtended::AstNode.getLocation/0#dispr__#shared` WITH `Function::Function.toString/0#dispred#fa659a0b` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9, Lhs.10, Lhs.11, Lhs.12",
+      "",
+      "    {13} r3 = r1 UNION r2",
+      "    return r3"
+    ]
+  },
+  "dependencies" : {
+    "_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge__#AstExtended::AstNode.getLocation/0#dispr__#shared" : "143f030vf1ac8cs2mc7sn0n9u7e",
+    "project##AstGenerated::AstNode_.toString/0#dispred#192f27b5Merge" : "487e49h0e5b2joqvffsfomi07b7",
+    "Function::Function.toString/0#dispred#fa659a0b" : "e8c71f2rev50dmto3fkl97toql9"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.288636567Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4765,
+  "nanoTime" : 524277629962,
+  "predicateStartEvent" : 4764,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.293475184Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4766,
+  "nanoTime" : 524282473448,
+  "startEvent" : 4765,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.293528424Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4767,
+  "nanoTime" : 524282520647,
+  "startEvent" : 4764,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.294389895Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4768,
+  "nanoTime" : 524283385063,
+  "raHash" : "abd9e5ht6ge798rhier5849l4j3",
+  "predicateName" : "let0",
+  "appearsAs" : {
+    "let0" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {14} r1 = JOIN `_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge__#AstExtended::AstNode.getLocation/0#dispr__#shared` WITH `Function::Function.toString/0#dispred#fa659a0b` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9, Lhs.10, Lhs.11, Lhs.12, Rhs.1",
+      "",
+      "    {14} r2 = JOIN `_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge__#AstExtended::AstNode.getLocation/0#dispr__#shared` WITH `AstGenerated::AstNode_.toString/0#dispred#192f27b5` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9, Lhs.10, Lhs.11, Lhs.12, Rhs.1",
+      "",
+      "    {13} r3 = `_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge__#AstExtended::AstNode.getLocation/0#dispr__#shared` AND NOT `_#Function::Function.toString/0#dispred#fa659a0bMerge__#Files::Location.hasLocationInfo/5#dispred#14__#antijoin_rhs`(FIRST 13)",
+      "    {14}    | SCAN OUTPUT In.0, In.1, In.2, In.3, In.4, In.5, In.6, In.7, In.8, In.9, In.10, In.11, In.12, _",
+      "    {14}    | REWRITE WITH Out.13 := \"(no string representation)\"",
+      "",
+      "    {14} r4 = r1 UNION r2 UNION r3",
+      "    return r4"
+    ]
+  },
+  "dependencies" : {
+    "_#Files::Location.hasLocationInfo/5#dispred#143bb906Merge__#AstExtended::AstNode.getLocation/0#dispr__#shared" : "143f030vf1ac8cs2mc7sn0n9u7e",
+    "Function::Function.toString/0#dispred#fa659a0b" : "e8c71f2rev50dmto3fkl97toql9",
+    "AstGenerated::AstNode_.toString/0#dispred#192f27b5" : "2879b3svmhbudeh7uqq2vnu0k64",
+    "_#Function::Function.toString/0#dispred#fa659a0bMerge__#Files::Location.hasLocationInfo/5#dispred#14__#antijoin_rhs" : "d6761aj5qhvr7eogiokum5itpha"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.294556306Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4769,
+  "nanoTime" : 524283549310,
+  "predicateStartEvent" : 4768,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.301349358Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4770,
+  "nanoTime" : 524290347993,
+  "startEvent" : 4769,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.301405593Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4771,
+  "nanoTime" : 524290397876,
+  "startEvent" : 4768,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.302050199Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4772,
+  "nanoTime" : 524291044986,
+  "raHash" : "a9cb02phuotsek14lpq4ad4q1la",
+  "predicateName" : "_#Function::Function.toString/0#dispred#fa659a0bMerge_let0_project##AstGenerated::AstNode_.toString/__#antijoin_rhs",
+  "appearsAs" : {
+    "_#Function::Function.toString/0#dispred#fa659a0bMerge_let0_project##AstGenerated::AstNode_.toString/__#antijoin_rhs" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql:11,1-13,57",
+  "ra" : {
+    "pipeline" : [
+      "    {14} r1 = JOIN let0 WITH `project##AstGenerated::AstNode_.toString/0#dispred#192f27b5Merge` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9, Lhs.10, Lhs.11, Lhs.12, Lhs.13",
+      "",
+      "    {14} r2 = JOIN let0 WITH `Function::Function.toString/0#dispred#fa659a0b` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9, Lhs.10, Lhs.11, Lhs.12, Lhs.13",
+      "",
+      "    {14} r3 = r1 UNION r2",
+      "    return r3"
+    ]
+  },
+  "dependencies" : {
+    "let0" : "abd9e5ht6ge798rhier5849l4j3",
+    "project##AstGenerated::AstNode_.toString/0#dispred#192f27b5Merge" : "487e49h0e5b2joqvffsfomi07b7",
+    "Function::Function.toString/0#dispred#fa659a0b" : "e8c71f2rev50dmto3fkl97toql9"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.302197173Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4773,
+  "nanoTime" : 524291190138,
+  "predicateStartEvent" : 4772,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.307003370Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4774,
+  "nanoTime" : 524296004680,
+  "startEvent" : 4773,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.307070155Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4775,
+  "nanoTime" : 524296062789,
+  "startEvent" : 4772,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.307907461Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4776,
+  "nanoTime" : 524296904323,
+  "raHash" : "8b81e8p6rg3lq8g1mg46mn8bflf",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 7 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/vscode-codeql-starter/codeql-custom-queries-python/example3.ql:11,1-13,57",
+  "ra" : {
+    "pipeline" : [
+      "    {15} r1 = JOIN let0 WITH `Function::Function.toString/0#dispred#fa659a0b` ON FIRST 1 OUTPUT Lhs.0, Lhs.13, Lhs.8, Lhs.9, Lhs.10, Lhs.11, Lhs.12, Lhs.2, Rhs.1, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.1",
+      "",
+      "    {15} r2 = JOIN let0 WITH `AstGenerated::AstNode_.toString/0#dispred#192f27b5` ON FIRST 1 OUTPUT Lhs.0, Lhs.13, Lhs.8, Lhs.9, Lhs.10, Lhs.11, Lhs.12, Lhs.2, Rhs.1, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.1",
+      "",
+      "    {14} r3 = let0 AND NOT `_#Function::Function.toString/0#dispred#fa659a0bMerge_let0_project##AstGenerated::AstNode_.toString/__#antijoin_rhs`(FIRST 14)",
+      "    {15}    | SCAN OUTPUT In.0, In.13, In.8, In.9, In.10, In.11, In.12, In.2, _, In.3, In.4, In.5, In.6, In.7, In.1",
+      "    {15}    | REWRITE WITH Out.8 := \"(no string representation)\"",
+      "",
+      "    {15} r4 = r1 UNION r2 UNION r3",
+      "    return r4"
+    ]
+  },
+  "dependencies" : {
+    "let0" : "abd9e5ht6ge798rhier5849l4j3",
+    "Function::Function.toString/0#dispred#fa659a0b" : "e8c71f2rev50dmto3fkl97toql9",
+    "AstGenerated::AstNode_.toString/0#dispred#192f27b5" : "2879b3svmhbudeh7uqq2vnu0k64",
+    "_#Function::Function.toString/0#dispred#fa659a0bMerge_let0_project##AstGenerated::AstNode_.toString/__#antijoin_rhs" : "a9cb02phuotsek14lpq4ad4q1la"
+  },
+  "queryCausingWork" : 4568
+}
+
+{
+  "time" : "2026-07-24T18:09:35.308077920Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 4777,
+  "nanoTime" : 524297071545,
+  "predicateStartEvent" : 4776,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.314782657Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 4778,
+  "nanoTime" : 524303786211,
+  "startEvent" : 4777,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.314855643Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 4779,
+  "nanoTime" : 524303848197,
+  "startEvent" : 4776,
+  "resultSize" : 1946
+}
+
+{
+  "time" : "2026-07-24T18:09:35.340359102Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 4780,
+  "nanoTime" : 524329365602,
+  "startEvent" : 4568,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-07-24T18:09:35.341985553Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 4781,
+  "nanoTime" : 524330991061
+}

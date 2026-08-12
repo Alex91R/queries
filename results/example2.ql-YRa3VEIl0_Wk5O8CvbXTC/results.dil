@@ -1,0 +1,758 @@
+#overlayChangedFilesMergeNoDiscard(interned unique string path) =
+  mergeWithOverlay<string>(overlayChangedFiles/1)
+.
+
+
+overlayLocal @container(/* @container */ interned unique entity X) {
+  exists(interned dontcare string _ | files(X, _)) or
+  exists(interned dontcare string _ | folders(X, _))
+}
+
+overlayLocal
+suppressTypeErrors
+`Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4`(
+  /* FileSystem::Make<Files::Input>::Container */ interned unique entity this,
+  interned string result
+)
+{
+  files(this, result) or folders(this, result)
+}
+
+overlayLocal
+suppressTypeErrors
+`Files::Impl::File.getURL/0#dispred#3648064d`(
+  /* FileSystem::Make<Files::Input>::File */ interned unique entity this,
+  string result
+)
+{
+  exists(interned string call_result |
+    exists(interned dontcare string _ | files(this, _)) and
+    `Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4`(this,
+      call_result) and
+    Append("file://", call_result, ":0:0:0:0", result)
+  )
+}
+
+overlayLocal
+Files::File#6a970600(/* Files::File.extends */ interned unique entity this)
+{
+  exists(interned dontcare string _ | files(this, _))
+}
+
+overlayLocal
+suppressTypeErrors
+Overlay::Discardable#63c5d7ae(
+  /* Overlay::Discardable.Discardable */ interned unique entity this
+)
+{
+  exists(
+    /* @py_alias_list */ interned dontcare entity _, interned dontcare int _1
+   |
+    py_aliases(this, _, _1)
+  ) or
+  exists(/* @py_Import */ interned dontcare entity _ | py_alias_lists(this, _)) or
+  exists(/* @py_arguments_parent */ interned dontcare entity _ |
+    py_arguments(this, _)
+  ) or
+  exists(interned dontcare int _, /* @py_BoolExpr */ interned dontcare entity _1 |
+    py_boolops(this, _, _1)
+  ) or
+  exists(
+    /* @py_ast_node */ interned dontcare entity _,
+    /* @py_flow_node */ interned dontcare entity _1, interned dontcare int _2
+   |
+    py_flow_bb_node(this, _, _1, _2)
+  ) or
+  exists(
+    interned dontcare int _, /* @py_cmpop_list */ interned dontcare entity _1,
+    interned dontcare int _2
+   |
+    py_cmpops(this, _, _1, _2)
+  ) or
+  exists(/* @py_Compare */ interned dontcare entity _ | py_cmpop_lists(this, _)) or
+  exists(interned dontcare string _, /* @location */ interned dontcare entity _1 |
+    py_comments(this, _, _1)
+  ) or
+  exists(/* @py_ListComp */ interned dontcare entity _ |
+    py_comprehension_lists(this, _)
+  ) or
+  @container(this) or
+  exists(/* @py_dict_item_list_parent */ interned dontcare entity _ |
+    py_dict_item_lists(this, _)
+  ) or
+  exists(
+    interned dontcare int _,
+    /* @py_expr_context_parent */ interned dontcare entity _1
+   |
+    py_expr_contexts(this, _, _1)
+  ) or
+  exists(
+    /* @py_expr_list_parent */ interned dontcare entity _,
+    interned dontcare int _1
+   |
+    py_expr_lists(this, _, _1)
+  ) or
+  exists(
+    /* @py_Module */ interned dontcare entity _, interned dontcare int _1,
+    interned dontcare int _2
+   |
+    py_line_lengths(this, _, _1, _2)
+  ) or
+  exists(
+    /* @py_dict_item_list */ interned dontcare entity _,
+    interned dontcare int _1
+   |
+    py_dict_items(this, 0, _, _1)
+  ) or
+  exists(
+    /* @py_dict_item_list */ interned dontcare entity _,
+    interned dontcare int _1
+   |
+    py_dict_items(this, 1, _, _1)
+  ) or
+  exists(
+    /* @py_StringPart_list */ interned dontcare entity _,
+    interned dontcare int _1
+   |
+    py_StringParts(this, _, _1)
+  ) or
+  exists(
+    /* @py_comprehension_list */ interned dontcare entity _,
+    interned dontcare int _1
+   |
+    py_comprehensions(this, _, _1)
+  ) or
+  exists(
+    interned dontcare int _, /* @py_expr_parent */ interned dontcare entity _1,
+    interned dontcare int _2
+   |
+    py_exprs(this, _, _1, _2)
+  ) or
+  exists(
+    /* @py_dict_item_list */ interned dontcare entity _,
+    interned dontcare int _1
+   |
+    py_dict_items(this, 2, _, _1)
+  ) or
+  exists(
+    interned dontcare int _,
+    /* @py_pattern_parent */ interned dontcare entity _1,
+    interned dontcare int _2
+   |
+    py_patterns(this, _, _1, _2)
+  ) or
+  exists(
+    interned dontcare int _, /* @py_stmt_list */ interned dontcare entity _1,
+    interned dontcare int _2
+   |
+    py_stmts(this, _, _1, _2)
+  ) or
+  exists(
+    interned dontcare int _,
+    /* @py_type_parameter_list */ interned dontcare entity _1,
+    interned dontcare int _2
+   |
+    py_type_parameters(this, _, _1, _2)
+  ) or
+  exists(
+    /* @py_Module */ interned dontcare entity _, interned dontcare int _1,
+    interned dontcare int _2, interned dontcare int _3, interned dontcare int _4
+   |
+    locations_ast(this, _, _1, _2, _3, _4)
+  ) or
+  exists(
+    /* @file */ interned dontcare entity _, interned dontcare int _1,
+    interned dontcare int _2, interned dontcare int _3, interned dontcare int _4
+   |
+    locations_default(this, _, _1, _2, _3, _4)
+  ) or
+  exists(
+    interned dontcare int _, /* @py_BinaryExpr */ interned dontcare entity _1
+   |
+    py_operators(this, _, _1)
+  ) or
+  exists(/* @py_Function */ interned dontcare entity _ |
+    py_parameter_lists(this, _)
+  ) or
+  exists(
+    /* @py_pattern_list_parent */ interned dontcare entity _,
+    interned dontcare int _1
+   |
+    py_pattern_lists(this, _, _1)
+  ) or
+  exists(/* @py_ClassExpr */ interned dontcare entity _ | py_Classes(this, _)) or
+  exists(/* @py_Function_parent */ interned dontcare entity _ |
+    py_Functions(this, _)
+  ) or
+  py_Modules(this) or
+  exists(/* @py_variable */ interned dontcare entity _ | py_ssa_var(this, _)) or
+  exists(
+    /* @py_stmt_list_parent */ interned dontcare entity _,
+    interned dontcare int _1
+   |
+    py_stmt_lists(this, _, _1)
+  ) or
+  exists(/* @py_str_list_parent */ interned dontcare entity _ |
+    py_str_lists(this, _)
+  ) or
+  exists(/* @py_Bytes_or_Str */ interned dontcare entity _ |
+    py_StringPart_lists(this, _)
+  ) or
+  exists(/* @py_type_parameter_list_parent */ interned dontcare entity _ |
+    py_type_parameter_lists(this, _)
+  ) or
+  exists(
+    interned dontcare int _, /* @py_UnaryExpr */ interned dontcare entity _1
+   |
+    py_unaryops(this, _, _1)
+  ) or
+  exists(/* @py_scope */ interned dontcare entity _, interned dontcare string _1 |
+    variable(this, _, _1)
+  ) or
+  exists(
+    interned dontcare int _,
+    /* @yaml_node_parent */ interned dontcare entity _1,
+    interned dontcare int _2, interned dontcare string _3,
+    interned dontcare string _4
+   |
+    yaml(this, _, _1, _2, _3, _4)
+  ) or
+  exists(interned dontcare string _ | yaml_errors(this, _)) or
+  exists(interned dontcare string _, interned dontcare string _1 |
+    yaml_comments(this, _, _1)
+  )
+}
+
+overlayLocal
+suppressTypeErrors
+`Overlay::Discardable.existsInBase/0#dispred#5c82adfb`(
+  /* Overlay::Discardable */ interned unique entity this
+)
+{
+  not(databaseMetadata("isOverlay", "true")) and
+  Overlay::Discardable#63c5d7ae(this)
+}
+
+`#Overlay::Discardable.existsInBase/0#dispred#5c82adfbMergeNoDiscard`(
+  /* Overlay::Discardable */ interned unique entity this
+) =
+  mergeWithOverlay<Overlay#d5c49885::Discardable.class>(`Overlay::Discardable.existsInBase/0#dispred#5c82adfb`/1)
+.
+
+
+overlayLocal
+suppressTypeErrors
+`Overlay::Discardable.existsInOverlay/0#dispred#3f82b561`(
+  /* Overlay::Discardable */ interned unique entity this
+)
+{
+  databaseMetadata("isOverlay", "true") and Overlay::Discardable#63c5d7ae(this)
+}
+
+`#Overlay::Discardable.existsInOverlay/0#dispred#3f82b561MergeNoDiscard`(
+  /* Overlay::Discardable */ interned unique entity this
+) =
+  mergeWithOverlay<Overlay#d5c49885::Discardable.class>(`Overlay::Discardable.existsInOverlay/0#dispred#3f82b561`/1)
+.
+
+
+overlayLocal
+Overlay::NamedEntity#70ca9e38(
+  /* Overlay::NamedEntity */ interned unique entity this
+)
+{
+  py_Modules(this) or @container(this) or py_cobjects(this)
+}
+
+#Overlay::NamedEntity#70ca9e38MergeNoDiscardTypeCall(
+  /* Overlay::NamedEntity */ interned unique entity this
+) =
+  mergeWithOverlay<faithful Overlay#d5c49885::NamedEntity>(Overlay::NamedEntity#70ca9e38/1)
+.
+
+
+overlayLocal
+`Overlay::getPathForContainer/1#079fbcf9`(
+  /* @container */ interned unique entity fileOrFolder, interned string result
+)
+{
+  files(fileOrFolder, result) or folders(fileOrFolder, result)
+}
+
+overlayLocal
+`Overlay::getPathForModule/1#913ed853`(
+  /* @py_Module */ interned entity mod, interned string result
+)
+{
+  exists(/* @container */ interned entity fileOrFolder |
+    py_module_path(mod, fileOrFolder) and
+    `Overlay::getPathForContainer/1#079fbcf9`(fileOrFolder, result)
+  )
+}
+
+overlayLocal
+`Overlay::getPathForLocation/1#30d9a01b`(
+  /* @location */ interned entity loc, interned string result
+)
+{
+  exists(/* @file */ interned entity file |
+    exists(
+      interned dontcare int _, interned dontcare int _1,
+      interned dontcare int _2, interned dontcare int _3
+     |
+      locations_default(loc, file, _, _1, _2, _3)
+    ) and
+    files(file, result)
+  )
+  or
+  exists(/* @py_Module */ interned entity mod |
+    `Overlay::getPathForModule/1#913ed853`(mod, result) and
+    exists(
+      interned dontcare int _, interned dontcare int _1,
+      interned dontcare int _2, interned dontcare int _3
+     |
+      locations_ast(loc, mod, _, _1, _2, _3)
+    )
+  )
+}
+
+overlayLocal
+suppressTypeErrors
+`Overlay::DiscardableYamlLocatable.getPath/0#dispred#1210ee82`(
+  /* Overlay::DiscardableYamlLocatable */ interned entity this,
+  interned string result
+)
+{
+  exists(/* @location */ interned entity loc |
+    yaml_locations(this, loc) and
+    `Overlay::getPathForLocation/1#30d9a01b`(loc, result)
+  )
+}
+
+`#Overlay::DiscardableYamlLocatable.getPath/0#dispred#1210ee82MergeNoDiscard`(
+  /* Overlay::DiscardableYamlLocatable */ interned entity this,
+  interned string result
+) =
+  mergeWithOverlay<@yaml_locatable,string>(`Overlay::DiscardableYamlLocatable.getPath/0#dispred#1210ee82`/2)
+.
+
+
+overlayLocal
+suppressTypeErrors
+incremental
+`Overlay::Discardable.getPath/0#dispred#9771b83e`(
+  /* Overlay::Discardable */ interned entity this, interned string result
+)
+{
+  [base_case]
+  exists(/* Overlay::DiscardableLocation */ interned entity d |
+    exists(interned dontcare string _ | py_comments(this, _, d)) and
+    `Overlay::getPathForLocation/1#30d9a01b`(d, result)
+  )
+  or
+  `Overlay::getPathForContainer/1#079fbcf9`(this, result)
+  or
+  exists(/* @location */ interned entity loc |
+    py_locations(loc, this) and
+    `Overlay::getPathForLocation/1#30d9a01b`(loc, result)
+  )
+  or
+  `Overlay::getPathForLocation/1#30d9a01b`(this, result)
+  or
+  exists(/* @location */ interned entity loc |
+    py_scope_location(loc, this) and
+    `Overlay::getPathForLocation/1#30d9a01b`(loc, result)
+  )
+  or
+  `Overlay::getPathForModule/1#913ed853`(this, result)
+  or
+  `Overlay::DiscardableYamlLocatable.getPath/0#dispred#1210ee82`(this, result)
+  [recursive_case]
+  (
+    exists(/* Overlay::DiscardableAliasList */ interned entity d |
+      delta previous rec `Overlay::DiscardableAliasList.getPath/0#dispred#1ed4c28b`(d,
+        result) and
+      exists(interned dontcare int _ | py_aliases(this, d, _))
+    )
+    or
+    delta previous rec `Overlay::DiscardableAliasList.getPath/0#dispred#1ed4c28b`(this,
+      result)
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      py_arguments(this, d)
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      exists(interned dontcare int _ | py_boolops(this, _, d))
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      exists(
+        /* @py_flow_node */ interned dontcare entity _, interned dontcare int _1
+       |
+        py_flow_bb_node(this, d, _, _1)
+      )
+    )
+    or
+    exists(/* Overlay::DiscardableCmpOpList */ interned entity d |
+      delta previous rec `Overlay::DiscardableCmpOpList.getPath/0#dispred#cfa9351c`(d,
+        result) and
+      exists(interned dontcare int _, interned dontcare int _1 |
+        py_cmpops(this, _, d, _1)
+      )
+    )
+    or
+    delta previous rec `Overlay::DiscardableCmpOpList.getPath/0#dispred#cfa9351c`(this,
+      result)
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      py_comprehension_lists(this, d)
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      py_dict_item_lists(this, d)
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      exists(interned dontcare int _ | py_expr_contexts(this, _, d))
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      exists(interned dontcare int _ | py_expr_lists(this, d, _))
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      exists(interned dontcare int _, interned dontcare int _1 |
+        py_line_lengths(this, d, _, _1)
+      )
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      exists(interned dontcare int _ | py_operators(this, _, d))
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      py_parameter_lists(this, d)
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      exists(interned dontcare int _ | py_pattern_lists(this, d, _))
+    )
+    or
+    exists(/* Overlay::DiscardableVar */ interned entity other |
+      delta previous rec `Overlay::DiscardableVar.getPath/0#dispred#24b1fcbd`(other,
+        result) and
+      py_ssa_var(this, other)
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      exists(interned dontcare int _ | py_stmt_lists(this, d, _))
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      py_str_lists(this, d)
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      py_StringPart_lists(this, d)
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      py_type_parameter_lists(this, d)
+    )
+    or
+    exists(/* Overlay::Discardable */ interned entity d |
+      delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+        result) and
+      exists(interned dontcare int _ | py_unaryops(this, _, d))
+    )
+    or
+    delta previous rec `Overlay::DiscardableVar.getPath/0#dispred#24b1fcbd`(this,
+      result)
+  ) and
+  not(
+    previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(this, result)
+  )
+}
+
+overlayLocal
+suppressTypeErrors
+incremental
+`Overlay::DiscardableAliasList.getPath/0#dispred#1ed4c28b`(
+  /* Overlay::DiscardableAliasList */ interned entity this,
+  interned string result
+)
+{
+  [base_case] false()
+  [recursive_case]
+  exists(/* Overlay::Discardable */ interned entity d |
+    delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+      result) and
+    py_alias_lists(this, d)
+  ) and
+  not(
+    previous rec `Overlay::DiscardableAliasList.getPath/0#dispred#1ed4c28b`(this,
+      result)
+  )
+}
+
+overlayLocal
+suppressTypeErrors
+incremental
+`Overlay::DiscardableCmpOpList.getPath/0#dispred#cfa9351c`(
+  /* Overlay::DiscardableCmpOpList */ interned entity this,
+  interned string result
+)
+{
+  [base_case] false()
+  [recursive_case]
+  exists(/* Overlay::Discardable */ interned entity d |
+    delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(d,
+      result) and
+    py_cmpop_lists(this, d)
+  ) and
+  not(
+    previous rec `Overlay::DiscardableCmpOpList.getPath/0#dispred#cfa9351c`(this,
+      result)
+  )
+}
+
+overlayLocal
+suppressTypeErrors
+incremental
+`Overlay::DiscardableVar.getPath/0#dispred#24b1fcbd`(
+  /* Overlay::DiscardableVar */ interned entity this, interned string result
+)
+{
+  [base_case] false()
+  [recursive_case]
+  exists(/* Overlay::Discardable */ interned entity parent |
+    delta previous rec `Overlay::Discardable.getPath/0#dispred#9771b83e`(parent,
+      result) and
+    exists(interned dontcare string _ | variable(this, parent, _))
+  ) and
+  not(
+    previous rec `Overlay::DiscardableVar.getPath/0#dispred#24b1fcbd`(this,
+      result)
+  )
+}
+
+`#Overlay::Discardable.getPath/0#dispred#9771b83eMergeNoDiscard`(
+  /* Overlay::Discardable */ interned entity this, interned string result
+) =
+  mergeWithOverlay<Overlay#d5c49885::Discardable.class,string>(`Overlay::Discardable.getPath/0#dispred#9771b83e`/2)
+.
+
+
+overlayLocal
+`Overlay::overlayYamlExtracted/1#22987960`(interned unique string path)
+{
+  exists(/* Overlay::DiscardableYamlLocatable */ interned entity l |
+    `Overlay::DiscardableYamlLocatable.getPath/0#dispred#1210ee82`(l, path) and
+    `Overlay::Discardable.existsInOverlay/0#dispred#3f82b561`(l)
+  )
+}
+
+`#Overlay::overlayYamlExtracted/1#22987960MergeNoDiscard`(
+  interned unique string path
+) =
+  mergeWithOverlay<string>(`Overlay::overlayYamlExtracted/1#22987960`/1)
+.
+
+
+overlayLocal
+`OverlayXml::getXmlFile/1#332234a9`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  exists(/* @location_default */ interned entity location |
+    exists(/* @file */ interned entity file |
+      exists(
+        interned dontcare int _, interned dontcare int _1,
+        interned dontcare int _2, interned dontcare int _3
+       |
+        locations_default(location, file, _, _1, _2, _3)
+      ) and
+      files(file, result)
+    ) and
+    xmllocations(locatable, location)
+  )
+}
+
+overlayLocal
+`OverlayXml::getXmlFileInBase/1#1611aa25`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  not(databaseMetadata("isOverlay", "true")) and
+  `OverlayXml::getXmlFile/1#332234a9`(locatable, result)
+}
+
+`#OverlayXml::getXmlFileInBase/1#1611aa25MergeNoDiscard`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+) =
+  mergeWithOverlay<@xmllocatable,string>(`OverlayXml::getXmlFileInBase/1#1611aa25`/2)
+.
+
+
+noinline
+overlayLocal
+project#xmlNs(/* @xmllocatable */ interned entity locatable)
+{
+  exists(
+    interned dontcare string _, interned dontcare string _1,
+    /* @file */ interned dontcare entity _2
+   |
+    xmlNs(locatable, _, _1, _2)
+  )
+}
+
+overlayLocal
+`OverlayXml::overlayXmlExtracted/1#24adf9de`(interned unique string file)
+{
+  exists(/* @xmllocatable */ interned entity locatable |
+    databaseMetadata("isOverlay", "true") and
+    `OverlayXml::getXmlFile/1#332234a9`(locatable, file) and
+    not(exists(interned dontcare string _ | files(locatable, _))) and
+    not(project#xmlNs(locatable))
+  )
+}
+
+`#OverlayXml::overlayXmlExtracted/1#24adf9deMergeNoDiscard`(
+  interned unique string file
+) =
+  mergeWithOverlay<string>(`OverlayXml::overlayXmlExtracted/1#24adf9de`/1)
+.
+
+
+idDiscard(/* @yaml_locatable */ interned unique entity el) {
+  (
+    exists(interned string call_result |
+      `#Overlay::DiscardableYamlLocatable.getPath/0#dispred#1210ee82MergeNoDiscard`(el,
+        call_result) and
+      `#Overlay::overlayYamlExtracted/1#22987960MergeNoDiscard`(call_result)
+    ) and
+    `#Overlay::Discardable.existsInBase/0#dispred#5c82adfbMergeNoDiscard`(el)
+  )
+  or
+  exists(interned string call_result |
+    #Overlay::NamedEntity#70ca9e38MergeNoDiscardTypeCall(el) and
+    not(
+      `#Overlay::Discardable.existsInOverlay/0#dispred#3f82b561MergeNoDiscard`(el)
+    ) and
+    `#Overlay::Discardable.getPath/0#dispred#9771b83eMergeNoDiscard`(el,
+      call_result) and
+    #overlayChangedFilesMergeNoDiscard(call_result)
+  )
+  or
+  (
+    exists(interned string call_result |
+      #overlayChangedFilesMergeNoDiscard(call_result) and
+      `#Overlay::Discardable.getPath/0#dispred#9771b83eMergeNoDiscard`(el,
+        call_result)
+    ) and
+    `#Overlay::Discardable.existsInBase/0#dispred#5c82adfbMergeNoDiscard`(el) and
+    not(#Overlay::NamedEntity#70ca9e38MergeNoDiscardTypeCall(el))
+  )
+  or
+  exists(interned string file |
+    (
+      #overlayChangedFilesMergeNoDiscard(file) or
+      `#OverlayXml::overlayXmlExtracted/1#24adf9deMergeNoDiscard`(file)
+    ) and
+    `#OverlayXml::getXmlFileInBase/1#1611aa25MergeNoDiscard`(el, file)
+  )
+}
+
+`#Files::Impl::Container.toString/0#dispred#0404d28cMerge`(
+  /* FileSystem::Make<Files::Input>::Container */ interned entity this,
+  interned string result
+) =
+  mergeWithOverlay<discard Files#a547fcb4::Input::ContainerBase.class,string>(`Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4`/2,
+                                                                              idDiscard/1)
+.
+
+
+`#Files::Impl::File.getURL/0#dispred#3648064dMerge`(
+  /* FileSystem::Make<Files::Input>::File */ interned entity this, string result
+) =
+  mergeWithOverlay<discard @file,string>(`Files::Impl::File.getURL/0#dispred#3648064d`/2,
+                                         idDiscard/1)
+.
+
+
+#Files::File#6a970600MergeTypeCall(
+  /* Files::File.extends */ interned unique entity this
+) =
+  mergeWithOverlay<faithful discard @file>(Files::File#6a970600/1, idDiscard/1)
+.
+
+
+suppressTypeErrors
+#select#query(
+  /* Files::File */ interned entity f, string f#toString, string f#url,
+  string #col
+)
+{
+  #col = "Hello, world!" and
+  #Files::File#6a970600MergeTypeCall(f) and
+  (
+    `#Files::Impl::Container.toString/0#dispred#0404d28cMerge`(f, f#toString)
+    or
+    (
+      not(
+        exists(interned dontcare string _ |
+          `#Files::Impl::Container.toString/0#dispred#0404d28cMerge`(f, _)
+        )
+      ) and
+      f#toString = "(no string representation)"
+    )
+  ) and
+  (
+    `#Files::Impl::File.getURL/0#dispred#3648064dMerge`(f, f#url)
+    or
+    (
+      not(
+        exists(dontcare string _ |
+          `#Files::Impl::File.getURL/0#dispred#3648064dMerge`(f, _)
+        )
+      ) and
+      f#url = ""
+    )
+  )
+}
+
+query #select = #select#query/4 .
+
+
+/* ---------- END STAGE ---------- */

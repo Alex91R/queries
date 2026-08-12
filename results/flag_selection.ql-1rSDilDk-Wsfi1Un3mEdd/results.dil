@@ -1,0 +1,224 @@
+#overlayChangedFilesMergeNoDiscard(interned unique string path) =
+  mergeWithOverlay<string>(overlayChangedFiles/1)
+.
+
+
+overlayLocal @ppd_define(/* @ppd_define */ interned unique entity X) {
+  exists(/* @location_default */ interned dontcare entity _ |
+    preprocdirects(X, 7, _)
+  )
+}
+
+overlayLocal
+`Overlay::locallyInTrapOrTag/3#1694c9f7`(
+  boolean isOverlayVariant, /* @element */ interned entity e,
+  /* @trap_or_tag */ interned entity t
+)
+{
+  in_trap_or_tag(e, t) and
+  (
+    (databaseMetadata("isOverlay", "true") and isOverlayVariant = true)
+    or
+    (not(databaseMetadata("isOverlay", "true")) and isOverlayVariant = false)
+  )
+}
+
+`#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(
+  boolean isOverlayVariant, /* @element */ interned entity e,
+  /* @trap_or_tag */ interned entity t
+) =
+  mergeWithOverlay<boolean,@element,@trap_or_tag>(`Overlay::locallyInTrapOrTag/3#1694c9f7`/3)
+.
+
+
+overlayLocal
+`Overlay::locallyReachableTrapOrTag/3#11241854`(
+  boolean isOverlayVariant, interned string sourceFile,
+  /* @trap_or_tag */ entity t
+)
+{
+  exists(/* @trap */ interned entity trap |
+    exists(/* @source_file */ interned entity sf |
+      source_file_name(sf, sourceFile) and source_file_uses_trap(sf, trap)
+    ) and
+    (t = trap or trap_uses_tag(trap, t))
+  ) and
+  (
+    (databaseMetadata("isOverlay", "true") and isOverlayVariant = true)
+    or
+    (not(databaseMetadata("isOverlay", "true")) and isOverlayVariant = false)
+  )
+}
+
+`#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(
+  boolean isOverlayVariant, interned string sourceFile,
+  /* @trap_or_tag */ entity t
+) =
+  mergeWithOverlay<boolean,string,@trap_or_tag>(`Overlay::locallyReachableTrapOrTag/3#11241854`/3)
+.
+
+
+overlayLocal
+`OverlayXml::getXmlFile/1#4a39a118`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  exists(/* @file */ interned entity file |
+    exists(/* @location_default */ interned entity location |
+      xmllocations(locatable, location) and
+      exists(
+        interned dontcare int _, interned dontcare int _1,
+        interned dontcare int _2, interned dontcare int _3
+       |
+        locations_default(location, file, _, _1, _2, _3)
+      )
+    ) and
+    files(file, result)
+  )
+}
+
+overlayLocal
+`OverlayXml::getXmlFileInBase/1#52500c49`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  not(databaseMetadata("isOverlay", "true")) and
+  `OverlayXml::getXmlFile/1#4a39a118`(locatable, result)
+}
+
+`#OverlayXml::getXmlFileInBase/1#52500c49MergeNoDiscard`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+) =
+  mergeWithOverlay<@xmllocatable,string>(`OverlayXml::getXmlFileInBase/1#52500c49`/2)
+.
+
+
+noinline
+overlayLocal
+project#xmlNs(/* @xmllocatable */ interned entity locatable)
+{
+  exists(
+    interned dontcare string _, interned dontcare string _1,
+    /* @file */ interned dontcare entity _2
+   |
+    xmlNs(locatable, _, _1, _2)
+  )
+}
+
+overlayLocal
+`OverlayXml::overlayXmlExtracted/1#55443f98`(interned unique string file)
+{
+  exists(/* @xmllocatable */ interned entity locatable |
+    databaseMetadata("isOverlay", "true") and
+    `OverlayXml::getXmlFile/1#4a39a118`(locatable, file) and
+    not(exists(interned dontcare string _ | files(locatable, _))) and
+    not(project#xmlNs(locatable))
+  )
+}
+
+`#OverlayXml::overlayXmlExtracted/1#55443f98MergeNoDiscard`(
+  interned unique string file
+) =
+  mergeWithOverlay<string>(`OverlayXml::overlayXmlExtracted/1#55443f98`/1)
+.
+
+
+idDiscard(/* @element */ interned unique entity e) {
+  (
+    exists(/* @trap_or_tag */ interned dontcare entity _ |
+      `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(false, e, _)
+    ) and
+    not(
+      exists(/* @trap_or_tag */ interned entity t |
+        `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(true, e, t) and
+        exists(interned dontcare string _ |
+          `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+            _, t)
+        )
+      )
+    ) and
+    not(
+      exists(interned string sourceFile, /* @trap_or_tag */ interned entity t |
+        `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(false, e, t) and
+        `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(false,
+          sourceFile, t) and
+        not(
+          #overlayChangedFilesMergeNoDiscard(sourceFile) or
+          exists(interned dontcare string _ |
+            `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+              _, t)
+          ) or
+          exists(/* @trap_or_tag */ dontcare entity _ |
+            `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+              sourceFile, _)
+          )
+        )
+      )
+    )
+  )
+  or
+  exists(interned string file |
+    (
+      #overlayChangedFilesMergeNoDiscard(file) or
+      `#OverlayXml::overlayXmlExtracted/1#55443f98MergeNoDiscard`(file)
+    ) and
+    `#OverlayXml::getXmlFileInBase/1#52500c49MergeNoDiscard`(e, file)
+  )
+}
+
+#@ppd_defineMergeTypeCall(/* @ppd_define */ interned unique entity X) =
+  mergeWithOverlay<faithful discard @ppd_define>(@ppd_define/1, idDiscard/1)
+.
+
+
+#preproctextMerge(
+  /* @preprocdirect */ interned entity id, interned string head,
+  interned string body
+) =
+  mergeWithOverlay<discard @preprocdirect,string,string>(preproctext/3,
+                                                         idDiscard/1)
+.
+
+
+suppressTypeErrors
+`Macro::Macro.getName/0#dispred#e28b3699`(
+  /* Macro::Macro */ interned entity this, string result
+)
+{
+  exists(interned string call_result#2 |
+    #@ppd_defineMergeTypeCall(this) and
+    exists(interned dontcare string _ |
+      #preproctextMerge(this, call_result#2, _)
+    ) and
+    regexpCapture(call_result#2, "([^(]*+).*", 1, result)
+  )
+}
+
+suppressTypeErrors
+#select#query(
+  string option, string accessName, interned string accessStructFieldName
+)
+{
+  exists(string call_result#4 |
+    exists(string call_result#5 |
+      exists(/* Macro::Macro */ interned entity m |
+        exists(string call_result |
+          `Macro::Macro.getName/0#dispred#e28b3699`(m, call_result) and
+          matches(call_result, "flag_%")
+        ) and
+        `Macro::Macro.getName/0#dispred#e28b3699`(m, accessName) and
+        exists(interned dontcare string _ |
+          #preproctextMerge(m, _, accessStructFieldName)
+        )
+      ) and
+      suffix(accessName, 5, call_result#5) and
+      replaceAll(call_result#5, "_", "-", call_result#4)
+    ) and
+    Append("-f", call_result#4, option)
+  )
+}
+
+query #select = #select#query/3 .
+
+
+/* ---------- END STAGE ---------- */

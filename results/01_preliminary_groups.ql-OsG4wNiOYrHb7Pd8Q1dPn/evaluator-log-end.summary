@@ -1,0 +1,256 @@
+Completed evaluation of query 01_preliminary_groups.ql.
+Most expensive predicates for stage 0 of completed query 01_preliminary_groups.ql:
+        time | predicate
+        -----|----------
+        41ms | @function@24d7f7aa
+
+Most expensive predicates for stage 1 of completed query 01_preliminary_groups.ql:
+        time | predicate
+        -----|----------
+         1ms | #usertypesMerge_20#join_rhs@7a31e969
+
+Most expensive predicates for stage 3 of completed query 01_preliminary_groups.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+         4.4s |   186 | 487ms @ 8    | Enclosing::exprEnclosingElement/1#d94b6dd0@9dc00wsq
+         2.6s |       |              | exprs_10#join_rhs@0a156eph
+         1.4s |       |              | Expr::Expr.getParent/0#dispred#393b4f50@285711o5
+        708ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50_10#join_rhs@dfcc6epe
+        678ms |   187 | 140ms @ 5    | Enclosing::stmtEnclosingElement/1#cf37daa7@9dc00xsq
+        192ms |       |              | #exprconvMerge_10#join_rhs@227869fv
+        160ms |     2 | 117ms @ 1    | Expr::Expr.getEnclosingStmt/0#224d8d99#bf@d38ffwjd
+        110ms |       |              | #functionsMerge_20#join_rhs@7f9bb8be
+         97ms |       |              | #stmtparentsMerge_20#join_rhs@d40a20s6
+         94ms |     3 |  38ms @ 2    | m#Expr::Expr.getEnclosingStmt/0#224d8d99#bf@bee54wva
+         91ms |       |              | @conversion@57fb4302
+         67ms |       |              | Initializer::Initializer.getDeclaration/0#dispred#67bc0d09@4704fa55
+         46ms |       |              | Parameter::Parameter.getFunction/0#dispred#803faca2@5f3957oh
+         45ms |       |              | Variable::Variable.getInitializer/0#dispred#34a5a1a6#fb@8d991ck2
+         45ms |       |              | @stmt@49a5754k
+         41ms |       |              | @function@24d7f7aa
+         27ms |       |              | Class::Class.getCanonicalMember/1#dispred#e1747079@30e5176b
+         25ms |       |              | @parameter@b404ef49
+         23ms |       |              | @localvariable@526b65nm
+         17ms |       |              | _Initializer::Initializer.getDeclaration/0#dispred#67bc0d09_Parameter::Parameter#623bc78d__#initiali__#antijoin_rhs@12cef0d9
+         16ms |       |              | @var_decl@850187o7
+         16ms |       |              | @fun_decl@d118d94h
+         15ms |       |              | Call::FunctionCall.getTarget/0#45745a57#bf@f99c89c6
+         14ms |       |              | Declaration::Declaration.getTemplateArgumentValue/1#dispred#3eef4b7f@ebe52blp
+         14ms |       |              | #fun_declsMerge_10#join_rhs@ef921723
+         13ms |       |              | Declaration::DeclarationEntry#35f64a4e#b@a25f503i
+         12ms |       |              | Declaration::DeclarationEntry.getDeclaration/0#dispred#1b743ecb#bf@81662afr
+         11ms |       |              | Declaration::Declaration.getTemplateArgumentType/1#dispred#b0efb79c@b4b14eq1
+         11ms |       |              | Assignment::ConditionDeclExpr.getVariable/0#dispred#cc50c0bf@b41a07ah
+         11ms |       |              | Function::Function.isConstructedFrom/1#dispred#2edd856f@9d2620dd
+         10ms |       |              | @variable@8c2928qk
+         10ms |       |              | @localscopevariable@6209b1aq
+          9ms |       |              | @declaration@f3a3f9gb
+          8ms |       |              | _#initialisersMerge_project#Initializer::Initializer.getEnclosingStmt/0#dispred#2eeaee04#shared@4643bb0l
+          8ms |       |              | Stmt::DeclStmt.getADeclarationEntry/0#dispred#bcacfa3d@db0593jh
+          8ms |       |              | Call::Call#048c9613#b@a8dc4253
+          7ms |       |              | Initializer::Initializer.getEnclosingStmt/0#dispred#2eeaee04@921c0773
+          6ms |       |              | Function::Function.isConstructedFrom/1#dispred#2edd856f_10#join_rhs@ae44c42q
+          4ms |       |              | Variable::LocalVariable#66787c88@1e03b8vv
+          3ms |       |              | Stmt::DeclStmt.getADeclarationEntry/0#dispred#bcacfa3d_1#antijoin_rhs@c3261cou
+          3ms |       |              | project#Class::Class.getCanonicalMember/1#dispred#e1747079@7f1af0tq
+          2ms |       |              | Declaration::Declaration.getATemplateArgument/0#dispred#260b9dcc@7b320av7
+          2ms |       |              | Initializer::Initializer.getEnclosingStmt/0#dispred#2eeaee04_10#join_rhs@fdf4edks
+          2ms |       |              | _#fun_declsMerge_10#join_rhs_#fun_specializedMerge_Function::Function.isConstructedFrom/1#dispred#2e__#antijoin_rhs@8792d3h2
+          1ms |       |              | #expr_ancestorMerge_10#join_rhs@e602baic
+          1ms |       |              | @type_decl@823e090t
+          1ms |       |              | project#Initializer::Initializer.getEnclosingStmt/0#dispred#2eeaee04@3958e5it
+          1ms |       |              | project#Declaration::Declaration.getATemplateArgument/0#dispred#260b9dcc@0706cd6o
+          1ms |       |              | Declaration::Declaration.isMember/0#dispred#de845e36@654e13u1
+          1ms |       |              | m#Call::FunctionCall.getTarget/0#45745a57#bf@a32c3f8c
+
+Most expensive predicates for stage 4 of completed query 01_preliminary_groups.ql:
+        time | predicate
+        -----|----------
+        46ms | Function::Function.getParameter/1#8e6a5a5b@5bc694lo
+        41ms | @function@24d7f7aa
+        36ms | #var_declsMerge_10#join_rhs@d57798gt
+        25ms | @parameter@b404ef49
+        23ms | @localvariable@526b65nm
+        14ms | #fun_declsMerge_10#join_rhs@ef921723
+        12ms | #var_declsMerge_03#join_rhs@74f30akj
+        11ms | Function::Function.isConstructedFrom/1#dispred#2edd856f@9d2620dd
+        10ms | @localscopevariable@6209b1aq
+         3ms | project#Function::Function.isConstructedFrom/1#dispred#2edd856f@61dc762r
+         2ms | #usertypesMerge_02#join_rhs@f614acb9
+         2ms | #function_instantiationMerge_10#join_rhs@f9ba679d
+         1ms | #class_instantiationMerge_10#join_rhs@c2e3b4lh
+         1ms | #usertypesMerge_20#join_rhs@7a31e969
+         0ms | #namespacembrsMerge_1#antijoin_rhs@29795bh8
+         0ms | #namespacesMerge_10#join_rhs@dcfae1lh
+         0ms | @frienddecl@c3e65fvh
+         0ms | @enumconstant@e5299caj
+         0ms | QualifiedName::TemplateFunction.getAnInstantiation/0#dispred#1cbe8684@fd97279v
+         0ms | project##class_template_argumentMerge@3fb95fhb
+
+Most expensive predicates for stage 5 of completed query 01_preliminary_groups.ql:
+        time  | predicate
+        ------|----------
+         2.6s | exprs_10#join_rhs@0a156eph
+        110ms | #functionsMerge_20#join_rhs@7f9bb8be
+         14ms | #fun_declsMerge_10#join_rhs@ef921723
+         11ms | Declaration::Declaration.getTemplateArgumentType/1#dispred#b0efb79c@b4b14eq1
+         11ms | Function::Function.isConstructedFrom/1#dispred#2edd856f@9d2620dd
+          6ms | Function::Function.isConstructedFrom/1#dispred#2edd856f_10#join_rhs@ae44c42q
+          4ms | TypedefType::TypedefType.getBaseType/0#dispred#671605ef#bf@4eb41ctn
+          2ms | #usertypesMerge_02#join_rhs@f614acb9
+          1ms | TypedefType::TypedefType#64088755#b@941df5v8
+          1ms | UserType::UserType#21e9e463@a3a094rk
+          1ms | TypedefType::TypedefType.getBaseType/0#dispred#671605ef#bf_10#join_rhs@ab26a5fg
+          0ms | Type::Decltype.getBaseType/0#dispred#f3b613af#bf@9a977225
+          0ms | Type::Decltype.getBaseType/0#dispred#f3b613af#bf_10#join_rhs@cbab4fap
+          0ms | Type::TypeofType.getBaseType/0#dispred#0d5513d4#bf@d3954e07
+          0ms | project##decltypesMerge#2@7d4bd1qf
+          0ms | Type::TypeofType.getBaseType/0#dispred#0d5513d4#bf_10#join_rhs@9b6d11iu
+
+Most expensive predicates for stage 6 of completed query 01_preliminary_groups.ql:
+        time  | evals | max @ iter | predicate
+        ------|-------|------------|----------
+         2.6s |       |            | exprs_10#join_rhs@0a156eph
+        922ms |       |            | Access::VariableAccess.getTarget/0#238a7818@6f5aa8sk
+        110ms |       |            | #functionsMerge_20#join_rhs@7f9bb8be
+         46ms |       |            | Function::Function.getParameter/1#8e6a5a5b@5bc694lo
+         45ms |       |            | @stmt@49a5754k
+         41ms |       |            | @function@24d7f7aa
+         36ms |       |            | #var_declsMerge_10#join_rhs@d57798gt
+         25ms |       |            | @parameter@b404ef49
+         24ms |       |            | Class::Class.getCanonicalMember/1#dispred#e1747079@08088dq3
+         23ms |       |            | @localvariable@526b65nm
+         15ms |       |            | #iscallMerge_0#antijoin_rhs@f08ffd79
+         14ms |       |            | #fun_declsMerge_10#join_rhs@ef921723
+         12ms |       |            | #var_declsMerge_03#join_rhs@74f30akj
+         11ms |       |            | Function::Function.isConstructedFrom/1#dispred#2edd856f@9d2620dd
+         11ms |       |            | Declaration::Declaration.getTemplateArgumentType/1#dispred#b0efb79c@b4b14eq1
+         10ms |       |            | @localscopevariable@6209b1aq
+          6ms |       |            | Function::Function.isConstructedFrom/1#dispred#2edd856f_10#join_rhs@ae44c42q
+          3ms |       |            | project#Function::Function.isConstructedFrom/1#dispred#2edd856f@61dc762r
+          2ms |     2 | 2ms @ 2    | QualifiedName::Namespace.getQualifiedName/0#cbc0648a@91677w3f
+          2ms |       |            | #usertypesMerge_02#join_rhs@f614acb9
+          2ms |       |            | #function_instantiationMerge_10#join_rhs@f9ba679d
+          2ms |       |            | UserType::UserType.getName/0#dispred#68e0aaf0@c6c4e3bl
+          1ms |       |            | #usertypesMerge_20#join_rhs@7a31e969
+          1ms |       |            | UserType::UserType#21e9e463@a3a094rk
+          1ms |       |            | #class_instantiationMerge_10#join_rhs@c2e3b4lh
+          0ms |       |            | #namespacembrsMerge_1#antijoin_rhs@29795bh8
+          0ms |       |            | #namespacesMerge_10#join_rhs@dcfae1lh
+          0ms |       |            | project##class_template_argumentMerge@3fb95fhb
+          0ms |       |            | @enumconstant@e5299caj
+          0ms |       |            | QualifiedName::TemplateFunction.getAnInstantiation/0#dispred#1cbe8684@fd97279v
+          0ms |       |            | @frienddecl@c3e65fvh
+          0ms |       |            | Class::Class#9afdbffd@65d7f1bo
+
+Most expensive predicates for stage 7 of completed query 01_preliminary_groups.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+         4.2s |       |              | Element::ElementBase.toString/0#dispred#6e016f86_10#join_rhs@4cb8dfdh
+         3.1s |    48 | 279ms @ 14   | #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn
+         2.6s |       |              | exprs_10#join_rhs@0a156eph
+         1.3s |       |              | #locations_defaultMerge_23450#join_rhs@99f7bc3i
+        922ms |       |              | Access::VariableAccess.getTarget/0#238a7818#bf@6f5aa8sk
+        774ms |       |              | Expr::Expr.getEnclosingFunction/0#dispred#3960f06c@1bad88op
+        590ms |       |              | #select#query@53305b34
+        547ms |       |              | Element::Element.getFile/0#2b8c8740@9b043988
+        374ms |       |              | Access::FieldAccess#d1ccd326#b@be1c72b3
+        347ms |       |              | _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t
+        344ms |       |              | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+        315ms |       |              | Access::Access.getTarget/0#dispred#cf25c8aa#bf@4d9e3382
+        235ms |       |              | m#Access::Access.getTarget/0#dispred#cf25c8aa#bf@73617fj6
+        234ms |       |              | Access::Access.getTarget/0#dispred#cf25c8aa#bf_10#join_rhs@0fd884ol
+        202ms |       |              | Call::FunctionCall.getTarget/0#45745a57@eea5fe3l
+        186ms |       |              | Expr::Expr.getLocation/0#dispred#0a3d90c6@06da69m4
+        135ms |       |              | File::Impl::Container.getRelativePath/0#dispred#deec4f8e#bf@96a1f1pj
+        130ms |       |              | m#Variable::Variable.getName/0#dispred#1b4a78c5#bb#mcpe_this@cf3f2a59
+        120ms |       |              | _NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a#bf_Type::Type.getName/0#dispred#77__#shared@0639964e
+        110ms |       |              | #functionsMerge_20#join_rhs@7f9bb8be
+         99ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50#bf@6459b92f
+         99ms |       |              | 01_preliminary_groups::directCall/2#a072b138@8a3bb9ia
+         98ms |       |              | Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf@9b8602lf
+         91ms |       |              | #var_declsMerge_30#join_rhs@ef6ba81l
+         66ms |       |              | Call::ConstructorCall#c4f8b4c6@e520c8fo
+         62ms |       |              | Call::DestructorCall#43f8f365@07e71ft5
+         61ms |       |              | m#01_preliminary_groups::optionAccess/3#13fc0d8a#ffb@48d059ni
+         56ms |       |              | Location::Location.getContainer/0#9edabfb6@bbd97edk
+         48ms |       |              | #localvariablesMerge_20#join_rhs@583a1fsv
+         46ms |       |              | Function::Function.getParameter/1#8e6a5a5b@5bc694lo
+         41ms |       |              | @function@24d7f7aa
+         36ms |       |              | #var_declsMerge_10#join_rhs@d57798gt
+         34ms |       |              | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#bf@3d88f39q
+         34ms |       |              | 01_preliminary_groups::passReachesFunction/2#842c060f#bf@a86e6e4c
+         29ms |       |              | doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sourceBound#3__NameQualifiers::NameQualifying__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sinkBound#3@7e9659f7
+         26ms |       |              | Type::Type.getName/0#dispred#77a04a0a#bf@a8e234eu
+         25ms |       |              | @parameter@b404ef49
+         24ms |       |              | Class::Class.getCanonicalMember/1#dispred#e1747079@08088dq3
+         23ms |       |              | @localvariable@526b65nm
+         21ms |       |              | Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60#bf@d9ee9e4i
+         20ms |       |              | _#var_declsMerge_10#join_rhs_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f#shared@c121c8r0
+         18ms |       |              | Parameter::Parameter.getFunction/0#dispred#803faca2#bf@8d9956qo
+         18ms |       |              | Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf@11c2b125
+         16ms |     3 |  14ms @ 1    | Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b
+         16ms |       |              | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb@f56714d0
+         15ms |       |              | 01_preliminary_groups::preliminaryGroup/6#2fefcf79@8613423h
+         15ms |       |              | #iscallMerge_0#antijoin_rhs@f08ffd79
+         14ms |       |              | #fun_declsMerge_10#join_rhs@ef921723
+         14ms |     6 |   7ms @ 1    | Type::Type.getUnderlyingType/0#dispred#bd141f6a@4eafcwca
+         13ms |       |              | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb_10#join_rhs@65a74460
+
+Most expensive predicates for completed query 01_preliminary_groups.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+         4.4s |   186 | 487ms @ 8    | Enclosing::exprEnclosingElement/1#d94b6dd0@9dc00wsq
+         4.2s |       |              | Element::ElementBase.toString/0#dispred#6e016f86_10#join_rhs@4cb8dfdh
+         3.1s |    48 | 279ms @ 14   | #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn
+         2.6s |       |              | exprs_10#join_rhs@0a156eph
+         1.4s |       |              | Expr::Expr.getParent/0#dispred#393b4f50@285711o5
+         1.3s |       |              | #locations_defaultMerge_23450#join_rhs@99f7bc3i
+        922ms |       |              | Access::VariableAccess.getTarget/0#238a7818@6f5aa8sk
+        774ms |       |              | Expr::Expr.getEnclosingFunction/0#dispred#3960f06c@1bad88op
+        708ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50_10#join_rhs@dfcc6epe
+        678ms |   187 | 140ms @ 5    | Enclosing::stmtEnclosingElement/1#cf37daa7@9dc00xsq
+        590ms |       |              | #select#query@53305b34
+        547ms |       |              | Element::Element.getFile/0#2b8c8740@9b043988
+        374ms |       |              | Access::FieldAccess#d1ccd326#b@be1c72b3
+        347ms |       |              | _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t
+        344ms |       |              | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+        315ms |       |              | Access::Access.getTarget/0#dispred#cf25c8aa#bf@4d9e3382
+        235ms |       |              | m#Access::Access.getTarget/0#dispred#cf25c8aa#bf@73617fj6
+        234ms |       |              | Access::Access.getTarget/0#dispred#cf25c8aa#bf_10#join_rhs@0fd884ol
+        202ms |       |              | Call::FunctionCall.getTarget/0#45745a57@eea5fe3l
+        192ms |       |              | #exprconvMerge_10#join_rhs@227869fv
+        186ms |       |              | Expr::Expr.getLocation/0#dispred#0a3d90c6@06da69m4
+        160ms |     2 | 117ms @ 1    | Expr::Expr.getEnclosingStmt/0#224d8d99#bf@d38ffwjd
+        135ms |       |              | File::Impl::Container.getRelativePath/0#dispred#deec4f8e#bf@96a1f1pj
+        130ms |       |              | m#Variable::Variable.getName/0#dispred#1b4a78c5#bb#mcpe_this@cf3f2a59
+        120ms |       |              | _NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a#bf_Type::Type.getName/0#dispred#77__#shared@0639964e
+        110ms |       |              | #functionsMerge_20#join_rhs@7f9bb8be
+         99ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50#bf@6459b92f
+         99ms |       |              | 01_preliminary_groups::directCall/2#a072b138@8a3bb9ia
+         98ms |       |              | Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf@9b8602lf
+         97ms |       |              | #stmtparentsMerge_20#join_rhs@d40a20s6
+         94ms |     3 |  38ms @ 2    | m#Expr::Expr.getEnclosingStmt/0#224d8d99#bf@bee54wva
+         91ms |       |              | @conversion@57fb4302
+         91ms |       |              | #var_declsMerge_30#join_rhs@ef6ba81l
+         67ms |       |              | Initializer::Initializer.getDeclaration/0#dispred#67bc0d09@4704fa55
+         66ms |       |              | Call::ConstructorCall#c4f8b4c6@e520c8fo
+         62ms |       |              | Call::DestructorCall#43f8f365@07e71ft5
+         61ms |       |              | m#01_preliminary_groups::optionAccess/3#13fc0d8a#ffb@48d059ni
+         56ms |       |              | Location::Location.getContainer/0#9edabfb6@bbd97edk
+         48ms |       |              | #localvariablesMerge_20#join_rhs@583a1fsv
+         46ms |       |              | Function::Function.getParameter/1#8e6a5a5b@5bc694lo
+         46ms |       |              | Parameter::Parameter.getFunction/0#dispred#803faca2@5f3957oh
+         45ms |       |              | Variable::Variable.getInitializer/0#dispred#34a5a1a6#fb@8d991ck2
+         45ms |       |              | @stmt@49a5754k
+         41ms |       |              | @function@24d7f7aa
+         36ms |       |              | #var_declsMerge_10#join_rhs@d57798gt
+         34ms |       |              | 01_preliminary_groups::passReachesFunction/2#842c060f#bf@a86e6e4c
+         34ms |       |              | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#bf@3d88f39q
+         29ms |       |              | doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sourceBound#3__NameQualifiers::NameQualifying__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bf#sinkBound#3@7e9659f7
+         27ms |       |              | Class::Class.getCanonicalMember/1#dispred#e1747079@30e5176b
+         26ms |       |              | Type::Type.getName/0#dispred#77a04a0a#bf@a8e234eu
+
+[2026-08-06 12:57:04] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 30.2 seconds
+        * Total time spent evaluating predicates: 27.8 seconds

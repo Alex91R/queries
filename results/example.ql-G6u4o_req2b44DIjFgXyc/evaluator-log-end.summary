@@ -1,0 +1,156 @@
+Completed evaluation of query example.ql.
+Most expensive predicates for stage 0 of completed query example.ql:
+        time  | predicate
+        ------|----------
+        111ms | Files::Impl::Container.splitAbsolutePath/2#dispred#324a3985@e59cbcdu
+
+Most expensive predicates for stage 1 of completed query example.ql:
+        time  | evals |  max @ iter | predicate
+        ------|-------|-------------|----------
+        374ms |       |             | Flow::ControlFlowNode.toString/0#dispred#e1af144b@41880bvh
+        154ms |       |             | SsaCompute::SsaComputeImpl::defUseRank/4#782a2f48@1f045bj9
+        113ms |   103 | 25ms @ 1    | SsaCompute::AdjacentUses::varBlockReaches/3#1824ad86@4857bwgf
+        104ms |       |             | SsaCompute::SsaComputeImpl::lastRank/2#6cfcb19d@6b005307
+         89ms |       |             | locations_ast_234501#join_rhs@6e5a5d36
+         86ms |       |             | Flow::BasicBlock.getLastNode/0#dispred#6e185cc5@70ffa0i0
+         82ms |     4 | 32ms @ 3    | Exprs::Expr.toString/0#dispred#7435dfcd@cb35dxk1
+         68ms |       |             | Flow::ControlFlowNode.getExprChild/1#e757d179#bbf@f494b516
+         58ms |       |             | SsaCompute::AdjacentUses::defSourceUseRank/4#ebad7bcb@b6ccd0sp
+         51ms |       |             | SsaCompute::AdjacentUses::lastSourceUseRank/2#062a0026@706456o3
+         48ms |   208 | 10ms @ 4    | SsaCompute::Liveness::liveAtExit/2#b6aa63f4@0b2f6xg8
+         46ms |       |             | Flow::ControlFlowNode.getScope/0#dispred#b061daac@0124c9h1
+         45ms |       |             | boundedFastTC:SsaCompute::AdjacentUses::adjacentUseUse/2#c094915e:SsaCompute::AdjacentUses::firstUse/2#ca053ce0_1#higher_order_body@13aad2f4
+         41ms |       |             | py_exprs_1203#join_rhs@f75e08cn
+         39ms |   207 |  7ms @ 3    | SsaCompute::SsaDefinitions::reachesEndOfBlock/4#214bd902@77bccwlk
+         38ms |       |             | Essa::PhiFunction.getInput/1#dispred#f797e1b9@41c38fji
+         38ms |   209 |  7ms @ 3    | SsaCompute::Liveness::liveAtEntry/2#bab3ea7c@0b2f6wg8
+         37ms |   124 | 16ms @ 2    | SsaCompute::SsaComputeImpl::ssaDefReachesRank/4#f19c6fee@716e3wae
+         37ms |     4 | 19ms @ 2    | AstGenerated::AstNode_.toString/0#dispred#192f27b5@cb35dwk1
+         37ms |       |             | doublyBoundedFastTC:Flow::BasicBlock.getImmediateDominator/0#dispred#0f15e8ec:_#Flow::BasicBlock.getImmediateDominator/0#dispred#0f15e8ecPlus#sinkBound#4#3_Flow::ControlFlowNode.__#higher_order_body:#Flow::BasicBlock.getImmediateDominator/0#dispred#0f15e8ecPlus#sinkBound#4#3@d306cf11
+         37ms |       |             | _AstGenerated::Scope_#cc08b056_py_flow_bb_node#antijoin_rhs@ef4d35dd
+         35ms |       |             | boundedFastTC:Flow::BasicBlock.getImmediateDominator/0#dispred#0f15e8ec_10#higher_order_body:project#py_flow_bb_node@fb072d0h
+         32ms |       |             | py_exprs_10#join_rhs@073ac12u
+         31ms |   208 |  5ms @ 2    | SsaCompute::SsaDefinitions::reachesEndOfBlockRec/4#63bb2cd4@77bccxlk
+         30ms |       |             | SsaCompute::SsaComputeImpl::variableUse/4#da62dc30@eb09c076
+         28ms |       |             | SsaCompute::SsaDefinitions::reachesExit/3#a534505a@2f069cl1
+         27ms |       |             | AstExtended::AstNode.getAChildNode/0#dispred#a130356d@df5486oo
+         26ms |       |             | Exprs::Expr.getLocation/0#dispred#c128155b@d10f96ct
+         25ms |       |             | AstGenerated::Name_.getVariable/0#dispred#d8133d45@e04d1f44
+         25ms |       |             | Exprs::Expr.getScope/0#dispred#71058b3b@6f18d7fb
+         25ms |       |             | SsaCompute::AdjacentUses::variableSourceUse/4#4525ef19@bfe5b0uk
+         24ms |       |             | Module::moduleImportedInPackage/1#90099bf3@22fd5di2
+         24ms |       |             | py_flow_bb_node_10#join_rhs@45b774t7
+         23ms |       |             | py_flow_bb_node_1023#join_rhs@a7f552tj
+         23ms |       |             | Flow::BasicBlock.dominates/1#dispred#47f3be21@5e4ac3fn
+         22ms |       |             | Flow::BasicBlock.strictlyDominates/1#dispred#65ae2ca3@b57cb342
+         22ms |       |             | Exprs::Expr_not_Exprs::Call_Class::ClassExpr_Exprs::Dict_Comprehensions::DictComp_Function::FunctionExpr_Comprehensions::GeneratorExp_Function::Lambda_Comprehensions::ListComp_Comprehensions::SetComp_Exprs::StringLiteral#3ae9c825@cfe2cct2
+         22ms |       |             | py_strs_120#join_rhs@bec877pd
+         22ms |       |             | SsaCompute::AdjacentUses::adjacentVarRefs/5#de1f7cd5@a2b35854
+         22ms |       |             | SsaDefinitions::SsaSource::test_refinement/3#2cbdf557@2df110l8
+         22ms |       |             | #Flow::BasicBlock.getASuccessor/0#dispred#7249dd96Plus@aa36c8a7
+         22ms |       |             | SsaCompute::SsaDefinitions::reachesUse/4#216dc4f6@1bf4676r
+         21ms |       |             | SsaCompute::AdjacentUses::blockPrecedesVar/2#b4e71f74#fb@2a3d21l5
+         20ms |       |             | SsaCompute::SsaComputeImpl::variableDefine/4#79261f91@51c0fafm
+         20ms |       |             | AstExtended::AstNode.getLocation/0#dispred#6b4dcb62@ccf6dfeh
+         20ms |       |             | Exprs::Name.getId/0#dispred#4fa5460e@431259f7
+         20ms |       |             | Flow::BasicBlock.getNode/1#dispred#4a129537@dcd623tr
+         19ms |       |             | Flow::AttrNode.getObject/0#dispred#cba29223@a1062b29
+         18ms |       |             | Flow::BasicBlock.getScope/0#833ab644@e1aed0ml
+         18ms |       |             | SsaCompute::SsaComputeImpl::defUseRank/4#782a2f48_201#join_rhs@d3abc5jq
+
+Most expensive predicates for stage 2 of completed query example.ql:
+        time | predicate
+        -----|----------
+        89ms | locations_ast_234501#join_rhs@6e5a5d36
+        45ms | #select#cpe#1@d1f81589
+        34ms | Files::Location.hasLocationInfo/5#dispred#143bb906@af7732rr
+        32ms | locations_ast_102345#join_rhs@ba5e2d5g
+        24ms | py_flow_bb_node_10#join_rhs@45b774t7
+        22ms | py_strs_120#join_rhs@bec877pd
+        17ms | Scope::Scope.getAStmt/0#dispred#d709491a@b759a2c5
+        17ms | py_stmts_20#join_rhs@e780a92c
+        13ms | project##Files::Location.hasLocationInfo/5#dispred#143bb906Merge@8f0a749c
+        10ms | AstGenerated::Scope_.toString/0#dispred#8b6e5a05@5b91831n
+         5ms | py_stmt_lists_120#join_rhs@0e183epv
+         4ms | project##Scope::Scope.getAStmt/0#dispred#d709491aMerge@0fbe062a
+         3ms | @py_scope@78c72bkc
+         1ms | AstGenerated::Module_.getName/0#2ccd625a@38f91ee0
+         1ms | Scope::Scope.getLocation/0#dispred#0883d983@924174vk
+         1ms | py_dict_items_10#join_rhs@1abaaa6d
+         1ms | py_scope_location_1#antijoin_rhs@8ca5b9j1
+         1ms | Files::Impl::Container.splitAbsolutePath/2#dispred#324a3985_021#join_rhs@9a865792
+         1ms | py_ssa_var_10#join_rhs@1a66c0th
+         0ms | #select#query@6c5583gn
+         0ms | AstGenerated::Module_.getKind/0#dd90ac6f@95377982
+         0ms | Module::Module.getName/0#dispred#45a481b3@7cdbd8ae
+         0ms | AstGenerated::Module_.getKind/0#dd90ac6f_0#antijoin_rhs@a84c4ek9
+         0ms | Module::Module.getFile/0#dispred#53eb9b1b_0#antijoin_rhs@128cc0vj
+         0ms | __#Scope::Scope.getLocation/0#dispred#0883d983Merge_#select#cpe#1#shared_project##Files::Location.ha__#antijoin_rhs@8aa8d1qa
+         0ms | _#Scope::Scope.getLocation/0#dispred#0883d983Merge_#select#cpe#1#shared@4b7539i0
+         0ms | Module::Module.getFile/0#dispred#53eb9b1b@816ea0rg
+         0ms | Module::Module.getKind/0#dispred#ccc4de3e@2d81416l
+         0ms | py_scope_location_10#join_rhs@9c0b7etf
+         0ms | py_dict_item_lists_10#join_rhs@70e6f16k
+         0ms | project#Module::Module.getName/0#dispred#45a481b3@db672fcb
+         0ms | py_module_path_10#join_rhs@5a2bd62f
+         0ms | project##AstGenerated::Scope_.toString/0#dispred#8b6e5a05Merge@89bb0blv
+         0ms | Module::Module.isPackage/0#dispred#a8679d5f@9131c737
+         0ms | py_arguments_10#join_rhs@9dbccce2
+
+Most expensive predicates for completed query example.ql:
+        time  | evals |  max @ iter | predicate
+        ------|-------|-------------|----------
+        374ms |       |             | Flow::ControlFlowNode.toString/0#dispred#e1af144b@41880bvh
+        154ms |       |             | SsaCompute::SsaComputeImpl::defUseRank/4#782a2f48@1f045bj9
+        113ms |   103 | 25ms @ 1    | SsaCompute::AdjacentUses::varBlockReaches/3#1824ad86@4857bwgf
+        111ms |       |             | Files::Impl::Container.splitAbsolutePath/2#dispred#324a3985@e59cbcdu
+        104ms |       |             | SsaCompute::SsaComputeImpl::lastRank/2#6cfcb19d@6b005307
+         89ms |       |             | locations_ast_234501#join_rhs@6e5a5d36
+         86ms |       |             | Flow::BasicBlock.getLastNode/0#dispred#6e185cc5@70ffa0i0
+         82ms |     4 | 32ms @ 3    | Exprs::Expr.toString/0#dispred#7435dfcd@cb35dxk1
+         68ms |       |             | Flow::ControlFlowNode.getExprChild/1#e757d179#bbf@f494b516
+         58ms |       |             | SsaCompute::AdjacentUses::defSourceUseRank/4#ebad7bcb@b6ccd0sp
+         51ms |       |             | SsaCompute::AdjacentUses::lastSourceUseRank/2#062a0026@706456o3
+         48ms |   208 | 10ms @ 4    | SsaCompute::Liveness::liveAtExit/2#b6aa63f4@0b2f6xg8
+         46ms |       |             | Flow::ControlFlowNode.getScope/0#dispred#b061daac@0124c9h1
+         45ms |       |             | boundedFastTC:SsaCompute::AdjacentUses::adjacentUseUse/2#c094915e:SsaCompute::AdjacentUses::firstUse/2#ca053ce0_1#higher_order_body@13aad2f4
+         45ms |       |             | #select#cpe#1@d1f81589
+         41ms |       |             | py_exprs_1203#join_rhs@f75e08cn
+         39ms |   207 |  7ms @ 3    | SsaCompute::SsaDefinitions::reachesEndOfBlock/4#214bd902@77bccwlk
+         38ms |       |             | Essa::PhiFunction.getInput/1#dispred#f797e1b9@41c38fji
+         38ms |   209 |  7ms @ 3    | SsaCompute::Liveness::liveAtEntry/2#bab3ea7c@0b2f6wg8
+         37ms |     4 | 19ms @ 2    | AstGenerated::AstNode_.toString/0#dispred#192f27b5@cb35dwk1
+         37ms |   124 | 16ms @ 2    | SsaCompute::SsaComputeImpl::ssaDefReachesRank/4#f19c6fee@716e3wae
+         37ms |       |             | _AstGenerated::Scope_#cc08b056_py_flow_bb_node#antijoin_rhs@ef4d35dd
+         37ms |       |             | doublyBoundedFastTC:Flow::BasicBlock.getImmediateDominator/0#dispred#0f15e8ec:_#Flow::BasicBlock.getImmediateDominator/0#dispred#0f15e8ecPlus#sinkBound#4#3_Flow::ControlFlowNode.__#higher_order_body:#Flow::BasicBlock.getImmediateDominator/0#dispred#0f15e8ecPlus#sinkBound#4#3@d306cf11
+         35ms |       |             | boundedFastTC:Flow::BasicBlock.getImmediateDominator/0#dispred#0f15e8ec_10#higher_order_body:project#py_flow_bb_node@fb072d0h
+         34ms |       |             | Files::Location.hasLocationInfo/5#dispred#143bb906@af7732rr
+         32ms |       |             | locations_ast_102345#join_rhs@ba5e2d5g
+         32ms |       |             | py_exprs_10#join_rhs@073ac12u
+         31ms |   208 |  5ms @ 2    | SsaCompute::SsaDefinitions::reachesEndOfBlockRec/4#63bb2cd4@77bccxlk
+         30ms |       |             | SsaCompute::SsaComputeImpl::variableUse/4#da62dc30@eb09c076
+         28ms |       |             | SsaCompute::SsaDefinitions::reachesExit/3#a534505a@2f069cl1
+         27ms |       |             | AstExtended::AstNode.getAChildNode/0#dispred#a130356d@df5486oo
+         26ms |       |             | Exprs::Expr.getLocation/0#dispred#c128155b@d10f96ct
+         25ms |       |             | Exprs::Expr.getScope/0#dispred#71058b3b@6f18d7fb
+         25ms |       |             | AstGenerated::Name_.getVariable/0#dispred#d8133d45@e04d1f44
+         25ms |       |             | SsaCompute::AdjacentUses::variableSourceUse/4#4525ef19@bfe5b0uk
+         24ms |       |             | Module::moduleImportedInPackage/1#90099bf3@22fd5di2
+         24ms |       |             | py_flow_bb_node_10#join_rhs@45b774t7
+         23ms |       |             | py_flow_bb_node_1023#join_rhs@a7f552tj
+         23ms |       |             | Flow::BasicBlock.dominates/1#dispred#47f3be21@5e4ac3fn
+         22ms |       |             | #Flow::BasicBlock.getASuccessor/0#dispred#7249dd96Plus@aa36c8a7
+         22ms |       |             | Flow::BasicBlock.strictlyDominates/1#dispred#65ae2ca3@b57cb342
+         22ms |       |             | Exprs::Expr_not_Exprs::Call_Class::ClassExpr_Exprs::Dict_Comprehensions::DictComp_Function::FunctionExpr_Comprehensions::GeneratorExp_Function::Lambda_Comprehensions::ListComp_Comprehensions::SetComp_Exprs::StringLiteral#3ae9c825@cfe2cct2
+         22ms |       |             | SsaDefinitions::SsaSource::test_refinement/3#2cbdf557@2df110l8
+         22ms |       |             | SsaCompute::SsaDefinitions::reachesUse/4#216dc4f6@1bf4676r
+         22ms |       |             | py_strs_120#join_rhs@bec877pd
+         22ms |       |             | SsaCompute::AdjacentUses::adjacentVarRefs/5#de1f7cd5@a2b35854
+         21ms |       |             | SsaCompute::AdjacentUses::blockPrecedesVar/2#b4e71f74#fb@2a3d21l5
+         20ms |       |             | Exprs::Name.getId/0#dispred#4fa5460e@431259f7
+         20ms |       |             | Flow::BasicBlock.getNode/1#dispred#4a129537@dcd623tr
+         20ms |       |             | SsaCompute::SsaComputeImpl::variableDefine/4#79261f91@51c0fafm
+
+[2026-07-24 19:03:13] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 5.6 seconds
+        * Total time spent evaluating predicates: 4.6 seconds

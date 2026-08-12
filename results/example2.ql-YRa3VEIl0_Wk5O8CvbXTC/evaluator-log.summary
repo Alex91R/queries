@@ -1,0 +1,78 @@
+[2026-07-24 19:00:51] Summary of a CodeQL evaluation that started at 2026-07-24T18:00:51.127191979Z
+[2026-07-24 19:00:51] 
+[2026-07-24 19:00:51] Evaluated non-recursive predicate Files::File#6a970600@81abb6m0 in 31ms (size: 260).
+Evaluated relational algebra for predicate Files::File#6a970600@81abb6m0:
+                {1} r1 = SCAN files OUTPUT In.0
+                return r1
+
+[2026-07-24 19:00:51] Evaluated non-recursive predicate Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4@966d67vo in 2ms (size: 470).
+Evaluated relational algebra for predicate Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4@966d67vo:
+                {2} r1 = files UNION folders
+                return r1
+
+[2026-07-24 19:00:51] Evaluated non-recursive predicate Files::Impl::File.getURL/0#dispred#3648064d@5c8c8624 in 21ms (size: 260).
+Evaluated relational algebra for predicate Files::Impl::File.getURL/0#dispred#3648064d@5c8c8624:
+                {4} r1 = JOIN Files::File#6a970600 WITH `Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4` ON FIRST 1 OUTPUT Lhs.0, _, Rhs.1, _
+                {2}    | REWRITE WITH Tmp.1 := "file://", Tmp.3 := ":0:0:0:0", Out.1 := (Tmp.1 ++ In.2 ++ Tmp.3) KEEPING 2
+                return r1
+
+[2026-07-24 19:00:51] Evaluated non-recursive predicate #Files::Impl::File.getURL/0#dispred#3648064dMerge_0#antijoin_rhs@7f19aafn in 2ms (size: 260).
+Evaluated relational algebra for predicate #Files::Impl::File.getURL/0#dispred#3648064dMerge_0#antijoin_rhs@7f19aafn:
+                {1} r1 = SCAN `Files::Impl::File.getURL/0#dispred#3648064d` OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-07-24 19:00:51] Evaluated non-recursive predicate #Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs@ce4431r0 in 1ms (size: 470).
+Evaluated relational algebra for predicate #Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs@ce4431r0:
+                {1} r1 = SCAN `Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4` OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-07-24 19:00:51] Evaluated non-recursive predicate #select#query@40d919as in 7ms (size: 260).
+Evaluated relational algebra for predicate #select#query@40d919as:
+                {2} r1 = JOIN Files::File#6a970600 WITH `Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+            
+                {1} r2 = Files::File#6a970600 AND NOT `#Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs`(FIRST 1)
+                {2}    | SCAN OUTPUT In.0, _
+                {2}    | REWRITE WITH Out.1 := "(no string representation)"
+            
+                {2} r3 = r1 UNION r2
+                {4}    | JOIN WITH `Files::Impl::File.getURL/0#dispred#3648064d` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Rhs.1, _
+                {4}    | REWRITE WITH Out.3 := "Hello, world!"
+            
+                {1} r4 = Files::File#6a970600 AND NOT `#Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs`(FIRST 1)
+                {2}    | SCAN OUTPUT In.0, _
+                {2}    | REWRITE WITH Out.1 := "(no string representation)"
+            
+                {2} r5 = r1 UNION r4
+                {2}    | AND NOT `#Files::Impl::File.getURL/0#dispred#3648064dMerge_0#antijoin_rhs`(FIRST 1)
+                {4}    | SCAN OUTPUT In.0, In.1, _, _
+                {4}    | REWRITE WITH Out.2 := "", Out.3 := "Hello, world!"
+            
+                {4} r6 = r3 UNION r5
+                return r6
+
+[2026-07-24 19:00:51] Completed evaluation of query example2.ql.
+Most expensive predicates for stage 0 of completed query example2.ql:
+        time | predicate
+        -----|----------
+        31ms | Files::File#6a970600@81abb6m0
+        21ms | Files::Impl::File.getURL/0#dispred#3648064d@5c8c8624
+         7ms | #select#query@40d919as
+         2ms | #Files::Impl::File.getURL/0#dispred#3648064dMerge_0#antijoin_rhs@7f19aafn
+         2ms | Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4@966d67vo
+         1ms | #Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs@ce4431r0
+
+Most expensive predicates for completed query example2.ql:
+        time | predicate
+        -----|----------
+        31ms | Files::File#6a970600@81abb6m0
+        21ms | Files::Impl::File.getURL/0#dispred#3648064d@5c8c8624
+         7ms | #select#query@40d919as
+         2ms | #Files::Impl::File.getURL/0#dispred#3648064dMerge_0#antijoin_rhs@7f19aafn
+         2ms | Files::Impl::Container.getAbsolutePath/0#dispred#72663ca4@966d67vo
+         1ms | #Files::Impl::Container.toString/0#dispred#0404d28cMerge_0#antijoin_rhs@ce4431r0
+
+[2026-07-24 19:00:51] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.2 seconds
+        * Total time spent evaluating predicates: 0.1 seconds

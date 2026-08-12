@@ -1,0 +1,1511 @@
+#overlayChangedFilesMergeNoDiscard(interned unique string path) =
+  mergeWithOverlay<string>(overlayChangedFiles/1)
+.
+
+
+overlayLocal @usertype(/* @usertype */ interned unique entity id) {
+  exists(interned dontcare string _, interned dontcare int _1 |
+    usertypes(id, _, _1)
+  )
+}
+
+overlayLocal
+`Overlay::locallyInTrapOrTag/3#1694c9f7`(
+  boolean isOverlayVariant, /* @element */ interned entity e,
+  /* @trap_or_tag */ interned entity t
+)
+{
+  in_trap_or_tag(e, t) and
+  (
+    (databaseMetadata("isOverlay", "true") and isOverlayVariant = true)
+    or
+    (not(databaseMetadata("isOverlay", "true")) and isOverlayVariant = false)
+  )
+}
+
+`#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(
+  boolean isOverlayVariant, /* @element */ interned entity e,
+  /* @trap_or_tag */ interned entity t
+) =
+  mergeWithOverlay<boolean,@element,@trap_or_tag>(`Overlay::locallyInTrapOrTag/3#1694c9f7`/3)
+.
+
+
+overlayLocal
+`Overlay::locallyReachableTrapOrTag/3#11241854`(
+  boolean isOverlayVariant, interned string sourceFile,
+  /* @trap_or_tag */ entity t
+)
+{
+  exists(/* @trap */ interned entity trap |
+    exists(/* @source_file */ interned entity sf |
+      source_file_name(sf, sourceFile) and source_file_uses_trap(sf, trap)
+    ) and
+    (t = trap or trap_uses_tag(trap, t))
+  ) and
+  (
+    (databaseMetadata("isOverlay", "true") and isOverlayVariant = true)
+    or
+    (not(databaseMetadata("isOverlay", "true")) and isOverlayVariant = false)
+  )
+}
+
+`#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(
+  boolean isOverlayVariant, interned string sourceFile,
+  /* @trap_or_tag */ entity t
+) =
+  mergeWithOverlay<boolean,string,@trap_or_tag>(`Overlay::locallyReachableTrapOrTag/3#11241854`/3)
+.
+
+
+overlayLocal
+`OverlayXml::getXmlFile/1#4a39a118`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  exists(/* @file */ interned entity file |
+    exists(/* @location_default */ interned entity location |
+      xmllocations(locatable, location) and
+      exists(
+        interned dontcare int _, interned dontcare int _1,
+        interned dontcare int _2, interned dontcare int _3
+       |
+        locations_default(location, file, _, _1, _2, _3)
+      )
+    ) and
+    files(file, result)
+  )
+}
+
+overlayLocal
+`OverlayXml::getXmlFileInBase/1#52500c49`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  not(databaseMetadata("isOverlay", "true")) and
+  `OverlayXml::getXmlFile/1#4a39a118`(locatable, result)
+}
+
+`#OverlayXml::getXmlFileInBase/1#52500c49MergeNoDiscard`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+) =
+  mergeWithOverlay<@xmllocatable,string>(`OverlayXml::getXmlFileInBase/1#52500c49`/2)
+.
+
+
+noinline overlayLocal project#decltypes(/* @type */ interned entity X) {
+  exists(
+    /* @expr */ interned dontcare entity _, interned dontcare int _1,
+    /* @type */ interned dontcare entity _2, interned dontcare boolean _3
+   |
+    decltypes(X, _, _1, _2, _3)
+  )
+}
+
+overlayLocal @type(/* @type */ interned unique entity X) {
+  exists(
+    interned dontcare string _, interned dontcare int _1,
+    interned dontcare int _2, interned dontcare int _3, interned dontcare int _4
+   |
+    builtintypes(X, _, _1, _2, _3, _4)
+  ) or
+  exists(
+    interned dontcare string _, interned dontcare int _1,
+    /* @type */ interned dontcare entity _2
+   |
+    derivedtypes(X, _, _1, _2)
+  ) or
+  exists(interned dontcare string _, interned dontcare int _1 |
+    usertypes(X, _, _1)
+  ) or
+  exists(/* @type */ interned dontcare entity _ | routinetypes(X, _)) or
+  exists(
+    /* @type */ interned dontcare entity _,
+    /* @type */ interned dontcare entity _1
+   |
+    ptrtomembers(X, _, _1)
+  ) or
+  project#decltypes(X) or
+  exists(
+    /* @type */ interned dontcare entity _, interned dontcare int _1,
+    /* @type */ interned dontcare entity _2
+   |
+    type_operators(X, _, _1, _2)
+  )
+}
+
+noinline
+overlayLocal
+project#xmlNs(/* @xmllocatable */ interned entity locatable)
+{
+  exists(
+    interned dontcare string _, interned dontcare string _1,
+    /* @file */ interned dontcare entity _2
+   |
+    xmlNs(locatable, _, _1, _2)
+  )
+}
+
+overlayLocal
+`OverlayXml::overlayXmlExtracted/1#55443f98`(interned unique string file)
+{
+  exists(/* @xmllocatable */ interned entity locatable |
+    databaseMetadata("isOverlay", "true") and
+    `OverlayXml::getXmlFile/1#4a39a118`(locatable, file) and
+    not(exists(interned dontcare string _ | files(locatable, _))) and
+    not(project#xmlNs(locatable))
+  )
+}
+
+`#OverlayXml::overlayXmlExtracted/1#55443f98MergeNoDiscard`(
+  interned unique string file
+) =
+  mergeWithOverlay<string>(`OverlayXml::overlayXmlExtracted/1#55443f98`/1)
+.
+
+
+idDiscard(/* @element */ interned unique entity e) {
+  (
+    exists(/* @trap_or_tag */ interned dontcare entity _ |
+      `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(false, e, _)
+    ) and
+    not(
+      exists(/* @trap_or_tag */ interned entity t |
+        `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(true, e, t) and
+        exists(interned dontcare string _ |
+          `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+            _, t)
+        )
+      )
+    ) and
+    not(
+      exists(interned string sourceFile, /* @trap_or_tag */ interned entity t |
+        `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(false, e, t) and
+        `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(false,
+          sourceFile, t) and
+        not(
+          #overlayChangedFilesMergeNoDiscard(sourceFile) or
+          exists(interned dontcare string _ |
+            `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+              _, t)
+          ) or
+          exists(/* @trap_or_tag */ dontcare entity _ |
+            `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+              sourceFile, _)
+          )
+        )
+      )
+    )
+  )
+  or
+  exists(interned string file |
+    (
+      #overlayChangedFilesMergeNoDiscard(file) or
+      `#OverlayXml::overlayXmlExtracted/1#55443f98MergeNoDiscard`(file)
+    ) and
+    `#OverlayXml::getXmlFileInBase/1#52500c49MergeNoDiscard`(e, file)
+  )
+}
+
+#@typeMergeTypeCall(/* @type */ interned unique entity X) =
+  mergeWithOverlay<faithful discard @type>(@type/1, idDiscard/1)
+.
+
+
+#@usertypeMergeTypeCall(/* @usertype */ interned unique entity id) =
+  mergeWithOverlay<faithful discard @usertype>(@usertype/1, idDiscard/1)
+.
+
+
+#is_completeMerge(/* @usertype */ interned unique entity id) =
+  mergeWithOverlay<discard @usertype>(is_complete/1, idDiscard/1)
+.
+
+
+#mangled_nameMerge(
+  /* @declaration */ interned entity id,
+  /* @mangledname */ interned entity mangled_name, interned boolean is_complete
+) =
+  mergeWithOverlay<discard @declaration,faithful discard @mangledname,boolean>(mangled_name/3,
+                                                                               idDiscard/1,
+                                                                               idDiscard/1)
+.
+
+
+#usertypesMerge(
+  /* @usertype */ interned entity id, interned string name, interned int kind
+) =
+  mergeWithOverlay<faithful discard @usertype,string,int>(usertypes/3,
+                                                          idDiscard/1)
+.
+
+
+`ResolveClass::isClass/1#af2a1ca6`(/* @usertype */ interned unique entity t) {
+  exists(interned int setliteral#result |
+    (
+      setliteral#result = 1 or
+      setliteral#result = 2 or
+      setliteral#result = 3 or
+      setliteral#result = 15 or
+      setliteral#result = 16 or
+      setliteral#result = 17
+    ) and
+    exists(interned dontcare string _ |
+      #usertypesMerge(t, _, setliteral#result)
+    )
+  )
+}
+
+noinline
+`ResolveClass::getClassMangledName/1#454368bd`(
+  /* @usertype */ interned entity c, /* @mangledname */ interned entity result
+)
+{
+  `ResolveClass::isClass/1#af2a1ca6`(c) and
+  exists(interned dontcare boolean _ | #mangled_nameMerge(c, result, _))
+}
+
+noinline
+`ResolveClass::existsIncompleteWithMangledName/2#8e4ba970`(
+  /* @mangledname */ interned entity name, /* @usertype */ interned entity c
+)
+{
+  `ResolveClass::getClassMangledName/1#454368bd`(c, name) and
+  not(#is_completeMerge(c))
+}
+
+noinline
+`ResolveClass::onlyOneCompleteClassExistsWithMangledName/1#9ce48a7b`(
+  /* @mangledname */ interned unique entity name
+)
+{
+  exists(int strictcount#output |
+    strictcount#output = 1 and
+    strictcount#output = count()(/* @usertype */ interned entity c |
+      #is_completeMerge(c) and
+      `ResolveClass::getClassMangledName/1#454368bd`(c, name) |
+      true()
+    )
+  )
+}
+
+noinline
+`ResolveClass::existsCompleteWithMangledName/2#9bbdade6`(
+  /* @mangledname */ interned entity name, /* @usertype */ interned entity d
+)
+{
+  #is_completeMerge(d) and
+  `ResolveClass::getClassMangledName/1#454368bd`(d, name) and
+  `ResolveClass::onlyOneCompleteClassExistsWithMangledName/1#9ce48a7b`(name)
+}
+
+`ResolveClass::hasCompleteTwin/2#864d2b28`(
+  /* @usertype */ interned entity c, /* @usertype */ interned entity d
+)
+{
+  exists(/* @mangledname */ interned entity name |
+    `ResolveClass::existsCompleteWithMangledName/2#9bbdade6`(name, d) and
+    `ResolveClass::existsIncompleteWithMangledName/2#8e4ba970`(name, c)
+  )
+}
+
+noinline
+`project#ResolveClass::hasCompleteTwin/2#864d2b28`(
+  /* @usertype */ interned entity c
+)
+{
+  exists(/* @usertype */ interned dontcare entity _ |
+    `ResolveClass::hasCompleteTwin/2#864d2b28`(c, _)
+  )
+}
+
+`ResolveClass::resolveClass/1#ea47deee`(
+  /* @usertype */ interned entity c, /* @usertype */ entity result
+)
+{
+  (
+    #@usertypeMergeTypeCall(result) and
+    `ResolveClass::hasCompleteTwin/2#864d2b28`(c, result)
+  )
+  or
+  (
+    #@usertypeMergeTypeCall(c) and
+    not(`project#ResolveClass::hasCompleteTwin/2#864d2b28`(c)) and
+    result = c
+  )
+}
+
+noinline `project#ResolveClass::resolveClass/1#ea47deee`(/* @type */ entity t) {
+  exists(/* @usertype */ interned dontcare entity _ |
+    `ResolveClass::resolveClass/1#ea47deee`(_, t)
+  )
+}
+
+`ResolveClass::isType/1#eabb9878`(/* @type */ interned unique entity t) {
+  #@typeMergeTypeCall(t) and
+  (
+    not(`ResolveClass::isClass/1#af2a1ca6`(t)) or
+    `project#ResolveClass::resolveClass/1#ea47deee`(t)
+  )
+}
+
+query `ResolveClass::isClass/1#af2a1ca6` =
+`ResolveClass::isClass/1#af2a1ca6`/1
+.
+
+query `ResolveClass::isType/1#eabb9878` = `ResolveClass::isType/1#eabb9878`/1 .
+
+query `ResolveClass::resolveClass/1#ea47deee` =
+`ResolveClass::resolveClass/1#ea47deee`/2
+.
+
+
+/* ---------- END STAGE ---------- */
+#overlayChangedFilesMergeNoDiscard(interned unique string path) =
+  mergeWithOverlay<string>(overlayChangedFiles/1)
+.
+
+
+overlayLocal @function(/* @function */ interned unique entity id) {
+  exists(interned dontcare string _, interned dontcare int _1 |
+    functions(id, _, _1)
+  )
+}
+
+overlayLocal
+`Overlay::locallyInTrapOrTag/3#1694c9f7`(
+  boolean isOverlayVariant, /* @element */ interned entity e,
+  /* @trap_or_tag */ interned entity t
+)
+{
+  in_trap_or_tag(e, t) and
+  (
+    (databaseMetadata("isOverlay", "true") and isOverlayVariant = true)
+    or
+    (not(databaseMetadata("isOverlay", "true")) and isOverlayVariant = false)
+  )
+}
+
+`#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(
+  boolean isOverlayVariant, /* @element */ interned entity e,
+  /* @trap_or_tag */ interned entity t
+) =
+  mergeWithOverlay<boolean,@element,@trap_or_tag>(`Overlay::locallyInTrapOrTag/3#1694c9f7`/3)
+.
+
+
+overlayLocal
+`Overlay::locallyReachableTrapOrTag/3#11241854`(
+  boolean isOverlayVariant, interned string sourceFile,
+  /* @trap_or_tag */ entity t
+)
+{
+  exists(/* @trap */ interned entity trap |
+    exists(/* @source_file */ interned entity sf |
+      source_file_name(sf, sourceFile) and source_file_uses_trap(sf, trap)
+    ) and
+    (t = trap or trap_uses_tag(trap, t))
+  ) and
+  (
+    (databaseMetadata("isOverlay", "true") and isOverlayVariant = true)
+    or
+    (not(databaseMetadata("isOverlay", "true")) and isOverlayVariant = false)
+  )
+}
+
+`#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(
+  boolean isOverlayVariant, interned string sourceFile,
+  /* @trap_or_tag */ entity t
+) =
+  mergeWithOverlay<boolean,string,@trap_or_tag>(`Overlay::locallyReachableTrapOrTag/3#11241854`/3)
+.
+
+
+overlayLocal
+`OverlayXml::getXmlFile/1#4a39a118`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  exists(/* @file */ interned entity file |
+    exists(/* @location_default */ interned entity location |
+      xmllocations(locatable, location) and
+      exists(
+        interned dontcare int _, interned dontcare int _1,
+        interned dontcare int _2, interned dontcare int _3
+       |
+        locations_default(location, file, _, _1, _2, _3)
+      )
+    ) and
+    files(file, result)
+  )
+}
+
+overlayLocal
+`OverlayXml::getXmlFileInBase/1#52500c49`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  not(databaseMetadata("isOverlay", "true")) and
+  `OverlayXml::getXmlFile/1#4a39a118`(locatable, result)
+}
+
+`#OverlayXml::getXmlFileInBase/1#52500c49MergeNoDiscard`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+) =
+  mergeWithOverlay<@xmllocatable,string>(`OverlayXml::getXmlFileInBase/1#52500c49`/2)
+.
+
+
+noinline
+overlayLocal
+project#xmlNs(/* @xmllocatable */ interned entity locatable)
+{
+  exists(
+    interned dontcare string _, interned dontcare string _1,
+    /* @file */ interned dontcare entity _2
+   |
+    xmlNs(locatable, _, _1, _2)
+  )
+}
+
+overlayLocal
+`OverlayXml::overlayXmlExtracted/1#55443f98`(interned unique string file)
+{
+  exists(/* @xmllocatable */ interned entity locatable |
+    databaseMetadata("isOverlay", "true") and
+    `OverlayXml::getXmlFile/1#4a39a118`(locatable, file) and
+    not(exists(interned dontcare string _ | files(locatable, _))) and
+    not(project#xmlNs(locatable))
+  )
+}
+
+`#OverlayXml::overlayXmlExtracted/1#55443f98MergeNoDiscard`(
+  interned unique string file
+) =
+  mergeWithOverlay<string>(`OverlayXml::overlayXmlExtracted/1#55443f98`/1)
+.
+
+
+idDiscard(/* @element */ interned unique entity e) {
+  (
+    exists(/* @trap_or_tag */ interned dontcare entity _ |
+      `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(false, e, _)
+    ) and
+    not(
+      exists(/* @trap_or_tag */ interned entity t |
+        `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(true, e, t) and
+        exists(interned dontcare string _ |
+          `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+            _, t)
+        )
+      )
+    ) and
+    not(
+      exists(interned string sourceFile, /* @trap_or_tag */ interned entity t |
+        `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(false, e, t) and
+        `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(false,
+          sourceFile, t) and
+        not(
+          #overlayChangedFilesMergeNoDiscard(sourceFile) or
+          exists(interned dontcare string _ |
+            `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+              _, t)
+          ) or
+          exists(/* @trap_or_tag */ dontcare entity _ |
+            `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+              sourceFile, _)
+          )
+        )
+      )
+    )
+  )
+  or
+  exists(interned string file |
+    (
+      #overlayChangedFilesMergeNoDiscard(file) or
+      `#OverlayXml::overlayXmlExtracted/1#55443f98MergeNoDiscard`(file)
+    ) and
+    `#OverlayXml::getXmlFileInBase/1#52500c49MergeNoDiscard`(e, file)
+  )
+}
+
+#@functionMergeTypeCall(/* @function */ interned unique entity id) =
+  mergeWithOverlay<faithful discard @function>(@function/1, idDiscard/1)
+.
+
+
+#compgeneratedMerge(/* @element */ interned unique entity id) =
+  mergeWithOverlay<discard @element>(compgenerated/1, idDiscard/1)
+.
+
+
+#fun_declsMerge(
+  /* @fun_decl */ interned entity id, /* @function */ interned entity function,
+  /* @type */ interned entity type_id, interned string name,
+  /* @location_default */ interned entity location
+) =
+  mergeWithOverlay<faithful discard @fun_decl,discard @function,discard @type,string,discard @location_default>(fun_decls/5,
+                                                                                                                idDiscard/1,
+                                                                                                                idDiscard/1,
+                                                                                                                idDiscard/1,
+                                                                                                                idDiscard/1)
+.
+
+
+#fun_defMerge(/* @fun_decl */ interned unique entity id) =
+  mergeWithOverlay<discard @fun_decl>(fun_def/1, idDiscard/1)
+.
+
+
+#function_instantiationMerge(
+  /* @function */ interned entity to, /* @function */ interned entity from
+) =
+  mergeWithOverlay<discard @function,discard @function>(function_instantiation/2,
+                                                        idDiscard/1, idDiscard/1)
+.
+
+
+#mangled_nameMerge(
+  /* @declaration */ interned entity id,
+  /* @mangledname */ interned entity mangled_name, interned boolean is_complete
+) =
+  mergeWithOverlay<discard @declaration,faithful discard @mangledname,boolean>(mangled_name/3,
+                                                                               idDiscard/1,
+                                                                               idDiscard/1)
+.
+
+
+`ResolveFunction::hasDefinition/1#c360eac3`(
+  /* @function */ interned unique entity f
+)
+{
+  exists(/* @fun_decl */ interned entity fd |
+    #fun_defMerge(fd) and
+    exists(
+      /* @type */ interned dontcare entity _, interned dontcare string _1,
+      /* @location_default */ interned dontcare entity _2
+     |
+      #fun_declsMerge(fd, f, _, _1, _2)
+    )
+  )
+}
+
+`ResolveFunction::onlyOneCompleteFunctionExistsWithMangledName/1#26ed2028`(
+  /* @mangledname */ interned unique entity name
+)
+{
+  exists(int strictcount#output |
+    strictcount#output = 1 and
+    strictcount#output = count()(/* @function */ interned entity f |
+      `ResolveFunction::hasDefinition/1#c360eac3`(f) and
+      #mangled_nameMerge(f, name, true) |
+      true()
+    )
+  )
+}
+
+`ResolveFunction::isFunctionWithMangledNameAndWithDefinition/2#2ef3d594`(
+  /* @mangledname */ interned entity name, /* @function */ interned entity f
+)
+{
+  `ResolveFunction::hasDefinition/1#c360eac3`(f) and
+  #mangled_nameMerge(f, name, true) and
+  `ResolveFunction::onlyOneCompleteFunctionExistsWithMangledName/1#26ed2028`(name)
+}
+
+`ResolveFunction::hasTwinWithDefinition/2#7797163b`(
+  /* @function */ interned entity incomplete,
+  /* @function */ interned entity complete
+)
+{
+  exists(/* @mangledname */ interned entity name |
+    #@functionMergeTypeCall(incomplete) and
+    not(`ResolveFunction::hasDefinition/1#c360eac3`(incomplete)) and
+    #mangled_nameMerge(incomplete, name, true) and
+    `ResolveFunction::isFunctionWithMangledNameAndWithDefinition/2#2ef3d594`(name,
+      complete)
+  ) and
+  not(#function_instantiationMerge(incomplete, complete)) and
+  (not(#compgeneratedMerge(incomplete)) or not(#compgeneratedMerge(complete)))
+}
+
+noinline
+`project#ResolveFunction::hasTwinWithDefinition/2#7797163b`(
+  /* @function */ interned entity f
+)
+{
+  exists(/* @function */ interned dontcare entity _ |
+    `ResolveFunction::hasTwinWithDefinition/2#7797163b`(f, _)
+  )
+}
+
+`ResolveFunction::resolveFunction/1#576ba5ee`(
+  /* @function */ interned entity f, /* @function */ entity result
+)
+{
+  (
+    #@functionMergeTypeCall(result) and
+    `ResolveFunction::hasTwinWithDefinition/2#7797163b`(f, result)
+  )
+  or
+  (
+    #@functionMergeTypeCall(f) and
+    not(`project#ResolveFunction::hasTwinWithDefinition/2#7797163b`(f)) and
+    result = f
+  )
+}
+
+`ResolveFunction::isFunction/1#9226b83f`(/* @function */ unique entity f) {
+  exists(/* @function */ interned dontcare entity _ |
+    `ResolveFunction::resolveFunction/1#576ba5ee`(_, f)
+  )
+}
+
+query `ResolveFunction::isFunction/1#9226b83f` =
+`ResolveFunction::isFunction/1#9226b83f`/1
+.
+
+query `ResolveFunction::resolveFunction/1#576ba5ee` =
+`ResolveFunction::resolveFunction/1#576ba5ee`/2
+.
+
+
+/* ---------- END STAGE ---------- */
+#overlayChangedFilesMergeNoDiscard(interned unique string path) =
+  mergeWithOverlay<string>(overlayChangedFiles/1)
+.
+
+
+overlayLocal @globalvariable(/* @globalvariable */ interned unique entity id) {
+  exists(/* @type */ interned dontcare entity _, interned dontcare string _1 |
+    globalvariables(id, _, _1)
+  )
+}
+
+overlayLocal @variable(/* @variable */ interned unique entity X) {
+  exists(/* @type */ interned dontcare entity _, interned dontcare string _1 |
+    localvariables(X, _, _1)
+  ) or
+  exists(
+    /* @parameterized_element */ interned dontcare entity _,
+    interned dontcare int _1, /* @type */ interned dontcare entity _2
+   |
+    params(X, _, _1, _2)
+  ) or
+  exists(/* @type */ interned dontcare entity _, interned dontcare string _1 |
+    globalvariables(X, _, _1)
+  ) or
+  exists(/* @type */ interned dontcare entity _, interned dontcare string _1 |
+    membervariables(X, _, _1)
+  )
+}
+
+overlayLocal
+`Overlay::locallyInTrapOrTag/3#1694c9f7`(
+  boolean isOverlayVariant, /* @element */ interned entity e,
+  /* @trap_or_tag */ interned entity t
+)
+{
+  in_trap_or_tag(e, t) and
+  (
+    (databaseMetadata("isOverlay", "true") and isOverlayVariant = true)
+    or
+    (not(databaseMetadata("isOverlay", "true")) and isOverlayVariant = false)
+  )
+}
+
+`#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(
+  boolean isOverlayVariant, /* @element */ interned entity e,
+  /* @trap_or_tag */ interned entity t
+) =
+  mergeWithOverlay<boolean,@element,@trap_or_tag>(`Overlay::locallyInTrapOrTag/3#1694c9f7`/3)
+.
+
+
+overlayLocal
+`Overlay::locallyReachableTrapOrTag/3#11241854`(
+  boolean isOverlayVariant, interned string sourceFile,
+  /* @trap_or_tag */ entity t
+)
+{
+  exists(/* @trap */ interned entity trap |
+    exists(/* @source_file */ interned entity sf |
+      source_file_name(sf, sourceFile) and source_file_uses_trap(sf, trap)
+    ) and
+    (t = trap or trap_uses_tag(trap, t))
+  ) and
+  (
+    (databaseMetadata("isOverlay", "true") and isOverlayVariant = true)
+    or
+    (not(databaseMetadata("isOverlay", "true")) and isOverlayVariant = false)
+  )
+}
+
+`#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(
+  boolean isOverlayVariant, interned string sourceFile,
+  /* @trap_or_tag */ entity t
+) =
+  mergeWithOverlay<boolean,string,@trap_or_tag>(`Overlay::locallyReachableTrapOrTag/3#11241854`/3)
+.
+
+
+overlayLocal
+`OverlayXml::getXmlFile/1#4a39a118`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  exists(/* @file */ interned entity file |
+    exists(/* @location_default */ interned entity location |
+      xmllocations(locatable, location) and
+      exists(
+        interned dontcare int _, interned dontcare int _1,
+        interned dontcare int _2, interned dontcare int _3
+       |
+        locations_default(location, file, _, _1, _2, _3)
+      )
+    ) and
+    files(file, result)
+  )
+}
+
+overlayLocal
+`OverlayXml::getXmlFileInBase/1#52500c49`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  not(databaseMetadata("isOverlay", "true")) and
+  `OverlayXml::getXmlFile/1#4a39a118`(locatable, result)
+}
+
+`#OverlayXml::getXmlFileInBase/1#52500c49MergeNoDiscard`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+) =
+  mergeWithOverlay<@xmllocatable,string>(`OverlayXml::getXmlFileInBase/1#52500c49`/2)
+.
+
+
+noinline
+overlayLocal
+project#xmlNs(/* @xmllocatable */ interned entity locatable)
+{
+  exists(
+    interned dontcare string _, interned dontcare string _1,
+    /* @file */ interned dontcare entity _2
+   |
+    xmlNs(locatable, _, _1, _2)
+  )
+}
+
+overlayLocal
+`OverlayXml::overlayXmlExtracted/1#55443f98`(interned unique string file)
+{
+  exists(/* @xmllocatable */ interned entity locatable |
+    databaseMetadata("isOverlay", "true") and
+    `OverlayXml::getXmlFile/1#4a39a118`(locatable, file) and
+    not(exists(interned dontcare string _ | files(locatable, _))) and
+    not(project#xmlNs(locatable))
+  )
+}
+
+`#OverlayXml::overlayXmlExtracted/1#55443f98MergeNoDiscard`(
+  interned unique string file
+) =
+  mergeWithOverlay<string>(`OverlayXml::overlayXmlExtracted/1#55443f98`/1)
+.
+
+
+idDiscard(/* @element */ interned unique entity e) {
+  (
+    exists(/* @trap_or_tag */ interned dontcare entity _ |
+      `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(false, e, _)
+    ) and
+    not(
+      exists(/* @trap_or_tag */ interned entity t |
+        `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(true, e, t) and
+        exists(interned dontcare string _ |
+          `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+            _, t)
+        )
+      )
+    ) and
+    not(
+      exists(interned string sourceFile, /* @trap_or_tag */ interned entity t |
+        `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(false, e, t) and
+        `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(false,
+          sourceFile, t) and
+        not(
+          #overlayChangedFilesMergeNoDiscard(sourceFile) or
+          exists(interned dontcare string _ |
+            `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+              _, t)
+          ) or
+          exists(/* @trap_or_tag */ dontcare entity _ |
+            `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+              sourceFile, _)
+          )
+        )
+      )
+    )
+  )
+  or
+  exists(interned string file |
+    (
+      #overlayChangedFilesMergeNoDiscard(file) or
+      `#OverlayXml::overlayXmlExtracted/1#55443f98MergeNoDiscard`(file)
+    ) and
+    `#OverlayXml::getXmlFileInBase/1#52500c49MergeNoDiscard`(e, file)
+  )
+}
+
+#@globalvariableMergeTypeCall(/* @globalvariable */ interned unique entity id) =
+  mergeWithOverlay<faithful discard @globalvariable>(@globalvariable/1,
+                                                     idDiscard/1)
+.
+
+
+#@variableMergeTypeCall(/* @variable */ interned unique entity X) =
+  mergeWithOverlay<faithful discard @variable>(@variable/1, idDiscard/1)
+.
+
+
+#mangled_nameMerge(
+  /* @declaration */ interned entity id,
+  /* @mangledname */ interned entity mangled_name, interned boolean is_complete
+) =
+  mergeWithOverlay<discard @declaration,faithful discard @mangledname,boolean>(mangled_name/3,
+                                                                               idDiscard/1,
+                                                                               idDiscard/1)
+.
+
+
+#var_declsMerge(
+  /* @var_decl */ interned entity id, /* @variable */ interned entity variable,
+  /* @type */ interned entity type_id, interned string name,
+  /* @location_default */ interned entity location
+) =
+  mergeWithOverlay<faithful discard @var_decl,discard @variable,discard @type,string,discard @location_default>(var_decls/5,
+                                                                                                                idDiscard/1,
+                                                                                                                idDiscard/1,
+                                                                                                                idDiscard/1,
+                                                                                                                idDiscard/1)
+.
+
+
+#var_defMerge(/* @var_decl */ interned unique entity id) =
+  mergeWithOverlay<discard @var_decl>(var_def/1, idDiscard/1)
+.
+
+
+#variable_instantiationMerge(
+  /* @variable */ interned entity to, /* @variable */ interned entity from
+) =
+  mergeWithOverlay<discard @variable,discard @variable>(variable_instantiation/2,
+                                                        idDiscard/1, idDiscard/1)
+.
+
+
+`ResolveGlobalVariable::hasDefinition/1#b8c2d296`(
+  /* @globalvariable */ interned unique entity g
+)
+{
+  exists(/* @var_decl */ interned entity vd |
+    #@globalvariableMergeTypeCall(g) and
+    exists(
+      /* @type */ interned dontcare entity _, interned dontcare string _1,
+      /* @location_default */ interned dontcare entity _2
+     |
+      #var_declsMerge(vd, g, _, _1, _2)
+    ) and
+    #var_defMerge(vd)
+  )
+}
+
+`ResolveGlobalVariable::onlyOneCompleteGlobalVariableExistsWithMangledName/1#75fdafa8`(
+  /* @mangledname */ interned unique entity name
+)
+{
+  exists(int strictcount#output |
+    strictcount#output = 1 and
+    strictcount#output = count()(/* @globalvariable */ interned entity g |
+      `ResolveGlobalVariable::hasDefinition/1#b8c2d296`(g) and
+      exists(interned dontcare boolean _ | #mangled_nameMerge(g, name, _)) |
+      true()
+    )
+  )
+}
+
+`ResolveGlobalVariable::hasTwinWithDefinition/2#b8884456`(
+  /* @globalvariable */ interned entity incomplete,
+  /* @globalvariable */ interned entity complete
+)
+{
+  exists(/* @mangledname */ interned entity name |
+    #@globalvariableMergeTypeCall(incomplete) and
+    not(`ResolveGlobalVariable::hasDefinition/1#b8c2d296`(incomplete)) and
+    exists(interned dontcare boolean _ |
+      #mangled_nameMerge(incomplete, name, _)
+    ) and
+    `ResolveGlobalVariable::onlyOneCompleteGlobalVariableExistsWithMangledName/1#75fdafa8`(name) and
+    exists(interned dontcare boolean _ | #mangled_nameMerge(complete, name, _))
+  ) and
+  `ResolveGlobalVariable::hasDefinition/1#b8c2d296`(complete) and
+  not(#variable_instantiationMerge(incomplete, complete))
+}
+
+noinline
+`project#ResolveGlobalVariable::hasTwinWithDefinition/2#b8884456`(
+  /* @variable */ interned entity v
+)
+{
+  exists(/* @globalvariable */ interned dontcare entity _ |
+    `ResolveGlobalVariable::hasTwinWithDefinition/2#b8884456`(v, _)
+  )
+}
+
+`ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f`(
+  /* @variable */ interned entity v, /* @variable */ entity result
+)
+{
+  (
+    #@variableMergeTypeCall(result) and
+    `ResolveGlobalVariable::hasTwinWithDefinition/2#b8884456`(v, result)
+  )
+  or
+  (
+    #@variableMergeTypeCall(v) and
+    not(`project#ResolveGlobalVariable::hasTwinWithDefinition/2#b8884456`(v)) and
+    result = v
+  )
+}
+
+noinline
+`project#ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f`(
+  /* @variable */ entity v
+)
+{
+  exists(/* @variable */ interned dontcare entity _ |
+    `ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f`(_, v)
+  )
+}
+
+`ResolveGlobalVariable::isVariable/1#6e051315`(
+  /* @variable */ interned unique entity v
+)
+{
+  #@variableMergeTypeCall(v) and
+  (
+    not(#@globalvariableMergeTypeCall(v)) or
+    `project#ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f`(v)
+  )
+}
+
+query `ResolveGlobalVariable::isVariable/1#6e051315` =
+`ResolveGlobalVariable::isVariable/1#6e051315`/1
+.
+
+query `ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f` =
+`ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f`/2
+.
+
+
+/* ---------- END STAGE ---------- */
+#overlayChangedFilesMergeNoDiscard(interned unique string path) =
+  mergeWithOverlay<string>(overlayChangedFiles/1)
+.
+
+
+#sourceLocationPrefixMerge(interned unique string prefix) =
+  mergeWithOverlay<string>(sourceLocationPrefix/1)
+.
+
+
+overlayLocal @macroinvocation(/* @macroinvocation */ interned unique entity id) {
+  exists(
+    /* @ppd_define */ interned dontcare entity _,
+    /* @location_default */ interned dontcare entity _1,
+    interned dontcare int _2
+   |
+    macroinvocations(id, _, _1, _2)
+  )
+}
+
+overlayLocal @ppd_define(/* @ppd_define */ interned unique entity X) {
+  exists(/* @location_default */ interned dontcare entity _ |
+    preprocdirects(X, 7, _)
+  )
+}
+
+overlayLocal
+`Overlay::locallyInTrapOrTag/3#1694c9f7`(
+  boolean isOverlayVariant, /* @element */ interned entity e,
+  /* @trap_or_tag */ interned entity t
+)
+{
+  in_trap_or_tag(e, t) and
+  (
+    (databaseMetadata("isOverlay", "true") and isOverlayVariant = true)
+    or
+    (not(databaseMetadata("isOverlay", "true")) and isOverlayVariant = false)
+  )
+}
+
+`#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(
+  boolean isOverlayVariant, /* @element */ interned entity e,
+  /* @trap_or_tag */ interned entity t
+) =
+  mergeWithOverlay<boolean,@element,@trap_or_tag>(`Overlay::locallyInTrapOrTag/3#1694c9f7`/3)
+.
+
+
+overlayLocal
+`Overlay::locallyReachableTrapOrTag/3#11241854`(
+  boolean isOverlayVariant, interned string sourceFile,
+  /* @trap_or_tag */ entity t
+)
+{
+  exists(/* @trap */ interned entity trap |
+    exists(/* @source_file */ interned entity sf |
+      source_file_name(sf, sourceFile) and source_file_uses_trap(sf, trap)
+    ) and
+    (t = trap or trap_uses_tag(trap, t))
+  ) and
+  (
+    (databaseMetadata("isOverlay", "true") and isOverlayVariant = true)
+    or
+    (not(databaseMetadata("isOverlay", "true")) and isOverlayVariant = false)
+  )
+}
+
+`#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(
+  boolean isOverlayVariant, interned string sourceFile,
+  /* @trap_or_tag */ entity t
+) =
+  mergeWithOverlay<boolean,string,@trap_or_tag>(`Overlay::locallyReachableTrapOrTag/3#11241854`/3)
+.
+
+
+overlayLocal
+`OverlayXml::getXmlFile/1#4a39a118`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  exists(/* @file */ interned entity file |
+    exists(/* @location_default */ interned entity location |
+      xmllocations(locatable, location) and
+      exists(
+        interned dontcare int _, interned dontcare int _1,
+        interned dontcare int _2, interned dontcare int _3
+       |
+        locations_default(location, file, _, _1, _2, _3)
+      )
+    ) and
+    files(file, result)
+  )
+}
+
+overlayLocal
+`OverlayXml::getXmlFileInBase/1#52500c49`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+)
+{
+  not(databaseMetadata("isOverlay", "true")) and
+  `OverlayXml::getXmlFile/1#4a39a118`(locatable, result)
+}
+
+`#OverlayXml::getXmlFileInBase/1#52500c49MergeNoDiscard`(
+  /* @xmllocatable */ interned entity locatable, interned string result
+) =
+  mergeWithOverlay<@xmllocatable,string>(`OverlayXml::getXmlFileInBase/1#52500c49`/2)
+.
+
+
+noinline
+overlayLocal
+project#xmlNs(/* @xmllocatable */ interned entity locatable)
+{
+  exists(
+    interned dontcare string _, interned dontcare string _1,
+    /* @file */ interned dontcare entity _2
+   |
+    xmlNs(locatable, _, _1, _2)
+  )
+}
+
+overlayLocal
+`OverlayXml::overlayXmlExtracted/1#55443f98`(interned unique string file)
+{
+  exists(/* @xmllocatable */ interned entity locatable |
+    databaseMetadata("isOverlay", "true") and
+    `OverlayXml::getXmlFile/1#4a39a118`(locatable, file) and
+    not(exists(interned dontcare string _ | files(locatable, _))) and
+    not(project#xmlNs(locatable))
+  )
+}
+
+`#OverlayXml::overlayXmlExtracted/1#55443f98MergeNoDiscard`(
+  interned unique string file
+) =
+  mergeWithOverlay<string>(`OverlayXml::overlayXmlExtracted/1#55443f98`/1)
+.
+
+
+idDiscard(/* @element */ interned unique entity e) {
+  (
+    exists(/* @trap_or_tag */ interned dontcare entity _ |
+      `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(false, e, _)
+    ) and
+    not(
+      exists(/* @trap_or_tag */ interned entity t |
+        `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(true, e, t) and
+        exists(interned dontcare string _ |
+          `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+            _, t)
+        )
+      )
+    ) and
+    not(
+      exists(interned string sourceFile, /* @trap_or_tag */ interned entity t |
+        `#Overlay::locallyInTrapOrTag/3#1694c9f7MergeNoDiscard`(false, e, t) and
+        `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(false,
+          sourceFile, t) and
+        not(
+          #overlayChangedFilesMergeNoDiscard(sourceFile) or
+          exists(interned dontcare string _ |
+            `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+              _, t)
+          ) or
+          exists(/* @trap_or_tag */ dontcare entity _ |
+            `#Overlay::locallyReachableTrapOrTag/3#11241854MergeNoDiscard`(true,
+              sourceFile, _)
+          )
+        )
+      )
+    )
+  )
+  or
+  exists(interned string file |
+    (
+      #overlayChangedFilesMergeNoDiscard(file) or
+      `#OverlayXml::overlayXmlExtracted/1#55443f98MergeNoDiscard`(file)
+    ) and
+    `#OverlayXml::getXmlFileInBase/1#52500c49MergeNoDiscard`(e, file)
+  )
+}
+
+#@macroinvocationMergeTypeCall(/* @macroinvocation */ interned unique entity id) =
+  mergeWithOverlay<faithful discard @macroinvocation>(@macroinvocation/1,
+                                                      idDiscard/1)
+.
+
+
+#@ppd_defineMergeTypeCall(/* @ppd_define */ interned unique entity X) =
+  mergeWithOverlay<faithful discard @ppd_define>(@ppd_define/1, idDiscard/1)
+.
+
+
+#filesMerge(/* @file */ interned entity id, interned string name) =
+  mergeWithOverlay<faithful discard @file,string>(files/2, idDiscard/1)
+.
+
+
+#locations_defaultMerge(
+  /* @location_default */ interned entity id, /* @file */ interned entity file,
+  interned int beginLine, interned int beginColumn, interned int endLine,
+  interned int endColumn
+) =
+  mergeWithOverlay<faithful discard @location_default,discard @file,int,int,int,int>(locations_default/6,
+                                                                                     idDiscard/1,
+                                                                                     idDiscard/1)
+.
+
+
+#macroinvocationsMerge(
+  /* @macroinvocation */ interned entity id,
+  /* @ppd_define */ interned entity macro_id,
+  /* @location_default */ interned entity location, interned int kind
+) =
+  mergeWithOverlay<faithful discard @macroinvocation,discard @ppd_define,discard @location_default,int>(macroinvocations/4,
+                                                                                                        idDiscard/1,
+                                                                                                        idDiscard/1,
+                                                                                                        idDiscard/1)
+.
+
+
+#macroparentMerge(
+  /* @macroinvocation */ interned entity id,
+  /* @macroinvocation */ interned entity parent_id
+) =
+  mergeWithOverlay<discard @macroinvocation,discard @macroinvocation>(macroparent/2,
+                                                                      idDiscard/1,
+                                                                      idDiscard/1)
+.
+
+
+#preproctextMerge(
+  /* @preprocdirect */ interned entity id, interned string head,
+  interned string body
+) =
+  mergeWithOverlay<discard @preprocdirect,string,string>(preproctext/3,
+                                                         idDiscard/1)
+.
+
+
+suppressTypeErrors
+`File::Impl::Container.getRelativePath/0#dispred#deec4f8e`(
+  /* FileSystem::Make<File::Input>::Container */ interned entity this,
+  string result
+)
+{
+  exists(interned string absPath |
+    #filesMerge(this, absPath) and
+    (
+      (#sourceLocationPrefixMerge(absPath) and result = "")
+      or
+      (
+        exists(string call_result#2 |
+          exists(interned string pref |
+            #sourceLocationPrefixMerge(pref) and
+            regexpReplaceAll(pref, "/$", "", call_result#2)
+          ) and
+          Append(call_result#2, "/", result, absPath)
+        ) and
+        not(matches(result, "/%"))
+      )
+    )
+  )
+}
+
+noinline
+nomagic
+`Location::Location.getContainer/0#9edabfb6`(
+  /* Location::Location */ interned entity this,
+  /* File::Container */ interned entity result
+)
+{
+  exists(
+    interned dontcare int _, interned dontcare int _1, interned dontcare int _2,
+    interned dontcare int _3
+   |
+    #locations_defaultMerge(this, result, _, _1, _2, _3)
+  )
+}
+
+noinline
+nomagic
+suppressTypeErrors
+`Location::Location.getContainer/0#dispred#b57788b1`(
+  /* Location::Location */ interned entity this,
+  /* File::Container */ interned entity result
+)
+{
+  `Location::Location.getContainer/0#9edabfb6`(this, result)
+}
+
+noinline
+nomagic
+`Location::Location.getStartLine/0#d54f9e6c`(
+  /* Location::Location */ interned entity this, interned int result
+)
+{
+  exists(
+    /* File::Container */ interned dontcare entity _, interned dontcare int _1,
+    interned dontcare int _2, interned dontcare int _3
+   |
+    #locations_defaultMerge(this, _, result, _1, _2, _3)
+  )
+}
+
+noinline
+nomagic
+suppressTypeErrors
+`Location::Location.getStartLine/0#dispred#45c02ada`(
+  /* Location::Location */ interned entity this, interned int result
+)
+{
+  `Location::Location.getStartLine/0#d54f9e6c`(this, result)
+}
+
+suppressTypeErrors
+`Macro::Macro.getName/0#dispred#e28b3699`(
+  /* Macro::Macro */ interned entity this, string result
+)
+{
+  exists(interned string call_result#2 |
+    #@ppd_defineMergeTypeCall(this) and
+    exists(interned dontcare string _ |
+      #preproctextMerge(this, call_result#2, _)
+    ) and
+    regexpCapture(call_result#2, "([^(]*+).*", 1, result)
+  )
+}
+
+suppressTypeErrors
+`Macro::MacroAccess.getMacroName/0#dispred#d57f622d`(
+  /* Macro::MacroAccess */ interned entity this, string result
+)
+{
+  exists(/* Macro::Macro */ interned entity call_result#2 |
+    `Macro::Macro.getName/0#dispred#e28b3699`(call_result#2, result) and
+    exists(
+      /* @location_default */ interned dontcare entity _,
+      interned dontcare int _1
+     |
+      #macroinvocationsMerge(this, call_result#2, _, _1)
+    )
+  )
+}
+
+suppressTypeErrors
+`Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62`(
+  /* Macro::MacroAccess */ interned entity this,
+  /* Macro::MacroInvocation */ interned entity result
+)
+{
+  #macroparentMerge(this, result) and
+  exists(
+    /* @ppd_define */ interned dontcare entity _,
+    /* @location_default */ interned dontcare entity _1
+   |
+    #macroinvocationsMerge(result, _, _1, 1)
+  )
+}
+
+incremental
+`Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db`(
+  /* Macro::MacroAccess */ interned entity this,
+  /* Macro::MacroAccess */ entity result
+)
+{
+  [base_case]
+  #@macroinvocationMergeTypeCall(this) and
+  not(
+    exists(/* Macro::MacroInvocation */ interned dontcare entity _ |
+      `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62`(this, _)
+    )
+  ) and
+  result = this
+  [recursive_case]
+  exists(/* Macro::MacroInvocation */ interned entity call_result#3 |
+    delta previous rec `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db`(call_result#3,
+      result) and
+    #@macroinvocationMergeTypeCall(result) and
+    `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62`(this,
+      call_result#3)
+  ) and
+  not(
+    previous rec `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db`(this,
+      result)
+  )
+}
+
+suppressTypeErrors
+`Macro::MacroAccess.getLocation/0#dispred#91048e4b`(
+  /* Macro::MacroAccess */ interned entity this,
+  /* Location::Location */ interned entity result
+)
+{
+  exists(/* Macro::MacroAccess */ interned entity call_result#2 |
+    exists(
+      /* @ppd_define */ interned dontcare entity _, interned dontcare int _1
+     |
+      #macroinvocationsMerge(call_result#2, _, result, _1)
+    ) and
+    `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db`(this, call_result#2)
+  )
+}
+
+noinline
+nomagic
+`Element::Element.getFile/0#2b8c8740`(
+  /* Element::Element */ interned entity this,
+  /* File::File */ interned entity result
+)
+{
+  exists(/* Location::Location */ interned entity call_result#2 |
+    `Location::Location.getContainer/0#dispred#b57788b1`(call_result#2, result) and
+    `Macro::MacroAccess.getLocation/0#dispred#91048e4b`(this, call_result#2)
+  )
+}
+
+noinline
+nomagic
+suppressTypeErrors
+`Element::Element.getFile/0#dispred#536cb5f3`(
+  /* Element::Element */ interned entity this,
+  /* File::File */ interned entity result
+)
+{
+  `Element::Element.getFile/0#2b8c8740`(this, result)
+}
+
+suppressTypeErrors
+#select#query(string #col, string #col#2, interned int startLine)
+{
+  exists(/* File::File */ interned entity call_result#7 |
+    exists(string call_result |
+      exists(/* File::File */ interned entity call_result#2 |
+        exists(/* Macro::MacroInvocation */ interned entity mi |
+          exists(/* Location::Location */ interned entity call_result#10 |
+            `Macro::MacroAccess.getMacroName/0#dispred#d57f622d`(mi, #col#2) and
+            (
+              (
+                `Macro::MacroAccess.getMacroName/0#dispred#d57f622d`(mi,
+                  "NEXT_PASS") and
+                exists(
+                  /* @ppd_define */ interned dontcare entity _,
+                  /* @location_default */ interned dontcare entity _1
+                 |
+                  #macroinvocationsMerge(mi, _, _1, 1)
+                )
+              )
+              or
+              (
+                `Macro::MacroAccess.getMacroName/0#dispred#d57f622d`(mi,
+                  "NEXT_PASS_WITH_ARG") and
+                exists(
+                  /* @ppd_define */ interned dontcare entity _,
+                  /* @location_default */ interned dontcare entity _1
+                 |
+                  #macroinvocationsMerge(mi, _, _1, 1)
+                )
+              )
+              or
+              (
+                `Macro::MacroAccess.getMacroName/0#dispred#d57f622d`(mi,
+                  "NEXT_PASS_NUM") and
+                exists(
+                  /* @ppd_define */ interned dontcare entity _,
+                  /* @location_default */ interned dontcare entity _1
+                 |
+                  #macroinvocationsMerge(mi, _, _1, 1)
+                )
+              )
+            ) and
+            exists(
+              /* @ppd_define */ interned dontcare entity _,
+              /* @location_default */ interned dontcare entity _1
+             |
+              #macroinvocationsMerge(mi, _, _1, 1)
+            ) and
+            `Element::Element.getFile/0#dispred#536cb5f3`(mi, call_result#2) and
+            `Macro::MacroAccess.getLocation/0#dispred#91048e4b`(mi,
+              call_result#10) and
+            `Location::Location.getStartLine/0#dispred#45c02ada`(call_result#10,
+              startLine)
+          ) and
+          `Element::Element.getFile/0#dispred#536cb5f3`(mi, call_result#7)
+        ) and
+        `File::Impl::Container.getRelativePath/0#dispred#deec4f8e`(call_result#2,
+          call_result)
+      ) and
+      matches(call_result, "%/passes.def")
+    ) and
+    `File::Impl::Container.getRelativePath/0#dispred#deec4f8e`(call_result#7,
+      #col)
+  )
+}
+
+query #select = #select#query/3 order by asc 2.
+
+
+/* ---------- END STAGE ---------- */

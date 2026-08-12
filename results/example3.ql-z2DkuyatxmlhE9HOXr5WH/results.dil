@@ -1,0 +1,8 @@
+suppressTypeErrors #select#query(unique int #col, unique string #col#2) {
+  #col#2 = "Hello, world!" and TimesInt(6, 7, #col)
+}
+
+query #select = #select#query/2 .
+
+
+/* ---------- END STAGE ---------- */

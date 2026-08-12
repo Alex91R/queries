@@ -1,0 +1,14 @@
+Completed evaluation of query example3.ql.
+Most expensive predicates for stage 0 of completed query example3.ql:
+        time | predicate
+        -----|----------
+         5ms | #select#query@645efbg3
+
+Most expensive predicates for completed query example3.ql:
+        time | predicate
+        -----|----------
+         5ms | #select#query@645efbg3
+
+[2026-07-24 19:06:04] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.0 seconds
+        * Total time spent evaluating predicates: 0.0 seconds

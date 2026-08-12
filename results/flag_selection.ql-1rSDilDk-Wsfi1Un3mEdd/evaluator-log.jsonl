@@ -1,0 +1,302 @@
+{
+  "time" : "2026-08-12T13:53:12.281432019Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 2,
+  "nanoTime" : 169277632,
+  "codeqlVersion" : "2.26.2",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-08-12T13:53:12.300354451Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 3,
+  "nanoTime" : 188206686,
+  "queryName" : "/home/oleksii-shemshur/work/toolchains/tools/queries/flag_selection.ql",
+  "stages" : [ 0 ]
+}
+
+{
+  "time" : "2026-08-12T13:53:12.313735650Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 4,
+  "nanoTime" : 201607011,
+  "raHash" : "e1d22ci2qkfij5648hhmovea1o7",
+  "predicateName" : "preprocdirects",
+  "appearsAs" : {
+    "preprocdirects" : [ 0 ]
+  },
+  "predicateType" : "EXTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmlecode.cpp.dbscheme:2422,1-2426,3",
+  "dependencies" : { },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-08-12T13:53:12.344632358Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 5,
+  "nanoTime" : 232492718,
+  "startEvent" : 4,
+  "resultSize" : 168998
+}
+
+{
+  "time" : "2026-08-12T13:53:12.350220989Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 6,
+  "nanoTime" : 238074647,
+  "raHash" : "6b2750k4ad5qs1qj3oiq5mj4mqd",
+  "predicateName" : "preprocdirects_10#join_rhs",
+  "appearsAs" : {
+    "preprocdirects_10#join_rhs" : [ 0 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmlecode.cpp.dbscheme:2435,4-2435,19",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN preprocdirects OUTPUT In.1, In.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "preprocdirects" : "e1d22ci2qkfij5648hhmovea1o7"
+  },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-08-12T13:53:12.358393608Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 7,
+  "nanoTime" : 246251624,
+  "predicateStartEvent" : 6,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-12T13:53:12.405214365Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 8,
+  "nanoTime" : 293082119,
+  "startEvent" : 7,
+  "resultSize" : 166891
+}
+
+{
+  "time" : "2026-08-12T13:53:12.405362723Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 9,
+  "nanoTime" : 293197836,
+  "startEvent" : 6,
+  "resultSize" : 166891
+}
+
+{
+  "time" : "2026-08-12T13:53:12.407086369Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 10,
+  "nanoTime" : 294936039,
+  "raHash" : "6a2d37b7t7e7p0g98ottae733r1",
+  "predicateName" : "@ppd_define",
+  "appearsAs" : {
+    "@ppd_define" : [ 0 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmlecode.cpp.dbscheme:2435,4-2435,19",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = CONSTANT(unique int)[7]",
+      "    {1}    | JOIN WITH preprocdirects_10#join_rhs ON FIRST 1 OUTPUT Rhs.1",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "preprocdirects_10#join_rhs" : "6b2750k4ad5qs1qj3oiq5mj4mqd"
+  },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-08-12T13:53:12.408112901Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 11,
+  "nanoTime" : 295954365,
+  "predicateStartEvent" : 10,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-12T13:53:12.410848612Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 12,
+  "nanoTime" : 298698242,
+  "startEvent" : 11,
+  "resultSize" : 40855
+}
+
+{
+  "time" : "2026-08-12T13:53:12.410932198Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 13,
+  "nanoTime" : 298766750,
+  "startEvent" : 10,
+  "resultSize" : 40855
+}
+
+{
+  "time" : "2026-08-12T13:53:12.411386419Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 14,
+  "nanoTime" : 299239445,
+  "raHash" : "989e8bm3m27tjc92vnro6crogq6",
+  "predicateName" : "preproctext",
+  "appearsAs" : {
+    "preproctext" : [ 0 ]
+  },
+  "predicateType" : "EXTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmlecode.cpp.dbscheme:2461,1-2465,3",
+  "dependencies" : { },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-08-12T13:53:12.422816155Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 15,
+  "nanoTime" : 310682115,
+  "startEvent" : 14,
+  "resultSize" : 125981
+}
+
+{
+  "time" : "2026-08-12T13:53:12.424786944Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 16,
+  "nanoTime" : 312642285,
+  "raHash" : "9083fa3calu2hlvfs0lktudqdf5",
+  "predicateName" : "Macro::Macro.getName/0#dispred#e28b3699",
+  "appearsAs" : {
+    "Macro::Macro.getName/0#dispred#e28b3699" : [ 0 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Macro.qll:33,3-37,78",
+  "ra" : {
+    "pipeline" : [
+      "    {3} r1 = JOIN @ppd_define WITH preproctext ON FIRST 1 OUTPUT Lhs.0, Rhs.1, _",
+      "    {3}    | REWRITE WITH Out.2 := \"([^(]*+).*\"",
+      "    {5}    | JOIN WITH PRIMITIVE regexpCapture#bbff ON Lhs.1,Lhs.2",
+      "    {6}    | SCAN OUTPUT In.0, In.1, In.2, In.3, In.4, _",
+      "    {5}    | REWRITE WITH Tmp.5 := 1, TEST InOut.3 = Tmp.5 KEEPING 5",
+      "    {2}    | SCAN OUTPUT In.0, In.4",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "@ppd_define" : "6a2d37b7t7e7p0g98ottae733r1",
+    "preproctext" : "989e8bm3m27tjc92vnro6crogq6"
+  },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-08-12T13:53:12.425946264Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 17,
+  "nanoTime" : 313789653,
+  "predicateStartEvent" : 16,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-12T13:53:12.583718418Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 18,
+  "nanoTime" : 471575271,
+  "startEvent" : 17,
+  "resultSize" : 40855
+}
+
+{
+  "time" : "2026-08-12T13:53:12.583819828Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 19,
+  "nanoTime" : 471655441,
+  "startEvent" : 16,
+  "resultSize" : 40855
+}
+
+{
+  "time" : "2026-08-12T13:53:12.585346145Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 20,
+  "nanoTime" : 473190535,
+  "raHash" : "7090e99n9cgu3ddhclpjdudu7p8",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 0 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/flag_selection.ql:10,1-16,49",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = REWRITE `Macro::Macro.getName/0#dispred#e28b3699` WITH TEST InOut.1 matches_constant \"(?s)flag..*\"",
+      "    {1}    | SCAN OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "    {2}    | JOIN WITH `Macro::Macro.getName/0#dispred#e28b3699` ON FIRST 1 OUTPUT Lhs.0, Rhs.1",
+      "    {3}    | JOIN WITH preproctext ON FIRST 1 OUTPUT Lhs.1, Rhs.2, _",
+      "    {3}    | REWRITE WITH Tmp.2 := 5, Out.2 := suffix(InOut.0,Tmp.2)",
+      "    {6}    | SCAN OUTPUT _, In.0, In.1, In.2, _, _",
+      "    {3}    | REWRITE WITH Tmp.0 := \"-f\", Tmp.4 := \"_\", Tmp.5 := \"-\", Tmp.4 := replaceAll(In.3,Tmp.4,Tmp.5), Out.0 := (Tmp.0 ++ Tmp.4) KEEPING 3",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Macro::Macro.getName/0#dispred#e28b3699" : "9083fa3calu2hlvfs0lktudqdf5",
+    "preproctext" : "989e8bm3m27tjc92vnro6crogq6"
+  },
+  "queryCausingWork" : 3
+}
+
+{
+  "time" : "2026-08-12T13:53:12.585905121Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 21,
+  "nanoTime" : 473745153,
+  "predicateStartEvent" : 20,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-12T13:53:12.614483539Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 22,
+  "nanoTime" : 502347165,
+  "startEvent" : 21,
+  "resultSize" : 481
+}
+
+{
+  "time" : "2026-08-12T13:53:12.614604575Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 23,
+  "nanoTime" : 502441041,
+  "startEvent" : 20,
+  "resultSize" : 481
+}
+
+{
+  "time" : "2026-08-12T13:53:12.626742567Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 24,
+  "nanoTime" : 514609660,
+  "startEvent" : 3,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-08-12T13:53:12.629165984Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 25,
+  "nanoTime" : 517018459
+}

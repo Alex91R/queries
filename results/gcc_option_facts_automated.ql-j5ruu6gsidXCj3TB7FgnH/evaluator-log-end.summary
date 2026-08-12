@@ -1,0 +1,20 @@
+Completed evaluation of query gcc_option_facts_automated.ql.
+Most expensive predicates for stage 0 of completed query gcc_option_facts_automated.ql:
+        time  | predicate
+        ------|----------
+        125ms | Macro::Macro.getName/0#dispred#e28b3699@9083fa3c
+         43ms | preprocdirects_10#join_rhs@6b2750k4
+         29ms | #select#query@848616mv
+          3ms | @ppd_define@6a2d37b7
+
+Most expensive predicates for completed query gcc_option_facts_automated.ql:
+        time  | predicate
+        ------|----------
+        125ms | Macro::Macro.getName/0#dispred#e28b3699@9083fa3c
+         43ms | preprocdirects_10#join_rhs@6b2750k4
+         29ms | #select#query@848616mv
+          3ms | @ppd_define@6a2d37b7
+
+[2026-08-12 12:54:39] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.3 seconds
+        * Total time spent evaluating predicates: 0.2 seconds

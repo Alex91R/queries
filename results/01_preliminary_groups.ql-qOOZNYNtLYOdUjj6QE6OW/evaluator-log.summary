@@ -1,0 +1,1448 @@
+[2026-08-10 22:17:22] Summary of a CodeQL evaluation that started at 2026-08-10T21:17:22.878684519Z
+[2026-08-10 22:17:22] 
+[2026-08-10 22:17:22] Found predicate cached_ResolveClass::isType/1#eabb9878@82ca1924 in the relation cache (size: 123849)
+[2026-08-10 22:17:22] Found predicate cached_ResolveClass::isClass/1#af2a1ca6@ecb9e6su in the relation cache (size: 10868)
+[2026-08-10 22:17:22] Found predicate cached_ResolveClass::resolveClass/1#ea47deee@a66798km in the relation cache (size: 24895)
+[2026-08-10 22:17:22] Found predicate cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f@d04f11u9 in the relation cache (size: 447482)
+[2026-08-10 22:17:22] Found predicate cached_ResolveFunction::resolveFunction/1#576ba5ee@d186d880 in the relation cache (size: 107513)
+[2026-08-10 22:17:22] Found predicate cached_ResolveFunction::isFunction/1#9226b83f@f98098d9 in the relation cache (size: 91685)
+[2026-08-10 22:17:22] Found predicate cached_ResolveGlobalVariable::isVariable/1#6e051315@90738ahc in the relation cache (size: 446985)
+[2026-08-10 22:17:22] Found predicate cached_Enclosing::exprEnclosingElement/1#d94b6dd0@c6fd19fo in the relation cache (size: 10082237)
+[2026-08-10 22:17:22] Found predicate cached_Expr::Expr.getType/0#dispred#444cc5af@6044b650 in the relation cache (size: 10158564)
+[2026-08-10 22:17:22] Found predicate cached_Element::ElementBase.toString/0#dispred#6e016f86@b58a23s4 in the relation cache (size: 16830229)
+[2026-08-10 22:17:22] Found predicate cached_QualifiedName::declarationHasQualifiedName/4#749d7d29@bad017oq in the relation cache (size: 173869)
+[2026-08-10 22:17:22] Found predicate cached_Enclosing::stmtEnclosingElement/1#cf37daa7@ba27afv4 in the relation cache (size: 1727224)
+[2026-08-10 22:17:23] Evaluated non-recursive predicate Location::Location.getStartLine/0#d54f9e6c@53e8a5qa in 55ms (size: 7867442).
+Evaluated relational algebra for predicate Location::Location.getStartLine/0#d54f9e6c@53e8a5qa:
+                {2} r1 = SCAN locations_default OUTPUT In.0, In.2
+                return r1
+
+[2026-08-10 22:17:23] Found predicate project#Class::Class.getCanonicalMember/1#dispred#e1747079_10#join_rhs@fc2823pk in the relation cache (size: 55765)
+[2026-08-10 22:17:23] Found predicate m#Class::Class.getAMember/0#dispred#6a0fc591#fb@e4f2f0dh in the relation cache (size: 115680)
+[2026-08-10 22:17:23] Found predicate @usertype@bb08c6gq in the relation cache (size: 24895)
+[2026-08-10 22:17:23] Found predicate @function@24d7f7aa in the relation cache (size: 107513)
+[2026-08-10 22:17:23] Found predicate concept_templates@d529d6ve in the relation cache (size: 0)
+[2026-08-10 22:17:23] Found predicate globalvariables@056b2d2g in the relation cache (size: 9231)
+[2026-08-10 22:17:23] Found predicate @membervariable@811f08og in the relation cache (size: 23995)
+[2026-08-10 22:17:23] Found predicate localvariables@dc5ff1mr in the relation cache (size: 205108)
+[2026-08-10 22:17:23] Found predicate @parameter@b404ef49 in the relation cache (size: 209244)
+[2026-08-10 22:17:23] Found predicate enumconstants@353b6bq9 in the relation cache (size: 32088)
+[2026-08-10 22:17:23] Found predicate frienddecls@eed3c16n in the relation cache (size: 22395)
+[2026-08-10 22:17:23] Found predicate Declaration::Declaration.getTemplateArgumentType/1#dispred#b0efb79c@b4b14eq1 in the relation cache (size: 19071)
+[2026-08-10 22:17:23] Found predicate Variable::TemplateVariable.getAnInstantiation/0#dispred#f6b531ee#fb@86562bsr in the relation cache (size: 651)
+[2026-08-10 22:17:23] Evaluated non-recursive predicate @localvariable@526b65nm in 1ms (size: 205066).
+Evaluated relational algebra for predicate @localvariable@526b65nm:
+                {1} r1 = SCAN localvariables OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-10 22:17:23] Evaluated non-recursive predicate @localscopevariable@6209b1aq in 2ms (size: 414310).
+Evaluated relational algebra for predicate @localscopevariable@6209b1aq:
+                {1} r1 = @parameter UNION @localvariable
+                return r1
+
+[2026-08-10 22:17:23] Evaluated non-recursive predicate @variable@cc901c9e in 2ms (size: 447482).
+Evaluated relational algebra for predicate @variable@cc901c9e:
+                {1} r1 = SCAN globalvariables OUTPUT In.0
+                {1}    | STREAM DEDUP
+            
+                {1} r2 = @localscopevariable UNION @membervariable UNION r1
+                return r2
+
+[2026-08-10 22:17:23] Evaluated non-recursive predicate @enumconstant@e5299caj in 0ms (size: 30127).
+Evaluated relational algebra for predicate @enumconstant@e5299caj:
+                {1} r1 = SCAN enumconstants OUTPUT In.0
+                return r1
+
+[2026-08-10 22:17:23] Evaluated non-recursive predicate @frienddecl@c3e65fvh in 0ms (size: 22395).
+Evaluated relational algebra for predicate @frienddecl@c3e65fvh:
+                {1} r1 = SCAN frienddecls OUTPUT In.0
+                return r1
+
+[2026-08-10 22:17:23] Evaluated non-recursive predicate @declaration@9c680e4c in 4ms (size: 632412).
+Evaluated relational algebra for predicate @declaration@9c680e4c:
+                {1} r1 = SCAN concept_templates OUTPUT In.0
+            
+                {1} r2 = @function UNION @usertype UNION @frienddecl UNION @enumconstant UNION @variable UNION r1
+                return r2
+
+[2026-08-10 22:17:23] Found predicate variable_template_argument_value@a90e6blo in the relation cache (size: 0)
+[2026-08-10 22:17:23] Found predicate template_template_argument_value@4043602e in the relation cache (size: 0)
+[2026-08-10 22:17:23] Found predicate function_template_argument_value@1ba8dba6 in the relation cache (size: 18226)
+[2026-08-10 22:17:23] Found predicate concept_template_argument_value@51f53cok in the relation cache (size: 0)
+[2026-08-10 22:17:23] Found predicate class_template_argument_value@ce2ad0n8 in the relation cache (size: 8539)
+[2026-08-10 22:17:23] Found predicate alias_template_argument_value@4de9capf in the relation cache (size: 0)
+[2026-08-10 22:17:23] Found predicate Declaration::Declaration.getTemplateArgumentValue/1#dispred#3eef4b7f@c012edc8 by cachaca (size: 26765)
+[2026-08-10 22:17:23] Found predicate project#Declaration::Declaration.getTemplateArgumentValue/1#dispred#3eef4b7f#2@a2950fg9 by cachaca (size: 3304)
+[2026-08-10 22:17:23] Found predicate project#Declaration::Declaration.getTemplateArgumentValue/1#dispred#3eef4b7f@d133a7d8 by cachaca (size: 26765)
+[2026-08-10 22:17:23] Found predicate Declaration::Declaration.getATemplateArgument/0#dispred#260b9dcc@fe9a09n8 by cachaca (size: 43325)
+[2026-08-10 22:17:23] Found predicate project#Declaration::Declaration.getATemplateArgument/0#dispred#260b9dcc@6f2978qd by cachaca (size: 13959)
+[2026-08-10 22:17:23] Found predicate Function::Function.isConstructedFrom/1#dispred#2edd856f_10#join_rhs@ae44c42q in the relation cache (size: 25835)
+[2026-08-10 22:17:23] Found predicate is_function_template@7d32268e in the relation cache (size: 6698)
+[2026-08-10 22:17:23] Found predicate _#is_function_templateMerge_Function::Function.isConstructedFrom/1#dispred#2edd856f#bf_10#join_rhs_p__#shared@172b3ej0 by cachaca (size: 7791)
+[2026-08-10 22:17:23] Found predicate fun_specialized@88105f7c in the relation cache (size: 147)
+[2026-08-10 22:17:23] Found predicate #fun_declsMerge_10#join_rhs@ef921723 in the relation cache (size: 143068)
+[2026-08-10 22:17:23] Found predicate _#fun_declsMerge_10#join_rhs_#fun_specializedMerge_ResolveFunction::isFunction/1#9226b83f__#is_funct__#antijoin_rhs@dbe437co by cachaca (size: 143)
+[2026-08-10 22:17:23] Found predicate Function::TemplateFunction.getAnInstantiation/0#dispred#578175e9#fb@5e1197p8 by cachaca (size: 7648)
+[2026-08-10 22:17:23] Found predicate Class::Class.getAMember/0#dispred#6a0fc591#fb@6b102f91 by cachaca (size: 58606)
+[2026-08-10 22:17:23] Found predicate project#Class::Class.getAMember/0#dispred#6a0fc591#fb@8d51f5pg by cachaca (size: 58605)
+[2026-08-10 22:17:23] Found predicate MemberFunction::MemberFunction#8965af43@ea3d3f9v by cachaca (size: 34610)
+[2026-08-10 22:17:23] Found predicate Class::Class.getAMember/0#dispred#6a0fc591#fb_10#join_rhs@83e937r9 by cachaca (size: 58606)
+[2026-08-10 22:17:23] Found predicate 01_preliminary_groups::GccPassClass#8e786add#b@4d6a54pn in the relation cache (size: 266)
+[2026-08-10 22:17:23] Found predicate Function::Function.getName/0#dispred#b6c7beb4#fb_10#join_rhs@05c0d501 in the relation cache (size: 458)
+[2026-08-10 22:17:23] Found predicate 01_preliminary_groups::passEntryMethod/3#489f1f0e@d2f155gi by cachaca (size: 452)
+[2026-08-10 22:17:23] Found predicate project#01_preliminary_groups::passEntryMethod/3#489f1f0e@334607fl by cachaca (size: 264)
+[2026-08-10 22:17:23] Found predicate UserType::UserType.getName/0#dispred#68e0aaf0@c6c4e3bl in the relation cache (size: 24246)
+[2026-08-10 22:17:23] Found predicate Type::Type.getName/0#dispred#77a04a0a#bf@a8e234eu in the relation cache (size: 24351)
+[2026-08-10 22:17:23] Found predicate NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a#bf@7f7036l4 in the relation cache (size: 24295)
+[2026-08-10 22:17:23] Found predicate 01_preliminary_groups::GccPassClass.getPassKey/0#dispred#17711f1a#bf@06946f1e by cachaca (size: 264)
+[2026-08-10 22:17:23] Found predicate exprs_10#join_rhs@0a156eph in the relation cache (size: 10156860)
+[2026-08-10 22:17:23] Found predicate @varaccess@d70b2a2g in the relation cache (size: 3066929)
+[2026-08-10 22:17:23] Evaluated non-recursive predicate @routineexpr@79fb1f0f in 3ms (size: 622322).
+Evaluated relational algebra for predicate @routineexpr@79fb1f0f:
+                {1} r1 = CONSTANT(unique int)[97]
+                {1}    | JOIN WITH exprs_10#join_rhs ON FIRST 1 OUTPUT Rhs.1
+                return r1
+
+[2026-08-10 22:17:23] Evaluated non-recursive predicate @access@9ed01dvv in 16ms (size: 3689251).
+Evaluated relational algebra for predicate @access@9ed01dvv:
+                {1} r1 = @varaccess UNION @routineexpr
+                return r1
+
+[2026-08-10 22:17:23] Found predicate iscall@f514bf4e in the relation cache (size: 592921)
+[2026-08-10 22:17:23] Evaluated non-recursive predicate #iscallMerge_0#antijoin_rhs@f08ffd79 in 3ms (size: 592921).
+Evaluated relational algebra for predicate #iscallMerge_0#antijoin_rhs@f08ffd79:
+                {1} r1 = SCAN iscall OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-10 22:17:23] Evaluated non-recursive predicate Access::Access#bfafc000@878a70jn in 110ms (size: 3098027).
+Evaluated relational algebra for predicate Access::Access#bfafc000@878a70jn:
+                {1} r1 = @access AND NOT @routineexpr(FIRST 1)
+            
+                {1} r2 = @access AND NOT #iscallMerge_0#antijoin_rhs(FIRST 1)
+            
+                {1} r3 = r1 UNION r2
+                return r3
+
+[2026-08-10 22:17:23] Evaluated non-recursive predicate _#@varaccessMergeTypeCall_Access::Access#bfafc000#shared@0d803cj4 in 33ms (size: 3066929).
+Evaluated relational algebra for predicate _#@varaccessMergeTypeCall_Access::Access#bfafc000#shared@0d803cj4:
+                {1} r1 = JOIN @varaccess WITH Access::Access#bfafc000 ON FIRST 1 OUTPUT Lhs.0
+                return r1
+
+[2026-08-10 22:17:23] Found predicate varbind@0ef4ddtb in the relation cache (size: 3073448)
+[2026-08-10 22:17:23] Evaluated non-recursive predicate _#@functionMergeTypeCall_#@variableMergeTypeCall_#varbindMerge__#@varaccessMergeTypeCall_Access::Acc__#antijoin_rhs@e2dfd2de in 258ms (size: 457550).
+Evaluated relational algebra for predicate _#@functionMergeTypeCall_#@variableMergeTypeCall_#varbindMerge__#@varaccessMergeTypeCall_Access::Acc__#antijoin_rhs@e2dfd2de:
+                {2} r1 = JOIN _#@varaccessMergeTypeCall_Access::Access#bfafc000#shared WITH varbind ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {2}    | AND NOT @variable(FIRST 1)
+                {2}    | AND NOT @function(FIRST 1)
+                {1}    | SCAN OUTPUT In.1
+                return r1
+
+[2026-08-10 22:17:23] Found predicate Access::VariableAccess#27163138@60d1071f by cachaca (size: 2609379)
+[2026-08-10 22:17:23] Found predicate project#01_preliminary_groups::passEntryMethod/3#489f1f0e#2@02c94eg7 by cachaca (size: 452)
+[2026-08-10 22:17:23] Found predicate @callexpr@9c70b6i9 in the relation cache (size: 10529)
+[2026-08-10 22:17:23] Evaluated non-recursive predicate Call::Call#048c9613@8acb25f5 in 4ms (size: 603450).
+Evaluated relational algebra for predicate Call::Call#048c9613@8acb25f5:
+                {1} r1 = @callexpr UNION #iscallMerge_0#antijoin_rhs
+                return r1
+
+[2026-08-10 22:17:23] Found predicate funbind@a07059qu in the relation cache (size: 624663)
+[2026-08-10 22:17:23] Evaluated non-recursive predicate Call::FunctionCall.getTarget/0#45745a57@eea5fe3l in 102ms (size: 593574).
+Evaluated relational algebra for predicate Call::FunctionCall.getTarget/0#45745a57@eea5fe3l:
+                {1} r1 = JOIN #iscallMerge_0#antijoin_rhs WITH Call::Call#048c9613 ON FIRST 1 OUTPUT Lhs.0
+                {2}    | JOIN WITH funbind ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {2}    | JOIN WITH `cached_ResolveFunction::resolveFunction/1#576ba5ee` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | JOIN WITH `cached_ResolveFunction::isFunction/1#9226b83f` ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                return r1
+
+[2026-08-10 22:17:23] Found predicate #functionsMerge_20#join_rhs@7f9bb8be in the relation cache (size: 107513)
+[2026-08-10 22:17:23] Evaluated non-recursive predicate MemberFunction::Destructor#3b34c0ea@5dcf71ia in 0ms (size: 1439).
+Evaluated relational algebra for predicate MemberFunction::Destructor#3b34c0ea@5dcf71ia:
+                {1} r1 = CONSTANT(unique int)[3]
+                {1}    | JOIN WITH #functionsMerge_20#join_rhs ON FIRST 1 OUTPUT Rhs.1
+                {1}    | JOIN WITH MemberFunction::MemberFunction#8965af43 ON FIRST 1 OUTPUT Lhs.0
+                return r1
+
+[2026-08-10 22:17:23] Evaluated non-recursive predicate MemberFunction::Constructor#3a697e8a@39db8ciu in 0ms (size: 4379).
+Evaluated relational algebra for predicate MemberFunction::Constructor#3a697e8a@39db8ciu:
+                {1} r1 = CONSTANT(unique int)[2]
+                {1}    | JOIN WITH #functionsMerge_20#join_rhs ON FIRST 1 OUTPUT Rhs.1
+                {1}    | JOIN WITH MemberFunction::MemberFunction#8965af43 ON FIRST 1 OUTPUT Lhs.0
+                return r1
+
+[2026-08-10 22:17:23] Evaluated non-recursive predicate Call::DestructorCall#43f8f365@07e71ft5 in 31ms (size: 4799).
+Evaluated relational algebra for predicate Call::DestructorCall#43f8f365@07e71ft5:
+                {2} r1 = SCAN `Call::FunctionCall.getTarget/0#45745a57` OUTPUT In.1, In.0
+                {1}    | JOIN WITH MemberFunction::Destructor#3b34c0ea ON FIRST 1 OUTPUT Lhs.1
+                return r1
+
+[2026-08-10 22:17:23] Evaluated non-recursive predicate Call::ConstructorCall#c4f8b4c6@e520c8fo in 36ms (size: 35099).
+Evaluated relational algebra for predicate Call::ConstructorCall#c4f8b4c6@e520c8fo:
+                {2} r1 = SCAN `Call::FunctionCall.getTarget/0#45745a57` OUTPUT In.1, In.0
+                {1}    | JOIN WITH MemberFunction::Constructor#3a697e8a ON FIRST 1 OUTPUT Lhs.1
+                return r1
+
+[2026-08-10 22:17:23] Found predicate Call::FunctionCall.getTarget/0#dispred#935da4c5@f71b5c1n by cachaca (size: 593574)
+[2026-08-10 22:17:23] Found predicate Expr::Expr.getEnclosingFunction/0#dispred#3960f06c@1bad88op in the relation cache (size: 8927990)
+[2026-08-10 22:17:23] Evaluated non-recursive predicate 01_preliminary_groups::directCall/2#a072b138@8a3bb9ia in 51ms (size: 330794).
+Evaluated relational algebra for predicate 01_preliminary_groups::directCall/2#a072b138@8a3bb9ia:
+                {2} r1 = JOIN `Call::FunctionCall.getTarget/0#dispred#935da4c5` WITH `Expr::Expr.getEnclosingFunction/0#dispred#3960f06c` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                return r1
+
+[2026-08-10 22:17:25] Completed evaluation of a recursive layer containing 1 different predicates (took 1351ms). Predicates evaluated:
+#01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn (took 1330ms) (size: 2847053)
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 1 (delta size: 1602).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 1 running pipeline base:
+                {2} r1 = JOIN `project#01_preliminary_groups::passEntryMethod/3#489f1f0e#2` WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 1ms on iteration 2 (delta size: 8590).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 2 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 4ms on iteration 3 (delta size: 26109).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 3 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 11ms on iteration 4 (delta size: 54666).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 4 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 19ms on iteration 5 (delta size: 88651).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 5 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 31ms on iteration 6 (delta size: 128941).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 6 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 47ms on iteration 7 (delta size: 164807).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 7 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 63ms on iteration 8 (delta size: 197564).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 8 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 73ms on iteration 9 (delta size: 198728).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 9 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 88ms on iteration 10 (delta size: 209511).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 10 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 83ms on iteration 11 (delta size: 200203).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 11 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 87ms on iteration 12 (delta size: 197009).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 12 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 89ms on iteration 13 (delta size: 185888).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 13 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 98ms on iteration 14 (delta size: 178912).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 14 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 76ms on iteration 15 (delta size: 176146).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 15 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 81ms on iteration 16 (delta size: 172098).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 16 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 80ms on iteration 17 (delta size: 155780).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 17 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 69ms on iteration 18 (delta size: 133098).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 18 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 61ms on iteration 19 (delta size: 109120).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 19 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 72ms on iteration 20 (delta size: 88250).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 20 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 32ms on iteration 21 (delta size: 66962).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 21 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 27ms on iteration 22 (delta size: 51151).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 22 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 23ms on iteration 23 (delta size: 38104).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 23 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 19ms on iteration 24 (delta size: 30147).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 24 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 18ms on iteration 25 (delta size: 29915).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 25 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 19ms on iteration 26 (delta size: 25586).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 26 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 13ms on iteration 27 (delta size: 20156).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 27 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 11ms on iteration 28 (delta size: 16663).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 28 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 10ms on iteration 29 (delta size: 10798).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 29 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 7ms on iteration 30 (delta size: 9043).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 30 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 5ms on iteration 31 (delta size: 6934).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 31 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 4ms on iteration 32 (delta size: 4470).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 32 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 3ms on iteration 33 (delta size: 3211).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 33 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 2ms on iteration 34 (delta size: 2826).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 34 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 2ms on iteration 35 (delta size: 1941).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 35 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 1ms on iteration 36 (delta size: 1309).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 36 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 1ms on iteration 37 (delta size: 902).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 37 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 38 (delta size: 586).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 38 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 39 (delta size: 338).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 39 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 40 (delta size: 213).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 40 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 41 (delta size: 144).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 41 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 42 (delta size: 80).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 42 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 43 (delta size: 55).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 43 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 44 (delta size: 36).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 44 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 45 (delta size: 23).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 45 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 46 (delta size: 7).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 46 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 47 (delta size: 5).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 47 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn in 0ms on iteration 48 (delta size: 3).
+Evaluated relational algebra for predicate #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn on iteration 48 running pipeline standard:
+                {2} r1 = SCAN `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `01_preliminary_groups::directCall/2#a072b138` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | AND NOT `#01_preliminary_groups::directCall/2#a072b138Plus#bf#prev`(FIRST 2)
+                return r1
+
+Pipeline base for #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn was evaluated in 1 iterations totaling 0ms (delta sizes total: 1602).
+Pipeline standard for #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn was evaluated in 47 iterations totaling 1330ms (delta sizes total: 2995679).
+
+[2026-08-10 22:17:25] Found predicate 01_preliminary_groups::passReachesFunction/2#842c060f#bf@a86e6e4c by cachaca (size: 2847505)
+[2026-08-10 22:17:25] Evaluated non-recursive predicate m#01_preliminary_groups::optionAccess/3#13fc0d8a#ffb@48d059ni in 31ms (size: 39441).
+Evaluated relational algebra for predicate m#01_preliminary_groups::optionAccess/3#13fc0d8a#ffb@48d059ni:
+                {1} r1 = JOIN `project#01_preliminary_groups::passEntryMethod/3#489f1f0e#2` WITH `01_preliminary_groups::passReachesFunction/2#842c060f#bf` ON FIRST 1 OUTPUT Rhs.1
+                return r1
+
+[2026-08-10 22:17:25] Found predicate Element::ElementBase.toString/0#dispred#6e016f86_10#join_rhs@4cb8dfdh in the relation cache (size: 16830229)
+[2026-08-10 22:17:25] Evaluated non-recursive predicate m#Access::Access.getTarget/0#dispred#cf25c8aa#bf@73617fj6 in 102ms (size: 4976574).
+Evaluated relational algebra for predicate m#Access::Access.getTarget/0#dispred#cf25c8aa#bf@73617fj6:
+                {2} r1 = SCAN `Expr::Expr.getEnclosingFunction/0#dispred#3960f06c` OUTPUT In.1, In.0
+                {1}    | JOIN WITH `m#01_preliminary_groups::optionAccess/3#13fc0d8a#ffb` ON FIRST 1 OUTPUT Lhs.1
+                return r1
+
+[2026-08-10 22:17:25] Evaluated non-recursive predicate Access::VariableAccess.getTarget/0#238a7818@6f5aa8sk in 363ms (size: 2610633).
+Evaluated relational algebra for predicate Access::VariableAccess.getTarget/0#238a7818@6f5aa8sk:
+                {2} r1 = JOIN varbind WITH Access::VariableAccess#27163138 ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | JOIN WITH `cached_ResolveGlobalVariable::isVariable/1#6e051315` ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                return r1
+
+[2026-08-10 22:17:25] Found predicate Variable::MemberVariable#03cd19f4@b16387e9 by cachaca (size: 23995)
+[2026-08-10 22:17:25] Found predicate fieldoffsets@baec5f83 in the relation cache (size: 23207)
+[2026-08-10 22:17:25] Evaluated non-recursive predicate Field::Field#3a3ce059@e40dbeqe in 0ms (size: 23207).
+Evaluated relational algebra for predicate Field::Field#3a3ce059@e40dbeqe:
+                {1} r1 = JOIN Variable::MemberVariable#03cd19f4 WITH fieldoffsets ON FIRST 1 OUTPUT Lhs.0
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Access::FieldAccess#d1ccd326#b@be1c72b3 in 200ms (size: 460509).
+Evaluated relational algebra for predicate Access::FieldAccess#d1ccd326#b@be1c72b3:
+                {2} r1 = JOIN varbind WITH Access::VariableAccess#27163138#b ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                {2}    | JOIN WITH `m#Access::Access.getTarget/0#dispred#cf25c8aa#bf` ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {1}    | JOIN WITH Field::Field#3a3ce059 ON FIRST 1 OUTPUT Lhs.1
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Access::Access.getTarget/0#dispred#cf25c8aa#bf@4d9e3382 in 134ms (size: 1472186).
+Evaluated relational algebra for predicate Access::Access.getTarget/0#dispred#cf25c8aa#bf@4d9e3382:
+                {1} r1 = `m#Access::Access.getTarget/0#dispred#cf25c8aa#bf` AND NOT Access::FieldAccess#d1ccd326#b(FIRST 1)
+                {2}    | JOIN WITH `Access::VariableAccess.getTarget/0#238a7818#bf` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+            
+                {1} r2 = JOIN Access::FieldAccess#d1ccd326#b WITH `m#Access::Access.getTarget/0#dispred#cf25c8aa#bf` ON FIRST 1 OUTPUT Lhs.0
+                {2}    | JOIN WITH `Access::VariableAccess.getTarget/0#238a7818#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {2}    | JOIN WITH Field::Field#3a3ce059 ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+            
+                {2} r3 = r1 UNION r2
+                return r3
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Access::Access.getTarget/0#dispred#cf25c8aa#bf_10#join_rhs@0fd884ol in 100ms (size: 1472186).
+Evaluated relational algebra for predicate Access::Access.getTarget/0#dispred#cf25c8aa#bf_10#join_rhs@0fd884ol:
+                {2} r1 = SCAN `Access::Access.getTarget/0#dispred#cf25c8aa#bf` OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate m#Variable::Variable.getName/0#dispred#1b4a78c5#bb#mcpe_this@cf3f2a59 in 68ms (size: 207790).
+Evaluated relational algebra for predicate m#Variable::Variable.getName/0#dispred#1b4a78c5#bb#mcpe_this@cf3f2a59:
+                {1} r1 = JOIN `m#Access::Access.getTarget/0#dispred#cf25c8aa#bf` WITH `Access::Access.getTarget/0#dispred#cf25c8aa#bf` ON FIRST 1 OUTPUT Rhs.1
+                return r1
+
+[2026-08-10 22:17:26] Found predicate Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE@dbd68cls in the relation cache (size: 10)
+[2026-08-10 22:17:26] Found predicate #membervariablesMerge_20#join_rhs@78aeb2rl in the relation cache (size: 23995)
+[2026-08-10 22:17:26] Found predicate #var_declsMerge_10#join_rhs@d57798gt in the relation cache (size: 530414)
+[2026-08-10 22:17:26] Found predicate #param_decl_bindMerge_0#antijoin_rhs@81f1b7nn in the relation cache (size: 289867)
+[2026-08-10 22:17:26] Found predicate #var_declsMerge_30#join_rhs@ef6ba81l in the relation cache (size: 530414)
+[2026-08-10 22:17:26] Found predicate #globalvariablesMerge_20#join_rhs@541f1dbd in the relation cache (size: 9177)
+[2026-08-10 22:17:26] Found predicate Variable::LocalScopeVariable#3aae4a09@f207e3e9 by cachaca (size: 414310)
+[2026-08-10 22:17:26] Found predicate #localvariablesMerge_20#join_rhs@583a1fsv in the relation cache (size: 205066)
+[2026-08-10 22:17:26] Evaluated non-recursive predicate _#var_declsMerge_10#join_rhs_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f#shared@c121c8r0 in 19ms (size: 530414).
+Evaluated relational algebra for predicate _#var_declsMerge_10#join_rhs_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f#shared@c121c8r0:
+                {2} r1 = JOIN #var_declsMerge_10#join_rhs WITH `cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#bf@3d88f39q in 19ms (size: 530414).
+Evaluated relational algebra for predicate Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#bf@3d88f39q:
+                {2} r1 = JOIN `_#var_declsMerge_10#join_rhs_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f#shared` WITH `cached_ResolveGlobalVariable::isVariable/1#6e051315` ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this@dd50data in 2ms (size: 206280).
+Evaluated relational algebra for predicate m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this@dd50data:
+                {1} r1 = CONSTANT(unique string)[""]
+                {1}    | JOIN WITH #var_declsMerge_30#join_rhs ON FIRST 1 OUTPUT Rhs.1
+                {1}    | AND NOT #param_decl_bindMerge_0#antijoin_rhs(FIRST 1)
+                {1}    | JOIN WITH `Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#bf` ON FIRST 1 OUTPUT Rhs.1
+            
+                {1} r2 = `m#Variable::Variable.getName/0#dispred#1b4a78c5#bb#mcpe_this` UNION r1
+                return r2
+
+[2026-08-10 22:17:26] Found predicate var_def@e9a0db3f in the relation cache (size: 384155)
+[2026-08-10 22:17:26] Found predicate #var_declsMerge_03#join_rhs@74f30akj in the relation cache (size: 530414)
+[2026-08-10 22:17:26] Found predicate Function::Function.isConstructedFrom/1#dispred#2edd856f@9d2620dd in the relation cache (size: 25835)
+[2026-08-10 22:17:26] Found predicate params@63accdru in the relation cache (size: 240722)
+[2026-08-10 22:17:26] Found predicate Parameter::Parameter#623bc78d@1076e85j by cachaca (size: 209244)
+[2026-08-10 22:17:26] Found predicate Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#bf_10#join_rhs@7ac2fd9o by cachaca (size: 530414)
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Function::Function.getParameter/1#8e6a5a5b@5bc694lo in 22ms (size: 168216).
+Evaluated relational algebra for predicate Function::Function.getParameter/1#8e6a5a5b@5bc694lo:
+                {3} r1 = SCAN params OUTPUT In.1, In.0, In.2
+                {3}    | JOIN WITH `cached_ResolveFunction::isFunction/1#9226b83f` ON FIRST 1 OUTPUT Lhs.1, Lhs.0, Lhs.2
+                {3}    | JOIN WITH `cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f` ON FIRST 1 OUTPUT Rhs.1, Lhs.1, Lhs.2
+                {3}    | JOIN WITH Parameter::Parameter#623bc78d ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.0
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Parameter::Parameter.getFunction/0#dispred#803faca2#bf@8d9956qo in 10ms (size: 65707).
+Evaluated relational algebra for predicate Parameter::Parameter.getFunction/0#dispred#803faca2#bf@8d9956qo:
+                {2} r1 = SCAN params OUTPUT In.0, In.1
+                {2}    | STREAM DEDUP
+                {2}    | JOIN WITH `m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `cached_ResolveFunction::resolveFunction/1#576ba5ee` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | JOIN WITH `cached_ResolveFunction::isFunction/1#9226b83f` ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                return r1
+
+[2026-08-10 22:17:26] Found predicate Variable::LocalVariable.getName/0#dispred#fe44a180#fb@0f6ec2uj by cachaca (size: 0)
+[2026-08-10 22:17:26] Evaluated non-recursive predicate m#Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb@2f9d7aif in 4ms (size: 208065).
+Evaluated relational algebra for predicate m#Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb@2f9d7aif:
+                {1} r1 = JOIN `Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE` WITH `Variable::LocalVariable.getName/0#dispred#fe44a180#fb_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1
+            
+                {1} r2 = JOIN `m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this` WITH `Parameter::Parameter.getFunction/0#dispred#803faca2#bf` ON FIRST 1 OUTPUT Rhs.1
+                {1}    | JOIN WITH `Function::Function.isConstructedFrom/1#dispred#2edd856f#bf` ON FIRST 1 OUTPUT Rhs.1
+                {1}    | JOIN WITH `Function::Function.getParameter/1#8e6a5a5b` ON FIRST 1 OUTPUT Rhs.2
+            
+                {1} r3 = `m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this` UNION r1 UNION r2
+                return r3
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb@f56714d0 in 9ms (size: 233386).
+Evaluated relational algebra for predicate Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb@f56714d0:
+                {2} r1 = JOIN `_#var_declsMerge_10#join_rhs_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f#shared` WITH `m#Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb` ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb_10#join_rhs@65a74460 in 7ms (size: 233386).
+Evaluated relational algebra for predicate Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb_10#join_rhs@65a74460:
+                {2} r1 = SCAN `Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb` OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:26] Found predicate project#Function::Function.isConstructedFrom/1#dispred#2edd856f@61dc762r in the relation cache (size: 25835)
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Parameter::Parameter.getIndex/0#dispred#66f59d90#bf@17403fpg in 2ms (size: 65707).
+Evaluated relational algebra for predicate Parameter::Parameter.getIndex/0#dispred#66f59d90#bf@17403fpg:
+                {2} r1 = JOIN params WITH `m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0, Lhs.2
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate _Parameter::Parameter#623bc78d_m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this#shared@ef120epu in 1ms (size: 65707).
+Evaluated relational algebra for predicate _Parameter::Parameter#623bc78d_m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this#shared@ef120epu:
+                {1} r1 = JOIN Parameter::Parameter#623bc78d WITH `m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate _Parameter::Parameter.getFunction/0#dispred#803faca2#bf__Parameter::Parameter#623bc78d_m#Parameter::__#antijoin_rhs@1289a0tn in 4ms (size: 17766).
+Evaluated relational algebra for predicate _Parameter::Parameter.getFunction/0#dispred#803faca2#bf__Parameter::Parameter#623bc78d_m#Parameter::__#antijoin_rhs@1289a0tn:
+                {2} r1 = JOIN `_Parameter::Parameter#623bc78d_m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this#shared` WITH `Parameter::Parameter.getFunction/0#dispred#803faca2#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {1}    | JOIN WITH `project#Function::Function.isConstructedFrom/1#dispred#2edd856f#bf` ON FIRST 1 OUTPUT Lhs.1
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60#bf@d9ee9e4i in 12ms (size: 115788).
+Evaluated relational algebra for predicate Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60#bf@d9ee9e4i:
+                {1} r1 = `_Parameter::Parameter#623bc78d_m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this#shared` AND NOT `_Parameter::Parameter.getFunction/0#dispred#803faca2#bf__Parameter::Parameter#623bc78d_m#Parameter::__#antijoin_rhs`(FIRST 1)
+                {2}    | JOIN WITH `Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb_10#join_rhs` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+            
+                {2} r2 = SCAN `Parameter::Parameter.getFunction/0#dispred#803faca2#bf` OUTPUT In.1, In.0
+                {1}    | JOIN WITH `project#Function::Function.isConstructedFrom/1#dispred#2edd856f#bf` ON FIRST 1 OUTPUT Lhs.1
+                {1}    | JOIN WITH Parameter::Parameter#623bc78d ON FIRST 1 OUTPUT Lhs.0
+                {1}    | JOIN WITH `m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0
+                {2}    | JOIN WITH `Parameter::Parameter.getIndex/0#dispred#66f59d90#bf` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+                {3}    | JOIN WITH `Parameter::Parameter.getFunction/0#dispred#803faca2#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.1
+                {3}    | JOIN WITH `Function::Function.isConstructedFrom/1#dispred#2edd856f#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.2, Lhs.1
+                {2}    | JOIN WITH `Function::Function.getParameter/1#8e6a5a5b` ON FIRST 2 OUTPUT Rhs.2, Lhs.2
+                {2}    | JOIN WITH `Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb_10#join_rhs` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+            
+                {2} r3 = r1 UNION r2
+                return r3
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60#bf_10#join_rhs@f0b5f3sd in 9ms (size: 115788).
+Evaluated relational algebra for predicate Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60#bf_10#join_rhs@f0b5f3sd:
+                {2} r1 = SCAN `Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60#bf` OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:26] Found predicate var_decls@89473ckg in the relation cache (size: 558811)
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf@9b8602lf in 19ms (size: 93329).
+Evaluated relational algebra for predicate Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf@9b8602lf:
+                {6} r1 = SCAN var_decls OUTPUT In.0, In.1, In.2, In.3, In.4, _
+                {5}    | REWRITE WITH Tmp.5 := "", TEST InOut.3 != Tmp.5 KEEPING 5
+                {1}    | SCAN OUTPUT In.0
+                {1}    | STREAM DEDUP
+                {2}    | JOIN WITH `Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60#bf_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {2}    | JOIN WITH `m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate project#Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf@b16e34ja in 3ms (size: 64952).
+Evaluated relational algebra for predicate project#Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf@b16e34ja:
+                {1} r1 = SCAN `Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf` OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf_10#join_rhs@4aec56te in 5ms (size: 93329).
+Evaluated relational algebra for predicate Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf_10#join_rhs@4aec56te:
+                {2} r1 = SCAN `Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf` OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:26] Completed evaluation of a recursive layer containing 3 different predicates (took 8ms). Predicates evaluated:
+Parameter::Parameter.getName/0#dispred#60f9ae8a#bb@7d980xbo (took 7ms) (size: 0)
+Variable::VariableDeclarationEntry.getName/0#58a358d6#fb@7d980wbo (took 0ms) (size: 15)
+_#var_defMerge_Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf_Parameter::Param__#antijoin_rhs@L0#7d980 (took 0ms) (sum of sizes: 0)
+
+Evaluated recursive predicate Parameter::Parameter.getName/0#dispred#60f9ae8a#bb@7d980xbo in 7ms on iteration 1 (delta size: 0).
+Evaluated relational algebra for predicate Parameter::Parameter.getName/0#dispred#60f9ae8a#bb@7d980xbo on iteration 1 running pipeline base:
+                {2} r1 = JOIN `Parameter::Parameter.getIndex/0#dispred#66f59d90#bf` WITH `m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                {2}    | AND NOT `project#Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf`(FIRST 1)
+                {5}    | SCAN OUTPUT _, In.0, In.1, _, _
+                {2}    | REWRITE WITH Tmp.0 := "(unnamed parameter ", Tmp.3 := toString(In.2), Tmp.4 := ")", Out.0 := (Tmp.0 ++ Tmp.3 ++ Tmp.4) KEEPING 2
+                {2}    | JOIN WITH `Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE` ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                return r1
+
+Evaluated recursive predicate Variable::VariableDeclarationEntry.getName/0#58a358d6#fb@7d980wbo in 0ms on iteration 1 (delta size: 15).
+Evaluated relational algebra for predicate Variable::VariableDeclarationEntry.getName/0#58a358d6#fb@7d980wbo on iteration 1 running pipeline base:
+                {3} r1 = JOIN `_Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE_Variable::LocalVariable.getName/__#shared` WITH `Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, _, Lhs.1
+                {3}    | REWRITE WITH Out.1 := ""
+                {2}    | JOIN WITH #var_declsMerge_03#join_rhs ON FIRST 2 OUTPUT Lhs.0, Lhs.2
+            
+                {1} r2 = CONSTANT(unique string)["flag_gcse";...]
+                {2}    | SCAN OUTPUT In.0, _
+                {1}    | REWRITE WITH Tmp.1 := "", TEST InOut.0 != Tmp.1 KEEPING 1
+                {2}    | JOIN WITH #var_declsMerge_30#join_rhs ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+            
+                {2} r3 = r1 UNION r2
+                return r3
+
+Evaluated named local _#var_defMerge_Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf_Parameter::Param__#antijoin_rhs@L0#7d980 in 0ms on iteration 2 (size: 0).
+Evaluated relational algebra for predicate _#var_defMerge_Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf_Parameter::Param__#antijoin_rhs@L0#7d980 on iteration 2 running pipeline main:
+                {2} r1 = SCAN `Variable::VariableDeclarationEntry.getName/0#58a358d6#fb#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE` ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | JOIN WITH `m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                {3}    | JOIN WITH `Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.1, Lhs.0
+                {2}    | JOIN WITH var_def ON FIRST 1 OUTPUT Lhs.1, Lhs.2
+                return r1
+
+Pipeline base for Parameter::Parameter.getName/0#dispred#60f9ae8a#bb@7d980xbo was evaluated in 1 iterations totaling 7ms (delta sizes total: 0).
+Pipeline base for Variable::VariableDeclarationEntry.getName/0#58a358d6#fb@7d980wbo was evaluated in 1 iterations totaling 0ms (delta sizes total: 15).
+Pipeline main for _#var_defMerge_Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf_Parameter::Param__#antijoin_rhs@L0#7d980 was evaluated in 1 iterations totaling 0ms (sizes total: 0).
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Variable::Variable.getName/0#dispred#1b4a78c5#bb@b3f285t8 in 0ms (size: 10).
+Evaluated relational algebra for predicate Variable::Variable.getName/0#dispred#1b4a78c5#bb@b3f285t8:
+                {2} r1 = JOIN `_Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE_Variable::LocalVariable.getName/__#shared` WITH `m#Variable::Variable.getName/0#dispred#1b4a78c5#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+            
+                {2} r2 = JOIN `Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE` WITH #globalvariablesMerge_20#join_rhs ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {2}    | JOIN WITH `m#Variable::Variable.getName/0#dispred#1b4a78c5#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+            
+                {2} r3 = JOIN `Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE` WITH `Parameter::Parameter.getName/0#dispred#60f9ae8a#bb_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {2}    | JOIN WITH `m#Variable::Variable.getName/0#dispred#1b4a78c5#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+            
+                {2} r4 = JOIN `Variable::LocalVariable.getName/0#dispred#fe44a180#fb#join_rhs#CSE` WITH #membervariablesMerge_20#join_rhs ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {2}    | JOIN WITH Variable::MemberVariable#03cd19f4 ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                {2}    | JOIN WITH `m#Variable::Variable.getName/0#dispred#1b4a78c5#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+            
+                {2} r5 = r1 UNION r2 UNION r3 UNION r4
+                return r5
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate Variable::Variable.getName/0#dispred#1b4a78c5#bb_10#join_rhs@0eba5ftv in 0ms (size: 10).
+Evaluated relational algebra for predicate Variable::Variable.getName/0#dispred#1b4a78c5#bb_10#join_rhs@0eba5ftv:
+                {2} r1 = SCAN `Variable::Variable.getName/0#dispred#1b4a78c5#bb` OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate 01_preliminary_groups::optionAccess/3#13fc0d8a#ffb@00eb6487 in 3ms (size: 94).
+Evaluated relational algebra for predicate 01_preliminary_groups::optionAccess/3#13fc0d8a#ffb@00eb6487:
+                {2} r1 = CONSTANT(unique string, string)["flag_gcse","-fgcse";...]
+            
+                {2} r2 = JOIN r1 WITH `Element::ElementBase.toString/0#dispred#6e016f86_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | JOIN WITH Access::VariableAccess#27163138#b ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+            
+                {2} r3 = JOIN r1 WITH `Variable::Variable.getName/0#dispred#1b4a78c5#bb_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | JOIN WITH `Access::Access.getTarget/0#dispred#cf25c8aa#bf_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | JOIN WITH Access::VariableAccess#27163138#b ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+            
+                {2} r4 = r2 UNION r3
+                {2}    | JOIN WITH Access::VariableAccess#27163138#b ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                {3}    | JOIN WITH `Expr::Expr.getEnclosingFunction/0#dispred#3960f06c` ON FIRST 1 OUTPUT Rhs.1, Lhs.1, Lhs.0
+                {3}    | JOIN WITH `m#01_preliminary_groups::optionAccess/3#13fc0d8a#ffb` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.0
+                return r4
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate 01_preliminary_groups::optionAccess/3#13fc0d8a#ffb_201#join_rhs@7aefc1m3 in 0ms (size: 94).
+Evaluated relational algebra for predicate 01_preliminary_groups::optionAccess/3#13fc0d8a#ffb_201#join_rhs@7aefc1m3:
+                {3} r1 = SCAN `01_preliminary_groups::optionAccess/3#13fc0d8a#ffb` OUTPUT In.2, In.0, In.1
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate 01_preliminary_groups::preliminaryGroup/6#2fefcf79@8613423h in 20ms (size: 4347).
+Evaluated relational algebra for predicate 01_preliminary_groups::preliminaryGroup/6#2fefcf79@8613423h:
+                {3} r1 = JOIN `01_preliminary_groups::passEntryMethod/3#489f1f0e` WITH `01_preliminary_groups::GccPassClass.getPassKey/0#dispred#17711f1a#bf` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Rhs.1
+                {4}    | JOIN WITH `01_preliminary_groups::passReachesFunction/2#842c060f#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.1, Lhs.2
+                {6}    | JOIN WITH `01_preliminary_groups::optionAccess/3#13fc0d8a#ffb_201#join_rhs` ON FIRST 1 OUTPUT Lhs.3, Rhs.1, Lhs.2, Lhs.1, Lhs.0, Rhs.2
+                return r1
+
+[2026-08-10 22:17:26] Evaluated non-recursive predicate 01_preliminary_groups::preliminaryGroup/6#2fefcf79_501234#join_rhs@5f7ccbqt in 0ms (size: 4347).
+Evaluated relational algebra for predicate 01_preliminary_groups::preliminaryGroup/6#2fefcf79_501234#join_rhs@5f7ccbqt:
+                {6} r1 = SCAN `01_preliminary_groups::preliminaryGroup/6#2fefcf79` OUTPUT In.5, In.0, In.1, In.2, In.3, In.4
+                return r1
+
+[2026-08-10 22:17:26] Found predicate exprs@3564efhr in the relation cache (size: 10156860)
+[2026-08-10 22:17:27] Evaluated non-recursive predicate #locations_defaultMerge_23450#join_rhs@99f7bc3i in 1063ms (size: 7867442).
+Evaluated relational algebra for predicate #locations_defaultMerge_23450#join_rhs@99f7bc3i:
+                {5} r1 = SCAN locations_default OUTPUT In.2, In.3, In.4, In.5, In.0
+                return r1
+
+[2026-08-10 22:17:28] Evaluated non-recursive predicate Location::Location.getContainer/0#9edabfb6@bbd97edk in 65ms (size: 7867442).
+Evaluated relational algebra for predicate Location::Location.getContainer/0#9edabfb6@bbd97edk:
+                {2} r1 = SCAN locations_default OUTPUT In.0, In.1
+                {2}    | STREAM DEDUP
+                return r1
+
+[2026-08-10 22:17:28] Evaluated non-recursive predicate Location::UnknownLocation#d525d7d6@6b48ecgn in 2ms (size: 1).
+Evaluated relational algebra for predicate Location::UnknownLocation#d525d7d6@6b48ecgn:
+                {4} r1 = CONSTANT(unique int, unique int, unique int, unique int)[0,0,0,0]
+                {1}    | JOIN WITH #locations_defaultMerge_23450#join_rhs ON FIRST 4 OUTPUT Rhs.4
+                {3}    | JOIN WITH `Location::Location.getContainer/0#9edabfb6` ON FIRST 1 OUTPUT Rhs.1, _, Lhs.0
+                {3}    | REWRITE WITH Out.1 := ""
+                {1}    | JOIN WITH files ON FIRST 2 OUTPUT Lhs.2
+                return r1
+
+[2026-08-10 22:17:28] Evaluated non-recursive predicate _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t in 202ms (size: 254637).
+Evaluated relational algebra for predicate _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t:
+                {2} r1 = SCAN exprs OUTPUT In.2, In.0
+                {1}    | JOIN WITH Location::UnknownLocation#d525d7d6 ON FIRST 1 OUTPUT Lhs.1
+                return r1
+
+[2026-08-10 22:17:28] Evaluated non-recursive predicate Expr::Expr.getParent/0#dispred#393b4f50#bf@6459b92f in 10ms (size: 201707).
+Evaluated relational algebra for predicate Expr::Expr.getParent/0#dispred#393b4f50#bf@6459b92f:
+                {2} r1 = JOIN _#exprsMerge_Location::UnknownLocation#d525d7d6#shared WITH exprparents ON FIRST 1 OUTPUT Rhs.2, Lhs.0
+                {2}    | AND NOT @usertype(FIRST 1)
+                {2}    | AND NOT @variable(FIRST 1)
+                {2}    | AND NOT @function(FIRST 1)
+                {2}    | SCAN OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:28] Evaluated non-recursive predicate Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs@bfb535a3 in 1ms (size: 201707).
+Evaluated relational algebra for predicate Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs@bfb535a3:
+                {2} r1 = SCAN `Expr::Expr.getParent/0#dispred#393b4f50#bf` OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:28] Completed evaluation of a recursive layer containing 1 different predicates (took 15ms). Predicates evaluated:
+Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b (took 12ms) (size: 61845)
+
+Evaluated recursive predicate Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b in 11ms on iteration 1 (delta size: 59952).
+Evaluated relational algebra for predicate Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b on iteration 1 running pipeline base:
+                {2} r1 = JOIN _#exprsMerge_Location::UnknownLocation#d525d7d6#shared WITH `Expr::Expr.getParent/0#dispred#393b4f50#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {2}    | JOIN WITH exprs ON FIRST 1 OUTPUT Rhs.2, Lhs.1
+                {2}    | AND NOT Location::UnknownLocation#d525d7d6(FIRST 1)
+                {2}    | SCAN OUTPUT In.1, In.0
+                return r1
+
+Evaluated recursive predicate Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b in 1ms on iteration 2 (delta size: 1890).
+Evaluated relational algebra for predicate Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b on iteration 2 running pipeline standard:
+                {2} r1 = JOIN `Expr::Expr.getExprLocationOverride/0#80738c92#prev_delta` WITH `Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Expr::Expr.getExprLocationOverride/0#80738c92#prev`(FIRST 2)
+                {3}    | JOIN WITH exprs ON FIRST 1 OUTPUT Rhs.2, Lhs.1, Lhs.0
+                {2}    | JOIN WITH Location::UnknownLocation#d525d7d6 ON FIRST 1 OUTPUT Lhs.2, Lhs.1
+                return r1
+
+Evaluated recursive predicate Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b in 0ms on iteration 3 (delta size: 3).
+Evaluated relational algebra for predicate Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b on iteration 3 running pipeline standard:
+                {2} r1 = JOIN `Expr::Expr.getExprLocationOverride/0#80738c92#prev_delta` WITH `Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Expr::Expr.getExprLocationOverride/0#80738c92#prev`(FIRST 2)
+                {3}    | JOIN WITH exprs ON FIRST 1 OUTPUT Rhs.2, Lhs.1, Lhs.0
+                {2}    | JOIN WITH Location::UnknownLocation#d525d7d6 ON FIRST 1 OUTPUT Lhs.2, Lhs.1
+                return r1
+
+Pipeline base for Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b was evaluated in 1 iterations totaling 11ms (delta sizes total: 59952).
+Pipeline standard for Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b was evaluated in 2 iterations totaling 1ms (delta sizes total: 1893).
+
+[2026-08-10 22:17:28] Evaluated non-recursive predicate project#Expr::Expr.getExprLocationOverride/0#80738c92@137629j6 in 0ms (size: 61845).
+Evaluated relational algebra for predicate project#Expr::Expr.getExprLocationOverride/0#80738c92@137629j6:
+                {1} r1 = SCAN `Expr::Expr.getExprLocationOverride/0#80738c92` OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-10 22:17:28] Evaluated non-recursive predicate Expr::Expr.getLocation/0#dispred#0a3d90c6@06da69m4 in 108ms (size: 10156860).
+Evaluated relational algebra for predicate Expr::Expr.getLocation/0#dispred#0a3d90c6@06da69m4:
+                {2} r1 = SCAN exprs OUTPUT In.0, In.2
+                {2}    | AND NOT `project#Expr::Expr.getExprLocationOverride/0#80738c92`(FIRST 1)
+            
+                {2} r2 = `Expr::Expr.getExprLocationOverride/0#80738c92` UNION r1
+                return r2
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate Element::Element.getFile/0#2b8c8740@9b043988 in 498ms (size: 10156860).
+Evaluated relational algebra for predicate Element::Element.getFile/0#2b8c8740@9b043988:
+                {2} r1 = SCAN `Expr::Expr.getLocation/0#dispred#0a3d90c6` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `Location::Location.getContainer/0#9edabfb6` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate project#01_preliminary_groups::preliminaryGroup/6#2fefcf79@0a1ba0ro in 0ms (size: 94).
+Evaluated relational algebra for predicate project#01_preliminary_groups::preliminaryGroup/6#2fefcf79@0a1ba0ro:
+                {1} r1 = SCAN `01_preliminary_groups::preliminaryGroup/6#2fefcf79` OUTPUT In.5
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate File::Impl::Container.getRelativePath/0#dispred#deec4f8e#bf@96a1f1pj in 131ms (size: 14).
+Evaluated relational algebra for predicate File::Impl::Container.getRelativePath/0#dispred#deec4f8e#bf@96a1f1pj:
+                {2} r1 = SCAN `Element::Element.getFile/0#2b8c8740` OUTPUT In.1, In.0
+                {3}    | JOIN WITH files ON FIRST 1 OUTPUT Lhs.1, Lhs.0, Rhs.1
+            
+                {2} r2 = JOIN r1 WITH `project#01_preliminary_groups::preliminaryGroup/6#2fefcf79` ON FIRST 1 OUTPUT Lhs.2, Lhs.1
+                {2}    | JOIN WITH sourceLocationPrefix ON FIRST 1 OUTPUT Lhs.1, _
+                {2}    | REWRITE WITH Out.1 := ""
+            
+                {2} r3 = JOIN r1 WITH `project#01_preliminary_groups::preliminaryGroup/6#2fefcf79` ON FIRST 1 OUTPUT Lhs.1, Lhs.2
+                {5}    | JOIN WITH sourceLocationPrefix CARTESIAN PRODUCT OUTPUT Lhs.0, Lhs.1, _, Rhs.0, _
+                {3}    | REWRITE WITH Tmp.2 := "/$", Tmp.4 := "", Out.2 := regexpReplaceAll(In.3,Tmp.2,Tmp.4) KEEPING 3
+                {5}    | SCAN OUTPUT In.0, _, In.2, In.1, _
+                {2}    | REWRITE WITH Tmp.1 := "/", Tmp.1 := (In.2 ++ Tmp.1), Tmp.4 := "", Out.1 := InverseAppend(Tmp.1,Tmp.4,In.3) KEEPING 2
+                {2}    | REWRITE WITH NOT [TEST InOut.1 startsWith "/"]
+            
+                {2} r4 = r2 UNION r3
+                return r4
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate project#01_preliminary_groups::preliminaryGroup/6#2fefcf79#3@ee64b759 in 0ms (size: 29).
+Evaluated relational algebra for predicate project#01_preliminary_groups::preliminaryGroup/6#2fefcf79#3@ee64b759:
+                {1} r1 = SCAN `01_preliminary_groups::preliminaryGroup/6#2fefcf79` OUTPUT In.4
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate project#01_preliminary_groups::preliminaryGroup/6#2fefcf79#2@ac5d64aa in 0ms (size: 215).
+Evaluated relational algebra for predicate project#01_preliminary_groups::preliminaryGroup/6#2fefcf79#2@ac5d64aa:
+                {1} r1 = SCAN `01_preliminary_groups::preliminaryGroup/6#2fefcf79` OUTPUT In.3
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate m#Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf@baa891jc in 0ms (size: 236).
+Evaluated relational algebra for predicate m#Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf@baa891jc:
+                {1} r1 = `project#01_preliminary_groups::preliminaryGroup/6#2fefcf79#2` UNION `project#01_preliminary_groups::preliminaryGroup/6#2fefcf79#3`
+                return r1
+
+[2026-08-10 22:17:29] Found predicate member@d2f9a19s in the relation cache (size: 63258)
+[2026-08-10 22:17:29] Found predicate is_variable_template@ebc81e79 in the relation cache (size: 52)
+[2026-08-10 22:17:29] Found predicate variable_instantiation@1e9626ek in the relation cache (size: 651)
+[2026-08-10 22:17:29] Found predicate usertypes@80f81avc in the relation cache (size: 24895)
+[2026-08-10 22:17:29] Evaluated non-recursive predicate #usertypesMerge_20#join_rhs@7a31e969 in 1ms (size: 24895).
+Evaluated relational algebra for predicate #usertypesMerge_20#join_rhs@7a31e969:
+                {2} r1 = SCAN usertypes OUTPUT In.2, In.0
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate project##class_template_argumentMerge@3fb95fhb in 0ms (size: 5998).
+Evaluated relational algebra for predicate project##class_template_argumentMerge@3fb95fhb:
+                {1} r1 = SCAN class_template_argument OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate #class_instantiationMerge_10#join_rhs@c2e3b4lh in 0ms (size: 6193).
+Evaluated relational algebra for predicate #class_instantiationMerge_10#join_rhs@c2e3b4lh:
+                {2} r1 = SCAN class_instantiation OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate #variable_instantiationMerge_10#join_rhs@6cecb6il in 0ms (size: 651).
+Evaluated relational algebra for predicate #variable_instantiationMerge_10#join_rhs@6cecb6il:
+                {2} r1 = SCAN variable_instantiation OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate QualifiedName::TemplateClass#7897d0bf@aedd80f7 in 0ms (size: 504).
+Evaluated relational algebra for predicate QualifiedName::TemplateClass#7897d0bf@aedd80f7:
+                {1} r1 = CONSTANT(unique int)[15]
+            
+                {1} r2 = CONSTANT(unique int)[16]
+            
+                {1} r3 = CONSTANT(unique int)[17]
+            
+                {1} r4 = r1 UNION r2 UNION r3
+                {1}    | JOIN WITH #usertypesMerge_20#join_rhs ON FIRST 1 OUTPUT Rhs.1
+                return r4
+
+[2026-08-10 22:17:29] Found predicate function_template_argument@1172b2jl in the relation cache (size: 19156)
+[2026-08-10 22:17:29] Evaluated non-recursive predicate project##function_template_argumentMerge@a38832gb in 0ms (size: 12660).
+Evaluated relational algebra for predicate project##function_template_argumentMerge@a38832gb:
+                {1} r1 = SCAN function_template_argument OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate _#is_function_templateMerge_project##function_template_argumentMerge#shared@4a15abee in 0ms (size: 4869).
+Evaluated relational algebra for predicate _#is_function_templateMerge_project##function_template_argumentMerge#shared@4a15abee:
+                {1} r1 = JOIN project##function_template_argumentMerge WITH is_function_template ON FIRST 1 OUTPUT Lhs.0
+                return r1
+
+[2026-08-10 22:17:29] Found predicate function_instantiation@5ba009cf in the relation cache (size: 25837)
+[2026-08-10 22:17:29] Evaluated non-recursive predicate #function_instantiationMerge_10#join_rhs@f9ba679d in 2ms (size: 25837).
+Evaluated relational algebra for predicate #function_instantiationMerge_10#join_rhs@f9ba679d:
+                {2} r1 = SCAN function_instantiation OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate _#fun_declsMerge_10#join_rhs_#fun_specializedMerge__#is_function_templateMerge_project##function_tem__#antijoin_rhs@5b0b52f0 in 0ms (size: 0).
+Evaluated relational algebra for predicate _#fun_declsMerge_10#join_rhs_#fun_specializedMerge__#is_function_templateMerge_project##function_tem__#antijoin_rhs@5b0b52f0:
+                {2} r1 = JOIN _#is_function_templateMerge_project##function_template_argumentMerge#shared WITH #fun_declsMerge_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {1}    | JOIN WITH fun_specialized ON FIRST 1 OUTPUT Lhs.1
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate QualifiedName::TemplateFunction.getAnInstantiation/0#dispred#1cbe8684@fd97279v in 0ms (size: 7793).
+Evaluated relational algebra for predicate QualifiedName::TemplateFunction.getAnInstantiation/0#dispred#1cbe8684@fd97279v:
+                {1} r1 = _#is_function_templateMerge_project##function_template_argumentMerge#shared AND NOT _#fun_declsMerge_10#join_rhs_#fun_specializedMerge__#is_function_templateMerge_project##function_tem__#antijoin_rhs(FIRST 1)
+                {2}    | JOIN WITH #function_instantiationMerge_10#join_rhs ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf@cc2be2fd in 8ms (size: 66195).
+Evaluated relational algebra for predicate QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf@cc2be2fd:
+                {2} r1 = JOIN member WITH @usertype ON FIRST 1 OUTPUT Lhs.2, Lhs.0
+            
+                {2} r2 = SCAN member OUTPUT In.0, In.2
+                {2}    | JOIN WITH @usertype ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+            
+                {2} r3 = JOIN r2 WITH `QualifiedName::TemplateFunction.getAnInstantiation/0#dispred#1cbe8684` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+            
+                {2} r4 = JOIN r2 WITH is_variable_template ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                {2}    | JOIN WITH #variable_instantiationMerge_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+            
+                {3} r5 = JOIN r2 WITH #class_instantiationMerge_10#join_rhs ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Rhs.1
+                {2}    | JOIN WITH QualifiedName::TemplateClass#7897d0bf ON FIRST 1 OUTPUT Lhs.2, Lhs.1
+                {2}    | JOIN WITH project##class_template_argumentMerge ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+            
+                {2} r6 = r1 UNION r3 UNION r4 UNION r5
+                return r6
+
+[2026-08-10 22:17:29] Completed evaluation of a recursive layer containing 1 different predicates (took 0ms). Predicates evaluated:
+m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@f843bwhe (took 0ms) (size: 446)
+
+Evaluated recursive predicate m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@f843bwhe in 0ms on iteration 1 (delta size: 236).
+Evaluated relational algebra for predicate m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@f843bwhe on iteration 1 running pipeline base:
+                return `m#Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf`
+
+Evaluated recursive predicate m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@f843bwhe in 0ms on iteration 2 (delta size: 210).
+Evaluated relational algebra for predicate m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@f843bwhe on iteration 2 running pipeline standard:
+                {1} r1 = JOIN `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf#prev_delta` WITH `QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf` ON FIRST 1 OUTPUT Rhs.1
+                {1}    | AND NOT `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf#prev`(FIRST 1)
+                return r1
+
+Pipeline base for m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@f843bwhe was evaluated in 1 iterations totaling 0ms (delta sizes total: 236).
+Pipeline standard for m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@f843bwhe was evaluated in 1 iterations totaling 0ms (delta sizes total: 210).
+
+[2026-08-10 22:17:29] Found predicate #usertypesMerge_02#join_rhs@f614acb9 in the relation cache (size: 24895)
+[2026-08-10 22:17:29] Evaluated non-recursive predicate #namespacembrsMerge_10#join_rhs@b85d0a2p in 0ms (size: 5655).
+Evaluated relational algebra for predicate #namespacembrsMerge_10#join_rhs@b85d0a2p:
+                {2} r1 = SCAN namespacembrs OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate #namespacembrsMerge_1#antijoin_rhs@29795bh8 in 0ms (size: 5655).
+Evaluated relational algebra for predicate #namespacembrsMerge_1#antijoin_rhs@29795bh8:
+                {1} r1 = SCAN namespacembrs OUTPUT In.1
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate #namespacesMerge_10#join_rhs@dcfae1lh in 0ms (size: 173).
+Evaluated relational algebra for predicate #namespacesMerge_10#join_rhs@dcfae1lh:
+                {2} r1 = SCAN namespaces OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf_10#join_rhs@18e41dtb in 3ms (size: 66195).
+Evaluated relational algebra for predicate QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf_10#join_rhs@18e41dtb:
+                {2} r1 = SCAN `QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf` OUTPUT In.1, In.0
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate QualifiedName::TypeTemplateParameter#a7fe9400#b@1a128adn in 0ms (size: 0).
+Evaluated relational algebra for predicate QualifiedName::TypeTemplateParameter#a7fe9400#b@1a128adn:
+                {3} r1 = JOIN `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` WITH usertypes ON FIRST 1 OUTPUT Lhs.0, Rhs.2, _
+                {2}    | REWRITE WITH NOT [Tmp.2 := 7, TEST InOut.1 != Tmp.2, Tmp.2 := 8, TEST InOut.1 != Tmp.2] KEEPING 2
+                {1}    | SCAN OUTPUT In.0
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate _#@enumconstantMergeTypeCall_#@frienddeclMergeTypeCall_#@localvariableMergeTypeCall_#@parameterMerge__#antijoin_rhs@2c7a9e8r in 0ms (size: 217).
+Evaluated relational algebra for predicate _#@enumconstantMergeTypeCall_#@frienddeclMergeTypeCall_#@localvariableMergeTypeCall_#@parameterMerge__#antijoin_rhs@2c7a9e8r:
+                {1} r1 = JOIN `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` WITH @parameter ON FIRST 1 OUTPUT Lhs.0
+            
+                {1} r2 = JOIN `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` WITH @frienddecl ON FIRST 1 OUTPUT Lhs.0
+            
+                {1} r3 = JOIN `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` WITH @enumconstant ON FIRST 1 OUTPUT Lhs.0
+            
+                {1} r4 = JOIN `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` WITH @localvariable ON FIRST 1 OUTPUT Lhs.0
+            
+                {1} r5 = JOIN `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` WITH QualifiedName::TypeTemplateParameter#a7fe9400#b ON FIRST 1 OUTPUT Lhs.0
+            
+                {1} r6 = JOIN `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` WITH `QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf` ON FIRST 1 OUTPUT Lhs.0
+            
+                {2} r7 = SCAN `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` OUTPUT In.0, _
+                {2}    | REWRITE WITH Out.1 := 9
+                {1}    | JOIN WITH #usertypesMerge_02#join_rhs ON FIRST 2 OUTPUT Lhs.0
+            
+                {1} r8 = JOIN `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` WITH enclosingfunction ON FIRST 1 OUTPUT Lhs.0
+                {1}    | JOIN WITH @usertype ON FIRST 1 OUTPUT Lhs.0
+            
+                {1} r9 = r1 UNION r2 UNION r3 UNION r4 UNION r5 UNION r6 UNION r7 UNION r8
+                return r9
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate QualifiedName::Declaration.isTopLevel/0#dispred#3b456a20#b@ca5bcf6d in 0ms (size: 229).
+Evaluated relational algebra for predicate QualifiedName::Declaration.isTopLevel/0#dispred#3b456a20#b@ca5bcf6d:
+                {1} r1 = `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` AND NOT _#@enumconstantMergeTypeCall_#@frienddeclMergeTypeCall_#@localvariableMergeTypeCall_#@parameterMerge__#antijoin_rhs(FIRST 1)
+                return r1
+
+[2026-08-10 22:17:29] Completed evaluation of a recursive layer containing 1 different predicates (took 0ms). Predicates evaluated:
+QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@4f1e7w3e (took 0ms) (size: 446)
+
+Evaluated recursive predicate QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@4f1e7w3e in 0ms on iteration 1 (delta size: 229).
+Evaluated relational algebra for predicate QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@4f1e7w3e on iteration 1 running pipeline base:
+                {3} r1 = JOIN #namespacembrsMerge_10#join_rhs WITH `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` ON FIRST 1 OUTPUT Lhs.1, _, Lhs.0
+                {3}    | REWRITE WITH Out.1 := ""
+                {3}    | AND NOT namespaces(FIRST 2)
+                {2}    | SCAN OUTPUT In.2, In.0
+            
+                {1} r2 = JOIN `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` WITH `QualifiedName::Declaration.isTopLevel/0#dispred#3b456a20#b` ON FIRST 1 OUTPUT Lhs.0
+                {1}    | AND NOT #namespacembrsMerge_1#antijoin_rhs(FIRST 1)
+                {2}    | SCAN OUTPUT _, In.0
+                {2}    | REWRITE WITH Out.0 := ""
+                {2}    | JOIN WITH #namespacesMerge_10#join_rhs ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+            
+                {2} r3 = r1 UNION r2
+                return r3
+
+Evaluated recursive predicate QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@4f1e7w3e in 0ms on iteration 2 (delta size: 217).
+Evaluated relational algebra for predicate QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@4f1e7w3e on iteration 2 running pipeline standard:
+                {2} r1 = JOIN `QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf#prev_delta` WITH `QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | JOIN WITH `m#QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                {2}    | AND NOT `QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf#prev`(FIRST 2)
+                return r1
+
+Pipeline base for QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@4f1e7w3e was evaluated in 1 iterations totaling 0ms (delta sizes total: 229).
+Pipeline standard for QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf@4f1e7w3e was evaluated in 1 iterations totaling 0ms (delta sizes total: 217).
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate _#namespacembrsMerge_1#antijoin_rhs_#namespacembrsMerge_10#join_rhs_#namespacesMerge#join_rhs@113b27a6 in 0ms (size: 10).
+Evaluated relational algebra for predicate _#namespacembrsMerge_1#antijoin_rhs_#namespacembrsMerge_10#join_rhs_#namespacesMerge#join_rhs@113b27a6:
+                {3} r1 = JOIN #namespacembrsMerge_1#antijoin_rhs WITH namespaces ON FIRST 1 OUTPUT Lhs.0, Lhs.0, Rhs.1
+                {3}    | JOIN WITH #namespacembrsMerge_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, Lhs.1, Lhs.2
+                return r1
+
+[2026-08-10 22:17:29] Completed evaluation of a recursive layer containing 1 different predicates (took 1ms). Predicates evaluated:
+QualifiedName::Namespace.getQualifiedName/0#cbc0648a@91677w3f (took 1ms) (size: 173)
+
+Evaluated recursive predicate QualifiedName::Namespace.getQualifiedName/0#cbc0648a@91677w3f in 0ms on iteration 1 (delta size: 163).
+Evaluated relational algebra for predicate QualifiedName::Namespace.getQualifiedName/0#cbc0648a@91677w3f on iteration 1 running pipeline base:
+                {2} r1 = namespaces AND NOT #namespacembrsMerge_1#antijoin_rhs(FIRST 1)
+                return r1
+
+Evaluated recursive predicate QualifiedName::Namespace.getQualifiedName/0#cbc0648a@91677w3f in 1ms on iteration 2 (delta size: 10).
+Evaluated relational algebra for predicate QualifiedName::Namespace.getQualifiedName/0#cbc0648a@91677w3f on iteration 2 running pipeline standard:
+                {4} r1 = JOIN `QualifiedName::Namespace.getQualifiedName/0#cbc0648a#prev_delta` WITH _#namespacembrsMerge_1#antijoin_rhs_#namespacembrsMerge_10#join_rhs_#namespacesMerge#join_rhs ON FIRST 1 OUTPUT Rhs.1, _, Lhs.1, Rhs.2
+                {2}    | REWRITE WITH Tmp.1 := "::", Out.1 := (In.2 ++ Tmp.1 ++ In.3) KEEPING 2
+                {2}    | AND NOT `QualifiedName::Namespace.getQualifiedName/0#cbc0648a#prev`(FIRST 2)
+                return r1
+
+Pipeline base for QualifiedName::Namespace.getQualifiedName/0#cbc0648a@91677w3f was evaluated in 1 iterations totaling 0ms (delta sizes total: 163).
+Pipeline standard for QualifiedName::Namespace.getQualifiedName/0#cbc0648a@91677w3f was evaluated in 1 iterations totaling 1ms (delta sizes total: 10).
+
+[2026-08-10 22:17:29] Found predicate functions@3c09047a in the relation cache (size: 107513)
+[2026-08-10 22:17:29] Completed evaluation of a recursive layer containing 2 different predicates (took 1ms). Predicates evaluated:
+m#QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@b8b52xg6 (took 0ms) (size: 446)
+m#QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf@b8b52wg6 (took 0ms) (size: 210)
+
+Evaluated recursive predicate m#QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@b8b52xg6 in 0ms on iteration 1 (delta size: 236).
+Evaluated relational algebra for predicate m#QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@b8b52xg6 on iteration 1 running pipeline base:
+                return `m#Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf`
+
+Evaluated recursive predicate m#QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf@b8b52wg6 in 0ms on iteration 1 (delta size: 0).
+Evaluated relational algebra for predicate m#QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf@b8b52wg6 on iteration 1 running pipeline base:
+                {1} r1 = EMPTY(unique entity)
+                return r1
+
+Evaluated recursive predicate m#QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf@b8b52wg6 in 0ms on iteration 2 (delta size: 210).
+Evaluated relational algebra for predicate m#QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf@b8b52wg6 on iteration 2 running pipeline standard:
+                {1} r1 = JOIN `m#QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf#prev_delta` WITH `QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf` ON FIRST 1 OUTPUT Rhs.1
+                {1}    | AND NOT `m#QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf#prev`(FIRST 1)
+                return r1
+
+Evaluated recursive predicate m#QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@b8b52xg6 in 0ms on iteration 3 (delta size: 210).
+Evaluated relational algebra for predicate m#QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@b8b52xg6 on iteration 3 running pipeline standard:
+                {1} r1 = `m#QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf#prev_delta` AND NOT `m#QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf#prev`(FIRST 1)
+                return r1
+
+Pipeline base for m#QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@b8b52xg6 was evaluated in 1 iterations totaling 0ms (delta sizes total: 236).
+Pipeline standard for m#QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@b8b52xg6 was evaluated in 1 iterations totaling 0ms (delta sizes total: 210).
+Pipeline base for m#QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf@b8b52wg6 was evaluated in 1 iterations totaling 0ms (delta sizes total: 0).
+Pipeline standard for m#QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf@b8b52wg6 was evaluated in 1 iterations totaling 0ms (delta sizes total: 210).
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate m#QualifiedName::hasTypeQualifier/1#dbed585d#b@dd7f2dte in 0ms (size: 446).
+Evaluated relational algebra for predicate m#QualifiedName::hasTypeQualifier/1#dbed585d#b@dd7f2dte:
+                {1} r1 = `m#Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf` UNION `m#QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf`
+                return r1
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate QualifiedName::hasTypeQualifier/1#dbed585d#b@fd24dbnl in 0ms (size: 217).
+Evaluated relational algebra for predicate QualifiedName::hasTypeQualifier/1#dbed585d#b@fd24dbnl:
+                {1} r1 = JOIN `m#QualifiedName::hasTypeQualifier/1#dbed585d#b` WITH `QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf` ON FIRST 1 OUTPUT Lhs.0
+                return r1
+
+[2026-08-10 22:17:29] Completed evaluation of a recursive layer containing 2 different predicates (took 0ms). Predicates evaluated:
+QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@83a34xie (took 0ms) (size: 217)
+QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf@83a34wie (took 0ms) (size: 210)
+
+Evaluated recursive predicate QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@83a34xie in 0ms on iteration 1 (delta size: 0).
+Evaluated relational algebra for predicate QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@83a34xie on iteration 1 running pipeline base:
+                {2} r1 = EMPTY(unique entity, unique cached string)
+                return r1
+
+Evaluated recursive predicate QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf@83a34wie in 0ms on iteration 1 (delta size: 210).
+Evaluated relational algebra for predicate QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf@83a34wie on iteration 1 running pipeline base:
+                {1} r1 = `m#QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf` AND NOT `QualifiedName::hasTypeQualifier/1#dbed585d#b`(FIRST 1)
+                {2}    | JOIN WITH usertypes ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+                return r1
+
+Evaluated recursive predicate QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@83a34xie in 0ms on iteration 2 (delta size: 217).
+Evaluated relational algebra for predicate QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@83a34xie on iteration 2 running pipeline standard:
+                {2} r1 = JOIN `QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf#prev_delta` WITH `QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | JOIN WITH `m#QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf` ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                {2}    | AND NOT `QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf#prev`(FIRST 2)
+                return r1
+
+Pipeline base for QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@83a34xie was evaluated in 1 iterations totaling 0ms (delta sizes total: 0).
+Pipeline standard for QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf@83a34xie was evaluated in 1 iterations totaling 0ms (delta sizes total: 217).
+Pipeline base for QualifiedName::getTypeQualifierForMembersWithArgs/1#2a20cdb0#bf@83a34wie was evaluated in 1 iterations totaling 0ms (delta sizes total: 210).
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf@11c2b125 in 4ms (size: 236).
+Evaluated relational algebra for predicate Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf@11c2b125:
+                {2} r1 = JOIN `m#Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf` WITH functions ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+                {3}    | JOIN WITH `QualifiedName::Declaration.getNamespace/0#a6f64dfa#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.1
+                {3}    | JOIN WITH `QualifiedName::Namespace.getQualifiedName/0#cbc0648a` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Rhs.1
+            
+                {4} r2 = SCAN r1 OUTPUT In.0, In.1, In.2, _
+                {3}    | REWRITE WITH Tmp.3 := "", TEST InOut.2 = Tmp.3 KEEPING 3
+                {2}    | JOIN WITH functions ON FIRST 2 OUTPUT Lhs.0, Lhs.1
+            
+                {2} r3 = r2 AND NOT `QualifiedName::hasTypeQualifier/1#dbed585d#b`(FIRST 1)
+            
+                {4} r4 = JOIN r2 WITH `QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf` ON FIRST 1 OUTPUT Lhs.0, _, Rhs.1, Lhs.1
+                {2}    | REWRITE WITH Tmp.1 := "::", Out.1 := (In.2 ++ Tmp.1 ++ In.3) KEEPING 2
+            
+                {4} r5 = SCAN r1 OUTPUT In.0, In.1, In.2, _
+                {3}    | REWRITE WITH Tmp.3 := "", TEST InOut.2 != Tmp.3 KEEPING 3
+                {3}    | JOIN WITH functions ON FIRST 2 OUTPUT Lhs.0, Lhs.1, Lhs.2
+            
+                {3} r6 = r5 AND NOT `QualifiedName::hasTypeQualifier/1#dbed585d#b`(FIRST 1)
+                {4}    | SCAN OUTPUT In.0, _, In.2, In.1
+                {2}    | REWRITE WITH Tmp.1 := "::", Out.1 := (In.2 ++ Tmp.1 ++ In.3) KEEPING 2
+            
+                {6} r7 = JOIN r5 WITH `QualifiedName::Declaration.getTypeQualifierWithArgs/0#3480a5ef#bf` ON FIRST 1 OUTPUT Lhs.0, _, Lhs.2, Rhs.1, Lhs.1, _
+                {2}    | REWRITE WITH Tmp.1 := "::", Tmp.5 := "::", Out.1 := (In.2 ++ Tmp.1 ++ In.3 ++ Tmp.5 ++ In.4) KEEPING 2
+            
+                {2} r8 = r3 UNION r4 UNION r6 UNION r7
+                return r8
+
+[2026-08-10 22:17:29] Evaluated non-recursive predicate #select#query@53305b34 in 651ms (size: 52).
+Evaluated relational algebra for predicate #select#query@53305b34:
+                {2} r1 = SCAN `Expr::Expr.getLocation/0#dispred#0a3d90c6` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `Location::Location.getStartLine/0#d54f9e6c` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {3}    | JOIN WITH `Element::Element.getFile/0#2b8c8740` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Rhs.1
+                {8}    | JOIN WITH `01_preliminary_groups::preliminaryGroup/6#2fefcf79_501234#join_rhs` ON FIRST 1 OUTPUT Lhs.2, Lhs.1, Lhs.0, Rhs.1, Rhs.2, Rhs.3, Rhs.4, Rhs.5
+                {8}    | JOIN WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e#bf` ON FIRST 1 OUTPUT Lhs.6, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.7, Rhs.1
+                {8}    | JOIN WITH `Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf` ON FIRST 1 OUTPUT Lhs.6, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.7, Rhs.1
+                {8}    | JOIN WITH `Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf` ON FIRST 1 OUTPUT Lhs.2, Lhs.1, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Rhs.1
+                {8}    | JOIN WITH `cached_Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.2, Lhs.3, Lhs.4, Lhs.6, Lhs.7, Lhs.5, Lhs.1, Rhs.1
+                return r1
+
+[2026-08-10 22:17:29] Completed evaluation of query 01_preliminary_groups.ql.
+Most expensive predicates for stage 1 of completed query 01_preliminary_groups.ql:
+        time | predicate
+        -----|----------
+         1ms | #usertypesMerge_20#join_rhs@7a31e969
+
+Most expensive predicates for stage 3 of completed query 01_preliminary_groups.ql:
+        time | predicate
+        -----|----------
+         2ms | @localscopevariable@6209b1aq
+         1ms | @localvariable@526b65nm
+
+Most expensive predicates for stage 4 of completed query 01_preliminary_groups.ql:
+        time | predicate
+        -----|----------
+        22ms | Function::Function.getParameter/1#8e6a5a5b@5bc694lo
+         2ms | #function_instantiationMerge_10#join_rhs@f9ba679d
+         2ms | @localscopevariable@6209b1aq
+         1ms | @localvariable@526b65nm
+         1ms | #usertypesMerge_20#join_rhs@7a31e969
+         0ms | #class_instantiationMerge_10#join_rhs@c2e3b4lh
+         0ms | #namespacembrsMerge_1#antijoin_rhs@29795bh8
+         0ms | #namespacembrsMerge_10#join_rhs@b85d0a2p
+         0ms | #namespacesMerge_10#join_rhs@dcfae1lh
+         0ms | _#is_function_templateMerge_project##function_template_argumentMerge#shared@4a15abee
+         0ms | project##class_template_argumentMerge@3fb95fhb
+         0ms | QualifiedName::TemplateFunction.getAnInstantiation/0#dispred#1cbe8684@fd97279v
+         0ms | #variable_instantiationMerge_10#join_rhs@6cecb6il
+         0ms | @frienddecl@c3e65fvh
+         0ms | project##function_template_argumentMerge@a38832gb
+         0ms | _#fun_declsMerge_10#join_rhs_#fun_specializedMerge__#is_function_templateMerge_project##function_tem__#antijoin_rhs@5b0b52f0
+         0ms | @enumconstant@e5299caj
+
+Most expensive predicates for stage 6 of completed query 01_preliminary_groups.ql:
+        time  | evals | max @ iter | predicate
+        ------|-------|------------|----------
+        363ms |       |            | Access::VariableAccess.getTarget/0#238a7818@6f5aa8sk
+        258ms |       |            | _#@functionMergeTypeCall_#@variableMergeTypeCall_#varbindMerge__#@varaccessMergeTypeCall_Access::Acc__#antijoin_rhs@e2dfd2de
+        110ms |       |            | Access::Access#bfafc000@878a70jn
+         33ms |       |            | _#@varaccessMergeTypeCall_Access::Access#bfafc000#shared@0d803cj4
+         22ms |       |            | Function::Function.getParameter/1#8e6a5a5b@5bc694lo
+         16ms |       |            | @access@9ed01dvv
+          4ms |       |            | @declaration@9c680e4c
+          4ms |       |            | Call::Call#048c9613@8acb25f5
+          3ms |       |            | #iscallMerge_0#antijoin_rhs@f08ffd79
+          3ms |       |            | @routineexpr@79fb1f0f
+          2ms |       |            | @variable@cc901c9e
+          2ms |       |            | @localscopevariable@6209b1aq
+          2ms |       |            | #function_instantiationMerge_10#join_rhs@f9ba679d
+          1ms |       |            | #usertypesMerge_20#join_rhs@7a31e969
+          1ms |     2 | 1ms @ 2    | QualifiedName::Namespace.getQualifiedName/0#cbc0648a@91677w3f
+          1ms |       |            | @localvariable@526b65nm
+          0ms |       |            | #class_instantiationMerge_10#join_rhs@c2e3b4lh
+          0ms |       |            | #variable_instantiationMerge_10#join_rhs@6cecb6il
+          0ms |       |            | #namespacembrsMerge_1#antijoin_rhs@29795bh8
+          0ms |       |            | @enumconstant@e5299caj
+          0ms |       |            | _#fun_declsMerge_10#join_rhs_#fun_specializedMerge__#is_function_templateMerge_project##function_tem__#antijoin_rhs@5b0b52f0
+          0ms |       |            | #namespacembrsMerge_10#join_rhs@b85d0a2p
+          0ms |       |            | _#namespacembrsMerge_1#antijoin_rhs_#namespacembrsMerge_10#join_rhs_#namespacesMerge#join_rhs@113b27a6
+          0ms |       |            | @frienddecl@c3e65fvh
+          0ms |       |            | project##function_template_argumentMerge@a38832gb
+          0ms |       |            | _#is_function_templateMerge_project##function_template_argumentMerge#shared@4a15abee
+          0ms |       |            | #namespacesMerge_10#join_rhs@dcfae1lh
+          0ms |       |            | project##class_template_argumentMerge@3fb95fhb
+          0ms |       |            | QualifiedName::TemplateFunction.getAnInstantiation/0#dispred#1cbe8684@fd97279v
+
+Most expensive predicates for stage 7 of completed query 01_preliminary_groups.ql:
+        time  | evals |  max @ iter | predicate
+        ------|-------|-------------|----------
+         1.3s |    48 | 98ms @ 14   | #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn
+         1.1s |       |             | #locations_defaultMerge_23450#join_rhs@99f7bc3i
+        651ms |       |             | #select#query@53305b34
+        498ms |       |             | Element::Element.getFile/0#2b8c8740@9b043988
+        363ms |       |             | Access::VariableAccess.getTarget/0#238a7818#bf@6f5aa8sk
+        258ms |       |             | _#@functionMergeTypeCall_#@variableMergeTypeCall_#varbindMerge__#@varaccessMergeTypeCall_Access::Acc__#antijoin_rhs@e2dfd2de
+        202ms |       |             | _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t
+        200ms |       |             | Access::FieldAccess#d1ccd326#b@be1c72b3
+        134ms |       |             | Access::Access.getTarget/0#dispred#cf25c8aa#bf@4d9e3382
+        131ms |       |             | File::Impl::Container.getRelativePath/0#dispred#deec4f8e#bf@96a1f1pj
+        110ms |       |             | Access::Access#bfafc000#b@878a70jn
+        108ms |       |             | Expr::Expr.getLocation/0#dispred#0a3d90c6@06da69m4
+        102ms |       |             | Call::FunctionCall.getTarget/0#45745a57@eea5fe3l
+        102ms |       |             | m#Access::Access.getTarget/0#dispred#cf25c8aa#bf@73617fj6
+        100ms |       |             | Access::Access.getTarget/0#dispred#cf25c8aa#bf_10#join_rhs@0fd884ol
+         68ms |       |             | m#Variable::Variable.getName/0#dispred#1b4a78c5#bb#mcpe_this@cf3f2a59
+         65ms |       |             | Location::Location.getContainer/0#9edabfb6@bbd97edk
+         55ms |       |             | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+         51ms |       |             | 01_preliminary_groups::directCall/2#a072b138@8a3bb9ia
+         36ms |       |             | Call::ConstructorCall#c4f8b4c6@e520c8fo
+         33ms |       |             | _#@varaccessMergeTypeCall_Access::Access#bfafc000#b#shared@0d803cj4
+         31ms |       |             | m#01_preliminary_groups::optionAccess/3#13fc0d8a#ffb@48d059ni
+         31ms |       |             | Call::DestructorCall#43f8f365@07e71ft5
+         22ms |       |             | Function::Function.getParameter/1#8e6a5a5b@5bc694lo
+         20ms |       |             | 01_preliminary_groups::preliminaryGroup/6#2fefcf79@8613423h
+         19ms |       |             | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#bf@3d88f39q
+         19ms |       |             | _#var_declsMerge_10#join_rhs_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f#shared@c121c8r0
+         19ms |       |             | Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf@9b8602lf
+         16ms |       |             | @access@9ed01dvv
+         12ms |     3 | 11ms @ 1    | Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b
+         12ms |       |             | Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60#bf@d9ee9e4i
+         10ms |       |             | Expr::Expr.getParent/0#dispred#393b4f50#bf@6459b92f
+         10ms |       |             | Parameter::Parameter.getFunction/0#dispred#803faca2#bf@8d9956qo
+          9ms |       |             | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb@f56714d0
+          9ms |       |             | Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60#bf_10#join_rhs@f0b5f3sd
+          8ms |       |             | QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf@cc2be2fd
+          7ms |       |             | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb_10#join_rhs@65a74460
+          7ms |     1 |  7ms @ 1    | Parameter::Parameter.getName/0#dispred#60f9ae8a#bb@7d980xbo
+          5ms |       |             | Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf_10#join_rhs@4aec56te
+          4ms |       |             | @declaration@9c680e4c
+          4ms |       |             | m#Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb@2f9d7aif
+          4ms |       |             | _Parameter::Parameter.getFunction/0#dispred#803faca2#bf__Parameter::Parameter#623bc78d_m#Parameter::__#antijoin_rhs@1289a0tn
+          4ms |       |             | Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf@11c2b125
+          4ms |       |             | Call::Call#048c9613@8acb25f5
+          3ms |       |             | #iscallMerge_0#antijoin_rhs@f08ffd79
+          3ms |       |             | 01_preliminary_groups::optionAccess/3#13fc0d8a#ffb@00eb6487
+          3ms |       |             | @routineexpr@79fb1f0f
+          3ms |       |             | project#Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf@b16e34ja
+          3ms |       |             | QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf_10#join_rhs@18e41dtb
+          2ms |       |             | m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this@dd50data
+
+Most expensive predicates for completed query 01_preliminary_groups.ql:
+        time  | evals |  max @ iter | predicate
+        ------|-------|-------------|----------
+         1.3s |    48 | 98ms @ 14   | #01_preliminary_groups::directCall/2#a072b138Plus#bf@8a684wnn
+         1.1s |       |             | #locations_defaultMerge_23450#join_rhs@99f7bc3i
+        651ms |       |             | #select#query@53305b34
+        498ms |       |             | Element::Element.getFile/0#2b8c8740@9b043988
+        363ms |       |             | Access::VariableAccess.getTarget/0#238a7818@6f5aa8sk
+        258ms |       |             | _#@functionMergeTypeCall_#@variableMergeTypeCall_#varbindMerge__#@varaccessMergeTypeCall_Access::Acc__#antijoin_rhs@e2dfd2de
+        202ms |       |             | _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t
+        200ms |       |             | Access::FieldAccess#d1ccd326#b@be1c72b3
+        134ms |       |             | Access::Access.getTarget/0#dispred#cf25c8aa#bf@4d9e3382
+        131ms |       |             | File::Impl::Container.getRelativePath/0#dispred#deec4f8e#bf@96a1f1pj
+        110ms |       |             | Access::Access#bfafc000@878a70jn
+        108ms |       |             | Expr::Expr.getLocation/0#dispred#0a3d90c6@06da69m4
+        102ms |       |             | Call::FunctionCall.getTarget/0#45745a57@eea5fe3l
+        102ms |       |             | m#Access::Access.getTarget/0#dispred#cf25c8aa#bf@73617fj6
+        100ms |       |             | Access::Access.getTarget/0#dispred#cf25c8aa#bf_10#join_rhs@0fd884ol
+         68ms |       |             | m#Variable::Variable.getName/0#dispred#1b4a78c5#bb#mcpe_this@cf3f2a59
+         65ms |       |             | Location::Location.getContainer/0#9edabfb6@bbd97edk
+         55ms |       |             | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+         51ms |       |             | 01_preliminary_groups::directCall/2#a072b138@8a3bb9ia
+         36ms |       |             | Call::ConstructorCall#c4f8b4c6@e520c8fo
+         33ms |       |             | _#@varaccessMergeTypeCall_Access::Access#bfafc000#shared@0d803cj4
+         31ms |       |             | m#01_preliminary_groups::optionAccess/3#13fc0d8a#ffb@48d059ni
+         31ms |       |             | Call::DestructorCall#43f8f365@07e71ft5
+         22ms |       |             | Function::Function.getParameter/1#8e6a5a5b@5bc694lo
+         20ms |       |             | 01_preliminary_groups::preliminaryGroup/6#2fefcf79@8613423h
+         19ms |       |             | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#bf@3d88f39q
+         19ms |       |             | _#var_declsMerge_10#join_rhs_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f#shared@c121c8r0
+         19ms |       |             | Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf@9b8602lf
+         16ms |       |             | @access@9ed01dvv
+         12ms |     3 | 11ms @ 1    | Expr::Expr.getExprLocationOverride/0#80738c92@4feb2w5b
+         12ms |       |             | Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60#bf@d9ee9e4i
+         10ms |       |             | Expr::Expr.getParent/0#dispred#393b4f50#bf@6459b92f
+         10ms |       |             | Parameter::Parameter.getFunction/0#dispred#803faca2#bf@8d9956qo
+          9ms |       |             | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb@f56714d0
+          9ms |       |             | Parameter::Parameter.getAnEffectiveDeclarationEntry/0#dispred#03397d60#bf_10#join_rhs@f0b5f3sd
+          8ms |       |             | QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf@cc2be2fd
+          7ms |       |             | Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb_10#join_rhs@65a74460
+          7ms |     1 |  7ms @ 1    | Parameter::Parameter.getName/0#dispred#60f9ae8a#bb@7d980xbo
+          5ms |       |             | Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf_10#join_rhs@4aec56te
+          4ms |       |             | @declaration@9c680e4c
+          4ms |       |             | m#Variable::VariableDeclarationEntry.getVariable/0#dispred#a634d70c#fb@2f9d7aif
+          4ms |       |             | _Parameter::Parameter.getFunction/0#dispred#803faca2#bf__Parameter::Parameter#623bc78d_m#Parameter::__#antijoin_rhs@1289a0tn
+          4ms |       |             | Declaration::Declaration.getQualifiedName/0#dispred#4508fade#bf@11c2b125
+          4ms |       |             | Call::Call#048c9613@8acb25f5
+          3ms |       |             | #iscallMerge_0#antijoin_rhs@f08ffd79
+          3ms |       |             | 01_preliminary_groups::optionAccess/3#13fc0d8a#ffb@00eb6487
+          3ms |       |             | @routineexpr@79fb1f0f
+          3ms |       |             | project#Parameter::Parameter.getANamedDeclarationEntry/0#dispred#ee3743d5#bf@b16e34ja
+          3ms |       |             | QualifiedName::Declaration.getDeclaringType/0#dispred#f9937496#bf_10#join_rhs@18e41dtb
+          2ms |       |             | m#Parameter::Parameter.getName/0#dispred#60f9ae8a#bb#mcpe_this@dd50data
+
+[2026-08-10 22:17:29] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 7.1 seconds
+        * Total time spent evaluating predicates: 6.3 seconds

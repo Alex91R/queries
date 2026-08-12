@@ -1,0 +1,47 @@
+{
+  "time" : "2026-08-12T14:50:47.088361492Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 36,
+  "nanoTime" : 3454976277927,
+  "codeqlVersion" : "2.26.2",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-08-12T14:50:47.099753766Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 37,
+  "nanoTime" : 3454987627451,
+  "queryName" : "/home/oleksii-shemshur/work/toolchains/tools/queries/flag_selection.ql",
+  "stages" : [ 2 ]
+}
+
+{
+  "time" : "2026-08-12T14:50:47.100346526Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 38,
+  "nanoTime" : 3454988198841,
+  "raHash" : "cdd3e8mmm8uvu6d2g8m3rt911t4",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 2 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 481
+}
+
+{
+  "time" : "2026-08-12T14:50:47.104069855Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 39,
+  "nanoTime" : 3454991951155,
+  "startEvent" : 37,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-08-12T14:50:47.105391379Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 40,
+  "nanoTime" : 3454993252861
+}
