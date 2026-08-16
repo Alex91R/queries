@@ -1,0 +1,24 @@
+Completed evaluation of query all_passes_gcc_working.ql.
+Most expensive predicates for stage 6 of completed query all_passes_gcc_working.ql:
+        time | evals |  max @ iter | predicate
+        -----|-------|-------------|----------
+        31ms |     2 | 30ms @ 1    | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@fda33wkh
+        20ms |       |             | _#type_declsMerge_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739__#shared@d11d1eeg
+         0ms |       |             | #select#query@cca892or
+         0ms |       |             | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#type_declsMerge_File::Impl::File.getURL/__#antijoin_rhs@ccc4177d
+         0ms |       |             | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb_10#join_rhs@3179d4f6
+         0ms |     1 |  0ms @ 1    | m#UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#mcpe_this@b394fwcb
+
+Most expensive predicates for completed query all_passes_gcc_working.ql:
+        time | evals |  max @ iter | predicate
+        -----|-------|-------------|----------
+        31ms |     2 | 30ms @ 1    | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@fda33wkh
+        20ms |       |             | _#type_declsMerge_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739__#shared@d11d1eeg
+         0ms |       |             | #select#query@cca892or
+         0ms |       |             | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#type_declsMerge_File::Impl::File.getURL/__#antijoin_rhs@ccc4177d
+         0ms |       |             | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb_10#join_rhs@3179d4f6
+         0ms |     1 |  0ms @ 1    | m#UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#mcpe_this@b394fwcb
+
+[2026-08-13 18:05:23] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.1 seconds
+        * Total time spent evaluating predicates: 0.1 seconds

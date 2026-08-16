@@ -1,0 +1,16 @@
+Completed evaluation of query all_passes_in_gcc-passes-def.ql.
+Most expensive predicates for stage 6 of completed query all_passes_in_gcc-passes-def.ql:
+        time  | predicate
+        ------|----------
+        187ms | #select#query@7da2738f
+         90ms | #macroinvocationsMerge_30#join_rhs@c5b172bs
+
+Most expensive predicates for completed query all_passes_in_gcc-passes-def.ql:
+        time  | predicate
+        ------|----------
+        187ms | #select#query@7da2738f
+         90ms | #macroinvocationsMerge_30#join_rhs@c5b172bs
+
+[2026-08-13 17:22:19] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.4 seconds
+        * Total time spent evaluating predicates: 0.3 seconds

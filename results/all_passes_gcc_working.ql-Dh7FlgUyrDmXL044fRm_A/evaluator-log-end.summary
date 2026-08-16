@@ -1,0 +1,68 @@
+Completed evaluation of query all_passes_gcc_working.ql.
+Most expensive predicates for stage 0 of completed query all_passes_gcc_working.ql:
+        time | predicate
+        -----|----------
+         1ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 1 of completed query all_passes_gcc_working.ql:
+        time | predicate
+        -----|----------
+         1ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 2 of completed query all_passes_gcc_working.ql:
+        time | predicate
+        -----|----------
+         1ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 3 of completed query all_passes_gcc_working.ql:
+        time | predicate
+        -----|----------
+         1ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 4 of completed query all_passes_gcc_working.ql:
+        time | predicate
+        -----|----------
+         1ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 5 of completed query all_passes_gcc_working.ql:
+        time | predicate
+        -----|----------
+         1ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 6 of completed query all_passes_gcc_working.ql:
+        time  | predicate
+        ------|----------
+        828ms | project#Element::ElementBase.toString/0#dispred#6e016f86@00b52b64
+         38ms | File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc
+         25ms | UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf@cf1f5a46
+          5ms | Element::Element.getLocation/0#dispred#6c3f5b09#bf@f4062en2
+          2ms | #select@3346937n
+          2ms | #select#query@1ab7d4gj
+          1ms | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+          1ms | File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs@c84492vk
+          1ms | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@2d04fcuv
+          1ms | @file@81abb6m0
+          0ms | UserType::UserType.getLocation/0#a323d74c#bf@10540afn
+          0ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs#shared@801337j2
+          0ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d__#select_File::Impl::File.getURL/0#dispred#2f739__#shared@309857i2
+
+Most expensive predicates for completed query all_passes_gcc_working.ql:
+        time  | predicate
+        ------|----------
+        828ms | project#Element::ElementBase.toString/0#dispred#6e016f86@00b52b64
+         38ms | File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc
+         25ms | UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf@cf1f5a46
+          5ms | Element::Element.getLocation/0#dispred#6c3f5b09#bf@f4062en2
+          2ms | #select@3346937n
+          2ms | #select#query@1ab7d4gj
+          1ms | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+          1ms | File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs@c84492vk
+          1ms | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@2d04fcuv
+          1ms | files_0#antijoin_rhs@81abb6m0
+          0ms | UserType::UserType.getLocation/0#a323d74c#bf@10540afn
+          0ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs#shared@801337j2
+          0ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d__#select_File::Impl::File.getURL/0#dispred#2f739__#shared@309857i2
+
+[2026-08-13 17:58:43] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 1.0 seconds
+        * Total time spent evaluating predicates: 0.9 seconds

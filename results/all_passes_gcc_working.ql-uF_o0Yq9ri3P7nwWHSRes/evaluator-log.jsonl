@@ -1,0 +1,781 @@
+{
+  "time" : "2026-08-13T17:07:52.818768712Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 1414,
+  "nanoTime" : 12608149769612,
+  "codeqlVersion" : "2.26.2",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-08-13T17:07:52.855392846Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 1415,
+  "nanoTime" : 12608186397282,
+  "queryName" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql",
+  "stages" : [ 58, 59, 60, 61, 62, 63, 64 ]
+}
+
+{
+  "time" : "2026-08-13T17:07:52.858212383Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1416,
+  "nanoTime" : 12608189176473,
+  "raHash" : "82ca1924s7df18kvl50qp6pc9v3",
+  "predicateName" : "cached_ResolveClass::isType/1#eabb9878",
+  "appearsAs" : {
+    "cached_ResolveClass::isType/1#eabb9878" : [ 58 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 123849
+}
+
+{
+  "time" : "2026-08-13T17:07:52.858446290Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1417,
+  "nanoTime" : 12608189389672,
+  "raHash" : "ecb9e6su7vinsqn2hved49i2c07",
+  "predicateName" : "cached_ResolveClass::isClass/1#af2a1ca6",
+  "appearsAs" : {
+    "cached_ResolveClass::isClass/1#af2a1ca6" : [ 58 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 10868
+}
+
+{
+  "time" : "2026-08-13T17:07:52.858528925Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1418,
+  "nanoTime" : 12608189508284,
+  "raHash" : "a66798kmt7m0t4fpn56e459fpk2",
+  "predicateName" : "cached_ResolveClass::resolveClass/1#ea47deee",
+  "appearsAs" : {
+    "cached_ResolveClass::resolveClass/1#ea47deee" : [ 58 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 24895
+}
+
+{
+  "time" : "2026-08-13T17:07:52.858732957Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1419,
+  "nanoTime" : 12608189674074,
+  "raHash" : "90738ahctvdkjlt0i3qvihreh0d",
+  "predicateName" : "cached_ResolveGlobalVariable::isVariable/1#6e051315",
+  "appearsAs" : {
+    "cached_ResolveGlobalVariable::isVariable/1#6e051315" : [ 60 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 446985
+}
+
+{
+  "time" : "2026-08-13T17:07:52.858962737Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1420,
+  "nanoTime" : 12608189908203,
+  "raHash" : "d04f11u9b7hntadk2hs97si3ktd",
+  "predicateName" : "cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f",
+  "appearsAs" : {
+    "cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f" : [ 60 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 447482
+}
+
+{
+  "time" : "2026-08-13T17:07:52.859075889Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1421,
+  "nanoTime" : 12608190016876,
+  "raHash" : "f98098d9on2b492c6c275esfiue",
+  "predicateName" : "cached_ResolveFunction::isFunction/1#9226b83f",
+  "appearsAs" : {
+    "cached_ResolveFunction::isFunction/1#9226b83f" : [ 59 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 91685
+}
+
+{
+  "time" : "2026-08-13T17:07:52.859198057Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1422,
+  "nanoTime" : 12608190140157,
+  "raHash" : "d186d880pc1o7ec9mtbdcu2ch90",
+  "predicateName" : "cached_ResolveFunction::resolveFunction/1#576ba5ee",
+  "appearsAs" : {
+    "cached_ResolveFunction::resolveFunction/1#576ba5ee" : [ 59 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 107513
+}
+
+{
+  "time" : "2026-08-13T17:07:52.859578169Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1423,
+  "nanoTime" : 12608190520168,
+  "raHash" : "6044b650jaa7qj80h6h6pkhjm05",
+  "predicateName" : "cached_Expr::Expr.getType/0#dispred#444cc5af",
+  "appearsAs" : {
+    "cached_Expr::Expr.getType/0#dispred#444cc5af" : [ 62 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 10158564
+}
+
+{
+  "time" : "2026-08-13T17:07:52.859829609Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1424,
+  "nanoTime" : 12608190770386,
+  "raHash" : "b58a23s4gib1n9g18c4bhcsja59",
+  "predicateName" : "cached_Element::ElementBase.toString/0#dispred#6e016f86",
+  "appearsAs" : {
+    "cached_Element::ElementBase.toString/0#dispred#6e016f86" : [ 63 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 16830229
+}
+
+{
+  "time" : "2026-08-13T17:07:52.860228796Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1425,
+  "nanoTime" : 12608191170635,
+  "raHash" : "e52483rt7jh9q60bukldd9pu164",
+  "predicateName" : "all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41",
+  "appearsAs" : {
+    "all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41" : [ 64 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:07:52.860337750Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1426,
+  "nanoTime" : 12608191278166,
+  "raHash" : "bbd97edkf48odqqti6ec0epkftd",
+  "predicateName" : "Location::Location.getContainer/0#9edabfb6",
+  "appearsAs" : {
+    "Location::Location.getContainer/0#9edabfb6" : [ 64 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 7867442
+}
+
+{
+  "time" : "2026-08-13T17:07:52.860381011Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1427,
+  "nanoTime" : 12608191320987,
+  "raHash" : "cf1f5a466e4mqoc7taquun29qj0",
+  "predicateName" : "UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf",
+  "appearsAs" : {
+    "UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf" : [ 64 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:07:52.860428360Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1428,
+  "nanoTime" : 12608191368536,
+  "raHash" : "f4062en22vriur2m0dm2m9esuv6",
+  "predicateName" : "Element::Element.getLocation/0#dispred#6c3f5b09#bf",
+  "appearsAs" : {
+    "Element::Element.getLocation/0#dispred#6c3f5b09#bf" : [ 64 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:07:52.860485216Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1429,
+  "nanoTime" : 12608191425462,
+  "raHash" : "bad017oqli0nbr136ld8vl77sm4",
+  "predicateName" : "cached_QualifiedName::declarationHasQualifiedName/4#749d7d29",
+  "appearsAs" : {
+    "cached_QualifiedName::declarationHasQualifiedName/4#749d7d29" : [ 61 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 173869
+}
+
+{
+  "time" : "2026-08-13T17:07:52.861013856Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1430,
+  "nanoTime" : 12608191956135,
+  "raHash" : "f8fe7bo92fsanhrdvepmpv176oc",
+  "predicateName" : "#select",
+  "appearsAs" : {
+    "#select" : [ 64 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,62",
+  "ra" : {
+    "pipeline" : [
+      "    {3} r1 = JOIN `all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41` WITH `UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.1",
+      "    {3}    | JOIN WITH `Location::Location.getContainer/0#9edabfb6` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Rhs.1",
+      "    {3}    | JOIN WITH `Element::Element.getLocation/0#dispred#6c3f5b09#bf` ON FIRST 1 OUTPUT Lhs.2, Lhs.1, Rhs.1",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41" : "e52483rt7jh9q60bukldd9pu164",
+    "UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf" : "cf1f5a466e4mqoc7taquun29qj0",
+    "Location::Location.getContainer/0#9edabfb6" : "bbd97edkf48odqqti6ec0epkftd",
+    "Element::Element.getLocation/0#dispred#6c3f5b09#bf" : "f4062en22vriur2m0dm2m9esuv6"
+  },
+  "queryCausingWork" : 1415
+}
+
+{
+  "time" : "2026-08-13T17:07:52.861178494Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1431,
+  "nanoTime" : 12608192120263,
+  "predicateStartEvent" : 1430,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-13T17:07:52.863924212Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1432,
+  "nanoTime" : 12608194876040,
+  "startEvent" : 1431,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:07:52.864043456Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1433,
+  "nanoTime" : 12608194985395,
+  "startEvent" : 1430,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:07:52.864804931Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1434,
+  "nanoTime" : 12608195747872,
+  "raHash" : "7c0d12f0g9icj5ouph6bc7ee7ac",
+  "predicateName" : "File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d",
+  "appearsAs" : {
+    "File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d" : [ 64 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 3045
+}
+
+{
+  "time" : "2026-08-13T17:07:52.864915999Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1435,
+  "nanoTime" : 12608195857046,
+  "raHash" : "2b5cc3prfiol4l0qf2nvs6l3m23",
+  "predicateName" : "locations_default",
+  "appearsAs" : {
+    "locations_default" : [ 58, 59, 60, 61, 62, 63, 64 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 7867442
+}
+
+{
+  "time" : "2026-08-13T17:07:52.865083933Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1436,
+  "nanoTime" : 12608196027856,
+  "raHash" : "2b28edgc2hlovu7d7mn9l7g429d",
+  "predicateName" : "File::Impl::File.getURL/0#dispred#2f739b0d",
+  "appearsAs" : {
+    "File::Impl::File.getURL/0#dispred#2f739b0d" : [ 64 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 2915
+}
+
+{
+  "time" : "2026-08-13T17:07:52.865150227Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1437,
+  "nanoTime" : 12608196091325,
+  "raHash" : "c84492vks29e2g93g94htuee7h7",
+  "predicateName" : "File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs",
+  "appearsAs" : {
+    "File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs" : [ 64 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 2915
+}
+
+{
+  "time" : "2026-08-13T17:07:52.865447874Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1438,
+  "nanoTime" : 12608196390194,
+  "raHash" : "acb21f6matcb9ohbustu88mueg5",
+  "predicateName" : "Location::Location.hasLocationInfo/5#dispred#558082fb",
+  "appearsAs" : {
+    "Location::Location.hasLocationInfo/5#dispred#558082fb" : [ 64 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Location.qll:59,3-72,4",
+  "ra" : {
+    "pipeline" : [
+      "    {6} r1 = SCAN locations_default OUTPUT In.1, In.0, In.2, In.3, In.4, In.5",
+      "    {6}    | JOIN WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.1, Rhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "locations_default" : "2b5cc3prfiol4l0qf2nvs6l3m23",
+    "File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d" : "7c0d12f0g9icj5ouph6bc7ee7ac"
+  },
+  "queryCausingWork" : 1415
+}
+
+{
+  "time" : "2026-08-13T17:07:52.865567217Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1439,
+  "nanoTime" : 12608196508776,
+  "predicateStartEvent" : 1438,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-13T17:07:53.251100516Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1440,
+  "nanoTime" : 12608582085235,
+  "startEvent" : 1439,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-13T17:07:53.251246680Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1441,
+  "nanoTime" : 12608582187236,
+  "startEvent" : 1438,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-13T17:07:53.352574198Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1442,
+  "nanoTime" : 12608683542736,
+  "raHash" : "167ac5tst1h89mvlm8cf876mn66",
+  "predicateName" : "Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs",
+  "appearsAs" : {
+    "Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs" : [ 64 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,62",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN `Location::Location.hasLocationInfo/5#dispred#558082fb` OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Location::Location.hasLocationInfo/5#dispred#558082fb" : "acb21f6matcb9ohbustu88mueg5"
+  },
+  "queryCausingWork" : 1415
+}
+
+{
+  "time" : "2026-08-13T17:07:53.352744616Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1443,
+  "nanoTime" : 12608683686205,
+  "predicateStartEvent" : 1442,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-13T17:07:53.432274279Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1444,
+  "nanoTime" : 12608763247246,
+  "startEvent" : 1443,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-13T17:07:53.432419851Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1445,
+  "nanoTime" : 12608763402587,
+  "startEvent" : 1442,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-13T17:07:53.433211313Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1446,
+  "nanoTime" : 12608764159964,
+  "raHash" : "f4f5c6jkkge967q0m2d609epcv6",
+  "predicateName" : "Location::Location.toString/0#dispred#6ede7323",
+  "appearsAs" : {
+    "Location::Location.toString/0#dispred#6ede7323" : [ 64 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Location.qll:32,3-43,4",
+  "ra" : {
+    "pipeline" : [
+      "    {7} r1 = SCAN `Location::Location.hasLocationInfo/5#dispred#558082fb` OUTPUT In.0, _, In.1, In.2, In.3, In.4, In.5",
+      "    {2}    | REWRITE WITH Out.1 := toUrl(In.2,In.3,In.4,In.5,In.6) KEEPING 2",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Location::Location.hasLocationInfo/5#dispred#558082fb" : "acb21f6matcb9ohbustu88mueg5"
+  },
+  "queryCausingWork" : 1415
+}
+
+{
+  "time" : "2026-08-13T17:07:53.433383375Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1447,
+  "nanoTime" : 12608764326706,
+  "predicateStartEvent" : 1446,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-13T17:08:04.984747185Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1448,
+  "nanoTime" : 12620317809142,
+  "startEvent" : 1447,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-13T17:08:04.987567383Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1449,
+  "nanoTime" : 12620318510945,
+  "startEvent" : 1446,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-13T17:08:04.992131465Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1450,
+  "nanoTime" : 12620323076760,
+  "raHash" : "8615681uq5astjqmhf80eefcmp7",
+  "predicateName" : "Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs",
+  "appearsAs" : {
+    "Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs" : [ 64 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,62",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN `Location::Location.toString/0#dispred#6ede7323` OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Location::Location.toString/0#dispred#6ede7323" : "f4f5c6jkkge967q0m2d609epcv6"
+  },
+  "queryCausingWork" : 1415
+}
+
+{
+  "time" : "2026-08-13T17:08:04.992269814Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1451,
+  "nanoTime" : 12620323210360,
+  "predicateStartEvent" : 1450,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-13T17:08:05.055790325Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1452,
+  "nanoTime" : 12620386777418,
+  "startEvent" : 1451,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-13T17:08:05.055944954Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1453,
+  "nanoTime" : 12620386884198,
+  "startEvent" : 1450,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-13T17:08:05.057310249Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1454,
+  "nanoTime" : 12620388253290,
+  "raHash" : "21fbe35sub7pdt3jvh5gcbav0m6",
+  "predicateName" : "_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared",
+  "appearsAs" : {
+    "_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared" : [ 64 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,62",
+  "ra" : {
+    "pipeline" : [
+      "    {4} r1 = JOIN #select WITH `File::Impl::File.getURL/0#dispred#2f739b0d` ON FIRST 1 OUTPUT Lhs.2, Lhs.0, Lhs.1, Rhs.1",
+      "",
+      "    {3} r2 = #select AND NOT `File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs`(FIRST 1)",
+      "    {4}    | SCAN OUTPUT In.2, In.0, In.1, _",
+      "    {4}    | REWRITE WITH Out.3 := \"\"",
+      "",
+      "    {4} r3 = r1 UNION r2",
+      "",
+      "    {5} r4 = JOIN r3 WITH `Location::Location.toString/0#dispred#6ede7323` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Rhs.1",
+      "",
+      "    {4} r5 = r3 AND NOT `Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs`(FIRST 1)",
+      "    {5}    | SCAN OUTPUT In.0, In.1, In.2, In.3, _",
+      "    {5}    | REWRITE WITH Out.4 := \"(no string representation)\"",
+      "",
+      "    {5} r6 = r4 UNION r5",
+      "    {10}    | JOIN WITH `Location::Location.hasLocationInfo/5#dispred#558082fb` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.0, Lhs.3, Lhs.4, Rhs.1, Rhs.2, Rhs.3, Rhs.4, Rhs.5",
+      "",
+      "    {3} r7 = #select AND NOT `File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs`(FIRST 1)",
+      "    {4}    | SCAN OUTPUT In.2, In.0, In.1, _",
+      "    {4}    | REWRITE WITH Out.3 := \"\"",
+      "",
+      "    {4} r8 = r1 UNION r7",
+      "    {4}    | AND NOT `Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs`(FIRST 1)",
+      "    {5}    | SCAN OUTPUT In.0, In.1, In.2, In.3, _",
+      "    {5}    | REWRITE WITH Out.4 := \"(no string representation)\"",
+      "",
+      "    {5} r9 = r4 UNION r8",
+      "    {5}    | AND NOT `Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs`(FIRST 1)",
+      "    {10}    | SCAN OUTPUT In.1, In.2, In.0, In.3, In.4, _, _, _, _, _",
+      "    {10}    | REWRITE WITH Out.5 := \"\", Out.6 := 0, Out.7 := 0, Out.8 := 0, Out.9 := 0",
+      "",
+      "    {10} r10 = r6 UNION r9",
+      "    return r10"
+    ]
+  },
+  "dependencies" : {
+    "#select" : "f8fe7bo92fsanhrdvepmpv176oc",
+    "File::Impl::File.getURL/0#dispred#2f739b0d" : "2b28edgc2hlovu7d7mn9l7g429d",
+    "File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs" : "c84492vks29e2g93g94htuee7h7",
+    "Location::Location.toString/0#dispred#6ede7323" : "f4f5c6jkkge967q0m2d609epcv6",
+    "Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs" : "8615681uq5astjqmhf80eefcmp7",
+    "Location::Location.hasLocationInfo/5#dispred#558082fb" : "acb21f6matcb9ohbustu88mueg5",
+    "Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs" : "167ac5tst1h89mvlm8cf876mn66"
+  },
+  "queryCausingWork" : 1415
+}
+
+{
+  "time" : "2026-08-13T17:08:05.057564385Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1455,
+  "nanoTime" : 12620388504931,
+  "predicateStartEvent" : 1454,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-13T17:08:05.059167074Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1456,
+  "nanoTime" : 12620390109735,
+  "startEvent" : 1455,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:08:05.059338204Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1457,
+  "nanoTime" : 12620390278360,
+  "startEvent" : 1454,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:08:05.059994002Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1458,
+  "nanoTime" : 12620390935129,
+  "raHash" : "00b52b645p91vlnar45fe5vstf1",
+  "predicateName" : "project#Element::ElementBase.toString/0#dispred#6e016f86",
+  "appearsAs" : {
+    "project#Element::ElementBase.toString/0#dispred#6e016f86" : [ 64 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 16823598
+}
+
+{
+  "time" : "2026-08-13T17:08:05.060235253Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1459,
+  "nanoTime" : 12620391176150,
+  "raHash" : "af74d6ofr373n4t4i2ag166lak3",
+  "predicateName" : "_File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs",
+  "appearsAs" : {
+    "_File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs" : [ 64 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,62",
+  "ra" : {
+    "pipeline" : [
+      "    {10} r1 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `project#Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9",
+      "",
+      "    {10} r2 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9",
+      "",
+      "    {10} r3 = r1 UNION r2",
+      "    return r3"
+    ]
+  },
+  "dependencies" : {
+    "_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared" : "21fbe35sub7pdt3jvh5gcbav0m6",
+    "project#Element::ElementBase.toString/0#dispred#6e016f86" : "00b52b645p91vlnar45fe5vstf1",
+    "File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d" : "7c0d12f0g9icj5ouph6bc7ee7ac"
+  },
+  "queryCausingWork" : 1415
+}
+
+{
+  "time" : "2026-08-13T17:08:05.060340100Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1460,
+  "nanoTime" : 12620391279875,
+  "predicateStartEvent" : 1459,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-13T17:08:05.060712607Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1461,
+  "nanoTime" : 12620391654195,
+  "startEvent" : 1460,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:08:05.060754004Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1462,
+  "nanoTime" : 12620391695011,
+  "startEvent" : 1459,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:08:05.061038797Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1463,
+  "nanoTime" : 12620391979704,
+  "raHash" : "9bc0a7rr06500tchh24ng11vbsd",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 64 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,62",
+  "ra" : {
+    "pipeline" : [
+      "    {11} r1 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, Rhs.1, Lhs.3, Lhs.1, Lhs.2, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9",
+      "",
+      "    {11} r2 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `cached_Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.0, Rhs.1, Lhs.3, Lhs.1, Lhs.2, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9",
+      "",
+      "    {10} r3 = `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` AND NOT `_File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs`(FIRST 10)",
+      "    {11}    | SCAN OUTPUT In.0, _, In.3, In.1, In.2, In.4, In.5, In.6, In.7, In.8, In.9",
+      "    {11}    | REWRITE WITH Out.1 := \"(no string representation)\"",
+      "",
+      "    {11} r4 = r1 UNION r2 UNION r3",
+      "    return r4"
+    ]
+  },
+  "dependencies" : {
+    "_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared" : "21fbe35sub7pdt3jvh5gcbav0m6",
+    "File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d" : "7c0d12f0g9icj5ouph6bc7ee7ac",
+    "cached_Element::ElementBase.toString/0#dispred#6e016f86" : "b58a23s4gib1n9g18c4bhcsja59",
+    "_File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs" : "af74d6ofr373n4t4i2ag166lak3"
+  },
+  "queryCausingWork" : 1415
+}
+
+{
+  "time" : "2026-08-13T17:08:05.061133104Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1464,
+  "nanoTime" : 12620392073470,
+  "predicateStartEvent" : 1463,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-13T17:08:05.082262017Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1465,
+  "nanoTime" : 12620413454926,
+  "startEvent" : 1464,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:08:05.082612182Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1466,
+  "nanoTime" : 12620413552178,
+  "startEvent" : 1463,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:08:05.094542671Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 1467,
+  "nanoTime" : 12620425500389,
+  "startEvent" : 1415,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-08-13T17:08:05.095705627Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 1468,
+  "nanoTime" : 12620426658287
+}

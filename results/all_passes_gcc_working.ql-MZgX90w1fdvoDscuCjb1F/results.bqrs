@@ -1,0 +1,692 @@
+»‹C/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/asan.cRfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/asan.c:0:0:0:0pass_asan_O0
+pass_asanK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/auto-inc-dec.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/auto-inc-dec.c:0:0:0:0pass_inc_decK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/auto-profile.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/auto-profile.c:0:0:0:0pass_ipa_auto_profileI/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/bb-reorder.cXfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/bb-reorder.c:0:0:0:0pass_partition_blockspass_duplicate_computed_gotospass_reorder_blocksF/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/bt-load.cUfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/bt-load.c:0:0:0:0"pass_branch_target_load_optimize2"pass_branch_target_load_optimize1I/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cfgcleanup.cXfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cfgcleanup.c:0:0:0:0pass_jump2pass_postreload_jump
+pass_jumpH/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cfgexpand.cWfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cfgexpand.c:0:0:0:0pass_expandE/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cfgrtl.cTfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cfgrtl.c:0:0:0:0pass_free_cfgpass_outof_cfg_layout_modepass_into_cfg_layout_modeJ/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cgraphbuild.cYfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cgraphbuild.c:0:0:0:0 pass_remove_cgraph_callee_edgespass_rebuild_cgraph_edgespass_build_cgraph_edgesP/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/combine-stack-adj.c_file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/combine-stack-adj.c:0:0:0:0pass_stack_adjustmentsF/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/combine.cUfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/combine.c:0:0:0:0pass_combineK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/compare-elim.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/compare-elim.c:0:0:0:0pass_compare_elim_after_reloadO/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/config/i386/i386.c^file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/config/i386/i386.c:0:0:0:0pass_insert_endbranchpass_insert_vzeroupper	pass_stv#pass_remove_partial_avx_dependencyD/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cprop.cSfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cprop.c:0:0:0:0pass_rtl_cpropB/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cse.cQfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/cse.c:0:0:0:0
+pass_cse2pass_cse_after_global_opts	pass_cseB/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/dce.cQfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/dce.c:0:0:0:0pass_fast_rtl_dcepass_ud_rtl_dceF/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/df-core.cUfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/df-core.c:0:0:0:0pass_df_finishpass_df_initialize_no_optpass_df_initialize_optB/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/dse.cQfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/dse.c:0:0:0:0pass_rtl_dse2pass_rtl_dse1H/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/dwarf2cfi.cWfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/dwarf2cfi.c:0:0:0:0pass_dwarf2_frameJ/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/early-remat.cYfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/early-remat.c:0:0:0:0pass_early_rematE/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/except.cTfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/except.c:0:0:0:0 pass_set_nothrow_function_flags!pass_convert_to_eh_region_rangesD/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/final.cSfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/final.c:0:0:0:0pass_clean_statepass_finalpass_shorten_branchespass_compute_alignmentsG/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/function.cVfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/function.c:0:0:0:0pass_leaf_regs"pass_thread_prologue_and_epiloguepass_match_asm_constraintspass_instantiate_virtual_regsE/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/fwprop.cTfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/fwprop.c:0:0:0:0pass_rtl_fwprop_addrpass_rtl_fwpropC/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gcse.cRfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gcse.c:0:0:0:0pass_rtl_hoistpass_rtl_preN/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-laddress.c]file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-laddress.c:0:0:0:0pass_laddressW/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-loop-interchange.ccffile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-loop-interchange.cc:0:0:0:0pass_linterchangeN/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-loop-jam.c]file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-loop-jam.c:0:0:0:0pass_loop_jamV/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-loop-versioning.ccefile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-loop-versioning.cc:0:0:0:0pass_loop_versioningI/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-low.cXfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-low.c:0:0:0:0pass_lower_cfR/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-backprop.cafile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-backprop.c:0:0:0:0pass_backpropN/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-evrp.c]file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-evrp.c:0:0:0:0pass_early_vrpW/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-isolate-paths.cffile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-isolate-paths.c:0:0:0:0pass_isolate_erroneous_pathsY/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-nonnull-compare.chfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-nonnull-compare.c:0:0:0:0pass_warn_nonnull_compareU/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-split-paths.cdfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-split-paths.c:0:0:0:0pass_split_pathsQ/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-sprintf.c`file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-sprintf.c:0:0:0:0pass_sprintf_lengthW/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-store-merging.cffile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-store-merging.c:0:0:0:0pass_store_mergingpass_optimize_bswap\/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-strength-reduction.ckfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-strength-reduction.c:0:0:0:0pass_strength_reductionW/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-warn-restrict.cffile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-warn-restrict.c:0:0:0:0pass_wrestrictG/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/graphite.cVfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/graphite.c:0:0:0:0pass_graphite_transformspass_graphiteF/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/hsa-gen.cUfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/hsa-gen.c:0:0:0:0pass_gen_hsailD/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ifcvt.cSfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ifcvt.c:0:0:0:0pass_if_after_reloadpass_if_after_combinepass_rtl_ifcvtH/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/init-regs.cWfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/init-regs.c:0:0:0:0pass_initialize_regsJ/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-comdats.cYfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-comdats.c:0:0:0:0pass_ipa_comdatsE/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-cp.cTfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-cp.c:0:0:0:0pass_ipa_cpI/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-devirt.cXfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-devirt.c:0:0:0:0pass_ipa_devirtL/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-fnsummary.c[file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-fnsummary.c:0:0:0:0pass_ipa_free_fn_summarypass_ipa_fn_summarypass_local_fn_summaryF/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-hsa.cUfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-hsa.c:0:0:0:0pass_ipa_hsaI/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-inline.cXfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-inline.c:0:0:0:0pass_ipa_inlinepass_early_inlineJ/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-profile.cYfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-profile.c:0:0:0:0pass_ipa_profileM/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-pure-const.c\file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-pure-const.c:0:0:0:0pass_warn_function_noreturnpass_local_pure_constpass_ipa_pure_constpass_nothrowL/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-reference.c[file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-reference.c:0:0:0:0pass_ipa_referenceH/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-split.cWfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-split.c:0:0:0:0pass_feedback_split_functionspass_split_functionsM/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-visibility.c\file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-visibility.c:0:0:0:0"pass_ipa_whole_program_visibility*pass_ipa_function_and_variable_visibilityB/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa.cQfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa.c:0:0:0:0pass_materialize_all_clonespass_ipa_single_usepass_ipa_cdtor_mergeB/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ira.cQfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ira.c:0:0:0:0pass_reload	pass_iraC/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/jump.cRfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/jump.c:0:0:0:0pass_cleanup_barriersH/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/loop-init.cWfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/loop-init.c:0:0:0:0pass_rtl_loop_donepass_rtl_dolooppass_rtl_unroll_loopspass_rtl_move_loop_invariantspass_rtl_loop_initpass_loop2K/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/lower-subreg.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/lower-subreg.c:0:0:0:0pass_lower_subreg2pass_lower_subregM/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/mode-switching.c\file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/mode-switching.c:0:0:0:0pass_mode_switchingK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/modulo-sched.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/modulo-sched.c:0:0:0:0	pass_smsN/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/multiple_target.c]file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/multiple_target.c:0:0:0:0pass_target_cloneI/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/omp-expand.cXfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/omp-expand.c:0:0:0:0pass_expand_omp_ssapass_expand_ompF/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/omp-low.cUfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/omp-low.c:0:0:0:0pass_lower_omppass_diagnose_omp_blocksJ/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/omp-offload.cYfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/omp-offload.c:0:0:0:0pass_omp_target_linkpass_omp_device_lowerpass_oacc_device_lowerM/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/omp-simd-clone.c\file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/omp-simd-clone.c:0:0:0:0pass_omp_simd_cloneE/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/passes.cTfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/passes.c:0:0:0:0pass_late_compilationpass_postreloadpass_rest_of_compilationpass_all_optimizations_gpass_all_optimizationspass_ipa_remove_symbolspass_all_early_optimizationspass_local_optimization_passespass_build_ssa_passesN/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/postreload-gcse.c]file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/postreload-gcse.c:0:0:0:0pass_gcse2I/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/postreload.cXfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/postreload.c:0:0:0:0pass_postreload_cseF/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/predict.cUfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/predict.c:0:0:0:0pass_strip_predict_hintspass_profileD/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/recog.cSfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/recog.c:0:0:0:0 pass_split_for_shorten_branchespass_split_before_regstackpass_split_before_sched2pass_peephole2pass_split_after_reloadpass_split_all_insnsB/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ree.cQfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ree.c:0:0:0:0	pass_reeH/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/reg-stack.cWfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/reg-stack.c:0:0:0:0pass_stack_regs_runpass_stack_regsG/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/regcprop.cVfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/regcprop.c:0:0:0:0pass_cprop_hardregF/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/reginfo.cUfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/reginfo.c:0:0:0:0pass_reginfo_initH/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/regrename.cWfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/regrename.c:0:0:0:0pass_regrenameD/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/reorg.cSfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/reorg.c:0:0:0:0pass_delay_slotspass_machine_reorgE/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/sancov.cTfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/sancov.c:0:0:0:0pass_sancov<O0>pass_sancov<false>pass_sancov<true>E/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/sanopt.cTfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/sanopt.c:0:0:0:0pass_sanoptH/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/sched-rgn.cWfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/sched-rgn.c:0:0:0:0pass_sched2pass_sched_fusionpass_schedpass_live_range_shrinkageL/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/stack-ptr-mod.c[file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/stack-ptr-mod.c:0:0:0:0pass_stack_ptr_modK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/store-motion.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/store-motion.c:0:0:0:0pass_rtl_store_motionE/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tracer.cTfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tracer.c:0:0:0:0pass_tracerH/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/trans-mem.cWfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/trans-mem.c:0:0:0:0pass_tm_edgespass_tm_memoptpass_tm_markpass_tm_initpass_ipa_tmpass_lower_tmpass_diagnose_tm_blocksM/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-call-cdce.c\file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-call-cdce.c:0:0:0:0pass_call_cdceG/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-cfg.cVfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-cfg.c:0:0:0:0pass_split_crit_edgespass_fixup_cfgpass_warn_function_returnpass_build_cfgpass_warn_unused_resultN/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-cfgcleanup.c]file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-cfgcleanup.c:0:0:0:0!pass_cleanup_cfg_post_optimizingpass_merge_phiK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-complex.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-complex.c:0:0:0:0pass_lower_complex_O0pass_lower_complexF/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-eh.cUfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-eh.c:0:0:0:0pass_lower_resxpass_cleanup_ehpass_lower_eh_dispatchpass_lower_ehpass_refactor_ehJ/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-emutls.cYfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-emutls.c:0:0:0:0pass_ipa_lower_emutlsK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-if-conv.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-if-conv.c:0:0:0:0pass_if_conversionL/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-into-ssa.c[file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-into-ssa.c:0:0:0:0pass_build_ssaU/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-loop-distribution.cdfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-loop-distribution.c:0:0:0:0pass_loop_distributionG/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-nrv.cVfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-nrv.c:0:0:0:0	pass_nrvpass_return_slotO/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-object-size.c^file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-object-size.c:0:0:0:0pass_object_sizesL/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-parloops.c[file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-parloops.c:0:0:0:0pass_parallelize_loopsK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-predcom.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-predcom.c:0:0:0:0pass_predcomK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-profile.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-profile.c:0:0:0:0pass_ipa_tree_profileG/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-sra.cVfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-sra.c:0:0:0:0	pass_srapass_early_ipa_srapass_sra_earlyK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-ccp.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-ccp.c:0:0:0:0pass_fold_builtinspass_post_ipa_warn	pass_ccpL/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-copy.c[file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-copy.c:0:0:0:0pass_copy_propK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-dce.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-dce.c:0:0:0:0	pass_dcepass_cd_dceK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-dom.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-dom.c:0:0:0:0pass_dominatorK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-dse.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-dse.c:0:0:0:0	pass_dseP/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-forwprop.c_file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-forwprop.c:0:0:0:0pass_forwpropQ/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-ifcombine.c`file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-ifcombine.c:0:0:0:0pass_tree_ifcombineO/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-ch.c^file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-ch.c:0:0:0:0pass_ch_vectpass_chO/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-im.c^file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-im.c:0:0:0:0	pass_limT/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-ivcanon.ccfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-ivcanon.c:0:0:0:0pass_complete_unrollpass_iv_canonpass_complete_unrolliU/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-prefetch.cdfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-prefetch.c:0:0:0:0pass_loop_prefetchR/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-split.cafile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-split.c:0:0:0:0pass_loop_splitU/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-unswitch.cdfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop-unswitch.c:0:0:0:0pass_tree_unswitchL/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop.c[file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-loop.c:0:0:0:0pass_tree_no_looppass_tree_loop_donepass_iv_optimizepass_vectorizepass_scev_cproppass_tree_loop_initpass_tree_looppass_fix_loopspass_oacc_kernelspass_ipa_oacc_kernelspass_ipa_oaccQ/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-math-opts.c`file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-math-opts.c:0:0:0:0pass_optimize_widening_mulpass_cse_reciprocalspass_cse_sincosN/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-phiopt.c]file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-phiopt.c:0:0:0:0pass_phioptpass_cselimO/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-phiprop.c^file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-phiprop.c:0:0:0:0pass_phipropK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-pre.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-pre.c:0:0:0:0	pass_preO/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-reassoc.c^file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-reassoc.c:0:0:0:0pass_reassocM/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-sccvn.c\file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-sccvn.c:0:0:0:0	pass_freL/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-sink.c[file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-sink.c:0:0:0:0pass_sink_codeN/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-strlen.c]file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-strlen.c:0:0:0:0pass_strlenS/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-structalias.cbfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-structalias.c:0:0:0:0pass_build_aliaspass_ipa_ptapass_build_ealiasV/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-threadbackward.cefile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-threadbackward.c:0:0:0:0pass_thread_jumpspass_early_thread_jumpsO/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-uncprop.c^file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-uncprop.c:0:0:0:0pass_uncpropN/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-uninit.c]file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa-uninit.c:0:0:0:0pass_late_warn_uninitializedpass_early_warn_uninitializedG/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa.cVfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssa.c:0:0:0:0pass_update_address_takenL/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssanames.c[file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-ssanames.c:0:0:0:0pass_release_ssa_namesJ/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-stdarg.cYfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-stdarg.c:0:0:0:0pass_lower_vaargpass_stdargU/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-switch-conversion.cdfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-switch-conversion.c:0:0:0:0pass_convert_switchpass_lower_switch<O0>pass_lower_switch<true>pass_lower_switch<false>L/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-tailcall.c[file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-tailcall.c:0:0:0:0pass_tail_callspass_tail_recursionP/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-vect-generic.c_file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-vect-generic.c:0:0:0:0pass_lower_vectorpass_lower_vector_ssaN/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-vectorizer.c]file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-vectorizer.c:0:0:0:0pass_simduid_cleanuppass_slp_vectorizepass_ipa_increase_alignmentG/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-vrp.cVfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree-vrp.c:0:0:0:0	pass_vrpC/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree.cRfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tree.c:0:0:0:0pass_ipa_free_lang_dataC/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tsan.cRfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/tsan.c:0:0:0:0pass_tsan_O0
+pass_tsanD/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ubsan.cSfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ubsan.c:0:0:0:0pass_ubsanK/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/var-tracking.cZfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/var-tracking.c:0:0:0:0pass_variable_trackingL/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/vtable-verify.c[file:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/vtable-verify.c:0:0:0:0pass_vtable_verifyB/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/web.cQfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/web.c:0:0:0:0	pass_webU/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-warn-alloca.cdfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/gimple-ssa-warn-alloca.c:0:0:0:0pass_wallocaF/home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-icf.cUfile:///home/oleksii-shemshur/work/toolchains/source/gcc-9.2.0/gcc/ipa-icf.c:0:0:0:0pass_ipa_icfÉ#selectä ei sÈ CïÈ C¢ª¨˜—$ﬁ©É∏&ô‚∫∏&ô‚–∏&ô‚Óù'Ç»ùù'Ç»ø⁄@·™Ç	⁄@·™ç	⁄@·™¢	ÌA¨	Ù	À
+ C◊
+ú C◊
+ú˛ C◊
+úô‰E≥˝÷‰E≥˝ˆ‰E≥˝êÍF®¯◊ïGÓ¥âÿGñ·ªøI⁄©áøI⁄©ùøI⁄©¥øI⁄©Ω≈d‡§˜˙dÜ»ô˙dÜ»£˙dÜ»æºf«â⁄ºf«âÏ˛f¸¬ó˛f¸¬¶˛f¸¬¿êk◊ôÍêk◊ô¯úmÜŒ•Ωq∑Å⁄èvÎ∞Ñ èvÎ∞§ √y≈ â!‹!√y≈ â!Ì!√y≈ â!¯!√y≈ â!é"¯}¶"Ì"√#¯}¶"Ì"“#¯}¶"Ì"Ù#¯}¶"Ì"è$˛~≠$Ú$∆%˛~≠$Ú$€%ùäÎ%Æ&Ä'ùäÎ%Æ&è'ﬁòú'Í'«(£ô’(¨)í*‘ô§*Ú*œ+Ïô›+≥,ò-∑ö≠-ˆ-Œ.“ö‹.Æ/è0éõù0Î0»1•õ◊1Æ2î3≤õ±3ä4Ú4øõå5·5≈6…õ÷6ß7á8Çúõ8Ú8ÿ9Çúõ8Ú8Î9Ëúˇ9€:∆;´ùﬁ;µ<õ=ü°™=Ò=«>ü°™=Ò=‡>æ¶Ó>¥?â@»ßò@‹@ØA»ßò@‹@ƒA»ßò@‹@⁄AÈßÈA±BàC¡®ùCÁC¿DÂ®—DñEÍEï™ˆEøFóG™ßGÛGŒH™ßGÛGÁH™ßGÛG˚H©´ëI◊I¨Jì≠πJÇK⁄Kì≠πJÇKÍKﬁ≠¸K∆LüM‡Æ∞M˝MŸN‡Æ∞M˝MıN‡Æ∞M˝MãO‡Æ∞M˝MüO§Ø¨O¯O”PæØÊPÆQÖRæØÊPÆQ£RÍØ∏RÖS·SÍØ∏RÖSÉT˙Ø≠TÔT¿U˙Ø≠TÔT‹U˙Ø≠TÔTU‡±ÖV«VòW‡±ÖV«V§W∑≤≠WW¬X¥≥ÿX†Y˜Y¥≥ÿX†YäZ¥≥ÿX†YöZ¥≥ÿX†Y∞Z¥≥ÿX†YŒZ¥≥ÿX†Y·Z†¥ÏZ∑[ë\†¥ÏZ∑[§\“∑∂\É]ﬂ]‡∑Û]æ^ò_ı∑°_Ô_Ã`Ü∏ﬁ`ßaˇaÜ∏ﬁ`ßaìbÀ∏£bÈbæcÀ∏£bÈbÕcÍ∏Êc∞dâeÍ∏Êc∞dûeÍ∏Êc∞d¥eêπÀeòfÙf„ªàgÕg°h„ªàgÕg∑h„ªàgÕg«h„ªàgÕg‡h„ªàgÕg˘h„ªàgÕgêi„ªàgÕg®i„ªàgÕg≈i„ªàgÕg‰iÔº˙i»j•kâΩ∞k˘k—lñΩÂl´mÄnñΩÂl´môn“¡¶nÍnΩo“¡¶nÍn›o“¡¶nÍn¯o“¡¶nÍnëp“¡¶nÍn†p“¡¶nÍn∏p‡¬Õpèq‡qÒ¬Èq±ràsÒ¬Èq±rúsÖ√¨sÛs…t†√‹t¢u˜uÊ√âv—v®w…ƒ∑w˚wŒx…ƒ∑w˚wﬂx¬∆Úx∑yãz¬∆Úx∑yõz¬∆Úx∑yÆz–∆¿zÖ{Ÿ{„«Â{≠|Ñ}„«Â{≠|ê}„«Â{≠|¢}„«Â{≠|≠}™À«}ì~Ó~áÃÅÃ¶ÄùœºÄÅÅ’Å≥œ·Å©ÇÄÉ≥œ·Å©ÇéÉ≥œ·Å©ÇùÉ≥œ·Å©Ç™É≥œ·Å©Ç∑É≥œ·Å©Ç√É≥œ·Å©Ç—Éª–ÈÉ∂ÑíÖ∆–°ÖËÖæÜ∆–°ÖËÖ‘Ü∆–°ÖËÖ„Ü∆–°ÖËÖ˝Ü∆–°ÖËÖåá÷—§áÚáœà÷—§áÚáàù“ˇà â§äù“ˇà â∫ä•”ÕäìãËã•”Õäìã¯ã•”Õäìãàå•”Õäìãüå•”Õäìã≠å¯”æåàç·çõ‘˜ç¬éúè–‘Øè˚è÷ê§’Âê∫ëûí”’µí¸í“ì”’µí¸í€ì‰’Ïìªîôï¸’´ï˜ï“ñº÷Èñ¥óéòÓ÷õòÊò¿ôº◊÷ôùöÛöº◊÷ôùö¸öº◊÷ôùöèõ¨ÿûõÈõ√ú¨ÿûõÈõ÷ú¨ÿûõÈõÈúÛÿÚúæùôûäŸ®ûÛûÕüäŸ®ûÛû÷ü≈Ÿ‚ü≠†á°‚Ÿñ°·°ª¢ÚŸƒ¢î£Û£¸ŸÅ§“§≤•ò⁄∆•ï¶Û¶ò⁄∆•ï¶Äß≤⁄àß◊ßµ®Û⁄æ®í©ı©Û⁄æ®í©ä™Û⁄æ®í©ò™í‹Æ™É´Á´¢‹˙´Ã¨≠≠´‹Ω≠íÆˆÆµ‹âØ’Ø∞∞µ‹âØ’Ø¬∞µ‹âØ’Ø÷∞µ‹âØ’ØÁ∞µ‹âØ’Øˆ∞µ‹âØ’ØÜ±µ‹âØ’Øö±µ‹âØ’Ø©±µ‹âØ’Ø∏±µ‹âØ’Ø ±µ‹âØ’Ø‡±è›Ó±ø≤ü≥è›Ó±ø≤∫≥è›Ó±ø≤œ≥ ›ﬂ≥≠¥äµ ›ﬂ≥≠¥ñµÎ›¢µÒµœ∂ˆ›‹∂ß∑Å∏µﬁä∏Ÿ∏∑π◊ﬁƒπë∫Ì∫›ﬂˆ∫¬ªùºÊﬂ¨º˙º◊ΩÅ‡„Ω∂æòøÅ‡„Ω∂æ©øÅ‡„Ω∂æ∂øÎ‡»øû¿É¡Î‡»øû¿ï¡π·≠¡¸¡⁄¬—·Á¬µ√íƒ—·Á¬µ√ØƒÊ·Õƒî≈Í≈ë‚Ñ∆–∆´«¡‚¬«å»Â»¡‚¬«å»ˆ»†„Ç…◊…ª †„Ç…◊…œ †„Ç…◊…Â †„Ç…◊…˝ Â„ñÀ‚ÀΩÃÂ„ñÀ‚ÀÕÃ‘‰·Ã±ÕêŒ‘‰·Ã±Õ¢Œ¯Â∏ŒÜœ„œ¯Â∏ŒÜœ¯œ¯Â∏ŒÜœã–ƒÊß–Ó–ƒ—úËÕ—ê“‚“üÎ˙“Ω”è‘üÎ˙“Ω”ú‘ÀÎ¶‘Í‘Ω’êÏ»’ì÷Ì÷ÛÔÑ◊–◊´ÿîæÿÄŸ—Ÿêœ¬⁄ŸØ⁄ì€å‰÷†€Ê€ª‹Ãí---
+run:
+  queries:
+   -
+    pack: flags/gcc-queries#2
+    relativeQueryPath: all_passes_gcc_working.ql
+    relativeBqrsPath: results.bqrs
+    metadata:
+      name: All passes in GCC
+      description: "This query finds all the passes in GCC by looking for classes\
+        \ that extend the base pass classes (opt_pass, rtl_opt_pass, gimple_opt_pass,\
+        \ ipa_opt_pass, simple_ipa_opt_pass) and have names starting with \"pass_\"\
+        ."
+      kind: problem
+      problem.severity: warning
+      id: cpp/gcc/all-passes
+      tags: "gcc, passes"
+  extensionPacks: []
+  packs:
+    codeql/cpp-all#0:
+      name: codeql/cpp-all
+      version: 12.0.1
+      isLibrary: true
+      isExtensionPack: false
+      localPath: file:///home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/
+      localPackDefinitionFile: file:///home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/qlpack.yml
+      headSha: 94101634db019b00637dd5cfe241f7e570da290d
+      runDataExtensions: []
+    codeql/util#1:
+      name: codeql/util
+      version: 2.0.41
+      isLibrary: true
+      isExtensionPack: false
+      localPath: file:///home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/
+      localPackDefinitionFile: file:///home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/qlpack.yml
+      headSha: 94101634db019b00637dd5cfe241f7e570da290d
+      runDataExtensions: []
+    flags/gcc-queries#2:
+      name: flags/gcc-queries
+      version: 0.0.1
+      isLibrary: false
+      isExtensionPack: false
+      localPath: file:///home/oleksii-shemshur/work/toolchains/tools/queries/
+      localPackDefinitionFile: file:///home/oleksii-shemshur/work/toolchains/tools/queries/qlpack.yml
+      runDataExtensions:
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Boost.Asio.model.yml
+        index: 0
+        firstRowId: 0
+        rowCount: 6
+        locations:
+          lineNumbers: A=7+1*5
+          columnNumbers: A=9*6
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Boost.Asio.model.yml
+        index: 1
+        firstRowId: 6
+        rowCount: 4
+        locations:
+          lineNumbers: A=17+1*3
+          columnNumbers: A=9*4
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Boost.Asio.model.yml
+        index: 2
+        firstRowId: 10
+        rowCount: 1
+        locations:
+          lineNumbers: A=25
+          columnNumbers: A=9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CA2CAEX.model.yml
+        index: 0
+        firstRowId: 11
+        rowCount: 13
+        locations:
+          lineNumbers: A=6+1*12
+          columnNumbers: A=9*13
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CAtlArray.model.yml
+        index: 0
+        firstRowId: 24
+        rowCount: 10
+        locations:
+          lineNumbers: A=6+1*9
+          columnNumbers: A=9*10
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CAtlFile.model.yml
+        index: 0
+        firstRowId: 34
+        rowCount: 4
+        locations:
+          lineNumbers: A=6+1*3
+          columnNumbers: A=9*4
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CAtlFileMappingBase.model.yml
+        index: 0
+        firstRowId: 38
+        rowCount: 9
+        locations:
+          lineNumbers: A=6+1*8
+          columnNumbers: A=9*9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CAtlList.model.yml
+        index: 0
+        firstRowId: 47
+        rowCount: 10
+        locations:
+          lineNumbers: A=6+1*9
+          columnNumbers: A=9*10
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CAtlTemporaryFile.model.yml
+        index: 0
+        firstRowId: 57
+        rowCount: 3
+        locations:
+          lineNumbers: A=6+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CComBSTR.model.yml
+        index: 0
+        firstRowId: 60
+        rowCount: 28
+        locations:
+          lineNumbers: A=6+1*27
+          columnNumbers: A=9*28
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CComSafeArray.model.yml
+        index: 0
+        firstRowId: 88
+        rowCount: 21
+        locations:
+          lineNumbers: A=6+1*20
+          columnNumbers: A=9*21
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CPathT.model.yml
+        index: 0
+        firstRowId: 109
+        rowCount: 15
+        locations:
+          lineNumbers: A=6+1*10+4+1*3
+          columnNumbers: A=9*15
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CRegKey.model.yml
+        index: 0
+        firstRowId: 124
+        rowCount: 15
+        locations:
+          lineNumbers: A=6+1*14
+          columnNumbers: A=9*15
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CSimpleArray.model.yml
+        index: 0
+        firstRowId: 139
+        rowCount: 7
+        locations:
+          lineNumbers: A=6+1*6
+          columnNumbers: A=9*7
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CSimpleMap.model.yml
+        index: 0
+        firstRowId: 146
+        rowCount: 8
+        locations:
+          lineNumbers: A=6+1*7
+          columnNumbers: A=9*8
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CSimpleStringT.model.yml
+        index: 0
+        firstRowId: 154
+        rowCount: 37
+        locations:
+          lineNumbers: A=6+1*36
+          columnNumbers: A=9*37
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CStrBufT.model.yml
+        index: 0
+        firstRowId: 191
+        rowCount: 3
+        locations:
+          lineNumbers: A=6+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CStringData.model.yml
+        index: 0
+        firstRowId: 194
+        rowCount: 1
+        locations:
+          lineNumbers: A=6
+          columnNumbers: A=9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CStringT.model.yml
+        index: 0
+        firstRowId: 195
+        rowCount: 113
+        locations:
+          lineNumbers: A=6+1*112
+          columnNumbers: A=9*113
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/CUrl.model.yml
+        index: 0
+        firstRowId: 308
+        rowCount: 17
+        locations:
+          lineNumbers: A=6+1*16
+          columnNumbers: A=9*17
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/ComPtr.model.yml
+        index: 0
+        firstRowId: 325
+        rowCount: 26
+        locations:
+          lineNumbers: A=6+1*25
+          columnNumbers: A=9*26
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/ComPtrRef.model.yml
+        index: 0
+        firstRowId: 351
+        rowCount: 5
+        locations:
+          lineNumbers: A=6+1+2*2+1
+          columnNumbers: A=9*5
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/MySql.model.yml
+        index: 0
+        firstRowId: 356
+        rowCount: 2
+        locations:
+          lineNumbers: A=7+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/MySql.model.yml
+        index: 1
+        firstRowId: 358
+        rowCount: 2
+        locations:
+          lineNumbers: A=13+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Oracle.oci.model.yml
+        index: 0
+        firstRowId: 360
+        rowCount: 2
+        locations:
+          lineNumbers: A=7+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Strsafe.model.yml
+        index: 0
+        firstRowId: 362
+        rowCount: 8
+        locations:
+          lineNumbers: A=8+1+2+1+2+1+2+1
+          columnNumbers: A=9*8
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Strsafe.model.yml
+        index: 1
+        firstRowId: 370
+        rowCount: 48
+        locations:
+          lineNumbers: A=24+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1
+          columnNumbers: A=9*48
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Windows.model.yml
+        index: 0
+        firstRowId: 418
+        rowCount: 25
+        locations:
+          lineNumbers: A=8+1*5+2+1+2+1*6+2*2+1*8
+          columnNumbers: A=9*25
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/Windows.model.yml
+        index: 1
+        firstRowId: 443
+        rowCount: 15
+        locations:
+          lineNumbers: A=42+1+2*2+1*2+2+1*6+2*2
+          columnNumbers: A=9*15
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/ZMQ.model.yml
+        index: 0
+        firstRowId: 458
+        rowCount: 3
+        locations:
+          lineNumbers: A=7+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/ZMQ.model.yml
+        index: 1
+        firstRowId: 461
+        rowCount: 3
+        locations:
+          lineNumbers: A=14+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/ZMQ.model.yml
+        index: 2
+        firstRowId: 464
+        rowCount: 2
+        locations:
+          lineNumbers: A=21+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/allocation/Bsd.allocation.model.yml
+        index: 0
+        firstRowId: 466
+        rowCount: 2
+        locations:
+          lineNumbers: A=6+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/allocation/Glibc.allocation.model.yml
+        index: 0
+        firstRowId: 468
+        rowCount: 2
+        locations:
+          lineNumbers: A=6+1
+          columnNumbers: A=9*2
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/allocation/OpenSSL.allocation.model.yml
+        index: 0
+        firstRowId: 470
+        rowCount: 4
+        locations:
+          lineNumbers: A=6+1*3
+          columnNumbers: A=9*4
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/allocation/Std.allocation.model.yml
+        index: 0
+        firstRowId: 474
+        rowCount: 13
+        locations:
+          lineNumbers: A=6+1*12
+          columnNumbers: A=9*13
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/allocation/Windows.allocation.model.yml
+        index: 0
+        firstRowId: 487
+        rowCount: 24
+        locations:
+          lineNumbers: A=6+1*23
+          columnNumbers: A=9*24
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/azure.core.model.yml
+        index: 0
+        firstRowId: 511
+        rowCount: 6
+        locations:
+          lineNumbers: A=6+1*5
+          columnNumbers: A=9*6
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/azure.core.model.yml
+        index: 1
+        firstRowId: 517
+        rowCount: 25
+        locations:
+          lineNumbers: A=17+1*24
+          columnNumbers: A=9*25
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/bsl.array.model.yml
+        index: 0
+        firstRowId: 542
+        rowCount: 9
+        locations:
+          lineNumbers: A=6+1*8
+          columnNumbers: A=9*9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/bsl.deque.model.yml
+        index: 0
+        firstRowId: 551
+        rowCount: 69
+        locations:
+          lineNumbers: A=6+1*68
+          columnNumbers: A=9*69
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/bsl.forward_list.model.yml
+        index: 0
+        firstRowId: 620
+        rowCount: 52
+        locations:
+          lineNumbers: A=6+1*51
+          columnNumbers: A=9*52
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/bsl.list.model.yml
+        index: 0
+        firstRowId: 672
+        rowCount: 67
+        locations:
+          lineNumbers: A=6+1*66
+          columnNumbers: A=9*67
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/bsl.vector.model.yml
+        index: 0
+        firstRowId: 739
+        rowCount: 56
+        locations:
+          lineNumbers: A=6+1*55
+          columnNumbers: A=9*56
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/cctype.model.yml
+        index: 0
+        firstRowId: 795
+        rowCount: 4
+        locations:
+          lineNumbers: A=6+1*3
+          columnNumbers: A=9*4
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/deallocation/Bsd.deallocation.model.yml
+        index: 0
+        firstRowId: 799
+        rowCount: 3
+        locations:
+          lineNumbers: A=6+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/deallocation/Std.deallocation.model.yml
+        index: 0
+        firstRowId: 802
+        rowCount: 37
+        locations:
+          lineNumbers: A=6+1*36
+          columnNumbers: A=9*37
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/deallocation/Windows.deallocation.model.yml
+        index: 0
+        firstRowId: 839
+        rowCount: 36
+        locations:
+          lineNumbers: A=6+1*35
+          columnNumbers: A=9*36
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/brotli/brotli.model.yml
+        index: 0
+        firstRowId: 875
+        rowCount: 474
+        locations:
+          lineNumbers: A=7+1*473
+          columnNumbers: A=9*474
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/curl/curl.model.yml
+        index: 0
+        firstRowId: 1349
+        rowCount: 953
+        locations:
+          lineNumbers: A=7+1*952
+          columnNumbers: A=9*953
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/glibc/glibc.model.yml
+        index: 0
+        firstRowId: 2302
+        rowCount: 5488
+        locations:
+          lineNumbers: A=7+1*5487
+          columnNumbers: A=9*5488
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/libidn2/libidn2.model.yml
+        index: 0
+        firstRowId: 7790
+        rowCount: 142
+        locations:
+          lineNumbers: A=7+1*141
+          columnNumbers: A=9*142
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/libssh2/libssh2.model.yml
+        index: 0
+        firstRowId: 7932
+        rowCount: 511
+        locations:
+          lineNumbers: A=7+1*510
+          columnNumbers: A=9*511
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/libuv/libuv.model.yml
+        index: 0
+        firstRowId: 8443
+        rowCount: 640
+        locations:
+          lineNumbers: A=7+1*639
+          columnNumbers: A=9*640
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/nghttp2/nghttp2.model.yml
+        index: 0
+        firstRowId: 9083
+        rowCount: 565
+        locations:
+          lineNumbers: A=7+1*564
+          columnNumbers: A=9*565
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/openssl/openssl.model.yml
+        index: 0
+        firstRowId: 9648
+        rowCount: 21578
+        locations:
+          lineNumbers: A=7+1*21577
+          columnNumbers: A=9*21578
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/sqlite/sqlite.model.yml
+        index: 0
+        firstRowId: 31226
+        rowCount: 942
+        locations:
+          lineNumbers: A=7+1*941
+          columnNumbers: A=9*942
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/generated/modelgenerator/zlib/zlib.model.yml
+        index: 0
+        firstRowId: 32168
+        rowCount: 162
+        locations:
+          lineNumbers: A=7+1*161
+          columnNumbers: A=9*162
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/getc.model.yml
+        index: 0
+        firstRowId: 32330
+        rowCount: 13
+        locations:
+          lineNumbers: A=7+1*12
+          columnNumbers: A=9*13
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/iconv.model.yml
+        index: 0
+        firstRowId: 32343
+        rowCount: 1
+        locations:
+          lineNumbers: A=6
+          columnNumbers: A=9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/oleauto.model.yml
+        index: 0
+        firstRowId: 32344
+        rowCount: 3
+        locations:
+          lineNumbers: A=6+1*2
+          columnNumbers: A=9*3
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/pthread.model.yml
+        index: 0
+        firstRowId: 32347
+        rowCount: 1
+        locations:
+          lineNumbers: A=6
+          columnNumbers: A=9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.array.model.yml
+        index: 0
+        firstRowId: 32348
+        rowCount: 9
+        locations:
+          lineNumbers: A=6+1*8
+          columnNumbers: A=9*9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.deque.model.yml
+        index: 0
+        firstRowId: 32357
+        rowCount: 69
+        locations:
+          lineNumbers: A=6+1*68
+          columnNumbers: A=9*69
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.format.model.yml
+        index: 0
+        firstRowId: 32426
+        rowCount: 9
+        locations:
+          lineNumbers: A=6+1*8
+          columnNumbers: A=9*9
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.forward_list.model.yml
+        index: 0
+        firstRowId: 32435
+        rowCount: 52
+        locations:
+          lineNumbers: A=6+1*51
+          columnNumbers: A=9*52
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.iterator.model.yml
+        index: 0
+        firstRowId: 32487
+        rowCount: 6
+        locations:
+          lineNumbers: A=6+1*5
+          columnNumbers: A=9*6
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.list.model.yml
+        index: 0
+        firstRowId: 32493
+        rowCount: 67
+        locations:
+          lineNumbers: A=6+1*66
+          columnNumbers: A=9*67
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.thread.model.yml
+        index: 0
+        firstRowId: 32560
+        rowCount: 5
+        locations:
+          lineNumbers: A=6+1*4
+          columnNumbers: A=9*5
+       -
+        pack: codeql/cpp-all#0
+        relativePath: ext/std.vector.model.yml
+        index: 0
+        firstRowId: 32565
+        rowCount: 56
+        locations:
+          lineNumbers: A=6+1*55
+          columnNumbers: A=9*56
+metadata:
+  name: All passes in GCC
+  description: "This query finds all the passes in GCC by looking for classes that\
+    \ extend the base pass classes (opt_pass, rtl_opt_pass, gimple_opt_pass, ipa_opt_pass,\
+    \ simple_ipa_opt_pass) and have names starting with \"pass_\"."
+  kind: problem
+  problem.severity: warning
+  id: cpp/gcc/all-passes
+  tags: "gcc, passes"

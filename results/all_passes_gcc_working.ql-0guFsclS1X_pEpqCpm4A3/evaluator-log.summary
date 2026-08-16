@@ -1,0 +1,17 @@
+[2026-08-13 18:02:55] Summary of a CodeQL evaluation that started at 2026-08-13T17:02:55.360395160Z
+[2026-08-13 18:02:55] 
+[2026-08-13 18:02:55] Found predicate cached_ResolveClass::isType/1#eabb9878@82ca1924 in the relation cache (size: 123849)
+[2026-08-13 18:02:55] Found predicate cached_ResolveClass::isClass/1#af2a1ca6@ecb9e6su in the relation cache (size: 10868)
+[2026-08-13 18:02:55] Found predicate cached_ResolveClass::resolveClass/1#ea47deee@a66798km in the relation cache (size: 24895)
+[2026-08-13 18:02:55] Found predicate cached_ResolveGlobalVariable::isVariable/1#6e051315@90738ahc in the relation cache (size: 446985)
+[2026-08-13 18:02:55] Found predicate cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f@d04f11u9 in the relation cache (size: 447482)
+[2026-08-13 18:02:55] Found predicate cached_ResolveFunction::isFunction/1#9226b83f@f98098d9 in the relation cache (size: 91685)
+[2026-08-13 18:02:55] Found predicate cached_ResolveFunction::resolveFunction/1#576ba5ee@d186d880 in the relation cache (size: 107513)
+[2026-08-13 18:02:55] Found predicate cached_Expr::Expr.getType/0#dispred#444cc5af@6044b650 in the relation cache (size: 10158564)
+[2026-08-13 18:02:55] Found predicate cached_Element::ElementBase.toString/0#dispred#6e016f86@b58a23s4 in the relation cache (size: 16830229)
+[2026-08-13 18:02:55] Found predicate #select#query@1ab7d4gj in the relation cache (size: 266)
+[2026-08-13 18:02:55] Found predicate cached_QualifiedName::declarationHasQualifiedName/4#749d7d29@bad017oq in the relation cache (size: 173869)
+[2026-08-13 18:02:55] Completed evaluation of query all_passes_gcc_working.ql.
+[2026-08-13 18:02:55] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.1 seconds
+        * Total time spent evaluating predicates: 0.0 seconds

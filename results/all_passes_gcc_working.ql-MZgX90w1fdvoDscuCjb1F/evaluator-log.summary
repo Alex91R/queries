@@ -1,0 +1,124 @@
+[2026-08-13 18:05:23] Summary of a CodeQL evaluation that started at 2026-08-13T17:05:23.504203356Z
+[2026-08-13 18:05:23] 
+[2026-08-13 18:05:23] Found predicate cached_ResolveClass::isType/1#eabb9878@82ca1924 in the relation cache (size: 123849)
+[2026-08-13 18:05:23] Found predicate cached_ResolveClass::isClass/1#af2a1ca6@ecb9e6su in the relation cache (size: 10868)
+[2026-08-13 18:05:23] Found predicate cached_ResolveClass::resolveClass/1#ea47deee@a66798km in the relation cache (size: 24895)
+[2026-08-13 18:05:23] Found predicate cached_ResolveGlobalVariable::isVariable/1#6e051315@90738ahc in the relation cache (size: 446985)
+[2026-08-13 18:05:23] Found predicate cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f@d04f11u9 in the relation cache (size: 447482)
+[2026-08-13 18:05:23] Found predicate cached_ResolveFunction::isFunction/1#9226b83f@f98098d9 in the relation cache (size: 91685)
+[2026-08-13 18:05:23] Found predicate cached_ResolveFunction::resolveFunction/1#576ba5ee@d186d880 in the relation cache (size: 107513)
+[2026-08-13 18:05:23] Found predicate cached_Expr::Expr.getType/0#dispred#444cc5af@6044b650 in the relation cache (size: 10158564)
+[2026-08-13 18:05:23] Found predicate cached_Element::ElementBase.toString/0#dispred#6e016f86@b58a23s4 in the relation cache (size: 16830229)
+[2026-08-13 18:05:23] Found predicate project#all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41@a621cejb in the relation cache (size: 266)
+[2026-08-13 18:05:23] Found predicate Class::Class.isConstructedFrom/1#dispred#390e01c8@775e5382 in the relation cache (size: 5893)
+[2026-08-13 18:05:23] Found predicate project#UserType::UserType.getADeclarationEntryBase/0#dispred#d07c0e9a@440e7dcu in the relation cache (size: 13472)
+[2026-08-13 18:05:23] Found predicate cached_QualifiedName::declarationHasQualifiedName/4#749d7d29@bad017oq in the relation cache (size: 173869)
+[2026-08-13 18:05:23] Completed evaluation of a recursive layer containing 1 different predicates (took 2ms). Predicates evaluated:
+m#UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#mcpe_this@b394fwcb (took 0ms) (size: 266)
+
+Evaluated recursive predicate m#UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#mcpe_this@b394fwcb in 0ms on iteration 1 (delta size: 266).
+Evaluated relational algebra for predicate m#UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#mcpe_this@b394fwcb on iteration 1 running pipeline base:
+                return `project#all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41`
+
+Pipeline base for m#UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#mcpe_this@b394fwcb was evaluated in 1 iterations totaling 0ms (delta sizes total: 266).
+
+[2026-08-13 18:05:23] Found predicate Class::Class#9afdbffd@65d7f1bo in the relation cache (size: 10219)
+[2026-08-13 18:05:23] Found predicate type_decls@8b2e3e64 in the relation cache (size: 14898)
+[2026-08-13 18:05:23] Found predicate UserType::UserType.getADeclarationEntryBase/0#dc3623a8@26b5d1fq in the relation cache (size: 14898)
+[2026-08-13 18:05:23] Found predicate Class::Class.isConstructedFrom/1#dispred#390e01c8_10#join_rhs@9a26c75u in the relation cache (size: 5893)
+[2026-08-13 18:05:23] Completed evaluation of a recursive layer containing 1 different predicates (took 32ms). Predicates evaluated:
+UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@fda33wkh (took 31ms) (size: 266)
+
+Evaluated recursive predicate UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@fda33wkh in 30ms on iteration 1 (delta size: 262).
+Evaluated relational algebra for predicate UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@fda33wkh on iteration 1 running pipeline base:
+                {2} r1 = SCAN `UserType::UserType.getADeclarationEntryBase/0#dc3623a8` OUTPUT In.1, In.0
+                {2}    | JOIN WITH type_decls ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `m#UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                return r1
+
+Evaluated recursive predicate UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@fda33wkh in 1ms on iteration 2 (delta size: 4).
+Evaluated relational algebra for predicate UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@fda33wkh on iteration 2 running pipeline standard:
+                {2} r1 = JOIN `UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#prev_delta` WITH Class::Class#9afdbffd ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH type_decls ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Class::Class.isConstructedFrom/1#dispred#390e01c8#bf_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | JOIN WITH `m#UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#mcpe_this` ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                {2}    | AND NOT `UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#prev`(FIRST 2)
+                {2}    | AND NOT `project#UserType::UserType.getADeclarationEntryBase/0#dispred#d07c0e9a`(FIRST 1)
+                return r1
+
+Pipeline base for UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@fda33wkh was evaluated in 1 iterations totaling 30ms (delta sizes total: 262).
+Pipeline standard for UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@fda33wkh was evaluated in 1 iterations totaling 1ms (delta sizes total: 4).
+
+[2026-08-13 18:05:23] Evaluated non-recursive predicate UserType::UserType.getADeclarationEntry/0#cea44e2f#bb_10#join_rhs@3179d4f6 in 0ms (size: 266).
+Evaluated relational algebra for predicate UserType::UserType.getADeclarationEntry/0#cea44e2f#bb_10#join_rhs@3179d4f6:
+                {2} r1 = SCAN `UserType::UserType.getADeclarationEntry/0#cea44e2f#bb` OUTPUT In.1, In.0
+                return r1
+
+[2026-08-13 18:05:23] Found predicate all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41@e52483rt in the relation cache (size: 266)
+[2026-08-13 18:05:23] Found predicate Location::Location.getContainer/0#9edabfb6@bbd97edk in the relation cache (size: 7867442)
+[2026-08-13 18:05:23] Found predicate File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc in the relation cache (size: 2915)
+[2026-08-13 18:05:23] Found predicate File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs@c84492vk in the relation cache (size: 2915)
+[2026-08-13 18:05:23] Evaluated non-recursive predicate _#type_declsMerge_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739__#shared@d11d1eeg in 20ms (size: 266).
+Evaluated relational algebra for predicate _#type_declsMerge_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739__#shared@d11d1eeg:
+                {2} r1 = SCAN type_decls OUTPUT In.2, In.0
+                {2}    | JOIN WITH `Location::Location.getContainer/0#9edabfb6` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | JOIN WITH `UserType::UserType.getADeclarationEntry/0#cea44e2f#bb_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | JOIN WITH `all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+            
+                {3} r2 = JOIN r1 WITH `File::Impl::File.getURL/0#dispred#2f739b0d` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Rhs.1
+            
+                {2} r3 = r1 AND NOT `File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs`(FIRST 1)
+                {3}    | SCAN OUTPUT In.0, In.1, _
+                {3}    | REWRITE WITH Out.2 := ""
+            
+                {3} r4 = r2 UNION r3
+                return r4
+
+[2026-08-13 18:05:23] Found predicate File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0 in the relation cache (size: 3045)
+[2026-08-13 18:05:23] Found predicate project#Element::ElementBase.toString/0#dispred#6e016f86@00b52b64 in the relation cache (size: 16823598)
+[2026-08-13 18:05:23] Evaluated non-recursive predicate _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#type_declsMerge_File::Impl::File.getURL/__#antijoin_rhs@ccc4177d in 0ms (size: 266).
+Evaluated relational algebra for predicate _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#type_declsMerge_File::Impl::File.getURL/__#antijoin_rhs@ccc4177d:
+                {3} r1 = JOIN `_#type_declsMerge_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739__#shared` WITH `project#Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2
+            
+                {3} r2 = JOIN `_#type_declsMerge_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739__#shared` WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2
+            
+                {3} r3 = r1 UNION r2
+                return r3
+
+[2026-08-13 18:05:23] Evaluated non-recursive predicate #select#query@cca892or in 0ms (size: 266).
+Evaluated relational algebra for predicate #select#query@cca892or:
+                {4} r1 = JOIN `_#type_declsMerge_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739__#shared` WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, Rhs.1, Lhs.2, Lhs.1
+            
+                {4} r2 = JOIN `_#type_declsMerge_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739__#shared` WITH `cached_Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.0, Rhs.1, Lhs.2, Lhs.1
+            
+                {3} r3 = `_#type_declsMerge_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739__#shared` AND NOT `_File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#type_declsMerge_File::Impl::File.getURL/__#antijoin_rhs`(FIRST 3)
+                {4}    | SCAN OUTPUT In.0, _, In.2, In.1
+                {4}    | REWRITE WITH Out.1 := "(no string representation)"
+            
+                {4} r4 = r1 UNION r2 UNION r3
+                return r4
+
+[2026-08-13 18:05:23] Completed evaluation of query all_passes_gcc_working.ql.
+Most expensive predicates for stage 6 of completed query all_passes_gcc_working.ql:
+        time | evals |  max @ iter | predicate
+        -----|-------|-------------|----------
+        31ms |     2 | 30ms @ 1    | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@fda33wkh
+        20ms |       |             | _#type_declsMerge_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739__#shared@d11d1eeg
+         0ms |       |             | #select#query@cca892or
+         0ms |       |             | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#type_declsMerge_File::Impl::File.getURL/__#antijoin_rhs@ccc4177d
+         0ms |       |             | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb_10#join_rhs@3179d4f6
+         0ms |     1 |  0ms @ 1    | m#UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#mcpe_this@b394fwcb
+
+Most expensive predicates for completed query all_passes_gcc_working.ql:
+        time | evals |  max @ iter | predicate
+        -----|-------|-------------|----------
+        31ms |     2 | 30ms @ 1    | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@fda33wkh
+        20ms |       |             | _#type_declsMerge_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739__#shared@d11d1eeg
+         0ms |       |             | #select#query@cca892or
+         0ms |       |             | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#type_declsMerge_File::Impl::File.getURL/__#antijoin_rhs@ccc4177d
+         0ms |       |             | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb_10#join_rhs@3179d4f6
+         0ms |     1 |  0ms @ 1    | m#UserType::UserType.getADeclarationEntry/0#cea44e2f#bb#mcpe_this@b394fwcb
+
+[2026-08-13 18:05:23] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.1 seconds
+        * Total time spent evaluating predicates: 0.1 seconds

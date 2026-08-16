@@ -1,0 +1,197 @@
+{
+  "time" : "2026-08-13T17:02:55.360395160Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 1342,
+  "nanoTime" : 12310691366534,
+  "codeqlVersion" : "2.26.2",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-08-13T17:02:55.413069953Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 1343,
+  "nanoTime" : 12310744032620,
+  "queryName" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql",
+  "stages" : [ 44, 45, 46, 47, 48, 49, 50 ]
+}
+
+{
+  "time" : "2026-08-13T17:02:55.416975011Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1344,
+  "nanoTime" : 12310747936076,
+  "raHash" : "82ca1924s7df18kvl50qp6pc9v3",
+  "predicateName" : "cached_ResolveClass::isType/1#eabb9878",
+  "appearsAs" : {
+    "cached_ResolveClass::isType/1#eabb9878" : [ 44 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 123849
+}
+
+{
+  "time" : "2026-08-13T17:02:55.417432327Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1345,
+  "nanoTime" : 12310748381520,
+  "raHash" : "ecb9e6su7vinsqn2hved49i2c07",
+  "predicateName" : "cached_ResolveClass::isClass/1#af2a1ca6",
+  "appearsAs" : {
+    "cached_ResolveClass::isClass/1#af2a1ca6" : [ 44 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 10868
+}
+
+{
+  "time" : "2026-08-13T17:02:55.417722199Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1346,
+  "nanoTime" : 12310748667094,
+  "raHash" : "a66798kmt7m0t4fpn56e459fpk2",
+  "predicateName" : "cached_ResolveClass::resolveClass/1#ea47deee",
+  "appearsAs" : {
+    "cached_ResolveClass::resolveClass/1#ea47deee" : [ 44 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 24895
+}
+
+{
+  "time" : "2026-08-13T17:02:55.418030035Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1347,
+  "nanoTime" : 12310748973217,
+  "raHash" : "90738ahctvdkjlt0i3qvihreh0d",
+  "predicateName" : "cached_ResolveGlobalVariable::isVariable/1#6e051315",
+  "appearsAs" : {
+    "cached_ResolveGlobalVariable::isVariable/1#6e051315" : [ 46 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 446985
+}
+
+{
+  "time" : "2026-08-13T17:02:55.419700432Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1348,
+  "nanoTime" : 12310750651318,
+  "raHash" : "d04f11u9b7hntadk2hs97si3ktd",
+  "predicateName" : "cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f",
+  "appearsAs" : {
+    "cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f" : [ 46 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 447482
+}
+
+{
+  "time" : "2026-08-13T17:02:55.420069663Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1349,
+  "nanoTime" : 12310751015790,
+  "raHash" : "f98098d9on2b492c6c275esfiue",
+  "predicateName" : "cached_ResolveFunction::isFunction/1#9226b83f",
+  "appearsAs" : {
+    "cached_ResolveFunction::isFunction/1#9226b83f" : [ 45 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 91685
+}
+
+{
+  "time" : "2026-08-13T17:02:55.420349236Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1350,
+  "nanoTime" : 12310751291706,
+  "raHash" : "d186d880pc1o7ec9mtbdcu2ch90",
+  "predicateName" : "cached_ResolveFunction::resolveFunction/1#576ba5ee",
+  "appearsAs" : {
+    "cached_ResolveFunction::resolveFunction/1#576ba5ee" : [ 45 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 107513
+}
+
+{
+  "time" : "2026-08-13T17:02:55.421311687Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1351,
+  "nanoTime" : 12310752254819,
+  "raHash" : "6044b650jaa7qj80h6h6pkhjm05",
+  "predicateName" : "cached_Expr::Expr.getType/0#dispred#444cc5af",
+  "appearsAs" : {
+    "cached_Expr::Expr.getType/0#dispred#444cc5af" : [ 48 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 10158564
+}
+
+{
+  "time" : "2026-08-13T17:02:55.421643037Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1352,
+  "nanoTime" : 12310752585307,
+  "raHash" : "b58a23s4gib1n9g18c4bhcsja59",
+  "predicateName" : "cached_Element::ElementBase.toString/0#dispred#6e016f86",
+  "appearsAs" : {
+    "cached_Element::ElementBase.toString/0#dispred#6e016f86" : [ 49 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 16830229
+}
+
+{
+  "time" : "2026-08-13T17:02:55.421758143Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1353,
+  "nanoTime" : 12310752704270,
+  "raHash" : "1ab7d4gj7ed2heb7tk1h626q0c4",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 50 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 266
+}
+
+{
+  "time" : "2026-08-13T17:02:55.421968707Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1354,
+  "nanoTime" : 12310753422955,
+  "raHash" : "bad017oqli0nbr136ld8vl77sm4",
+  "predicateName" : "cached_QualifiedName::declarationHasQualifiedName/4#749d7d29",
+  "appearsAs" : {
+    "cached_QualifiedName::declarationHasQualifiedName/4#749d7d29" : [ 47 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 173869
+}
+
+{
+  "time" : "2026-08-13T17:02:55.432183384Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 1355,
+  "nanoTime" : 12310763158154,
+  "startEvent" : 1343,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-08-13T17:02:55.435623252Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 1356,
+  "nanoTime" : 12310766598223
+}

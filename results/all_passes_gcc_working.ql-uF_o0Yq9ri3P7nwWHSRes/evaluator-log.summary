@@ -1,0 +1,138 @@
+[2026-08-13 18:07:52] Summary of a CodeQL evaluation that started at 2026-08-13T17:07:52.818768712Z
+[2026-08-13 18:07:52] 
+[2026-08-13 18:07:52] Found predicate cached_ResolveClass::isType/1#eabb9878@82ca1924 in the relation cache (size: 123849)
+[2026-08-13 18:07:52] Found predicate cached_ResolveClass::isClass/1#af2a1ca6@ecb9e6su in the relation cache (size: 10868)
+[2026-08-13 18:07:52] Found predicate cached_ResolveClass::resolveClass/1#ea47deee@a66798km in the relation cache (size: 24895)
+[2026-08-13 18:07:52] Found predicate cached_ResolveGlobalVariable::isVariable/1#6e051315@90738ahc in the relation cache (size: 446985)
+[2026-08-13 18:07:52] Found predicate cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f@d04f11u9 in the relation cache (size: 447482)
+[2026-08-13 18:07:52] Found predicate cached_ResolveFunction::isFunction/1#9226b83f@f98098d9 in the relation cache (size: 91685)
+[2026-08-13 18:07:52] Found predicate cached_ResolveFunction::resolveFunction/1#576ba5ee@d186d880 in the relation cache (size: 107513)
+[2026-08-13 18:07:52] Found predicate cached_Expr::Expr.getType/0#dispred#444cc5af@6044b650 in the relation cache (size: 10158564)
+[2026-08-13 18:07:52] Found predicate cached_Element::ElementBase.toString/0#dispred#6e016f86@b58a23s4 in the relation cache (size: 16830229)
+[2026-08-13 18:07:52] Found predicate all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41@e52483rt in the relation cache (size: 266)
+[2026-08-13 18:07:52] Found predicate Location::Location.getContainer/0#9edabfb6@bbd97edk in the relation cache (size: 7867442)
+[2026-08-13 18:07:52] Found predicate UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf@cf1f5a46 in the relation cache (size: 266)
+[2026-08-13 18:07:52] Found predicate Element::Element.getLocation/0#dispred#6c3f5b09#bf@f4062en2 in the relation cache (size: 266)
+[2026-08-13 18:07:52] Found predicate cached_QualifiedName::declarationHasQualifiedName/4#749d7d29@bad017oq in the relation cache (size: 173869)
+[2026-08-13 18:07:52] Evaluated non-recursive predicate #select@f8fe7bo9 in 3ms (size: 266).
+Evaluated relational algebra for predicate #select@f8fe7bo9:
+                {3} r1 = JOIN `all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41` WITH `UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.1
+                {3}    | JOIN WITH `Location::Location.getContainer/0#9edabfb6` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Rhs.1
+                {3}    | JOIN WITH `Element::Element.getLocation/0#dispred#6c3f5b09#bf` ON FIRST 1 OUTPUT Lhs.2, Lhs.1, Rhs.1
+                return r1
+
+[2026-08-13 18:07:52] Found predicate File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0 in the relation cache (size: 3045)
+[2026-08-13 18:07:52] Found predicate locations_default@2b5cc3pr in the relation cache (size: 7867442)
+[2026-08-13 18:07:52] Found predicate File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc in the relation cache (size: 2915)
+[2026-08-13 18:07:52] Found predicate File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs@c84492vk in the relation cache (size: 2915)
+[2026-08-13 18:07:53] Evaluated non-recursive predicate Location::Location.hasLocationInfo/5#dispred#558082fb@acb21f6m in 385ms (size: 7867442).
+Evaluated relational algebra for predicate Location::Location.hasLocationInfo/5#dispred#558082fb@acb21f6m:
+                {6} r1 = SCAN locations_default OUTPUT In.1, In.0, In.2, In.3, In.4, In.5
+                {6}    | JOIN WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.1, Rhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5
+                return r1
+
+[2026-08-13 18:07:53] Evaluated non-recursive predicate Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs@167ac5ts in 79ms (size: 7867442).
+Evaluated relational algebra for predicate Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs@167ac5ts:
+                {1} r1 = SCAN `Location::Location.hasLocationInfo/5#dispred#558082fb` OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-13 18:08:04] Evaluated non-recursive predicate Location::Location.toString/0#dispred#6ede7323@f4f5c6jk in 11554ms (size: 7867442).
+Evaluated relational algebra for predicate Location::Location.toString/0#dispred#6ede7323@f4f5c6jk:
+                {7} r1 = SCAN `Location::Location.hasLocationInfo/5#dispred#558082fb` OUTPUT In.0, _, In.1, In.2, In.3, In.4, In.5
+                {2}    | REWRITE WITH Out.1 := toUrl(In.2,In.3,In.4,In.5,In.6) KEEPING 2
+                return r1
+
+[2026-08-13 18:08:05] Evaluated non-recursive predicate Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs@8615681u in 63ms (size: 7867442).
+Evaluated relational algebra for predicate Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs@8615681u:
+                {1} r1 = SCAN `Location::Location.toString/0#dispred#6ede7323` OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-13 18:08:05] Evaluated non-recursive predicate _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@21fbe35s in 2ms (size: 266).
+Evaluated relational algebra for predicate _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@21fbe35s:
+                {4} r1 = JOIN #select WITH `File::Impl::File.getURL/0#dispred#2f739b0d` ON FIRST 1 OUTPUT Lhs.2, Lhs.0, Lhs.1, Rhs.1
+            
+                {3} r2 = #select AND NOT `File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs`(FIRST 1)
+                {4}    | SCAN OUTPUT In.2, In.0, In.1, _
+                {4}    | REWRITE WITH Out.3 := ""
+            
+                {4} r3 = r1 UNION r2
+            
+                {5} r4 = JOIN r3 WITH `Location::Location.toString/0#dispred#6ede7323` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Rhs.1
+            
+                {4} r5 = r3 AND NOT `Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs`(FIRST 1)
+                {5}    | SCAN OUTPUT In.0, In.1, In.2, In.3, _
+                {5}    | REWRITE WITH Out.4 := "(no string representation)"
+            
+                {5} r6 = r4 UNION r5
+                {10}    | JOIN WITH `Location::Location.hasLocationInfo/5#dispred#558082fb` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.0, Lhs.3, Lhs.4, Rhs.1, Rhs.2, Rhs.3, Rhs.4, Rhs.5
+            
+                {3} r7 = #select AND NOT `File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs`(FIRST 1)
+                {4}    | SCAN OUTPUT In.2, In.0, In.1, _
+                {4}    | REWRITE WITH Out.3 := ""
+            
+                {4} r8 = r1 UNION r7
+                {4}    | AND NOT `Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs`(FIRST 1)
+                {5}    | SCAN OUTPUT In.0, In.1, In.2, In.3, _
+                {5}    | REWRITE WITH Out.4 := "(no string representation)"
+            
+                {5} r9 = r4 UNION r8
+                {5}    | AND NOT `Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs`(FIRST 1)
+                {10}    | SCAN OUTPUT In.1, In.2, In.0, In.3, In.4, _, _, _, _, _
+                {10}    | REWRITE WITH Out.5 := "", Out.6 := 0, Out.7 := 0, Out.8 := 0, Out.9 := 0
+            
+                {10} r10 = r6 UNION r9
+                return r10
+
+[2026-08-13 18:08:05] Found predicate project#Element::ElementBase.toString/0#dispred#6e016f86@00b52b64 in the relation cache (size: 16823598)
+[2026-08-13 18:08:05] Evaluated non-recursive predicate _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@af74d6of in 0ms (size: 266).
+Evaluated relational algebra for predicate _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@af74d6of:
+                {10} r1 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `project#Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9
+            
+                {10} r2 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9
+            
+                {10} r3 = r1 UNION r2
+                return r3
+
+[2026-08-13 18:08:05] Evaluated non-recursive predicate #select#query@9bc0a7rr in 21ms (size: 266).
+Evaluated relational algebra for predicate #select#query@9bc0a7rr:
+                {11} r1 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, Rhs.1, Lhs.3, Lhs.1, Lhs.2, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9
+            
+                {11} r2 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `cached_Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.0, Rhs.1, Lhs.3, Lhs.1, Lhs.2, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9
+            
+                {10} r3 = `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` AND NOT `_File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs`(FIRST 10)
+                {11}    | SCAN OUTPUT In.0, _, In.3, In.1, In.2, In.4, In.5, In.6, In.7, In.8, In.9
+                {11}    | REWRITE WITH Out.1 := "(no string representation)"
+            
+                {11} r4 = r1 UNION r2 UNION r3
+                return r4
+
+[2026-08-13 18:08:05] Completed evaluation of query all_passes_gcc_working.ql.
+Most expensive predicates for stage 6 of completed query all_passes_gcc_working.ql:
+        time  | predicate
+        ------|----------
+        11.6s | Location::Location.toString/0#dispred#6ede7323@f4f5c6jk
+        385ms | Location::Location.hasLocationInfo/5#dispred#558082fb@acb21f6m
+         79ms | Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs@167ac5ts
+         63ms | Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs@8615681u
+         21ms | #select#query@9bc0a7rr
+          3ms | #select@f8fe7bo9
+          2ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@21fbe35s
+          0ms | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@af74d6of
+
+Most expensive predicates for completed query all_passes_gcc_working.ql:
+        time  | predicate
+        ------|----------
+        11.6s | Location::Location.toString/0#dispred#6ede7323@f4f5c6jk
+        385ms | Location::Location.hasLocationInfo/5#dispred#558082fb@acb21f6m
+         79ms | Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs@167ac5ts
+         63ms | Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs@8615681u
+         21ms | #select#query@9bc0a7rr
+          3ms | #select@f8fe7bo9
+          2ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@21fbe35s
+          0ms | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@af74d6of
+
+[2026-08-13 18:08:05] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 12.3 seconds
+        * Total time spent evaluating predicates: 12.1 seconds

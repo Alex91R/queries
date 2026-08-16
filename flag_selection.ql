@@ -14,3 +14,5 @@ where
   accessStructFieldName = m.getBody() and
   option = "-f" + accessName.suffix(5).replaceAll("_", "-")
 select option, accessName, accessStructFieldName.suffix(15)
+
+// create a predicate of it

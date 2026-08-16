@@ -1,0 +1,63 @@
+Completed evaluation of query all_passes_gcc_working.ql.
+Most expensive predicates for stage 5 of completed query all_passes_gcc_working.ql:
+        time | predicate
+        -----|----------
+        21ms | UserType::UserType.getName/0#dispred#68e0aaf0@c6c4e3bl
+
+Most expensive predicates for stage 6 of completed query all_passes_gcc_working.ql:
+        time  | evals |  max @ iter | predicate
+        ------|-------|-------------|----------
+         9.4s |       |             | Location::Location.toString/0#dispred#6ede7323@f4f5c6jk
+        566ms |       |             | Location::Location.hasLocationInfo/5#dispred#558082fb@acb21f6m
+        274ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#4#3@9a2d35qe
+         40ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#7@5267bagq
+         31ms |     6 | 13ms @ 1    | Type::Type.getUnderlyingType/0#dispred#bd141f6a@4eafcwca
+         25ms |       |             | Type::Type.getName/0#dispred#77a04a0a@a8e234eu
+         21ms |       |             | UserType::UserType.getName/0#dispred#68e0aaf0@c6c4e3bl
+         14ms |       |             | #select#query@db848f5b
+         12ms |       |             | Type::Type_not_Type::Decltype_Type::IntrinsicTransformedType_TypedefType::TypedefType_Type::TypeofType#704e70f2@7e1c1d5m
+          9ms |       |             | NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a@7f7036l4
+          7ms |       |             | Class::ClassDerivation.getBaseType/0#dispred#36ad7f0f@3358a47h
+          7ms |       |             | #select@659663ai
+          6ms |       |             | File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc
+          3ms |       |             | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@7e1077ui
+          2ms |       |             | Class::Class.getABaseClass/0#dispred#e9ba966b@81b8f2eh
+          2ms |       |             | doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5_#Class::Class.getABaseClass/0#di__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3@f85651jh
+          2ms |       |             | all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41@e52483rt
+          2ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3@176b0apr
+          1ms |       |             | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@dc0defsc
+          0ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#6@6f804aev
+          0ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#8@fcb956td
+          0ms |       |             | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+          0ms |       |             | _#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5_#Class::Class.getABaseClass/0#di__#higher_order_body@3dc74alb
+
+Most expensive predicates for completed query all_passes_gcc_working.ql:
+        time  | evals |  max @ iter | predicate
+        ------|-------|-------------|----------
+         9.4s |       |             | Location::Location.toString/0#dispred#6ede7323@f4f5c6jk
+        566ms |       |             | Location::Location.hasLocationInfo/5#dispred#558082fb@acb21f6m
+        274ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#4#3@9a2d35qe
+         40ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#7@5267bagq
+         31ms |     6 | 13ms @ 1    | Type::Type.getUnderlyingType/0#dispred#bd141f6a@4eafcwca
+         25ms |       |             | Type::Type.getName/0#dispred#77a04a0a@a8e234eu
+         21ms |       |             | UserType::UserType.getName/0#dispred#68e0aaf0@c6c4e3bl
+         14ms |       |             | #select#query@db848f5b
+         12ms |       |             | Type::Type_not_Type::Decltype_Type::IntrinsicTransformedType_TypedefType::TypedefType_Type::TypeofType#704e70f2@7e1c1d5m
+          9ms |       |             | NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a@7f7036l4
+          7ms |       |             | Class::ClassDerivation.getBaseType/0#dispred#36ad7f0f@3358a47h
+          7ms |       |             | #select@659663ai
+          6ms |       |             | File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc
+          3ms |       |             | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@7e1077ui
+          2ms |       |             | Class::Class.getABaseClass/0#dispred#e9ba966b@81b8f2eh
+          2ms |       |             | doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5_#Class::Class.getABaseClass/0#di__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3@f85651jh
+          2ms |       |             | all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41@e52483rt
+          2ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3@176b0apr
+          1ms |       |             | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@dc0defsc
+          0ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#6@6f804aev
+          0ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#8@fcb956td
+          0ms |       |             | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+          0ms |       |             | _#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5_#Class::Class.getABaseClass/0#di__#higher_order_body@3dc74alb
+
+[2026-08-16 21:31:36] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 11.2 seconds
+        * Total time spent evaluating predicates: 10.4 seconds

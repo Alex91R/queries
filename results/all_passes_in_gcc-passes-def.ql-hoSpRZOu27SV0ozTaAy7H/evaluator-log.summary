@@ -1,0 +1,46 @@
+[2026-08-13 17:22:18] Summary of a CodeQL evaluation that started at 2026-08-13T16:22:18.699298099Z
+[2026-08-13 17:22:18] 
+[2026-08-13 17:22:18] Found predicate cached_ResolveClass::isType/1#eabb9878@82ca1924 in the relation cache (size: 123849)
+[2026-08-13 17:22:18] Found predicate cached_ResolveClass::resolveClass/1#ea47deee@a66798km in the relation cache (size: 24895)
+[2026-08-13 17:22:18] Found predicate cached_ResolveGlobalVariable::isVariable/1#6e051315@90738ahc in the relation cache (size: 446985)
+[2026-08-13 17:22:18] Found predicate cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f@d04f11u9 in the relation cache (size: 447482)
+[2026-08-13 17:22:18] Found predicate cached_ResolveFunction::isFunction/1#9226b83f@f98098d9 in the relation cache (size: 91685)
+[2026-08-13 17:22:18] Found predicate cached_ResolveFunction::resolveFunction/1#576ba5ee@d186d880 in the relation cache (size: 107513)
+[2026-08-13 17:22:18] Found predicate cached_ResolveClass::isClass/1#af2a1ca6@ecb9e6su in the relation cache (size: 10868)
+[2026-08-13 17:22:18] Found predicate cached_Expr::Expr.getType/0#dispred#444cc5af@6044b650 in the relation cache (size: 10158564)
+[2026-08-13 17:22:18] Found predicate cached_Element::ElementBase.toString/0#dispred#6e016f86@b58a23s4 in the relation cache (size: 16830229)
+[2026-08-13 17:22:18] Found predicate macroinvocations@c9caa299 in the relation cache (size: 2134953)
+[2026-08-13 17:22:18] Found predicate cached_QualifiedName::declarationHasQualifiedName/4#749d7d29@bad017oq in the relation cache (size: 173869)
+[2026-08-13 17:22:18] Evaluated non-recursive predicate #macroinvocationsMerge_30#join_rhs@c5b172bs in 90ms (size: 2134953).
+Evaluated relational algebra for predicate #macroinvocationsMerge_30#join_rhs@c5b172bs:
+                {2} r1 = SCAN macroinvocations OUTPUT In.3, In.0
+                return r1
+
+[2026-08-13 17:22:18] Found predicate File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i in the relation cache (size: 2230)
+[2026-08-13 17:22:18] Found predicate Element::Element.getFile/0#2b8c8740@672326ti in the relation cache (size: 2134953)
+[2026-08-13 17:22:19] Evaluated non-recursive predicate #select#query@7da2738f in 187ms (size: 0).
+Evaluated relational algebra for predicate #select#query@7da2738f:
+                {1} r1 = CONSTANT(unique int)[1]
+                {1}    | JOIN WITH #macroinvocationsMerge_30#join_rhs ON FIRST 1 OUTPUT Rhs.1
+                {2}    | JOIN WITH `Element::Element.getFile/0#2b8c8740` ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {2}    | JOIN WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                {2}    | REWRITE WITH TEST InOut.1 endsWith "/passes.def"
+                {1}    | JOIN WITH `cached_Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Rhs.1
+                return r1
+
+[2026-08-13 17:22:19] Completed evaluation of query all_passes_in_gcc-passes-def.ql.
+Most expensive predicates for stage 6 of completed query all_passes_in_gcc-passes-def.ql:
+        time  | predicate
+        ------|----------
+        187ms | #select#query@7da2738f
+         90ms | #macroinvocationsMerge_30#join_rhs@c5b172bs
+
+Most expensive predicates for completed query all_passes_in_gcc-passes-def.ql:
+        time  | predicate
+        ------|----------
+        187ms | #select#query@7da2738f
+         90ms | #macroinvocationsMerge_30#join_rhs@c5b172bs
+
+[2026-08-13 17:22:19] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.4 seconds
+        * Total time spent evaluating predicates: 0.3 seconds

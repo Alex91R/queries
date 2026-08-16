@@ -1,0 +1,2104 @@
+{
+  "time" : "2026-08-16T20:31:25.161682670Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 1469,
+  "nanoTime" : 36404245374195,
+  "codeqlVersion" : "2.26.2",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.257574006Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 1470,
+  "nanoTime" : 36404341228010,
+  "queryName" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql",
+  "stages" : [ 65, 66, 67, 68, 69, 70, 71 ]
+}
+
+{
+  "time" : "2026-08-16T20:31:25.262151850Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1471,
+  "nanoTime" : 36404346497057,
+  "raHash" : "82ca1924s7df18kvl50qp6pc9v3",
+  "predicateName" : "cached_ResolveClass::isType/1#eabb9878",
+  "appearsAs" : {
+    "cached_ResolveClass::isType/1#eabb9878" : [ 65 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 123849
+}
+
+{
+  "time" : "2026-08-16T20:31:25.263533094Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1472,
+  "nanoTime" : 36404347182971,
+  "raHash" : "ecb9e6su7vinsqn2hved49i2c07",
+  "predicateName" : "cached_ResolveClass::isClass/1#af2a1ca6",
+  "appearsAs" : {
+    "cached_ResolveClass::isClass/1#af2a1ca6" : [ 65 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 10868
+}
+
+{
+  "time" : "2026-08-16T20:31:25.264489153Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1473,
+  "nanoTime" : 36404348124642,
+  "raHash" : "a66798kmt7m0t4fpn56e459fpk2",
+  "predicateName" : "cached_ResolveClass::resolveClass/1#ea47deee",
+  "appearsAs" : {
+    "cached_ResolveClass::resolveClass/1#ea47deee" : [ 65 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 24895
+}
+
+{
+  "time" : "2026-08-16T20:31:25.265008765Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1474,
+  "nanoTime" : 36404348663300,
+  "raHash" : "90738ahctvdkjlt0i3qvihreh0d",
+  "predicateName" : "cached_ResolveGlobalVariable::isVariable/1#6e051315",
+  "appearsAs" : {
+    "cached_ResolveGlobalVariable::isVariable/1#6e051315" : [ 67 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 446985
+}
+
+{
+  "time" : "2026-08-16T20:31:25.265718412Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1475,
+  "nanoTime" : 36404349385501,
+  "raHash" : "d04f11u9b7hntadk2hs97si3ktd",
+  "predicateName" : "cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f",
+  "appearsAs" : {
+    "cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f" : [ 67 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 447482
+}
+
+{
+  "time" : "2026-08-16T20:31:25.266120234Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1476,
+  "nanoTime" : 36404349753409,
+  "raHash" : "f98098d9on2b492c6c275esfiue",
+  "predicateName" : "cached_ResolveFunction::isFunction/1#9226b83f",
+  "appearsAs" : {
+    "cached_ResolveFunction::isFunction/1#9226b83f" : [ 66 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 91685
+}
+
+{
+  "time" : "2026-08-16T20:31:25.266433340Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1477,
+  "nanoTime" : 36404350061125,
+  "raHash" : "d186d880pc1o7ec9mtbdcu2ch90",
+  "predicateName" : "cached_ResolveFunction::resolveFunction/1#576ba5ee",
+  "appearsAs" : {
+    "cached_ResolveFunction::resolveFunction/1#576ba5ee" : [ 66 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 107513
+}
+
+{
+  "time" : "2026-08-16T20:31:25.267285143Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1478,
+  "nanoTime" : 36404350914361,
+  "raHash" : "6044b650jaa7qj80h6h6pkhjm05",
+  "predicateName" : "cached_Expr::Expr.getType/0#dispred#444cc5af",
+  "appearsAs" : {
+    "cached_Expr::Expr.getType/0#dispred#444cc5af" : [ 69 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 10158564
+}
+
+{
+  "time" : "2026-08-16T20:31:25.267715167Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1479,
+  "nanoTime" : 36404351341931,
+  "raHash" : "b58a23s4gib1n9g18c4bhcsja59",
+  "predicateName" : "cached_Element::ElementBase.toString/0#dispred#6e016f86",
+  "appearsAs" : {
+    "cached_Element::ElementBase.toString/0#dispred#6e016f86" : [ 70 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 16830229
+}
+
+{
+  "time" : "2026-08-16T20:31:25.268470731Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1480,
+  "nanoTime" : 36404352099989,
+  "raHash" : "2b3a28ppcinnaqcddq6ghs6mn86",
+  "predicateName" : "Type::IntrinsicTransformedType#9604289c_10#join_rhs",
+  "appearsAs" : {
+    "Type::IntrinsicTransformedType#9604289c_10#join_rhs" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-08-16T20:31:25.268560439Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1481,
+  "nanoTime" : 36404352187693,
+  "raHash" : "170a944krrrkeutcj1k3d70rd6f",
+  "predicateName" : "Type::Decltype#2a58cb8b",
+  "appearsAs" : {
+    "Type::Decltype#2a58cb8b" : [ 69, 70, 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 49
+}
+
+{
+  "time" : "2026-08-16T20:31:25.268696343Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1482,
+  "nanoTime" : 36404352323026,
+  "raHash" : "8c3f27ubeplo2fu9o19qfgepnj7",
+  "predicateName" : "Type::TypeofType#5988d37d",
+  "appearsAs" : {
+    "Type::TypeofType#5988d37d" : [ 69, 70, 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 56
+}
+
+{
+  "time" : "2026-08-16T20:31:25.268888663Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1483,
+  "nanoTime" : 36404352514524,
+  "raHash" : "4d6a54pnei5orvlc8076iohiu3e",
+  "predicateName" : "all_passes_gcc_working::GccPassClass#52fccc07",
+  "appearsAs" : {
+    "all_passes_gcc_working::GccPassClass#52fccc07" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.269006864Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1484,
+  "nanoTime" : 36404352635521,
+  "raHash" : "bbd97edkf48odqqti6ec0epkftd",
+  "predicateName" : "Location::Location.getContainer/0#9edabfb6",
+  "appearsAs" : {
+    "Location::Location.getContainer/0#9edabfb6" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 7867442
+}
+
+{
+  "time" : "2026-08-16T20:31:25.269068539Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1485,
+  "nanoTime" : 36404352693649,
+  "raHash" : "cf1f5a466e4mqoc7taquun29qj0",
+  "predicateName" : "UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf",
+  "appearsAs" : {
+    "UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.269128281Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1486,
+  "nanoTime" : 36404352755525,
+  "raHash" : "f4062en22vriur2m0dm2m9esuv6",
+  "predicateName" : "Element::Element.getLocation/0#dispred#6c3f5b09#bf",
+  "appearsAs" : {
+    "Element::Element.getLocation/0#dispred#6c3f5b09#bf" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.269945049Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1487,
+  "nanoTime" : 36404353574868,
+  "raHash" : "bad017oqli0nbr136ld8vl77sm4",
+  "predicateName" : "cached_QualifiedName::declarationHasQualifiedName/4#749d7d29",
+  "appearsAs" : {
+    "cached_QualifiedName::declarationHasQualifiedName/4#749d7d29" : [ 68 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 173869
+}
+
+{
+  "time" : "2026-08-16T20:31:25.270219522Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1488,
+  "nanoTime" : 36404353848279,
+  "raHash" : "80f81avce007bdvnj56rsqacqua",
+  "predicateName" : "usertypes",
+  "appearsAs" : {
+    "usertypes" : [ 65, 66, 67, 68, 69, 70, 71 ]
+  },
+  "predicateType" : "EXTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmlecode.cpp.dbscheme:850,1-854,3",
+  "dependencies" : { },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.279536322Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1489,
+  "nanoTime" : 36404363194874,
+  "startEvent" : 1488,
+  "resultSize" : 24895
+}
+
+{
+  "time" : "2026-08-16T20:31:25.280016340Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1490,
+  "nanoTime" : 36404363654314,
+  "raHash" : "a3a094rkucinfsqiensukrta7i5",
+  "predicateName" : "UserType::UserType#21e9e463",
+  "appearsAs" : {
+    "UserType::UserType#21e9e463" : [ 69, 70, 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 24246
+}
+
+{
+  "time" : "2026-08-16T20:31:25.280566799Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1491,
+  "nanoTime" : 36404364195606,
+  "raHash" : "c6c4e3blttst2818j2polkv6kde",
+  "predicateName" : "UserType::UserType.getName/0#dispred#68e0aaf0",
+  "appearsAs" : {
+    "UserType::UserType.getName/0#dispred#68e0aaf0" : [ 70, 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/UserType.qll:22,3-25,78",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN usertypes OUTPUT In.0, In.1",
+      "    {2}    | STREAM DEDUP",
+      "    {2}    | JOIN WITH UserType::UserType#21e9e463 ON FIRST 1 OUTPUT Lhs.0, Lhs.1",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "usertypes" : "80f81avce007bdvnj56rsqacqua",
+    "UserType::UserType#21e9e463" : "a3a094rkucinfsqiensukrta7i5"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.280990001Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1492,
+  "nanoTime" : 36404364619630,
+  "predicateStartEvent" : 1491,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.301085334Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1493,
+  "nanoTime" : 36404384755398,
+  "startEvent" : 1492,
+  "resultSize" : 24246
+}
+
+{
+  "time" : "2026-08-16T20:31:25.301688322Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1494,
+  "nanoTime" : 36404385324543,
+  "startEvent" : 1491,
+  "resultSize" : 24246
+}
+
+{
+  "time" : "2026-08-16T20:31:25.302765357Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1495,
+  "nanoTime" : 36404386405054,
+  "raHash" : "a8e234euqa95ik5p9gpd892tj9d",
+  "predicateName" : "Type::Type.getName/0#dispred#77a04a0a",
+  "appearsAs" : {
+    "Type::Type.getName/0#dispred#77a04a0a" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Type.qll:18,3-21,30",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN Type::TypeofType#5988d37d OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := \"typeof(...)\"",
+      "",
+      "    {2} r2 = SCAN Type::Decltype#2a58cb8b OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := \"decltype(...)\"",
+      "",
+      "    {3} r3 = CONSTANT(unique int, unique string, string)[1,\"__underlying_type\",\"(...)\";...]",
+      "    {4}    | JOIN WITH Type::IntrinsicTransformedType#9604289c_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, _, Lhs.1, Lhs.2",
+      "    {2}    | REWRITE WITH Out.1 := (In.2 ++ In.3) KEEPING 2",
+      "",
+      "    {2} r4 = `UserType::UserType.getName/0#dispred#68e0aaf0` UNION r1 UNION r2 UNION r3",
+      "    return r4"
+    ]
+  },
+  "dependencies" : {
+    "UserType::UserType.getName/0#dispred#68e0aaf0" : "c6c4e3blttst2818j2polkv6kde",
+    "Type::TypeofType#5988d37d" : "8c3f27ubeplo2fu9o19qfgepnj7",
+    "Type::Decltype#2a58cb8b" : "170a944krrrkeutcj1k3d70rd6f",
+    "Type::IntrinsicTransformedType#9604289c_10#join_rhs" : "2b3a28ppcinnaqcddq6ghs6mn86"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.302978495Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1496,
+  "nanoTime" : 36404386606701,
+  "predicateStartEvent" : 1495,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.327702347Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1497,
+  "nanoTime" : 36404411368704,
+  "startEvent" : 1496,
+  "resultSize" : 24351
+}
+
+{
+  "time" : "2026-08-16T20:31:25.327814136Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1498,
+  "nanoTime" : 36404411438555,
+  "startEvent" : 1495,
+  "resultSize" : 24351
+}
+
+{
+  "time" : "2026-08-16T20:31:25.328538Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1499,
+  "nanoTime" : 36404412174111,
+  "raHash" : "7f7036l4f80u6lmelb2mbpmbms2",
+  "predicateName" : "NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a",
+  "appearsAs" : {
+    "NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/NameQualifiers.qll:154,3-155,30",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN Type::Decltype#2a58cb8b OUTPUT In.0, _",
+      "    {2}    | REWRITE WITH Out.1 := \"decltype(...)\"",
+      "",
+      "    {2} r2 = `UserType::UserType.getName/0#dispred#68e0aaf0` UNION r1",
+      "    return r2"
+    ]
+  },
+  "dependencies" : {
+    "UserType::UserType.getName/0#dispred#68e0aaf0" : "c6c4e3blttst2818j2polkv6kde",
+    "Type::Decltype#2a58cb8b" : "170a944krrrkeutcj1k3d70rd6f"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.328739557Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1500,
+  "nanoTime" : 36404412369526,
+  "predicateStartEvent" : 1499,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.337699098Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1501,
+  "nanoTime" : 36404421351870,
+  "startEvent" : 1500,
+  "resultSize" : 24295
+}
+
+{
+  "time" : "2026-08-16T20:31:25.337796560Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1502,
+  "nanoTime" : 36404421422311,
+  "startEvent" : 1499,
+  "resultSize" : 24295
+}
+
+{
+  "time" : "2026-08-16T20:31:25.338461364Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1503,
+  "nanoTime" : 36404422095451,
+  "raHash" : "e52483rt7jh9q60bukldd9pu164",
+  "predicateName" : "all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41",
+  "appearsAs" : {
+    "all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:26,3-28,4",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = JOIN all_passes_gcc_working::GccPassClass#52fccc07 WITH `Type::Type.getName/0#dispred#77a04a0a` ON FIRST 1 OUTPUT Lhs.0, Rhs.1",
+      "",
+      "    {2} r2 = JOIN `UserType::UserType.getName/0#dispred#68e0aaf0` WITH all_passes_gcc_working::GccPassClass#52fccc07 ON FIRST 1 OUTPUT Lhs.0, Lhs.1",
+      "",
+      "    {2} r3 = JOIN `NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a` WITH all_passes_gcc_working::GccPassClass#52fccc07 ON FIRST 1 OUTPUT Lhs.0, Lhs.1",
+      "",
+      "    {2} r4 = r1 UNION r2 UNION r3",
+      "    return r4"
+    ]
+  },
+  "dependencies" : {
+    "all_passes_gcc_working::GccPassClass#52fccc07" : "4d6a54pnei5orvlc8076iohiu3e",
+    "Type::Type.getName/0#dispred#77a04a0a" : "a8e234euqa95ik5p9gpd892tj9d",
+    "UserType::UserType.getName/0#dispred#68e0aaf0" : "c6c4e3blttst2818j2polkv6kde",
+    "NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a" : "7f7036l4f80u6lmelb2mbpmbms2"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.338626222Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1504,
+  "nanoTime" : 36404422253456,
+  "predicateStartEvent" : 1503,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.340568526Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1505,
+  "nanoTime" : 36404424203113,
+  "startEvent" : 1504,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.340628337Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1506,
+  "nanoTime" : 36404424253518,
+  "startEvent" : 1503,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.341527610Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1507,
+  "nanoTime" : 36404425159893,
+  "raHash" : "6f804aevboqkp40skjuh6t3268b",
+  "predicateName" : "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#6",
+  "appearsAs" : {
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#6" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN `Element::Element.getLocation/0#dispred#6c3f5b09#bf` OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Element::Element.getLocation/0#dispred#6c3f5b09#bf" : "f4062en22vriur2m0dm2m9esuv6"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.341638738Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1508,
+  "nanoTime" : 36404425265361,
+  "predicateStartEvent" : 1507,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.342347644Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1509,
+  "nanoTime" : 36404425977563,
+  "startEvent" : 1508,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.342395854Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1510,
+  "nanoTime" : 36404426021115,
+  "startEvent" : 1507,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.342799299Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1511,
+  "nanoTime" : 36404426461088,
+  "raHash" : "9a2d35qeoq7h8r5f9u9b1mlupvc",
+  "predicateName" : "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#4#3",
+  "appearsAs" : {
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#4#3" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN `Location::Location.getContainer/0#9edabfb6` OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Location::Location.getContainer/0#9edabfb6" : "bbd97edkf48odqqti6ec0epkftd"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.342939812Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1512,
+  "nanoTime" : 36404426586092,
+  "predicateStartEvent" : 1511,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.616862123Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1513,
+  "nanoTime" : 36404700525395,
+  "startEvent" : 1512,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-16T20:31:25.616981246Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1514,
+  "nanoTime" : 36404700608220,
+  "startEvent" : 1511,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-16T20:31:25.617908491Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1515,
+  "nanoTime" : 36404701544762,
+  "raHash" : "5267bagq12bsiadenm6dtj8dtq9",
+  "predicateName" : "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#7",
+  "appearsAs" : {
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#7" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN `UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf` OUTPUT In.1, In.0",
+      "    {1}    | JOIN WITH `#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#4#3` ON FIRST 1 OUTPUT Lhs.1",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf" : "cf1f5a466e4mqoc7taquun29qj0",
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#4#3" : "9a2d35qeoq7h8r5f9u9b1mlupvc"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.618146817Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1516,
+  "nanoTime" : 36404701775734,
+  "predicateStartEvent" : 1515,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.657960798Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1517,
+  "nanoTime" : 36404741621695,
+  "startEvent" : 1516,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.658085882Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1518,
+  "nanoTime" : 36404741715731,
+  "startEvent" : 1515,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.658576269Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1519,
+  "nanoTime" : 36404742203603,
+  "raHash" : "a621cejb9bamcta0hkt9vjbeha1",
+  "predicateName" : "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5",
+  "appearsAs" : {
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.659037552Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1520,
+  "nanoTime" : 36404742664576,
+  "raHash" : "fcb956tdiv4s6rdr0pk7d7mgm30",
+  "predicateName" : "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#8",
+  "appearsAs" : {
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#8" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = JOIN `#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5` WITH `#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#6` ON FIRST 1 OUTPUT Lhs.0",
+      "    {1}    | JOIN WITH `#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#7` ON FIRST 1 OUTPUT Lhs.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5" : "a621cejb9bamcta0hkt9vjbeha1",
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#6" : "6f804aevboqkp40skjuh6t3268b",
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#7" : "5267bagq12bsiadenm6dtj8dtq9"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.659214232Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1521,
+  "nanoTime" : 36404742839302,
+  "predicateStartEvent" : 1520,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.659667811Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1522,
+  "nanoTime" : 36404743297780,
+  "startEvent" : 1521,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.659724657Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1523,
+  "nanoTime" : 36404743348385,
+  "startEvent" : 1520,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.660209735Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1524,
+  "nanoTime" : 36404743836648,
+  "raHash" : "3dc74albsttnckp1ma5nkh3trv8",
+  "predicateName" : "_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5_#Class::Class.getABaseClass/0#di__#higher_order_body",
+  "appearsAs" : {
+    "_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5_#Class::Class.getABaseClass/0#di__#higher_order_body" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,95",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = JOIN `#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5` WITH `#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#8` ON FIRST 1 OUTPUT Lhs.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5" : "a621cejb9bamcta0hkt9vjbeha1",
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#8" : "fcb956tdiv4s6rdr0pk7d7mgm30"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.660350508Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1525,
+  "nanoTime" : 36404743975137,
+  "predicateStartEvent" : 1524,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.660653495Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1526,
+  "nanoTime" : 36404744290738,
+  "startEvent" : 1525,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.660718156Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1527,
+  "nanoTime" : 36404744344228,
+  "startEvent" : 1524,
+  "resultSize" : 266
+}
+
+{
+  "time" : "2026-08-16T20:31:25.660984083Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1528,
+  "nanoTime" : 36404744615145,
+  "raHash" : "176b0apr2mmkrq666d76dp71kq2",
+  "predicateName" : "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3",
+  "appearsAs" : {
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3" : [ 71 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.661060687Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1529,
+  "nanoTime" : 36404744728817,
+  "raHash" : "81b8f2eh4j0m99203026d51aoif",
+  "predicateName" : "Class::Class.getABaseClass/0#dispred#e9ba966b",
+  "appearsAs" : {
+    "Class::Class.getABaseClass/0#dispred#e9ba966b" : [ 71 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.661313479Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1530,
+  "nanoTime" : 36404744940022,
+  "raHash" : "65d7f1bo4hf6qisnhc66pd091da",
+  "predicateName" : "Class::Class#9afdbffd",
+  "appearsAs" : {
+    "Class::Class#9afdbffd" : [ 70, 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 10219
+}
+
+{
+  "time" : "2026-08-16T20:31:25.661399751Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1531,
+  "nanoTime" : 36404745026324,
+  "raHash" : "4eafcwcaoeqhe3d9p166tda2lv2",
+  "predicateName" : "Type::Type.getUnderlyingType/0#dispred#bd141f6a",
+  "appearsAs" : {
+    "Type::Type.getUnderlyingType/0#dispred#bd141f6a" : [ 71 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.661523793Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1532,
+  "nanoTime" : 36404745163911,
+  "raHash" : "7e1c1d5m8pv5rhkhtr92d2gldde",
+  "predicateName" : "Type::Type_not_Type::Decltype_Type::IntrinsicTransformedType_TypedefType::TypedefType_Type::TypeofType#704e70f2",
+  "appearsAs" : {
+    "Type::Type_not_Type::Decltype_Type::IntrinsicTransformedType_TypedefType::TypedefType_Type::TypeofType#704e70f2" : [ 71 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.661634340Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1533,
+  "nanoTime" : 36404745263137,
+  "raHash" : "941df5v8pplg8agmq0kih7um8sa",
+  "predicateName" : "TypedefType::TypedefType#64088755#b",
+  "appearsAs" : {
+    "TypedefType::TypedefType#64088755#b" : [ 69 ],
+    "TypedefType::TypedefType#64088755" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 8613
+}
+
+{
+  "time" : "2026-08-16T20:31:25.661709821Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1534,
+  "nanoTime" : 36404745337556,
+  "raHash" : "d9b29cl9c9hgebg3o2f5008avp2",
+  "predicateName" : "Type::IntrinsicTransformedType#9604289c#bf_0#antijoin_rhs",
+  "appearsAs" : {
+    "Type::IntrinsicTransformedType#9604289c#bf_0#antijoin_rhs" : [ 69 ],
+    "Type::IntrinsicTransformedType#9604289c_0#antijoin_rhs" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-08-16T20:31:25.661776386Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1535,
+  "nanoTime" : 36404745400995,
+  "raHash" : "9b6d11iua8tho8dgmgip3kcnos8",
+  "predicateName" : "Type::TypeofType.getBaseType/0#dispred#0d5513d4#bf_10#join_rhs",
+  "appearsAs" : {
+    "Type::TypeofType.getBaseType/0#dispred#0d5513d4#bf_10#join_rhs" : [ 69 ],
+    "Type::TypeofType.getBaseType/0#dispred#0d5513d4_10#join_rhs" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 56
+}
+
+{
+  "time" : "2026-08-16T20:31:25.661833432Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1536,
+  "nanoTime" : 36404745457811,
+  "raHash" : "0d37b886mbuap7cfrv6oh9b1rgb",
+  "predicateName" : "Type::IntrinsicTransformedType.getBaseType/0#dispred#5daab45e#bf_10#join_rhs",
+  "appearsAs" : {
+    "Type::IntrinsicTransformedType.getBaseType/0#dispred#5daab45e#bf_10#join_rhs" : [ 69 ],
+    "Type::IntrinsicTransformedType.getBaseType/0#dispred#5daab45e_10#join_rhs" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 0
+}
+
+{
+  "time" : "2026-08-16T20:31:25.661904325Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1537,
+  "nanoTime" : 36404745559852,
+  "raHash" : "ab26a5fgk0dgpe2a7bc8208tove",
+  "predicateName" : "TypedefType::TypedefType.getBaseType/0#dispred#671605ef#bf_10#join_rhs",
+  "appearsAs" : {
+    "TypedefType::TypedefType.getBaseType/0#dispred#671605ef#bf_10#join_rhs" : [ 69 ],
+    "TypedefType::TypedefType.getBaseType/0#dispred#671605ef_10#join_rhs" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 8613
+}
+
+{
+  "time" : "2026-08-16T20:31:25.661998461Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1538,
+  "nanoTime" : 36404745623070,
+  "raHash" : "cbab4fapfkcknbe1a9b9c3kmlua",
+  "predicateName" : "Type::Decltype.getBaseType/0#dispred#f3b613af#bf_10#join_rhs",
+  "appearsAs" : {
+    "Type::Decltype.getBaseType/0#dispred#f3b613af#bf_10#join_rhs" : [ 69 ],
+    "Type::Decltype.getBaseType/0#dispred#f3b613af_10#join_rhs" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 49
+}
+
+{
+  "time" : "2026-08-16T20:31:25.662052362Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1539,
+  "nanoTime" : 36404745676671,
+  "raHash" : "92bc817igmdahagujeti8fhjho4",
+  "predicateName" : "derivations",
+  "appearsAs" : {
+    "derivations" : [ 65, 66, 67, 68, 69, 70, 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 1706
+}
+
+{
+  "time" : "2026-08-16T20:31:25.662118375Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1540,
+  "nanoTime" : 36404745742694,
+  "raHash" : "3358a47h8hljj5o5luln1k9g7pd",
+  "predicateName" : "Class::ClassDerivation.getBaseType/0#dispred#36ad7f0f",
+  "appearsAs" : {
+    "Class::ClassDerivation.getBaseType/0#dispred#36ad7f0f" : [ 71 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.662182004Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1541,
+  "nanoTime" : 36404745805972,
+  "raHash" : "bb08c6gqu3s395ooknhjbmfof64",
+  "predicateName" : "@usertype",
+  "appearsAs" : {
+    "@usertype" : [ 65, 68, 69, 70, 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 24895
+}
+
+{
+  "time" : "2026-08-16T20:31:25.662714110Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1542,
+  "nanoTime" : 36404746341725,
+  "raHash" : "176b0apr2mmkrq666d76dp71kq2",
+  "predicateName" : "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3",
+  "appearsAs" : {
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN `UserType::UserType.getName/0#dispred#68e0aaf0` OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "",
+      "    {1} r2 = SCAN `NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a` OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "",
+      "    {1} r3 = SCAN `Type::Type.getName/0#dispred#77a04a0a` OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "",
+      "    {1} r4 = r1 UNION r2 UNION r3",
+      "    return r4"
+    ]
+  },
+  "dependencies" : {
+    "UserType::UserType.getName/0#dispred#68e0aaf0" : "c6c4e3blttst2818j2polkv6kde",
+    "NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a" : "7f7036l4f80u6lmelb2mbpmbms2",
+    "Type::Type.getName/0#dispred#77a04a0a" : "a8e234euqa95ik5p9gpd892tj9d"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.662905929Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1543,
+  "nanoTime" : 36404746532932,
+  "predicateStartEvent" : 1542,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.665005015Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1544,
+  "nanoTime" : 36404748716968,
+  "startEvent" : 1543,
+  "resultSize" : 24351
+}
+
+{
+  "time" : "2026-08-16T20:31:25.665175975Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1545,
+  "nanoTime" : 36404748852962,
+  "startEvent" : 1542,
+  "resultSize" : 24351
+}
+
+{
+  "time" : "2026-08-16T20:31:25.665960292Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1546,
+  "nanoTime" : 36404749585222,
+  "raHash" : "7e1c1d5m8pv5rhkhtr92d2gldde",
+  "predicateName" : "Type::Type_not_Type::Decltype_Type::IntrinsicTransformedType_TypedefType::TypedefType_Type::TypeofType#704e70f2",
+  "appearsAs" : {
+    "Type::Type_not_Type::Decltype_Type::IntrinsicTransformedType_TypedefType::TypedefType_Type::TypeofType#704e70f2" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Type.qll:15,7-15,11",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = `cached_ResolveClass::isType/1#eabb9878` AND NOT Type::Decltype#2a58cb8b(FIRST 1)",
+      "    {1}    | AND NOT Type::IntrinsicTransformedType#9604289c_0#antijoin_rhs(FIRST 1)",
+      "    {1}    | AND NOT TypedefType::TypedefType#64088755(FIRST 1)",
+      "    {1}    | AND NOT Type::TypeofType#5988d37d(FIRST 1)",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "cached_ResolveClass::isType/1#eabb9878" : "82ca1924s7df18kvl50qp6pc9v3",
+    "Type::Decltype#2a58cb8b" : "170a944krrrkeutcj1k3d70rd6f",
+    "Type::IntrinsicTransformedType#9604289c_0#antijoin_rhs" : "d9b29cl9c9hgebg3o2f5008avp2",
+    "TypedefType::TypedefType#64088755" : "941df5v8pplg8agmq0kih7um8sa",
+    "Type::TypeofType#5988d37d" : "8c3f27ubeplo2fu9o19qfgepnj7"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.666100885Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1547,
+  "nanoTime" : 36404749722279,
+  "predicateStartEvent" : 1546,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.678066279Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1548,
+  "nanoTime" : 36404761719512,
+  "startEvent" : 1547,
+  "resultSize" : 115131
+}
+
+{
+  "time" : "2026-08-16T20:31:25.678246897Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1549,
+  "nanoTime" : 36404761869573,
+  "startEvent" : 1546,
+  "resultSize" : 115131
+}
+
+{
+  "time" : "2026-08-16T20:31:25.679455628Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1550,
+  "nanoTime" : 36404763082462,
+  "raHash" : "4eafcwcaoeqhe3d9p166tda2lv2",
+  "predicateName" : "Type::Type.getUnderlyingType/0#dispred#bd141f6a",
+  "appearsAs" : {
+    "Type::Type.getUnderlyingType/0#dispred#bd141f6a" : [ 71 ]
+  },
+  "layerId" : 8,
+  "predicateType" : "RECURSIVE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Type.qll:92,3-100,45",
+  "ra" : {
+    "base" : [
+      "    {2} r1 = SCAN Type::Type_not_Type::Decltype_Type::IntrinsicTransformedType_TypedefType::TypedefType_Type::TypeofType#704e70f2 OUTPUT In.0, In.0",
+      "    return r1"
+    ],
+    "standard" : [
+      "    {2} r1 = JOIN `Type::Type.getUnderlyingType/0#dispred#bd141f6a#prev_delta` WITH `Type::Decltype.getBaseType/0#dispred#f3b613af_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1",
+      "",
+      "    {2} r2 = JOIN `Type::Type.getUnderlyingType/0#dispred#bd141f6a#prev_delta` WITH `TypedefType::TypedefType.getBaseType/0#dispred#671605ef_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1",
+      "",
+      "    {2} r3 = JOIN `Type::Type.getUnderlyingType/0#dispred#bd141f6a#prev_delta` WITH `Type::IntrinsicTransformedType.getBaseType/0#dispred#5daab45e_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1",
+      "",
+      "    {2} r4 = JOIN `Type::Type.getUnderlyingType/0#dispred#bd141f6a#prev_delta` WITH `Type::TypeofType.getBaseType/0#dispred#0d5513d4_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1",
+      "",
+      "    {2} r5 = r1 UNION r2 UNION r3 UNION r4",
+      "    {2}    | AND NOT `Type::Type.getUnderlyingType/0#dispred#bd141f6a#prev`(FIRST 2)",
+      "    return r5"
+    ]
+  },
+  "dependencies" : {
+    "Type::Type_not_Type::Decltype_Type::IntrinsicTransformedType_TypedefType::TypedefType_Type::TypeofType#704e70f2" : "7e1c1d5m8pv5rhkhtr92d2gldde",
+    "Type::Decltype.getBaseType/0#dispred#f3b613af_10#join_rhs" : "cbab4fapfkcknbe1a9b9c3kmlua",
+    "TypedefType::TypedefType.getBaseType/0#dispred#671605ef_10#join_rhs" : "ab26a5fgk0dgpe2a7bc8208tove",
+    "Type::IntrinsicTransformedType.getBaseType/0#dispred#5daab45e_10#join_rhs" : "0d37b886mbuap7cfrv6oh9b1rgb",
+    "Type::TypeofType.getBaseType/0#dispred#0d5513d4_10#join_rhs" : "9b6d11iua8tho8dgmgip3kcnos8"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.680106957Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1551,
+  "nanoTime" : 36404763735784,
+  "predicateStartEvent" : 1550,
+  "raReference" : "base",
+  "generationNumber" : 1
+}
+
+{
+  "time" : "2026-08-16T20:31:25.693870274Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1552,
+  "nanoTime" : 36404777531933,
+  "startEvent" : 1551,
+  "resultSize" : 115131
+}
+
+{
+  "time" : "2026-08-16T20:31:25.693997322Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1553,
+  "nanoTime" : 36404777620238,
+  "predicateStartEvent" : 1550,
+  "raReference" : "standard",
+  "generationNumber" : 2
+}
+
+{
+  "time" : "2026-08-16T20:31:25.706439367Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1554,
+  "nanoTime" : 36404790076159,
+  "startEvent" : 1553,
+  "resultSize" : 5385
+}
+
+{
+  "time" : "2026-08-16T20:31:25.707294998Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1555,
+  "nanoTime" : 36404790924587,
+  "predicateStartEvent" : 1550,
+  "raReference" : "standard",
+  "generationNumber" : 3
+}
+
+{
+  "time" : "2026-08-16T20:31:25.711325438Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1556,
+  "nanoTime" : 36404794960887,
+  "startEvent" : 1555,
+  "resultSize" : 2099
+}
+
+{
+  "time" : "2026-08-16T20:31:25.711425114Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1557,
+  "nanoTime" : 36404795047028,
+  "predicateStartEvent" : 1550,
+  "raReference" : "standard",
+  "generationNumber" : 4
+}
+
+{
+  "time" : "2026-08-16T20:31:25.712950227Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1558,
+  "nanoTime" : 36404796579095,
+  "startEvent" : 1557,
+  "resultSize" : 879
+}
+
+{
+  "time" : "2026-08-16T20:31:25.713036068Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1559,
+  "nanoTime" : 36404796656910,
+  "predicateStartEvent" : 1550,
+  "raReference" : "standard",
+  "generationNumber" : 5
+}
+
+{
+  "time" : "2026-08-16T20:31:25.714323076Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1560,
+  "nanoTime" : 36404797949719,
+  "startEvent" : 1559,
+  "resultSize" : 229
+}
+
+{
+  "time" : "2026-08-16T20:31:25.714381104Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1561,
+  "nanoTime" : 36404798009681,
+  "predicateStartEvent" : 1550,
+  "raReference" : "standard",
+  "generationNumber" : 6
+}
+
+{
+  "time" : "2026-08-16T20:31:25.715031320Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1562,
+  "nanoTime" : 36404798655288,
+  "startEvent" : 1561,
+  "resultSize" : 126
+}
+
+{
+  "time" : "2026-08-16T20:31:25.715079901Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1563,
+  "nanoTime" : 36404798704501,
+  "predicateStartEvent" : 1550,
+  "raReference" : "standard",
+  "generationNumber" : 7
+}
+
+{
+  "time" : "2026-08-16T20:31:25.715663223Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1564,
+  "nanoTime" : 36404799286058,
+  "startEvent" : 1550,
+  "resultSize" : 123849
+}
+
+{
+  "time" : "2026-08-16T20:31:25.720453173Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1565,
+  "nanoTime" : 36404804089825,
+  "startEvent" : 1563,
+  "resultSize" : 0
+}
+
+{
+  "time" : "2026-08-16T20:31:25.721334642Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1566,
+  "nanoTime" : 36404804964251,
+  "raHash" : "3358a47h8hljj5o5luln1k9g7pd",
+  "predicateName" : "Class::ClassDerivation.getBaseType/0#dispred#36ad7f0f",
+  "appearsAs" : {
+    "Class::ClassDerivation.getBaseType/0#dispred#36ad7f0f" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Class.qll:733,3-746,97",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN derivations OUTPUT In.3, In.0",
+      "",
+      "    {2} r2 = JOIN r1 WITH `cached_ResolveClass::resolveClass/1#ea47deee` ON FIRST 1 OUTPUT Rhs.1, Lhs.1",
+      "    {2}    | JOIN WITH `cached_ResolveClass::isType/1#eabb9878` ON FIRST 1 OUTPUT Lhs.1, Lhs.0",
+      "",
+      "    {2} r3 = JOIN r1 WITH `cached_ResolveClass::isType/1#eabb9878` ON FIRST 1 OUTPUT Lhs.0, Lhs.1",
+      "    {2}    | AND NOT @usertype(FIRST 1)",
+      "    {2}    | SCAN OUTPUT In.1, In.0",
+      "",
+      "    {2} r4 = r2 UNION r3",
+      "    return r4"
+    ]
+  },
+  "dependencies" : {
+    "derivations" : "92bc817igmdahagujeti8fhjho4",
+    "cached_ResolveClass::resolveClass/1#ea47deee" : "a66798kmt7m0t4fpn56e459fpk2",
+    "cached_ResolveClass::isType/1#eabb9878" : "82ca1924s7df18kvl50qp6pc9v3",
+    "@usertype" : "bb08c6gqu3s395ooknhjbmfof64"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.722231891Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1567,
+  "nanoTime" : 36404805858193,
+  "predicateStartEvent" : 1566,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.728184526Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1568,
+  "nanoTime" : 36404811824655,
+  "startEvent" : 1567,
+  "resultSize" : 1706
+}
+
+{
+  "time" : "2026-08-16T20:31:25.729287600Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1569,
+  "nanoTime" : 36404812916327,
+  "startEvent" : 1566,
+  "resultSize" : 1706
+}
+
+{
+  "time" : "2026-08-16T20:31:25.729879177Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1570,
+  "nanoTime" : 36404813510148,
+  "raHash" : "81b8f2eh4j0m99203026d51aoif",
+  "predicateName" : "Class::Class.getABaseClass/0#dispred#e9ba966b",
+  "appearsAs" : {
+    "Class::Class.getABaseClass/0#dispred#e9ba966b" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Class.qll:395,3-396,74",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN derivations OUTPUT In.0, In.1",
+      "    {2}    | STREAM DEDUP",
+      "    {2}    | JOIN WITH `Class::ClassDerivation.getBaseType/0#dispred#36ad7f0f` ON FIRST 1 OUTPUT Lhs.1, Rhs.1",
+      "    {2}    | JOIN WITH `cached_ResolveClass::resolveClass/1#ea47deee` ON FIRST 1 OUTPUT Rhs.1, Lhs.1",
+      "    {2}    | JOIN WITH Class::Class#9afdbffd ON FIRST 1 OUTPUT Lhs.1, Lhs.0",
+      "    {2}    | JOIN WITH `Type::Type.getUnderlyingType/0#dispred#bd141f6a` ON FIRST 1 OUTPUT Rhs.1, Lhs.1",
+      "    {2}    | JOIN WITH Class::Class#9afdbffd ON FIRST 1 OUTPUT Lhs.1, Lhs.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "derivations" : "92bc817igmdahagujeti8fhjho4",
+    "Class::ClassDerivation.getBaseType/0#dispred#36ad7f0f" : "3358a47h8hljj5o5luln1k9g7pd",
+    "cached_ResolveClass::resolveClass/1#ea47deee" : "a66798kmt7m0t4fpn56e459fpk2",
+    "Class::Class#9afdbffd" : "65d7f1bo4hf6qisnhc66pd091da",
+    "Type::Type.getUnderlyingType/0#dispred#bd141f6a" : "4eafcwcaoeqhe3d9p166tda2lv2"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.730056067Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1571,
+  "nanoTime" : 36404813676840,
+  "predicateStartEvent" : 1570,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.732729830Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1572,
+  "nanoTime" : 36404816366622,
+  "startEvent" : 1571,
+  "resultSize" : 1697
+}
+
+{
+  "time" : "2026-08-16T20:31:25.732784973Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1573,
+  "nanoTime" : 36404816404332,
+  "startEvent" : 1570,
+  "resultSize" : 1697
+}
+
+{
+  "time" : "2026-08-16T20:31:25.733206Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1574,
+  "nanoTime" : 36404816829327,
+  "raHash" : "f85651jhtptjhm88ota5pqbvhf8",
+  "predicateName" : "doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5_#Class::Class.getABaseClass/0#di__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3",
+  "appearsAs" : {
+    "doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5_#Class::Class.getABaseClass/0#di__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,95",
+  "dependencies" : {
+    "Class::Class.getABaseClass/0#dispred#e9ba966b" : "81b8f2eh4j0m99203026d51aoif",
+    "_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5_#Class::Class.getABaseClass/0#di__#higher_order_body" : "3dc74albsttnckp1ma5nkh3trv8",
+    "#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3" : "176b0apr2mmkrq666d76dp71kq2"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.735792198Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1575,
+  "nanoTime" : 36404819425404,
+  "startEvent" : 1574,
+  "resultSize" : 800
+}
+
+{
+  "time" : "2026-08-16T20:31:25.737318754Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1576,
+  "nanoTime" : 36404820952911,
+  "raHash" : "659663aijo00q1eu0r4khj1dmka",
+  "predicateName" : "#select",
+  "appearsAs" : {
+    "#select" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,95",
+  "ra" : {
+    "pipeline" : [
+      "    {3} r1 = SCAN `all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41` OUTPUT In.0, In.0, In.1",
+      "",
+      "    {3} r2 = JOIN `doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5_#Class::Class.getABaseClass/0#di__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3` WITH `all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41` ON FIRST 1 OUTPUT Lhs.1, Lhs.0, Rhs.1",
+      "",
+      "    {3} r3 = r1 UNION r2",
+      "",
+      "    {3} r4 = JOIN r3 WITH `UserType::UserType.getName/0#dispred#68e0aaf0` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Rhs.1",
+      "",
+      "    {3} r5 = JOIN r3 WITH `NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Rhs.1",
+      "",
+      "    {3} r6 = JOIN r3 WITH `Type::Type.getName/0#dispred#77a04a0a` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Rhs.1",
+      "",
+      "    {3} r7 = r4 UNION r5 UNION r6",
+      "    {4}    | JOIN WITH `UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.1, Lhs.2",
+      "    {4}    | JOIN WITH `Location::Location.getContainer/0#9edabfb6` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.3, Rhs.1",
+      "    {4}    | JOIN WITH `Element::Element.getLocation/0#dispred#6c3f5b09#bf` ON FIRST 1 OUTPUT Lhs.3, Lhs.1, Rhs.1, Lhs.2",
+      "    return r7"
+    ]
+  },
+  "dependencies" : {
+    "all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41" : "e52483rt7jh9q60bukldd9pu164",
+    "doublyBoundedFastTC:Class::Class.getABaseClass/0#dispred#e9ba966b:_#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sourceBound#4#5_#Class::Class.getABaseClass/0#di__#higher_order_body:#Class::Class.getABaseClass/0#dispred#e9ba966bPlus#sinkBound#4#3" : "f85651jhtptjhm88ota5pqbvhf8",
+    "UserType::UserType.getName/0#dispred#68e0aaf0" : "c6c4e3blttst2818j2polkv6kde",
+    "NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a" : "7f7036l4f80u6lmelb2mbpmbms2",
+    "Type::Type.getName/0#dispred#77a04a0a" : "a8e234euqa95ik5p9gpd892tj9d",
+    "UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf" : "cf1f5a466e4mqoc7taquun29qj0",
+    "Location::Location.getContainer/0#9edabfb6" : "bbd97edkf48odqqti6ec0epkftd",
+    "Element::Element.getLocation/0#dispred#6c3f5b09#bf" : "f4062en22vriur2m0dm2m9esuv6"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.737514620Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1577,
+  "nanoTime" : 36404821136354,
+  "predicateStartEvent" : 1576,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.744372209Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1578,
+  "nanoTime" : 36404828010694,
+  "startEvent" : 1577,
+  "resultSize" : 1066
+}
+
+{
+  "time" : "2026-08-16T20:31:25.744483167Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1579,
+  "nanoTime" : 36404828103438,
+  "startEvent" : 1576,
+  "resultSize" : 1066
+}
+
+{
+  "time" : "2026-08-16T20:31:25.745333547Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1580,
+  "nanoTime" : 36404828961874,
+  "raHash" : "167ac5tst1h89mvlm8cf876mn66",
+  "predicateName" : "Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs",
+  "appearsAs" : {
+    "Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 7867442
+}
+
+{
+  "time" : "2026-08-16T20:31:25.745433294Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1581,
+  "nanoTime" : 36404829054677,
+  "raHash" : "8615681uq5astjqmhf80eefcmp7",
+  "predicateName" : "Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs",
+  "appearsAs" : {
+    "Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 7867442
+}
+
+{
+  "time" : "2026-08-16T20:31:25.745521629Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1582,
+  "nanoTime" : 36404829143473,
+  "raHash" : "c84492vks29e2g93g94htuee7h7",
+  "predicateName" : "File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs",
+  "appearsAs" : {
+    "File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 2915
+}
+
+{
+  "time" : "2026-08-16T20:31:25.745662703Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1583,
+  "nanoTime" : 36404829283906,
+  "raHash" : "bad7d9u0ah6mhb81jggafmlmf50",
+  "predicateName" : "folders",
+  "appearsAs" : {
+    "folders" : [ 65, 66, 67, 68, 69, 70, 71 ]
+  },
+  "predicateType" : "EXTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmlecode.cpp.dbscheme:200,1-203,3",
+  "dependencies" : { },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.746462359Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1584,
+  "nanoTime" : 36404830086077,
+  "startEvent" : 1583,
+  "resultSize" : 130
+}
+
+{
+  "time" : "2026-08-16T20:31:25.746733256Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1585,
+  "nanoTime" : 36404830355771,
+  "raHash" : "ec93749gflo5p51uulng0fggcp3",
+  "predicateName" : "files",
+  "appearsAs" : {
+    "files" : [ 65, 66, 67, 68, 69, 70, 71 ]
+  },
+  "predicateType" : "EXTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmlecode.cpp.dbscheme:195,1-198,3",
+  "dependencies" : { },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.747547489Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1586,
+  "nanoTime" : 36404831171598,
+  "startEvent" : 1585,
+  "resultSize" : 2915
+}
+
+{
+  "time" : "2026-08-16T20:31:25.747968447Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1587,
+  "nanoTime" : 36404831591373,
+  "raHash" : "7c0d12f0g9icj5ouph6bc7ee7ac",
+  "predicateName" : "File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d",
+  "appearsAs" : {
+    "File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/codeql/util/FileSystem.qll:63,5-87,66",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = files UNION folders",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "files" : "ec93749gflo5p51uulng0fggcp3",
+    "folders" : "bad7d9u0ah6mhb81jggafmlmf50"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.748068885Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1588,
+  "nanoTime" : 36404831689356,
+  "predicateStartEvent" : 1587,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:25.748749949Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1589,
+  "nanoTime" : 36404832374247,
+  "startEvent" : 1588,
+  "resultSize" : 3045
+}
+
+{
+  "time" : "2026-08-16T20:31:25.748785665Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1590,
+  "nanoTime" : 36404832405055,
+  "startEvent" : 1587,
+  "resultSize" : 3045
+}
+
+{
+  "time" : "2026-08-16T20:31:25.748998433Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1591,
+  "nanoTime" : 36404832622502,
+  "raHash" : "2b5cc3prfiol4l0qf2nvs6l3m23",
+  "predicateName" : "locations_default",
+  "appearsAs" : {
+    "locations_default" : [ 65, 66, 67, 68, 69, 70, 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 7867442
+}
+
+{
+  "time" : "2026-08-16T20:31:25.749048086Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1592,
+  "nanoTime" : 36404832734000,
+  "raHash" : "81abb6m0a67uue8thbeagmle496",
+  "predicateName" : "files_0#antijoin_rhs",
+  "appearsAs" : {
+    "files_0#antijoin_rhs" : [ 65, 66, 67, 68, 69, 70 ],
+    "@file" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 2915
+}
+
+{
+  "time" : "2026-08-16T20:31:25.749451721Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1593,
+  "nanoTime" : 36404833078314,
+  "raHash" : "acb21f6matcb9ohbustu88mueg5",
+  "predicateName" : "Location::Location.hasLocationInfo/5#dispred#558082fb",
+  "appearsAs" : {
+    "Location::Location.hasLocationInfo/5#dispred#558082fb" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Location.qll:59,3-72,4",
+  "ra" : {
+    "pipeline" : [
+      "    {6} r1 = SCAN locations_default OUTPUT In.1, In.0, In.2, In.3, In.4, In.5",
+      "    {6}    | JOIN WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.1, Rhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "locations_default" : "2b5cc3prfiol4l0qf2nvs6l3m23",
+    "File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d" : "7c0d12f0g9icj5ouph6bc7ee7ac"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:25.749593557Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1594,
+  "nanoTime" : 36404833218437,
+  "predicateStartEvent" : 1593,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:26.316149103Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1595,
+  "nanoTime" : 36405399816843,
+  "startEvent" : 1594,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-16T20:31:26.316245133Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1596,
+  "nanoTime" : 36405399895150,
+  "startEvent" : 1593,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-16T20:31:26.956247919Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1597,
+  "nanoTime" : 36406039902985,
+  "raHash" : "f4f5c6jkkge967q0m2d609epcv6",
+  "predicateName" : "Location::Location.toString/0#dispred#6ede7323",
+  "appearsAs" : {
+    "Location::Location.toString/0#dispred#6ede7323" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Location.qll:32,3-43,4",
+  "ra" : {
+    "pipeline" : [
+      "    {7} r1 = SCAN `Location::Location.hasLocationInfo/5#dispred#558082fb` OUTPUT In.0, _, In.1, In.2, In.3, In.4, In.5",
+      "    {2}    | REWRITE WITH Out.1 := toUrl(In.2,In.3,In.4,In.5,In.6) KEEPING 2",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Location::Location.hasLocationInfo/5#dispred#558082fb" : "acb21f6matcb9ohbustu88mueg5"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:26.956432794Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1598,
+  "nanoTime" : 36406040088201,
+  "predicateStartEvent" : 1597,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:36.316689399Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1599,
+  "nanoTime" : 36415400369051,
+  "startEvent" : 1598,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-16T20:31:36.316930971Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1600,
+  "nanoTime" : 36415400555610,
+  "startEvent" : 1597,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-16T20:31:36.318191549Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1601,
+  "nanoTime" : 36415401813663,
+  "raHash" : "2b28edgc2hlovu7d7mn9l7g429d",
+  "predicateName" : "File::Impl::File.getURL/0#dispred#2f739b0d",
+  "appearsAs" : {
+    "File::Impl::File.getURL/0#dispred#2f739b0d" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/codeql/util/FileSystem.qll:220,5-221,90",
+  "ra" : {
+    "pipeline" : [
+      "    {4} r1 = JOIN @file WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, _, Rhs.1, _",
+      "    {2}    | REWRITE WITH Tmp.1 := \"file://\", Tmp.3 := \":0:0:0:0\", Out.1 := (Tmp.1 ++ In.2 ++ Tmp.3) KEEPING 2",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "@file" : "81abb6m0a67uue8thbeagmle496",
+    "File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d" : "7c0d12f0g9icj5ouph6bc7ee7ac"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:36.318359754Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1602,
+  "nanoTime" : 36415401990454,
+  "predicateStartEvent" : 1601,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:36.324443805Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1603,
+  "nanoTime" : 36415408067783,
+  "startEvent" : 1602,
+  "resultSize" : 2915
+}
+
+{
+  "time" : "2026-08-16T20:31:36.324497726Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1604,
+  "nanoTime" : 36415408114090,
+  "startEvent" : 1601,
+  "resultSize" : 2915
+}
+
+{
+  "time" : "2026-08-16T20:31:36.325413479Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1605,
+  "nanoTime" : 36415409031646,
+  "raHash" : "7e1077uic7hgbuhl74sq4hfq0f7",
+  "predicateName" : "_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared",
+  "appearsAs" : {
+    "_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,95",
+  "ra" : {
+    "pipeline" : [
+      "    {5} r1 = JOIN #select WITH `File::Impl::File.getURL/0#dispred#2f739b0d` ON FIRST 1 OUTPUT Lhs.2, Lhs.0, Lhs.1, Lhs.3, Rhs.1",
+      "",
+      "    {4} r2 = #select AND NOT `File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs`(FIRST 1)",
+      "    {5}    | SCAN OUTPUT In.2, In.0, In.1, In.3, _",
+      "    {5}    | REWRITE WITH Out.4 := \"\"",
+      "",
+      "    {5} r3 = r1 UNION r2",
+      "",
+      "    {6} r4 = JOIN r3 WITH `Location::Location.toString/0#dispred#6ede7323` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Rhs.1",
+      "",
+      "    {5} r5 = r3 AND NOT `Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs`(FIRST 1)",
+      "    {6}    | SCAN OUTPUT In.0, In.1, In.2, In.3, In.4, _",
+      "    {6}    | REWRITE WITH Out.5 := \"(no string representation)\"",
+      "",
+      "    {6} r6 = r4 UNION r5",
+      "    {11}    | JOIN WITH `Location::Location.hasLocationInfo/5#dispred#558082fb` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.0, Lhs.3, Lhs.4, Lhs.5, Rhs.1, Rhs.2, Rhs.3, Rhs.4, Rhs.5",
+      "",
+      "    {4} r7 = #select AND NOT `File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs`(FIRST 1)",
+      "    {5}    | SCAN OUTPUT In.2, In.0, In.1, In.3, _",
+      "    {5}    | REWRITE WITH Out.4 := \"\"",
+      "",
+      "    {5} r8 = r1 UNION r7",
+      "    {5}    | AND NOT `Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs`(FIRST 1)",
+      "    {6}    | SCAN OUTPUT In.0, In.1, In.2, In.3, In.4, _",
+      "    {6}    | REWRITE WITH Out.5 := \"(no string representation)\"",
+      "",
+      "    {6} r9 = r4 UNION r8",
+      "    {6}    | AND NOT `Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs`(FIRST 1)",
+      "    {11}    | SCAN OUTPUT In.1, In.2, In.0, In.3, In.4, In.5, _, _, _, _, _",
+      "    {11}    | REWRITE WITH Out.6 := \"\", Out.7 := 0, Out.8 := 0, Out.9 := 0, Out.10 := 0",
+      "",
+      "    {11} r10 = r6 UNION r9",
+      "    return r10"
+    ]
+  },
+  "dependencies" : {
+    "#select" : "659663aijo00q1eu0r4khj1dmka",
+    "File::Impl::File.getURL/0#dispred#2f739b0d" : "2b28edgc2hlovu7d7mn9l7g429d",
+    "File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs" : "c84492vks29e2g93g94htuee7h7",
+    "Location::Location.toString/0#dispred#6ede7323" : "f4f5c6jkkge967q0m2d609epcv6",
+    "Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs" : "8615681uq5astjqmhf80eefcmp7",
+    "Location::Location.hasLocationInfo/5#dispred#558082fb" : "acb21f6matcb9ohbustu88mueg5",
+    "Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs" : "167ac5tst1h89mvlm8cf876mn66"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:36.325593616Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1606,
+  "nanoTime" : 36415409210541,
+  "predicateStartEvent" : 1605,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:36.329344874Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1607,
+  "nanoTime" : 36415412966567,
+  "startEvent" : 1606,
+  "resultSize" : 1066
+}
+
+{
+  "time" : "2026-08-16T20:31:36.329375341Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1608,
+  "nanoTime" : 36415412991785,
+  "startEvent" : 1605,
+  "resultSize" : 1066
+}
+
+{
+  "time" : "2026-08-16T20:31:36.329843516Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1609,
+  "nanoTime" : 36415413461343,
+  "raHash" : "00b52b645p91vlnar45fe5vstf1",
+  "predicateName" : "project#Element::ElementBase.toString/0#dispred#6e016f86",
+  "appearsAs" : {
+    "project#Element::ElementBase.toString/0#dispred#6e016f86" : [ 71 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 16823598
+}
+
+{
+  "time" : "2026-08-16T20:31:36.330229358Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1610,
+  "nanoTime" : 36415413846924,
+  "raHash" : "dc0defscv8ph3lb2mjimkvhbmp1",
+  "predicateName" : "_File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs",
+  "appearsAs" : {
+    "_File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,95",
+  "ra" : {
+    "pipeline" : [
+      "    {11} r1 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `project#Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9, Lhs.10",
+      "",
+      "    {11} r2 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9, Lhs.10",
+      "",
+      "    {11} r3 = r1 UNION r2",
+      "    return r3"
+    ]
+  },
+  "dependencies" : {
+    "_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared" : "7e1077uic7hgbuhl74sq4hfq0f7",
+    "project#Element::ElementBase.toString/0#dispred#6e016f86" : "00b52b645p91vlnar45fe5vstf1",
+    "File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d" : "7c0d12f0g9icj5ouph6bc7ee7ac"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:36.330324727Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1611,
+  "nanoTime" : 36415413941421,
+  "predicateStartEvent" : 1610,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:36.331534941Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1612,
+  "nanoTime" : 36415415154250,
+  "startEvent" : 1611,
+  "resultSize" : 1066
+}
+
+{
+  "time" : "2026-08-16T20:31:36.331561971Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1613,
+  "nanoTime" : 36415415178265,
+  "startEvent" : 1610,
+  "resultSize" : 1066
+}
+
+{
+  "time" : "2026-08-16T20:31:36.332108474Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1614,
+  "nanoTime" : 36415415726100,
+  "raHash" : "db848f5bf53n78ovnkk5gma00n8",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 71 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_gcc_working.ql:31,1-32,95",
+  "ra" : {
+    "pipeline" : [
+      "    {12} r1 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, Rhs.1, Lhs.4, Lhs.1, Lhs.2, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9, Lhs.10, Lhs.3",
+      "",
+      "    {12} r2 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `cached_Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.0, Rhs.1, Lhs.4, Lhs.1, Lhs.2, Lhs.5, Lhs.6, Lhs.7, Lhs.8, Lhs.9, Lhs.10, Lhs.3",
+      "",
+      "    {11} r3 = `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` AND NOT `_File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs`(FIRST 11)",
+      "    {12}    | SCAN OUTPUT In.0, _, In.4, In.1, In.2, In.5, In.6, In.7, In.8, In.9, In.10, In.3",
+      "    {12}    | REWRITE WITH Out.1 := \"(no string representation)\"",
+      "",
+      "    {12} r4 = r1 UNION r2 UNION r3",
+      "    return r4"
+    ]
+  },
+  "dependencies" : {
+    "_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared" : "7e1077uic7hgbuhl74sq4hfq0f7",
+    "File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d" : "7c0d12f0g9icj5ouph6bc7ee7ac",
+    "cached_Element::ElementBase.toString/0#dispred#6e016f86" : "b58a23s4gib1n9g18c4bhcsja59",
+    "_File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs" : "dc0defscv8ph3lb2mjimkvhbmp1"
+  },
+  "queryCausingWork" : 1470
+}
+
+{
+  "time" : "2026-08-16T20:31:36.332229891Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1615,
+  "nanoTime" : 36415415846665,
+  "predicateStartEvent" : 1614,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-16T20:31:36.346506548Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1616,
+  "nanoTime" : 36415430130156,
+  "startEvent" : 1615,
+  "resultSize" : 1066
+}
+
+{
+  "time" : "2026-08-16T20:31:36.346548176Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1617,
+  "nanoTime" : 36415430164630,
+  "startEvent" : 1614,
+  "resultSize" : 1066
+}
+
+{
+  "time" : "2026-08-16T20:31:36.363251924Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 1618,
+  "nanoTime" : 36415446876824,
+  "startEvent" : 1470,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-08-16T20:31:36.364269157Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 1619,
+  "nanoTime" : 36415447889929
+}

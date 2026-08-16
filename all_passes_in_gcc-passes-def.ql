@@ -10,16 +10,16 @@ import cpp
 
 from MacroInvocation mi//, string passName
 where
-  mi.getFile().getRelativePath().matches("%/passes.def") and
-  (
+  mi.getFile().getRelativePath().matches("%/passes.def") //and
+  /*(
     mi.getMacroName() = "NEXT_PASS" or
     mi.getMacroName() = "NEXT_PASS_WITH_ARG" or
     mi.getMacroName() = "NEXT_PASS_NUM"
-  ) //and
+  ) and */
   //passName = mi.getUnexpandedArgument(0)
 select
   //passName,
-  mi.getFile().getRelativePath(),
-  mi.getMacroName(),
-  mi.getLocation().getStartLine() as startLine
-order by startLine
+  mi.toString()
+  //mi.getFile().getRelativePath(),
+  //mi.getMacroName()//,
+  //mi.getLocation().getStartLine()

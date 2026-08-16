@@ -1,0 +1,28 @@
+Completed evaluation of query all_passes_gcc_working.ql.
+Most expensive predicates for stage 6 of completed query all_passes_gcc_working.ql:
+        time  | predicate
+        ------|----------
+        11.6s | Location::Location.toString/0#dispred#6ede7323@f4f5c6jk
+        385ms | Location::Location.hasLocationInfo/5#dispred#558082fb@acb21f6m
+         79ms | Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs@167ac5ts
+         63ms | Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs@8615681u
+         21ms | #select#query@9bc0a7rr
+          3ms | #select@f8fe7bo9
+          2ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@21fbe35s
+          0ms | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@af74d6of
+
+Most expensive predicates for completed query all_passes_gcc_working.ql:
+        time  | predicate
+        ------|----------
+        11.6s | Location::Location.toString/0#dispred#6ede7323@f4f5c6jk
+        385ms | Location::Location.hasLocationInfo/5#dispred#558082fb@acb21f6m
+         79ms | Location::Location.hasLocationInfo/5#dispred#558082fb_0#antijoin_rhs@167ac5ts
+         63ms | Location::Location.toString/0#dispred#6ede7323_0#antijoin_rhs@8615681u
+         21ms | #select#query@9bc0a7rr
+          3ms | #select@f8fe7bo9
+          2ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@21fbe35s
+          0ms | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@af74d6of
+
+[2026-08-13 18:08:05] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 12.3 seconds
+        * Total time spent evaluating predicates: 12.1 seconds
