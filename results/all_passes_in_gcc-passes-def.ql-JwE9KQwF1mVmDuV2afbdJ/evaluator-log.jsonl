@@ -1,0 +1,1546 @@
+{
+  "time" : "2026-08-17T16:39:21.331758840Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 1887,
+  "nanoTime" : 72497736867468,
+  "codeqlVersion" : "2.26.2",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-08-17T16:39:21.372239375Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 1888,
+  "nanoTime" : 72497777350117,
+  "queryName" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_in_gcc-passes-def.ql",
+  "stages" : [ 100, 101, 102, 103, 104, 105, 106 ]
+}
+
+{
+  "time" : "2026-08-17T16:39:21.375357240Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1889,
+  "nanoTime" : 72497780452763,
+  "raHash" : "82ca1924s7df18kvl50qp6pc9v3",
+  "predicateName" : "cached_ResolveClass::isType/1#eabb9878",
+  "appearsAs" : {
+    "cached_ResolveClass::isType/1#eabb9878" : [ 100 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 123849
+}
+
+{
+  "time" : "2026-08-17T16:39:21.375591768Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1890,
+  "nanoTime" : 72497780670060,
+  "raHash" : "a66798kmt7m0t4fpn56e459fpk2",
+  "predicateName" : "cached_ResolveClass::resolveClass/1#ea47deee",
+  "appearsAs" : {
+    "cached_ResolveClass::resolveClass/1#ea47deee" : [ 100 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 24895
+}
+
+{
+  "time" : "2026-08-17T16:39:21.375753972Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1891,
+  "nanoTime" : 72497780827725,
+  "raHash" : "90738ahctvdkjlt0i3qvihreh0d",
+  "predicateName" : "cached_ResolveGlobalVariable::isVariable/1#6e051315",
+  "appearsAs" : {
+    "cached_ResolveGlobalVariable::isVariable/1#6e051315" : [ 102 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 446985
+}
+
+{
+  "time" : "2026-08-17T16:39:21.375871161Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1892,
+  "nanoTime" : 72497780944633,
+  "raHash" : "d04f11u9b7hntadk2hs97si3ktd",
+  "predicateName" : "cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f",
+  "appearsAs" : {
+    "cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f" : [ 102 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 447482
+}
+
+{
+  "time" : "2026-08-17T16:39:21.375993059Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1893,
+  "nanoTime" : 72497781068645,
+  "raHash" : "f98098d9on2b492c6c275esfiue",
+  "predicateName" : "cached_ResolveFunction::isFunction/1#9226b83f",
+  "appearsAs" : {
+    "cached_ResolveFunction::isFunction/1#9226b83f" : [ 101 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 91685
+}
+
+{
+  "time" : "2026-08-17T16:39:21.376119466Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1894,
+  "nanoTime" : 72497781193008,
+  "raHash" : "d186d880pc1o7ec9mtbdcu2ch90",
+  "predicateName" : "cached_ResolveFunction::resolveFunction/1#576ba5ee",
+  "appearsAs" : {
+    "cached_ResolveFunction::resolveFunction/1#576ba5ee" : [ 101 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 107513
+}
+
+{
+  "time" : "2026-08-17T16:39:21.376206559Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1895,
+  "nanoTime" : 72497781280322,
+  "raHash" : "ecb9e6su7vinsqn2hved49i2c07",
+  "predicateName" : "cached_ResolveClass::isClass/1#af2a1ca6",
+  "appearsAs" : {
+    "cached_ResolveClass::isClass/1#af2a1ca6" : [ 100 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 10868
+}
+
+{
+  "time" : "2026-08-17T16:39:21.376473739Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1896,
+  "nanoTime" : 72497781569102,
+  "raHash" : "6044b650jaa7qj80h6h6pkhjm05",
+  "predicateName" : "cached_Expr::Expr.getType/0#dispred#444cc5af",
+  "appearsAs" : {
+    "cached_Expr::Expr.getType/0#dispred#444cc5af" : [ 104 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 10158564
+}
+
+{
+  "time" : "2026-08-17T16:39:21.376826790Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1897,
+  "nanoTime" : 72497781900813,
+  "raHash" : "b58a23s4gib1n9g18c4bhcsja59",
+  "predicateName" : "cached_Element::ElementBase.toString/0#dispred#6e016f86",
+  "appearsAs" : {
+    "cached_Element::ElementBase.toString/0#dispred#6e016f86" : [ 105 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 16830229
+}
+
+{
+  "time" : "2026-08-17T16:39:21.378537391Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1898,
+  "nanoTime" : 72497783622565,
+  "raHash" : "bad017oqli0nbr136ld8vl77sm4",
+  "predicateName" : "cached_QualifiedName::declarationHasQualifiedName/4#749d7d29",
+  "appearsAs" : {
+    "cached_QualifiedName::declarationHasQualifiedName/4#749d7d29" : [ 103 ]
+  },
+  "isCached" : true,
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 173869
+}
+
+{
+  "time" : "2026-08-17T16:39:21.378834226Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1899,
+  "nanoTime" : 72497783913008,
+  "raHash" : "989e8bm3m27tjc92vnro6crogq6",
+  "predicateName" : "preproctext",
+  "appearsAs" : {
+    "preproctext" : [ 105, 106 ]
+  },
+  "predicateType" : "EXTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmlecode.cpp.dbscheme:2461,1-2465,3",
+  "dependencies" : { },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:21.428664990Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1900,
+  "nanoTime" : 72497833777795,
+  "startEvent" : 1899,
+  "resultSize" : 125981
+}
+
+{
+  "time" : "2026-08-17T16:39:21.429246718Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1901,
+  "nanoTime" : 72497834337473,
+  "raHash" : "6a2d37b7t7e7p0g98ottae733r1",
+  "predicateName" : "@ppd_define",
+  "appearsAs" : {
+    "@ppd_define" : [ 105, 106 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 40855
+}
+
+{
+  "time" : "2026-08-17T16:39:21.430061373Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1902,
+  "nanoTime" : 72497835141317,
+  "raHash" : "9083fa3calu2hlvfs0lktudqdf5",
+  "predicateName" : "Macro::Macro.getName/0#dispred#e28b3699",
+  "appearsAs" : {
+    "Macro::Macro.getName/0#dispred#e28b3699" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Macro.qll:33,3-37,78",
+  "ra" : {
+    "pipeline" : [
+      "    {3} r1 = JOIN @ppd_define WITH preproctext ON FIRST 1 OUTPUT Lhs.0, Rhs.1, _",
+      "    {3}    | REWRITE WITH Out.2 := \"([^(]*+).*\"",
+      "    {5}    | JOIN WITH PRIMITIVE regexpCapture#bbff ON Lhs.1,Lhs.2",
+      "    {6}    | SCAN OUTPUT In.0, In.1, In.2, In.3, In.4, _",
+      "    {5}    | REWRITE WITH Tmp.5 := 1, TEST InOut.3 = Tmp.5 KEEPING 5",
+      "    {2}    | SCAN OUTPUT In.0, In.4",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "@ppd_define" : "6a2d37b7t7e7p0g98ottae733r1",
+    "preproctext" : "989e8bm3m27tjc92vnro6crogq6"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:21.430262900Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1903,
+  "nanoTime" : 72497835337514,
+  "predicateStartEvent" : 1902,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:21.619039045Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1904,
+  "nanoTime" : 72498024142904,
+  "startEvent" : 1903,
+  "resultSize" : 40855
+}
+
+{
+  "time" : "2026-08-17T16:39:21.619218831Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1905,
+  "nanoTime" : 72498024292434,
+  "startEvent" : 1902,
+  "resultSize" : 40855
+}
+
+{
+  "time" : "2026-08-17T16:39:21.619735378Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1906,
+  "nanoTime" : 72498024812707,
+  "raHash" : "c9caa299o909kgki2s5ic9lsjl2",
+  "predicateName" : "macroinvocations",
+  "appearsAs" : {
+    "macroinvocations" : [ 100, 101, 102, 103, 104, 105, 106 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:21.620064053Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1907,
+  "nanoTime" : 72498025138577,
+  "raHash" : "2bc12bkpho2upqoqjmloil266b7",
+  "predicateName" : "Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs",
+  "appearsAs" : {
+    "Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs" : [ 106 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-17T16:39:21.620221848Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1908,
+  "nanoTime" : 72498025296382,
+  "raHash" : "11df0wp5s89eifveu9kqf76d7p1",
+  "predicateName" : "Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db",
+  "appearsAs" : {
+    "Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db" : [ 106 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-17T16:39:21.620348044Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1909,
+  "nanoTime" : 72498025428009,
+  "raHash" : "8ef2a3udpa91n2h4dl56e8ma8de",
+  "predicateName" : "@macroinvocation",
+  "appearsAs" : {
+    "@macroinvocation" : [ 106 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-17T16:39:21.620487405Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1910,
+  "nanoTime" : 72498025563943,
+  "raHash" : "09e9a1t6ov0od08rgkcfm6ul51e",
+  "predicateName" : "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs",
+  "appearsAs" : {
+    "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs" : [ 106 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-17T16:39:21.620645992Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1911,
+  "nanoTime" : 72498025722209,
+  "raHash" : "ee0348a29u8or8lava43ecln4s5",
+  "predicateName" : "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62",
+  "appearsAs" : {
+    "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62" : [ 106 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-17T16:39:21.620793839Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1912,
+  "nanoTime" : 72498025868002,
+  "raHash" : "52ced6u6950mpphvkm8vbn9ssc2",
+  "predicateName" : "#macroinvocationsMerge_03#join_rhs",
+  "appearsAs" : {
+    "#macroinvocationsMerge_03#join_rhs" : [ 106 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-17T16:39:21.620887264Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1913,
+  "nanoTime" : 72498025962739,
+  "raHash" : "d0de2cm4e6219nr6m04huta3og2",
+  "predicateName" : "macroparent",
+  "appearsAs" : {
+    "macroparent" : [ 106 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 1152372
+}
+
+{
+  "time" : "2026-08-17T16:39:21.620992420Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1914,
+  "nanoTime" : 72498026068587,
+  "raHash" : "5b9492v7ns9qs05s9kt1510cdm5",
+  "predicateName" : "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs",
+  "appearsAs" : {
+    "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs" : [ 106 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-17T16:39:21.621234944Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1915,
+  "nanoTime" : 72498026310059,
+  "raHash" : "8ef2a3udpa91n2h4dl56e8ma8de",
+  "predicateName" : "@macroinvocation",
+  "appearsAs" : {
+    "@macroinvocation" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmlecode.cpp.dbscheme:334,5-334,36",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN macroinvocations OUTPUT In.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "macroinvocations" : "c9caa299o909kgki2s5ic9lsjl2"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:21.621356181Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1916,
+  "nanoTime" : 72498026432569,
+  "predicateStartEvent" : 1915,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:21.766247510Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1917,
+  "nanoTime" : 72498171348444,
+  "startEvent" : 1916,
+  "resultSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:21.766430032Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1918,
+  "nanoTime" : 72498171504646,
+  "startEvent" : 1915,
+  "resultSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:21.766954634Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1919,
+  "nanoTime" : 72498172053734,
+  "raHash" : "52ced6u6950mpphvkm8vbn9ssc2",
+  "predicateName" : "#macroinvocationsMerge_03#join_rhs",
+  "appearsAs" : {
+    "#macroinvocationsMerge_03#join_rhs" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Macro.qll:76,3-108,4",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN macroinvocations OUTPUT In.0, In.3",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "macroinvocations" : "c9caa299o909kgki2s5ic9lsjl2"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:21.767150740Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1920,
+  "nanoTime" : 72498172226988,
+  "predicateStartEvent" : 1919,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:21.950358154Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1921,
+  "nanoTime" : 72498355472022,
+  "startEvent" : 1920,
+  "resultSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:21.950485352Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1922,
+  "nanoTime" : 72498355560988,
+  "startEvent" : 1919,
+  "resultSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:21.951217102Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1923,
+  "nanoTime" : 72498356293880,
+  "raHash" : "ee0348a29u8or8lava43ecln4s5",
+  "predicateName" : "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62",
+  "appearsAs" : {
+    "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Macro.qll:76,3-108,4",
+  "ra" : {
+    "pipeline" : [
+      "    {3} r1 = SCAN macroparent OUTPUT In.1, _, In.0",
+      "    {3}    | REWRITE WITH Out.1 := 1",
+      "    {2}    | JOIN WITH #macroinvocationsMerge_03#join_rhs ON FIRST 2 OUTPUT Lhs.2, Lhs.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "macroparent" : "d0de2cm4e6219nr6m04huta3og2",
+    "#macroinvocationsMerge_03#join_rhs" : "52ced6u6950mpphvkm8vbn9ssc2"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:21.951414792Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1924,
+  "nanoTime" : 72498356490257,
+  "predicateStartEvent" : 1923,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:22.179994044Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1925,
+  "nanoTime" : 72498585100668,
+  "startEvent" : 1924,
+  "resultSize" : 1152372
+}
+
+{
+  "time" : "2026-08-17T16:39:22.180144245Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1926,
+  "nanoTime" : 72498585218689,
+  "startEvent" : 1923,
+  "resultSize" : 1152372
+}
+
+{
+  "time" : "2026-08-17T16:39:22.205189214Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1927,
+  "nanoTime" : 72498610294796,
+  "raHash" : "09e9a1t6ov0od08rgkcfm6ul51e",
+  "predicateName" : "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs",
+  "appearsAs" : {
+    "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Macro.qll:114,15-114,38",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62` OUTPUT In.1, In.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62" : "ee0348a29u8or8lava43ecln4s5"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:22.205357429Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1928,
+  "nanoTime" : 72498610433085,
+  "predicateStartEvent" : 1927,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:22.268032749Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1929,
+  "nanoTime" : 72498673144293,
+  "startEvent" : 1928,
+  "resultSize" : 1152372
+}
+
+{
+  "time" : "2026-08-17T16:39:22.268160328Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1930,
+  "nanoTime" : 72498673232968,
+  "startEvent" : 1927,
+  "resultSize" : 1152372
+}
+
+{
+  "time" : "2026-08-17T16:39:22.328647794Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1931,
+  "nanoTime" : 72498733749128,
+  "raHash" : "5b9492v7ns9qs05s9kt1510cdm5",
+  "predicateName" : "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs",
+  "appearsAs" : {
+    "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Macro.qll:114,15-114,38",
+  "ra" : {
+    "pipeline" : [
+      "    {1} r1 = SCAN `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62` OUTPUT In.0",
+      "    {1}    | STREAM DEDUP",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62" : "ee0348a29u8or8lava43ecln4s5"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:22.328896149Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1932,
+  "nanoTime" : 72498733975913,
+  "predicateStartEvent" : 1931,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:22.357973514Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1933,
+  "nanoTime" : 72498763071352,
+  "startEvent" : 1932,
+  "resultSize" : 1152372
+}
+
+{
+  "time" : "2026-08-17T16:39:22.358076136Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1934,
+  "nanoTime" : 72498763149368,
+  "startEvent" : 1931,
+  "resultSize" : 1152372
+}
+
+{
+  "time" : "2026-08-17T16:39:22.359508927Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1935,
+  "nanoTime" : 72498764596115,
+  "raHash" : "11df0wp5s89eifveu9kqf76d7p1",
+  "predicateName" : "Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db",
+  "appearsAs" : {
+    "Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db" : [ 106 ]
+  },
+  "layerId" : 10,
+  "predicateType" : "RECURSIVE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Macro.qll:114,15-114,38",
+  "ra" : {
+    "base" : [
+      "    {1} r1 = @macroinvocation AND NOT `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs`(FIRST 1)",
+      "    {2}    | SCAN OUTPUT In.0, In.0",
+      "    return r1"
+    ],
+    "standard" : [
+      "    {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0",
+      "    {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0",
+      "    {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1",
+      "    {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "@macroinvocation" : "8ef2a3udpa91n2h4dl56e8ma8de",
+    "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs" : "5b9492v7ns9qs05s9kt1510cdm5",
+    "Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs" : "09e9a1t6ov0od08rgkcfm6ul51e"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:22.360140560Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1936,
+  "nanoTime" : 72498765319098,
+  "predicateStartEvent" : 1935,
+  "raReference" : "base",
+  "generationNumber" : 1
+}
+
+{
+  "time" : "2026-08-17T16:39:22.436147398Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1937,
+  "nanoTime" : 72498841268740,
+  "startEvent" : 1936,
+  "resultSize" : 982581
+}
+
+{
+  "time" : "2026-08-17T16:39:22.436298682Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1938,
+  "nanoTime" : 72498841372464,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 2
+}
+
+{
+  "time" : "2026-08-17T16:39:22.568849206Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1939,
+  "nanoTime" : 72498973976459,
+  "startEvent" : 1938,
+  "resultSize" : 620222
+}
+
+{
+  "time" : "2026-08-17T16:39:22.569114022Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1940,
+  "nanoTime" : 72498974215085,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 3
+}
+
+{
+  "time" : "2026-08-17T16:39:22.740056202Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1941,
+  "nanoTime" : 72499145174658,
+  "startEvent" : 1940,
+  "resultSize" : 280978
+}
+
+{
+  "time" : "2026-08-17T16:39:22.740196164Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1942,
+  "nanoTime" : 72499145270919,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 4
+}
+
+{
+  "time" : "2026-08-17T16:39:22.771682688Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1943,
+  "nanoTime" : 72499176789222,
+  "startEvent" : 1942,
+  "resultSize" : 119040
+}
+
+{
+  "time" : "2026-08-17T16:39:22.771788886Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1944,
+  "nanoTime" : 72499176869983,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 5
+}
+
+{
+  "time" : "2026-08-17T16:39:22.802890029Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1945,
+  "nanoTime" : 72499207979972,
+  "startEvent" : 1944,
+  "resultSize" : 72291
+}
+
+{
+  "time" : "2026-08-17T16:39:22.803198056Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1946,
+  "nanoTime" : 72499208269424,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 6
+}
+
+{
+  "time" : "2026-08-17T16:39:22.841745032Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1947,
+  "nanoTime" : 72499246833332,
+  "startEvent" : 1946,
+  "resultSize" : 41724
+}
+
+{
+  "time" : "2026-08-17T16:39:22.841831524Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1948,
+  "nanoTime" : 72499246903473,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 7
+}
+
+{
+  "time" : "2026-08-17T16:39:22.848537363Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1949,
+  "nanoTime" : 72499253650249,
+  "startEvent" : 1948,
+  "resultSize" : 10859
+}
+
+{
+  "time" : "2026-08-17T16:39:22.848683888Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1950,
+  "nanoTime" : 72499253754925,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 8
+}
+
+{
+  "time" : "2026-08-17T16:39:22.852010753Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1951,
+  "nanoTime" : 72499257119972,
+  "startEvent" : 1950,
+  "resultSize" : 3469
+}
+
+{
+  "time" : "2026-08-17T16:39:22.852102175Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1952,
+  "nanoTime" : 72499257171509,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 9
+}
+
+{
+  "time" : "2026-08-17T16:39:22.854534997Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1953,
+  "nanoTime" : 72499259613258,
+  "startEvent" : 1952,
+  "resultSize" : 1539
+}
+
+{
+  "time" : "2026-08-17T16:39:22.854588127Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1954,
+  "nanoTime" : 72499259659064,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 10
+}
+
+{
+  "time" : "2026-08-17T16:39:22.855728441Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1955,
+  "nanoTime" : 72499260801672,
+  "startEvent" : 1954,
+  "resultSize" : 917
+}
+
+{
+  "time" : "2026-08-17T16:39:22.855764979Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1956,
+  "nanoTime" : 72499260838050,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 11
+}
+
+{
+  "time" : "2026-08-17T16:39:22.856861351Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1957,
+  "nanoTime" : 72499261982071,
+  "startEvent" : 1956,
+  "resultSize" : 506
+}
+
+{
+  "time" : "2026-08-17T16:39:22.856971176Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1958,
+  "nanoTime" : 72499262038587,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 12
+}
+
+{
+  "time" : "2026-08-17T16:39:22.857568675Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1959,
+  "nanoTime" : 72499262640474,
+  "startEvent" : 1958,
+  "resultSize" : 325
+}
+
+{
+  "time" : "2026-08-17T16:39:22.857601586Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1960,
+  "nanoTime" : 72499262668205,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 13
+}
+
+{
+  "time" : "2026-08-17T16:39:22.857967491Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1961,
+  "nanoTime" : 72499263037687,
+  "startEvent" : 1960,
+  "resultSize" : 213
+}
+
+{
+  "time" : "2026-08-17T16:39:22.858016563Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1962,
+  "nanoTime" : 72499263083342,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 14
+}
+
+{
+  "time" : "2026-08-17T16:39:22.858357541Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1963,
+  "nanoTime" : 72499263426444,
+  "startEvent" : 1962,
+  "resultSize" : 129
+}
+
+{
+  "time" : "2026-08-17T16:39:22.858386916Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1964,
+  "nanoTime" : 72499263453615,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 15
+}
+
+{
+  "time" : "2026-08-17T16:39:22.858764833Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1965,
+  "nanoTime" : 72499263835330,
+  "startEvent" : 1964,
+  "resultSize" : 60
+}
+
+{
+  "time" : "2026-08-17T16:39:22.858798236Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1966,
+  "nanoTime" : 72499263884341,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 16
+}
+
+{
+  "time" : "2026-08-17T16:39:22.859120098Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1967,
+  "nanoTime" : 72499264187829,
+  "startEvent" : 1966,
+  "resultSize" : 28
+}
+
+{
+  "time" : "2026-08-17T16:39:22.859147639Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1968,
+  "nanoTime" : 72499264213477,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 17
+}
+
+{
+  "time" : "2026-08-17T16:39:22.859458331Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1969,
+  "nanoTime" : 72499264526102,
+  "startEvent" : 1968,
+  "resultSize" : 22
+}
+
+{
+  "time" : "2026-08-17T16:39:22.859505148Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1970,
+  "nanoTime" : 72499264571066,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 18
+}
+
+{
+  "time" : "2026-08-17T16:39:22.859895619Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1971,
+  "nanoTime" : 72499264964202,
+  "startEvent" : 1970,
+  "resultSize" : 19
+}
+
+{
+  "time" : "2026-08-17T16:39:22.859956353Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1972,
+  "nanoTime" : 72499265032420,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 19
+}
+
+{
+  "time" : "2026-08-17T16:39:22.860282092Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1973,
+  "nanoTime" : 72499265349473,
+  "startEvent" : 1972,
+  "resultSize" : 17
+}
+
+{
+  "time" : "2026-08-17T16:39:22.860328509Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1974,
+  "nanoTime" : 72499265394617,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 20
+}
+
+{
+  "time" : "2026-08-17T16:39:22.860587283Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1975,
+  "nanoTime" : 72499265654674,
+  "startEvent" : 1974,
+  "resultSize" : 10
+}
+
+{
+  "time" : "2026-08-17T16:39:22.860613402Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1976,
+  "nanoTime" : 72499265679260,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 21
+}
+
+{
+  "time" : "2026-08-17T16:39:22.860950183Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1977,
+  "nanoTime" : 72499266019457,
+  "startEvent" : 1976,
+  "resultSize" : 2
+}
+
+{
+  "time" : "2026-08-17T16:39:22.860997471Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1978,
+  "nanoTime" : 72499266063810,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 22
+}
+
+{
+  "time" : "2026-08-17T16:39:22.861270843Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1979,
+  "nanoTime" : 72499266338784,
+  "startEvent" : 1978,
+  "resultSize" : 2
+}
+
+{
+  "time" : "2026-08-17T16:39:22.861302873Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1980,
+  "nanoTime" : 72499266368951,
+  "predicateStartEvent" : 1935,
+  "raReference" : "standard",
+  "generationNumber" : 23
+}
+
+{
+  "time" : "2026-08-17T16:39:22.862558653Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1981,
+  "nanoTime" : 72499267631794,
+  "startEvent" : 1935,
+  "resultSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:22.982709022Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1982,
+  "nanoTime" : 72499387815395,
+  "startEvent" : 1980,
+  "resultSize" : 0
+}
+
+{
+  "time" : "2026-08-17T16:39:22.983523065Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1983,
+  "nanoTime" : 72499388598120,
+  "raHash" : "2bc12bkpho2upqoqjmloil266b7",
+  "predicateName" : "Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs",
+  "appearsAs" : {
+    "Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Macro.qll:58,3-65,98",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db` OUTPUT In.1, In.0",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db" : "11df0wp5s89eifveu9kqf76d7p1"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:22.983645605Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1984,
+  "nanoTime" : 72499388711232,
+  "predicateStartEvent" : 1983,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:23.107045374Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1985,
+  "nanoTime" : 72499512119387,
+  "startEvent" : 1984,
+  "resultSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:23.107124302Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1986,
+  "nanoTime" : 72499512189949,
+  "startEvent" : 1983,
+  "resultSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:23.221690902Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1987,
+  "nanoTime" : 72499626765987,
+  "raHash" : "21e76cefrfgmc5trari2itvfoq8",
+  "predicateName" : "Macro::MacroAccess.getLocation/0#dispred#91048e4b",
+  "appearsAs" : {
+    "Macro::MacroAccess.getLocation/0#dispred#91048e4b" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Macro.qll:58,3-65,98",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = JOIN macroinvocations WITH `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.2",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "macroinvocations" : "c9caa299o909kgki2s5ic9lsjl2",
+    "Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs" : "2bc12bkpho2upqoqjmloil266b7"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:23.221848176Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1988,
+  "nanoTime" : 72499626914515,
+  "predicateStartEvent" : 1987,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:23.483496914Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1989,
+  "nanoTime" : 72499888579193,
+  "startEvent" : 1988,
+  "resultSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:23.483621337Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1990,
+  "nanoTime" : 72499888687916,
+  "startEvent" : 1987,
+  "resultSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:23.622733591Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1991,
+  "nanoTime" : 72500027809127,
+  "raHash" : "bbd97edkf48odqqti6ec0epkftd",
+  "predicateName" : "Location::Location.getContainer/0#9edabfb6",
+  "appearsAs" : {
+    "Location::Location.getContainer/0#9edabfb6" : [ 106 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 7867442
+}
+
+{
+  "time" : "2026-08-17T16:39:23.623163676Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1992,
+  "nanoTime" : 72500028230846,
+  "raHash" : "108af0vsta4560bqggtcvi3ull4",
+  "predicateName" : "Element::Element.getFile/0#2b8c8740",
+  "appearsAs" : {
+    "Element::Element.getFile/0#2b8c8740" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Element.qll:91,8-91,15",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN `Macro::MacroAccess.getLocation/0#dispred#91048e4b` OUTPUT In.1, In.0",
+      "    {2}    | JOIN WITH `Location::Location.getContainer/0#9edabfb6` ON FIRST 1 OUTPUT Lhs.1, Rhs.1",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "Macro::MacroAccess.getLocation/0#dispred#91048e4b" : "21e76cefrfgmc5trari2itvfoq8",
+    "Location::Location.getContainer/0#9edabfb6" : "bbd97edkf48odqqti6ec0epkftd"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:23.623299100Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1993,
+  "nanoTime" : 72500028364687,
+  "predicateStartEvent" : 1992,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:24.229689436Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 1994,
+  "nanoTime" : 72500634764181,
+  "startEvent" : 1993,
+  "resultSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:24.229791367Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 1995,
+  "nanoTime" : 72500634857105,
+  "startEvent" : 1992,
+  "resultSize" : 2134953
+}
+
+{
+  "time" : "2026-08-17T16:39:24.268273803Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1996,
+  "nanoTime" : 72500673353847,
+  "raHash" : "64802cd1n12ehgdg2egmvp6hc4a",
+  "predicateName" : "sourceLocationPrefix",
+  "appearsAs" : {
+    "sourceLocationPrefix" : [ 106 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 1
+}
+
+{
+  "time" : "2026-08-17T16:39:24.268395401Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 1997,
+  "nanoTime" : 72500673470516,
+  "raHash" : "ec93749gflo5p51uulng0fggcp3",
+  "predicateName" : "files",
+  "appearsAs" : {
+    "files" : [ 100, 101, 102, 103, 104, 105, 106 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 2915
+}
+
+{
+  "time" : "2026-08-17T16:39:24.269456366Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 1998,
+  "nanoTime" : 72500674524939,
+  "raHash" : "366b4d1ia33r134bhugs9qe2o01",
+  "predicateName" : "File::Impl::Container.getRelativePath/0#dispred#deec4f8e",
+  "appearsAs" : {
+    "File::Impl::Container.getRelativePath/0#dispred#deec4f8e" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/codeql/util/FileSystem.qll:159,5-176,6",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN files OUTPUT In.1, In.0",
+      "    {2}    | JOIN WITH sourceLocationPrefix ON FIRST 1 OUTPUT Lhs.1, _",
+      "    {2}    | REWRITE WITH Out.1 := \"\"",
+      "",
+      "    {5} r2 = JOIN files WITH sourceLocationPrefix CARTESIAN PRODUCT OUTPUT Lhs.0, Lhs.1, _, Rhs.0, _",
+      "    {3}    | REWRITE WITH Tmp.2 := \"/$\", Tmp.4 := \"\", Out.2 := regexpReplaceAll(In.3,Tmp.2,Tmp.4) KEEPING 3",
+      "    {5}    | SCAN OUTPUT In.0, _, In.2, In.1, _",
+      "    {2}    | REWRITE WITH Tmp.1 := \"/\", Tmp.1 := (In.2 ++ Tmp.1), Tmp.4 := \"\", Out.1 := InverseAppend(Tmp.1,Tmp.4,In.3) KEEPING 2",
+      "    {2}    | REWRITE WITH NOT [TEST InOut.1 startsWith \"/\"]",
+      "",
+      "    {2} r3 = r1 UNION r2",
+      "    return r3"
+    ]
+  },
+  "dependencies" : {
+    "files" : "ec93749gflo5p51uulng0fggcp3",
+    "sourceLocationPrefix" : "64802cd1n12ehgdg2egmvp6hc4a"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:24.269663543Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 1999,
+  "nanoTime" : 72500674729592,
+  "predicateStartEvent" : 1998,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:24.322057223Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 2000,
+  "nanoTime" : 72500727133310,
+  "startEvent" : 1999,
+  "resultSize" : 2230
+}
+
+{
+  "time" : "2026-08-17T16:39:24.322117776Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 2001,
+  "nanoTime" : 72500727183674,
+  "startEvent" : 1998,
+  "resultSize" : 2230
+}
+
+{
+  "time" : "2026-08-17T16:39:24.323242040Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 2002,
+  "nanoTime" : 72500728309401,
+  "raHash" : "53e8a5qaat445so7o9cgqiueok1",
+  "predicateName" : "Location::Location.getStartLine/0#d54f9e6c",
+  "appearsAs" : {
+    "Location::Location.getStartLine/0#d54f9e6c" : [ 106 ]
+  },
+  "cacheLookupResult" : "RETRACTED_CACHE_HIT"
+}
+
+{
+  "time" : "2026-08-17T16:39:24.323420274Z",
+  "type" : "CACHE_LOOKUP",
+  "eventId" : 2003,
+  "nanoTime" : 72500728487454,
+  "raHash" : "2b5cc3prfiol4l0qf2nvs6l3m23",
+  "predicateName" : "locations_default",
+  "appearsAs" : {
+    "locations_default" : [ 100, 101, 102, 103, 104, 105, 106 ]
+  },
+  "cacheLookupResult" : "RELATION_CACHE_HIT",
+  "relationSize" : 7867442
+}
+
+{
+  "time" : "2026-08-17T16:39:24.323685440Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 2004,
+  "nanoTime" : 72500728752069,
+  "raHash" : "53e8a5qaat445so7o9cgqiueok1",
+  "predicateName" : "Location::Location.getStartLine/0#d54f9e6c",
+  "appearsAs" : {
+    "Location::Location.getStartLine/0#d54f9e6c" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/semmle/code/cpp/Location.qll:21,7-21,19",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN locations_default OUTPUT In.0, In.2",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "locations_default" : "2b5cc3prfiol4l0qf2nvs6l3m23"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:24.323796287Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 2005,
+  "nanoTime" : 72500728863157,
+  "predicateStartEvent" : 2004,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:25.062317293Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 2006,
+  "nanoTime" : 72501467394051,
+  "startEvent" : 2005,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-17T16:39:25.062435995Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 2007,
+  "nanoTime" : 72501467501592,
+  "startEvent" : 2004,
+  "resultSize" : 7867442
+}
+
+{
+  "time" : "2026-08-17T16:39:25.063412562Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 2008,
+  "nanoTime" : 72501468480805,
+  "raHash" : "6a5158nhm52dcaet6udkotdpqid",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 106 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/all_passes_in_gcc-passes-def.ql:9,1-16,18",
+  "ra" : {
+    "pipeline" : [
+      "    {2} r1 = SCAN macroinvocations OUTPUT In.1, In.0",
+      "    {3}    | JOIN WITH `Macro::Macro.getName/0#dispred#e28b3699` ON FIRST 1 OUTPUT Lhs.1, _, Rhs.1",
+      "    {3}    | REWRITE WITH Out.1 := 1",
+      "    {2}    | JOIN WITH #macroinvocationsMerge_03#join_rhs ON FIRST 2 OUTPUT Lhs.0, Lhs.2",
+      "    {3}    | JOIN WITH `Element::Element.getFile/0#2b8c8740` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Rhs.1",
+      "    {4}    | JOIN WITH `Macro::MacroAccess.getLocation/0#dispred#91048e4b` ON FIRST 1 OUTPUT Rhs.1, Lhs.1, Lhs.0, Lhs.2",
+      "    {4}    | JOIN WITH `Location::Location.getStartLine/0#d54f9e6c` ON FIRST 1 OUTPUT Lhs.2, Lhs.1, Lhs.3, Rhs.1",
+      "    {5}    | JOIN WITH `Element::Element.getFile/0#2b8c8740` ON FIRST 1 OUTPUT Lhs.2, Lhs.1, Lhs.0, Lhs.3, Rhs.1",
+      "    {5}    | JOIN WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.3, Lhs.4, Rhs.1",
+      "    {5}    | REWRITE WITH TEST InOut.4 matches_constant \".*passes\\.def$\"",
+      "    {4}    | SCAN OUTPUT In.3, In.0, In.1, In.2",
+      "    {4}    | JOIN WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` ON FIRST 1 OUTPUT Lhs.2, Lhs.1, Lhs.3, Rhs.1",
+      "    {4}    | JOIN WITH `cached_Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.1, Lhs.3, Lhs.2, Rhs.1",
+      "    return r1"
+    ]
+  },
+  "dependencies" : {
+    "macroinvocations" : "c9caa299o909kgki2s5ic9lsjl2",
+    "Macro::Macro.getName/0#dispred#e28b3699" : "9083fa3calu2hlvfs0lktudqdf5",
+    "#macroinvocationsMerge_03#join_rhs" : "52ced6u6950mpphvkm8vbn9ssc2",
+    "Element::Element.getFile/0#2b8c8740" : "108af0vsta4560bqggtcvi3ull4",
+    "Macro::MacroAccess.getLocation/0#dispred#91048e4b" : "21e76cefrfgmc5trari2itvfoq8",
+    "Location::Location.getStartLine/0#d54f9e6c" : "53e8a5qaat445so7o9cgqiueok1",
+    "File::Impl::Container.getRelativePath/0#dispred#deec4f8e" : "366b4d1ia33r134bhugs9qe2o01",
+    "cached_Element::ElementBase.toString/0#dispred#6e016f86" : "b58a23s4gib1n9g18c4bhcsja59"
+  },
+  "queryCausingWork" : 1888
+}
+
+{
+  "time" : "2026-08-17T16:39:25.063662250Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 2009,
+  "nanoTime" : 72501468730141,
+  "predicateStartEvent" : 2008,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T16:39:26.020116234Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 2010,
+  "nanoTime" : 72502425192241,
+  "startEvent" : 2009,
+  "resultSize" : 0
+}
+
+{
+  "time" : "2026-08-17T16:39:26.020186566Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 2011,
+  "nanoTime" : 72502425254036,
+  "startEvent" : 2008,
+  "resultSize" : 0
+}
+
+{
+  "time" : "2026-08-17T16:39:26.026366761Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 2012,
+  "nanoTime" : 72502431443028,
+  "startEvent" : 1888,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-08-17T16:39:26.027119750Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 2013,
+  "nanoTime" : 72502432204574
+}

@@ -1,0 +1,328 @@
+[2026-08-17 17:39:21] Summary of a CodeQL evaluation that started at 2026-08-17T16:39:21.331758840Z
+[2026-08-17 17:39:21] 
+[2026-08-17 17:39:21] Found predicate cached_ResolveClass::isType/1#eabb9878@82ca1924 in the relation cache (size: 123849)
+[2026-08-17 17:39:21] Found predicate cached_ResolveClass::resolveClass/1#ea47deee@a66798km in the relation cache (size: 24895)
+[2026-08-17 17:39:21] Found predicate cached_ResolveGlobalVariable::isVariable/1#6e051315@90738ahc in the relation cache (size: 446985)
+[2026-08-17 17:39:21] Found predicate cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f@d04f11u9 in the relation cache (size: 447482)
+[2026-08-17 17:39:21] Found predicate cached_ResolveFunction::isFunction/1#9226b83f@f98098d9 in the relation cache (size: 91685)
+[2026-08-17 17:39:21] Found predicate cached_ResolveFunction::resolveFunction/1#576ba5ee@d186d880 in the relation cache (size: 107513)
+[2026-08-17 17:39:21] Found predicate cached_ResolveClass::isClass/1#af2a1ca6@ecb9e6su in the relation cache (size: 10868)
+[2026-08-17 17:39:21] Found predicate cached_Expr::Expr.getType/0#dispred#444cc5af@6044b650 in the relation cache (size: 10158564)
+[2026-08-17 17:39:21] Found predicate cached_Element::ElementBase.toString/0#dispred#6e016f86@b58a23s4 in the relation cache (size: 16830229)
+[2026-08-17 17:39:21] Found predicate cached_QualifiedName::declarationHasQualifiedName/4#749d7d29@bad017oq in the relation cache (size: 173869)
+[2026-08-17 17:39:21] Found predicate @ppd_define@6a2d37b7 in the relation cache (size: 40855)
+[2026-08-17 17:39:21] Evaluated non-recursive predicate Macro::Macro.getName/0#dispred#e28b3699@9083fa3c in 189ms (size: 40855).
+Evaluated relational algebra for predicate Macro::Macro.getName/0#dispred#e28b3699@9083fa3c:
+                {3} r1 = JOIN @ppd_define WITH preproctext ON FIRST 1 OUTPUT Lhs.0, Rhs.1, _
+                {3}    | REWRITE WITH Out.2 := "([^(]*+).*"
+                {5}    | JOIN WITH PRIMITIVE regexpCapture#bbff ON Lhs.1,Lhs.2
+                {6}    | SCAN OUTPUT In.0, In.1, In.2, In.3, In.4, _
+                {5}    | REWRITE WITH Tmp.5 := 1, TEST InOut.3 = Tmp.5 KEEPING 5
+                {2}    | SCAN OUTPUT In.0, In.4
+                return r1
+
+[2026-08-17 17:39:21] Found predicate macroinvocations@c9caa299 in the relation cache (size: 2134953)
+[2026-08-17 17:39:21] Found predicate macroparent@d0de2cm4 in the relation cache (size: 1152372)
+[2026-08-17 17:39:21] Evaluated non-recursive predicate @macroinvocation@8ef2a3ud in 145ms (size: 2134953).
+Evaluated relational algebra for predicate @macroinvocation@8ef2a3ud:
+                {1} r1 = SCAN macroinvocations OUTPUT In.0
+                return r1
+
+[2026-08-17 17:39:21] Evaluated non-recursive predicate #macroinvocationsMerge_03#join_rhs@52ced6u6 in 183ms (size: 2134953).
+Evaluated relational algebra for predicate #macroinvocationsMerge_03#join_rhs@52ced6u6:
+                {2} r1 = SCAN macroinvocations OUTPUT In.0, In.3
+                return r1
+
+[2026-08-17 17:39:22] Evaluated non-recursive predicate Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62@ee0348a2 in 228ms (size: 1152372).
+Evaluated relational algebra for predicate Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62@ee0348a2:
+                {3} r1 = SCAN macroparent OUTPUT In.1, _, In.0
+                {3}    | REWRITE WITH Out.1 := 1
+                {2}    | JOIN WITH #macroinvocationsMerge_03#join_rhs ON FIRST 2 OUTPUT Lhs.2, Lhs.0
+                return r1
+
+[2026-08-17 17:39:22] Evaluated non-recursive predicate Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs@09e9a1t6 in 62ms (size: 1152372).
+Evaluated relational algebra for predicate Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs@09e9a1t6:
+                {2} r1 = SCAN `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62` OUTPUT In.1, In.0
+                return r1
+
+[2026-08-17 17:39:22] Evaluated non-recursive predicate Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs@5b9492v7 in 29ms (size: 1152372).
+Evaluated relational algebra for predicate Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs@5b9492v7:
+                {1} r1 = SCAN `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62` OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-17 17:39:22] Completed evaluation of a recursive layer containing 1 different predicates (took 503ms). Predicates evaluated:
+Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 (took 490ms) (size: 2134953)
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 75ms on iteration 1 (delta size: 982581).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 1 running pipeline base:
+                {1} r1 = @macroinvocation AND NOT `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs`(FIRST 1)
+                {2}    | SCAN OUTPUT In.0, In.0
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 132ms on iteration 2 (delta size: 620222).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 2 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 170ms on iteration 3 (delta size: 280978).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 3 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 31ms on iteration 4 (delta size: 119040).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 4 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 31ms on iteration 5 (delta size: 72291).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 5 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 38ms on iteration 6 (delta size: 41724).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 6 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 6ms on iteration 7 (delta size: 10859).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 7 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 3ms on iteration 8 (delta size: 3469).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 8 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 2ms on iteration 9 (delta size: 1539).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 9 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 1ms on iteration 10 (delta size: 917).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 10 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 1ms on iteration 11 (delta size: 506).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 11 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 0ms on iteration 12 (delta size: 325).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 12 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 0ms on iteration 13 (delta size: 213).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 13 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 0ms on iteration 14 (delta size: 129).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 14 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 0ms on iteration 15 (delta size: 60).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 15 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 0ms on iteration 16 (delta size: 28).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 16 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 0ms on iteration 17 (delta size: 22).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 17 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 0ms on iteration 18 (delta size: 19).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 18 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 0ms on iteration 19 (delta size: 17).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 19 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 0ms on iteration 20 (delta size: 10).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 20 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 0ms on iteration 21 (delta size: 2).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 21 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Evaluated recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 in 0ms on iteration 22 (delta size: 2).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 on iteration 22 running pipeline standard:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev_delta` OUTPUT In.1, In.0
+                {2}    | JOIN WITH @macroinvocation ON FIRST 1 OUTPUT Lhs.1, Lhs.0
+                {2}    | JOIN WITH `Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db#prev`(FIRST 2)
+                return r1
+
+Pipeline base for Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 was evaluated in 1 iterations totaling 75ms (delta sizes total: 982581).
+Pipeline standard for Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5 was evaluated in 21 iterations totaling 415ms (delta sizes total: 1152372).
+
+[2026-08-17 17:39:23] Evaluated non-recursive predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs@2bc12bkp in 123ms (size: 2134953).
+Evaluated relational algebra for predicate Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs@2bc12bkp:
+                {2} r1 = SCAN `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db` OUTPUT In.1, In.0
+                return r1
+
+[2026-08-17 17:39:23] Evaluated non-recursive predicate Macro::MacroAccess.getLocation/0#dispred#91048e4b@21e76cef in 261ms (size: 2134953).
+Evaluated relational algebra for predicate Macro::MacroAccess.getLocation/0#dispred#91048e4b@21e76cef:
+                {2} r1 = JOIN macroinvocations WITH `Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.2
+                return r1
+
+[2026-08-17 17:39:23] Found predicate Location::Location.getContainer/0#9edabfb6@bbd97edk in the relation cache (size: 7867442)
+[2026-08-17 17:39:24] Evaluated non-recursive predicate Element::Element.getFile/0#2b8c8740@108af0vs in 606ms (size: 2134953).
+Evaluated relational algebra for predicate Element::Element.getFile/0#2b8c8740@108af0vs:
+                {2} r1 = SCAN `Macro::MacroAccess.getLocation/0#dispred#91048e4b` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `Location::Location.getContainer/0#9edabfb6` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                return r1
+
+[2026-08-17 17:39:24] Found predicate sourceLocationPrefix@64802cd1 in the relation cache (size: 1)
+[2026-08-17 17:39:24] Found predicate files@ec93749g in the relation cache (size: 2915)
+[2026-08-17 17:39:24] Evaluated non-recursive predicate File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i in 52ms (size: 2230).
+Evaluated relational algebra for predicate File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i:
+                {2} r1 = SCAN files OUTPUT In.1, In.0
+                {2}    | JOIN WITH sourceLocationPrefix ON FIRST 1 OUTPUT Lhs.1, _
+                {2}    | REWRITE WITH Out.1 := ""
+            
+                {5} r2 = JOIN files WITH sourceLocationPrefix CARTESIAN PRODUCT OUTPUT Lhs.0, Lhs.1, _, Rhs.0, _
+                {3}    | REWRITE WITH Tmp.2 := "/$", Tmp.4 := "", Out.2 := regexpReplaceAll(In.3,Tmp.2,Tmp.4) KEEPING 3
+                {5}    | SCAN OUTPUT In.0, _, In.2, In.1, _
+                {2}    | REWRITE WITH Tmp.1 := "/", Tmp.1 := (In.2 ++ Tmp.1), Tmp.4 := "", Out.1 := InverseAppend(Tmp.1,Tmp.4,In.3) KEEPING 2
+                {2}    | REWRITE WITH NOT [TEST InOut.1 startsWith "/"]
+            
+                {2} r3 = r1 UNION r2
+                return r3
+
+[2026-08-17 17:39:24] Found predicate locations_default@2b5cc3pr in the relation cache (size: 7867442)
+[2026-08-17 17:39:25] Evaluated non-recursive predicate Location::Location.getStartLine/0#d54f9e6c@53e8a5qa in 738ms (size: 7867442).
+Evaluated relational algebra for predicate Location::Location.getStartLine/0#d54f9e6c@53e8a5qa:
+                {2} r1 = SCAN locations_default OUTPUT In.0, In.2
+                return r1
+
+[2026-08-17 17:39:26] Evaluated non-recursive predicate #select#query@6a5158nh in 956ms (size: 0).
+Evaluated relational algebra for predicate #select#query@6a5158nh:
+                {2} r1 = SCAN macroinvocations OUTPUT In.1, In.0
+                {3}    | JOIN WITH `Macro::Macro.getName/0#dispred#e28b3699` ON FIRST 1 OUTPUT Lhs.1, _, Rhs.1
+                {3}    | REWRITE WITH Out.1 := 1
+                {2}    | JOIN WITH #macroinvocationsMerge_03#join_rhs ON FIRST 2 OUTPUT Lhs.0, Lhs.2
+                {3}    | JOIN WITH `Element::Element.getFile/0#2b8c8740` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Rhs.1
+                {4}    | JOIN WITH `Macro::MacroAccess.getLocation/0#dispred#91048e4b` ON FIRST 1 OUTPUT Rhs.1, Lhs.1, Lhs.0, Lhs.2
+                {4}    | JOIN WITH `Location::Location.getStartLine/0#d54f9e6c` ON FIRST 1 OUTPUT Lhs.2, Lhs.1, Lhs.3, Rhs.1
+                {5}    | JOIN WITH `Element::Element.getFile/0#2b8c8740` ON FIRST 1 OUTPUT Lhs.2, Lhs.1, Lhs.0, Lhs.3, Rhs.1
+                {5}    | JOIN WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.3, Lhs.4, Rhs.1
+                {5}    | REWRITE WITH TEST InOut.4 matches_constant ".*passes\.def$"
+                {4}    | SCAN OUTPUT In.3, In.0, In.1, In.2
+                {4}    | JOIN WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` ON FIRST 1 OUTPUT Lhs.2, Lhs.1, Lhs.3, Rhs.1
+                {4}    | JOIN WITH `cached_Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.1, Lhs.3, Lhs.2, Rhs.1
+                return r1
+
+[2026-08-17 17:39:26] Completed evaluation of query all_passes_in_gcc-passes-def.ql.
+Most expensive predicates for stage 6 of completed query all_passes_in_gcc-passes-def.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+        956ms |       |              | #select#query@6a5158nh
+        738ms |       |              | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+        606ms |       |              | Element::Element.getFile/0#2b8c8740@108af0vs
+        490ms |    22 | 170ms @ 3    | Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5
+        261ms |       |              | Macro::MacroAccess.getLocation/0#dispred#91048e4b@21e76cef
+        228ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62@ee0348a2
+        189ms |       |              | Macro::Macro.getName/0#dispred#e28b3699@9083fa3c
+        183ms |       |              | #macroinvocationsMerge_03#join_rhs@52ced6u6
+        145ms |       |              | @macroinvocation@8ef2a3ud
+        123ms |       |              | Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs@2bc12bkp
+         62ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs@09e9a1t6
+         52ms |       |              | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i
+         29ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs@5b9492v7
+
+Most expensive predicates for completed query all_passes_in_gcc-passes-def.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+        956ms |       |              | #select#query@6a5158nh
+        738ms |       |              | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+        606ms |       |              | Element::Element.getFile/0#2b8c8740@108af0vs
+        490ms |    22 | 170ms @ 3    | Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5
+        261ms |       |              | Macro::MacroAccess.getLocation/0#dispred#91048e4b@21e76cef
+        228ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62@ee0348a2
+        189ms |       |              | Macro::Macro.getName/0#dispred#e28b3699@9083fa3c
+        183ms |       |              | #macroinvocationsMerge_03#join_rhs@52ced6u6
+        145ms |       |              | @macroinvocation@8ef2a3ud
+        123ms |       |              | Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs@2bc12bkp
+         62ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs@09e9a1t6
+         52ms |       |              | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i
+         29ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs@5b9492v7
+
+[2026-08-17 17:39:26] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 4.7 seconds
+        * Total time spent evaluating predicates: 4.1 seconds

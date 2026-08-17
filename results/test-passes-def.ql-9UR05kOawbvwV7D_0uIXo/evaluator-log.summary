@@ -1,0 +1,43 @@
+[2026-08-17 17:26:03] Summary of a CodeQL evaluation that started at 2026-08-17T16:26:03.517513141Z
+[2026-08-17 17:26:03] 
+[2026-08-17 17:26:03] Found predicate cached_ResolveClass::isType/1#eabb9878@82ca1924 in the relation cache (size: 123849)
+[2026-08-17 17:26:03] Found predicate cached_ResolveClass::resolveClass/1#ea47deee@a66798km in the relation cache (size: 24895)
+[2026-08-17 17:26:03] Found predicate cached_ResolveGlobalVariable::isVariable/1#6e051315@90738ahc in the relation cache (size: 446985)
+[2026-08-17 17:26:03] Found predicate cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f@d04f11u9 in the relation cache (size: 447482)
+[2026-08-17 17:26:03] Found predicate cached_ResolveFunction::isFunction/1#9226b83f@f98098d9 in the relation cache (size: 91685)
+[2026-08-17 17:26:03] Found predicate cached_ResolveFunction::resolveFunction/1#576ba5ee@d186d880 in the relation cache (size: 107513)
+[2026-08-17 17:26:03] Found predicate cached_ResolveClass::isClass/1#af2a1ca6@ecb9e6su in the relation cache (size: 10868)
+[2026-08-17 17:26:03] Found predicate cached_Expr::Expr.getType/0#dispred#444cc5af@6044b650 in the relation cache (size: 10158564)
+[2026-08-17 17:26:03] Found predicate cached_Element::ElementBase.toString/0#dispred#6e016f86@b58a23s4 in the relation cache (size: 16830229)
+[2026-08-17 17:26:03] Found predicate File::Impl::Container.getRelativePath/0#dispred#deec4f8e@e3f4acr4 in the relation cache (size: 2277)
+[2026-08-17 17:26:03] Found predicate files_0#antijoin_rhs@81abb6m0 in the relation cache (size: 2915)
+[2026-08-17 17:26:03] Found predicate cached_QualifiedName::declarationHasQualifiedName/4#749d7d29@bad017oq in the relation cache (size: 173869)
+[2026-08-17 17:26:03] Evaluated non-recursive predicate #select@df9fddve in 16ms (size: 0).
+Evaluated relational algebra for predicate #select@df9fddve:
+                {2} r1 = JOIN @file WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+            
+                {2} r2 = REWRITE r1 WITH TEST InOut.1 endsWith "/passes.def"
+                {1}    | SCAN OUTPUT In.0
+            
+                {2} r3 = REWRITE r1 WITH TEST InOut.1 matches_constant ".*passes\.def$"
+                {1}    | SCAN OUTPUT In.0
+            
+                {1} r4 = r2 UNION r3
+                {1}    | JOIN WITH @file ON FIRST 1 OUTPUT Lhs.0
+                {2}    | JOIN WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+                return r4
+
+[2026-08-17 17:26:03] Completed evaluation of query test-passes-def.ql.
+Most expensive predicates for stage 6 of completed query test-passes-def.ql:
+        time | predicate
+        -----|----------
+        16ms | #select@df9fddve
+
+Most expensive predicates for completed query test-passes-def.ql:
+        time | predicate
+        -----|----------
+        16ms | #select@df9fddve
+
+[2026-08-17 17:26:03] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.1 seconds
+        * Total time spent evaluating predicates: 0.0 seconds

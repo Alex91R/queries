@@ -1,0 +1,22 @@
+Completed evaluation of query test-passes-def.ql.
+Most expensive predicates for stage 6 of completed query test-passes-def.ql:
+        time | predicate
+        -----|----------
+        63ms | #select#query@419dff6u
+        55ms | File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc
+        41ms | #select@86b74c56
+         4ms | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@1b997fg6
+         1ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@395c07oj
+
+Most expensive predicates for completed query test-passes-def.ql:
+        time | predicate
+        -----|----------
+        63ms | #select#query@419dff6u
+        55ms | File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc
+        41ms | #select@86b74c56
+         4ms | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@1b997fg6
+         1ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@395c07oj
+
+[2026-08-17 17:28:49] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.2 seconds
+        * Total time spent evaluating predicates: 0.2 seconds

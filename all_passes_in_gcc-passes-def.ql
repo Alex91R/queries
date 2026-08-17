@@ -1,25 +1,16 @@
-/**
- * @name GCC passes listed in passes.def
- * @description Lists pass entries scheduled in gcc/passes.def.
- * !Currently not working!
+  /**
+ * @name Macros in passes.def
  * @kind table
  * @id cpp/gcc/passes-def
  */
 
 import cpp
 
-from MacroInvocation mi//, string passName
-where
-  mi.getFile().getRelativePath().matches("%/passes.def") //and
-  /*(
-    mi.getMacroName() = "NEXT_PASS" or
-    mi.getMacroName() = "NEXT_PASS_WITH_ARG" or
-    mi.getMacroName() = "NEXT_PASS_NUM"
-  ) and */
-  //passName = mi.getUnexpandedArgument(0)
+from MacroInvocation mi
+where mi.getFile().getRelativePath().regexpMatch(".*passes\\.def$")
 select
-  //passName,
+  mi.getMacroName(),
+  mi.getFile().getRelativePath(),
+  mi.getLocation().getStartLine() as location,
   mi.toString()
-  //mi.getFile().getRelativePath(),
-  //mi.getMacroName()//,
-  //mi.getLocation().getStartLine()
+order by location

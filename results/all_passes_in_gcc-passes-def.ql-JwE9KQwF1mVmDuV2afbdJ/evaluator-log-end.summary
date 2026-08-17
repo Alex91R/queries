@@ -1,0 +1,38 @@
+Completed evaluation of query all_passes_in_gcc-passes-def.ql.
+Most expensive predicates for stage 6 of completed query all_passes_in_gcc-passes-def.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+        956ms |       |              | #select#query@6a5158nh
+        738ms |       |              | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+        606ms |       |              | Element::Element.getFile/0#2b8c8740@108af0vs
+        490ms |    22 | 170ms @ 3    | Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5
+        261ms |       |              | Macro::MacroAccess.getLocation/0#dispred#91048e4b@21e76cef
+        228ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62@ee0348a2
+        189ms |       |              | Macro::Macro.getName/0#dispred#e28b3699@9083fa3c
+        183ms |       |              | #macroinvocationsMerge_03#join_rhs@52ced6u6
+        145ms |       |              | @macroinvocation@8ef2a3ud
+        123ms |       |              | Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs@2bc12bkp
+         62ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs@09e9a1t6
+         52ms |       |              | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i
+         29ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs@5b9492v7
+
+Most expensive predicates for completed query all_passes_in_gcc-passes-def.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+        956ms |       |              | #select#query@6a5158nh
+        738ms |       |              | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+        606ms |       |              | Element::Element.getFile/0#2b8c8740@108af0vs
+        490ms |    22 | 170ms @ 3    | Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db@11df0wp5
+        261ms |       |              | Macro::MacroAccess.getLocation/0#dispred#91048e4b@21e76cef
+        228ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62@ee0348a2
+        189ms |       |              | Macro::Macro.getName/0#dispred#e28b3699@9083fa3c
+        183ms |       |              | #macroinvocationsMerge_03#join_rhs@52ced6u6
+        145ms |       |              | @macroinvocation@8ef2a3ud
+        123ms |       |              | Macro::MacroAccess.getOutermostMacroAccess/0#d58b05db_10#join_rhs@2bc12bkp
+         62ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_10#join_rhs@09e9a1t6
+         52ms |       |              | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i
+         29ms |       |              | Macro::MacroAccess.getParentInvocation/0#dispred#e56b9a62_0#antijoin_rhs@5b9492v7
+
+[2026-08-17 17:39:26] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 4.7 seconds
+        * Total time spent evaluating predicates: 4.1 seconds

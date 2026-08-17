@@ -1,0 +1,58 @@
+[2026-08-17 16:55:46] Summary of a CodeQL evaluation that started at 2026-08-17T15:55:46.338284429Z
+[2026-08-17 16:55:46] 
+[2026-08-17 16:55:46] Found predicate cached_ResolveClass::isType/1#eabb9878@82ca1924 in the relation cache (size: 123849)
+[2026-08-17 16:55:46] Found predicate cached_ResolveClass::resolveClass/1#ea47deee@a66798km in the relation cache (size: 24895)
+[2026-08-17 16:55:46] Found predicate cached_ResolveGlobalVariable::isVariable/1#6e051315@90738ahc in the relation cache (size: 446985)
+[2026-08-17 16:55:46] Found predicate cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f@d04f11u9 in the relation cache (size: 447482)
+[2026-08-17 16:55:46] Found predicate cached_ResolveFunction::isFunction/1#9226b83f@f98098d9 in the relation cache (size: 91685)
+[2026-08-17 16:55:46] Found predicate cached_ResolveFunction::resolveFunction/1#576ba5ee@d186d880 in the relation cache (size: 107513)
+[2026-08-17 16:55:46] Found predicate cached_ResolveClass::isClass/1#af2a1ca6@ecb9e6su in the relation cache (size: 10868)
+[2026-08-17 16:55:46] Found predicate cached_Expr::Expr.getType/0#dispred#444cc5af@6044b650 in the relation cache (size: 10158564)
+[2026-08-17 16:55:46] Found predicate cached_Element::ElementBase.toString/0#dispred#6e016f86@b58a23s4 in the relation cache (size: 16830229)
+[2026-08-17 16:55:46] Found predicate cached_QualifiedName::declarationHasQualifiedName/4#749d7d29@bad017oq in the relation cache (size: 173869)
+[2026-08-17 16:55:46] Evaluated non-recursive predicate File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0 in 1ms (size: 3045).
+Evaluated relational algebra for predicate File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0:
+                {2} r1 = files UNION folders
+                return r1
+
+[2026-08-17 16:55:46] Evaluated non-recursive predicate File::Impl::Container.getRelativePath/0#dispred#deec4f8e@e3f4acr4 in 74ms (size: 2277).
+Evaluated relational algebra for predicate File::Impl::Container.getRelativePath/0#dispred#deec4f8e@e3f4acr4:
+                {2} r1 = SCAN `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` OUTPUT In.1, In.0
+                {2}    | JOIN WITH sourceLocationPrefix ON FIRST 1 OUTPUT Lhs.1, _
+                {2}    | REWRITE WITH Out.1 := ""
+            
+                {5} r2 = JOIN `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` WITH sourceLocationPrefix CARTESIAN PRODUCT OUTPUT Lhs.0, Lhs.1, _, Rhs.0, _
+                {3}    | REWRITE WITH Tmp.2 := "/$", Tmp.4 := "", Out.2 := regexpReplaceAll(In.3,Tmp.2,Tmp.4) KEEPING 3
+                {5}    | SCAN OUTPUT In.0, _, In.2, In.1, _
+                {2}    | REWRITE WITH Tmp.1 := "/", Tmp.1 := (In.2 ++ Tmp.1), Tmp.4 := "", Out.1 := InverseAppend(Tmp.1,Tmp.4,In.3) KEEPING 2
+                {2}    | REWRITE WITH NOT [TEST InOut.1 startsWith "/"]
+            
+                {2} r3 = r1 UNION r2
+                return r3
+
+[2026-08-17 16:55:46] Found predicate files_0#antijoin_rhs@81abb6m0 in the relation cache (size: 2915)
+[2026-08-17 16:55:46] Evaluated non-recursive predicate #select@76cd23s0 in 2ms (size: 0).
+Evaluated relational algebra for predicate #select@76cd23s0:
+                {2} r1 = JOIN `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` WITH @file ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                {2}    | REWRITE WITH TEST InOut.1 matches_constant ".*passes\.def$"
+                {2}    | JOIN WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+                return r1
+
+[2026-08-17 16:55:46] Completed evaluation of query test-passes-def.ql.
+Most expensive predicates for stage 6 of completed query test-passes-def.ql:
+        time | predicate
+        -----|----------
+        74ms | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@e3f4acr4
+         2ms | #select@76cd23s0
+         1ms | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+
+Most expensive predicates for completed query test-passes-def.ql:
+        time | predicate
+        -----|----------
+        74ms | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@e3f4acr4
+         2ms | #select@76cd23s0
+         1ms | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+
+[2026-08-17 16:55:46] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.1 seconds
+        * Total time spent evaluating predicates: 0.1 seconds

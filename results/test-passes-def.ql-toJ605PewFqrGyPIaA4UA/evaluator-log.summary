@@ -1,0 +1,85 @@
+[2026-08-17 17:28:48] Summary of a CodeQL evaluation that started at 2026-08-17T16:28:48.878651921Z
+[2026-08-17 17:28:48] 
+[2026-08-17 17:28:48] Found predicate cached_ResolveClass::isType/1#eabb9878@82ca1924 in the relation cache (size: 123849)
+[2026-08-17 17:28:48] Found predicate cached_ResolveClass::resolveClass/1#ea47deee@a66798km in the relation cache (size: 24895)
+[2026-08-17 17:28:48] Found predicate cached_ResolveGlobalVariable::isVariable/1#6e051315@90738ahc in the relation cache (size: 446985)
+[2026-08-17 17:28:48] Found predicate cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f@d04f11u9 in the relation cache (size: 447482)
+[2026-08-17 17:28:48] Found predicate cached_ResolveFunction::isFunction/1#9226b83f@f98098d9 in the relation cache (size: 91685)
+[2026-08-17 17:28:48] Found predicate cached_ResolveFunction::resolveFunction/1#576ba5ee@d186d880 in the relation cache (size: 107513)
+[2026-08-17 17:28:48] Found predicate cached_ResolveClass::isClass/1#af2a1ca6@ecb9e6su in the relation cache (size: 10868)
+[2026-08-17 17:28:48] Found predicate cached_Expr::Expr.getType/0#dispred#444cc5af@6044b650 in the relation cache (size: 10158564)
+[2026-08-17 17:28:48] Found predicate cached_Element::ElementBase.toString/0#dispred#6e016f86@b58a23s4 in the relation cache (size: 16830229)
+[2026-08-17 17:28:48] Found predicate files_0#antijoin_rhs@81abb6m0 in the relation cache (size: 2915)
+[2026-08-17 17:28:48] Found predicate File::Impl::Container.getRelativePath/0#dispred#deec4f8e@e3f4acr4 in the relation cache (size: 2277)
+[2026-08-17 17:28:48] Found predicate cached_QualifiedName::declarationHasQualifiedName/4#749d7d29@bad017oq in the relation cache (size: 173869)
+[2026-08-17 17:28:48] Evaluated non-recursive predicate #select@86b74c56 in 41ms (size: 5).
+Evaluated relational algebra for predicate #select@86b74c56:
+                {2} r1 = JOIN `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` WITH @file ON FIRST 1 OUTPUT Lhs.0, Lhs.1
+                {2}    | REWRITE WITH TEST InOut.1 matches_constant ".*pass.*"
+                {2}    | JOIN WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+                return r1
+
+[2026-08-17 17:28:48] Found predicate File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0 in the relation cache (size: 3045)
+[2026-08-17 17:28:48] Found predicate File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs@c84492vk in the relation cache (size: 2915)
+[2026-08-17 17:28:49] Evaluated non-recursive predicate File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc in 55ms (size: 2915).
+Evaluated relational algebra for predicate File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc:
+                {4} r1 = JOIN @file WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, _, Rhs.1, _
+                {2}    | REWRITE WITH Tmp.1 := "file://", Tmp.3 := ":0:0:0:0", Out.1 := (Tmp.1 ++ In.2 ++ Tmp.3) KEEPING 2
+                return r1
+
+[2026-08-17 17:28:49] Evaluated non-recursive predicate _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@395c07oj in 1ms (size: 5).
+Evaluated relational algebra for predicate _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@395c07oj:
+                {3} r1 = JOIN #select WITH `File::Impl::File.getURL/0#dispred#2f739b0d` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Rhs.1
+            
+                {2} r2 = #select AND NOT `File::Impl::File.getURL/0#dispred#2f739b0d_0#antijoin_rhs`(FIRST 1)
+                {3}    | SCAN OUTPUT In.0, In.1, _
+                {3}    | REWRITE WITH Out.2 := ""
+            
+                {3} r3 = r1 UNION r2
+                return r3
+
+[2026-08-17 17:28:49] Found predicate project#Element::ElementBase.toString/0#dispred#6e016f86@00b52b64 in the relation cache (size: 16823598)
+[2026-08-17 17:28:49] Evaluated non-recursive predicate _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@1b997fg6 in 4ms (size: 5).
+Evaluated relational algebra for predicate _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@1b997fg6:
+                {3} r1 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `project#Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2
+            
+                {3} r2 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, Lhs.1, Lhs.2
+            
+                {3} r3 = r1 UNION r2
+                return r3
+
+[2026-08-17 17:28:49] Evaluated non-recursive predicate #select#query@419dff6u in 63ms (size: 5).
+Evaluated relational algebra for predicate #select#query@419dff6u:
+                {4} r1 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d` ON FIRST 1 OUTPUT Lhs.0, Rhs.1, Lhs.2, Lhs.1
+            
+                {4} r2 = JOIN `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` WITH `cached_Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.0, Rhs.1, Lhs.2, Lhs.1
+            
+                {3} r3 = `_#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared` AND NOT `_File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs`(FIRST 3)
+                {4}    | SCAN OUTPUT In.0, _, In.2, In.1
+                {4}    | REWRITE WITH Out.1 := "(no string representation)"
+            
+                {4} r4 = r1 UNION r2 UNION r3
+                return r4
+
+[2026-08-17 17:28:49] Completed evaluation of query test-passes-def.ql.
+Most expensive predicates for stage 6 of completed query test-passes-def.ql:
+        time | predicate
+        -----|----------
+        63ms | #select#query@419dff6u
+        55ms | File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc
+        41ms | #select@86b74c56
+         4ms | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@1b997fg6
+         1ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@395c07oj
+
+Most expensive predicates for completed query test-passes-def.ql:
+        time | predicate
+        -----|----------
+        63ms | #select#query@419dff6u
+        55ms | File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc
+        41ms | #select@86b74c56
+         4ms | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@1b997fg6
+         1ms | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@395c07oj
+
+[2026-08-17 17:28:49] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.2 seconds
+        * Total time spent evaluating predicates: 0.2 seconds

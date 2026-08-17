@@ -1,0 +1,18 @@
+Completed evaluation of query test-passes-def.ql.
+Most expensive predicates for stage 6 of completed query test-passes-def.ql:
+        time | predicate
+        -----|----------
+        74ms | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@e3f4acr4
+         2ms | #select@76cd23s0
+         1ms | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+
+Most expensive predicates for completed query test-passes-def.ql:
+        time | predicate
+        -----|----------
+        74ms | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@e3f4acr4
+         2ms | #select@76cd23s0
+         1ms | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+
+[2026-08-17 16:55:46] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.1 seconds
+        * Total time spent evaluating predicates: 0.1 seconds
