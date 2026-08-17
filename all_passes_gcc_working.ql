@@ -29,4 +29,4 @@ class GccPassClass extends Class {
 }
 
 from GccPassClass pass 
-select pass.getAFile(), pass.getPassKey(), pass.getLocation(), pass.getABaseClass*().getName()
+select pass.getAFile(), pass.getPassKey(), pass.getLocation(), pass.getABaseClass+().getName()

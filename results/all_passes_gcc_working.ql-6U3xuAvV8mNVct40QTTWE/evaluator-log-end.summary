@@ -1,0 +1,75 @@
+Completed evaluation of query all_passes_gcc_working.ql.
+Most expensive predicates for stage 5 of completed query all_passes_gcc_working.ql:
+        time | predicate
+        -----|----------
+         2ms | UserType::UserType.getName/0#dispred#68e0aaf0@c6c4e3bl
+
+Most expensive predicates for stage 6 of completed query all_passes_gcc_working.ql:
+        time  | evals |  max @ iter | predicate
+        ------|-------|-------------|----------
+        11.1s |       |             | Location::Location.toString/0#dispred#6ede7323@f4f5c6jk
+         2.3s |       |             | #locations_defaultMerge_23450#join_rhs@99f7bc3i
+        343ms |       |             | Location::Location.hasLocationInfo/5#dispred#558082fb@acb21f6m
+         22ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus@02d96dau
+         21ms |     2 | 14ms @ 2    | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@6d1bdw2s
+         17ms |       |             | #select#query@031d40cn
+         13ms |       |             | Element::Element.getLocation/0#dispred#6c3f5b09#bf@1385e66t
+          8ms |       |             | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@d5c71dik
+          6ms |       |             | UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf@89ef68j3
+          6ms |       |             | File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc
+          6ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bounded#2@7ad83dqu
+          5ms |       |             | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb_10#join_rhs@2800861m
+          4ms |       |             | project##Class::Class.getABaseClass/0#dispred#e9ba966bPlus@76bd7b2h
+          3ms |       |             | UserType::UserType.getDefinition/0#dispred#37e32cce#bf@791401hp
+          2ms |       |             | Class::ProxyClass.getTemplateParameter/0#dispred#cbd49674@7283a00q
+          2ms |       |             | Class::ProxyClass#4049630c@8aeab8l2
+          2ms |       |             | UserType::UserType.getName/0#dispred#68e0aaf0@c6c4e3bl
+          2ms |       |             | UserType::UserType.getDefinitionLocation/0#dispred#ecc1d8ec#bf@26b3a57s
+          2ms |       |             | TemplateParameter::TypeTemplateParameter#de0ff55d@35865381
+          2ms |       |             | #select@47524bn2
+          1ms |       |             | Type::Type.getName/0#dispred#77a04a0a@a8e234eu
+          1ms |       |             | project#UserType::UserType.getDefinition/0#dispred#37e32cce#bf@d2f06frv
+          0ms |       |             | Declaration::Declaration.hasDefinition/0#dispred#b576e37a#b@792c496f
+          0ms |       |             | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+          0ms |       |             | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@b34549d7
+          0ms |       |             | UserType::UserType.getLocation/0#a323d74c#bf@6e15a0s3
+          0ms |       |             | NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a@7f7036l4
+          0ms |       |             | m#UserType::UserType.getDefinitionLocation/0#dispred#ecc1d8ec#bf@7b2d3c4a
+          0ms |       |             | all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41@e52483rt
+
+Most expensive predicates for completed query all_passes_gcc_working.ql:
+        time  | evals |  max @ iter | predicate
+        ------|-------|-------------|----------
+        11.1s |       |             | Location::Location.toString/0#dispred#6ede7323@f4f5c6jk
+         2.3s |       |             | #locations_defaultMerge_23450#join_rhs@99f7bc3i
+        343ms |       |             | Location::Location.hasLocationInfo/5#dispred#558082fb@acb21f6m
+         22ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus@02d96dau
+         21ms |     2 | 14ms @ 2    | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb@6d1bdw2s
+         17ms |       |             | #select#query@031d40cn
+         13ms |       |             | Element::Element.getLocation/0#dispred#6c3f5b09#bf@1385e66t
+          8ms |       |             | _#select_File::Impl::File.getURL/0#dispred#2f739b0d_File::Impl::File.getURL/0#dispred#2f739b0d_0#ant__#shared@d5c71dik
+          6ms |       |             | UserType::UserType.getADeclarationLocation/0#dispred#7fa8e4f4#bf@89ef68j3
+          6ms |       |             | File::Impl::File.getURL/0#dispred#2f739b0d@2b28edgc
+          6ms |       |             | #Class::Class.getABaseClass/0#dispred#e9ba966bPlus#bounded#2@7ad83dqu
+          5ms |       |             | UserType::UserType.getADeclarationEntry/0#cea44e2f#bb_10#join_rhs@2800861m
+          4ms |       |             | project##Class::Class.getABaseClass/0#dispred#e9ba966bPlus@76bd7b2h
+          3ms |       |             | UserType::UserType.getDefinition/0#dispred#37e32cce#bf@791401hp
+          2ms |       |             | Class::ProxyClass.getTemplateParameter/0#dispred#cbd49674@7283a00q
+          2ms |       |             | Class::ProxyClass#4049630c@8aeab8l2
+          2ms |       |             | UserType::UserType.getName/0#dispred#68e0aaf0@c6c4e3bl
+          2ms |       |             | UserType::UserType.getDefinitionLocation/0#dispred#ecc1d8ec#bf@26b3a57s
+          2ms |       |             | TemplateParameter::TypeTemplateParameter#de0ff55d@35865381
+          2ms |       |             | #select@47524bn2
+          1ms |       |             | Type::Type.getName/0#dispred#77a04a0a@a8e234eu
+          1ms |       |             | project#UserType::UserType.getDefinition/0#dispred#37e32cce#bf@d2f06frv
+          0ms |       |             | Declaration::Declaration.hasDefinition/0#dispred#b576e37a#b@792c496f
+          0ms |       |             | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+          0ms |       |             | _File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d__#select_File::Impl::File.getURL/0#dispred__#antijoin_rhs@b34549d7
+          0ms |       |             | UserType::UserType.getLocation/0#a323d74c#bf@6e15a0s3
+          0ms |       |             | NameQualifiers::NameQualifyingElement.getName/0#dispred#6b6b1f7a@7f7036l4
+          0ms |       |             | m#UserType::UserType.getDefinitionLocation/0#dispred#ecc1d8ec#bf@7b2d3c4a
+          0ms |       |             | all_passes_gcc_working::GccPassClass.getPassKey/0#dispred#19973e41@e52483rt
+
+[2026-08-17 08:26:58] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 14.6 seconds
+        * Total time spent evaluating predicates: 13.8 seconds
