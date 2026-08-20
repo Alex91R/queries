@@ -1,0 +1,110 @@
+Completed evaluation of query test-common-opt.ql.
+Most expensive predicates for stage 0 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+         0ms | @usertype@bb08c6gq
+
+Most expensive predicates for stage 1 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+         1ms | @function@24d7f7aa
+
+Most expensive predicates for stage 3 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+         1ms | @function@24d7f7aa
+         0ms | @usertype@bb08c6gq
+
+Most expensive predicates for stage 4 of completed query test-common-opt.ql:
+        time  | predicate
+        ------|----------
+        805ms | exprs_10#join_rhs@0a156eph
+          0ms | @usertype@bb08c6gq
+
+Most expensive predicates for stage 5 of completed query test-common-opt.ql:
+        time  | predicate
+        ------|----------
+        805ms | exprs_10#join_rhs@0a156eph
+         14ms | @literal@ba9002q1
+          1ms | @function@24d7f7aa
+          0ms | @usertype@bb08c6gq
+
+Most expensive predicates for stage 6 of completed query test-common-opt.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+         1.3s |       |              | #locations_defaultMerge_23450#join_rhs@99f7bc3i
+        962ms |       |              | Literal::TextLiteral#c60dc64a@e609bbi0
+        805ms |       |              | exprs_10#join_rhs@0a156eph
+        572ms |       |              | Element::Element.getFile/0#2b8c8740@fb4d81m9
+        398ms |       |              | project#Element::ElementBase.toString/0#dispred#6e016f86@00b52b64
+        243ms |       |              | _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t
+        190ms |       |              | Location::Location.hasLocationInfo/5#dispred#558082fb@79ec0781
+        167ms |     4 | 139ms @ 2    | Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba
+        142ms |       |              | Expr::Expr.getValue/0#dispred#5f237cff@d56e9f14
+        106ms |       |              | Expr::Expr.getLocation/0#dispred#0a3d90c6@116cadd2
+         83ms |       |              | Expr::Expr.getDbValueText/0#dispred#ee5f51fc@873b6f6f
+         75ms |       |              | Location::Location.getContainer/0#9edabfb6@bbd97edk
+         71ms |       |              | Expr::Expr.getValueText/0#dispred#a49585d4#bf@9e5533po
+         66ms |       |              | #select@ca7de586
+         60ms |       |              | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+         47ms |       |              | #exprconvMerge_10#join_rhs@227869fv
+         35ms |       |              | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i
+         28ms |       |              | Literal::StringLiteral#847e415f@3242e1ag
+         26ms |       |              | Expr::Expr.getDbValueText/0#dispred#ee5f51fc_0#antijoin_rhs@3e26d62r
+         17ms |       |              | project#Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@d265cala
+         15ms |     3 |  12ms @ 1    | Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq
+         14ms |       |              | @literal@ba9002q1
+         10ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50#bf@53f975bf
+          8ms |       |              | Type::ArrayType#1302b17e@4f0735bb
+          7ms |       |              | #derivedtypesMerge_20#join_rhs@c72a3drn
+          4ms |       |              | @variable@e66aaach
+          3ms |       |              | Location::UnknownLocation#d525d7d6@6b48ecgn
+          2ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs@37ab0ccf
+          2ms |       |              | #select#query@cd66fav8
+          1ms |       |              | @function@24d7f7aa
+          0ms |       |              | @usertype@bb08c6gq
+          0ms |       |              | _#select_Expr::Expr.getLocation/0#dispred#0a3d90c6#shared@24202b7t
+          0ms |       |              | project#Expr::Expr.getExprLocationOverride/0#80738c92@ef4953aj
+          0ms |       |              | _Location::Location.hasLocationInfo/5#dispred#558082fb__#select_Expr::Expr.getLocation/0#dispred#0a3__#antijoin_rhs@a0923e8n
+
+Most expensive predicates for completed query test-common-opt.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+         1.3s |       |              | #locations_defaultMerge_23450#join_rhs@99f7bc3i
+        962ms |       |              | Literal::TextLiteral#c60dc64a@e609bbi0
+        805ms |       |              | exprs_10#join_rhs@0a156eph
+        572ms |       |              | Element::Element.getFile/0#2b8c8740@fb4d81m9
+        398ms |       |              | project#Element::ElementBase.toString/0#dispred#6e016f86@00b52b64
+        243ms |       |              | _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t
+        190ms |       |              | Location::Location.hasLocationInfo/5#dispred#558082fb@79ec0781
+        167ms |     4 | 139ms @ 2    | Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba
+        142ms |       |              | Expr::Expr.getValue/0#dispred#5f237cff@d56e9f14
+        106ms |       |              | Expr::Expr.getLocation/0#dispred#0a3d90c6@116cadd2
+         83ms |       |              | Expr::Expr.getDbValueText/0#dispred#ee5f51fc@873b6f6f
+         75ms |       |              | Location::Location.getContainer/0#9edabfb6@bbd97edk
+         71ms |       |              | Expr::Expr.getValueText/0#dispred#a49585d4#bf@9e5533po
+         66ms |       |              | #select@ca7de586
+         60ms |       |              | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+         47ms |       |              | #exprconvMerge_10#join_rhs@227869fv
+         35ms |       |              | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i
+         28ms |       |              | Literal::StringLiteral#847e415f@3242e1ag
+         26ms |       |              | Expr::Expr.getDbValueText/0#dispred#ee5f51fc_0#antijoin_rhs@3e26d62r
+         17ms |       |              | project#Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@d265cala
+         15ms |     3 |  12ms @ 1    | Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq
+         14ms |       |              | @literal@ba9002q1
+         10ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50#bf@53f975bf
+          8ms |       |              | Type::ArrayType#1302b17e@4f0735bb
+          7ms |       |              | #derivedtypesMerge_20#join_rhs@c72a3drn
+          4ms |       |              | @variable@e66aaach
+          3ms |       |              | Location::UnknownLocation#d525d7d6@6b48ecgn
+          2ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs@37ab0ccf
+          2ms |       |              | #select#query@cd66fav8
+          1ms |       |              | @function@24d7f7aa
+          0ms |       |              | @usertype@bb08c6gq
+          0ms |       |              | _#select_Expr::Expr.getLocation/0#dispred#0a3d90c6#shared@24202b7t
+          0ms |       |              | project#Expr::Expr.getExprLocationOverride/0#80738c92@ef4953aj
+          0ms |       |              | _Location::Location.hasLocationInfo/5#dispred#558082fb__#select_Expr::Expr.getLocation/0#dispred#0a3__#antijoin_rhs@a0923e8n
+
+[2026-08-18 22:32:59] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 7.3 seconds
+        * Total time spent evaluating predicates: 6.5 seconds

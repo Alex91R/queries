@@ -1,0 +1,21 @@
+[2026-08-20 10:44:55] Summary of a CodeQL evaluation that started at 2026-08-20T09:44:55.086283214Z
+[2026-08-20 10:44:55] 
+[2026-08-20 10:44:55] Evaluated non-recursive predicate #select#query@b60b84rq in 135ms (size: 211).
+Evaluated relational algebra for predicate #select#query@b60b84rq:
+                {3} r1 = CONSTANT(unique string, unique string, unique string)["-faggressive-loop-optimizations","flag_aggressive_loop_optimizations","x_flag_aggressive_loop_optimizations";...]
+                return r1
+
+[2026-08-20 10:44:55] Completed evaluation of query S1_Q00_diag_generated_option_facts.ql.
+Most expensive predicates for stage 0 of completed query S1_Q00_diag_generated_option_facts.ql:
+        time  | predicate
+        ------|----------
+        135ms | #select#query@b60b84rq
+
+Most expensive predicates for completed query S1_Q00_diag_generated_option_facts.ql:
+        time  | predicate
+        ------|----------
+        135ms | #select#query@b60b84rq
+
+[2026-08-20 10:44:55] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.2 seconds
+        * Total time spent evaluating predicates: 0.1 seconds

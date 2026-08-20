@@ -1,16 +1,22 @@
 /**
- * @name Find gcc/common.opt
+ * @name GCC generated -f options
+ * @description Finds generated GCC option-name string literals that look like -f options.
  * @kind table
- * @id cpp/gcc/common-opt
+ * @id cpp/gcc/option-facts-generated
  */
 
 import cpp
 
-from File f
+from StringLiteral s
 where
-  f.getRelativePath().regexpMatch(".*(^|/)gcc/common\\.opt$")
-  or f.getRelativePath().regexpMatch(".*common\\.opt$")
+  (
+    s.getFile().getRelativePath().regexpMatch(".*options\\.c$")
+    or s.getFile().getRelativePath().regexpMatch(".*options\\.cc$")
+  )
+  and s.getValue().regexpMatch("f[a-zA-Z0-9_+=-].*")
 select
-  f,
-  f.getRelativePath(),
-  f.getAbsolutePath()
+  "-" + s.getValue() as flag,
+  s.getFile().getRelativePath() as file,
+  s.getLocation().getStartLine() as line,
+  s
+order by flag

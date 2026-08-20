@@ -1,0 +1,82 @@
+{
+  "time" : "2026-08-20T09:44:55.086283214Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 114920,
+  "nanoTime" : 65655287926165,
+  "codeqlVersion" : "2.26.3",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-08-20T09:44:55.141640525Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 114921,
+  "nanoTime" : 65655343248420,
+  "queryName" : "/home/oleksii-shemshur/work/toolchains/tools/queries/S1_Q00_diag_generated_option_facts.ql",
+  "stages" : [ 31 ]
+}
+
+{
+  "time" : "2026-08-20T09:44:55.144935396Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 114922,
+  "nanoTime" : 65655346539594,
+  "raHash" : "b60b84rq0q82bukgske308b1ca2",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 31 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/S1_Q00_diag_generated_option_facts.ql:10,1-16,16",
+  "ra" : {
+    "pipeline" : [
+      "    {3} r1 = CONSTANT(unique string, unique string, unique string)[\"-faggressive-loop-optimizations\",\"flag_aggressive_loop_optimizations\",\"x_flag_aggressive_loop_optimizations\";...]",
+      "    return r1"
+    ]
+  },
+  "dependencies" : { },
+  "queryCausingWork" : 114921
+}
+
+{
+  "time" : "2026-08-20T09:44:55.145076972Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 114923,
+  "nanoTime" : 65655346663967,
+  "predicateStartEvent" : 114922,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-20T09:44:55.275443570Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 114924,
+  "nanoTime" : 65655477051204,
+  "startEvent" : 114923,
+  "resultSize" : 211
+}
+
+{
+  "time" : "2026-08-20T09:44:55.280145080Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 114925,
+  "nanoTime" : 65655481750209,
+  "startEvent" : 114922,
+  "resultSize" : 211
+}
+
+{
+  "time" : "2026-08-20T09:44:55.296819451Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 114926,
+  "nanoTime" : 65655498455208,
+  "startEvent" : 114921,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-08-20T09:44:55.312272922Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 114927,
+  "nanoTime" : 65655513886177
+}

@@ -1,0 +1,20 @@
+keyset[optionName] keyset[visibleVarName] keyset[storageFieldName] constants#6(
+  unique string optionName, unique string visibleVarName,
+  unique string storageFieldName
+)
+[ ... ]
+.
+
+suppressTypeErrors
+#select#query(
+  unique string option, unique string visibleVarName,
+  unique string storageFieldName
+)
+{
+  constants#6(option, visibleVarName, storageFieldName)
+}
+
+query #select = #select#query/3 order by asc 0.
+
+
+/* ---------- END STAGE ---------- */

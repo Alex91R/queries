@@ -1,699 +1,0 @@
-æì-fexceptionsflag_exceptionsx_flag_exceptions-flto	flag_ltox_flag_lto-fsplit-stackflag_split_stackx_flag_split_stack-fabi-versionflag_abi_versionx_flag_abi_version-fdump-noaddrflag_dump_noaddrx_flag_dump_noaddr-fpic	flag_picx_flag_pic-fpie	flag_piex_flag_pie-fwpa	flag_wpax_flag_wpa	-fltransflag_ltransx_flag_ltrans-fsection-anchorsflag_section_anchorsx_flag_section_anchors-fprofile-filter-filesflag_profile_filter_filesx_flag_profile_filter_files-fprofile-exclude-filesflag_profile_exclude_filesx_flag_profile_exclude_files-faccess-controlflag_access_controlx_flag_access_control"-faggressive-function-elimination%flag_aggressive_function_elimination'x_flag_aggressive_function_elimination -faggressive-loop-optimizations#flag_aggressive_loop_optimizations%x_flag_aggressive_loop_optimizations-falign-commonsflag_align_commonsx_flag_align_commons-falign-functionsflag_align_functionsx_flag_align_functions-falign-jumpsflag_align_jumpsx_flag_align_jumps-falign-labelsflag_align_labelsx_flag_align_labels-falign-loopsflag_align_loopsx_flag_align_loops-fall-intrinsicsflag_all_intrinsicsx_flag_all_intrinsics-fallow-leading-underscoreflag_allow_leading_underscore x_flag_allow_leading_underscore)-fallow-parameterless-variadic-functions,flag_allow_parameterless_variadic_functions.x_flag_allow_parameterless_variadic_functions	-fassertflag_assertx_flag_assert-fassociative-mathflag_associative_mathx_flag_associative_math-fassume-phsaflag_assume_phsax_flag_assume_phsa-fasynchronous-unwind-tables flag_asynchronous_unwind_tables"x_flag_asynchronous_unwind_tables-fauto-inc-decflag_auto_inc_decx_flag_auto_inc_dec-fauto-profileflag_auto_profilex_flag_auto_profile-fautomaticflag_automaticx_flag_automatic-fbackslashflag_backslashx_flag_backslash-fbacktraceflag_backtracex_flag_backtrace-fbounds-checkflag_bounds_checkx_flag_bounds_check-fbranch-probabilitiesflag_branch_probabilitiesx_flag_branch_probabilities-fbranch-target-load-optimize!flag_branch_target_load_optimize#x_flag_branch_target_load_optimize-fbranch-target-load-optimize2"flag_branch_target_load_optimize2$x_flag_branch_target_load_optimize2-fbtr-bb-exclusiveflag_btr_bb_exclusivex_flag_btr_bb_exclusive-fbuilding-libgccflag_building_libgccx_flag_building_libgcc-fbuilding-libphobos-testsflag_building_libphobos_tests x_flag_building_libphobos_tests-fc-prototypesflag_c_prototypesx_flag_c_prototypes-fc-prototypes-externalflag_c_prototypes_externalx_flag_c_prototypes_external-fcaller-savesflag_caller_savesx_flag_caller_saves-fcf-protectionflag_cf_protectionx_flag_cf_protection-fcheck-newflag_check_newx_flag_check_new-fcheckingflag_checkingx_flag_checking-fcode-hoistingflag_code_hoistingx_flag_code_hoisting-fcombine-stack-adjustmentsflag_combine_stack_adjustments!x_flag_combine_stack_adjustments-fcompare-debugflag_compare_debugx_flag_compare_debug-fconceptsflag_conceptsx_flag_concepts-fconserve-stackflag_conserve_stackx_flag_conserve_stack-fcprop-registersflag_cprop_registersx_flag_cprop_registers-fcray-pointerflag_cray_pointerx_flag_cray_pointer-fcrossjumpingflag_crossjumpingx_flag_crossjumping-fcse-follow-jumpsflag_cse_follow_jumpsx_flag_cse_follow_jumps-fcx-fortran-rulesflag_cx_fortran_rulesx_flag_cx_fortran_rules-fcx-limited-rangeflag_cx_limited_rangex_flag_cx_limited_range-fdata-sectionsflag_data_sectionsx_flag_data_sections-fdce	flag_dcex_flag_dce-fdebug-types-sectionflag_debug_types_sectionx_flag_debug_types_section-fdec	flag_decx_flag_dec-fdec-includeflag_dec_includex_flag_dec_include-fdec-intrinsic-intsflag_dec_intrinsic_intsx_flag_dec_intrinsic_ints-fdec-mathflag_dec_mathx_flag_dec_math-fdec-staticflag_dec_staticx_flag_dec_static-fdec-structureflag_dec_structurex_flag_dec_structure-fdeclone-ctor-dtorflag_declone_ctor_dtorx_flag_declone_ctor_dtor-fdeduce-init-listflag_deduce_init_listx_flag_deduce_init_list-fdefault-real-10flag_default_real_10x_flag_default_real_10-fdefault-real-16flag_default_real_16x_flag_default_real_16-fdefault-real-8flag_default_real_8x_flag_default_real_8-fdefer-popflag_defer_popx_flag_defer_pop-fdelayed-branchflag_delayed_branchx_flag_delayed_branch-fdelete-dead-exceptionsflag_delete_dead_exceptionsx_flag_delete_dead_exceptions-fdelete-null-pointer-checks flag_delete_null_pointer_checks"x_flag_delete_null_pointer_checks-fdevirtualizeflag_devirtualizex_flag_devirtualize-fdevirtualize-speculatively flag_devirtualize_speculatively"x_flag_devirtualize_speculatively-fdiagnostics-generate-patch flag_diagnostics_generate_patch"x_flag_diagnostics_generate_patch-fdiagnostics-parseable-fixits"flag_diagnostics_parseable_fixits$x_flag_diagnostics_parseable_fixits-fdiagnostics-show-caretflag_diagnostics_show_caretx_flag_diagnostics_show_caret-fdiagnostics-show-labelsflag_diagnostics_show_labelsx_flag_diagnostics_show_labels -fdiagnostics-show-line-numbers#flag_diagnostics_show_line_numbers%x_flag_diagnostics_show_line_numbers-fdiagnostics-show-optionflag_diagnostics_show_optionx_flag_diagnostics_show_option!-fdiagnostics-show-template-tree$flag_diagnostics_show_template_tree&x_flag_diagnostics_show_template_tree-fdollar-okflag_dollar_okx_flag_dollar_ok-fdse	flag_dsex_flag_dse-fdump-ada-specflag_dump_ada_specx_flag_dump_ada_spec-fdump-ada-spec-slimflag_dump_ada_spec_slimx_flag_dump_ada_spec_slim-fdump-final-insnsflag_dump_final_insnsx_flag_dump_final_insns-fdump-fortran-globalflag_dump_fortran_globalx_flag_dump_fortran_global-fdump-fortran-optimizedflag_dump_fortran_optimizedx_flag_dump_fortran_optimized-fdump-fortran-originalflag_dump_fortran_originalx_flag_dump_fortran_original-fdump-passesflag_dump_passesx_flag_dump_passes-fdump-unnumberedflag_dump_unnumberedx_flag_dump_unnumbered-fdump-unnumbered-linksflag_dump_unnumbered_linksx_flag_dump_unnumbered_links-fdwarf2-cfi-asmflag_dwarf2_cfi_asmx_flag_dwarf2_cfi_asm-fearly-inliningflag_early_inliningx_flag_early_inlining-felide-constructorsflag_elide_constructorsx_flag_elide_constructors-felide-typeflag_elide_typex_flag_elide_type-feliminate-unused-debug-types"flag_eliminate_unused_debug_types$x_flag_eliminate_unused_debug_types-femit-class-debug-alwaysflag_emit_class_debug_alwaysx_flag_emit_class_debug_always-fenforce-eh-specsflag_enforce_eh_specsx_flag_enforce_eh_specs-fexpensive-optimizationsflag_expensive_optimizationsx_flag_expensive_optimizations-fext-numeric-literalsflag_ext_numeric_literalsx_flag_ext_numeric_literals-fextern-tls-initflag_extern_tls_initx_flag_extern_tls_init-fexternal-blasflag_external_blasx_flag_external_blas-ff2c	flag_f2cx_flag_f2c-ffat-lto-objectsflag_fat_lto_objectsx_flag_fat_lto_objects-ffinite-math-onlyflag_finite_math_onlyx_flag_finite_math_only-ffloat-storeflag_float_storex_flag_float_store-fforward-propagateflag_forward_propagatex_flag_forward_propagate-ffp-int-builtin-inexactflag_fp_int_builtin_inexactx_flag_fp_int_builtin_inexact-ffrontend-loop-interchangeflag_frontend_loop_interchange!x_flag_frontend_loop_interchange-ffrontend-optimizeflag_frontend_optimizex_flag_frontend_optimize-ffunction-sectionsflag_function_sectionsx_flag_function_sections-fgcse
-flag_gcsex_flag_gcse-fgcse-after-reloadflag_gcse_after_reloadx_flag_gcse_after_reload-fgcse-lasflag_gcse_lasx_flag_gcse_las
--fgcse-lmflag_gcse_lmx_flag_gcse_lm
--fgcse-smflag_gcse_smx_flag_gcse_sm	-fgimpleflag_gimplex_flag_gimple-fgnu-uniqueflag_gnu_uniquex_flag_gnu_unique-fgnu89-inlineflag_gnu89_inlinex_flag_gnu89_inline-fgraphiteflag_graphitex_flag_graphite-fgraphite-identityflag_graphite_identityx_flag_graphite_identity-fhoist-adjacent-loadsflag_hoist_adjacent_loadsx_flag_hoist_adjacent_loads-fif-conversionflag_if_conversionx_flag_if_conversion-fif-conversion2flag_if_conversion2x_flag_if_conversion2-fimplement-inlinesflag_implement_inlinesx_flag_implement_inlines-fimplicit-inline-templatesflag_implicit_inline_templates!x_flag_implicit_inline_templates-fimplicit-noneflag_implicit_nonex_flag_implicit_none-fimplicit-templatesflag_implicit_templatesx_flag_implicit_templates-findirect-inliningflag_indirect_inliningx_flag_indirect_inlining-finhibit-size-directiveflag_inhibit_size_directivex_flag_inhibit_size_directive-finit-derivedflag_init_derivedx_flag_init_derived-finline-atomicsflag_inline_atomicsx_flag_inline_atomics-finline-functionsflag_inline_functionsx_flag_inline_functions-finline-functions-called-once"flag_inline_functions_called_once$x_flag_inline_functions_called_once-finline-small-functionsflag_inline_small_functionsx_flag_inline_small_functions-finvariantsflag_invariantsx_flag_invariants-fipa-bit-cpflag_ipa_bit_cpx_flag_ipa_bit_cp	-fipa-cpflag_ipa_cpx_flag_ipa_cp-fipa-cp-cloneflag_ipa_cp_clonex_flag_ipa_cp_clone
--fipa-icfflag_ipa_icfx_flag_ipa_icf-fipa-icf-functionsflag_ipa_icf_functionsx_flag_ipa_icf_functions-fipa-icf-variablesflag_ipa_icf_variablesx_flag_ipa_icf_variables-fipa-profileflag_ipa_profilex_flag_ipa_profile
--fipa-ptaflag_ipa_ptax_flag_ipa_pta-fipa-pure-constflag_ipa_pure_constx_flag_ipa_pure_const	-fipa-raflag_ipa_rax_flag_ipa_ra-fipa-referenceflag_ipa_referencex_flag_ipa_reference-fipa-reference-addressableflag_ipa_reference_addressable!x_flag_ipa_reference_addressable
--fipa-sraflag_ipa_srax_flag_ipa_sra-fipa-stack-alignmentflag_ipa_stack_alignmentx_flag_ipa_stack_alignment
--fipa-vrpflag_ipa_vrpx_flag_ipa_vrp-fira-hoist-pressureflag_ira_hoist_pressurex_flag_ira_hoist_pressure-fira-loop-pressureflag_ira_loop_pressurex_flag_ira_loop_pressure-fira-share-save-slotsflag_ira_share_save_slotsx_flag_ira_share_save_slots-fira-share-spill-slotsflag_ira_share_spill_slotsx_flag_ira_share_spill_slots$-fisolate-erroneous-paths-attribute'flag_isolate_erroneous_paths_attribute)x_flag_isolate_erroneous_paths_attribute&-fisolate-erroneous-paths-dereference)flag_isolate_erroneous_paths_dereference+x_flag_isolate_erroneous_paths_dereference	-fivoptsflag_ivoptsx_flag_ivopts-fjump-tablesflag_jump_tablesx_flag_jump_tables-fkeep-gc-roots-liveflag_keep_gc_roots_livex_flag_keep_gc_roots_live-fkeep-inline-dllexportflag_keep_inline_dllexportx_flag_keep_inline_dllexport-fkeep-inline-functionsflag_keep_inline_functionsx_flag_keep_inline_functions-fkeep-static-constsflag_keep_static_constsx_flag_keep_static_consts-fkeep-static-functionsflag_keep_static_functionsx_flag_keep_static_functions-flax-vector-conversionsflag_lax_vector_conversionsx_flag_lax_vector_conversions-fleading-underscoreflag_leading_underscorex_flag_leading_underscore-flifetime-dseflag_lifetime_dsex_flag_lifetime_dse-flimit-function-alignmentflag_limit_function_alignment x_flag_limit_function_alignment-flive-patchingflag_live_patchingx_flag_live_patching-flive-range-shrinkageflag_live_range_shrinkagex_flag_live_range_shrinkage-flocal-ivarsflag_local_ivarsx_flag_local_ivars-floop-interchangeflag_loop_interchangex_flag_loop_interchange-floop-nest-optimizeflag_loop_nest_optimizex_flag_loop_nest_optimize-floop-parallelize-allflag_loop_parallelize_allx_flag_loop_parallelize_all-flra-rematflag_lra_rematx_flag_lra_remat-flto-reportflag_lto_reportx_flag_lto_report-flto-report-wpaflag_lto_report_wpax_flag_lto_report_wpa-fmerge-constantsflag_merge_constantsx_flag_merge_constants-fmerge-debug-stringsflag_merge_debug_stringsx_flag_merge_debug_strings-fmodule-privateflag_module_privatex_flag_module_private-fmoduleinfoflag_moduleinfox_flag_moduleinfo-fmodulo-schedflag_modulo_schedx_flag_modulo_sched-fmodulo-sched-allow-regmoves!flag_modulo_sched_allow_regmoves#x_flag_modulo_sched_allow_regmoves-fmove-loop-invariantsflag_move_loop_invariantsx_flag_move_loop_invariants-fms-extensionsflag_ms_extensionsx_flag_ms_extensions-fnew-inheriting-ctorsflag_new_inheriting_ctorsx_flag_new_inheriting_ctors-fnext-runtimeflag_next_runtimex_flag_next_runtime-fnil-receiversflag_nil_receiversx_flag_nil_receivers-fnon-call-exceptionsflag_non_call_exceptionsx_flag_non_call_exceptions-fnothrow-optflag_nothrow_optx_flag_nothrow_opt-fobjc-call-cxx-cdtorsflag_objc_call_cxx_cdtorsx_flag_objc_call_cxx_cdtors-fobjc-direct-dispatchflag_objc_direct_dispatchx_flag_objc_direct_dispatch-fobjc-exceptionsflag_objc_exceptionsx_flag_objc_exceptions
--fobjc-gcflag_objc_gcx_flag_objc_gc-fobjc-nilcheckflag_objc_nilcheckx_flag_objc_nilcheck-fobjc-sjlj-exceptionsflag_objc_sjlj_exceptionsx_flag_objc_sjlj_exceptions-fomit-frame-pointerflag_omit_frame_pointerx_flag_omit_frame_pointer
--fopenaccflag_openaccx_flag_openacc	-fopenmpflag_openmpx_flag_openmp-fopenmp-simdflag_openmp_simdx_flag_openmp_simd-fopt-infoflag_opt_infox_flag_opt_info-foptimize-sibling-callsflag_optimize_sibling_callsx_flag_optimize_sibling_calls-foptimize-strlenflag_optimize_strlenx_flag_optimize_strlen-fpack-derivedflag_pack_derivedx_flag_pack_derived-fpack-structflag_pack_structx_flag_pack_struct-fpad-sourceflag_pad_sourcex_flag_pad_source-fpartial-inliningflag_partial_inliningx_flag_partial_inlining-fpcc-struct-returnflag_pcc_struct_returnx_flag_pcc_struct_return-fpeel-loopsflag_peel_loopsx_flag_peel_loops-fpeephole2flag_peephole2x_flag_peephole2-fpermissiveflag_permissivex_flag_permissive-fplan9-extensionsflag_plan9_extensionsx_flag_plan9_extensions-fplt	flag_pltx_flag_plt-fpostconditionsflag_postconditionsx_flag_postconditions-fpreconditionsflag_preconditionsx_flag_preconditions-fpredictive-commoningflag_predictive_commoningx_flag_predictive_commoning-fprefetch-loop-arraysflag_prefetch_loop_arraysx_flag_prefetch_loop_arrays-fpretty-templatesflag_pretty_templatesx_flag_pretty_templates-fprintf-return-valueflag_printf_return_valuex_flag_printf_return_value-fprofile-correctionflag_profile_correctionx_flag_profile_correction-fprofile-reorder-functionsflag_profile_reorder_functions!x_flag_profile_reorder_functions-fprofile-useflag_profile_usex_flag_profile_use-fprofile-valuesflag_profile_valuesx_flag_profile_values-fprotect-parensflag_protect_parensx_flag_protect_parens-frange-checkflag_range_checkx_flag_range_check-frealloc-lhsflag_realloc_lhsx_flag_realloc_lhs-freciprocal-mathflag_reciprocal_mathx_flag_reciprocal_math-frecord-gcc-switchesflag_record_gcc_switchesx_flag_record_gcc_switches-frecursiveflag_recursivex_flag_recursive-free	flag_reex_flag_ree-frename-registersflag_rename_registersx_flag_rename_registers-freorder-blocksflag_reorder_blocksx_flag_reorder_blocks-freorder-blocks-and-partition"flag_reorder_blocks_and_partition$x_flag_reorder_blocks_and_partition-freorder-functionsflag_reorder_functionsx_flag_reorder_functions-frepack-arraysflag_repack_arraysx_flag_repack_arrays-freplace-objc-classesflag_replace_objc_classesx_flag_replace_objc_classes-freport-bugflag_report_bugx_flag_report_bug-frerun-cse-after-loopflag_rerun_cse_after_loopx_flag_rerun_cse_after_loop-frounding-mathflag_rounding_mathx_flag_rounding_math-frtti
-flag_rttix_flag_rtti#-fsanitize-address-use-after-scope&flag_sanitize_address_use_after_scope(x_flag_sanitize_address_use_after_scope-fsanitize-recoverflag_sanitize_recoverx_flag_sanitize_recover#-fsanitize-undefined-trap-on-error&flag_sanitize_undefined_trap_on_error(x_flag_sanitize_undefined_trap_on_error-fsave-optimization-recordflag_save_optimization_record x_flag_save_optimization_record -fsched-critical-path-heuristic#flag_sched_critical_path_heuristic%x_flag_sched_critical_path_heuristic-fsched-dep-count-heuristicflag_sched_dep_count_heuristic!x_flag_sched_dep_count_heuristic-fsched-group-heuristicflag_sched_group_heuristicx_flag_sched_group_heuristic-fsched-last-insn-heuristicflag_sched_last_insn_heuristic!x_flag_sched_last_insn_heuristic-fsched-pressureflag_sched_pressurex_flag_sched_pressure-fsched-rank-heuristicflag_sched_rank_heuristicx_flag_sched_rank_heuristic-fsched-spec-insn-heuristicflag_sched_spec_insn_heuristic!x_flag_sched_spec_insn_heuristic-fsched-stalled-insnsflag_sched_stalled_insnsx_flag_sched_stalled_insns-fsched-stalled-insns-depflag_sched_stalled_insns_depx_flag_sched_stalled_insns_dep-fsched2-use-superblocksflag_sched2_use_superblocksx_flag_sched2_use_superblocks-fschedule-fusionflag_schedule_fusionx_flag_schedule_fusion-fschedule-insnsflag_schedule_insnsx_flag_schedule_insns-fsecond-underscoreflag_second_underscorex_flag_second_underscore-fsel-sched-pipeliningflag_sel_sched_pipeliningx_flag_sel_sched_pipelining#-fsel-sched-pipelining-outer-loops&flag_sel_sched_pipelining_outer_loops(x_flag_sel_sched_pipelining_outer_loops!-fsel-sched-reschedule-pipelined$flag_sel_sched_reschedule_pipelined&x_flag_sel_sched_reschedule_pipelined-fselective-schedulingflag_selective_schedulingx_flag_selective_scheduling-fselective-scheduling2flag_selective_scheduling2x_flag_selective_scheduling2-fsemantic-interpositionflag_semantic_interpositionx_flag_semantic_interposition-fshort-enumsflag_short_enumsx_flag_short_enums-fshort-wcharflag_short_wcharx_flag_short_wchar-fshow-columnflag_show_columnx_flag_show_column-fshrink-wrapflag_shrink_wrapx_flag_shrink_wrap-fshrink-wrap-separateflag_shrink_wrap_separatex_flag_shrink_wrap_separate-fsign-zeroflag_sign_zerox_flag_sign_zero-fsignaling-nansflag_signaling_nansx_flag_signaling_nans-fsigned-bitfieldsflag_signed_bitfieldsx_flag_signed_bitfields-fsigned-charflag_signed_charx_flag_signed_char-fsigned-zerosflag_signed_zerosx_flag_signed_zeros-fsingle-precision-constantflag_single_precision_constant!x_flag_single_precision_constant-fsized-deallocationflag_sized_deallocationx_flag_sized_deallocation-fsplit-ivs-in-unrollerflag_split_ivs_in_unrollerx_flag_split_ivs_in_unroller-fsplit-loopsflag_split_loopsx_flag_split_loops-fsplit-pathsflag_split_pathsx_flag_split_paths-fsplit-wide-typesflag_split_wide_typesx_flag_split_wide_types-fssa-backpropflag_ssa_backpropx_flag_ssa_backprop-fssa-phioptflag_ssa_phioptx_flag_ssa_phiopt-fstack-arraysflag_stack_arraysx_flag_stack_arrays-fstack-checkflag_stack_checkx_flag_stack_check-fstack-clash-protectionflag_stack_clash_protectionx_flag_stack_clash_protection-fstack-usageflag_stack_usagex_flag_stack_usage-fstdarg-optflag_stdarg_optx_flag_stdarg_opt-fstore-mergingflag_store_mergingx_flag_store_merging-fstrict-aliasingflag_strict_aliasingx_flag_strict_aliasing-fstrict-enumsflag_strict_enumsx_flag_strict_enums-fstrict-volatile-bitfieldsflag_strict_volatile_bitfields!x_flag_strict_volatile_bitfields-fstrong-eval-orderflag_strong_eval_orderx_flag_strong_eval_order-fswitch-errorsflag_switch_errorsx_flag_switch_errors-fsync-libcallsflag_sync_libcallsx_flag_sync_libcalls-fsyntax-onlyflag_syntax_onlyx_flag_syntax_only-ftail-call-workaroundflag_tail_call_workaroundx_flag_tail_call_workaround-ftest-coverageflag_test_coveragex_flag_test_coverage-ftest-forall-tempflag_test_forall_tempx_flag_test_forall_temp-fthread-jumpsflag_thread_jumpsx_flag_thread_jumps-fthreadsafe-staticsflag_threadsafe_staticsx_flag_threadsafe_statics-ftoplevel-reorderflag_toplevel_reorderx_flag_toplevel_reorder	-ftracerflag_tracerx_flag_tracer-ftrampolinesflag_trampolinesx_flag_trampolines-ftrapping-mathflag_trapping_mathx_flag_trapping_math-ftrapvflag_trapvx_flag_trapv-ftree-bit-ccpflag_tree_bit_ccpx_flag_tree_bit_ccp-ftree-builtin-call-dceflag_tree_builtin_call_dcex_flag_tree_builtin_call_dce-ftree-ccpflag_tree_ccpx_flag_tree_ccp
--ftree-chflag_tree_chx_flag_tree_ch-ftree-coalesce-varsflag_tree_coalesce_varsx_flag_tree_coalesce_vars-ftree-copy-propflag_tree_copy_propx_flag_tree_copy_prop-ftree-cselimflag_tree_cselimx_flag_tree_cselim-ftree-dceflag_tree_dcex_flag_tree_dce-ftree-dseflag_tree_dsex_flag_tree_dse-ftree-forwpropflag_tree_forwpropx_flag_tree_forwprop-ftree-freflag_tree_frex_flag_tree_fre -ftree-loop-distribute-patterns#flag_tree_loop_distribute_patterns%x_flag_tree_loop_distribute_patterns-ftree-loop-distributionflag_tree_loop_distributionx_flag_tree_loop_distribution-ftree-loop-if-convertflag_tree_loop_if_convertx_flag_tree_loop_if_convert-ftree-loop-imflag_tree_loop_imx_flag_tree_loop_im-ftree-loop-ivcanonflag_tree_loop_ivcanonx_flag_tree_loop_ivcanon-ftree-loop-optimizeflag_tree_loop_optimizex_flag_tree_loop_optimize-ftree-loop-vectorizeflag_tree_loop_vectorizex_flag_tree_loop_vectorize-ftree-partial-preflag_tree_partial_prex_flag_tree_partial_pre-ftree-phipropflag_tree_phipropx_flag_tree_phiprop-ftree-preflag_tree_prex_flag_tree_pre-ftree-ptaflag_tree_ptax_flag_tree_pta-ftree-reassocflag_tree_reassocx_flag_tree_reassoc-ftree-scev-cpropflag_tree_scev_cpropx_flag_tree_scev_cprop-ftree-sinkflag_tree_sinkx_flag_tree_sink-ftree-slp-vectorizeflag_tree_slp_vectorizex_flag_tree_slp_vectorize-ftree-slsrflag_tree_slsrx_flag_tree_slsr-ftree-sraflag_tree_srax_flag_tree_sra-ftree-switch-conversionflag_tree_switch_conversionx_flag_tree_switch_conversion-ftree-tail-mergeflag_tree_tail_mergex_flag_tree_tail_merge-ftree-terflag_tree_terx_flag_tree_ter-ftree-vrpflag_tree_vrpx_flag_tree_vrp-funconstrained-commonsflag_unconstrained_commonsx_flag_unconstrained_commons-funderscoringflag_underscoringx_flag_underscoring-funit-at-a-timeflag_unit_at_a_timex_flag_unit_at_a_time-funroll-all-loopsflag_unroll_all_loopsx_flag_unroll_all_loops-funroll-loopsflag_unroll_loopsx_flag_unroll_loops-funsafe-math-optimizationsflag_unsafe_math_optimizations!x_flag_unsafe_math_optimizations-funswitch-loopsflag_unswitch_loopsx_flag_unswitch_loops-funwind-tablesflag_unwind_tablesx_flag_unwind_tables-fuse-cxa-atexitflag_use_cxa_atexitx_flag_use_cxa_atexit-fuse-cxa-get-exception-ptrflag_use_cxa_get_exception_ptr!x_flag_use_cxa_get_exception_ptr-fuse-linker-pluginflag_use_linker_pluginx_flag_use_linker_plugin-fvar-trackingflag_var_trackingx_flag_var_tracking-fvar-tracking-assignmentsflag_var_tracking_assignments x_flag_var_tracking_assignments"-fvar-tracking-assignments-toggle%flag_var_tracking_assignments_toggle'x_flag_var_tracking_assignments_toggle-fvar-tracking-uninitflag_var_tracking_uninitx_flag_var_tracking_uninit!-fvariable-expansion-in-unroller$flag_variable_expansion_in_unroller&x_flag_variable_expansion_in_unroller-fvect-cost-modelflag_vect_cost_modelx_flag_vect_cost_model-fverbose-asmflag_verbose_asmx_flag_verbose_asm-fversion-loops-for-stridesflag_version_loops_for_strides!x_flag_version_loops_for_strides-fvisibility-ms-compatflag_visibility_ms_compatx_flag_visibility_ms_compat-fvtv-countsflag_vtv_countsx_flag_vtv_counts-fvtv-debugflag_vtv_debugx_flag_vtv_debug-fweak
-flag_weakx_flag_weak-fweb	flag_webx_flag_web-fwhole-programflag_whole_programx_flag_whole_program-fworking-directoryflag_working_directoryx_flag_working_directory-fwrapvflag_wrapvx_flag_wrapv-fwrapv-pointerflag_wrapv_pointerx_flag_wrapv_pointer-fzero-initialized-in-bssflag_zero_initialized_in_bssx_flag_zero_initialized_in_bss-fzero-linkflag_zero_linkx_flag_zero_link-fsanitizeflag_sanitizex_flag_sanitize-fundefflag_undefx_flag_undef-fpedantic-errorsflag_pedantic_errorsx_flag_pedantic_errors-fskip-rax-setupflag_skip_rax_setupx_flag_skip_rax_setup-frecord-mcountflag_record_mcountx_flag_record_mcount-fnop-mcountflag_nop_mcountx_flag_nop_mcount-fmanual-endbrflag_manual_endbrx_flag_manual_endbr-fforce-indirect-callflag_force_indirect_callx_flag_force_indirect_call	-ffentryflag_fentryx_flag_fentry-fdispatch-schedulerflag_dispatch_schedulerx_flag_dispatch_scheduler-fcet-switchflag_cet_switchx_flag_cet_switch
--fandroidflag_androidx_flag_android
--fgtoggleflag_gtogglex_flag_gtoggle-fgen-declarationflag_gen_declarationx_flag_gen_declaration-fdescribe-diesflag_describe_diesx_flag_describe_dies-fvtable-verifyflag_vtable_verifyx_flag_vtable_verify -fvalue-profile-transformations#flag_value_profile_transformations%x_flag_value_profile_transformations-ftree-parallelize-loopsflag_tree_parallelize_loopsx_flag_tree_parallelize_loops-ftree-live-range-splitflag_tree_live_range_splitx_flag_tree_live_range_split-ftree-domflag_tree_domx_flag_tree_dom-ftls-defaultflag_tls_defaultx_flag_tls_default-fdetailed-statisticsflag_detailed_statisticsx_flag_detailed_statistics-fstack-reuseflag_stack_reusex_flag_stack_reuse-fstack-protectflag_stack_protectx_flag_stack_protect-fsimd-cost-modelflag_simd_cost_modelx_flag_simd_cost_model-fself-testflag_self_testx_flag_self_test-fschedule-insns-after-reload!flag_schedule_insns_after_reload#x_flag_schedule_insns_after_reload&-fschedule-speculative-load-dangerous)flag_schedule_speculative_load_dangerous+x_flag_schedule_speculative_load_dangerous-fschedule-speculative-loadflag_schedule_speculative_load!x_flag_schedule_speculative_load-fschedule-speculativeflag_schedule_speculativex_flag_schedule_speculative-fschedule-interblockflag_schedule_interblockx_flag_schedule_interblock-fresched-modulo-schedflag_resched_modulo_schedx_flag_resched_modulo_sched-freorder-blocks-algorithmflag_reorder_blocks_algorithm x_flag_reorder_blocks_algorithm-frecord-markerflag_record_markerx_flag_record_marker-freal8-kindflag_real8_kindx_flag_real8_kind-freal4-kindflag_real4_kindx_flag_real4_kind-fprofile-updateflag_profile_updatex_flag_profile_update-fpre-includeflag_pre_includex_flag_pre_include-fpermitted-flt-eval-methods flag_permitted_flt_eval_methods"x_flag_permitted_flt_eval_methods-fno-peepholeflag_no_peepholex_flag_no_peephole-fopenacc-dimsflag_openacc_dimsx_flag_openacc_dims-foffload-abiflag_offload_abix_flag_offload_abi-fobjc1-onlyflag_objc1_onlyx_flag_objc1_only-fobjc-abiflag_objc_abix_flag_objc_abi-fno-nonansi-builtinflag_no_nonansi_builtinx_flag_no_nonansi_builtin
--fnew-ttpflag_new_ttpx_flag_new_ttp-fmax-subrecord-lengthflag_max_subrecord_lengthx_flag_max_subrecord_length-fmax-stack-var-sizeflag_max_stack_var_sizex_flag_max_stack_var_size-fmax-errorsflag_max_errorsx_flag_max_errors-fmax-array-constructorflag_max_array_constructorx_flag_max_array_constructor-ferrno-mathflag_errno_mathx_flag_errno_math-flto-partitionflag_lto_partitionx_flag_lto_partition-flto-odr-type-meringflag_lto_odr_type_meringx_flag_lto_odr_type_mering-flto-compression-levelflag_lto_compression_levelx_flag_lto_compression_level-funroll-jamflag_unroll_jamx_flag_unroll_jam-flto-linker-outputflag_lto_linker_outputx_flag_lto_linker_output-fira-verboseflag_ira_verbosex_flag_ira_verbose-fira-regionflag_ira_regionx_flag_ira_region-fira-algorithmflag_ira_algorithmx_flag_ira_algorithm-finteger4-kindflag_integer4_kindx_flag_integer4_kind!-finstrument-function-entry-exit$flag_instrument_function_entry_exit&x_flag_instrument_function_entry_exit-finline-matmul-limitflag_inline_matmul_limitx_flag_inline_matmul_limit-fno-inlineflag_no_inlinex_flag_no_inline-finit-realflag_init_realx_flag_init_real-fno-identflag_no_identx_flag_no_ident-fguess-branch-probflag_guess_branch_probx_flag_guess_branch_prob-ftmflag_tm
-x_flag_tm-fno-gnu-keywordsflag_no_gnu_keywordsx_flag_no_gnu_keywords-fno-function-cseflag_no_function_csex_flag_no_function_cse-ffree-line-lengthflag_free_line_lengthx_flag_free_line_length-ffp-contract-modeflag_fp_contract_modex_flag_fp_contract_mode-ffixed-line-lengthflag_fixed_line_lengthx_flag_fixed_line_length-fexcess-precision-cmdlineflag_excess_precision_cmdline x_flag_excess_precision_cmdline-fdebug-only-used-symbolsflag_debug_only_used_symbolsx_flag_debug_only_used_symbols-fdump-locationsflag_dump_locationsx_flag_dump_locations-fdump-go-specflag_dump_go_specx_flag_dump_go_spec-fdiagnostics-show-colorflag_diagnostics_show_colorx_flag_diagnostics_show_color-fltrans-devirtualizeflag_ltrans_devirtualizex_flag_ltrans_devirtualize-fdefault-integerflag_default_integerx_flag_default_integer-fdefault-doubleflag_default_doublex_flag_default_double
--fconvertflag_convertx_flag_convert-fcompare-elim-after-reloadflag_compare_elim_after_reload!x_flag_compare_elim_after_reload-fcompare-debug-optflag_compare_debug_optx_flag_compare_debug_opt-fno-commonflag_no_commonx_flag_no_common
--fcoarrayflag_coarrayx_flag_coarray
--fchar8-tflag_char8_tx_flag_char8_t-fno-builtinflag_no_builtinx_flag_no_builtin-fbranch-on-count-regflag_branch_on_count_regx_flag_branch_on_count_reg-fblas-matmul-limitflag_blas_matmul_limitx_flag_blas_matmul_limit	-fno-asmflag_no_asmx_flag_no_asm-fabi-compat-versionflag_abi_compat_versionx_flag_abi_compat_version!-fwarn-frontend-loop-interchange$flag_warn_frontend_loop_interchange&x_flag_warn_frontend_loop_interchange-ffatal-errorsflag_fatal_errorsx_flag_fatal_errors-fpreprocess-onlyflag_preprocess_onlyx_flag_preprocess_only)-finstrument-functions-exclude-functions,flag_instrument_functions_exclude_functions.x_flag_instrument_functions_exclude_functions%-finstrument-functions-exclude-files(flag_instrument_functions_exclude_files*x_flag_instrument_functions_exclude_files-fsanitize-coverageflag_sanitize_coveragex_flag_sanitize_coverage-fshlibflag_shlibx_flag_shlib-fprint-asm-nameflag_print_asm_namex_flag_print_asm_name-fgenerate-offloadflag_generate_offloadx_flag_generate_offload-fgenerate-ltoflag_generate_ltox_flag_generate_lto-fgen-aux-infoflag_gen_aux_infox_flag_gen_aux_info-fdump-rtl-in-asmflag_dump_rtl_in_asmx_flag_dump_rtl_in_asm-fdebug-asmflag_debug_asmx_flag_debug_asm-fcomplex-methodflag_complex_methodx_flag_complex_method-fincremental-linkflag_incremental_linkx_flag_incremental_link-fwarn-unused-resultflag_warn_unused_resultx_flag_warn_unused_result-fstack-usage-infoflag_stack_usage_infox_flag_stack_usage_info-fopts-finishedflag_opts_finishedx_flag_opts_finished-fdump-all-passedflag_dump_all_passedx_flag_dump_all_passed-fdisable-hsaflag_disable_hsax_flag_disable_hsa-fexcess-precisionflag_excess_precision#ag_state->x_flag_excess_precision)ÿ#selectáoptionsaccessNames s /5>IWh{‰š­»Ìßåîùÿˆ“™¢­¶ÂĞâ÷¥¿Ûó«¼Ğæˆ­Ôô—¼Ìßô†›²ÀÑäó…™§¸ËÜğ†	¡	¿	ß	ˆ
-´
-â
-ë
-÷
-…˜®ÆÔåø•µ×æøŒ›­ÁÍÜíùˆ™¥´ÅÔæú‘«Çå†©Èê¡·Ïáö¨Ææõ‡›³ÎëúŒ °ÃØäó„­½Ğå ÁÑäù„’¢³Çİï„›ª¼Ğßñ…˜®ÆÙï‡š°ÈØë€†š°ÉäêóşŒ°Åİ÷‚ ­½Ïßò‡›²ËŞôŒ³ÊÜñˆ ™ ­ Ã Ï Ş ï €!”!ª!Ã!ß!ı!š"º"Ü"ë"ı"‘#®#Î#ğ#$­$Ï$î$%´%Í%é%‡&¡&¾&İ&ı& 'Å'ß'ü'›(¼(à(†)’)¡)²)¸)Á)Ì)Ü)ï)„*™*±*Ë*Ş*ô*Œ+¢+»+Ö+ï+‹,©,Á,Ü,ù,‡-˜-«-½-Ò-é-.œ.¹.Ê.Ş.ô.…/™/¯/Ä/Ü/ö/ƒ0“0¥0Ä0æ0Š1¤1Á1à1ó1‰2¡2»2Ø2÷23¨3Ä3Ö3ë3‚4’4¥4º4À4É4Ô4æ4û4’5¥5»5Ó5á5ò5…6™6°6É6â6ş6œ7¸7×7ø7Œ8£8¼8Ğ8ç8€9‡9‘99±9È9á9ì9ú9Š:”:¡:°:º:Ç:Ö:ß:ë:ù:†;–;¨;·;É;İ;è;ö;†<š<±<Ê<á<û<—=§=º=Ï=à=ô=Š>>µ>Î>ê>‰?ª?º?Í?â?÷?@©@½@Ô@í@†A¢AÀAÏAáAõA†BšB°BÃBÙBñBC²CÖCïC‹D©D¶DÆDØDåDõD‡EEœEªE¹EËEßEéEöE…F™F°FÉFİFôFG›G¬G¿GÉGÖGåGöGŠH H©HµHÃHÓHæHûH—I¶I×IáIîIıI“J¬JÇJÑJŞJíJ‚KšK´KÈKßKøKL©LÅLİLøL•M¹MàM‰N¯NØNƒOŒO˜O¦O´OÅOØOíO…PŸP·PÒPïP‡Q¢Q¿QÔQìQ†RR¹RÖRïR‹S©S¾SÖSğSÿS‘T¥TÀTŞTşTU¡U¶UÍUçUƒV‘V¢VµVÈVŞVöV‹W£W½WÔWîWŠX–X¥X¶XÃXÓXåXöXŠY Y²YÇYŞYôYZ¨Z¹ZÍZãZğZ€[’[¡[³[Ç[å[†\©\À\Ú\ö\†]™]®]Å]ß]û]Š^œ^°^À^Ó^è^ş^—_²_À_Ñ_ä_û_•`±`È`â`ş`a¥a¼aÆaÓaâaòa…bšb±bËbçbüb”c®c¸cÅcÔcİcéc÷c…d–d©d´dÂdÒdëd‡e¥e·eÌeãeòe„f˜f¦f·fÊf×fçfùfŒg¢gºgÎgågşg‹h›h­h¹hÈhÙhæhöhˆi›i±iÉiÏiØiãiôiˆjj®jÁjÖjíj‡k£kºkÔkğkƒl™l±lÇlàlûlm¨mÂmŞmımn¬n½nĞnánõn‹oœo°oÆoÔoåoøo†p—pªp¼pÑpèpşp—q²q¾qÍqŞqäqíqøq‹r¡r¹rÊrŞrôr“sµsÙsís„tt­tÀtÕtìt†u¢u¯u¿uÑuèu‚vv®vÁvÖvİvçvóv–w¼wäw÷wx¥xÈxîx–y±yÏyïyz²z×zóz’{³{Ë{æ{ƒ|Ÿ|¾|ß|ğ|„}š}±}Ë}ç}ƒ~¢~Ã~Ù~ò~§Äãü˜€¶€È€İ€ô€…™¯ÃÚóŠ‚¤‚À‚ã‚‰ƒ±ƒÒƒöƒœ„³„Í„é„…œ…¹…Ò…î…Œ†š†«†¾†Ì†İ†ğ†ş†‡¢‡°‡Á‡Ô‡ë‡…ˆ¡ˆ­ˆ¼ˆÍˆŞˆòˆˆ‰›‰±‰É‰×‰è‰û‰ŠŠœŠ°ŠÌŠëŠŒ‹¡‹¹‹Ó‹ë‹†Œ£Œ±ŒÂŒÕŒãŒôŒ‡š°È×éıŠš¬»Íáï€“¬Èæô…˜¥µÇ×êÿ‘‘¦‘½‘Ì‘Ş‘ò‘’­’Î’â’ù’’“¢“µ“Ê“Ú“í“‚””¡”´”Ë”å”•‘•¤•¹•Ì•â•ú•‰–›–¯–Ä–Ü–ö–‰—Ÿ—·—À—Ì—Ú—è—ù—Œ˜œ˜¯˜Ä˜Ì˜×˜ä˜ó˜…™™™±™Ì™é™ô™‚š’šœš©š¸šÍšåšÿš›¤›º›È›Ù›ì›÷›…œ•œ œ®œ¾œÎœáœöœŸ¿â‡ ¼Úñ‹Ÿ§Ÿ¶ŸÈŸÜŸğŸ‡   µ Í ç ı –¡±¡Ä¡Ú¡ò¡¢“¢§¢²¢À¢Ğ¢Û¢é¢ù¢ˆ£š£®£À£Õ£ì£ø£‡¤˜¤­¤Å¤ß¤ë¤ú¤‹¥–¥¤¥´¥Í¥é¥‡¦™¦®¦Å¦Ğ¦Ş¦î¦ù¦‡§—§¯§Ê§ç§ö§ˆ¨œ¨­¨Á¨×¨ê¨€©˜©§©¹©Í©é©ˆª©ªºªÎªäªôª‡«œ«­«Á«×«ó«’¬³¬Ç¬Ş¬÷¬†­˜­¬­Ç­å­…®§®Ì®ó®‰¯¢¯½¯Ş¯‚°¨°º°Ï°æ°ô°…±˜±´±Ó±ô±‹²¥²Á²Î²Ş²ğ²ü²‹³œ³£³­³¹³¿³È³Ó³ã³ö³‹´Ÿ´¶´Ï´×´â´ï´ÿ´’µ§µÁµŞµıµ‰¶˜¶©¶´¶Â¶Ò¶Ú¶å¶ò¶„·™·°·Á·Õ·ë·û·¸£¸°¸À¸Ò¸á¸ó¸‡¹¹¶¹Ñ¹Ú¹æ¹ô¹‰º¡º»ºÈºØºêºôº»»š»§»¶»È»İ»ô»„¼—¼¬¼¼¼Ï¼ä¼„½§½Ì½å½¾Ÿ¾·¾Ò¾ï¾ú¾ˆ¿˜¿¦¿·¿Ê¿à¿ù¿”À¢À³ÀÆÀÖÀéÀşÀÁ¥Á¼ÁÈÁ×ÁèÁ†Â§ÂÊÂğÂ™ÃÄÃàÃÿÃ Ä·ÄÑÄíÄƒÅœÅ·ÅÎÅèÅ„ÆŸÆ½ÆİÆíÆ€Ç•Ç¢Ç²ÇÄÇÑÇáÇóÇ„È˜È®È¼ÈÍÈàÈıÈÉ¿ÉÍÉŞÉñÉ€Ê’Ê¦Ê´ÊÅÊØÊåÊõÊ‡Ë’Ë Ë°ËÅËİË÷ËÌÌÌ´ÌÎÌêÌÿÌ—Í±Í¾ÍÎÍàÍøÍ“Î°Î½ÎÍÎßÎïÎ‚Ï—Ï­ÏÆÏáÏùÏ”Ğ±Ğ¾ĞÎĞàĞôĞ‹Ñ¤Ñ²ÑÃÑÖÑãÑóÑ…Ò•Ò¨Ò½ÒÍÒàÒõÒ–ÓºÓàÓöÓÔªÔ¶ÔÅÔÖÔâÔñÔ‚ÕÕ›Õ«Õ¿ÕÖÕïÕôÕüÕ†Ö˜Ö­ÖÄÖÖÖëÖ‚×•×«×Ã×Ö×ì×„Ø˜Ø¯ØÈØãØÙ¡Ù»ÙØÙ÷ÙˆÚœÚ²ÚÁÚÓÚçÚ€ÛœÛºÛĞÛéÛ„Ü–Ü«ÜÂÜÓÜçÜıÜ‡İ”İ£İ¿İŞİÿİ“ŞªŞÃŞÏŞŞŞïŞùŞ†ß•ßŸß¬ß»ßÈßØßêß€à™à´àÈàßàøàáá›á°áÈáâáƒâ§âÍâÜâîâ‚ã”ã©ãÀãéã•äÃäèäåºåÎåååşå†æ‘ææ¯æÃæÙæìæ‚çšç©ç»çÏçŞçğç„è–è«èÂèÎèİèîèÿè“é©é¼éÒéêéÿé—ê±êÄêÚêòê‚ë•ëªë¼ëÑëèëöë‡ìšì­ìÃì¼---
-run:
-  queries:
-   -
-    pack: flags/gcc-queries#2
-    relativeQueryPath: flag_selection.ql
-    relativeBqrsPath: results.bqrs
-    metadata:
-      name: GCC -f options listed in gcc/config/auto-host.h
-      description: Lists all -f options defined in gcc/config/auto-host.h.
-      kind: table
-      id: cpp/gcc/option-facts-automated
-  extensionPacks: []
-  packs:
-    codeql/util#1:
-      name: codeql/util
-      version: 2.0.41
-      isLibrary: true
-      isExtensionPack: false
-      localPath: file:///home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/
-      localPackDefinitionFile: file:///home/oleksii-shemshur/.codeql/packages/codeql/util/2.0.41/qlpack.yml
-      headSha: 94101634db019b00637dd5cfe241f7e570da290d
-      runDataExtensions: []
-    codeql/cpp-all#0:
-      name: codeql/cpp-all
-      version: 12.0.1
-      isLibrary: true
-      isExtensionPack: false
-      localPath: file:///home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/
-      localPackDefinitionFile: file:///home/oleksii-shemshur/.codeql/packages/codeql/cpp-all/12.0.1/qlpack.yml
-      headSha: 94101634db019b00637dd5cfe241f7e570da290d
-      runDataExtensions: []
-    flags/gcc-queries#2:
-      name: flags/gcc-queries
-      version: 0.0.1
-      isLibrary: false
-      isExtensionPack: false
-      localPath: file:///home/oleksii-shemshur/work/toolchains/tools/queries/
-      localPackDefinitionFile: file:///home/oleksii-shemshur/work/toolchains/tools/queries/qlpack.yml
-      runDataExtensions:
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/Boost.Asio.model.yml
-        index: 0
-        firstRowId: 0
-        rowCount: 6
-        locations:
-          lineNumbers: A=7+1*5
-          columnNumbers: A=9*6
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/Boost.Asio.model.yml
-        index: 1
-        firstRowId: 6
-        rowCount: 4
-        locations:
-          lineNumbers: A=17+1*3
-          columnNumbers: A=9*4
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/Boost.Asio.model.yml
-        index: 2
-        firstRowId: 10
-        rowCount: 1
-        locations:
-          lineNumbers: A=25
-          columnNumbers: A=9
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CA2CAEX.model.yml
-        index: 0
-        firstRowId: 11
-        rowCount: 13
-        locations:
-          lineNumbers: A=6+1*12
-          columnNumbers: A=9*13
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CAtlArray.model.yml
-        index: 0
-        firstRowId: 24
-        rowCount: 10
-        locations:
-          lineNumbers: A=6+1*9
-          columnNumbers: A=9*10
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CAtlFile.model.yml
-        index: 0
-        firstRowId: 34
-        rowCount: 4
-        locations:
-          lineNumbers: A=6+1*3
-          columnNumbers: A=9*4
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CAtlFileMappingBase.model.yml
-        index: 0
-        firstRowId: 38
-        rowCount: 9
-        locations:
-          lineNumbers: A=6+1*8
-          columnNumbers: A=9*9
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CAtlList.model.yml
-        index: 0
-        firstRowId: 47
-        rowCount: 10
-        locations:
-          lineNumbers: A=6+1*9
-          columnNumbers: A=9*10
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CAtlTemporaryFile.model.yml
-        index: 0
-        firstRowId: 57
-        rowCount: 3
-        locations:
-          lineNumbers: A=6+1*2
-          columnNumbers: A=9*3
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CComBSTR.model.yml
-        index: 0
-        firstRowId: 60
-        rowCount: 28
-        locations:
-          lineNumbers: A=6+1*27
-          columnNumbers: A=9*28
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CComSafeArray.model.yml
-        index: 0
-        firstRowId: 88
-        rowCount: 21
-        locations:
-          lineNumbers: A=6+1*20
-          columnNumbers: A=9*21
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CPathT.model.yml
-        index: 0
-        firstRowId: 109
-        rowCount: 15
-        locations:
-          lineNumbers: A=6+1*10+4+1*3
-          columnNumbers: A=9*15
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CRegKey.model.yml
-        index: 0
-        firstRowId: 124
-        rowCount: 15
-        locations:
-          lineNumbers: A=6+1*14
-          columnNumbers: A=9*15
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CSimpleArray.model.yml
-        index: 0
-        firstRowId: 139
-        rowCount: 7
-        locations:
-          lineNumbers: A=6+1*6
-          columnNumbers: A=9*7
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CSimpleMap.model.yml
-        index: 0
-        firstRowId: 146
-        rowCount: 8
-        locations:
-          lineNumbers: A=6+1*7
-          columnNumbers: A=9*8
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CSimpleStringT.model.yml
-        index: 0
-        firstRowId: 154
-        rowCount: 37
-        locations:
-          lineNumbers: A=6+1*36
-          columnNumbers: A=9*37
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CStrBufT.model.yml
-        index: 0
-        firstRowId: 191
-        rowCount: 3
-        locations:
-          lineNumbers: A=6+1*2
-          columnNumbers: A=9*3
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CStringData.model.yml
-        index: 0
-        firstRowId: 194
-        rowCount: 1
-        locations:
-          lineNumbers: A=6
-          columnNumbers: A=9
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CStringT.model.yml
-        index: 0
-        firstRowId: 195
-        rowCount: 113
-        locations:
-          lineNumbers: A=6+1*112
-          columnNumbers: A=9*113
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/CUrl.model.yml
-        index: 0
-        firstRowId: 308
-        rowCount: 17
-        locations:
-          lineNumbers: A=6+1*16
-          columnNumbers: A=9*17
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/ComPtr.model.yml
-        index: 0
-        firstRowId: 325
-        rowCount: 26
-        locations:
-          lineNumbers: A=6+1*25
-          columnNumbers: A=9*26
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/ComPtrRef.model.yml
-        index: 0
-        firstRowId: 351
-        rowCount: 5
-        locations:
-          lineNumbers: A=6+1+2*2+1
-          columnNumbers: A=9*5
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/MySql.model.yml
-        index: 0
-        firstRowId: 356
-        rowCount: 2
-        locations:
-          lineNumbers: A=7+1
-          columnNumbers: A=9*2
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/MySql.model.yml
-        index: 1
-        firstRowId: 358
-        rowCount: 2
-        locations:
-          lineNumbers: A=13+1
-          columnNumbers: A=9*2
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/Oracle.oci.model.yml
-        index: 0
-        firstRowId: 360
-        rowCount: 2
-        locations:
-          lineNumbers: A=7+1
-          columnNumbers: A=9*2
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/Strsafe.model.yml
-        index: 0
-        firstRowId: 362
-        rowCount: 8
-        locations:
-          lineNumbers: A=8+1+2+1+2+1+2+1
-          columnNumbers: A=9*8
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/Strsafe.model.yml
-        index: 1
-        firstRowId: 370
-        rowCount: 48
-        locations:
-          lineNumbers: A=24+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1+2+1
-          columnNumbers: A=9*48
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/Windows.model.yml
-        index: 0
-        firstRowId: 418
-        rowCount: 25
-        locations:
-          lineNumbers: A=8+1*5+2+1+2+1*6+2*2+1*8
-          columnNumbers: A=9*25
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/Windows.model.yml
-        index: 1
-        firstRowId: 443
-        rowCount: 15
-        locations:
-          lineNumbers: A=42+1+2*2+1*2+2+1*6+2*2
-          columnNumbers: A=9*15
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/ZMQ.model.yml
-        index: 0
-        firstRowId: 458
-        rowCount: 3
-        locations:
-          lineNumbers: A=7+1*2
-          columnNumbers: A=9*3
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/ZMQ.model.yml
-        index: 1
-        firstRowId: 461
-        rowCount: 3
-        locations:
-          lineNumbers: A=14+1*2
-          columnNumbers: A=9*3
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/ZMQ.model.yml
-        index: 2
-        firstRowId: 464
-        rowCount: 2
-        locations:
-          lineNumbers: A=21+1
-          columnNumbers: A=9*2
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/allocation/Bsd.allocation.model.yml
-        index: 0
-        firstRowId: 466
-        rowCount: 2
-        locations:
-          lineNumbers: A=6+1
-          columnNumbers: A=9*2
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/allocation/Glibc.allocation.model.yml
-        index: 0
-        firstRowId: 468
-        rowCount: 2
-        locations:
-          lineNumbers: A=6+1
-          columnNumbers: A=9*2
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/allocation/OpenSSL.allocation.model.yml
-        index: 0
-        firstRowId: 470
-        rowCount: 4
-        locations:
-          lineNumbers: A=6+1*3
-          columnNumbers: A=9*4
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/allocation/Std.allocation.model.yml
-        index: 0
-        firstRowId: 474
-        rowCount: 13
-        locations:
-          lineNumbers: A=6+1*12
-          columnNumbers: A=9*13
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/allocation/Windows.allocation.model.yml
-        index: 0
-        firstRowId: 487
-        rowCount: 24
-        locations:
-          lineNumbers: A=6+1*23
-          columnNumbers: A=9*24
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/azure.core.model.yml
-        index: 0
-        firstRowId: 511
-        rowCount: 6
-        locations:
-          lineNumbers: A=6+1*5
-          columnNumbers: A=9*6
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/azure.core.model.yml
-        index: 1
-        firstRowId: 517
-        rowCount: 25
-        locations:
-          lineNumbers: A=17+1*24
-          columnNumbers: A=9*25
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/bsl.array.model.yml
-        index: 0
-        firstRowId: 542
-        rowCount: 9
-        locations:
-          lineNumbers: A=6+1*8
-          columnNumbers: A=9*9
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/bsl.deque.model.yml
-        index: 0
-        firstRowId: 551
-        rowCount: 69
-        locations:
-          lineNumbers: A=6+1*68
-          columnNumbers: A=9*69
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/bsl.forward_list.model.yml
-        index: 0
-        firstRowId: 620
-        rowCount: 52
-        locations:
-          lineNumbers: A=6+1*51
-          columnNumbers: A=9*52
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/bsl.list.model.yml
-        index: 0
-        firstRowId: 672
-        rowCount: 67
-        locations:
-          lineNumbers: A=6+1*66
-          columnNumbers: A=9*67
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/bsl.vector.model.yml
-        index: 0
-        firstRowId: 739
-        rowCount: 56
-        locations:
-          lineNumbers: A=6+1*55
-          columnNumbers: A=9*56
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/cctype.model.yml
-        index: 0
-        firstRowId: 795
-        rowCount: 4
-        locations:
-          lineNumbers: A=6+1*3
-          columnNumbers: A=9*4
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/deallocation/Bsd.deallocation.model.yml
-        index: 0
-        firstRowId: 799
-        rowCount: 3
-        locations:
-          lineNumbers: A=6+1*2
-          columnNumbers: A=9*3
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/deallocation/Std.deallocation.model.yml
-        index: 0
-        firstRowId: 802
-        rowCount: 37
-        locations:
-          lineNumbers: A=6+1*36
-          columnNumbers: A=9*37
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/deallocation/Windows.deallocation.model.yml
-        index: 0
-        firstRowId: 839
-        rowCount: 36
-        locations:
-          lineNumbers: A=6+1*35
-          columnNumbers: A=9*36
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/generated/modelgenerator/brotli/brotli.model.yml
-        index: 0
-        firstRowId: 875
-        rowCount: 474
-        locations:
-          lineNumbers: A=7+1*473
-          columnNumbers: A=9*474
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/generated/modelgenerator/curl/curl.model.yml
-        index: 0
-        firstRowId: 1349
-        rowCount: 953
-        locations:
-          lineNumbers: A=7+1*952
-          columnNumbers: A=9*953
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/generated/modelgenerator/glibc/glibc.model.yml
-        index: 0
-        firstRowId: 2302
-        rowCount: 5488
-        locations:
-          lineNumbers: A=7+1*5487
-          columnNumbers: A=9*5488
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/generated/modelgenerator/libidn2/libidn2.model.yml
-        index: 0
-        firstRowId: 7790
-        rowCount: 142
-        locations:
-          lineNumbers: A=7+1*141
-          columnNumbers: A=9*142
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/generated/modelgenerator/libssh2/libssh2.model.yml
-        index: 0
-        firstRowId: 7932
-        rowCount: 511
-        locations:
-          lineNumbers: A=7+1*510
-          columnNumbers: A=9*511
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/generated/modelgenerator/libuv/libuv.model.yml
-        index: 0
-        firstRowId: 8443
-        rowCount: 640
-        locations:
-          lineNumbers: A=7+1*639
-          columnNumbers: A=9*640
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/generated/modelgenerator/nghttp2/nghttp2.model.yml
-        index: 0
-        firstRowId: 9083
-        rowCount: 565
-        locations:
-          lineNumbers: A=7+1*564
-          columnNumbers: A=9*565
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/generated/modelgenerator/openssl/openssl.model.yml
-        index: 0
-        firstRowId: 9648
-        rowCount: 21578
-        locations:
-          lineNumbers: A=7+1*21577
-          columnNumbers: A=9*21578
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/generated/modelgenerator/sqlite/sqlite.model.yml
-        index: 0
-        firstRowId: 31226
-        rowCount: 942
-        locations:
-          lineNumbers: A=7+1*941
-          columnNumbers: A=9*942
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/generated/modelgenerator/zlib/zlib.model.yml
-        index: 0
-        firstRowId: 32168
-        rowCount: 162
-        locations:
-          lineNumbers: A=7+1*161
-          columnNumbers: A=9*162
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/getc.model.yml
-        index: 0
-        firstRowId: 32330
-        rowCount: 13
-        locations:
-          lineNumbers: A=7+1*12
-          columnNumbers: A=9*13
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/iconv.model.yml
-        index: 0
-        firstRowId: 32343
-        rowCount: 1
-        locations:
-          lineNumbers: A=6
-          columnNumbers: A=9
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/oleauto.model.yml
-        index: 0
-        firstRowId: 32344
-        rowCount: 3
-        locations:
-          lineNumbers: A=6+1*2
-          columnNumbers: A=9*3
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/pthread.model.yml
-        index: 0
-        firstRowId: 32347
-        rowCount: 1
-        locations:
-          lineNumbers: A=6
-          columnNumbers: A=9
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/std.array.model.yml
-        index: 0
-        firstRowId: 32348
-        rowCount: 9
-        locations:
-          lineNumbers: A=6+1*8
-          columnNumbers: A=9*9
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/std.deque.model.yml
-        index: 0
-        firstRowId: 32357
-        rowCount: 69
-        locations:
-          lineNumbers: A=6+1*68
-          columnNumbers: A=9*69
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/std.format.model.yml
-        index: 0
-        firstRowId: 32426
-        rowCount: 9
-        locations:
-          lineNumbers: A=6+1*8
-          columnNumbers: A=9*9
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/std.forward_list.model.yml
-        index: 0
-        firstRowId: 32435
-        rowCount: 52
-        locations:
-          lineNumbers: A=6+1*51
-          columnNumbers: A=9*52
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/std.iterator.model.yml
-        index: 0
-        firstRowId: 32487
-        rowCount: 6
-        locations:
-          lineNumbers: A=6+1*5
-          columnNumbers: A=9*6
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/std.list.model.yml
-        index: 0
-        firstRowId: 32493
-        rowCount: 67
-        locations:
-          lineNumbers: A=6+1*66
-          columnNumbers: A=9*67
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/std.thread.model.yml
-        index: 0
-        firstRowId: 32560
-        rowCount: 5
-        locations:
-          lineNumbers: A=6+1*4
-          columnNumbers: A=9*5
-       -
-        pack: codeql/cpp-all#0
-        relativePath: ext/std.vector.model.yml
-        index: 0
-        firstRowId: 32565
-        rowCount: 56
-        locations:
-          lineNumbers: A=6+1*55
-          columnNumbers: A=9*56
-metadata:
-  name: GCC -f options listed in gcc/config/auto-host.h
-  description: Lists all -f options defined in gcc/config/auto-host.h.
-  kind: table
-  id: cpp/gcc/option-facts-automated

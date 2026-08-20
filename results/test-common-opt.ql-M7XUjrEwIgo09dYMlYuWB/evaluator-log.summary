@@ -1,0 +1,449 @@
+[2026-08-18 22:32:52] Summary of a CodeQL evaluation that started at 2026-08-18T21:32:52.515698420Z
+[2026-08-18 22:32:52] 
+[2026-08-18 22:32:52] Found predicate cached_ResolveClass::isType/1#eabb9878@82ca1924 in the relation cache (size: 123849)
+[2026-08-18 22:32:52] Found predicate cached_ResolveClass::resolveClass/1#ea47deee@a66798km in the relation cache (size: 24895)
+[2026-08-18 22:32:52] Found predicate cached_ResolveFunction::isFunction/1#9226b83f@f98098d9 in the relation cache (size: 91685)
+[2026-08-18 22:32:52] Found predicate cached_ResolveFunction::resolveFunction/1#576ba5ee@d186d880 in the relation cache (size: 107513)
+[2026-08-18 22:32:52] Found predicate cached_ResolveClass::isClass/1#af2a1ca6@ecb9e6su in the relation cache (size: 10868)
+[2026-08-18 22:32:52] Found predicate cached_Expr::Expr.getType/0#dispred#444cc5af@6044b650 in the relation cache (size: 10158564)
+[2026-08-18 22:32:52] Found predicate cached_ResolveGlobalVariable::isVariable/1#6e051315@90738ahc in the relation cache (size: 446985)
+[2026-08-18 22:32:52] Found predicate cached_ResolveGlobalVariable::resolveGlobalVariable/1#17c3b74f@d04f11u9 in the relation cache (size: 447482)
+[2026-08-18 22:32:52] Found predicate cached_Element::ElementBase.toString/0#dispred#6e016f86@b58a23s4 in the relation cache (size: 16830229)
+[2026-08-18 22:32:52] Found predicate cached_QualifiedName::declarationHasQualifiedName/4#749d7d29@bad017oq in the relation cache (size: 173869)
+[2026-08-18 22:32:53] Evaluated non-recursive predicate exprs_10#join_rhs@0a156eph in 805ms (size: 10156860).
+Evaluated relational algebra for predicate exprs_10#join_rhs@0a156eph:
+                {2} r1 = SCAN exprs OUTPUT In.1, In.0
+                return r1
+
+[2026-08-18 22:32:53] Evaluated non-recursive predicate @literal@ba9002q1 in 14ms (size: 1637127).
+Evaluated relational algebra for predicate @literal@ba9002q1:
+                {1} r1 = CONSTANT(unique int)[123]
+                {1}    | JOIN WITH exprs_10#join_rhs ON FIRST 1 OUTPUT Rhs.1
+                return r1
+
+[2026-08-18 22:32:54] Evaluated non-recursive predicate Expr::Expr.getValue/0#dispred#5f237cff@d56e9f14 in 142ms (size: 2996450).
+Evaluated relational algebra for predicate Expr::Expr.getValue/0#dispred#5f237cff@d56e9f14:
+                {2} r1 = JOIN values WITH valuebind ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                return r1
+
+[2026-08-18 22:32:54] Evaluated non-recursive predicate #derivedtypesMerge_20#join_rhs@c72a3drn in 7ms (size: 69411).
+Evaluated relational algebra for predicate #derivedtypesMerge_20#join_rhs@c72a3drn:
+                {2} r1 = SCAN derivedtypes OUTPUT In.2, In.0
+                return r1
+
+[2026-08-18 22:32:54] Evaluated non-recursive predicate Type::ArrayType#1302b17e@4f0735bb in 8ms (size: 3773).
+Evaluated relational algebra for predicate Type::ArrayType#1302b17e@4f0735bb:
+                {1} r1 = CONSTANT(unique int)[4]
+                {1}    | JOIN WITH #derivedtypesMerge_20#join_rhs ON FIRST 1 OUTPUT Rhs.1
+                {1}    | JOIN WITH `cached_ResolveClass::isType/1#eabb9878` ON FIRST 1 OUTPUT Lhs.0
+                return r1
+
+[2026-08-18 22:32:54] Evaluated non-recursive predicate Expr::Expr.getDbValueText/0#dispred#ee5f51fc@873b6f6f in 83ms (size: 1475798).
+Evaluated relational algebra for predicate Expr::Expr.getDbValueText/0#dispred#ee5f51fc@873b6f6f:
+                {2} r1 = JOIN valuetext WITH valuebind ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                return r1
+
+[2026-08-18 22:32:54] Evaluated non-recursive predicate Expr::Expr.getDbValueText/0#dispred#ee5f51fc_0#antijoin_rhs@3e26d62r in 26ms (size: 1475798).
+Evaluated relational algebra for predicate Expr::Expr.getDbValueText/0#dispred#ee5f51fc_0#antijoin_rhs@3e26d62r:
+                {1} r1 = SCAN `Expr::Expr.getDbValueText/0#dispred#ee5f51fc` OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-18 22:32:54] Evaluated non-recursive predicate #exprconvMerge_10#join_rhs@227869fv in 47ms (size: 3026158).
+Evaluated relational algebra for predicate #exprconvMerge_10#join_rhs@227869fv:
+                {2} r1 = SCAN exprconv OUTPUT In.1, In.0
+                return r1
+
+[2026-08-18 22:32:54] Completed evaluation of a recursive layer containing 1 different predicates (took 177ms). Predicates evaluated:
+Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba (took 167ms) (size: 1513211)
+
+Evaluated recursive predicate Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba in 20ms on iteration 1 (delta size: 1475798).
+Evaluated relational algebra for predicate Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba on iteration 1 running pipeline base:
+                return `Expr::Expr.getDbValueText/0#dispred#ee5f51fc`
+
+Evaluated recursive predicate Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba in 139ms on iteration 2 (delta size: 27575).
+Evaluated relational algebra for predicate Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba on iteration 2 running pipeline standard:
+                {3} r1 = JOIN `Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf#prev_delta` WITH #exprconvMerge_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, Lhs.1, Lhs.0
+                {3}    | AND NOT `Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf#prev`(FIRST 2)
+                {3}    | SCAN OUTPUT In.0, In.2, In.1
+                {3}    | AND NOT `Expr::Expr.getDbValueText/0#dispred#ee5f51fc_0#antijoin_rhs`(FIRST 1)
+                {3}    | SCAN OUTPUT In.1, In.0, In.2
+                {3}    | JOIN WITH `Expr::Expr.getValue/0#dispred#5f237cff` ON FIRST 1 OUTPUT Lhs.1, Rhs.1, Lhs.2
+                {2}    | JOIN WITH `Expr::Expr.getValue/0#dispred#5f237cff` ON FIRST 2 OUTPUT Lhs.0, Lhs.2
+                return r1
+
+Evaluated recursive predicate Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba in 7ms on iteration 3 (delta size: 9763).
+Evaluated relational algebra for predicate Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba on iteration 3 running pipeline standard:
+                {3} r1 = JOIN `Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf#prev_delta` WITH #exprconvMerge_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, Lhs.1, Lhs.0
+                {3}    | AND NOT `Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf#prev`(FIRST 2)
+                {3}    | SCAN OUTPUT In.0, In.2, In.1
+                {3}    | AND NOT `Expr::Expr.getDbValueText/0#dispred#ee5f51fc_0#antijoin_rhs`(FIRST 1)
+                {3}    | SCAN OUTPUT In.1, In.0, In.2
+                {3}    | JOIN WITH `Expr::Expr.getValue/0#dispred#5f237cff` ON FIRST 1 OUTPUT Lhs.1, Rhs.1, Lhs.2
+                {2}    | JOIN WITH `Expr::Expr.getValue/0#dispred#5f237cff` ON FIRST 2 OUTPUT Lhs.0, Lhs.2
+                return r1
+
+Evaluated recursive predicate Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba in 1ms on iteration 4 (delta size: 75).
+Evaluated relational algebra for predicate Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba on iteration 4 running pipeline standard:
+                {3} r1 = JOIN `Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf#prev_delta` WITH #exprconvMerge_10#join_rhs ON FIRST 1 OUTPUT Rhs.1, Lhs.1, Lhs.0
+                {3}    | AND NOT `Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf#prev`(FIRST 2)
+                {3}    | SCAN OUTPUT In.0, In.2, In.1
+                {3}    | AND NOT `Expr::Expr.getDbValueText/0#dispred#ee5f51fc_0#antijoin_rhs`(FIRST 1)
+                {3}    | SCAN OUTPUT In.1, In.0, In.2
+                {3}    | JOIN WITH `Expr::Expr.getValue/0#dispred#5f237cff` ON FIRST 1 OUTPUT Lhs.1, Rhs.1, Lhs.2
+                {2}    | JOIN WITH `Expr::Expr.getValue/0#dispred#5f237cff` ON FIRST 2 OUTPUT Lhs.0, Lhs.2
+                return r1
+
+Pipeline base for Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba was evaluated in 1 iterations totaling 20ms (delta sizes total: 1475798).
+Pipeline standard for Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba was evaluated in 3 iterations totaling 147ms (delta sizes total: 37413).
+
+[2026-08-18 22:32:54] Evaluated non-recursive predicate project#Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@d265cala in 17ms (size: 1513211).
+Evaluated relational algebra for predicate project#Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@d265cala:
+                {1} r1 = SCAN `Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf` OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-18 22:32:54] Evaluated non-recursive predicate Expr::Expr.getValueText/0#dispred#a49585d4#bf@9e5533po in 71ms (size: 2996450).
+Evaluated relational algebra for predicate Expr::Expr.getValueText/0#dispred#a49585d4#bf@9e5533po:
+                {2} r1 = `Expr::Expr.getValue/0#dispred#5f237cff` AND NOT `project#Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf`(FIRST 1)
+            
+                {2} r2 = `Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf` UNION r1
+                return r2
+
+[2026-08-18 22:32:55] Evaluated non-recursive predicate Literal::TextLiteral#c60dc64a@e609bbi0 in 962ms (size: 159459).
+Evaluated relational algebra for predicate Literal::TextLiteral#c60dc64a@e609bbi0:
+                {2} r1 = JOIN @literal WITH `cached_Expr::Expr.getType/0#dispred#444cc5af` ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {1}    | JOIN WITH Type::ArrayType#1302b17e ON FIRST 1 OUTPUT Lhs.1
+            
+                {2} r2 = JOIN @literal WITH `Expr::Expr.getValueText/0#dispred#a49585d4#bf` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+                {2}    | REWRITE WITH TEST InOut.1 matches_constant "(?s)\s*L?'.*"
+                {1}    | SCAN OUTPUT In.0
+            
+                {1} r3 = r1 UNION r2
+                return r3
+
+[2026-08-18 22:32:55] Evaluated non-recursive predicate Literal::StringLiteral#847e415f@3242e1ag in 28ms (size: 151101).
+Evaluated relational algebra for predicate Literal::StringLiteral#847e415f@3242e1ag:
+                {2} r1 = JOIN Literal::TextLiteral#c60dc64a WITH `cached_Expr::Expr.getType/0#dispred#444cc5af` ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {1}    | JOIN WITH Type::ArrayType#1302b17e ON FIRST 1 OUTPUT Lhs.1
+                return r1
+
+[2026-08-18 22:32:57] Evaluated non-recursive predicate #locations_defaultMerge_23450#join_rhs@99f7bc3i in 1264ms (size: 7867442).
+Evaluated relational algebra for predicate #locations_defaultMerge_23450#join_rhs@99f7bc3i:
+                {5} r1 = SCAN locations_default OUTPUT In.2, In.3, In.4, In.5, In.0
+                return r1
+
+[2026-08-18 22:32:57] Evaluated non-recursive predicate Location::Location.getContainer/0#9edabfb6@bbd97edk in 75ms (size: 7867442).
+Evaluated relational algebra for predicate Location::Location.getContainer/0#9edabfb6@bbd97edk:
+                {2} r1 = SCAN locations_default OUTPUT In.0, In.1
+                {2}    | STREAM DEDUP
+                return r1
+
+[2026-08-18 22:32:57] Found predicate files@ec93749g in the relation cache (size: 2915)
+[2026-08-18 22:32:57] Evaluated non-recursive predicate Location::UnknownLocation#d525d7d6@6b48ecgn in 3ms (size: 1).
+Evaluated relational algebra for predicate Location::UnknownLocation#d525d7d6@6b48ecgn:
+                {4} r1 = CONSTANT(unique int, unique int, unique int, unique int)[0,0,0,0]
+                {1}    | JOIN WITH #locations_defaultMerge_23450#join_rhs ON FIRST 4 OUTPUT Rhs.4
+                {3}    | JOIN WITH `Location::Location.getContainer/0#9edabfb6` ON FIRST 1 OUTPUT Rhs.1, _, Lhs.0
+                {3}    | REWRITE WITH Out.1 := ""
+                {1}    | JOIN WITH files ON FIRST 2 OUTPUT Lhs.2
+                return r1
+
+[2026-08-18 22:32:57] Evaluated non-recursive predicate _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t in 243ms (size: 254637).
+Evaluated relational algebra for predicate _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t:
+                {2} r1 = SCAN exprs OUTPUT In.2, In.0
+                {1}    | JOIN WITH Location::UnknownLocation#d525d7d6 ON FIRST 1 OUTPUT Lhs.1
+                return r1
+
+[2026-08-18 22:32:58] Evaluated non-recursive predicate @function@24d7f7aa in 1ms (size: 107513).
+Evaluated relational algebra for predicate @function@24d7f7aa:
+                {1} r1 = SCAN functions OUTPUT In.0
+                return r1
+
+[2026-08-18 22:32:58] Evaluated non-recursive predicate @variable@e66aaach in 4ms (size: 447482).
+Evaluated relational algebra for predicate @variable@e66aaach:
+                {1} r1 = SCAN params OUTPUT In.0
+                {1}    | STREAM DEDUP
+            
+                {1} r2 = SCAN localvariables OUTPUT In.0
+                {1}    | STREAM DEDUP
+            
+                {1} r3 = SCAN globalvariables OUTPUT In.0
+                {1}    | STREAM DEDUP
+            
+                {1} r4 = SCAN membervariables OUTPUT In.0
+                {1}    | STREAM DEDUP
+            
+                {1} r5 = r1 UNION r2 UNION r3 UNION r4
+                return r5
+
+[2026-08-18 22:32:58] Evaluated non-recursive predicate @usertype@bb08c6gq in 0ms (size: 24895).
+Evaluated relational algebra for predicate @usertype@bb08c6gq:
+                {1} r1 = SCAN usertypes OUTPUT In.0
+                return r1
+
+[2026-08-18 22:32:58] Evaluated non-recursive predicate Expr::Expr.getParent/0#dispred#393b4f50#bf@53f975bf in 10ms (size: 201707).
+Evaluated relational algebra for predicate Expr::Expr.getParent/0#dispred#393b4f50#bf@53f975bf:
+                {2} r1 = JOIN _#exprsMerge_Location::UnknownLocation#d525d7d6#shared WITH exprparents ON FIRST 1 OUTPUT Rhs.2, Lhs.0
+                {2}    | AND NOT @usertype(FIRST 1)
+                {2}    | AND NOT @variable(FIRST 1)
+                {2}    | AND NOT @function(FIRST 1)
+                {2}    | SCAN OUTPUT In.1, In.0
+                return r1
+
+[2026-08-18 22:32:58] Evaluated non-recursive predicate Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs@37ab0ccf in 2ms (size: 201707).
+Evaluated relational algebra for predicate Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs@37ab0ccf:
+                {2} r1 = SCAN `Expr::Expr.getParent/0#dispred#393b4f50#bf` OUTPUT In.1, In.0
+                return r1
+
+[2026-08-18 22:32:58] Completed evaluation of a recursive layer containing 1 different predicates (took 17ms). Predicates evaluated:
+Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq (took 15ms) (size: 61845)
+
+Evaluated recursive predicate Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq in 12ms on iteration 1 (delta size: 59952).
+Evaluated relational algebra for predicate Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq on iteration 1 running pipeline base:
+                {2} r1 = JOIN _#exprsMerge_Location::UnknownLocation#d525d7d6#shared WITH `Expr::Expr.getParent/0#dispred#393b4f50#bf` ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {2}    | JOIN WITH exprs ON FIRST 1 OUTPUT Rhs.2, Lhs.1
+                {2}    | AND NOT Location::UnknownLocation#d525d7d6(FIRST 1)
+                {2}    | SCAN OUTPUT In.1, In.0
+                return r1
+
+Evaluated recursive predicate Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq in 2ms on iteration 2 (delta size: 1890).
+Evaluated relational algebra for predicate Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq on iteration 2 running pipeline standard:
+                {2} r1 = JOIN `Expr::Expr.getExprLocationOverride/0#80738c92#prev_delta` WITH `Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Expr::Expr.getExprLocationOverride/0#80738c92#prev`(FIRST 2)
+                {3}    | JOIN WITH exprs ON FIRST 1 OUTPUT Rhs.2, Lhs.1, Lhs.0
+                {2}    | JOIN WITH Location::UnknownLocation#d525d7d6 ON FIRST 1 OUTPUT Lhs.2, Lhs.1
+                return r1
+
+Evaluated recursive predicate Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq in 1ms on iteration 3 (delta size: 3).
+Evaluated relational algebra for predicate Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq on iteration 3 running pipeline standard:
+                {2} r1 = JOIN `Expr::Expr.getExprLocationOverride/0#80738c92#prev_delta` WITH `Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs` ON FIRST 1 OUTPUT Rhs.1, Lhs.1
+                {2}    | AND NOT `Expr::Expr.getExprLocationOverride/0#80738c92#prev`(FIRST 2)
+                {3}    | JOIN WITH exprs ON FIRST 1 OUTPUT Rhs.2, Lhs.1, Lhs.0
+                {2}    | JOIN WITH Location::UnknownLocation#d525d7d6 ON FIRST 1 OUTPUT Lhs.2, Lhs.1
+                return r1
+
+Pipeline base for Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq was evaluated in 1 iterations totaling 12ms (delta sizes total: 59952).
+Pipeline standard for Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq was evaluated in 2 iterations totaling 3ms (delta sizes total: 1893).
+
+[2026-08-18 22:32:58] Evaluated non-recursive predicate project#Expr::Expr.getExprLocationOverride/0#80738c92@ef4953aj in 0ms (size: 61845).
+Evaluated relational algebra for predicate project#Expr::Expr.getExprLocationOverride/0#80738c92@ef4953aj:
+                {1} r1 = SCAN `Expr::Expr.getExprLocationOverride/0#80738c92` OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-18 22:32:58] Evaluated non-recursive predicate Expr::Expr.getLocation/0#dispred#0a3d90c6@116cadd2 in 106ms (size: 10156860).
+Evaluated relational algebra for predicate Expr::Expr.getLocation/0#dispred#0a3d90c6@116cadd2:
+                {2} r1 = SCAN exprs OUTPUT In.0, In.2
+                {2}    | AND NOT `project#Expr::Expr.getExprLocationOverride/0#80738c92`(FIRST 1)
+            
+                {2} r2 = `Expr::Expr.getExprLocationOverride/0#80738c92` UNION r1
+                return r2
+
+[2026-08-18 22:32:58] Evaluated non-recursive predicate Element::Element.getFile/0#2b8c8740@fb4d81m9 in 572ms (size: 10156860).
+Evaluated relational algebra for predicate Element::Element.getFile/0#2b8c8740@fb4d81m9:
+                {2} r1 = SCAN `Expr::Expr.getLocation/0#dispred#0a3d90c6` OUTPUT In.1, In.0
+                {2}    | JOIN WITH `Location::Location.getContainer/0#9edabfb6` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+                return r1
+
+[2026-08-18 22:32:58] Found predicate sourceLocationPrefix@64802cd1 in the relation cache (size: 1)
+[2026-08-18 22:32:59] Evaluated non-recursive predicate File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i in 35ms (size: 2230).
+Evaluated relational algebra for predicate File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i:
+                {2} r1 = SCAN files OUTPUT In.1, In.0
+                {2}    | JOIN WITH sourceLocationPrefix ON FIRST 1 OUTPUT Lhs.1, _
+                {2}    | REWRITE WITH Out.1 := ""
+            
+                {5} r2 = JOIN files WITH sourceLocationPrefix CARTESIAN PRODUCT OUTPUT Lhs.0, Lhs.1, _, Rhs.0, _
+                {3}    | REWRITE WITH Tmp.2 := "/$", Tmp.4 := "", Out.2 := regexpReplaceAll(In.3,Tmp.2,Tmp.4) KEEPING 3
+                {5}    | SCAN OUTPUT In.0, _, In.2, In.1, _
+                {2}    | REWRITE WITH Tmp.1 := "/", Tmp.1 := (In.2 ++ Tmp.1), Tmp.4 := "", Out.1 := InverseAppend(Tmp.1,Tmp.4,In.3) KEEPING 2
+                {2}    | REWRITE WITH NOT [TEST InOut.1 startsWith "/"]
+            
+                {2} r3 = r1 UNION r2
+                return r3
+
+[2026-08-18 22:32:59] Evaluated non-recursive predicate Location::Location.getStartLine/0#d54f9e6c@53e8a5qa in 60ms (size: 7867442).
+Evaluated relational algebra for predicate Location::Location.getStartLine/0#d54f9e6c@53e8a5qa:
+                {2} r1 = SCAN locations_default OUTPUT In.0, In.2
+                return r1
+
+[2026-08-18 22:32:59] Evaluated non-recursive predicate #select@ca7de586 in 66ms (size: 4).
+Evaluated relational algebra for predicate #select@ca7de586:
+                {2} r1 = JOIN Literal::StringLiteral#847e415f WITH `Element::Element.getFile/0#2b8c8740` ON FIRST 1 OUTPUT Rhs.1, Lhs.0
+                {2}    | JOIN WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` ON FIRST 1 OUTPUT Lhs.1, Rhs.1
+            
+                {2} r2 = REWRITE r1 WITH TEST InOut.1 matches_constant ".*options\.c$"
+                {1}    | SCAN OUTPUT In.0
+            
+                {2} r3 = REWRITE r1 WITH TEST InOut.1 matches_constant ".*options\.cc$"
+                {1}    | SCAN OUTPUT In.0
+            
+                {1} r4 = r2 UNION r3
+                {1}    | JOIN WITH Literal::StringLiteral#847e415f ON FIRST 1 OUTPUT Lhs.0
+                {2}    | JOIN WITH `Expr::Expr.getValue/0#dispred#5f237cff` ON FIRST 1 OUTPUT Lhs.0, Rhs.1
+                {2}    | REWRITE WITH TEST InOut.1 matches_constant "f[a-zA-Z0-9_+=-].*"
+                {1}    | SCAN OUTPUT In.0
+                {3}    | JOIN WITH `Expr::Expr.getValue/0#dispred#5f237cff` ON FIRST 1 OUTPUT Lhs.0, _, Rhs.1
+                {2}    | REWRITE WITH Tmp.1 := "-", Out.1 := (Tmp.1 ++ In.2) KEEPING 2
+                {3}    | JOIN WITH `Expr::Expr.getLocation/0#dispred#0a3d90c6` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.1
+                {3}    | JOIN WITH `Location::Location.getStartLine/0#d54f9e6c` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Rhs.1
+                {4}    | JOIN WITH `Element::Element.getFile/0#2b8c8740` ON FIRST 1 OUTPUT Rhs.1, Lhs.0, Lhs.1, Lhs.2
+                {4}    | JOIN WITH `File::Impl::Container.getRelativePath/0#dispred#deec4f8e` ON FIRST 1 OUTPUT Lhs.2, Rhs.1, Lhs.3, Lhs.1
+                return r4
+
+[2026-08-18 22:32:59] Evaluated non-recursive predicate project#Element::ElementBase.toString/0#dispred#6e016f86@00b52b64 in 398ms (size: 16823598).
+Evaluated relational algebra for predicate project#Element::ElementBase.toString/0#dispred#6e016f86@00b52b64:
+                {1} r1 = SCAN `cached_Element::ElementBase.toString/0#dispred#6e016f86` OUTPUT In.0
+                {1}    | STREAM DEDUP
+                return r1
+
+[2026-08-18 22:32:59] Evaluated non-recursive predicate Location::Location.hasLocationInfo/5#dispred#558082fb@79ec0781 in 190ms (size: 7867442).
+Evaluated relational algebra for predicate Location::Location.hasLocationInfo/5#dispred#558082fb@79ec0781:
+                {6} r1 = SCAN locations_default OUTPUT In.1, In.0, In.2, In.3, In.4, In.5
+                {6}    | JOIN WITH files ON FIRST 1 OUTPUT Lhs.1, Rhs.1, Lhs.2, Lhs.3, Lhs.4, Lhs.5
+                return r1
+
+[2026-08-18 22:32:59] Evaluated non-recursive predicate _#select_Expr::Expr.getLocation/0#dispred#0a3d90c6#shared@24202b7t in 0ms (size: 4).
+Evaluated relational algebra for predicate _#select_Expr::Expr.getLocation/0#dispred#0a3d90c6#shared@24202b7t:
+                {4} r1 = SCAN #select OUTPUT In.3, In.0, In.1, In.2
+                {5}    | JOIN WITH `Expr::Expr.getLocation/0#dispred#0a3d90c6` ON FIRST 1 OUTPUT Rhs.1, Lhs.1, Lhs.2, Lhs.3, Lhs.0
+                return r1
+
+[2026-08-18 22:32:59] Evaluated non-recursive predicate _Location::Location.hasLocationInfo/5#dispred#558082fb__#select_Expr::Expr.getLocation/0#dispred#0a3__#antijoin_rhs@a0923e8n in 0ms (size: 4).
+Evaluated relational algebra for predicate _Location::Location.hasLocationInfo/5#dispred#558082fb__#select_Expr::Expr.getLocation/0#dispred#0a3__#antijoin_rhs@a0923e8n:
+                {4} r1 = JOIN `_#select_Expr::Expr.getLocation/0#dispred#0a3d90c6#shared` WITH `Location::Location.hasLocationInfo/5#dispred#558082fb` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.3, Lhs.4
+                return r1
+
+[2026-08-18 22:32:59] Evaluated non-recursive predicate #select#query@cd66fav8 in 2ms (size: 4).
+Evaluated relational algebra for predicate #select#query@cd66fav8:
+                {9} r1 = JOIN `_#select_Expr::Expr.getLocation/0#dispred#0a3d90c6#shared` WITH `Location::Location.hasLocationInfo/5#dispred#558082fb` ON FIRST 1 OUTPUT Lhs.4, Lhs.1, Lhs.2, Lhs.3, Rhs.1, Rhs.2, Rhs.3, Rhs.4, Rhs.5
+            
+                {4} r2 = #select AND NOT `_Location::Location.hasLocationInfo/5#dispred#558082fb__#select_Expr::Expr.getLocation/0#dispred#0a3__#antijoin_rhs`(FIRST 4)
+                {9}    | SCAN OUTPUT In.3, In.0, In.1, In.2, _, _, _, _, _
+                {9}    | REWRITE WITH Out.4 := "", Out.5 := 0, Out.6 := 0, Out.7 := 0, Out.8 := 0
+            
+                {9} r3 = r1 UNION r2
+                {10}    | JOIN WITH `cached_Element::ElementBase.toString/0#dispred#6e016f86` ON FIRST 1 OUTPUT Lhs.1, Lhs.2, Lhs.3, Lhs.0, Rhs.1, Lhs.4, Lhs.5, Lhs.6, Lhs.7, Lhs.8
+            
+                {4} r4 = #select AND NOT `_Location::Location.hasLocationInfo/5#dispred#558082fb__#select_Expr::Expr.getLocation/0#dispred#0a3__#antijoin_rhs`(FIRST 4)
+                {9}    | SCAN OUTPUT In.3, In.0, In.1, In.2, _, _, _, _, _
+                {9}    | REWRITE WITH Out.4 := "", Out.5 := 0, Out.6 := 0, Out.7 := 0, Out.8 := 0
+            
+                {9} r5 = r1 UNION r4
+                {9}    | AND NOT `project#Element::ElementBase.toString/0#dispred#6e016f86`(FIRST 1)
+                {10}    | SCAN OUTPUT In.1, In.2, In.3, In.0, _, In.4, In.5, In.6, In.7, In.8
+                {10}    | REWRITE WITH Out.4 := "(no string representation)"
+            
+                {10} r6 = r3 UNION r5
+                return r6
+
+[2026-08-18 22:32:59] Completed evaluation of query test-common-opt.ql.
+Most expensive predicates for stage 0 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+         0ms | @usertype@bb08c6gq
+
+Most expensive predicates for stage 1 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+         1ms | @function@24d7f7aa
+
+Most expensive predicates for stage 3 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+         1ms | @function@24d7f7aa
+         0ms | @usertype@bb08c6gq
+
+Most expensive predicates for stage 4 of completed query test-common-opt.ql:
+        time  | predicate
+        ------|----------
+        805ms | exprs_10#join_rhs@0a156eph
+          0ms | @usertype@bb08c6gq
+
+Most expensive predicates for stage 5 of completed query test-common-opt.ql:
+        time  | predicate
+        ------|----------
+        805ms | exprs_10#join_rhs@0a156eph
+         14ms | @literal@ba9002q1
+          1ms | @function@24d7f7aa
+          0ms | @usertype@bb08c6gq
+
+Most expensive predicates for stage 6 of completed query test-common-opt.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+         1.3s |       |              | #locations_defaultMerge_23450#join_rhs@99f7bc3i
+        962ms |       |              | Literal::TextLiteral#c60dc64a@e609bbi0
+        805ms |       |              | exprs_10#join_rhs@0a156eph
+        572ms |       |              | Element::Element.getFile/0#2b8c8740@fb4d81m9
+        398ms |       |              | project#Element::ElementBase.toString/0#dispred#6e016f86@00b52b64
+        243ms |       |              | _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t
+        190ms |       |              | Location::Location.hasLocationInfo/5#dispred#558082fb@79ec0781
+        167ms |     4 | 139ms @ 2    | Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba
+        142ms |       |              | Expr::Expr.getValue/0#dispred#5f237cff@d56e9f14
+        106ms |       |              | Expr::Expr.getLocation/0#dispred#0a3d90c6@116cadd2
+         83ms |       |              | Expr::Expr.getDbValueText/0#dispred#ee5f51fc@873b6f6f
+         75ms |       |              | Location::Location.getContainer/0#9edabfb6@bbd97edk
+         71ms |       |              | Expr::Expr.getValueText/0#dispred#a49585d4#bf@9e5533po
+         66ms |       |              | #select@ca7de586
+         60ms |       |              | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+         47ms |       |              | #exprconvMerge_10#join_rhs@227869fv
+         35ms |       |              | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i
+         28ms |       |              | Literal::StringLiteral#847e415f@3242e1ag
+         26ms |       |              | Expr::Expr.getDbValueText/0#dispred#ee5f51fc_0#antijoin_rhs@3e26d62r
+         17ms |       |              | project#Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@d265cala
+         15ms |     3 |  12ms @ 1    | Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq
+         14ms |       |              | @literal@ba9002q1
+         10ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50#bf@53f975bf
+          8ms |       |              | Type::ArrayType#1302b17e@4f0735bb
+          7ms |       |              | #derivedtypesMerge_20#join_rhs@c72a3drn
+          4ms |       |              | @variable@e66aaach
+          3ms |       |              | Location::UnknownLocation#d525d7d6@6b48ecgn
+          2ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs@37ab0ccf
+          2ms |       |              | #select#query@cd66fav8
+          1ms |       |              | @function@24d7f7aa
+          0ms |       |              | @usertype@bb08c6gq
+          0ms |       |              | _#select_Expr::Expr.getLocation/0#dispred#0a3d90c6#shared@24202b7t
+          0ms |       |              | project#Expr::Expr.getExprLocationOverride/0#80738c92@ef4953aj
+          0ms |       |              | _Location::Location.hasLocationInfo/5#dispred#558082fb__#select_Expr::Expr.getLocation/0#dispred#0a3__#antijoin_rhs@a0923e8n
+
+Most expensive predicates for completed query test-common-opt.ql:
+        time  | evals |   max @ iter | predicate
+        ------|-------|--------------|----------
+         1.3s |       |              | #locations_defaultMerge_23450#join_rhs@99f7bc3i
+        962ms |       |              | Literal::TextLiteral#c60dc64a@e609bbi0
+        805ms |       |              | exprs_10#join_rhs@0a156eph
+        572ms |       |              | Element::Element.getFile/0#2b8c8740@fb4d81m9
+        398ms |       |              | project#Element::ElementBase.toString/0#dispred#6e016f86@00b52b64
+        243ms |       |              | _#exprsMerge_Location::UnknownLocation#d525d7d6#shared@262c540t
+        190ms |       |              | Location::Location.hasLocationInfo/5#dispred#558082fb@79ec0781
+        167ms |     4 | 139ms @ 2    | Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@f6a48wba
+        142ms |       |              | Expr::Expr.getValue/0#dispred#5f237cff@d56e9f14
+        106ms |       |              | Expr::Expr.getLocation/0#dispred#0a3d90c6@116cadd2
+         83ms |       |              | Expr::Expr.getDbValueText/0#dispred#ee5f51fc@873b6f6f
+         75ms |       |              | Location::Location.getContainer/0#9edabfb6@bbd97edk
+         71ms |       |              | Expr::Expr.getValueText/0#dispred#a49585d4#bf@9e5533po
+         66ms |       |              | #select@ca7de586
+         60ms |       |              | Location::Location.getStartLine/0#d54f9e6c@53e8a5qa
+         47ms |       |              | #exprconvMerge_10#join_rhs@227869fv
+         35ms |       |              | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@366b4d1i
+         28ms |       |              | Literal::StringLiteral#847e415f@3242e1ag
+         26ms |       |              | Expr::Expr.getDbValueText/0#dispred#ee5f51fc_0#antijoin_rhs@3e26d62r
+         17ms |       |              | project#Expr::Expr.getValueTextFollowingConversions/0#6d202301#bf@d265cala
+         15ms |     3 |  12ms @ 1    | Expr::Expr.getExprLocationOverride/0#80738c92@abdffwqq
+         14ms |       |              | @literal@ba9002q1
+         10ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50#bf@53f975bf
+          8ms |       |              | Type::ArrayType#1302b17e@4f0735bb
+          7ms |       |              | #derivedtypesMerge_20#join_rhs@c72a3drn
+          4ms |       |              | @variable@e66aaach
+          3ms |       |              | Location::UnknownLocation#d525d7d6@6b48ecgn
+          2ms |       |              | Expr::Expr.getParent/0#dispred#393b4f50#bf_10#join_rhs@37ab0ccf
+          2ms |       |              | #select#query@cd66fav8
+          1ms |       |              | @function@24d7f7aa
+          0ms |       |              | @usertype@bb08c6gq
+          0ms |       |              | _#select_Expr::Expr.getLocation/0#dispred#0a3d90c6#shared@24202b7t
+          0ms |       |              | project#Expr::Expr.getExprLocationOverride/0#80738c92@ef4953aj
+          0ms |       |              | _Location::Location.hasLocationInfo/5#dispred#558082fb__#select_Expr::Expr.getLocation/0#dispred#0a3__#antijoin_rhs@a0923e8n
+
+[2026-08-18 22:32:59] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 7.3 seconds
+        * Total time spent evaluating predicates: 6.5 seconds
