@@ -1,0 +1,82 @@
+{
+  "time" : "2026-08-17T22:45:14.879330562Z",
+  "type" : "LOG_HEADER",
+  "eventId" : 2014,
+  "nanoTime" : 92039281067411,
+  "codeqlVersion" : "2.26.2",
+  "logVersion" : "0.5.0"
+}
+
+{
+  "time" : "2026-08-17T22:45:14.880210519Z",
+  "type" : "QUERY_STARTED",
+  "eventId" : 2015,
+  "nanoTime" : 92039281941837,
+  "queryName" : "/home/oleksii-shemshur/work/toolchains/tools/queries/1plus2.ql",
+  "stages" : [ 107 ]
+}
+
+{
+  "time" : "2026-08-17T22:45:14.881264321Z",
+  "type" : "PREDICATE_STARTED",
+  "eventId" : 2016,
+  "nanoTime" : 92039282995208,
+  "raHash" : "56f747tvr2hebud42jkc1ertqqb",
+  "predicateName" : "#select#query",
+  "appearsAs" : {
+    "#select#query" : [ 107 ]
+  },
+  "predicateType" : "SIMPLE_INTENSIONAL",
+  "position" : "/home/oleksii-shemshur/work/toolchains/tools/queries/1plus2.ql:2,1-5,29",
+  "ra" : {
+    "pipeline" : [
+      "    {5} r1 = CONSTANT(unique int, unique string, unique int, unique string, unique int)[1,\"+\",1,\"=\",2]",
+      "    return r1"
+    ]
+  },
+  "dependencies" : { },
+  "queryCausingWork" : 2015
+}
+
+{
+  "time" : "2026-08-17T22:45:14.881330525Z",
+  "type" : "PIPELINE_STARTED",
+  "eventId" : 2017,
+  "nanoTime" : 92039283057535,
+  "predicateStartEvent" : 2016,
+  "raReference" : "pipeline"
+}
+
+{
+  "time" : "2026-08-17T22:45:14.882985932Z",
+  "type" : "PIPELINE_COMPLETED",
+  "eventId" : 2018,
+  "nanoTime" : 92039284716710,
+  "startEvent" : 2017,
+  "resultSize" : 1
+}
+
+{
+  "time" : "2026-08-17T22:45:14.883388376Z",
+  "type" : "PREDICATE_COMPLETED",
+  "eventId" : 2019,
+  "nanoTime" : 92039285115737,
+  "startEvent" : 2016,
+  "resultSize" : 1
+}
+
+{
+  "time" : "2026-08-17T22:45:14.886603572Z",
+  "type" : "QUERY_COMPLETED",
+  "eventId" : 2020,
+  "nanoTime" : 92039288337746,
+  "startEvent" : 2015,
+  "terminationType" : "COMPLETED_SUCCESSFULLY"
+}
+
+{
+  "time" : "2026-08-17T22:45:14.887122303Z",
+  "type" : "LOG_FOOTER",
+  "eventId" : 2021,
+  "nanoTime" : 92039288852119
+}

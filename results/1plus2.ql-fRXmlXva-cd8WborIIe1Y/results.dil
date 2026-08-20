@@ -1,0 +1,13 @@
+suppressTypeErrors
+#select#query(
+  unique int x, unique string #col, unique int y, unique string #col#2,
+  unique int #col#3
+)
+{
+  x = 1 and #col = "+" and #col#2 = "=" and PlusInt(1, y, 2) and #col#3 = 2
+}
+
+query #select = #select#query/5 .
+
+
+/* ---------- END STAGE ---------- */

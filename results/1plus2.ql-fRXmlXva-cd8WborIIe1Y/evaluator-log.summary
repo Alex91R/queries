@@ -1,0 +1,21 @@
+[2026-08-17 23:45:14] Summary of a CodeQL evaluation that started at 2026-08-17T22:45:14.879330562Z
+[2026-08-17 23:45:14] 
+[2026-08-17 23:45:14] Evaluated non-recursive predicate #select#query@56f747tv in 2ms (size: 1).
+Evaluated relational algebra for predicate #select#query@56f747tv:
+                {5} r1 = CONSTANT(unique int, unique string, unique int, unique string, unique int)[1,"+",1,"=",2]
+                return r1
+
+[2026-08-17 23:45:14] Completed evaluation of query 1plus2.ql.
+Most expensive predicates for stage 0 of completed query 1plus2.ql:
+        time | predicate
+        -----|----------
+         2ms | #select#query@56f747tv
+
+Most expensive predicates for completed query 1plus2.ql:
+        time | predicate
+        -----|----------
+         2ms | #select#query@56f747tv
+
+[2026-08-17 23:45:14] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.0 seconds
+        * Total time spent evaluating predicates: 0.0 seconds

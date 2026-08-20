@@ -1,0 +1,50 @@
+Completed evaluation of query test-common-opt.ql.
+Most expensive predicates for stage 0 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+        18ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 1 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+        18ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 2 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+        18ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 3 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+        18ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 4 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+        18ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 5 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+        18ms | files_0#antijoin_rhs@81abb6m0
+
+Most expensive predicates for stage 6 of completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+        48ms | #select@c09220i0
+        34ms | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@e3f4acr4
+        18ms | @file@81abb6m0
+         2ms | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+
+Most expensive predicates for completed query test-common-opt.ql:
+        time | predicate
+        -----|----------
+        48ms | #select@c09220i0
+        34ms | File::Impl::Container.getRelativePath/0#dispred#deec4f8e@e3f4acr4
+        18ms | files_0#antijoin_rhs@81abb6m0
+         2ms | File::Impl::Container.getAbsolutePath/0#dispred#c9ca212d@7c0d12f0
+
+[2026-08-18 21:08:12] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.3 seconds
+        * Total time spent evaluating predicates: 0.1 seconds

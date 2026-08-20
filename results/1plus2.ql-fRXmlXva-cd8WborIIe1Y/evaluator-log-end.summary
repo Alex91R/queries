@@ -1,0 +1,14 @@
+Completed evaluation of query 1plus2.ql.
+Most expensive predicates for stage 0 of completed query 1plus2.ql:
+        time | predicate
+        -----|----------
+         2ms | #select#query@56f747tv
+
+Most expensive predicates for completed query 1plus2.ql:
+        time | predicate
+        -----|----------
+         2ms | #select#query@56f747tv
+
+[2026-08-17 23:45:14] Total evaluation times for this run:
+        * Wall-clock duration of evaluation run: 0.0 seconds
+        * Total time spent evaluating predicates: 0.0 seconds
